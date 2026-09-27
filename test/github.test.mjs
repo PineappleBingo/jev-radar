@@ -25,12 +25,31 @@ test('repoMeta batches GraphQL by 50 and maps missing repos to null', async () =
   const gh = makeGithub({ token: 't', fetchImpl: fakeFetch({ 'https://api.github.com/graphql': (u, init) => {
     const q = JSON.parse(init.body).query;
     const aliases = [...q.matchAll(/(r\d+): repository\(owner: "o", name: "(r\d+)"\)/g)];
-    return { data: Object.fromEntries(aliases.map(([, alias, name]) => [alias, name === 'r3' ? null : repoNode('o', name)])) };
+    return { data: Object.fromEntries(aliases.map(([, alias, name]) => [alias, name === 'r3' ? null : repoNode('o', name)])), errors: [{ type: 'NOT_FOUND', path: ['r3'] }] };
   } }, calls) });
   const meta = await gh.repoMeta(names);
   assert.equal(calls.length, 2);
   assert.equal(meta.get('o/r3'), null);
   assert.deepEqual(meta.get('o/r0'), { full_name: 'o/r0', url: 'https://github.com/o/r0', description: 'd', stars: 5, forks: 1, pushed_at: '2026-09-25T00:00:00Z', created_at: '2026-09-01T00:00:00Z', archived: false, fork: false, language: 'TypeScript', license: 'MIT', topics: ['jev'] });
+});
+
+test('repoMeta: data: null rejects instead of mass-nulling the chunk', async () => {
+  const gh = makeGithub({ fetchImpl: fakeFetch({ 'https://api.github.com/graphql': { data: null, errors: [{ message: 'timeout' }] } }) });
+  await assert.rejects(() => gh.repoMeta(['o/r0']), /GitHub GraphQL: timeout/);
+});
+
+test('repoMeta: NOT_FOUND error nulls only that alias', async () => {
+  const gh = makeGithub({ fetchImpl: fakeFetch({ 'https://api.github.com/graphql': { data: { r0: null, r1: repoNode('o', 'r1') }, errors: [{ type: 'NOT_FOUND', path: ['r0'] }] } }) });
+  const meta = await gh.repoMeta(['o/r0', 'o/r1']);
+  assert.equal(meta.get('o/r0'), null);
+  assert.ok(meta.get('o/r1'));
+});
+
+test('repoMeta: a non-NOT_FOUND error leaves the alias out of the map (unknown, not gone)', async () => {
+  const gh = makeGithub({ fetchImpl: fakeFetch({ 'https://api.github.com/graphql': { data: { r0: null, r1: repoNode('o', 'r1') }, errors: [{ type: 'FORBIDDEN', path: ['r0'] }] } }) });
+  const meta = await gh.repoMeta(['o/r0', 'o/r1']);
+  assert.equal(meta.has('o/r0'), false);
+  assert.ok(meta.get('o/r1'));
 });
 
 test('rate limit: short reset waits and retries, long reset throws RateLimited', async () => {

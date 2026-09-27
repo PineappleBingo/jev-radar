@@ -67,9 +67,15 @@ export function makeGithub({ token = process.env.GITHUB_TOKEN, fetchImpl = globa
           return `r${i + j}: repository(owner: ${JSON.stringify(owner)}, name: ${JSON.stringify(name)}) { ${META_FIELDS} }`;
         });
         const body = await req(`${API}/graphql`, { body: { query: `query { ${parts.join('\n')} }` } });
+        // data가 아예 없으면 전체 요청이 실패한 것 — 청크를 통째로 null로 만들지 않는다.
+        if (!body?.data) throw new Error(`GitHub GraphQL: ${body?.errors?.[0]?.message || '응답에 data가 없다'}`);
+        const notFound = new Set((body.errors || []).filter((e) => e.type === 'NOT_FOUND').map((e) => e.path?.[0]));
         chunk.forEach((fn, j) => {
-          const node = body?.data?.[`r${i + j}`];
-          out.set(fn.toLowerCase(), node ? toMeta(node) : null);
+          const alias = `r${i + j}`;
+          const node = body.data[alias];
+          if (node) out.set(fn.toLowerCase(), toMeta(node));
+          else if (notFound.has(alias)) out.set(fn.toLowerCase(), null);
+          // 그 밖의 이유(FORBIDDEN 등)로 비었으면 맵에 넣지 않는다 — undefined = 모름(삭제로 보지 않는다).
         });
       }
       return out;

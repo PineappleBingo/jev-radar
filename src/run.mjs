@@ -38,15 +38,41 @@ export async function run({ root = ROOT, date, now, env = process.env, fetchImpl
   const regCat = new Map(cfg.sources.seeds.map((s) => [s.full_name.toLowerCase(), s.cat]));
 
   // 2) 메타 · README · 거르기
-  const meta = await gh.repoMeta([...found.keys()]);
-  const vanished = [...prevItems.keys()].filter((k) => meta.get(k) === null).map((k) => prevItems.get(k).full_name);
+  let meta;
+  try {
+    meta = await gh.repoMeta([...found.keys()]);
+  } catch (e) {
+    // GraphQL 자체가 실패한 것(예: data:null)이지 리포가 사라진 게 아니다 — 아무것도 쓰지 않는다.
+    errors.push(`GitHub 메타 조회 실패: ${String(e.message).slice(0, 200)}`);
+    return { meta: null, items: [], written: [], errors };
+  }
+
+  // 이름이 바뀐 리포는 GraphQL이 새 이름으로 응답한다 — 정식 이름(lower)으로 묶어 한 항목만 만든다.
+  const canonicalSources = new Map(); // canonical(lower) → Set(sources)
+  const canonicalMeta = new Map(); // canonical(lower) → Meta
+  for (const [key, sources] of found) {
+    const m = meta.get(key);
+    if (!m) continue; // null(진짜 사라짐) · undefined(이번엔 모름) 둘 다 항목을 만들지 않는다
+    const canonical = m.full_name.toLowerCase();
+    if (!canonicalSources.has(canonical)) canonicalSources.set(canonical, new Set());
+    for (const s of sources) canonicalSources.get(canonical).add(s);
+    canonicalMeta.set(canonical, m);
+  }
+
+  // 사라짐: 진짜 삭제(null) + 이름이 바뀌어 옛 이름이 더는 정식 이름이 아닌 것. undefined(모름)는 그대로 둔다.
+  const vanished = [];
+  for (const k of prevItems.keys()) {
+    const m = meta.get(k);
+    if (m === undefined) continue;
+    if (m === null || m.full_name.toLowerCase() !== k) vanished.push(prevItems.get(k).full_name);
+  }
+
   const items = [];
   const readmes = new Map();
   const changedReadme = new Set();
-  for (const [key, sources] of found) {
-    const m = meta.get(key);
-    if (!m) continue;
-    const prev = prevItems.get(key) || null;
+  for (const [canonical, sources] of canonicalSources) {
+    const m = canonicalMeta.get(canonical);
+    const prev = prevItems.get(canonical) || null;
     let readme = null;
     if (!prev || prev.pushed_at !== m.pushed_at) {
       readme = await gh.readme(m.full_name).catch(() => null);
@@ -56,11 +82,14 @@ export async function run({ root = ROOT, date, now, env = process.env, fetchImpl
     }
     // 한 번 들어온 항목은 거르지 않는다(README를 다시 받지 않은 날 근거가 발췌 밖에 있어 빠지는 일을 막는다).
     if (!prev && !keep(sources, hasEvidence({ description: m.description, topics: m.topics, readme }))) continue;
-    const item = toItem(m, { sources, readme: readme ?? prev?.readme_excerpt ?? null, firstSeen: date, categories: cfg.categories, registryCat: regCat.get(key) || null, prev });
+    const item = toItem(m, { sources, readme: readme ?? prev?.readme_excerpt ?? null, firstSeen: date, categories: cfg.categories, registryCat: regCat.get(canonical) || null, prev });
     if (readme === null && prev) { item.readme_excerpt = prev.readme_excerpt ?? null; item.verified = prev.verified; }
     readmes.set(item.full_name, readme ?? prev?.readme_excerpt ?? '');
     items.push(item);
   }
+
+  // 메타를 못 받은(undefined) 이전 항목은 그대로 유지 — 사라짐도 아니고 오늘 별을 다시 기록하지도 않는다.
+  const carriedOver = [...prevItems.keys()].filter((k) => meta.get(k) === undefined).map((k) => prevItems.get(k));
 
   // 3) 요약
   const order = [
@@ -78,9 +107,10 @@ export async function run({ root = ROOT, date, now, env = process.env, fetchImpl
   const ver = await verifyAll(items, gh, { budget: budgets.verify ?? 15, sleep: sleep || ((ms) => new Promise((r) => setTimeout(r, ms))), state, today: date });
   for (const it of items) { const u = ver.updates.get(it.full_name); if (u) Object.assign(it, u); }
 
-  // 5) 순위
+  // 5) 순위 — carriedOver는 오늘 별을 기록하지 않고 이전 값 그대로 합친다.
   history = recordStars(Object.fromEntries(Object.entries(history).filter(([k]) => !vanished.includes(k))), items, date);
   for (const it of items) { it.stars_7d_delta = delta7(history[it.full_name], date); it.score = score(it, date); }
+  items.push(...carriedOver);
   items.sort((a, b) => b.score - a.score || a.full_name.localeCompare(b.full_name));
 
   // 6) 문서 감시
@@ -127,7 +157,10 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
   const date = val('--date') || kstDate(nowIso);
   const bf = val('--backfill');
   const backfill = bf ? { from: bf.split(':')[0], to: bf.split(':')[1] || date, days: 30 } : null;
-  const r = await run({ date, now: nowIso, backfill, summarize: !args.includes('--no-summarize'), dryRun: args.includes('--dry-run'), budgets: { summaries: val('--budget-summaries') ? Number(val('--budget-summaries')) : undefined, verify: val('--budget-verify') ? Number(val('--budget-verify')) : undefined } });
-  console.log(JSON.stringify({ counts: r.meta.counts, queue: r.meta.queue, written: r.written.length, errors: r.errors }, null, 2));
-  process.exit(r.written.length || args.includes('--dry-run') ? 0 : 1);
+  const dryRun = args.includes('--dry-run');
+  const r = await run({ date, now: nowIso, backfill, summarize: !args.includes('--no-summarize'), dryRun, budgets: { summaries: val('--budget-summaries') ? Number(val('--budget-summaries')) : undefined, verify: val('--budget-verify') ? Number(val('--budget-verify')) : undefined } });
+  console.log(JSON.stringify({ counts: r.meta?.counts, queue: r.meta?.queue, written: r.written.length, errors: r.errors }, null, 2));
+  // dry-run은 파일을 쓰지 않는 게 정상이라 written으로 성공을 가릴 수 없다 — 스키마 검사 실패만 실패로 본다.
+  const failed = dryRun ? r.errors.some((e) => /스키마/.test(e)) : r.written.length === 0;
+  process.exit(failed ? 1 : 0);
 }

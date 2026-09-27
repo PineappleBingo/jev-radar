@@ -28,11 +28,13 @@ function table({ stars = 10, gone = [] } = {}) {
     'https://api.github.com/graphql': (u, init) => {
       const q = JSON.parse(init.body).query;
       const data = {};
+      const errors = [];
       for (const [, alias, owner, name] of q.matchAll(/(r\d+): repository\(owner: "([^"]+)", name: "([^"]+)"\)/g)) {
         const fn = `${owner}/${name}`;
-        data[alias] = gone.includes(fn) ? null : node(fn, stars, fn === 'homonym/jev' ? { description: 'Jev the cat' } : {});
+        if (gone.includes(fn)) { data[alias] = null; errors.push({ type: 'NOT_FOUND', path: [alias] }); continue; }
+        data[alias] = node(fn, stars, fn === 'homonym/jev' ? { description: 'Jev the cat' } : {});
       }
-      return { data };
+      return { data, errors };
     },
     'https://api.github.com/repos/homonym/jev/readme': 'A cat named Jev.',
     'https://api.github.com/repos/': 'This project calls api.typesafe.ai to route prompts with choice questions.',
@@ -84,4 +86,86 @@ test('schema failure writes nothing and reports an error', async () => {
   const r = await run(opts(dir, '2026-09-27', t));
   assert.ok(r.errors.some((e) => /스키마/.test(e)));
   assert.equal(fs.existsSync(path.join(dir, 'data/index.json')), false);
+});
+
+test('renamed repo becomes one row; the old name is reported as vanished and its history dropped', async () => {
+  const dir = tmpRoot();
+  // 시드로 옛 이름을 먼저 색인해 둔다(검색으로는 재발견되지 않는 이름이라야 한다).
+  const srcPath = path.join(dir, 'config/sources.json');
+  const src = JSON.parse(fs.readFileSync(srcPath, 'utf8'));
+  src.seeds = [{ full_name: 'old/name', cat: 'routing' }];
+  fs.writeFileSync(srcPath, JSON.stringify(src));
+
+  await run(opts(dir, '2026-09-27', table()));
+  const idx1 = JSON.parse(fs.readFileSync(path.join(dir, 'data/index.json'), 'utf8'));
+  assert.ok(idx1.some((i) => i.full_name === 'old/name'));
+
+  // 검색은 이제 새 이름을 찾고, GraphQL은 옛 이름 · 새 이름 질의 둘 다 새 이름으로 응답한다(리네임 추적).
+  const t2 = table({ stars: 10 });
+  t2['https://api.github.com/search/repositories'] = { total_count: 3, items: [{ full_name: 'hit/three' }, { full_name: 'homonym/jev' }, { full_name: 'new/name' }] };
+  t2['https://api.github.com/graphql'] = (u, init) => {
+    const q = JSON.parse(init.body).query;
+    const data = {};
+    for (const [, alias, owner, name] of q.matchAll(/(r\d+): repository\(owner: "([^"]+)", name: "([^"]+)"\)/g)) {
+      const queried = `${owner}/${name}`;
+      const canonical = queried.toLowerCase() === 'old/name' ? 'new/name' : queried;
+      data[alias] = node(canonical, 10, canonical === 'homonym/jev' ? { description: 'Jev the cat' } : {});
+    }
+    return { data, errors: [] };
+  };
+
+  const r2 = await run(opts(dir, '2026-09-28', t2));
+  assert.equal(r2.items.filter((i) => i.full_name.toLowerCase() === 'new/name').length, 1, 'exactly one row for the renamed repo');
+  assert.ok(!r2.items.some((i) => i.full_name.toLowerCase() === 'old/name'));
+
+  const index2 = JSON.parse(fs.readFileSync(path.join(dir, 'data/index.json'), 'utf8'));
+  assert.equal(index2.filter((i) => i.full_name.toLowerCase() === 'new/name').length, 1);
+  assert.match(fs.readFileSync(path.join(dir, 'changes/2026-09-28.md'), 'utf8'), /## 사라짐\n\n- old\/name/);
+  const hist = JSON.parse(fs.readFileSync(path.join(dir, 'data/history/stars.json'), 'utf8'));
+  assert.equal(hist['old/name'], undefined, 'history of the old name is dropped');
+});
+
+test('GraphQL data:null is a fetch failure, not a mass-vanish; nothing is written', async () => {
+  const dir = tmpRoot();
+  await run(opts(dir, '2026-09-27', table()));
+  const idxBefore = fs.readFileSync(path.join(dir, 'data/index.json'));
+  const histBefore = fs.readFileSync(path.join(dir, 'data/history/stars.json'));
+
+  const t = table();
+  t['https://api.github.com/graphql'] = { data: null, errors: [{ message: 'timeout' }] };
+  const r = await run(opts(dir, '2026-09-28', t));
+  assert.ok(r.errors.some((e) => /메타 조회 실패/.test(e)));
+  assert.equal(r.written.length, 0);
+  assert.deepEqual(fs.readFileSync(path.join(dir, 'data/index.json')), idxBefore, 'index.json untouched');
+  assert.deepEqual(fs.readFileSync(path.join(dir, 'data/history/stars.json')), histBefore, 'star history untouched');
+});
+
+test('a non-NOT_FOUND GraphQL error leaves a previously indexed repo unchanged, not vanished', async () => {
+  const dir = tmpRoot();
+  const r1 = await run(opts(dir, '2026-09-27', table()));
+  const before = r1.items.find((i) => i.full_name === 'hit/three');
+  assert.ok(before);
+
+  const t2 = table({ stars: 12 });
+  t2['https://api.github.com/graphql'] = (u, init) => {
+    const q = JSON.parse(init.body).query;
+    const data = {};
+    const errors = [];
+    for (const [, alias, owner, name] of q.matchAll(/(r\d+): repository\(owner: "([^"]+)", name: "([^"]+)"\)/g)) {
+      const fn = `${owner}/${name}`;
+      if (fn === 'hit/three') { data[alias] = null; errors.push({ type: 'FORBIDDEN', path: [alias] }); continue; }
+      data[alias] = node(fn, 12, fn === 'homonym/jev' ? { description: 'Jev the cat' } : {});
+    }
+    return { data, errors };
+  };
+
+  const r2 = await run(opts(dir, '2026-09-28', t2));
+  const after = r2.items.find((i) => i.full_name === 'hit/three');
+  assert.deepEqual(after, before, 'kept exactly as run 1 left it');
+  const index2 = JSON.parse(fs.readFileSync(path.join(dir, 'data/index.json'), 'utf8'));
+  assert.ok(index2.some((i) => i.full_name === 'hit/three'));
+  const changes = fs.readFileSync(path.join(dir, 'changes/2026-09-28.md'), 'utf8');
+  assert.ok(!changes.includes('hit/three'), 'not reported as vanished (or anywhere else)');
+  const hist = JSON.parse(fs.readFileSync(path.join(dir, 'data/history/stars.json'), 'utf8'));
+  assert.deepEqual(hist['hit/three'], [['2026-09-27', 10]], 'stars not re-recorded today');
 });
