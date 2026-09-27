@@ -47,3 +47,26 @@ test('verifyAll stops on a code-search error and keeps the rest pending', async 
   assert.match(r.error, /403/);
   assert.equal(state.verify['o/b'], undefined);
 });
+
+test('decisionTypes: case-insensitive pattern, enum-style constants', () => {
+  assert.deepEqual(decisionTypes('QuestionType.CHOICE, QuestionType.NOUL'), ['choice', 'noul']);
+  assert.deepEqual(decisionTypes('{ "TYPE": "Score" }'), ['score']);
+  assert.deepEqual(decisionTypes('result.score and response.choices'), []);
+  assert.deepEqual(decisionTypes('JevType.choice'), ['choice']);
+  assert.deepEqual(decisionTypes('type: "NOUL"'), ['noul']);
+});
+
+test('verifyAll: maxQueries budget stops early, rest stay pending', async () => {
+  let searchCount = 0;
+  const gh = {
+    codeSearch: async () => { searchCount++; return []; },
+    fileText: async () => ''
+  };
+  const state = {};
+  const items = Array.from({ length: 20 }, (_, i) => ({ full_name: `o/repo${i}`, verified: 'docs' }));
+  const r = await verifyAll(items, gh, { budget: 15, maxQueries: 45, sleep: async () => {}, state, today: '2026-09-26' });
+  assert.equal(r.checked.length, 11);
+  assert.equal(r.pending.length, 9);
+  assert.equal(searchCount, 44);
+  assert.equal(r.error, null);
+});

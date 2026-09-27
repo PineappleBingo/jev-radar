@@ -4,7 +4,10 @@ const DOC_FILE = /\.(md|mdx|txt|rst)$/i;
 
 export function decisionTypes(text) {
   const out = new Set();
-  for (const m of String(text).matchAll(/['"]?type['"]?\s*[:=]\s*['"](choice|score|noul)['"]/g)) out.add(m[1]);
+  // Match: type/Type: "choice"/"CHOICE" or type='score' etc (case-insensitive, lowercase result)
+  for (const m of String(text).matchAll(/['"]?type['"]?\s*[:=]\s*['"](choice|score|noul)['"]/gi)) out.add(m[1].toLowerCase());
+  // Match enum-style: QuestionType.CHOICE, JevType.noul etc (case-insensitive)
+  for (const m of String(text).matchAll(/\b\w*Type\.(CHOICE|SCORE|NOUL|choice|score|noul)\b/gi)) out.add(m[1].toLowerCase());
   return [...out].sort();
 }
 
@@ -24,15 +27,19 @@ export async function verifyRepo(gh, fullName, { sleep, spacingMs = 6500 }) {
 
 const daysBetween = (a, b) => Math.round((Date.parse(b) - Date.parse(a)) / 864e5);
 
-export async function verifyAll(items, gh, { budget = 15, sleep, state, today }) {
+export async function verifyAll(items, gh, { budget = 15, maxQueries = 45, sleep, state, today }) {
   state.verify ||= {};
   const due = items.filter((i) => i.verified !== 'code' && (!state.verify[i.full_name] || daysBetween(state.verify[i.full_name], today) >= 14)).map((i) => i.full_name);
   const updates = new Map();
   const checked = [];
   let error = null;
+  let queriesUsed = 0;
   for (const fn of due.slice(0, budget)) {
+    // Check if next repo would exceed maxQueries budget
+    if (queriesUsed + VERIFY_QUERIES.length > maxQueries) break;
     try {
       const r = await verifyRepo(gh, fn, { sleep });
+      queriesUsed += r.queries;
       if (r.verified) updates.set(fn, { verified: r.verified, decision_types: r.decision_types });
       state.verify[fn] = today;
       checked.push(fn);
