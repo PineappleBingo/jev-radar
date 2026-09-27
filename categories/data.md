@@ -1,10 +1,10 @@
-# 🗂️ 데이터 정제·라벨링 (33)
+# 🗂️ 데이터 정제·라벨링 (28)
 
 [← README](../README.md)
 
 | 리포 | ⭐ | 🍴 | 한눈에 보기 | 태그 | 최근 푸시 |
 |---|---:|---:|---|---|---|
-| [AkashPriyadarshii/jev-curate](https://github.com/AkashPriyadarshii/jev-curate) | 86 | 11 | **무엇** 합성 데이터 및 사전학습용 Parquet·JSONL 대규모 데이터셋을 TypeSafe Jev API로 고속 정제·필터링하는 Rust/Python 도구다.<br>**판단** 각 행 데이터에 대해 수학적 추론 결함, 코드 정확성, 아첨(sycophancy) 여부 등을 프리셋 루브릭 기반의 Choice, Score, Noul로 평가한다.<br>**포인트** Rust 스트리밍 코어로 단일 HTTP 요청 내 다중 질문을 병렬 처리하며, CLI 및 PyO3 기반 Python 바인딩을 함께 제공한다. | 🆕 | 2026-09-25 |
+| [AkashPriyadarshii/jev-curate](https://github.com/AkashPriyadarshii/jev-curate) | 86 | 11 | **무엇** 합성 데이터 및 사전학습용 Parquet·JSONL 대규모 데이터셋을 TypeSafe Jev API로 고속 정제·필터링하는 Rust/Python 도구다.<br>**판단** 각 행 데이터에 대해 수학적 추론 결함, 코드 정확성, 아첨(sycophancy) 여부 등을 프리셋 루브릭 기반의 Choice, Score, Noul로 평가한다.<br>**포인트** Rust 스트리밍 코어로 단일 HTTP 요청 내 다중 질문을 병렬 처리하며, CLI 및 PyO3 기반 Python 바인딩을 함께 제공한다. | ✅ 🆕 | 2026-09-25 |
 | [nomanjack/smart-paste](https://github.com/nomanjack/smart-paste) | 41 | 6 | 요약 대기 · A little less copy-paste | 🆕 | 2026-09-19 |
 | [nexibeo/jev-cookbook](https://github.com/nexibeo/jev-cookbook) | 29 | 1 | 요약 대기 · Practical, tested recipes for TypeSafe's Jev decision model on OpenRouter: support triage, database indexing, file organizing, tagging, taxonomies, dedupe, PII detection, extraction, search re-ranking and a browser agent. | 🆕 | 2026-09-26 |
 | [chenmingtang830/jevgraph](https://github.com/chenmingtang830/jevgraph) | 27 | 5 | 요약 대기 · Evidence-backed knowledge graph construction with typed Jev relation decisions | 🆕 | 2026-09-20 |
@@ -16,8 +16,8 @@
 | [newuser7171/antivirus](https://github.com/newuser7171/antivirus) | 2 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-20 |
 | [thenewpotato/privacy-facts](https://github.com/thenewpotato/privacy-facts) | 2 | 0 | 요약 대기 · A nutrition label for privacy policies. Plain-language answers, confidence scores, and source excerpts powered by Jev. | 🆕 | 2026-09-18 |
 | [awun8191/jev-resume-analyzer](https://github.com/awun8191/jev-resume-analyzer) | 1 | 0 | 요약 대기 · CV diagnostics and job alignment with TypeSafe Jev, React and FastAPI | 🆕 | 2026-09-17 |
-| [cdubiel08/jev-ercot](https://github.com/cdubiel08/jev-ercot) | 1 | 0 | 요약 대기 · Texas retail electric plan shopper: Power to Choose corpus, Jev (TypeSafe System One) classifier, Next.js app | 🆕 | 2026-09-26 |
 | [CMaintz/jev-sort](https://github.com/CMaintz/jev-sort) | 1 | 1 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-25 |
+| [fabiocmazzo/maskdecide](https://github.com/fabiocmazzo/maskdecide) | 1 | 0 | 요약 대기 · MaskDecide turns context and questions into booleans, choices, and discrete scores | 🆕 | 2026-09-26 |
 | [keltokhy/jcol](https://github.com/keltokhy/jcol) | 1 | 0 | 요약 대기 · Apply natural-language codebooks to tables: a CLI and Python API with resumable annotation, exports, and label evaluation. | 🆕 | 2026-09-25 |
 | [manjunathshiva/jev-frontier-bench](https://github.com/manjunathshiva/jev-frontier-bench) | 1 | 0 | 요약 대기 · TypeSafe Jev 1.13 vs Claude Fable 5.1, GPT-6 Astra, Kimi K3, MiniMax M3 and DeepSeek V4.1 Flash on 200 typed decisions: accuracy, calibration, agreement with 100 human annotators, latency and cost | 🆕 | 2026-09-26 |
 | [mittal-parth/jev-experiments](https://github.com/mittal-parth/jev-experiments) | 1 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-18 |
@@ -25,18 +25,13 @@
 | [sedthh/xjevboost](https://github.com/sedthh/xjevboost) | 1 | 0 | 요약 대기 · Add as much tabular data as you want to Jev models using adaptive ensembles that learn to query only the rows and columns needed. | 🆕 | 2026-09-25 |
 | [sliday/jev-chess-algo](https://github.com/sliday/jev-chess-algo) | 1 | 0 | 요약 대기 · How jevchess.com asks JEV for a chess move: every legal move as the options of one typed Choice question, plus the hanging-piece check that describes them. | 🆕 | 2026-09-21 |
 | [WebGrga/jev-board-lab](https://github.com/WebGrga/jev-board-lab) | 1 | 0 | 요약 대기 · Interactive explorer and Jev question workspace for Jev Board datasets. | 🆕 | 2026-09-16 |
-| [chorust/duckjeu](https://github.com/chorust/duckjeu) | 0 | 0 | 요약 대기 · duckjeu — JEV-powered judgment for DuckDB. | 🆕 | 2026-09-25 |
+| [AlexisLeite/MTGenAI](https://github.com/AlexisLeite/MTGenAI) | 0 | 0 | **무엇** Excel 파일에 정리된 논문 제목과 초록을 읽어 TypeSafe Jev API로 체계적 문헌 검토 포함 여부를 분류하는 TypeScript 스크립트다.<br>**판단** 논문의 제목과 초록을 기반으로 기준을 평가해 include, maybe, exclude 중 하나를 choice 질문으로 판단시킨다.<br>**포인트** 로컬 엑셀 시트 연동, 자동 백업, 지문 기반 캐싱을 갖추었으며 40개 캘리브레이션 데이터로 프롬프트를 조정한 뒤 Jev 결정을 직접 기록한다. | 🆕 | 2026-09-27 |
+| [cyber-security-dev-dep-mitake-com-tw/jef](https://github.com/cyber-security-dev-dep-mitake-com-tw/jef) | 0 | 0 | 요약 대기 · jev-alternatives | 🆕 | 2026-09-27 |
 | [dtduc-git/jev-table](https://github.com/dtduc-git/jev-table) | 0 | 0 | 요약 대기 · AI columns for CSV/JSONL files with TypeSafe's Jev — typed answers, confidence, review queue, resume and cost preview. Local-first, BYO key. | 🆕 | 2026-09-20 |
-| [dxcently/Canti](https://github.com/dxcently/Canti) | 0 | 0 | 요약 대기 · Bluetooth VOX swipe and cursor control app with a Pico Pi 2w based with a custom System One fine-tuned jevlike classifer model. | 🆕 | 2026-09-27 |
 | [gbesse/jev-pairs](https://github.com/gbesse/jev-pairs) | 0 | 0 | 요약 대기 · Deduplicate, cluster, link and find contradictions with measurable blocking and a deterministic cascade. | 🆕 | 2026-09-21 |
-| [gitmoot/workspace-janitor](https://github.com/gitmoot/workspace-janitor) | 0 | 0 | 요약 대기 · Safe, Jev-assisted workspace hygiene for developer and AI-agent machines | 🆕 | 2026-09-27 |
-| [longyunBegin/meridian](https://github.com/longyunBegin/meridian) | 0 | 0 | 요약 대기 · 信息 → 归位到主题脉络 → 传导 → 结算。本地优先的判断账本。 | 🆕 | 2026-09-27 |
-| [numcap/Tidier](https://github.com/numcap/Tidier) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-25 |
-| [shiomi-toru/jev-dojo](https://github.com/shiomi-toru/jev-dojo) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-27 |
-| [sjarmak/nls-finetune-scix](https://github.com/sjarmak/nls-finetune-scix) | 0 | 3 | 요약 대기 · Fine-tuning infrastructure for converting natural-language questions into ADS/SciX literature search queries, targeting a complementary search feature for SciXplorer.org. Includes query validation and evaluation against the ADS API. | 🆕 | 2026-09-26 |
-| [wafaa-alhayek/masroufi](https://github.com/wafaa-alhayek/masroufi) | 0 | 0 | 요약 대기 · Expense tracking for Gaza households, built around bank statement exports and their note field. Uses Jev (TypeSafe System One) for typed, confidence-aware transaction categorisation. | 🆕 | 2026-09-26 |
+| [vonhatcuong/vn-legal-ref-extractor](https://github.com/vonhatcuong/vn-legal-ref-extractor) | 0 | 0 | 요약 대기 · Trích xuất văn bản pháp luật Việt Nam được dẫn chiếu, dùng regex + TypeSafe Jev | 🆕 | 2026-09-25 |
 | [yamadashy/jev-labeler-action](https://github.com/yamadashy/jev-labeler-action) | 0 | 0 | 요약 대기 · Zero-config AI issue labeling with TypeSafe's Jev. No generated text. Unofficial. | 🆕 | 2026-09-23 |
-| [yashkhou/jev-media-bridge](https://github.com/yashkhou/jev-media-bridge) | 0 | 0 | 요약 대기 · Local-first image and video evidence bridge for TypeSafe Jev / System One | 🆕 | 2026-09-25 |
+| [OkThought/sem-top](https://github.com/OkThought/sem-top) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-26 |
 
 ### AkashPriyadarshii/jev-curate
 
@@ -134,19 +129,19 @@ Review a CV with fast, structured AI judgments, optionally against a job posting
 
 </details>
 
-### cdubiel08/jev-ercot
-
-<details><summary>README 발췌</summary>
-
-Every English-language electricity offer on Power to Choose (the Public Utility Commission of Texas's comparison site), across all seven utility areas of the competitive ERCOT market, priced for any household from one bill and classified by Jev, TypeSafe's System One model.
-
-</details>
-
 ### CMaintz/jev-sort
 
 <details><summary>README 발췌</summary>
 
 jq for judgment — stream rows through TypeSafe AI's Jev and get typed classification/score columns + a confidence field, at pennies per 10k rows.
+
+</details>
+
+### fabiocmazzo/maskdecide
+
+<details><summary>README 발췌</summary>
+
+MaskDecide is a local FastAPI service that turns state and questions into typed decisions with the nvidia/Nemotron-Labs-Diffusion-3B diffusion model. It fills masked answer slots using a restricted set of token labels, then maps those labels to booleans, choices, or scores. It exposes a small local 
 
 </details>
 
@@ -206,11 +201,19 @@ A browser-first interface for turning CSV rows into structured Jev judgments.
 
 </details>
 
-### chorust/duckjeu
+### AlexisLeite/MTGenAI
 
 <details><summary>README 발췌</summary>
 
-duckjeu is a DuckDB extension for running JEV (Judgment-Enabled Vector) judgments on table or Parquet data and using the typed results in regular SQL. It uses row mode by default and offers an opt-in optimized mode.
+Integración TypeScript con Jev mediante la API de TypeSafe. Requiere Node.js 20 o superior.
+
+</details>
+
+### cyber-security-dev-dep-mitake-com-tw/jef
+
+<details><summary>README 발췌</summary>
+
+Badges come from the nightly run against third-party datasets, not from a number typed into this file.
 
 </details>
 
@@ -222,14 +225,6 @@ AI columns for CSV files, backed by TypeSafe's Jev: label every row with typed a
 
 </details>
 
-### dxcently/Canti
-
-<details><summary>README 발췌</summary>
-
-A hands-free phone controller driven by non-speech vocal sounds: hums that rise, fall, arch or dip, lip pops, tongue clicks, hisses and whistles, plus your own custom sounds.
-
-</details>
-
 ### gbesse/jev-pairs
 
 <details><summary>README 발췌</summary>
@@ -238,51 +233,11 @@ Deduplicate, cluster, link, and find contradictions across corpora with measurab
 
 </details>
 
-### gitmoot/workspace-janitor
+### vonhatcuong/vn-legal-ref-extractor
 
 <details><summary>README 발췌</summary>
 
-Safe, Jev-assisted workspace hygiene for developer and AI-agent machines.
-
-</details>
-
-### longyunBegin/meridian
-
-<details><summary>README 발췌</summary>
-
-&gt; 本地优先的判断账本：信息搬进来 → 归位到主题脉络 → 沿产业链传导 → 到期结算。 &gt; 资产不是知识地图，是你的校准曲线。
-
-</details>
-
-### numcap/Tidier
-
-<details><summary>README 발췌</summary>
-
-Automatically renames and files your screenshots and downloads based on what's in them. A menu bar app for macOS. Everything runs on your Mac.
-
-</details>
-
-### shiomi-toru/jev-dojo
-
-<details><summary>README 발췌</summary>
-
-Jev（TypeSafe AI の System One モデル）を、級・段で学ぶハンズオン教材。 クローンして、APIキーなしで、5分で最初の判定結果を見るところから始めます。
-
-</details>
-
-### sjarmak/nls-finetune-scix
-
-<details><summary>README 발췌</summary>
-
-Fine-tuning infrastructure for converting natural language to ADS/SciX scientific literature search queries.
-
-</details>
-
-### wafaa-alhayek/masroufi
-
-<details><summary>README 발췌</summary>
-
-Expense tracking for Gaza households, built around the one piece of data that is actually available: a bank statement export and its note field.
+Trích xuất các văn bản pháp luật được dẫn chiếu trong một văn bản tiếng Việt (luật, nghị định, thông tư, quyết định…), kèm ngày ban hành, ngày hiệu lực, trích yếu, vai trò trong văn bản và độ tin cậy. Dùng regex kết hợp TypeSafe Jev.
 
 </details>
 
@@ -294,10 +249,10 @@ Asks Jev one yes/no question per repository label, built from the description th
 
 </details>
 
-### yashkhou/jev-media-bridge
+### OkThought/sem-top
 
 <details><summary>README 발췌</summary>
 
-A local-first image and video evidence adapter for TypeSafe Jev / System One.
+A Next.js instrument for mapping a bounded Jev judgment across two ordered, human-written semantic axes. Opens immediately with a visibly labeled deterministic mock landscape.
 
 </details>

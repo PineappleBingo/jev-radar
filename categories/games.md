@@ -1,13 +1,13 @@
-# 🎮 게임·인터랙티브 (56)
+# 🎮 게임·인터랙티브 (66)
 
 [← README](../README.md)
 
 | 리포 | ⭐ | 🍴 | 한눈에 보기 | 태그 | 최근 푸시 |
 |---|---:|---:|---|---|---|
-| [TianyuCodings/NanoJev](https://github.com/TianyuCodings/NanoJev) | 2343 | 244 | **무엇** Qwen3-0.6B 백본 기반으로 토큰 디코딩 없이 병렬 판단 확률 분포를 출력하도록 구현된 오픈소스 Jev 복제 모델 및 훈련 파이프라인이다.<br>**판단** 게임 상태와 질문이 주어졌을 때 동적 선택지 중 최적 행동 확률(Choice), 명제 참/거짓 확률(Boolean), 정렬 등급 점수(Score)를 판단시킨다.<br>**포인트** 텍스트 토큰 생성 대신 상태·질문·후보군을 한 번의 포워드로 인코딩하고 전용 헤드로 확률 분포를 직접 출력해 4개 게임 제어에 적용했다. | 🆕 | 2026-09-21 |
-| [fhshaik/typesafe-mario](https://github.com/fhshaik/typesafe-mario) | 406 | 46 | **무엇** 구조화된 에뮬레이터 RAM 상태 데이터를 바탕으로 Super Mario Bros. 게임 컨트롤러 입력을 직접 결정하는 Jev 기반 에이전트 실험 프로젝트다.<br>**판단** 게임 상태 JSON을 입력받아 컨트롤러 매크로 선택(Choice), 현재 전방 점프의 유용성 여부(Noul), 즉각적인 위험도 등급(Score)을 판단한다.<br>**포인트** 스크린샷 대신 에뮬레이터 RAM과 텔레메트리를 구조화된 JSON으로 파싱해 전달하며, 타이밍 계산은 코드가 수행하고 Jev가 직접 입력을 결정한다. | 🆕 | 2026-09-16 |
-| [standardagents/jevpilot](https://github.com/standardagents/jevpilot) | 192 | 36 | **무엇** TypeSafe Jev 모델을 사용해 자율주행(오토파일럿) 행동을 시뮬레이션하는 Three.js 기반의 드라이빙 시뮬레이터 데모다.<br>**판단** 주변 교통, 도로 경계, 신호, 정지선 및 목표 경로 정보를 바탕으로 샘플링된 주행 경로 후보(조향 및 속도 조합)와 정지 여부 중 최적의 행동을 선택하도록 묻는다.<br>**포인트** 후보 경로 생성과 기하학적 제어 연산은 로컬 웹 워커에서 처리하고, 컴팩트한 상태 테이블만 서버를 통해 Jev API로 전달해 초당 1.5~4회 주행 경로를 선택한다. | 🆕 | 2026-09-17 |
-| [virajbhartiya/laya-vs-jev](https://github.com/virajbhartiya/laya-vs-jev) | 101 | 10 | 요약 대기 · Laya vs Jev: local MLX and hosted AI decisions playing T-Rex side by side, with live metrics and replay recording | 🆕 | 2026-09-21 |
+| [TianyuCodings/NanoJev](https://github.com/TianyuCodings/NanoJev) | 2347 | 244 | **무엇** Qwen3-0.6B 백본 기반으로 토큰 디코딩 없이 병렬 판단 확률 분포를 출력하도록 구현된 오픈소스 Jev 복제 모델 및 훈련 파이프라인이다.<br>**판단** 게임 상태와 질문이 주어졌을 때 동적 선택지 중 최적 행동 확률(Choice), 명제 참/거짓 확률(Boolean), 정렬 등급 점수(Score)를 판단시킨다.<br>**포인트** 텍스트 토큰 생성 대신 상태·질문·후보군을 한 번의 포워드로 인코딩하고 전용 헤드로 확률 분포를 직접 출력해 4개 게임 제어에 적용했다. | 🆕 | 2026-09-21 |
+| [fhshaik/typesafe-mario](https://github.com/fhshaik/typesafe-mario) | 407 | 47 | **무엇** 구조화된 에뮬레이터 RAM 상태 데이터를 바탕으로 Super Mario Bros. 게임 컨트롤러 입력을 직접 결정하는 Jev 기반 에이전트 실험 프로젝트다.<br>**판단** 게임 상태 JSON을 입력받아 컨트롤러 매크로 선택(Choice), 현재 전방 점프의 유용성 여부(Noul), 즉각적인 위험도 등급(Score)을 판단한다.<br>**포인트** 스크린샷 대신 에뮬레이터 RAM과 텔레메트리를 구조화된 JSON으로 파싱해 전달하며, 타이밍 계산은 코드가 수행하고 Jev가 직접 입력을 결정한다. | 🆕 | 2026-09-16 |
+| [standardagents/jevpilot](https://github.com/standardagents/jevpilot) | 193 | 36 | **무엇** TypeSafe Jev 모델을 사용해 자율주행(오토파일럿) 행동을 시뮬레이션하는 Three.js 기반의 드라이빙 시뮬레이터 데모다.<br>**판단** 주변 교통, 도로 경계, 신호, 정지선 및 목표 경로 정보를 바탕으로 샘플링된 주행 경로 후보(조향 및 속도 조합)와 정지 여부 중 최적의 행동을 선택하도록 묻는다.<br>**포인트** 후보 경로 생성과 기하학적 제어 연산은 로컬 웹 워커에서 처리하고, 컴팩트한 상태 테이블만 서버를 통해 Jev API로 전달해 초당 1.5~4회 주행 경로를 선택한다. | 🆕 | 2026-09-17 |
+| [virajbhartiya/laya-vs-jev](https://github.com/virajbhartiya/laya-vs-jev) | 102 | 10 | 요약 대기 · Laya vs Jev: local MLX and hosted AI decisions playing T-Rex side by side, with live metrics and replay recording | 🆕 | 2026-09-21 |
 | [emrickgarrett/OneVOneJev](https://github.com/emrickgarrett/OneVOneJev) | 39 | 9 | **무엇** Three.js와 Node.js 기반 브라우저 1v1 FPS 환경에서 TypeSafe System One 기반 AI 봇과 스나이퍼 대결을 펼치는 게임이다.<br>**판단** 서버가 약 9Hz 주기로 구조화된 게임 상태를 바탕으로 이동, 조준각(yaw, pitch), ADS, 발사, 점프 여부를 Choice와 Noul로 질의한다.<br>**포인트** API 장애 시 매치가 멈추지 않도록 동일한 액션 인터페이스를 공유하는 휴리스틱 로직을 폴백으로 구현했다. | 🆕 | 2026-09-18 |
 | [Baba88611/detroit-ai-player](https://github.com/Baba88611/detroit-ai-player) | 59 | 4 | 요약 대기 · Let Your AI Play Detroit：Become Human | 🆕 | 2026-09-22 |
 | [phyous/tsai-sc](https://github.com/phyous/tsai-sc) | 27 | 2 | **무엇** 구조화된 스타크래프트 셰어웨어 게임 상태를 관찰하고 TypeSafe Jev 모델의 판단으로 키보드와 마우스 입력을 제어하는 하네스 리포지토리다.<br>**판단** 정리된 아군 및 시야 상태를 바탕으로 유닛 생산, 자원 채취, 탐색, 업그레이드, 전투 등 어떤 명령을 실행할지 choice 형태로 선택하게 한다.<br>**포인트** 화면 캡처가 아닌 구조화된 게임 데이터를 사용하며, 상태 읽기와 추론 중 게임을 일시정지하고 경제와 군사 결정을 분리해 원본 미션 승리를 달성했다. | 🆕 | 2026-09-16 |
@@ -15,6 +15,7 @@
 | [milanboers/jev-plays-pokemon](https://github.com/milanboers/jev-plays-pokemon) | 6 | 1 | **무엇** RAM과 타일맵으로 추출한 게임 상태를 텍스트로 읽고 TypeSafe Jev의 판단을 거쳐 Game Boy 에뮬레이터(PyBoy)로 포켓몬스터 레드를 자동 플레이하는 자율 에이전트다.<br>**판단** 대화와 맵 정보로 구성된 텍스트 스냅샷을 기반으로 현재 턴의 상위 목표(Choice)와 각 버튼 입력/이동이 최적인지 여부(Noul 예/아니오)를 판단시킨다.<br>**포인트** 비전 모델이나 대화 기록 없이 텍스트 스냅샷과 자체 단기 메모리 주입으로 동작하며, Jev의 결정을 A* 경로 탐색과 결정론적 안전 규칙으로 보정해 실행한다. | 🆕 | 2026-09-18 |
 | [ArturSkowronski/kNES](https://github.com/ArturSkowronski/kNES) | 34 | 4 | 요약 대기 · Educational implementation of NES emulator in Kotlin, based on Java vNES emulator | 🆕 | 2026-09-22 |
 | [enoyola/jev-grand-prix](https://github.com/enoyola/jev-grand-prix) | 7 | 0 | 요약 대기 · An F1 racing game where TypeSafe's Jev picks the racing line and the pedals, and learns each corner's limit between laps | 🆕 | 2026-09-21 |
+| [IzumiSatoshi/vox-arcana](https://github.com/IzumiSatoshi/vox-arcana) | 7 | 1 | 요약 대기 · Voice-cast magic arena game. Speak or type incantations, powered by Jev, with local interpretation options. | 🆕 | 2026-09-27 |
 | [jammaru/jev-lab](https://github.com/jammaru/jev-lab) | 7 | 0 | 요약 대기 · 100 AI NPCs live in a tiny town. Jev chooses the next action; the world writes the story. | 🆕 | 2026-09-24 |
 | [joshlarsen/jev-t-rex-runner](https://github.com/joshlarsen/jev-t-rex-runner) | 7 | 3 | 요약 대기 · Chrome dino game played by Typesafe AI Jev model | 🆕 | 2026-09-17 |
 | [wondertwins/jev-benchmark](https://github.com/wondertwins/jev-benchmark) | 7 | 1 | 요약 대기 · Benchmarks and a playground for TypeSafe's Jev (System One) model: chess, and who-is-the-player-talking-to for speech-to-text game NPCs | 🆕 | 2026-09-16 |
@@ -25,20 +26,23 @@
 | [phureewat29/jev-got](https://github.com/phureewat29/jev-got) | 3 | 0 | 요약 대기 · Jev (TypeSafe AI) PoC through Game of Thrones | 🆕 | 2026-09-19 |
 | [phyous/tsai-civ2](https://github.com/phyous/tsai-civ2) | 3 | 1 | 요약 대기 · TypeSafe Jev plays original Civilization II in a browser, with live action probabilities. Experimental full-game harness. | 🆕 | 2026-09-18 |
 | [siroccomask/snake-jev](https://github.com/siroccomask/snake-jev) | 3 | 0 | 요약 대기 · Snake controlled by parallel Jev assessments, with one API call per game tick. | 🆕 | 2026-09-19 |
-| [stephenlb/truetype.ai-open](https://github.com/stephenlb/truetype.ai-open) | 3 | 0 | 요약 대기 · Open source replica of Truetype AI using open weight models | 🆕 | 2026-09-25 |
 | [vtrivedy/jev-plays-games](https://github.com/vtrivedy/jev-plays-games) | 3 | 1 | 요약 대기 · Chess, Connect Four, and a decision model. Play Jev or watch Jev play itself. | 🆕 | 2026-09-18 |
 | [ellistev/typesafe-minecraft-demo](https://github.com/ellistev/typesafe-minecraft-demo) | 2 | 2 | 요약 대기 · A Minecraft Java player controlled by TypeSafe AI, with live decisions, Canadian flag building, and a side-by-side dashboard. | 🆕 | 2026-09-17 |
 | [iammusham/jev-snake](https://github.com/iammusham/jev-snake) | 2 | 0 | 요약 대기 · An experimental Snake environment where the game engine owns deterministic rules and TypeSafe AI's Jev makes the movement decision from structured state on every tick. | 🆕 | 2026-09-17 |
 | [jaibhasin/jev-flappy-bird](https://github.com/jaibhasin/jev-flappy-bird) | 2 | 0 | 요약 대기 · Jev and GPT-6 Luna race through the Flappy Bird Game | 🆕 | 2026-09-25 |
 | [KyleKreuter/jev2048](https://github.com/KyleKreuter/jev2048) | 2 | 0 | 요약 대기 · Let Jev (TypeSafeAI) solve 2048 | 🆕 | 2026-09-17 |
+| [mojomast/velvetrp](https://github.com/mojomast/velvetrp) | 2 | 0 | 요약 대기 · Local-first AI roleplay and campaign RPG where the model proposes and the server owns what became true. | 🆕 | 2026-09-26 |
+| [PikkonMG/UOTerm](https://github.com/PikkonMG/UOTerm) | 2 | 3 | 요약 대기 · UOTerm is a headless Ultima Online client. | 🆕 | 2026-09-27 |
 | [rythmn1111/doom-war](https://github.com/rythmn1111/doom-war) | 2 | 0 | 요약 대기 · Two System One models fight a real Doom deathmatch. Laya (322M, open weights, local MLX) vs Jev (TypeSafe hosted). Same state, same typed questions, same shield — only the model differs. | 🆕 | 2026-09-21 |
 | [shantanugoel/jev-games](https://github.com/shantanugoel/jev-games) | 2 | 0 | 요약 대기 · Visual Jev lab for multiple games and emulator platforms | 🆕 | 2026-09-17 |
 | [southleft/component-charades](https://github.com/southleft/component-charades) | 2 | 0 | 요약 대기 · A Taboo-style parlour game for design systems, refereed by Jev (TypeSafe System One model) | 🆕 | 2026-09-22 |
 | [ZeroTang05/Situation-Puzzle](https://github.com/ZeroTang05/Situation-Puzzle) | 2 | 1 | 요약 대기 · 这是 Jev 海龟汤 — 一款基于 Jev 模型打造的开源海龟汤情境猜谜游戏。每一道「是 / 否 / 无关」的判断，都由 Jev 现场推理；每一次「还原真相」的内容，都由 Jev 给出判断。没有预设脚本，只有会思考的 Jev，和一款"活"过来的海龟汤。UGC 内容支持，题库因你而丰富。 | 🆕 | 2026-09-27 |
 | [ARCJ137442/jev-life](https://github.com/ARCJ137442/jev-life) | 1 | 0 | 요약 대기 · The Chess of Life × Jev — an experimental game: write a new ruleset, then watch a decision model play it. \| 生命棋 × Jev：实验性游戏设计——写一套新规则，然后看 Jev 怎么玩 | 🆕 | 2026-09-22 |
 | [darthblanc/tictacjev](https://github.com/darthblanc/tictacjev) | 1 | 0 | 요약 대기 · A tic-tac-toe app where one player is Jev, TypeSafe AI's System One Model with live confidence scores and probabilities. | 🆕 | 2026-09-23 |
+| [dengyie/decidex](https://github.com/dengyie/decidex) | 1 | 0 | 요약 대기 · Industrial-grade Decision Foundation Layer for System One Game-Playing Models (Jev / NanoJev) | 🆕 | 2026-09-25 |
 | [Eliot5566/jev-arena](https://github.com/Eliot5566/jev-arena) | 1 | 0 | 요약 대기 · Write a fighter in plain English. Jev pilots it in real time. PR-driven ladder, swappable brains. | 🆕 | 2026-09-25 |
 | [GabrielBigardi/TibiaJevBot](https://github.com/GabrielBigardi/TibiaJevBot) | 1 | 0 | 요약 대기 · An autonomous game-playing decision engine for Tibia (Open Tibia / OTServ) powered by TypeSafe AI's Jev System One model. | 🆕 | 2026-09-22 |
+| [het2576/jev-wordle](https://github.com/het2576/jev-wordle) | 1 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-26 |
 | [JanDalhuysen/jev-clash-royale-test](https://github.com/JanDalhuysen/jev-clash-royale-test) | 1 | 1 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-19 |
 | [MachineLearning-Nerd/jev-tetris](https://github.com/MachineLearning-Nerd/jev-tetris) | 1 | 0 | 요약 대기 · A visual TypeSafe demo where Jev chooses verified Tetris placements. | 🆕 | 2026-09-17 |
 | [memorysaver/jev-atari-lab](https://github.com/memorysaver/jev-atari-lab) | 1 | 0 | 요약 대기 · Challenge Atari with Jev: structured decisions, value questions, and replayable experiments | 🆕 | 2026-09-27 |
@@ -46,20 +50,26 @@
 | [rchovatiya88/cyber-breach-jev](https://github.com/rchovatiya88/cyber-breach-jev) | 1 | 0 | 요약 대기 · Cyber-Breach: The Jev Protocol - A tactical cyberpunk arena combat game powered by TypeSafe AI Jev System One decision model | 🆕 | 2026-09-18 |
 | [tubone24/jev-practice-speed](https://github.com/tubone24/jev-practice-speed) | 1 | 0 | 요약 대기 · A WebGL demo where you play the card game Speed against a CPU whose brain is TypeSafe AI's Jev. The whole point of the app is to measure and show Jev's decision speed and decision accuracy in real time. | 🆕 | 2026-09-21 |
 | [gkvoelkl/rust-bevy-jev-ants](https://github.com/gkvoelkl/rust-bevy-jev-ants) | 0 | 0 | **무엇** Rust Bevy 기반으로 제작되어 플레이어의 자연어 명령에 따라 각 개미가 개별 행동 의도를 결정하는 시뮬레이션 게임이다.<br>**판단** 여왕 개미(플레이어)의 텍스트 명령과 개미의 상황을 바탕으로 다음에 수행할 행동 의도(intent)를 선택지로 제시해 판단하도록 요청한다.<br>**포인트** 물리 및 페로몬 이동 시뮬레이션은 60Hz로 고전적으로 처리하고, Jev 모델 의사결정 계층은 비동기로 분리했으며 룰 기반 폴백 없이 동작한다. | 🆕 | 2026-09-26 |
-| [andreteow/jev-sky-islands](https://github.com/andreteow/jev-sky-islands) | 0 | 0 | 요약 대기 · Sky Island Hatchlings — hatch a creature and talk your way across 10 floating islands. Powered by TypeSafe Jev, GPT-6 Luna, GPT Image 2 and Seedance 2.5. | 🆕 | 2026-09-25 |
-| [bongbong11/-_-](https://github.com/bongbong11/-_-) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-27 |
+| [roby-avo/impulse](https://github.com/roby-avo/impulse) | 0 | 0 | **무엇** Unity 6 기반 옥상 물리 배틀 아레나에서 사용자가 로컬 Laya 모델 또는 TypeSafe 지원 모델과 대결하거나 AI끼리 대결하게 하는 물리 시뮬레이션 게임이다.<br>**판단** 상대 로봇의 접근, 오브젝트 위치, 낙하 위기 등 물리 게임 상황 관측 데이터를 바탕으로 이동·점프·회피·잡기·밀기 등 가능한 행동 목록 중 다음 최적 행동을 선택하도록 한다.<br>**포인트** 동일한 물리 규칙 환경에서 모델 관측 데이터와 지시문, 의사결정 빈도를 실험실(F2)에서 실시간으로 바꾸고 행동 분포 및 추론 지연 시간을 비교 분석할 수 있다. | 🆕 | 2026-09-27 |
 | [bugkiwi/turing-jail](https://github.com/bugkiwi/turing-jail) | 0 | 0 | 요약 대기 · Turing Jail - Let's get out! | 🆕 | 2026-09-18 |
 | [codaaiteam/jev-wikiracer](https://github.com/codaaiteam/jev-wikiracer) | 0 | 0 | 요약 대기 · You vs Jev: race across Wikipedia by clicking links; Jev picks the closest of dozens each hop, one real typed decision, no hallucination. Single-file, no build. Play free: jevtypesafeai.com/games/jev-wikiracer | 🆕 | 2026-09-25 |
+| [dagfinndybvig/Chess](https://github.com/dagfinndybvig/Chess) | 0 | 0 | 요약 대기 · A small 8x8 chess game where White is played by Jev, TypeSafe AI System One decision model - following the Go/Fight pattern | 🆕 | 2026-09-26 |
+| [Didixdan/jev-games-poc](https://github.com/Didixdan/jev-games-poc) | 0 | 0 | 요약 대기 · Many games resolved using Typesafe AI SystemOne model | 🆕 | 2026-09-25 |
+| [drilonademaj-ci/jev-snake](https://github.com/drilonademaj-ci/jev-snake) | 0 | 0 | 요약 대기 · A Snake game that TypeSafe's Jev model plays, with live latency and cost on screen. | 🆕 | 2026-09-25 |
+| [GunaTeja777/typesafe-mario-ai](https://github.com/GunaTeja777/typesafe-mario-ai) | 0 | 0 | 요약 대기 · Real-time Super Mario game autonomously controlled by TypeSafe AI's "Jev" System One Decision Architecture. Features sub-100ms decision loops, live prompt &amp; probability telemetry, multi-provider support (OpenRouter Jev &amp; Groq LPUs), and an offline neural simulator. | 🆕 | 2026-09-25 |
 | [hectorlcastro09/jev-torneo-animales](https://github.com/hectorlcastro09/jev-torneo-animales) | 0 | 0 | 요약 대기 · Winner-stays-on animal tournament refereed by Jev (TypeSafe System One): a local game to feel how fast typed decisions are. UI in Spanish. | 🆕 | 2026-09-21 |
 | [JackZH26/Jev-Live](https://github.com/JackZH26/Jev-Live) | 0 | 0 | 요약 대기 · Open-source Windows studio for Steam games: local AI host, editable avatars/chat, manual or JEV-assisted play, YouTube/Twitch OAuth and OBS streaming to YouTube/Twitch/X. Five-language UI; developer preview. | 🆕 | 2026-09-25 |
 | [muratcanberber/JEV-TheFishGame](https://github.com/muratcanberber/JEV-TheFishGame) | 0 | 0 | 요약 대기 · 🐠 A multiplayer fish game where every AI decision is a TypeSafe Jev (System One) call — flee, hunt, roam, with live confidence bars. Node + WebSocket + Three.js. | 🆕 | 2026-09-22 |
+| [OuchengLiu/Jev-Game-Theory-Arena](https://github.com/OuchengLiu/Jev-Game-Theory-Arena) | 0 | 0 | 요약 대기 · Play poker, liar's dice, prisoner's dilemma and more against Jev, TypeSafe's System One model. It reads the situation and returns a probability for each legal move: a live mixed strategy. Bilingual EN/中文, runs in the browser. Educational, no real money. | 🆕 | 2026-09-27 |
+| [pedroarruda07/jev-plays-tetris](https://github.com/pedroarruda07/jev-plays-tetris) | 0 | 0 | 요약 대기 · Automating Tetris with Jev (TypeSafe AI) | 🆕 | 2026-09-25 |
 | [Rodert/JevPlayer](https://github.com/Rodert/JevPlayer) | 0 | 0 | 요약 대기 · Jev Player Demo | 🆕 | 2026-09-21 |
+| [Rohan0603/jev-tic-tac-toe](https://github.com/Rohan0603/jev-tic-tac-toe) | 0 | 0 | 요약 대기 · React Tic-Tac-Toe powered by TypeSafe Jev System One decisions. | 🆕 | 2026-09-25 |
 | [Sayangenri/jev-adventure-game](https://github.com/Sayangenri/jev-adventure-game) | 0 | 0 | 요약 대기 · A visual AI powered text adventure where every outcome is decided by Jev TypeSafe's structured decision model. | 🆕 | 2026-09-26 |
 | [scd13150/jev-field-notes](https://github.com/scd13150/jev-field-notes) | 0 | 0 | 요약 대기 · Applications, measurements and boundary analysis built on TypeSafe Jev (System One): a Jev-driven fighting game, emotion-controlled TTS, and a capability-ceiling probe | 🆕 | 2026-09-22 |
 | [sergeville/HangmanGame](https://github.com/sergeville/HangmanGame) | 0 | 0 | 요약 대기 · Rust desktop Hangman with 200 words, progressive levels, an offline Odds solver, and optional JeV or local Kev duels. | 🆕 | 2026-09-26 |
-| [uehaj/jev-conway-lifegame](https://github.com/uehaj/jev-conway-lifegame) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-25 |
+| [tbrought/honeytongue](https://github.com/tbrought/honeytongue) | 0 | 0 | 요약 대기 · "Characters your players can actually argue with." Honeytongue is a persuasion mechanic for text games: give a character a persona and a goal, pass in whatever the player typed, and find out whether they were convinced, judged by that character's values. It's powered by Jev, TypeSafe's typed decision model. | 🆕 | 2026-09-27 |
 | [YV17labs/TokenShooter](https://github.com/YV17labs/TokenShooter) | 0 | 0 | 요약 대기 · A Jev-like System One model in your browser: a small language model plays a first-person shooter on your GPU, one token per move. No server. | 🆕 | 2026-09-27 |
-| [zuoliangyu/jev_puke](https://github.com/zuoliangyu/jev_puke) | 0 | 0 | 요약 대기 · jev 扑克牌测试 | 🆕 | 2026-09-27 |
+| [scavin/Jev-2048](https://github.com/scavin/Jev-2048) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-27 |
 
 ### TianyuCodings/NanoJev
 
@@ -149,6 +159,14 @@ A racing game where TypeSafe's Jev drives an F1 car live, and you can race it.
 
 </details>
 
+### IzumiSatoshi/vox-arcana
+
+<details><summary>README 발췌</summary>
+
+A browser FPS magic game where you fight AI opponents or another player by speaking incantations or typing spells. Your words go through the Web Speech API, then Jev (TypeSafe's System One decision model) turns them into a procedurally generated spell: an element, a form, and a dozen continuous para
+
+</details>
+
 ### jammaru/jev-lab
 
 <details><summary>README 발췌</summary>
@@ -229,14 +247,6 @@ A desktop Snake experiment powered by Jev / System One. Jev assesses the board; 
 
 </details>
 
-### stephenlb/truetype.ai-open
-
-<details><summary>README 발췌</summary>
-
-A local replica of the Jev TypeSafe AI System One API, tuned to match its latency while reading letter logits from Gemma 4 12B. POST /v1/systemone accepts and returns the original formats for all three supported question types.
-
-</details>
-
 ### vtrivedy/jev-plays-games
 
 <details><summary>README 발췌</summary>
@@ -274,6 +284,22 @@ An experimental Snake environment where the game engine owns deterministic rules
 <details><summary>README 발췌</summary>
 
 TypeSafe's Jev plays 2048 — many games in parallel, live in your browser.
+
+</details>
+
+### mojomast/velvetrp
+
+<details><summary>README 발췌</summary>
+
+VelvetRP is a local-first AI roleplay and campaign RPG application built around one strong idea:
+
+</details>
+
+### PikkonMG/UOTerm
+
+<details><summary>README 발췌</summary>
+
+UOTerm is a headless Ultima Online client. Its main purpose is to let AI agents control player characters and play the game the way a human player does: see the world, walk, fight, gather, talk, use items, and answer gumps. A second purpose is testing and debugging by humans.
 
 </details>
 
@@ -325,6 +351,14 @@ Tic-tac-toe, but every move for one side comes from Jev, a System One Model buil
 
 </details>
 
+### dengyie/decidex
+
+<details><summary>README 발췌</summary>
+
+DecideX 是专为 System One（快思考）超低延迟结构化决策模型（如 TypeSafe Jev、开源 NanoJev 及专用二分类/多选小模型 SLM）量身打造的工业级通用决策基座框架。
+
+</details>
+
 ### Eliot5566/jev-arena
 
 <details><summary>README 발췌</summary>
@@ -338,6 +372,14 @@ Write a fighter in plain English. A System One model pilots it several times a s
 <details><summary>README 발췌</summary>
 
 An autonomous game-playing decision engine for Tibia (Open Tibia / OTServ) powered by TypeSafe AI's Jev System One model.
+
+</details>
+
+### het2576/jev-wordle
+
+<details><summary>README 발췌</summary>
+
+Wordle, played live by Jev, TypeSafe's System One model. Every turn, the game builds a short list of strong candidate words, asks Jev once to choose between them, shows the probability Jev gave every option, and then plays Jev's pick. The tiles flip exactly as in the real game.
 
 </details>
 
@@ -397,19 +439,11 @@ An ant colony where every ant asks TypeSafe Jev what to do next. You are the que
 
 </details>
 
-### andreteow/jev-sky-islands
+### roby-avo/impulse
 
 <details><summary>README 발췌</summary>
 
-Play: https://jev-sky-islands-rouge.vercel.app (ask whoever shared this link for the invite code)
-
-</details>
-
-### bongbong11/-_-
-
-<details><summary>README 발췌</summary>
-
-최근 RP 1~5턴과 채팅방별 구조화 상태를 Jev가 직접 판독하고, 지금 필요한 짧은 진행 프롬프트만 다음 응답에 주입하는 SillyTavern 확장입니다. 일반 LLM의 사전 요약 단계를 거치지 않습니다.
+A physics playground where decision-making models meet on the rooftop.
 
 </details>
 
@@ -426,6 +460,38 @@ Turing Jail is a three-level AI interrogation game powered by TypeSafe Jev Syste
 <details><summary>README 발췌</summary>
 
 You vs Jev — race across Wikipedia. From the same start article, you and Jev both try to reach a target article using only in-article links. You click; Jev — TypeSafe AI's System One decision model — makes one real call per hop, picking the link closest to the target out of dozens. First to the targ
+
+</details>
+
+### dagfinndybvig/Chess
+
+<details><summary>README 발췌</summary>
+
+A small chess game where the White pieces are played by Jev, TypeSafe AI's "System One" decision model, when an API key is available. Without a key, White falls back to a built-in local heuristic AI. You play Black. In autoplay mode, the local heuristic drives Black against Jev's White (or against i
+
+</details>
+
+### Didixdan/jev-games-poc
+
+<details><summary>README 발췌</summary>
+
+A proof of concept using JEV (TypeSafe AI's System One model) as the decision engine for classic games. The AI doesn't generate text — it returns typed, probability-weighted choices that the game loop consumes directly.
+
+</details>
+
+### drilonademaj-ci/jev-snake
+
+<details><summary>README 발췌</summary>
+
+A Snake game where TypeSafe's Jev model picks every move, with live latency and cost on screen.
+
+</details>
+
+### GunaTeja777/typesafe-mario-ai
+
+<details><summary>README 발췌</summary>
+
+&gt; A flock of angry birds that evolves to fly through castle towers using neuroevolution and genetic algorithms — with no datasets and no backpropagation. Now featuring Human vs AI Flock Mode, Procedural Web Audio, Hyperparameter Lab, and Model DNA Export/Import.
 
 </details>
 
@@ -453,11 +519,35 @@ A real-time multiplayer fish game where the AI literally decides through a langu
 
 </details>
 
+### OuchengLiu/Jev-Game-Theory-Arena
+
+<details><summary>README 발췌</summary>
+
+Play classic game-theory games against Jev, an AI that thinks in probabilities. 与用概率思考的 AI 对弈：德州扑克、吹牛骰子、囚徒困境……
+
+</details>
+
+### pedroarruda07/jev-plays-tetris
+
+<details><summary>README 발췌</summary>
+
+A responsive TypeScript Tetris game with an independent, typed game engine.
+
+</details>
+
 ### Rodert/JevPlayer
 
 <details><summary>README 발췌</summary>
 
 基于 TypeSafe Jev API 的静态游戏站点。
+
+</details>
+
+### Rohan0603/jev-tic-tac-toe
+
+<details><summary>README 발췌</summary>
+
+A small React game where TypeSafe Jev chooses the bot's next legal move.
 
 </details>
 
@@ -485,11 +575,11 @@ A Rust desktop Hangman game with 200 words arranged into ten approximate difficu
 
 </details>
 
-### uehaj/jev-conway-lifegame
+### tbrought/honeytongue
 
 <details><summary>README 발췌</summary>
 
-Jev（TypeSafe の System One モデル jev-1.13.0）に、ライフゲームの各セルが次の世代で生きているかを判定させ、世代を進めるデモです。
+Characters your players can actually argue with. Honeytongue is a persuasion mechanic for text games: give a character a persona and a goal, pass in whatever the player typed, and find out whether they were convinced, judged by that character's values. It's powered by Jev, TypeSafe's typed decision 
 
 </details>
 
@@ -501,10 +591,10 @@ There is no backend: the model (Qwen3.5) is downloaded once, then runs locally t
 
 </details>
 
-### zuoliangyu/jev_puke
+### scavin/Jev-2048
 
 <details><summary>README 발췌</summary>
 
-一个可部署为 Node.js 服务或 Docker 容器的三人斗地主完整牌局回放，用来展示 E-FlowCode Jev 结构化决策 API。项目仍可作为纯静态演示页面运行。
+Watch Jev play 2048 automatically, in the new dashboard or the original game window.
 
 </details>
