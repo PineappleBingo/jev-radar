@@ -3,7 +3,10 @@ export const EVIDENCE = /typesafe|systemone|system one|api\.typesafe\.ai|@typesa
 
 export function readmeExcerpt(md) {
   if (!md) return null;
-  const text = String(md).replace(/```[\s\S]*?```/g, '\n\n').replace(/<[^>]+>/g, ' ');
+  let text = String(md).replace(/```[\s\S]*?```/g, '\n\n');
+  // Drop HTML block lines (lines starting with < after trim) before stripping tags
+  text = text.split('\n').filter((l) => !/^</.test(l.trim())).join('\n');
+  text = text.replace(/<[^>]+>/g, ' ');
   for (const para of text.split(/\n\s*\n/)) {
     const lines = para.split('\n').map((l) => l.trim()).filter((l) => l && !/^#{1,6}\s/.test(l) && !/^(\[!\[|!\[)/.test(l) && !/^[-=]{3,}$/.test(l));
     if (!lines.length) continue;
@@ -26,7 +29,15 @@ export function classifyRules(text, categories, registryCat = null) {
   let best = null;
   let bestHits = 0;
   for (const c of categories) {
-    const hits = c.keywords.filter((k) => t.includes(k)).length;
+    let hits = 0;
+    for (const k of c.keywords) {
+      const isPrefix = k.endsWith('*');
+      const kw = isPrefix ? k.slice(0, -1) : k;
+      const escaped = kw.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      const pattern = isPrefix ? `(^|[^a-z0-9])${escaped}` : `(^|[^a-z0-9])${escaped}($|[^a-z0-9])`;
+      const regex = new RegExp(pattern, 'g');
+      if (regex.test(t)) hits++;
+    }
     if (hits > bestHits) { best = c; bestHits = hits; }
   }
   return pick(best || categories.find((c) => c.slug === 'other'));

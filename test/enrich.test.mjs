@@ -31,6 +31,22 @@ test('rules classification: registry category wins, else keyword count, else oth
   assert.equal(classifyRules('x', cats).confidence, null);
 });
 
+test('word boundary matching: no substring bleed', () => {
+  assert.equal(classifyRules('A medieval fantasy adventure', cats).slug, 'other', 'medieval should not match eval');
+  const httpClient = classifyRules('A typed HTTP client for Go', cats);
+  assert.equal(httpClient.slug, 'infra', 'client matches infra');
+  assert.equal(classifyRules('the clinic app', cats).slug, 'other', 'clinic should not match cli from client');
+  assert.equal(classifyRules('evaluation harness for judges', cats).slug, 'eval', 'evaluation prefix match');
+});
+
+test('HTML blocks and decorative elements', () => {
+  const centered = '<div align="center">\n  <img src="logo.png"/>\n  <h1>MyProject</h1>\n  <p>A short tagline here</p>\n</div>\n\nMyProject routes prompts with the TypeSafe Jev API and logs every decision.';
+  assert.equal(readmeExcerpt(centered), 'MyProject routes prompts with the TypeSafe Jev API and logs every decision.');
+  // Same HTML block on one line (still separated from prose by blank line)
+  const oneLine = '<div align="center"><img src="logo.png"/><h1>MyProject</h1><p>A short tagline here</p></div>\n\nMyProject routes prompts with the TypeSafe Jev API and logs every decision.';
+  assert.equal(readmeExcerpt(oneLine), 'MyProject routes prompts with the TypeSafe Jev API and logs every decision.');
+});
+
 test('spam flags', () => {
   assert.deepEqual(spamFlags({ ...meta, archived: true, fork: true }, 'long enough readme '.repeat(20)), ['archived', 'fork']);
   assert.deepEqual(spamFlags({ ...meta, stars: 0, description: null }, ''), ['empty', 'spam-suspect']);
