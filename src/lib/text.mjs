@@ -1,4 +1,4 @@
-// 복사본 — PineappleBingo/upgrade-scout skills/upgrade-scout/scripts/lib/text.mjs @ c7f3a69. 고칠 때는 원본을 먼저.
+// 복사본 — PineappleBingo/upgrade-scout skills/upgrade-scout/scripts/lib/text.mjs @ 5c87816. 고칠 때는 원본을 먼저.
 // 텍스트 도우미 — frontmatter, 한글/CJK 판별, 토큰 추정, HTML 벗기기, 정규 JSON, 해시.
 import crypto from 'node:crypto';
 
@@ -104,6 +104,7 @@ export function extractJsonBlock(text) {
   return JSON.parse(blocks[0]);
 }
 
+/** 글자(한글 포함)·숫자만 남긴 소문자 slug. 라틴 악센트는 벗긴다(é → e). */
 export function slugify(s) {
-  return String(s).toLowerCase().normalize('NFKD').replace(/[^\w\s-]/g, '').trim().replace(/[\s_]+/g, '-').replace(/-+/g, '-').slice(0, 64) || 'item';
+  return String(s).toLowerCase().normalize('NFKD').replace(/\p{M}/gu, '').normalize('NFC').replace(/[^\p{L}\p{N}\s_-]/gu, '').trim().replace(/[\s_]+/g, '-').replace(/-+/g, '-').slice(0, 64) || 'item';
 }
