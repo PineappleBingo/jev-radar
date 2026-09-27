@@ -1,0 +1,17 @@
+[
+ { "slug": "routing", "label": "라우팅·의도 분류", "emoji": "🔀", "keywords": ["router", "routing", "route", "intent", "triage", "dispatch", "classif"], "from_registry": ["routing"] },
+ { "slug": "guardrail", "label": "가드레일·모더레이션", "emoji": "🛡️", "keywords": ["guard", "moderation", "safety", "spam", "toxic", "jailbreak", "pii", "filter"], "from_registry": ["guardrail"] },
+ { "slug": "ranking", "label": "랭킹·검색·추천", "emoji": "🏆", "keywords": ["rank", "rerank", "search", "recommend", "retrieval", "relevance"], "from_registry": ["ranking"] },
+ { "slug": "agent", "label": "에이전트·도구 선택", "emoji": "🤖", "keywords": ["agent", "tool", "mcp", "planner", "workflow", "orchestr"], "from_registry": ["agent"] },
+ { "slug": "infra", "label": "SDK·인프라·통합", "emoji": "🧰", "keywords": ["sdk", "client", "wrapper", "proxy", "gateway", "library", "integration", "cli"], "from_registry": ["infra"] },
+ { "slug": "eval", "label": "평가·채점", "emoji": "📏", "keywords": ["eval", "judge", "grading", "grader", "benchmark", "rubric"], "from_registry": ["eval"] },
+ { "slug": "robustness", "label": "견고성·감사 연구", "emoji": "🧪", "keywords": ["robust", "adversarial", "attack", "audit", "calibration", "jagged"], "from_registry": ["robustness"] },
+ { "slug": "finance", "label": "금융·트레이딩", "emoji": "💹", "keywords": ["trading", "finance", "stock", "crypto", "portfolio", "market"], "from_registry": ["finance"] },
+ { "slug": "games", "label": "게임·인터랙티브", "emoji": "🎮", "keywords": ["game", "npc", "rpg", "player"], "from_registry": ["games"] },
+ { "slug": "content", "label": "콘텐츠·글쓰기", "emoji": "📝", "keywords": ["writing", "content", "blog", "copy", "story", "social", "post", "newsletter"], "from_registry": [] },
+ { "slug": "data", "label": "데이터 정제·라벨링", "emoji": "🗂️", "keywords": ["dataset", "label", "annotat", "dedup", "extract", "etl"], "from_registry": [] },
+ { "slug": "support", "label": "고객지원·CRM", "emoji": "🎧", "keywords": ["support", "ticket", "customer", "crm", "helpdesk", "inbox"], "from_registry": [] },
+ { "slug": "devtools", "label": "개발 도구·코드 리뷰", "emoji": "🧑‍💻", "keywords": ["code review", "pull request", "lint", "commit", "github action", "devtool", "refactor"], "from_registry": [] },
+ { "slug": "catalog", "label": "목록·레퍼런스", "emoji": "📚", "keywords": ["awesome", "curated", "examples", "cookbook", "list of"], "from_registry": ["catalog", "reference", "official"] },
+ { "slug": "other", "label": "기타", "emoji": "🧩", "keywords": [], "from_registry": ["alternative", "user"] }
+]

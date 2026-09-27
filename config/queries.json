@@ -1,0 +1,8 @@
+[
+ "topic:jev",
+ "topic:typesafe",
+ "systemone typesafe in:readme,description",
+ "\"api.typesafe.ai\" in:readme",
+ "\"@typesafe-ai/sdk\" in:readme",
+ "jev typesafe in:name,description"
+]

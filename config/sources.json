@@ -1,0 +1,630 @@
+{
+  "from": "upgrade-scout packs/jev/registry.json (updated 2026-09-26)",
+  "catalogs": [
+    {
+      "id": "catalog-kydlikebtc",
+      "method": "catalog-json",
+      "url": "https://raw.githubusercontent.com/kydlikebtc/awesome-jev/main/catalog.json"
+    },
+    {
+      "id": "yibie-readme",
+      "method": "markdown-links",
+      "url": "https://raw.githubusercontent.com/yibie/awesome-jev/main/README.md"
+    },
+    {
+      "id": "yibie-finance",
+      "method": "markdown-links",
+      "url": "https://raw.githubusercontent.com/yibie/awesome-jev/main/categories/finance-trading.md"
+    },
+    {
+      "id": "logicrw-readme",
+      "method": "markdown-links",
+      "url": "https://raw.githubusercontent.com/logicrw/awesome-jev-projects/main/README.md"
+    },
+    {
+      "id": "omnijev-readme",
+      "method": "markdown-links",
+      "url": "https://raw.githubusercontent.com/OmniJev/awesome-jev-gallery/main/README.md"
+    },
+    {
+      "id": "heyjunpenn-readme",
+      "method": "markdown-links",
+      "url": "https://raw.githubusercontent.com/heyjunpenn/awesome-jev/main/README.md"
+    },
+    {
+      "id": "hackernoon-101",
+      "method": "html-numbered-list",
+      "url": "https://hackernoon.com/101-real-world-examples-of-how-to-use-jev"
+    },
+    {
+      "id": "robustness-yifan",
+      "method": "tsv",
+      "url": "https://raw.githubusercontent.com/Yifan-Lan/awesome-jev-robustness/main/data/entries.tsv"
+    },
+    {
+      "id": "abdelstark-resources",
+      "method": "catalog-json",
+      "url": "https://raw.githubusercontent.com/AbdelStark/awesome-typesafe-jev/main/resources.json"
+    },
+    {
+      "id": "anilmatcha-readme",
+      "method": "markdown-links",
+      "url": "https://raw.githubusercontent.com/Anil-matcha/awesome-jev-by-typesafe/main/README.md"
+    },
+    {
+      "id": "use-cases-walid",
+      "method": "csv",
+      "url": "https://raw.githubusercontent.com/walidboulanouar/awesome-jev-use-cases/main/data/repos.csv"
+    },
+    {
+      "id": "use-cases-walid-more",
+      "method": "csv",
+      "url": "https://raw.githubusercontent.com/walidboulanouar/awesome-jev-use-cases/main/data/more-repos.csv"
+    },
+    {
+      "id": "use-cases-walid-demos",
+      "method": "csv",
+      "url": "https://raw.githubusercontent.com/walidboulanouar/awesome-jev-use-cases/main/data/demos.csv"
+    }
+  ],
+  "docs": [
+    {
+      "id": "docs-sitemap",
+      "method": "sitemap",
+      "url": "https://docs.typesafe.ai/sitemap.xml"
+    },
+    {
+      "id": "docs-llms",
+      "method": "llms-txt",
+      "url": "https://docs.typesafe.ai/llms.txt"
+    },
+    {
+      "id": "docs-models",
+      "method": "page-hash",
+      "url": "https://docs.typesafe.ai/models.md"
+    },
+    {
+      "id": "docs-jaggedness",
+      "method": "page-hash",
+      "url": "https://docs.typesafe.ai/model-jaggedness/jev-1.13.md"
+    },
+    {
+      "id": "docs-api",
+      "method": "page-hash",
+      "url": "https://docs.typesafe.ai/api.md"
+    },
+    {
+      "id": "docs-agent-skill",
+      "method": "page-hash",
+      "url": "https://docs.typesafe.ai/agent-skill.md"
+    },
+    {
+      "id": "npm-sdk-js",
+      "method": "npm",
+      "url": "https://registry.npmjs.org/@typesafe-ai/sdk"
+    },
+    {
+      "id": "pypi-sdk-py",
+      "method": "pypi",
+      "url": "https://pypi.org/pypi/typesafe-sdk/json"
+    },
+    {
+      "id": "git-typesafe-skills",
+      "method": "git-head",
+      "url": "https://github.com/typesafe-ai/skills"
+    },
+    {
+      "id": "git-typesafe-sdk-js",
+      "method": "git-head",
+      "url": "https://github.com/typesafe-ai/typesafe-sdk-js"
+    }
+  ],
+  "seeds": [
+    {
+      "full_name": "usenotra/notra",
+      "cat": "routing"
+    },
+    {
+      "full_name": "gargpratyush/jev-router",
+      "cat": "routing"
+    },
+    {
+      "full_name": "prismhq/jev-router",
+      "cat": "routing"
+    },
+    {
+      "full_name": "mejiasd3v/pi-jev-router",
+      "cat": "routing"
+    },
+    {
+      "full_name": "adarshmishra07/jcm-router",
+      "cat": "routing"
+    },
+    {
+      "full_name": "GodsBoy/jev-agent-skill-router",
+      "cat": "routing"
+    },
+    {
+      "full_name": "gtaras7/typesafe-jev",
+      "cat": "routing"
+    },
+    {
+      "full_name": "GiesN/typesafe-jev-workflow",
+      "cat": "routing"
+    },
+    {
+      "full_name": "kitze/unclutter",
+      "cat": "routing"
+    },
+    {
+      "full_name": "realZachi/typesafe-adblock",
+      "cat": "routing"
+    },
+    {
+      "full_name": "raihankhan-rk/diffjury",
+      "cat": "routing"
+    },
+    {
+      "full_name": "AboveColin/HA-Jev",
+      "cat": "routing"
+    },
+    {
+      "full_name": "ryanwaits/secondlayer",
+      "cat": "routing"
+    },
+    {
+      "full_name": "FFatTiger/new-api-plugin-typesafe",
+      "cat": "routing"
+    },
+    {
+      "full_name": "vercel-labs/json-render",
+      "cat": "routing"
+    },
+    {
+      "full_name": "yusukebe/hono-jev-router",
+      "cat": "routing"
+    },
+    {
+      "full_name": "luantak/is-malicious",
+      "cat": "guardrail"
+    },
+    {
+      "full_name": "devagrawal09/jev-review",
+      "cat": "guardrail"
+    },
+    {
+      "full_name": "y0usaf/pi-jev",
+      "cat": "guardrail"
+    },
+    {
+      "full_name": "different-ai/openwork",
+      "cat": "guardrail"
+    },
+    {
+      "full_name": "leepokai/jev-guard",
+      "cat": "guardrail"
+    },
+    {
+      "full_name": "thruwire/foreman",
+      "cat": "guardrail"
+    },
+    {
+      "full_name": "useopencompany/opencompany",
+      "cat": "guardrail"
+    },
+    {
+      "full_name": "AkashPriyadarshii/jev-git",
+      "cat": "guardrail"
+    },
+    {
+      "full_name": "Nyarlathoteppppp/pi-heed",
+      "cat": "guardrail"
+    },
+    {
+      "full_name": "Kelbie/hunch",
+      "cat": "guardrail"
+    },
+    {
+      "full_name": "coldteadotai/abide",
+      "cat": "guardrail"
+    },
+    {
+      "full_name": "vercel-labs/fx",
+      "cat": "guardrail"
+    },
+    {
+      "full_name": "DanRWilloughby/snifftest",
+      "cat": "guardrail"
+    },
+    {
+      "full_name": "doeixd/jev-pref",
+      "cat": "guardrail"
+    },
+    {
+      "full_name": "HyunjunJeon/jev-judgment",
+      "cat": "guardrail"
+    },
+    {
+      "full_name": "noplan-inc/limpet",
+      "cat": "guardrail"
+    },
+    {
+      "full_name": "jkudish/jev-mcp",
+      "cat": "guardrail"
+    },
+    {
+      "full_name": "blakestone-x/jev-mcp",
+      "cat": "guardrail"
+    },
+    {
+      "full_name": "frostney/clean-code-review",
+      "cat": "ranking"
+    },
+    {
+      "full_name": "MarissaFamularo/citation-verifier",
+      "cat": "ranking"
+    },
+    {
+      "full_name": "komikat/jev-bfs",
+      "cat": "ranking"
+    },
+    {
+      "full_name": "superagents-lab/jev-search",
+      "cat": "ranking"
+    },
+    {
+      "full_name": "kitze/pagegrade",
+      "cat": "ranking"
+    },
+    {
+      "full_name": "AkashPriyadarshii/jev-scout",
+      "cat": "ranking"
+    },
+    {
+      "full_name": "AkashPriyadarshii/jev-seo",
+      "cat": "ranking"
+    },
+    {
+      "full_name": "TKY-27/JevSlop",
+      "cat": "ranking"
+    },
+    {
+      "full_name": "WiktorB2004/llama-index-jev",
+      "cat": "ranking"
+    },
+    {
+      "full_name": "cephalization/jev-triage",
+      "cat": "ranking"
+    },
+    {
+      "full_name": "AkashPriyadarshii/jev-curate",
+      "cat": "ranking"
+    },
+    {
+      "full_name": "browser-use/jev-ultrafast",
+      "cat": "agent"
+    },
+    {
+      "full_name": "jkudish/jev-browser",
+      "cat": "agent"
+    },
+    {
+      "full_name": "agent-labs-dev/fastbrowse",
+      "cat": "agent"
+    },
+    {
+      "full_name": "Silbercue/public-browser",
+      "cat": "agent"
+    },
+    {
+      "full_name": "legacybridge-tech/pi-typesafe-jev",
+      "cat": "agent"
+    },
+    {
+      "full_name": "HyunjunJeon/pi-quiet-ask",
+      "cat": "agent"
+    },
+    {
+      "full_name": "24601/Augustus",
+      "cat": "agent"
+    },
+    {
+      "full_name": "compozy/yoshi",
+      "cat": "agent"
+    },
+    {
+      "full_name": "tamaratran/fast-jev-compaction",
+      "cat": "agent"
+    },
+    {
+      "full_name": "joelhooks/pi-fast-jev-compaction",
+      "cat": "agent"
+    },
+    {
+      "full_name": "bastani-inc/atomic",
+      "cat": "agent"
+    },
+    {
+      "full_name": "grmkris/robo-harness",
+      "cat": "agent"
+    },
+    {
+      "full_name": "AkashPriyadarshii/jev-superpowers",
+      "cat": "agent"
+    },
+    {
+      "full_name": "gamesonrblx/Jevbridge",
+      "cat": "agent"
+    },
+    {
+      "full_name": "smithersai/smithers",
+      "cat": "agent"
+    },
+    {
+      "full_name": "kitze/skillbox",
+      "cat": "agent"
+    },
+    {
+      "full_name": "typesafe-ai/skills",
+      "cat": "agent"
+    },
+    {
+      "full_name": "vercel/eve",
+      "cat": "infra"
+    },
+    {
+      "full_name": "vercel-labs/ai-cli",
+      "cat": "infra"
+    },
+    {
+      "full_name": "vercel-labs/ai-python",
+      "cat": "infra"
+    },
+    {
+      "full_name": "cline/plugins",
+      "cat": "infra"
+    },
+    {
+      "full_name": "RyanKung/rotom",
+      "cat": "infra"
+    },
+    {
+      "full_name": "andrelandgraf/safer-with-jev",
+      "cat": "infra"
+    },
+    {
+      "full_name": "kylemclaren/jevql",
+      "cat": "infra"
+    },
+    {
+      "full_name": "mgaitan/sqlite-jev",
+      "cat": "infra"
+    },
+    {
+      "full_name": "pithings/advocaat",
+      "cat": "infra"
+    },
+    {
+      "full_name": "jamesward/zio-typesafe-ai",
+      "cat": "infra"
+    },
+    {
+      "full_name": "alterhq/typesafe-sdk-swift",
+      "cat": "infra"
+    },
+    {
+      "full_name": "Butochnikov/laravel-typesafe-jev",
+      "cat": "infra"
+    },
+    {
+      "full_name": "dannote/jev",
+      "cat": "infra"
+    },
+    {
+      "full_name": "Stumble/jev-go",
+      "cat": "infra"
+    },
+    {
+      "full_name": "tumf/jev-cli",
+      "cat": "infra"
+    },
+    {
+      "full_name": "dakdevs/decide-mcp",
+      "cat": "infra"
+    },
+    {
+      "full_name": "rajivkuriakose/typesafe-jev-examples",
+      "cat": "infra"
+    },
+    {
+      "full_name": "abhixhek/jevcal",
+      "cat": "eval"
+    },
+    {
+      "full_name": "hegargarcia/jev-playground",
+      "cat": "eval"
+    },
+    {
+      "full_name": "ably-labs/jev-pong",
+      "cat": "eval"
+    },
+    {
+      "full_name": "silverstein/minutes",
+      "cat": "eval"
+    },
+    {
+      "full_name": "fhshaik/typesafe-mario",
+      "cat": "games"
+    },
+    {
+      "full_name": "milanboers/jev-plays-pokemon",
+      "cat": "games"
+    },
+    {
+      "full_name": "phyous/tsai-sc",
+      "cat": "games"
+    },
+    {
+      "full_name": "RomanSlack/jev-drone",
+      "cat": "games"
+    },
+    {
+      "full_name": "kxzk/typesafe-jev-drone-demo",
+      "cat": "games"
+    },
+    {
+      "full_name": "aowang-ai/jev-trade",
+      "cat": "finance"
+    },
+    {
+      "full_name": "johnhughes3/LegalForecastBench",
+      "cat": "finance"
+    },
+    {
+      "full_name": "CodeAlive-AI/mastra-jev-moderation",
+      "cat": "finance"
+    },
+    {
+      "full_name": "PineappleBingo/jev-ultrafast",
+      "cat": "user"
+    },
+    {
+      "full_name": "PineappleBingo/creator-lab-reels",
+      "cat": "user"
+    },
+    {
+      "full_name": "PineappleBingo/tradingview-indicator-search-mcp-server",
+      "cat": "user"
+    },
+    {
+      "full_name": "artemnovitckii/creator-lab",
+      "cat": "reference"
+    },
+    {
+      "full_name": "daviddme/tradingview-indicator-search-mcp-server",
+      "cat": "reference"
+    },
+    {
+      "full_name": "jkf87/jev-ultrafast-naver",
+      "cat": "reference"
+    },
+    {
+      "full_name": "typesafe-ai/typesafe-sdk-python",
+      "cat": "official"
+    },
+    {
+      "full_name": "typesafe-ai/system-one-adapter-python",
+      "cat": "official"
+    },
+    {
+      "full_name": "typesafe-ai/typesafe-sdk-js",
+      "cat": "official"
+    },
+    {
+      "full_name": "kydlikebtc/awesome-jev",
+      "cat": "catalog"
+    },
+    {
+      "full_name": "yibie/awesome-jev",
+      "cat": "catalog"
+    },
+    {
+      "full_name": "logicrw/awesome-jev-projects",
+      "cat": "catalog"
+    },
+    {
+      "full_name": "OmniJev/awesome-jev-gallery",
+      "cat": "catalog"
+    },
+    {
+      "full_name": "heyjunpenn/awesome-jev",
+      "cat": "catalog"
+    },
+    {
+      "full_name": "walidboulanouar/awesome-jev-use-cases",
+      "cat": "catalog"
+    },
+    {
+      "full_name": "Yifan-Lan/awesome-jev-robustness",
+      "cat": "catalog"
+    },
+    {
+      "full_name": "AbdelStark/awesome-typesafe-jev",
+      "cat": "catalog"
+    },
+    {
+      "full_name": "Anil-matcha/awesome-jev-by-typesafe",
+      "cat": "catalog"
+    },
+    {
+      "full_name": "jujumilk3/jev-calibration-audit",
+      "cat": "robustness"
+    },
+    {
+      "full_name": "willkelly/jev-evaluation",
+      "cat": "robustness"
+    },
+    {
+      "full_name": "zkousama/jagged",
+      "cat": "robustness"
+    },
+    {
+      "full_name": "yodablocks/jev-orderby-bench",
+      "cat": "robustness"
+    },
+    {
+      "full_name": "KantaHayashiAI/jev-does-not-play-dice",
+      "cat": "robustness"
+    },
+    {
+      "full_name": "RINNECODER/jev-behavior-study",
+      "cat": "robustness"
+    },
+    {
+      "full_name": "SamuelSacco/jev-exploration",
+      "cat": "robustness"
+    },
+    {
+      "full_name": "OpenByteInc/QuantDinger",
+      "cat": "finance"
+    },
+    {
+      "full_name": "myc0576/SmartMoney-Cub",
+      "cat": "finance"
+    },
+    {
+      "full_name": "Eliot5566/JEV-Paper-Radar",
+      "cat": "eval"
+    },
+    {
+      "full_name": "sutro-sh/jev-align",
+      "cat": "eval"
+    },
+    {
+      "full_name": "samchon/typia",
+      "cat": "infra"
+    },
+    {
+      "full_name": "NandhaKishorM/laya",
+      "cat": "alternative"
+    },
+    {
+      "full_name": "itsmostafa/system-one-connector",
+      "cat": "infra"
+    },
+    {
+      "full_name": "NiazMorshed2007/jev-review",
+      "cat": "guardrail"
+    }
+  ],
+  "red_flags": [
+    {
+      "full_name": "Futureppo/typesafe_register",
+      "note_ko": "계정 등록 봇으로 한도 우회를 광고 — 인용·사용 금지"
+    },
+    {
+      "full_name": "0xNatoshi/jev-codex-router",
+      "note_ko": "보관(archived)"
+    }
+  ]
+}
