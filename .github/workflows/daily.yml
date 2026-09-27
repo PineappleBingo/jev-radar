@@ -1,0 +1,32 @@
+name: daily
+on:
+  schedule:
+    - cron: '0 21 * * *'   # 06:00 KST
+  workflow_dispatch: {}
+permissions:
+  contents: write
+concurrency:
+  group: daily
+  cancel-in-progress: false
+jobs:
+  radar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm test
+      - run: node src/run.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.RADAR_GH_TOKEN || secrets.GITHUB_TOKEN }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
+      - name: commit
+        run: |
+          git config user.name "jev-radar-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A README.md data categories changes
+          git diff --cached --quiet || git commit -m "data: $(date -u -d '+9 hours' +%Y-%m-%d) 레이더 갱신"
+          git push
