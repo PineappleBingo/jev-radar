@@ -30,6 +30,16 @@ export function makeGithub({ token = process.env.GITHUB_TOKEN, fetchImpl = globa
         await sleep(Math.max(waitMs, 1000));
         continue;
       }
+      if ((res.status === 403 || res.status === 429) && res.headers.get('retry-after')) {
+        const waitMs = Number(res.headers.get('retry-after')) * 1000;
+        if (waitMs > 70_000) throw new RateLimited(`한도 소진 — ${Math.round(waitMs / 1000)}초 뒤 재설정: ${url}`);
+        await sleep(waitMs);
+        continue;
+      }
+      if (res.status === 429) {
+        await sleep(1000);
+        continue;
+      }
       if (res.status === 404) return null;
       if (!res.ok) throw new Error(`GitHub ${res.status} ${url}`);
       return accept === RAW ? res.text() : res.json();

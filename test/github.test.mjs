@@ -49,3 +49,21 @@ test('404 is null, other errors throw', async () => {
   assert.equal(await gh.readme('o/gone'), null);
   await assert.rejects(() => gh.readme('o/boom'), /GitHub 500/);
 });
+
+test('secondary rate limit: 403 with retry-after waits and retries', async () => {
+  let n = 0;
+  const slept = [];
+  const gh = makeGithub({ sleep: async (ms) => { slept.push(ms); }, fetchImpl: fakeFetch({ 'https://api.github.com/repos/o/r/readme': () => (n++ === 0 ? { status: 403, body: '', headers: { 'retry-after': '5' } } : '# hi') }) });
+  assert.equal(await gh.readme('o/r'), '# hi');
+  assert.deepEqual(slept, [5000]);
+});
+
+test('secondary rate limit: 429 with long retry-after throws RateLimited', async () => {
+  const gh = makeGithub({ fetchImpl: fakeFetch({ 'https://api.github.com/repos/o/r/readme': { status: 429, body: '', headers: { 'retry-after': '120' } } }) });
+  await assert.rejects(() => gh.readme('o/r'), RateLimited);
+});
+
+test('plain 403 with no rate-limit headers throws GitHub 403', async () => {
+  const gh = makeGithub({ fetchImpl: fakeFetch({ 'https://api.github.com/repos/o/r/readme': { status: 403, body: '', headers: {} } }) });
+  await assert.rejects(() => gh.readme('o/r'), /GitHub 403/);
+});
