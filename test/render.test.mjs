@@ -20,6 +20,12 @@ test('row: stars, forks, three-line summary, tags, pipes escaped', () => {
   const waiting = row(it({ summary_ko: null, verified: 'pending', stars_7d_delta: null, first_seen: '2026-09-01', decision_types: [] }), '2026-09-26');
   assert.match(waiting, /요약 대기 · Router \\\| with pipe/);
   assert.doesNotMatch(waiting, /✅|🆕|🔥/);
+  // HTML and backtick escaping
+  const dangerous = row(it({ summary_ko: null, description: '<img src=x onerror=1> a|b `c' }), '2026-09-26');
+  assert.ok(dangerous.includes('&lt;img src=x onerror=1&gt;'));
+  assert.ok(dangerous.includes('a\\|b'));
+  assert.ok(dangerous.includes('\\`c'));
+  assert.doesNotMatch(dangerous, /<img/);
 });
 
 test('README: header date, counts, sections, category anchors, copyright note', () => {
@@ -29,12 +35,22 @@ test('README: header date, counts, sections, category anchors, copyright note', 
   assert.match(md, /새 모델 `jev-1\.14\.0`/);
   assert.match(md, /원저작자/);
   assert.doesNotMatch(md, /### 🛡️/, 'empty categories are omitted');
+  // explicit anchors
+  assert.ok(md.includes('<a id="cat-routing"></a>\n### 🔀 라우팅·의도 분류 (1)'));
+  assert.ok(md.includes('<a id="cat-other"></a>\n### 🧩 기타 (1)'));
+  assert.ok(md.includes('[🔀 라우팅·의도 분류 (1)](#cat-routing)'));
+  assert.ok(md.includes('[🧩 기타 (1)](#cat-other)'));
 });
 
 test('category page lists all items with README excerpt; changes page lists vanished repos', () => {
   const cat = renderCategory(cats[0], [it({ readme_excerpt: 'Routes prompts.' })], '2026-09-27');
   assert.match(cat, /^# 🔀 라우팅·의도 분류 \(1\)/);
   assert.match(cat, /<details><summary>README 발췌<\/summary>\n\nRoutes prompts\.\n\n<\/details>/);
+  // excerpt escaping
+  const catDangerous = renderCategory(cats[0], [it({ readme_excerpt: '<b>hi</b> | `x`' })], '2026-09-27');
+  assert.ok(catDangerous.includes('&lt;b&gt;hi&lt;/b&gt;'));
+  assert.ok(catDangerous.includes('\\`x\\`'));
+  assert.doesNotMatch(catDangerous, /<b>/);
   const ch = renderChanges({ date: '2026-09-27', added: [it({})], vanished: ['x/gone'], rising: [], docChanges: [] });
   assert.match(ch, /^# 2026-09-27 변경/);
   assert.match(ch, /## 사라짐\n\n- x\/gone/);

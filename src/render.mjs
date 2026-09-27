@@ -5,8 +5,7 @@ export function kst(iso) {
   const d = new Date(Date.parse(iso) + 9 * 36e5).toISOString();
   return `${d.slice(0, 10)} ${d.slice(11, 16)} KST`;
 }
-const cell = (s) => String(s ?? '').replace(/\|/g, '\\|').replace(/\n/g, ' ');
-const anchor = (c) => `#${`${c.emoji} ${c.label}`.toLowerCase().replace(/[^\p{L}\p{N}\s-]/gu, '').trim().replace(/\s/g, '-')}`;
+const cell = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/`/g, '\\`').replace(/\|/g, '\\|').replace(/\n/g, ' ');
 const KIND = { changed: '변경', 'new-page': '새 페이지', 'removed-page': '페이지 삭제', 'new-model': '새 모델', 'new-version': '새 버전', 'new-commit': '새 커밋' };
 const HEAD = '| 리포 | ⭐ | 🍴 | 한눈에 보기 | 태그 | 최근 푸시 |\n|---|---:|---:|---|---|---|';
 
@@ -33,13 +32,13 @@ export function renderReadme({ meta, items, docChanges, categories, date }) {
     '',
     '범례: ⭐ 별 · 🍴 포크 · ✅ 코드에서 호출 확인 · 🆕 7일 안에 처음 발견 · 🔥 7일 별 증가 상위 · `choice` `score` `noul` 코드에서 본 질문 유형',
     '',
-    `분야: ${groups.map((g) => `[${g.c.emoji} ${g.c.label} (${g.list.length})](${anchor(g.c)})`).join(' · ')}`,
+    `분야: ${groups.map((g) => `[${g.c.emoji} ${g.c.label} (${g.list.length})](#cat-${g.c.slug})`).join(' · ')}`,
     '',
     '## 🆕 새로 발견 (7일)', '', table(fresh, date), '',
     '## 🔥 급상승 (7일)', '', table(risingOf(items), date), '',
     '## 📚 문서·모델 변경 (7일)', '', docChanges.length ? docChanges.map(docLine).join('\n') : '없음', '',
     '## 분야별', '',
-    ...groups.flatMap((g) => [`### ${g.c.emoji} ${g.c.label} (${g.list.length})`, '', table(g.list.slice(0, 10), date), '', `전체 ${g.list.length}개 → [categories/${g.c.slug}.md](categories/${g.c.slug}.md)`, '']),
+    ...groups.flatMap((g) => [`<a id="cat-${g.c.slug}"></a>`, `### ${g.c.emoji} ${g.c.label} (${g.list.length})`, '', table(g.list.slice(0, 10), date), '', `전체 ${g.list.length}개 → [categories/${g.c.slug}.md](categories/${g.c.slug}.md)`, '']),
     '## 이 리포는', '',
     '- 매일 06:00 KST에 GitHub 검색 · awesome 목록 · 시드 목록에서 모으고, 이름만 같은 리포는 TypeSafe 근거(설명 · 토픽 · README)가 없으면 뺍니다.',
     '- 요약은 README를 바탕으로 Gemini가 쓰고 형식 검사를 통과한 것만 싣습니다. 요약이 없으면 "요약 대기"로 둡니다.',
@@ -52,10 +51,11 @@ export function renderReadme({ meta, items, docChanges, categories, date }) {
 
 export function renderCategory(c, items, date) {
   const list = [...items].sort(byScore);
+  const escapeExcerpt = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/`/g, '\\`');
   return [
     `# ${c.emoji} ${c.label} (${list.length})`, '', `[← README](../README.md)`, '', HEAD,
     ...list.map((i) => row(i, date)), '',
-    ...list.filter((i) => i.readme_excerpt).flatMap((i) => [`### ${i.full_name}`, '', `<details><summary>README 발췌</summary>\n\n${i.readme_excerpt}\n\n</details>`, '']),
+    ...list.filter((i) => i.readme_excerpt).flatMap((i) => [`### ${i.full_name}`, '', `<details><summary>README 발췌</summary>\n\n${escapeExcerpt(i.readme_excerpt)}\n\n</details>`, '']),
   ].join('\n');
 }
 
