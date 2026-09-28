@@ -9,8 +9,10 @@ export function kst(iso) {
 const cell = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/[`|[\]!]/g, '\\$&').replace(/\n/g, ' ');
 const KIND = { changed: '변경', 'new-page': '새 페이지', 'removed-page': '페이지 삭제', 'new-model': '새 모델', 'new-version': '새 버전', 'new-commit': '새 커밋' };
 const HEAD = '| 리포 | ⭐ | 🍴 | 요약 | 태그 | 최근 푸시 |\n|---|---:|---:|---|---|---|';
-// 태그는 이모지만 보이고 뜻은 마우스를 올리면 나온다(GitHub는 abbr의 title을 남긴다). 휴대폰용 설명은 README 범례에 따로 둔다.
-const tip = (title, label) => `<abbr title="${title}">${label}</abbr>`;
+// 태그는 이모지만 보이고 뜻은 마우스를 올리면 나온다. GitHub는 <abbr>를 지우지만 링크 title은 남기므로
+// 범례로 가는 링크에 title을 단다. 휴대폰용 설명은 README 범례(#legend)에 따로 둔다.
+export const LEGEND = '#legend';
+const tip = (title, label, legend) => `[${label}](${legend} "${title}")`;
 const CODE_MARK = {
   code: ['✅', '코드 확인: 코드에서 Jev API 호출을 찾았습니다'],
   none: ['❌', '코드에서 못 찾음: 코드 검색으로는 Jev 호출이 보이지 않습니다. 문서에서만 언급했을 수 있습니다'],
@@ -21,19 +23,19 @@ const TYPE_TIP = { choice: '선택지 중 하나를 고르게 합니다', score:
 // checked = state.verify(리포 → 마지막 코드 확인 날짜). 확인했는데 code가 아니면 ❌, 확인한 적 없으면 ⏳.
 export const codeMark = (it, checked = {}) => (it.verified === 'code' ? 'code' : checked[it.full_name] ? 'none' : 'queued');
 
-export function row(it, date, baseline = null, checked = {}) {
+export function row(it, date, baseline = null, checked = {}, legend = LEGEND) {
   const s = it.summary_ko;
   const summary = s ? `${cell(s.what)}<br>${cell(s.decision)}<br>${cell(s.point)}` : it.description ? cell(it.description) : '—';
   const tags = [
-    tip(CODE_MARK[codeMark(it, checked)][1], CODE_MARK[codeMark(it, checked)][0]),
-    isNew(it, date, 7, baseline) ? tip('최근 7일 안에 처음 발견했습니다', '🆕') : null,
-    (it.stars_7d_delta ?? 0) >= 5 ? tip(`최근 7일 동안 별이 ${it.stars_7d_delta}개 늘었습니다`, `🔥 +${it.stars_7d_delta}`) : null,
-    ...(it.decision_types || []).map((t) => tip(TYPE_TIP[t] || '코드에서 본 질문 유형', `\`${t}\``)),
+    tip(CODE_MARK[codeMark(it, checked)][1], CODE_MARK[codeMark(it, checked)][0], legend),
+    isNew(it, date, 7, baseline) ? tip('최근 7일 안에 처음 발견했습니다', '🆕', legend) : null,
+    (it.stars_7d_delta ?? 0) >= 5 ? tip(`최근 7일 동안 별이 ${it.stars_7d_delta}개 늘었습니다`, `🔥 +${it.stars_7d_delta}`, legend) : null,
+    ...(it.decision_types || []).map((t) => tip(TYPE_TIP[t] || '코드에서 본 질문 유형', `\`${t}\``, legend)),
   ].filter(Boolean).join(' ');
   return `| [${it.full_name}](${it.url}) | ${it.stars} | ${it.forks} | ${summary} | ${tags} | ${String(it.pushed_at).slice(0, 10)} |`;
 }
 
-const table = (items, date, baseline, checked) => (items.length ? `${HEAD}\n${items.map((i) => row(i, date, baseline, checked)).join('\n')}` : '없음');
+const table = (items, date, baseline, checked, legend) => (items.length ? `${HEAD}\n${items.map((i) => row(i, date, baseline, checked, legend)).join('\n')}` : '없음');
 const docLine = (c) => `- ${KIND[c.kind] || c.kind} \`${c.detail}\` — [${c.id}](${c.url})`;
 const num = (n) => Number(n ?? 0).toLocaleString('en-US');
 const byScore = (a, b) => b.score - a.score || b.stars - a.stars || a.full_name.localeCompare(b.full_name);
@@ -53,7 +55,10 @@ export function renderReadme({ meta, items, docChanges, categories, date, checke
     '',
     `코드 확인: ✅ ${num(marks.code)} · ❌ ${num(marks.none)} · ⏳ ${num(marks.queued)} · 한국어 요약을 기다리는 리포 ${num(meta.queue?.summaries_pending)}개`,
     '',
-    '**표 보는 법** (태그에 마우스를 올려도 설명이 나옵니다)',
+    '<a id="legend"></a>',
+    '## 표 보는 법',
+    '',
+    '태그에 마우스를 올려도 설명이 나옵니다.',
     '',
     '- ✅ 코드에서 Jev를 실제로 부르는 것을 확인했습니다. 따라 해 볼 구현을 찾는다면 이 표시부터 보세요.',
     '- ❌ 코드 검색으로는 Jev 호출을 찾지 못했습니다. 문서에서만 언급했을 수 있습니다.',
@@ -84,7 +89,7 @@ export function renderCategory(c, items, date, baseline = null, checked = {}) {
   const escapeExcerpt = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/`/g, '\\`');
   return [
     `# ${c.emoji} ${c.label} (${list.length})`, '', `[← README](../README.md)`, '', HEAD,
-    ...list.map((i) => row(i, date, baseline, checked)), '',
+    ...list.map((i) => row(i, date, baseline, checked, `../README.md${LEGEND}`)), '',
     ...list.filter((i) => i.readme_excerpt).flatMap((i) => [`### ${i.full_name}`, '', `<details><summary>README 발췌</summary>\n\n${escapeExcerpt(i.readme_excerpt)}\n\n</details>`, '']),
   ].join('\n');
 }
@@ -92,8 +97,8 @@ export function renderCategory(c, items, date, baseline = null, checked = {}) {
 export function renderChanges({ date, added, vanished, rising, docChanges, refilteredCount, baseline = null, checked = {} }) {
   return [
     `# ${date} 변경`, '',
-    `## 새로 발견 (${added.length})`, '', table(added, date, baseline, checked), '',
-    `## 급상승 (${rising.length})`, '', table(rising, date, baseline, checked), '',
+    `## 새로 발견 (${added.length})`, '', table(added, date, baseline, checked, `../README.md${LEGEND}`), '',
+    `## 급상승 (${rising.length})`, '', table(rising, date, baseline, checked, `../README.md${LEGEND}`), '',
     '## 사라짐', '', vanished.length ? vanished.map((v) => `- ${v}`).join('\n') : '없음', '',
     '## 문서·모델 변경', '', docChanges.length ? docChanges.map(docLine).join('\n') : '없음', '',
     ...(refilteredCount != null ? [`근거 부족으로 제외: ${refilteredCount}개`, ''] : []),
