@@ -4,7 +4,7 @@
 
 | 리포 | ⭐ | 🍴 | 한눈에 보기 | 태그 | 최근 푸시 |
 |---|---:|---:|---|---|---|
-| [nokia-applied-research/AnyJev](https://github.com/nokia-applied-research/AnyJev) | 835 | 110 | 요약 대기 · Turn any LLM into a Jev-style decision model: typed decisions, real probabilities, no training. (continue updating, welcome any issue and PR request) |  | 2026-09-26 |
+| [nokia-applied-research/AnyJev](https://github.com/nokia-applied-research/AnyJev) | 839 | 110 | 요약 대기 · Turn any LLM into a Jev-style decision model: typed decisions, real probabilities, no training. (continue updating, welcome any issue and PR request) |  | 2026-09-26 |
 | [wfzyx/von](https://github.com/wfzyx/von) | 729 | 54 | 요약 대기 · The open-source System One decision model. Sub-15ms, non-autoregressive, local drop-in alternative to TypeSafe Jev. |  | 2026-09-26 |
 | [chainreactors/fingers](https://github.com/chainreactors/fingers) | 271 | 40 | **무엇** 보안 스캐너 등에서 대상 웹 기술 및 프레임워크를 식별하기 위해 여러 지문 라이브러리를 통합 분석하는 Go 엔진이다.<br>**판단** 규칙 엔진이 매칭한 제품명과 버전 결과가 실제 웹 응답 증거에 의해 성립하는지(holds, refuted, insufficient) 판단한다.<br>**포인트** Jev를 심사기(Judge)로 활용해 규칙 기반 결과의 오탐과 중복을 줄이고 버전을 보완하며, 실패 시 순수 규칙 결과로 폴백한다. |  | 2026-09-27 |
 | [kshetrajna12/reflex](https://github.com/kshetrajna12/reflex) | 153 | 17 | 요약 대기 · A small open decision model: state + typed questions -&gt; calibrated probabilities. A Jev / System One re-creation on Qwen3.5. |  | 2026-09-27 |
@@ -18,7 +18,7 @@
 | [genai-craft/openvons](https://github.com/genai-craft/openvons) | 14 | 0 | 요약 대기 · openvons (open-Jev): 有限選択肢に確率で答える判断層 — テキスト / 画像 / 日本語音声コマンド |  | 2026-09-21 |
 | [yzfly/edgejev](https://github.com/yzfly/edgejev) | 12 | 2 | 요약 대기 · 离线可用的本地类型化决策：4 核 CPU 单题 15.6ms。Local &amp; offline Jev / System One inference on CPU — ONNX + INT8, no torch at runtime. 支持 laya / kev / PlayJev |  | 2026-09-21 |
 | [kunko-ai-labs/judge-audit](https://github.com/kunko-ai-labs/judge-audit) | 11 | 1 | 요약 대기 · Independent calibration audits for AI judges. The Moody's for AI judgment. |  | 2026-09-27 |
-| [mohit67890/imajev](https://github.com/mohit67890/imajev) | 10 | 1 | 요약 대기 · Open Jev-style typed-decision model that also takes images: photo + app state + typed questions in, calibrated probabilities out, locally. |  | 2026-09-28 |
+| [mohit67890/imajev](https://github.com/mohit67890/imajev) | 11 | 1 | 요약 대기 · Open Jev-style typed-decision model that also takes images: photo + app state + typed questions in, calibrated probabilities out, locally. |  | 2026-09-28 |
 | [Yifan-Lan/awesome-jev-robustness](https://github.com/Yifan-Lan/awesome-jev-robustness) | 5 | 2 | **무엇** TypeSafe Jev 모델의 답변 일관성, 보정 오차, 프롬프트 주입 취약점 등 견고성을 독립적으로 검증한 연구와 감사 결과를 모아둔 큐레이션 리포지토리다.<br>**판단** README에 판단 지점 설명 없음<br>**포인트** 단순 작업 정확도 대신 옵션 순서나 이름, 부정문 표현 등에 따라 확률값과 선택 결과가 어떻게 흔들리는지 속성별 독립 테스트 결과를 목록과 요약표로 정리했다. |  | 2026-09-26 |
 | [aabolfazl/typesafe-local](https://github.com/aabolfazl/typesafe-local) | 9 | 0 | 요약 대기 · Inspired by TypeSafe Ai, Ask a local LLM typed questions, get calibrated probabilities instead of text. Structured output without generation or parsing. MLX / Apple Silicon. |  | 2026-09-18 |
 | [AbdelStark/bicameral](https://github.com/AbdelStark/bicameral) | 8 | 1 | 요약 대기 · Hybrid coding harness: System 2 writes, System 1 (Jev) runs reflexes. |  | 2026-09-16 |

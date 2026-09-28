@@ -1,17 +1,16 @@
-# 💹 금융·트레이딩 (97)
+# 💹 금융·트레이딩 (96)
 
 [← README](../README.md)
 
 | 리포 | ⭐ | 🍴 | 한눈에 보기 | 태그 | 최근 푸시 |
 |---|---:|---:|---|---|---|
 | [OpenByteInc/QuantDinger](https://github.com/OpenByteInc/QuantDinger) | 12238 | 2506 | **무엇** 트레이더와 개발자를 위해 암호화폐, 주식, 외환의 리서치부터 백테스트와 실거래를 지원하는 자체 호스팅 AI 트레이딩 OS다.<br>**판단** README에 판단 지점 설명 없음<br>**포인트** Python 전략 개발 및 백테스트뿐 아니라 에이전트 연동용 MCP, 자체 결제 및 정산 기능까지 결합한 올인원 스택을 제공한다. | ✅ | 2026-09-26 |
-| [TauricResearch/TradingAgents](https://github.com/TauricResearch/TradingAgents) | 108916 | 20892 | 요약 대기 · TradingAgents: Multi-Agents LLM Financial Trading Framework |  | 2026-09-25 |
+| [TauricResearch/TradingAgents](https://github.com/TauricResearch/TradingAgents) | 108919 | 20894 | 요약 대기 · TradingAgents: Multi-Agents LLM Financial Trading Framework |  | 2026-09-25 |
 | [virattt/ai-hedge-fund](https://github.com/virattt/ai-hedge-fund) | 63772 | 11188 | 요약 대기 · An AI Hedge Fund Team |  | 2026-09-26 |
-| [dubinc/dub](https://github.com/dubinc/dub) | 24835 | 3308 | 요약 대기 · The modern link attribution platform. Loved by world-class marketing teams like Framer, Perplexity, Superhuman, Twilio, Buffer and more. |  | 2026-09-27 |
 | [jarrodwatts/jev-trader](https://github.com/jarrodwatts/jev-trader) | 2602 | 491 | **무엇** Monad 블록체인 상의 Kuru MON-USDC 오더북을 감시하여 매 블록마다 Jev 모델의 예측에 맞춰 post-only 지정가 주문을 갱신하는 트레이딩 봇이다.<br>**판단** 지정된 블록 구간(기본 100블록, 약 30초) 동안의 가격 변동 방향에 대해 buy 또는 sell 중 하나를 선택하도록 판단시킨다.<br>**포인트** 약 300ms의 블록 주기에 맞추기 위해 RPC 호출을 2회로 최소화하고 기존 주문 취소와 신규 주문을 batchUpdate 단일 트랜잭션으로 처리한다. |  | 2026-09-17 |
 | [kyotofin/tax-doc-classifier](https://github.com/kyotofin/tax-doc-classifier) | 470 | 60 | **무엇** Jev API를 활용하여 261종의 IRS 세무 서식 페이지를 식별하고 분류하는 문서 분류 도구다.<br>**판단** 입력된 세무 문서 페이지가 261종의 IRS 서식 중 어떤 양식에 해당하는지 선택하도록 묻는다.<br>**포인트** 261개 서식에 걸쳐 100% 엄격한 정확도를 보이며 페이지당 약 0.001달러의 처리 비용을 제시한다. |  | 2026-09-20 |
 | [EthanAlgoX/AIStock](https://github.com/EthanAlgoX/AIStock) | 339 | 88 | 요약 대기 · One person can become their own super-analyst. Try it online: https://myaistock.top |  | 2026-09-27 |
-| [brainstormity/Jev-X-Sentiment-Analysis](https://github.com/brainstormity/Jev-X-Sentiment-Analysis) | 170 | 34 | 요약 대기 · 설명 없음 |  | 2026-09-22 |
+| [brainstormity/Jev-X-Sentiment-Analysis](https://github.com/brainstormity/Jev-X-Sentiment-Analysis) | 170 | 34 | **무엇** 실시간 암호화폐 시장 지표와 트위터 여론을 수집·통계 분석하여 매매 의사결정 카드를 생성해 주는 터미널 애플리케이션이다.<br>**판단** 실시간 시장 지표와 트윗 요약 데이터를 바탕으로 매매 액션(Choice), 감성 스펙트럼(Score), 숏 스퀴즈 위험 확률(Noul), 촉매 중요도(Score)를 판단시킨다.<br>**포인트** 트위터 API 비용을 줄이기 위해 SQLite 기반 조기 종료 중복 제거 파이프라인을 거친 후 정제된 대표 트윗과 통계치만 Jev에게 전달해 추론 비용과 지연 시간을 낮췄다. |  | 2026-09-22 |
 | [aowang-ai/jev-trade](https://github.com/aowang-ai/jev-trade) | 159 | 28 | **무엇** Hyperliquid 오더북 데이터를 바탕으로 TypeSafe Jev를 호출해 암호화폐 5종의 매매 주문을 자동 집행하는 트레이딩 봇 및 대시보드다.<br>**판단** 오더북 데이터를 기반으로 틱마다 포지션 방향(long 또는 short)과 실행 액션(open, close, hold)을 선택하도록 질의한다.<br>**포인트** 코인별 독립 지갑 구조를 적용하고, 진입 시 ALO 메이커 주문과 청산 시 IOC 테이커 주문을 분기하며 Bun과 Next 대시보드를 SSE로 연결했다. |  | 2026-09-21 |
 | [arimanyus/warrenduffer](https://github.com/arimanyus/warrenduffer) | 93 | 27 | 요약 대기 · AI-driven intraday trading bot for Indian stocks. Jev ranks the Nifty 50 every 15s; code sizes each trade and places the stop; orders go live through Zerodha Kite or Kotak Neo. Day replay, kill switch, daily loss halt, terminal dashboard. |  | 2026-09-23 |
 | [irfndi/prism-liquidity-agent](https://github.com/irfndi/prism-liquidity-agent) | 115 | 19 | **무엇** Solana의 Meteora DLMM 유동성 풀 상태를 주기적으로 감시하고 포지션 리밸런싱과 진입·청산을 자동 수행하는 자율 LP 에이전트다.<br>**판단** README에 판단 지점 설명 없음<br>**포인트** sqlite-vec 기반 벡터 메모리로 과거 손익 이력을 축적해 자가 개선하며 0~1 거래량 진위 점수와 위험 게이트로 온체인 실행을 차단한다. |  | 2026-09-23 |
@@ -71,7 +70,7 @@
 | [gbesse/jev-crypto-lab](https://github.com/gbesse/jev-crypto-lab) | 0 | 0 | 요약 대기 · Read-only research prototypes for prediction-market contract logic, resolution scenarios and crypto exposure |  | 2026-09-27 |
 | [Hellotravisss/SteadyQuant](https://github.com/Hellotravisss/SteadyQuant) | 0 | 0 | 요약 대기 · 省心量化 — a beginner-friendly quantitative-investing tool with plain-language portfolio guidance. |  | 2026-09-26 |
 | [Idiroll/DAYTRADES](https://github.com/Idiroll/DAYTRADES) | 0 | 0 | 요약 대기 · Using Jev to automate day-trading for dirt cheap. Extremely Fast.  |  | 2026-09-27 |
-| [itsadrianxv/jev-quant](https://github.com/itsadrianxv/jev-quant) | 0 | 0 | 요약 대기 · C++ trading system leveraging TypeSafe Jev. |  | 2026-09-27 |
+| [itsadrianxv/jev-quant](https://github.com/itsadrianxv/jev-quant) | 0 | 0 | 요약 대기 · C++ trading system leveraging TypeSafe Jev. |  | 2026-09-28 |
 | [javaninvegas/jev-desert-crew](https://github.com/javaninvegas/jev-desert-crew) | 0 | 0 | 요약 대기 · Four AI paper-trading bots racing on Jev (TypeSafe AI). Jev places the orders. Fork of imikerussell/beebots. |  | 2026-09-26 |
 | [jaysonsantos/sudoku-jev](https://github.com/jaysonsantos/sudoku-jev) | 0 | 0 | 요약 대기 · Sudoku game played by the TypeSafe Jev decision model through OpenRouter |  | 2026-09-21 |
 | [kangshifu1/jev-skills-market](https://github.com/kangshifu1/jev-skills-market) | 0 | 0 | 요약 대기 · Community Jev skill market and assistant for automation testing, finance research and voice workflows. Computer Use is an independent repository. |  | 2026-09-27 |
@@ -123,14 +122,6 @@
 <details><summary>README 발췌</summary>
 
 This is a proof of concept for an AI-powered hedge fund. The goal of this project is to explore the use of AI to make trading decisions. This project is for educational purposes only and is not intended for real trading or investment.
-
-</details>
-
-### dubinc/dub
-
-<details><summary>README 발췌</summary>
-
-The open-source link attribution platform.
 
 </details>
 

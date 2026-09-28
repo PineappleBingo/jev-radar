@@ -1,37 +1,42 @@
-# 📚 목록·레퍼런스 (93)
+# 📚 목록·레퍼런스 (96)
 
 [← README](../README.md)
 
 | 리포 | ⭐ | 🍴 | 한눈에 보기 | 태그 | 최근 푸시 |
 |---|---:|---:|---|---|---|
-| [Shubhamsaboo/awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps) | 139991 | 20567 | **무엇** 다양한 LLM 기반 에이전트, 스킬, RAG 앱 템플릿과 예제 코드를 모아둔 오픈소스 카탈로그다.<br>**판단** README에 판단 지점 설명 없음<br>**포인트** Claude, Gemini, GPT 등 여러 LLM을 활용한 다양한 도메인의 단일 및 멀티 에이전트 템플릿을 실행 가능한 예제로 제공한다. |  | 2026-09-26 |
-| [davila7/claude-code-templates](https://github.com/davila7/claude-code-templates) | 31992 | 3643 | **무엇** Anthropic Claude Code의 AI 에이전트, 슬래시 커맨드, MCP 연동, 훅 설정을 검색하고 설치할 수 있는 CLI 도구이자 템플릿 모음이다.<br>**판단** README에 판단 지점 설명 없음<br>**포인트** npx 명령어를 통해 웹 카탈로그(aitmpl.com)에 등록된 다양한 MCP, 커맨드, 훅 설정을 로컬 환경에 대화형 또는 플래그 기반으로 주입할 수 있다. |  | 2026-09-27 |
+| [Shubhamsaboo/awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps) | 139992 | 20567 | **무엇** 다양한 LLM 기반 에이전트, 스킬, RAG 앱 템플릿과 예제 코드를 모아둔 오픈소스 카탈로그다.<br>**판단** README에 판단 지점 설명 없음<br>**포인트** Claude, Gemini, GPT 등 여러 LLM을 활용한 다양한 도메인의 단일 및 멀티 에이전트 템플릿을 실행 가능한 예제로 제공한다. |  | 2026-09-26 |
+| [davila7/claude-code-templates](https://github.com/davila7/claude-code-templates) | 31991 | 3643 | **무엇** Anthropic Claude Code의 AI 에이전트, 슬래시 커맨드, MCP 연동, 훅 설정을 검색하고 설치할 수 있는 CLI 도구이자 템플릿 모음이다.<br>**판단** README에 판단 지점 설명 없음<br>**포인트** npx 명령어를 통해 웹 카탈로그(aitmpl.com)에 등록된 다양한 MCP, 커맨드, 훅 설정을 로컬 환경에 대화형 또는 플래그 기반으로 주입할 수 있다. |  | 2026-09-27 |
 | [realpython/materials](https://github.com/realpython/materials) | 5208 | 5275 | **무엇** Real Python 튜토리얼 및 강의와 연계된 보너스 자료, 연습 문제, 예제 코드 프로젝트를 모아둔 저장소다.<br>**판단** README에 판단 지점 설명 없음<br>**포인트** 튜토리얼용 샘플 코드를 아카이빙하며, 일관된 코드 스타일 유지를 위해 CI 단계에서 Ruff 포매터와 린터 검사를 적용한다. |  | 2026-09-26 |
 | [daveebbelaar/ai-cookbook](https://github.com/daveebbelaar/ai-cookbook) | 4597 | 1597 | **무엇** AI 시스템 구축을 돕기 위해 복사해 붙여넣을 수 있는 코드 예제와 튜토리얼을 제공하는 개발자용 레퍼런스 리포지토리다.<br>**판단** README에 판단 지점 설명 없음<br>**포인트** 프로젝트에 바로 통합할 수 있는 실용적인 코드 조각과 튜토리얼 위주로 구성된 것이 특징이다. |  | 2026-09-21 |
+| [Anil-matcha/awesome-generative-ai-apps](https://github.com/Anil-matcha/awesome-generative-ai-apps) | 3337 | 491 | **무엇** Stripe 결제, Google OAuth, AI API 연동을 갖춘 상용화 목적의 오픈소스 생성형 AI SaaS 템플릿과 앱을 정리한 큐레이션 목록이다.<br>**판단** README에 판단 지점 설명 없음<br>**포인트** Next.js, Prisma, PostgreSQL 기반 풀스택 구조로 크레딧 결제 및 Vercel 원클릭 배포를 지원하며 MuAPI를 통한 모델 연동을 전제한다. |  | 2026-09-17 |
 | [12britz/awesome-free-models](https://github.com/12britz/awesome-free-models) | 2332 | 216 | **무엇** 비용 결제 없이 사용할 수 있는 오픈 가중치 AI 모델, 무료 API 계층, 로컬 추론 및 개발 도구를 큐레이션한 awesome 목록이다.<br>**판단** README에 판단 지점 설명 없음<br>**포인트** 링크 상태와 무료 정책 변경 사항(체험 기간, 유료 전환 여부)을 직접 검증하여 갱신 내역에 명시한다. |  | 2026-09-27 |
-| [yibie/awesome-jev](https://github.com/yibie/awesome-jev) | 1838 | 272 | **무엇** TypeSafe AI의 의사결정 모델 Jev를 활용한 공개 프로젝트, 연동 사례, 실무 논의를 분야별로 정리한 큐레이션 목록이다.<br>**판단** README에 판단 지점 설명 없음<br>**포인트** 카테고리별 파일을 scripts/build-readme.py로 취합해 README를 생성하며, 추천이나 품질 보증 대신 엄격한 수록 기준과 직접 검증용 체크리스트를 제시한다. |  | 2026-09-27 |
-| [mohitagw15856/pm-claude-skills](https://github.com/mohitagw15856/pm-claude-skills) | 1407 | 251 | **무엇** Claude, ChatGPT 등 AI 어시스턴트가 전문 업무를 수행하도록 돕는 마크다운 기반 스킬 프롬프트 1170개를 모아둔 라이브러리다.<br>**판단** 사용자 상황에 맞는 스킬 선택, 해당 요청의 안전성 여부, 배포(ship) 또는 연기(slip) 여부를 판단한다.<br>**포인트** 별도의 런타임 없이 마크다운 파일(SKILL.md) 형태로 제공되며 npm 및 Anthropic 플러그인 디렉터리를 통해 설치할 수 있다. |  | 2026-09-27 |
+| [yibie/awesome-jev](https://github.com/yibie/awesome-jev) | 1839 | 272 | **무엇** TypeSafe AI의 의사결정 모델 Jev를 활용한 공개 프로젝트, 연동 사례, 실무 논의를 분야별로 정리한 큐레이션 목록이다.<br>**판단** README에 판단 지점 설명 없음<br>**포인트** 카테고리별 파일을 scripts/build-readme.py로 취합해 README를 생성하며, 추천이나 품질 보증 대신 엄격한 수록 기준과 직접 검증용 체크리스트를 제시한다. |  | 2026-09-27 |
+| [mohitagw15856/pm-claude-skills](https://github.com/mohitagw15856/pm-claude-skills) | 1408 | 251 | **무엇** Claude, ChatGPT 등 AI 어시스턴트가 전문 업무를 수행하도록 돕는 마크다운 기반 스킬 프롬프트 1170개를 모아둔 라이브러리다.<br>**판단** 사용자 상황에 맞는 스킬 선택, 해당 요청의 안전성 여부, 배포(ship) 또는 연기(slip) 여부를 판단한다.<br>**포인트** 별도의 런타임 없이 마크다운 파일(SKILL.md) 형태로 제공되며 npm 및 Anthropic 플러그인 디렉터리를 통해 설치할 수 있다. |  | 2026-09-27 |
+| [Anil-matcha/awesome-gpt-6-astra](https://github.com/Anil-matcha/awesome-gpt-6-astra) | 1134 | 110 | **무엇** 가상의 OpenAI GPT-6 Astra 모델을 위한 활용 사례, 프롬프트, API 연동 가이드 및 안전 지침을 정리한 큐레이션 리포지토리다.<br>**판단** README에 판단 지점 설명 없음<br>**포인트** Responses API 기반의 툴 호출, 컴퓨터 사용(computer-use), reasoning.effort 설정 등 고급 모델 제어 패턴을 체계적으로 안내한다. |  | 2026-09-20 |
+| [Anil-matcha/awesome-muse-connectors](https://github.com/Anil-matcha/awesome-muse-connectors) | 1096 | 280 | **무엇** Meta Muse AI 에이전트를 위한 150개의 커뮤니티 커넥터 스킬 및 워크플로 템플릿 모음 카탈로그다.<br>**판단** README에 판단 지점 설명 없음<br>**포인트** 커넥터별 인증 방식, 허용 호스트, 권한 범위 및 성숙도 정보를 명시하며 관련 프로젝트로 Awesome Jev를 링크한다. |  | 2026-09-24 |
 | [taishi-i/awesome-japanese-nlp-resources](https://github.com/taishi-i/awesome-japanese-nlp-resources) | 1014 | 53 | 요약 대기 · A curated list of resources for Japanese natural language processing (NLP): Python libraries, LLMs, dictionaries, corpora, and datasets. Includes Claude Code and Codex skills to search resources. |  | 2026-09-25 |
-| [heyjunpenn/awesome-jev](https://github.com/heyjunpenn/awesome-jev) | 867 | 62 | **무엇** TypeSafe Jev를 활용해 구축된 오픈소스 프로젝트들을 분야별로 모아 정리한 커뮤니티 큐레이션 카탈로그 리포지토리다.<br>**판단** README에 판단 지점 설명 없음<br>**포인트** 916개 프로젝트를 11개 카테고리로 정리하고 단순 주장이 아닌 실제 구현된 판단 내용과 증거 링크를 함께 기록했다. |  | 2026-09-25 |
+| [heyjunpenn/awesome-jev](https://github.com/heyjunpenn/awesome-jev) | 867 | 63 | **무엇** TypeSafe Jev를 활용해 구축된 오픈소스 프로젝트들을 분야별로 모아 정리한 커뮤니티 큐레이션 카탈로그 리포지토리다.<br>**판단** README에 판단 지점 설명 없음<br>**포인트** 916개 프로젝트를 11개 카테고리로 정리하고 단순 주장이 아닌 실제 구현된 판단 내용과 증거 링크를 함께 기록했다. |  | 2026-09-25 |
 | [Anil-matcha/awesome-jev-by-typesafe](https://github.com/Anil-matcha/awesome-jev-by-typesafe) | 863 | 182 | **무엇** TypeSafe Jev를 활용한 분류, 라우팅, 가드레일 등 다양한 활용 사례, 프롬프트, 패턴, 스타터 코드를 정리한 큐레이션 리포지토리다.<br>**판단** README에 판단 지점 설명 없음<br>**포인트** 단일 애플리케이션이 아니라 Jev를 활용하는 여러 패턴, 연계 프로젝트, 커뮤니티 디렉터리 및 관련 생태계 자료를 집약한 리스트다. |  | 2026-09-23 |
 | [v-modal/awesome-jev-tools](https://github.com/v-modal/awesome-jev-tools) | 727 | 36 | 요약 대기 · A curated list of tools  built for Jev — TypeSafe AI's System One model for typed decisions. |  | 2026-09-24 |
 | [logicrw/awesome-jev-projects](https://github.com/logicrw/awesome-jev-projects) | 589 | 51 | **무엇** 커밋에 고정된 오픈소스 코드 기반으로 TypeSafe Jev 생태계 프로젝트를 정리하고 탐색할 수 있게 지원하는 큐레이션 레이더 리포지토리다.<br>**판단** README에 판단 지점 설명 없음<br>**포인트** PR 대신 GitHub Issues로만 프로젝트 등록을 받으며, 웹 기반 가챠 탐색 기능 및 에이전트 연동용 Agent Skill과 llms.txt를 제공한다. |  | 2026-09-27 |
-| [AbdelStark/awesome-typesafe-jev](https://github.com/AbdelStark/awesome-typesafe-jev) | 532 | 127 | **무엇** TypeSafe Jev 모델 생태계의 SDK, 데모, 에이전트 도구, 평가 자료 등을 큐레이션한 개발자용 레퍼런스 목록이다.<br>**판단** 고객지원 문의 텍스트를 바탕으로 유형(choice: technical), 불만 척도(score: 1), 긴급 여부(noul: 1.0)를 예시로 판단한다.<br>**포인트** 단순 링크 목록을 넘어 독립 벤치마크 결과, 프로젝트별 제약 사항, coding agent용 스킬 명세(SKILL.md)까지 체계적으로 제공한다. |  | 2026-09-27 |
+| [AbdelStark/awesome-typesafe-jev](https://github.com/AbdelStark/awesome-typesafe-jev) | 532 | 130 | **무엇** TypeSafe Jev 모델 생태계의 SDK, 데모, 에이전트 도구, 평가 자료 등을 큐레이션한 개발자용 레퍼런스 목록이다.<br>**판단** 고객지원 문의 텍스트를 바탕으로 유형(choice: technical), 불만 척도(score: 1), 긴급 여부(noul: 1.0)를 예시로 판단한다.<br>**포인트** 단순 링크 목록을 넘어 독립 벤치마크 결과, 프로젝트별 제약 사항, coding agent용 스킬 명세(SKILL.md)까지 체계적으로 제공한다. |  | 2026-09-27 |
 | [wuyoscar/jev-skill](https://github.com/wuyoscar/jev-skill) | 511 | 41 | **무엇** Jev를 활용한 커뮤니티 프로젝트, 코딩 에이전트 스킬, 사용 시나리오 및 예제를 모아둔 큐레이션 리포지토리다.<br>**판단** 브라우저 액션, 모델 라우팅, 코드 리뷰 검토 대상 플래그 등 각 시나리오별 판단을 choice, score, noul로 처리한다.<br>**포인트** 브라우저 제어, 게임, 에이전트 라우팅, 컨텍스트 압축 등 108개 시나리오와 65개 관련 프로젝트를 분류해 제공한다. |  | 2026-09-27 |
-| [AnotiaWang/awesome-jev](https://github.com/AnotiaWang/awesome-jev) | 509 | 110 | 요약 대기 · A curated list of awesome Jev / TypeSafe System One applications, libraries, and resources. |  | 2026-09-27 |
+| [AnotiaWang/awesome-jev](https://github.com/AnotiaWang/awesome-jev) | 509 | 111 | **무엇** TypeSafe Jev 및 System One 생태계의 공식·비공식 라이브러리, 도구, 애플리케이션, 연구 자료를 모아둔 큐레이션 목록이다.<br>**판단** README에 판단 지점 설명 없음<br>**포인트** 공식 SDK뿐 아니라 여러 언어로 작성된 커뮤니티 클라이언트, 프레임워크 연동 어댑터, 런타임 통합 도구들을 한곳에 정리했다. |  | 2026-09-28 |
 | [kydlikebtc/awesome-jev](https://github.com/kydlikebtc/awesome-jev) | 504 | 13 | **무엇** TypeSafe AI의 Jev 모델을 사용하는 공개 리소스와 사례를 결정 패턴별로 분류해 정리한 큐레이션 카탈로그 리포지토리다.<br>**판단** 이 리포 자체는 목록이며, 수록된 사례들은 상태에 대한 choice, score, noul 프리미티브 기반 결정을 Jev에게 요청한다.<br>**포인트** 링크 상태와 호출부 인용을 추적하며, 홍보성 추천이 아닌 독립적 벤치마크 및 부정적 평가 결과까지 포함해 검증 기록을 제공한다. |  | 2026-09-25 |
 | [OmniJev/awesome-jev-gallery](https://github.com/OmniJev/awesome-jev-gallery) | 465 | 23 | **무엇** System One 모델 및 TypeSafe Jev 생태계의 관련 논문, 오픈소스 구현체, 독립 평가 자료를 모아둔 큐레이션 목록이다.<br>**판단** README에 판단 지점 설명 없음<br>**포인트** 공식 문서와 모델 한계점뿐만 아니라 40여 개 이상의 오픈소스 재현 모델과 독립 벤치마크 평가를 망라하여 정리했다. |  | 2026-09-27 |
-| [cobanov/awesome-jev](https://github.com/cobanov/awesome-jev) | 418 | 106 | 요약 대기 · A curated, source-backed list of projects built with Jev, TypeSafe AI's System One model for typed decisions. |  | 2026-09-25 |
+| [cobanov/awesome-jev](https://github.com/cobanov/awesome-jev) | 418 | 106 | **무엇** TypeSafe AI의 System One 결정 모델인 Jev를 기반으로 구축된 프로젝트와 통합 라이브러리를 정리한 큐레이션 목록이다.<br>**판단** README에 판단 지점 설명 없음<br>**포인트** 공개 소스 코드와 재현 가능한 사례 중심이며 여러 프레임워크 통합 및 SDK 업데이트 내역을 검증해 수록했다. |  | 2026-09-25 |
+| [dabit3/jev-experiments](https://github.com/dabit3/jev-experiments) | 392 | 31 | **무엇** TypeSafe Jev 모델의 저지연 특성을 검증하고 시연하기 위해 Devin으로 구축한 실험용 데모 애플리케이션 모음이다.<br>**판단** README에 판단 지점 설명 없음<br>**포인트** 각 데모 애플리케이션이 최상위 디렉터리별로 분리되어 개별 README, TESTING.md, 스크린샷과 함께 구성되어 있다. |  | 2026-09-21 |
+| [Dominic789654/awesome-deepseek-harness](https://github.com/Dominic789654/awesome-deepseek-harness) | 353 | 182 | **무엇** DeepSeek의 에이전트 런타임인 DeepSeek Harness(DSH) 생태계의 플러그인, MCP 서버, 프로필 레이어 등을 모아둔 큐레이션 목록이다.<br>**판단** README에 판단 지점 설명 없음<br>**포인트** DSH 전용 플러그인 생태계를 프로필, 패치 레이어, 거버넌스 모드, 샌드박스 등 세부 범주별로 분류해 모아놓은 큐레이션 저장소라는 점이다. |  | 2026-09-28 |
 | [hashgraph-online/awesome-ai-plugins](https://github.com/hashgraph-online/awesome-ai-plugins) | 351 | 400 | **무엇** Claude Code, Codex 등 다양한 AI 어시스턴트용 플러그인, MCP 서버, 스킬을 정리해 둔 큐레이션 목록이다.<br>**판단** README에 판단 지점 설명 없음<br>**포인트** 단순 목록 제공을 넘어 plugin-scanner CI 연동 여부에 따른 신뢰 점수 관리 및 기계 판독용 JSON 규격을 함께 제공한다. |  | 2026-09-26 |
 | [RongleCat/awesome-grok-bot](https://github.com/RongleCat/awesome-grok-bot) | 347 | 39 | 요약 대기 · Curated bilingual list of Grok Bot resources — always-on AI teammates with their own cloud computer. |  | 2026-09-28 |
-| [walidboulanouar/awesome-jev-use-cases](https://github.com/walidboulanouar/awesome-jev-use-cases) | 272 | 36 | **무엇** TypeSafe Jev 모델을 활용한 오픈소스 프로젝트, 데모, API 예제 및 사용 사례를 정리한 큐레이션 목록 저장소다.<br>**판단** README에 판단 지점 설명 없음<br>**포인트** 70개 이상의 Jev 구현 데모를 좋아요와 도달률 등 소셜 지표로 순위화하고 원문 포스트 및 저장소 링크를 제공한다. |  | 2026-09-26 |
+| [walidboulanouar/awesome-jev-use-cases](https://github.com/walidboulanouar/awesome-jev-use-cases) | 272 | 37 | **무엇** TypeSafe Jev 모델을 활용한 오픈소스 프로젝트, 데모, API 예제 및 사용 사례를 정리한 큐레이션 목록 저장소다.<br>**판단** README에 판단 지점 설명 없음<br>**포인트** 70개 이상의 Jev 구현 데모를 좋아요와 도달률 등 소셜 지표로 순위화하고 원문 포스트 및 저장소 링크를 제공한다. |  | 2026-09-26 |
 | [fatwang2/awesome-jev](https://github.com/fatwang2/awesome-jev) | 209 | 48 | **무엇** TypeSafe Jev를 기반으로 구축된 다양한 오픈소스 프로젝트를 카테고리별로 모아 정리한 큐레이션 저장소다.<br>**판단** 저장소에 새로 제출된 프로젝트 풀 리퀘스트의 적합성과 기준 충족 여부를 Jev 워크플로를 통해 심사한다.<br>**포인트** 단순한 프로젝트 목록 관리에 그치지 않고 jev-review-action을 연동해 제출된 프로젝트를 자동 심사하는 워크플로를 운영한다. |  | 2026-09-24 |
+| [Amal-David/awesome-jev](https://github.com/Amal-David/awesome-jev) | 203 | 15 | **무엇** Jev 모델을 활용한 데모, 프로젝트, SDK, 스킬 및 관련 오픈소스 생태계를 한데 모아 정리한 큐레이션 목록이다.<br>**판단** README에 판단 지점 설명 없음<br>**포인트** 브라우저 및 데스크톱 자동화 데모부터 SDK와 에이전트 도구까지 폭넓게 수집하며 프로젝트별 출처와 한계를 명시했다. |  | 2026-09-28 |
 | [hellogumbo/awesome-jev](https://github.com/hellogumbo/awesome-jev) | 200 | 65 | 요약 대기 · A community directory of projects built on Jev, TypeSafe AI's System One model. |  | 2026-09-24 |
-| [shaftoe/awesome-pi-coding-agent](https://github.com/shaftoe/awesome-pi-coding-agent) | 136 | 11 | 요약 대기 · An auto-discovered, LLM curated directory of resources for the Pi Coding Agent ecosystem. Updated daily. |  | 2026-09-27 |
 | [ahastudio/til](https://github.com/ahastudio/til) | 190 | 25 | **무엇** 개발자가 매일 배운 지식을 정리하고 공유하기 위한 개인 TIL(Today I Learned) 저장소다.<br>**판단** README에 판단 지점 설명 없음<br>**포인트** thoughtbot의 til 프로젝트에서 영향을 받아 구성되었으며 Hacktoberfest 기여를 장려한다. |  | 2026-09-27 |
-| [mmastrac/djev](https://github.com/mmastrac/djev) | 93 | 11 | 요약 대기 · Jev-style structured decisions on DiffusionGemma: the example server from vLLM PR 57250 |  | 2026-09-24 |
+| [mmastrac/djev](https://github.com/mmastrac/djev) | 94 | 11 | 요약 대기 · Jev-style structured decisions on DiffusionGemma: the example server from vLLM PR 57250 |  | 2026-09-24 |
 | [AppitStudio/awesome-jev](https://github.com/AppitStudio/awesome-jev) | 88 | 16 | 요약 대기 · Curated Jev resources and runnable examples for typed AI decisions. |  | 2026-09-27 |
-| [Hiwoniu/Jev-Case](https://github.com/Hiwoniu/Jev-Case) | 71 | 2 | 요약 대기 · 收集全网优秀 case 的收藏库 \| A curated collection of excellent cases from across the web |  | 2026-09-22 |
+| [Hiwoniu/Jev-Case](https://github.com/Hiwoniu/Jev-Case) | 73 | 2 | 요약 대기 · 收集全网优秀 case 的收藏库 \| A curated collection of excellent cases from across the web |  | 2026-09-22 |
 | [marc-ko/daily-trending-repo](https://github.com/marc-ko/daily-trending-repo) | 35 | 5 | **무엇** GitHub의 일간 및 주간 트렌딩 리포지토리를 자동 수집하고 AI 요약과 함께 정리해 주는 큐레이션 프로젝트다.<br>**판단** README에 판단 지점 설명 없음<br>**포인트** GitHub Watching 기능을 통한 메일 알림 및 스타 수 기반 순위 정렬과 AI 요약 기능을 포함한다. |  | 2026-09-27 |
 | [Omni-Scientist/Awesome-AI-Scientist](https://github.com/Omni-Scientist/Awesome-AI-Scientist) | 106 | 3 | 요약 대기 · 🧪 Awesome list of AI Scientist papers, systems, benchmarks, datasets and open-source platforms. |  | 2026-09-26 |
 | [JackZeng/Jev_apps](https://github.com/JackZeng/Jev_apps) | 34 | 0 | 요약 대기 · 看看 Jev 能做什么：用中英文讲清热门应用、工作原理和各自优缺点。Explore Jev apps with plain-language examples, explanations, and comparisons. |  | 2026-09-23 |
@@ -43,7 +48,6 @@
 | [MrJev/awesome-jev](https://github.com/MrJev/awesome-jev) | 14 | 6 | 요약 대기 · A curated list of projects, integrations, and resources for Jev, TypeSafe AI's System One model.  |  | 2026-09-27 |
 | [whyashthakker/awesome-jev-use-cases](https://github.com/whyashthakker/awesome-jev-use-cases) | 14 | 0 | 요약 대기 · Awesome list of Jev use cases. Compared with GPT Models (LLMs) across on cost and speed. |  | 2026-09-20 |
 | [ckaraca/awesome-jev](https://github.com/ckaraca/awesome-jev) | 12 | 5 | 요약 대기 · A curated list of tools, integrations, and experiments built on Jev, TypeSafe AI's System One model for fast, typed decisions. |  | 2026-09-27 |
-| [svg153/awesome-stars](https://github.com/svg153/awesome-stars) | 12 | 4 | 요약 대기 · 설명 없음 |  | 2026-09-27 |
 | [linny006/llm-eval-tracker](https://github.com/linny006/llm-eval-tracker) | 5 | 2 | **무엇** GitHub Search API로 LLM 평가 도구와 벤치마크 리포를 15분마다 자동 수집해 정리하는 목록 저장소다.<br>**판단** README에 판단 지점 설명 없음<br>**포인트** GitHub Actions의 크론 작업을 통해 15분마다 데이터를 탐색 및 갱신하며 리포 목록 테이블을 자동 재작성한다. |  | 2026-09-28 |
 | [daftAI2026/awesome-jev](https://github.com/daftAI2026/awesome-jev) | 9 | 5 | 요약 대기 · Curated TypeSafe Jev / System One GitHub projects, open-source alternatives, and Jev news |  | 2026-09-28 |
 | [onmyway133/awesome-jev](https://github.com/onmyway133/awesome-jev) | 8 | 2 | 요약 대기 · Awesome projects built with Jev from Typesafe AI |  | 2026-09-21 |
@@ -63,7 +67,6 @@
 | [JohnDotOwl/awesome-jev](https://github.com/JohnDotOwl/awesome-jev) | 2 | 2 | 요약 대기 · A curated list of projects built on Jev, TypeSafe AI's System One model. |  | 2026-09-23 |
 | [rajasekharponakala/awesome-system1-decision-models](https://github.com/rajasekharponakala/awesome-system1-decision-models) | 2 | 2 | 요약 대기 · 설명 없음 |  | 2026-09-26 |
 | [rhc98/awesome-jev](https://github.com/rhc98/awesome-jev) | 2 | 0 | 요약 대기 · Projects built on Jev (TypeSafe AI's System One model), curated by Jev itself. |  | 2026-09-27 |
-| [robokrunch/awesome-jev](https://github.com/robokrunch/awesome-jev) | 2 | 1 | 요약 대기 · A curated list of resources for Jev — TypeSafe AI's System One decision model. Maintained by RoboKrunch. |  | 2026-09-27 |
 | [Aries-ld/raya](https://github.com/Aries-ld/raya) | 1 | 0 | 요약 대기 · Raya: A Fast Multimodal Decision-Making Service |  | 2026-09-27 |
 | [dog-last/awesome-jev](https://github.com/dog-last/awesome-jev) | 1 | 1 | 요약 대기 · A curated guide to Jev, TypeSafe AI's System One decision model — selection advice, API-verified cookbooks, independent evaluations, and 100+ community. 中英双语 |  | 2026-09-20 |
 | [karozi/awesome-jev-resources](https://github.com/karozi/awesome-jev-resources) | 1 | 1 | 요약 대기 · A curated list of Jev guides, official documentation, and community projects for AI practitioners, product managers, and builders. |  | 2026-09-25 |
@@ -130,6 +133,14 @@ This Cookbook contains examples and tutorials to help developers build AI system
 
 </details>
 
+### Anil-matcha/awesome-generative-ai-apps
+
+<details><summary>README 발췌</summary>
+
+Each app is a fully working product you can launch under your own name this weekend — auth, billing, and AI all wired up.
+
+</details>
+
 ### 12britz/awesome-free-models
 
 <details><summary>README 발췌</summary>
@@ -151,6 +162,22 @@ A curated awesome list of public projects and practices built on Jev, TypeSafe A
 <details><summary>README 발췌</summary>
 
 &gt; Your landlord kept your deposit. Your mom got a medical bill that makes no sense. You got laid off on a Tuesday. Someone you love died, and no one handed you the checklist. &gt; &gt; Generic AI is a very confident intern. PM Skills is the senior colleague's notes — 1170 of them, one markdown file each, 
+
+</details>
+
+### Anil-matcha/awesome-gpt-6-astra
+
+<details><summary>README 발췌</summary>
+
+- awesome-claude-fable-5 — The sibling high-signal repository whose layout inspired this collection. - awesome-claude-fable-5-1 — A launch-evidence and migration collection for a different frontier model family. - awesome-gemini-4-pro — Evidence-led Gemini frontier-model use cases, prompts, evaluati
+
+</details>
+
+### Anil-matcha/awesome-muse-connectors
+
+<details><summary>README 발췌</summary>
+
+&gt; A community-maintained catalog of integrations and connector skills for Meta Muse.
 
 </details>
 
@@ -242,6 +269,22 @@ This file is generated from catalog.json. Edit the catalog, then run python3 scr
 
 </details>
 
+### dabit3/jev-experiments
+
+<details><summary>README 발췌</summary>
+
+TypeSafe / Jev latency-focused demos built by Devin. Each app lives in its own top-level directory with its own README, TESTING.md and screenshots.
+
+</details>
+
+### Dominic789654/awesome-deepseek-harness
+
+<details><summary>README 발췌</summary>
+
+&gt; A curated list of plugins, skills, MCP servers, patch/profile layers, orchestrators, aggregators &amp; UIs for DeepSeek Harness (DSH) — DeepSeek's official agent runtime built around the idea Model + Harness = Agent.
+
+</details>
+
 ### hashgraph-online/awesome-ai-plugins
 
 <details><summary>README 발췌</summary>
@@ -274,19 +317,19 @@ Open-source projects built with TypeSafe Jev, with submissions reviewed by Jev.
 
 </details>
 
+### Amal-David/awesome-jev
+
+<details><summary>README 발췌</summary>
+
+Jev is TypeSafe's System One model for probability-based yes/no judgments, choices, and scores rather than generated text.
+
+</details>
+
 ### hellogumbo/awesome-jev
 
 <details><summary>README 발췌</summary>
 
 &gt; Directory of projects built on Jev, TypeSafe AI's System One model.
-
-</details>
-
-### shaftoe/awesome-pi-coding-agent
-
-<details><summary>README 발췌</summary>
-
-An auto-discovered, LLM curated directory of resources for the Pi Coding Agent ecosystem. Updated daily.
 
 </details>
 
@@ -407,14 +450,6 @@ This directory contains the Mintlify-hosted documentation for openrouter.ai/docs
 <details><summary>README 발췌</summary>
 
 &gt; A curated list of tools, integrations, and experiments built on Jev, the System One model from TypeSafe AI that makes fast, typed, confidence-aware decisions.
-
-</details>
-
-### svg153/awesome-stars
-
-<details><summary>README 발췌</summary>
-
-&gt; A curated list of my GitHub stars! Generated by stargazed
 
 </details>
 
@@ -567,14 +602,6 @@ Daily curated Jev AI projects, System One community models, and real-world use c
 <details><summary>README 발췌</summary>
 
 &gt; Projects built on Jev, TypeSafe AI's System One model. Curated by Jev itself.
-
-</details>
-
-### robokrunch/awesome-jev
-
-<details><summary>README 발췌</summary>
-
-A curated list of resources for Jev — TypeSafe AI's "System One" model that returns typed, calibrated decisions instead of text.
 
 </details>
 

@@ -1,4 +1,4 @@
-# 🛡️ 가드레일·모더레이션 (198)
+# 🛡️ 가드레일·모더레이션 (199)
 
 [← README](../README.md)
 
@@ -9,10 +9,11 @@
 | [leepokai/jev-guard](https://github.com/leepokai/jev-guard) | 43 | 5 | **무엇** 다양한 코딩 에이전트의 도구 호출과 결과를 검사해 위험한 명령과 프롬프트 인젝션을 차단하는 보안 훅 라이브러리다.<br>**판단** 도구 호출의 위험도(risk), 사용자 요청 부합 여부(user_requested), 신뢰할 수 없는 출처 기반 여부(from_untrusted)를 질의해 판단한다.<br>**포인트** 외부 의존성 없이 Claude Code, Cursor 등 여러 에이전트에 thin 어댑터로 연결되며 도구 실행 전후 및 인스트럭션 파일을 검사한다. | ✅ | 2026-09-24 |
 | [MillionSend/millionsend](https://github.com/MillionSend/millionsend) | 170 | 12 | **무엇** AWS SES를 기반으로 자체 호스팅하거나 클라우드로 사용할 수 있는 Resend 호환 오픈소스 이메일 발송 플랫폼이다.<br>**판단** 발송된 이메일 샘플에 대해 유해 콘텐츠 및 어뷰징 여부를 판단하도록 백그라운드에서 점수 채점(score)을 요청한다.<br>**포인트** 발송 지연을 막기 위해 SES 수락 후 백그라운드에서 비동기로 샘플을 채점하며, 셀프 호스트 환경에서는 기본 비활성화되어 있다. |  | 2026-09-26 |
 | [qkal/Canny](https://github.com/qkal/Canny) | 99 | 11 | **무엇** Claude Code와 Codex CLI에서 코딩 에이전트가 검증 절차 없이 작업을 마쳤다고 주장하지 못하게 감시하는 훅 도구이다.<br>**판단** 에이전트 메시지가 작업 완료를 주장하는지, 변경된 diff가 특정 규칙을 위반했는지 여부를 예/아니오 확률로 판단시킨다.<br>**포인트** 런타임 의존성이 없고, 원장의 사실 기록만 작업을 차단할 수 있으며 Jev의 판단 결과는 차단 없이 에이전트의 컨텍스트 조언으로만 사용된다. |  | 2026-09-22 |
-| [keltokhy/jgrep](https://github.com/keltokhy/jgrep) | 127 | 3 | 요약 대기 · grep, but the pattern is a description. Filters lines by meaning with TypeSafe's Jev decision model: ~200 ms and a thousandth of a cent per line. |  | 2026-09-25 |
+| [keltokhy/jgrep](https://github.com/keltokhy/jgrep) | 127 | 4 | 요약 대기 · grep, but the pattern is a description. Filters lines by meaning with TypeSafe's Jev decision model: ~200 ms and a thousandth of a cent per line. |  | 2026-09-25 |
 | [TiraelSedai/ClubDoorman](https://github.com/TiraelSedai/ClubDoorman) | 69 | 11 | **무엇** 텔레그램 대형 채팅방에서 캡차, 텍스트 필터, LLM을 결합해 스팸을 감지하고 차단하는 텔레그램 안티스팸 봇이다.<br>**판단** 기존 ML 점수가 모호한 구간(-0.5~0.5)의 메시지가 스팸(spam)인지 정상(ham)인지와 해당 분류의 확신도를 판단시킨다.<br>**포인트** Jev와 Luna 두 모델의 라벨 일치와 80% 이상 확신도를 모두 요구해 자동 데이터셋 추가 및 재학습 파이프라인의 오탐을 방지한다. |  | 2026-09-27 |
 | [brainstormity/Jev-Moderation-Bot](https://github.com/brainstormity/Jev-Moderation-Bot) | 48 | 6 | **무엇** Discord 서버 관리자가 스팸·피싱 링크를 차단하고 멤버 성향을 분석하기 위해 사용하는 Python 기반 모더레이션 봇이다.<br>**판단** 실시간 메시지의 스팸 및 피싱 링크 여부와 유저 최근 메시지의 사기 위험·스팸·초보성·유해성·도움 수준 점수를 판별한다.<br>**포인트** 오탐된 메시지를 사면하면 안전 선례로 저장해 추후 검사에 반영하는 동적 학습 및 SQLite 기반 캐싱을 지원한다. |  | 2026-09-22 |
 | [Nyarlathoteppppp/pi-heed](https://github.com/Nyarlathoteppppp/pi-heed) | 9 | 1 | **무엇** pi 코딩 에이전트의 부작용 도구 호출이 사용자의 자연어 제약 조건에 어긋나는지 실행 전 점검·차단하는 런타임 제약 가드레일이다.<br>**판단** 사용자 발화마다 기존 정책의 변경 상태(KEEP, LIFT, NARROW 등)와 작업 허가 신호 여부를 Jev에 분류시킨다.<br>**포인트** Jev는 좁은 범위의 유한 선택지 분류만 수행하며, 규칙 상태를 세션 단위 구조적 op로 영속화해 컴팩션 후 재질의 없이 복원한다. | ✅ `choice` `noul` | 2026-09-19 |
+| [kyu1204/jgrep](https://github.com/kyu1204/jgrep) | 45 | 4 | 요약 대기 · grep for what code does, not what it's called. Semantic code search powered by TypeSafe Jev. |  | 2026-09-28 |
 | [aurorainfra/grev](https://github.com/aurorainfra/grev) | 39 | 1 | 요약 대기 · Thinking coreutils |  | 2026-09-24 |
 | [kiwi0719/jev-edge](https://github.com/kiwi0719/jev-edge) | 37 | 1 | 요약 대기 · Typed-judgment admission control at the traffic edge: three-layer prompt-injection and abuse filter for nginx/OpenResty, powered by TypeSafe Jev. Fail-open, cached, hot-reloadable. |  | 2026-09-27 |
 | [zhangcy122/OpenJev](https://github.com/zhangcy122/OpenJev) | 33 | 4 | 요약 대기 · Self-evolving cognitive decision engine &amp; TypeSafe Jev alternative. Deliberative decision flywheel ('explore first, crystallize later' System 2→1) with 100% option-order invariance. Typed probabilistic API (Choice, Noul, Score) for Open LLMs, Laya (ModernBERT), &amp; commercial Jev with calibrated logprobs and adaptive safety guards. |  | 2026-09-26 |
@@ -187,7 +188,7 @@
 | [semanticpolicy/semantic-policy](https://github.com/semanticpolicy/semantic-policy) | 0 | 0 | 요약 대기 · SemanticPolicy adds testable semantic decisions to .NET applications: rules a decision model answers, measured on labelled examples, for business logic and AI agents, with no lock-in to one provider. |  | 2026-09-27 |
 | [shibammitra24/jev-guard](https://github.com/shibammitra24/jev-guard) | 0 | 0 | 요약 대기 · 설명 없음 |  | 2026-09-26 |
 | [Srinivasa314/hn-comment-filter](https://github.com/Srinivasa314/hn-comment-filter) | 0 | 0 | 요약 대기 · Chrome extension that shows the Hacker News comments worth reading, scored by TypeSafe's Jev model |  | 2026-09-26 |
-| [Swanand58/session-guard](https://github.com/Swanand58/session-guard) | 0 | 0 | 요약 대기 · Warn before Claude Code sessions get expensive; hand over to a fresh session |  | 2026-09-27 |
+| [Swanand58/session-guard](https://github.com/Swanand58/session-guard) | 0 | 0 | 요약 대기 · Warn before Claude Code sessions get expensive; hand over to a fresh session |  | 2026-09-28 |
 | [thesyedyahya/llev](https://github.com/thesyedyahya/llev) | 0 | 0 | 요약 대기 · Open-source Jev alternative: self-hosted System One decision engine. Typed answers (choice / score / yes-no / multi) with calibrated confidence from a small local LLM via llama.cpp. |  | 2026-09-26 |
 | [thy10086/ros2-resilience-guardian](https://github.com/thy10086/ros2-resilience-guardian) | 0 | 0 | 요약 대기 · Mission-aware zero-trust ROS 2 resilience guardian with a local security dashboard |  | 2026-09-27 |
 | [tx-smitht/jev-focus-guard](https://github.com/tx-smitht/jev-focus-guard) | 0 | 0 | 요약 대기 · Jev Focus Guard: a local Chrome extension that asks Jev (System One) whether page elements are ads or distractions, then hides them. |  | 2026-09-26 |
@@ -272,6 +273,14 @@ A Discord moderation bot built with Python and TypeSafe AI (Jev System One). It 
 <details><summary>README 발췌</summary>
 
 Your agent understood your instruction. pi-heed makes sure it still remembers.
+
+</details>
+
+### kyu1204/jgrep
+
+<details><summary>README 발췌</summary>
+
+grep for what code does, not what it's called.
 
 </details>
 

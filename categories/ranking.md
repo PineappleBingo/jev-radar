@@ -1,4 +1,4 @@
-# 🏆 랭킹·검색·추천 (209)
+# 🏆 랭킹·검색·추천 (208)
 
 [← README](../README.md)
 
@@ -7,10 +7,9 @@
 | [superagents-lab/jev-search](https://github.com/superagents-lab/jev-search) | 475 | 57 | **무엇** 자연어 질의를 바탕으로 검색 소스·기간을 결정하고 검색 결과의 관련도를 채점하여 순위를 매기는 웹 검색 애플리케이션이다.<br>**판단** 사용자 질의에 적합한 검색어·소스·기간 선택과 검색된 결과 항목별 관련도 점수 평가를 수행하도록 한다.<br>**포인트** 생성형 답변 없이 결과별 관련도 점수와 링크를 노출하며, Cloudflare Workers 기반으로 다중 엔진 병렬 검색과 결과 스트리밍을 처리한다. | ✅ `choice` `noul` `score` | 2026-09-20 |
 | [zilliztech/deep-searcher](https://github.com/zilliztech/deep-searcher) | 8286 | 803 | 요약 대기 · Open Source Deep Research Alternative to Reason and Search on Private Data. Written in Python. |  | 2026-09-22 |
 | [zilliztech/GPTCache](https://github.com/zilliztech/GPTCache) | 8204 | 595 | 요약 대기 · Semantic cache for LLMs. Fully integrated with LangChain and llama_index.  |  | 2026-09-22 |
-| [zilliztech/memsearch](https://github.com/zilliztech/memsearch) | 2668 | 260 | 요약 대기 · A persistent, unified memory layer for all your AI agents (e.g. Claude Code, Codex, DSH), backed by Markdown and Milvus. |  | 2026-09-24 |
-| [dzhng/jevgrep](https://github.com/dzhng/jevgrep) | 774 | 48 | 요약 대기 · Find code by asking what it does. A CLI for coding agents that uses Jev to discover relevant files and source context. |  | 2026-09-28 |
+| [zilliztech/memsearch](https://github.com/zilliztech/memsearch) | 2670 | 260 | 요약 대기 · A persistent, unified memory layer for all your AI agents (e.g. Claude Code, Codex, DSH), backed by Markdown and Milvus. |  | 2026-09-24 |
 | [kitfunso/hippo-memory](https://github.com/kitfunso/hippo-memory) | 764 | 44 | 요약 대기 · Biologically-inspired memory for AI agents. Decay, retrieval strengthening, consolidation. Zero runtime deps, SQLite, MCP. Benchmarked retrieval with an opt-in hosted TypeSafe Jev reranker. |  | 2026-09-27 |
-| [valentynkit/awesome-jev-typesafe](https://github.com/valentynkit/awesome-jev-typesafe) | 171 | 43 | 요약 대기 · Typed decisions with TypeSafe's Jev, the first System One model |  | 2026-09-27 |
+| [valentynkit/awesome-jev-typesafe](https://github.com/valentynkit/awesome-jev-typesafe) | 171 | 44 | 요약 대기 · Typed decisions with TypeSafe's Jev, the first System One model |  | 2026-09-27 |
 | [uehaj/jev-semgrep](https://github.com/uehaj/jev-semgrep) | 145 | 9 | **무엇** 텍스트의 각 줄이 특정 의미에 부합하는지 언어의 제약 없이 검색할 수 있게 해 주는 grep 도구이다.<br>**판단** 입력된 각 텍스트 줄이 주어진 의미 조건에 얼마나 부합하는지 Jev를 통해 score로 점수화하여 판단한다.<br>**포인트** 일본어와 영어를 교차 검색할 수 있으며, AND/OR/NOT 논리 연산자를 사용해 여러 의미 조건을 조합할 수 있다. |  | 2026-09-27 |
 | [mrnugget/jev-shell-history](https://github.com/mrnugget/jev-shell-history) | 113 | 9 | **무엇** zsh 환경에서 사용자가 입력 중인 명령어에 적합한 완성을 최근 히스토리에서 찾아 fish 스타일로 보여주는 자동완성 플러그인이다.<br>**판단** 현재 입력 내용을 완성할 가능성이 가장 높은 히스토리 후보(Choice)와 어떤 후보라도 입력을 완성하는지 여부(Noul)를 질의한다.<br>**포인트** zle 백그라운드 비동기 처리로 프롬프트를 차단하지 않으며 접두사 모드 및 퍼지 모드 게이팅을 적용해 호출 지연 시간은 약 0.7~0.9초다. |  | 2026-09-18 |
 | [getanyapi-com/lurk](https://github.com/getanyapi-com/lurk) | 101 | 21 | **무엇** 제품 URL을 기반으로 잠재 고객의 의도를 분석해 레딧에서 관련 구매 의향 글과 댓글을 발굴하고 점수를 매기는 셀프 호스팅 도구다.<br>**판단** 스캔한 제목, 본문, 댓글이 제품에 적합한지, 구매 의도가 있는지, 판매자인지 여부를 평가하고 점수(0-100)와 의도 단계를 판별하게 한다.<br>**포인트** 댓글 작성이나 자동 응답을 지원하지 않으며, OpenRouter나 Vercel AI Gateway를 통해 TypeSafe Jev 모델을 평가 판단용으로 활용한다. |  | 2026-09-27 |
@@ -25,7 +24,6 @@
 | [YEDASAVG/Stratum](https://github.com/YEDASAVG/Stratum) | 52 | 2 | 요약 대기 · AI-powered Log Intelligence System - Semantic search, anomaly detection, and root cause analysis for logs using RAG techniques. Built with Rust, Axum, NATS, ClickHouse, and Qdrant. |  | 2026-09-19 |
 | [raphasouthall/neurostack](https://github.com/raphasouthall/neurostack) | 47 | 5 | 요약 대기 · Local RAG layer and optimizer for your Markdown knowledge base. CLI + MCP server: grounded answers for any AI client, stale-note detection, session harvesting into memories. Local-first. |  | 2026-09-27 |
 | [gtaras7/typesafe-jev](https://github.com/gtaras7/typesafe-jev) | 8 | 1 | **무엇** 채용 이력서(CV) 폴더를 읽어 TypeSafe Jev 모델의 정형 판단과 사용자 지정 정책에 따라 스크리닝 및 순위를 산출하는 도구 모음이다.<br>**판단** 이력서별로 정형화된 질문 세트를 던져 판단 결과를 얻은 뒤, 설정된 채용 정책에 따른 점수화와 최종 판정 결정을 내린다.<br>**포인트** 모델 판단 결과와 산술 채점 로직을 분리해 두어, 가중치나 채점 정책을 변경할 때 API 재호출 없이 로컬에서 약 20ms 만에 무료로 재점수화한다. | ✅ `choice` `noul` `score` | 2026-09-27 |
-| [kyu1204/jgrep](https://github.com/kyu1204/jgrep) | 45 | 4 | 요약 대기 · grep for what code does, not what it's called. Semantic code search powered by TypeSafe Jev. |  | 2026-09-27 |
 | [WiktorB2004/llama-index-jev](https://github.com/WiktorB2004/llama-index-jev) | 7 | 0 | **무엇** LlamaIndex에서 TypeSafe Jev를 활용해 검색 문서 재정렬 및 도구 라우팅을 수행하는 확장 패키지다.<br>**판단** 각 검색 문서의 관련성을 0~3점 점수(Score)로 매기거나, 쿼리를 처리할 도구를 선택지(Choice/Noul)로 고르게 한다.<br>**포인트** 재정렬은 오류 시 기존 검색 순서를 유지(fail open)하고, 도구 선택은 오작동 방지를 위해 예외를 발생(fail closed)시킨다. | ✅ | 2026-09-25 |
 | [samdotmak/jev-recall](https://github.com/samdotmak/jev-recall) | 38 | 3 | 요약 대기 · Retrieve by relevance, not resemblance: filter an AI assistant's memories with TypeSafe's Jev |  | 2026-09-20 |
 | [takeshy/obsidian-llm-hub](https://github.com/takeshy/obsidian-llm-hub) | 35 | 5 | 요약 대기 ·  Obsidian plugin for AI chat, workflow automation, and semantic search — supports Gemini, OpenAI, OpenRouter, Grok, Ollama, and CLI   backends |  | 2026-09-27 |
@@ -84,6 +82,7 @@
 | [ctaxnagomi/dgui-hypermem](https://github.com/ctaxnagomi/dgui-hypermem) | 2 | 0 | 요약 대기 · DGUI-HyperMem (DeckerGUI HyperMemory) - self-hosted hybrid memory MCP server on Cloudflare Workers with a JEV (Choice/Noul/Score) reasoning layer and a HuggingFace training-brain flywheel. |  | 2026-09-26 |
 | [darkmatter/adhere](https://github.com/darkmatter/adhere) | 2 | 0 | 요약 대기 · A linter for rules a normal linter can't check. (powered by Typesafe) |  | 2026-09-27 |
 | [greenyamao/Antigravity-mcp-semantic-search-with-TypeSafeAi](https://github.com/greenyamao/Antigravity-mcp-semantic-search-with-TypeSafeAi) | 2 | 0 | 요약 대기 · Fast semantic code search &amp; diff sanity auditor for AI coding assistants (Antigravity, Cursor, Claude Code) powered by TypeSafe System One. |  | 2026-09-18 |
+| [igun997/laya-research](https://github.com/igun997/laya-research) | 2 | 0 | 요약 대기 · Laya research for large datasheets, with 2Gigs RAM |  | 2026-09-27 |
 | [iikareem/skillfeed](https://github.com/iikareem/skillfeed) | 2 | 0 | 요약 대기 · A tech reading feed ranked to your skills — powered by TypeSafe Jev |  | 2026-09-22 |
 | [JustasMonkev/semantic-test-matcher](https://github.com/JustasMonkev/semantic-test-matcher) | 2 | 1 | 요약 대기 · 설명 없음 |  | 2026-09-27 |
 | [komikat/psearch](https://github.com/komikat/psearch) | 2 | 0 | 요약 대기 · Parallel web search for terminals and agents, with local Chromium and Jev-guided exploration. |  | 2026-09-17 |
@@ -104,10 +103,10 @@
 | [DysektAI/pi-extensions](https://github.com/DysektAI/pi-extensions) | 1 | 0 | 요약 대기 · Public-safe Pi coding-agent extensions (tasks, search, LSP, goal, UX helpers) |  | 2026-09-27 |
 | [fellowship-dev/jev-second-brain](https://github.com/fellowship-dev/jev-second-brain) | 1 | 0 | 요약 대기 · Local-first Markdown memory alignment and source-linked search with optional Jev judgments |  | 2026-09-21 |
 | [HrishabhCodes/geo-citation-diagnostic](https://github.com/HrishabhCodes/geo-citation-diagnostic) | 1 | 0 | 요약 대기 · GEO (generative engine optimization) diagnostics: compare your page with the pages AI answer engines actually cite, using Jev for typed, confidence-scored judgments. |  | 2026-09-25 |
-| [igun997/laya-research](https://github.com/igun997/laya-research) | 1 | 0 | 요약 대기 · Laya research for large datasheets, with 2Gigs RAM |  | 2026-09-27 |
 | [jasonjeske/hermes-jev-context-engine](https://github.com/jasonjeske/hermes-jev-context-engine) | 1 | 0 | 요약 대기 · Experimental selective context compaction for Hermes Agent using TypeSafe Jev. Native plugin, local archives, bounded scoring and honest evaluation. |  | 2026-09-21 |
 | [kelaocai/tweet-radar](https://github.com/kelaocai/tweet-radar) | 1 | 0 | 요약 대기 · Jev / TypeSafe AI 驱动的 X 信息筛选：按你的规则发现值得读的帖子。开源判断规则库 + 免费 Chrome 扩展。Filter X with your own criteria. |  | 2026-09-24 |
 | [LYchoon/paper-radar-jev](https://github.com/LYchoon/paper-radar-jev) | 1 | 0 | 요약 대기 · An automated research paper radar that fetches the latest papers from arXiv, evaluates their relevance to a configurable research profile using TypeSafe AI, and ranks them by relevance score. Designed for personalized, daily literature discovery across different research domains. |  | 2026-09-20 |
+| [minhquan23102000/inventio](https://github.com/minhquan23102000/inventio) | 1 | 0 | 요약 대기 · Local retrieval without embeddings.  Every answer comes back as the original passage with its coordinates (path:start-end), so a person or an agent can open the exact lines. No Embedding, Zero Cost, Fully Local. |  | 2026-09-28 |
 | [moezubair/check-risk](https://github.com/moezubair/check-risk) | 1 | 0 | 요약 대기 · A CLI and GitHub Action that assesses code-change risk using deterministic rules and TypeSafe Jev, recommending checks and reviewers before merge. |  | 2026-09-17 |
 | [nexscope-ai/jev-amazon-keyword-checker](https://github.com/nexscope-ai/jev-amazon-keyword-checker) | 1 | 0 | 요약 대기 · Find Amazon keyword ideas with Nexscope and evaluate their relevance to listing text with Jev. |  | 2026-09-23 |
 | [openwhat007/jev-rerank](https://github.com/openwhat007/jev-rerank) | 1 | 0 | 요약 대기 · Relevance re-ranking for query/candidate lists, powered by TypeSafe's Jev Noul primitive. OpenRouter and TypeSafe direct API supported. |  | 2026-09-26 |
@@ -155,7 +154,7 @@
 | [hammadmunir959/resumes-ranker](https://github.com/hammadmunir959/resumes-ranker) | 0 | 0 | 요약 대기 · Rank resumes against weighted job criteria with TypeSafe Jev via OpenRouter |  | 2026-09-27 |
 | [hamzaahmadaslam/chunk-standalone](https://github.com/hamzaahmadaslam/chunk-standalone) | 0 | 0 | 요약 대기 · Finds RAG chunks that cannot be understood on their own and suggests keep, merge or split, using TypeSafe's Jev model. |  | 2026-09-26 |
 | [hamzaahmadaslam/stale-claims](https://github.com/hamzaahmadaslam/stale-claims) | 0 | 0 | 요약 대기 · Finds claims that are true only for a while (versions, prices, dates, statistics, status, people and roles) and give no as-of date, in documents about to be indexed for retrieval, using TypeSafe's Jev model. |  | 2026-09-26 |
-| [idlivada/JevGPT](https://github.com/idlivada/JevGPT) | 0 | 0 | 요약 대기 · A ChatGPT-style chat that generates replies one word at a time with TypeSafe's Jev System One model |  | 2026-09-27 |
+| [idlivada/JevGPT](https://github.com/idlivada/JevGPT) | 0 | 0 | 요약 대기 · A ChatGPT-style chat that generates replies one word at a time with TypeSafe's Jev System One model |  | 2026-09-28 |
 | [itsmartinwho/apartment-hunter](https://github.com/itsmartinwho/apartment-hunter) | 0 | 0 | 요약 대기 · Rank NYC rentals from StreetEasy and Zillow with your own weights, TypeSafe Jev judgments, and photo checks. |  | 2026-09-25 |
 | [JevForge/jev-release-oracle](https://github.com/JevForge/jev-release-oracle) | 0 | 0 | 요약 대기 · Gate release risk from commits, tests, vulns, and incidents. Jev returns proceed, warn, hold, or review. |  | 2026-09-24 |
 | [JevForge/jev-resource-rightsizer](https://github.com/JevForge/jev-resource-rightsizer) | 0 | 0 | 요약 대기 · Recommend scale-down, keep, scale-up, or review from resource metrics with typed Jev decisions. Never changes infrastructure. |  | 2026-09-24 |
@@ -198,8 +197,8 @@
 | [shadyvb/pi-ask-jev-question](https://github.com/shadyvb/pi-ask-jev-question) | 0 | 0 | 요약 대기 · 설명 없음 |  | 2026-09-27 |
 | [shivamshinde123/ProbablyThisWay](https://github.com/shivamshinde123/ProbablyThisWay) | 0 | 0 | 요약 대기 · 설명 없음 |  | 2026-09-27 |
 | [sidhasadhak/jev-perfume-advisor](https://github.com/sidhasadhak/jev-perfume-advisor) | 0 | 0 | 요약 대기 · Perfume recommendation chatbot powered by TypeSafe Jev's typed decisions (no generated text) over FragDB-format fragrance data |  | 2026-09-21 |
-| [Sidneeuncharged29/jev-visual](https://github.com/Sidneeuncharged29/jev-visual) | 0 | 0 | 요약 대기 · Run vision-language model inference on Apple Silicon with Qwen3.5-0.8B via MLX; answer image questions, score options, and interact through browser, CLI, or HTTP API. |  | 2026-09-27 |
-| [Significant-Hobbies/meme-lab](https://github.com/Significant-Hobbies/meme-lab) | 0 | 0 | 요약 대기 · Meme relevance experiments and public beta |  | 2026-09-27 |
+| [Sidneeuncharged29/jev-visual](https://github.com/Sidneeuncharged29/jev-visual) | 0 | 0 | 요약 대기 · Run vision-language model inference on Apple Silicon with Qwen3.5-0.8B via MLX; answer image questions, score options, and interact through browser, CLI, or HTTP API. |  | 2026-09-28 |
+| [Significant-Hobbies/meme-lab](https://github.com/Significant-Hobbies/meme-lab) | 0 | 0 | 요약 대기 · Meme relevance experiments and public beta |  | 2026-09-28 |
 | [sjarmak/nls-finetune-scix](https://github.com/sjarmak/nls-finetune-scix) | 0 | 3 | 요약 대기 · Fine-tuning infrastructure for converting natural-language questions into ADS/SciX literature search queries, targeting a complementary search feature for SciXplorer.org. Includes query validation and evaluation against the ADS API. |  | 2026-09-26 |
 | [stakwork/aws-advisor](https://github.com/stakwork/aws-advisor) | 0 | 0 | 요약 대기 · 설명 없음 |  | 2026-09-27 |
 | [SzczepanGrela/tic-tac-toe-ai](https://github.com/SzczepanGrela/tic-tac-toe-ai) | 0 | 0 | 요약 대기 · Web-based Tic-Tac-Toe AI lab for playing, training, and benchmarking classic, reinforcement-learning, and ONNX agents. |  | 2026-09-27 |
@@ -243,14 +242,6 @@ Slash Your LLM API Costs by 10x 💰, Boost Speed by 100x ⚡
 <details><summary>README 발췌</summary>
 
 - Optional Jev reranking — rerank memory search results with Jev through the TypeSafe API, with no local model download. See configuration and the Chinese/English evaluation.
-
-</details>
-
-### dzhng/jevgrep
-
-<details><summary>README 발췌</summary>
-
-Same intelligence. ~30% lower cost.
 
 </details>
 
@@ -379,14 +370,6 @@ A local retrieval layer and optimizer for the Markdown knowledge base you alread
 <details><summary>README 발췌</summary>
 
 Experiments in building software around a decision model, rather than around a chat prompt. Each project here is self contained, with its own README, its own tests and its own measured results.
-
-</details>
-
-### kyu1204/jgrep
-
-<details><summary>README 발췌</summary>
-
-grep for what code does, not what it's called.
 
 </details>
 
@@ -854,6 +837,14 @@ A Model Context Protocol (MCP) server for AI coding assistants (Antigravity IDE,
 
 </details>
 
+### igun997/laya-research
+
+<details><summary>README 발췌</summary>
+
+A containerised research bench for grocery-market decision patterns: a ~7M-row (day, store, product) datasheet, structured + full-text search over it, a declarative rule engine that turns it into explicit decisions, and a UI that moves while the data moves.
+
+</details>
+
 ### iikareem/skillfeed
 
 <details><summary>README 발췌</summary>
@@ -1014,14 +1005,6 @@ A small GEO/AEO diagnostic tool. You give it your website and a question you car
 
 </details>
 
-### igun997/laya-research
-
-<details><summary>README 발췌</summary>
-
-A containerised research bench for grocery-market decision patterns: a ~7M-row (day, store, product) datasheet, structured + full-text search over it, a declarative rule engine that turns it into explicit decisions, and a UI that moves while the data moves.
-
-</details>
-
 ### jasonjeske/hermes-jev-context-engine
 
 <details><summary>README 발췌</summary>
@@ -1043,6 +1026,14 @@ What if an agent could drop clearly obsolete search results before summarizing e
 <details><summary>README 발췌</summary>
 
 A configurable Python CLI that fetches recent arXiv papers, scores their relevance with TypeSafe AI using P(True), and generates daily Markdown and JSON rankings.
+
+</details>
+
+### minhquan23102000/inventio
+
+<details><summary>README 발췌</summary>
+
+&gt; Inventio, from invenire: to come upon. In classical rhetoric the orator did not make his &gt; material up; he went looking through the loci, the places where it already lay.
 
 </details>
 

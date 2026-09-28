@@ -1,4 +1,4 @@
-# 🗂️ 데이터 정제·라벨링 (36)
+# 🗂️ 데이터 정제·라벨링 (35)
 
 [← README](../README.md)
 
@@ -8,10 +8,9 @@
 | [amponce/archive-movie-browser](https://github.com/amponce/archive-movie-browser) | 144 | 32 | **무엇** Internet Archive에 등록된 퍼블릭 도메인 영화를 TMDB 메타데이터와 연동해 탐색하고 가상 채널로 시청하는 웹 플레이어다.<br>**판단** Archive.org의 특정 업로드 영상이 실제 TMDB의 어떤 영화에 해당하는지 여부를 식별한다.<br>**포인트** Jev로 오프라인 식별한 인덱스를 활용하며, 동기화된 가상 TV 채널, M3U 및 XMLTV 피드, MCP 서버 인터페이스를 지원한다. |  | 2026-09-27 |
 | [nomanjack/smart-paste](https://github.com/nomanjack/smart-paste) | 41 | 6 | 요약 대기 · A little less copy-paste |  | 2026-09-19 |
 | [nexibeo/jev-cookbook](https://github.com/nexibeo/jev-cookbook) | 29 | 1 | 요약 대기 · Practical, tested recipes for TypeSafe's Jev decision model on OpenRouter: support triage, database indexing, file organizing, tagging, taxonomies, dedupe, PII detection, extraction, search re-ranking and a browser agent. |  | 2026-09-26 |
-| [chenmingtang830/jevgraph](https://github.com/chenmingtang830/jevgraph) | 27 | 5 | 요약 대기 · Evidence-backed knowledge graph construction with typed Jev relation decisions |  | 2026-09-20 |
+| [chenmingtang830/jevgraph](https://github.com/chenmingtang830/jevgraph) | 28 | 5 | 요약 대기 · Evidence-backed knowledge graph construction with typed Jev relation decisions |  | 2026-09-20 |
 | [equationalapplications/curated-thoughts](https://github.com/equationalapplications/curated-thoughts) | 15 | 3 | **무엇** 로컬 문서를 감시·색인해 위키 형태의 지식 베이스를 구축하는 Tauri 기반 로컬 우선 데스크톱 세컨드 브레인 앱<br>**판단** 축적된 비정형 팩트 데이터를 더 빠르고 저렴하게 분류하기 위해 사실 유형(fact-typing)을 판별하도록 요청함<br>**포인트** 작업·에피소드·의미 기억의 3단계 구조와 사람 검토 큐를 결합했으며, Jev 엔드포인트를 전용 팩트 분류기로 옵션 지원함 |  | 2026-09-27 |
 | [goodrahstar/jev-column-race](https://github.com/goodrahstar/jev-column-race) | 24 | 3 | 요약 대기 · Jev vs Gemini 3.8 Flash: labelling 1,000 app reviews, 4.1× faster and 7× cheaper |  | 2026-09-17 |
-| [npipeline/NPipeline](https://github.com/npipeline/NPipeline) | 5 | 1 | 요약 대기 · High-performance, streaming data pipelines for .NET |  | 2026-09-27 |
 | [1jehuang/jev-pr-labeler](https://github.com/1jehuang/jev-pr-labeler) | 4 | 2 | 요약 대기 · Semantic GitHub PR labels using Jev's typed decisions, with conceptual scope instead of line counts |  | 2026-09-19 |
 | [FogMoe/necro](https://github.com/FogMoe/necro) | 4 | 0 | 요약 대기 · Abandoned Qwen3.5-0.8B LoRA fine-tuning experiments for Jev-like typed judgments, with datasets, adapters, evaluations, and a full retrospective. |  | 2026-09-21 |
 | [unownone/jevsume](https://github.com/unownone/jevsume) | 3 | 1 | 요약 대기 · ATS-friendly resume review powered by Jev (TypeSafe System One). The frontend extracts resume text the way a parser would, then a Cloudflare Worker runs typed JEV questions and composes a JevScore. |  | 2026-09-26 |
@@ -94,14 +93,6 @@ Curated Thoughts is a privacy-first, local-first desktop second brain built with
 <details><summary>README 발췌</summary>
 
 Four AI columns over 1,000 real app reviews, raced live: TypeSafe's Jev against Gemini 3.8 Flash.
-
-</details>
-
-### npipeline/NPipeline
-
-<details><summary>README 발췌</summary>
-
-High-performance, streaming data pipelines for .NET
 
 </details>
 

@@ -5,8 +5,7 @@
 | 리포 | ⭐ | 🍴 | 한눈에 보기 | 태그 | 최근 푸시 |
 |---|---:|---:|---|---|---|
 | [comet-ml/opik](https://github.com/comet-ml/opik) | 22261 | 1829 | **무엇** LLM 앱 및 AI 에이전트의 실행 트레이싱, 성능 평가, 모니터링을 제공하는 오픈소스 옵저버빌리티 플랫폼이다.<br>**판단** LLM 생성 결과에 대해 환각 여부(noul), 유해성 분류(choice), RAG 응답 품질 점수(score) 등을 판별하도록 요청한다.<br>**포인트** LLM-as-a-judge 평가 메트릭, 트레이스 트리 추적, PyTest 기반 CI/CD 연동 및 자체 호스팅 환경을 지원한다. | ✅ `choice` `noul` `score` | 2026-09-28 |
-| [Kiln-AI/Kiln](https://github.com/Kiln-AI/Kiln) | 5117 | 379 | **무엇** 평가, 프롬프트 최적화, RAG, 에이전트 구축 및 파인튜닝을 지원하는 AI 개발 워크벤치 데스크톱 앱 겸 Python 라이브러리다.<br>**판단** 생성된 출력물이 선호 기준이나 평가 지표에 부합하는지 여부(noul)와 모델 응답 품질 등급(score)을 판정한다.<br>**포인트** 노코드 데스크톱 앱과 오픈소스 Python 라이브러리를 연계해 비개발자와 협업하고, Git 동기화 및 로컬 Ollama 실행을 지원한다. |  | 2026-09-27 |
-| [bespokelabsai/nimble](https://github.com/bespokelabsai/nimble) | 1869 | 147 | 요약 대기 · Local typed decisions, contrastive data curation, and model evaluation. |  | 2026-09-24 |
+| [Kiln-AI/Kiln](https://github.com/Kiln-AI/Kiln) | 5118 | 379 | **무엇** 평가, 프롬프트 최적화, RAG, 에이전트 구축 및 파인튜닝을 지원하는 AI 개발 워크벤치 데스크톱 앱 겸 Python 라이브러리다.<br>**판단** 생성된 출력물이 선호 기준이나 평가 지표에 부합하는지 여부(noul)와 모델 응답 품질 등급(score)을 판정한다.<br>**포인트** 노코드 데스크톱 앱과 오픈소스 Python 라이브러리를 연계해 비개발자와 협업하고, Git 동기화 및 로컬 Ollama 실행을 지원한다. |  | 2026-09-27 |
 | [SREGym/SREGym](https://github.com/SREGym/SREGym) | 305 | 115 | 요약 대기 · Can AI agents resolve production incidents? |  | 2026-09-26 |
 | [monteduro/killmyidea](https://github.com/monteduro/killmyidea) | 233 | 30 | **무엇** 스타트업 아이디어를 입력하면 질문 10개에 대한 평가 점수를 종합해 진행 여부(KILL, FIX, SHIP)를 판정해 주는 웹 서비스<br>**판단** 아이디어의 카테고리, 이해도(understandability), 그리고 문제 정의·수익성·도달력 등 8개 항목에 대한 0-4점 척도 평가<br>**포인트** 생성형 LLM 텍스트 생성 대신 10개 평가 질문을 병렬로 점수화하고 가중 평균 및 명확성 게이트를 거쳐 3단계 판정을 도출하는 구조 |  | 2026-09-24 |
 | [sileod/tasksource](https://github.com/sileod/tasksource) | 198 | 11 | 요약 대기 · Datasets collection and preprocessings framework for NLP extreme multitask learning |  | 2026-09-27 |
@@ -21,7 +20,7 @@
 | [iammrduncan/typesafe-ai-benchmark](https://github.com/iammrduncan/typesafe-ai-benchmark) | 40 | 5 | **무엇** 일반 LLM의 구조화된 출력 방식과 TypeSafe Jev 판단 API의 지연 시간, 비용, 품질을 비교하는 벤치마크 도구다.<br>**판단** 티켓 분류, 가드레일 감지, 승인 여부, 점수 산정 등 7개 합성 시나리오에 대해 Choice 및 Noul 형태의 질문을 판단한다.<br>**포인트** Cerebras 기반 Qwen, 로컬 Needle 3, Jev를 나란히 실행해 레이턴시 백분위수, API 비용, 계약 검증률을 실시간 UI로 대조한다. |  | 2026-09-19 |
 | [RenaGao/jev-dataops](https://github.com/RenaGao/jev-dataops) | 60 | 6 | 요약 대기 · An open-source JEV-powered workbench for streaming data selection, quality evaluation, automatic LoRA training and held-out model evaluation. |  | 2026-09-23 |
 | [lukstei/slop-grader](https://github.com/lukstei/slop-grader) | 30 | 2 | **무엇** 텍스트 파일의 각 줄에 대해 규칙 기반으로 AI 생성 저품질 문구를 검사하고 채점하는 도구다.<br>**판단** README에 판단 지점 설명 없음<br>**포인트** 모든 텍스트 라인에 대해 정의된 모든 규칙을 누락 없이 병렬로 실행하여 검사한다. |  | 2026-09-24 |
-| [YuanKJing/Jev-as-Policy](https://github.com/YuanKJing/Jev-as-Policy) | 44 | 2 | 요약 대기 · The highly anticipated open-source repository for JEV as Policy enables one-click setup of the simulation environment. Evaluations of Astra + JEV on benchmarks such as RoboTwin will also be released soon. |  | 2026-09-21 |
+| [YuanKJing/Jev-as-Policy](https://github.com/YuanKJing/Jev-as-Policy) | 45 | 2 | 요약 대기 · The highly anticipated open-source repository for JEV as Policy enables one-click setup of the simulation environment. Evaluations of Astra + JEV on benchmarks such as RoboTwin will also be released soon. |  | 2026-09-21 |
 | [JoshuaSP/open-jev](https://github.com/JoshuaSP/open-jev) | 41 | 2 | 요약 대기 · Typed JSON inference with DiffusionGemma, with Every and Jev benchmark results |  | 2026-09-16 |
 | [bodepudimuneendra-netizen/laya-jev-GraphRAG](https://github.com/bodepudimuneendra-netizen/laya-jev-GraphRAG) | 40 | 1 | 요약 대기 · A database-agnostic Agentic GraphRAG framework using swappable System One models (local Laya / cloud Jev). A plug-and-play intelligence layer featuring a complete 4-phase pipeline, continuous evaluation and custom A* traversal for any graph database. |  | 2026-09-25 |
 | [AbdelStark/jev-benchmarks](https://github.com/AbdelStark/jev-benchmarks) | 20 | 3 | **무엇** 타입 기반 결정 모델의 캘리브레이션, 선택적 위험, 지연 시간 등을 측정하는 확률 인식형 벤치마크 도구다.<br>**판단** README에 판단 지점 설명 없음<br>**포인트** 확률 캘리브레이션과 선택적 분류의 위험도 측정, 지연 시간 등 다각도 평가와 재현 가능한 벤치마크를 지원한다. |  | 2026-09-17 |
@@ -175,6 +174,7 @@
 | [NixDow/TSJEV-Allen](https://github.com/NixDow/TSJEV-Allen) | 0 | 0 | **무엇** TypeSafe Jev의 제로샷 분류와 미세조정된 SciBERT의 의학 초록 분류 성능 및 보정을 비교하는 벤치마크 리포다.<br>**판단** 의학 논문 초록 텍스트를 입력받아 5가지 질환 분류 항목 중 어디에 해당하는지 choice로 선택하도록 묻는다.<br>**포인트** 정확도와 F1 점수뿐 아니라 ECE 및 Brier score 같은 신뢰도 보정 지표와 추론 지연시간을 계층화해 비교한다. |  | 2026-09-28 |
 | [postfunctional-org/reading-the-state](https://github.com/postfunctional-org/reading-the-state) | 0 | 0 | **무엇** TextWorld, 로그라이크, 지뢰찾기 세 게임의 정답 데이터를 바탕으로 의사결정 모델들이 상태를 반영해 행동하는지 측정하는 벤치마크 리포지토리다.<br>**판단** 주어진 게임 상태(state)에서 제시된 후보 행동(candidate actions) 목록 중 최적의 행동을 하나 선택(choice)하도록 묻는다.<br>**포인트** 상태를 전혀 보지 않는 고정 규칙(state-blind policy)과 비교하여 모델이 단순 빈도 편향을 넘어 실제 게임 상태를 읽고 있는지 검정한다. |  | 2026-09-28 |
 | [qualiteg/jev-typesafe-demo](https://github.com/qualiteg/jev-typesafe-demo) | 0 | 0 | **무엇** TypeSafe AI의 Jev API를 활용해 라우팅, 가드레일, 셸 위험도 평가 등의 정확도·지연 시간·비용을 측정한 벤치마크 샘플 코드 모음이다.<br>**판단** 고객 문의 부서 분류(Choice), 프롬프트 인젝션 및 개인정보 탐지(Noul), 셸 명령어 위험도 0~3점 평가(Score)와 승인 필요 여부(Noul)를 묻는다.<br>**포인트** 실제 블로그 실험에 쓰인 원본 응답 로그(JSONL)와 레이턴시·비용 집계 코드가 포함되어 실험 수치를 직접 재현하고 검증할 수 있다. |  | 2026-09-28 |
+| [stratify-dev/doceval](https://github.com/stratify-dev/doceval) | 0 | 0 | **무엇** 작성된 문서의 사내 스타일, 편집 품질, 독자 적합성을 정규식 린트와 System One 모델을 통해 채점하는 CLI 도구다.<br>**판단** 능동태 사용 정도, 문장 전달력, 상투적 표현 배제 등 문서의 시맨틱 품질 차원에 대해 척도(score) 등의 형식으로 평가를 질의한다.<br>**포인트** 정규식 검사는 로컬에서 수행하고 의미 평가는 Jev나 Laya 백엔드로 분리하며, 점수뿐 아니라 확률 분포와 신뢰도를 함께 제공한다. |  | 2026-09-28 |
 | [TheChyeahhh/tarnlight](https://github.com/TheChyeahhh/tarnlight) | 0 | 0 | **무엇** TypeSafe Jev를 호출하는 애플리케이션의 판단 결과와 신뢰도를 로컬에 기록하고 실시간 모니터링 및 수동 채점을 지원하는 윈도우용 데스크톱 앱이다.<br>**판단** 티켓 처리 팀 분류나 스팸 게시물 판별 등 외부 앱이 Jev에 요청한 질문과 이에 대해 Jev가 반환한 선택지 및 신뢰도 점수(0–100)를 대상으로 한다.<br>**포인트** 폴더 드롭박스나 프록시 방식을 통해 기존 앱 흐름을 방해하지 않고 결정을 수집하며, 키보드로 정답 여부를 채점하고 신뢰도 임계값 구간을 설정할 수 있다. |  | 2026-09-27 |
 | [shibadogcap/kyotsu-ai-bench](https://github.com/shibadogcap/kyotsu-ai-bench) | 2 | 0 | 요약 대기 · AI benchmark on Japan's 2026 Common Test: Jev vs luna-none vs luna-low (static dashboard) |  | 2026-09-17 |
 | [0xmdinc/jev-medical-bench](https://github.com/0xmdinc/jev-medical-bench) | 0 | 0 | 요약 대기 · 설명 없음 |  | 2026-09-27 |
@@ -302,14 +302,6 @@ Opik: Open-Source LLM Observability, Evaluation &amp; AI Agent Tracing
 <details><summary>README 발췌</summary>
 
 A free app and open-source library to build better AI products.
-
-</details>
-
-### bespokelabsai/nimble
-
-<details><summary>README 발췌</summary>
-
-Data, Model, Recipe for an open Jev
 
 </details>
 
@@ -1646,6 +1638,14 @@ A benchmark of decision models on three games with exact ground truth: TextWorld
 <details><summary>README 발췌</summary>
 
 Sample code for the Qualiteg Blog article 「Jev の特徴とその実力 ～ 301 回 API を呼んで確かめてみた」 (https://blog.qualiteg.com/jev-typesafe-ai-pricing-python-hands-on/).
+
+</details>
+
+### stratify-dev/doceval
+
+<details><summary>README 발췌</summary>
+
+Score written content on house style, editorial quality, and audience fit.
 
 </details>
 

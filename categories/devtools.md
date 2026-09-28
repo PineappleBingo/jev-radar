@@ -1,4 +1,4 @@
-# 🧑‍💻 개발 도구·코드 리뷰 (69)
+# 🧑‍💻 개발 도구·코드 리뷰 (73)
 
 [← README](../README.md)
 
@@ -8,14 +8,18 @@
 | [AkashPriyadarshii/jev-seo](https://github.com/AkashPriyadarshii/jev-seo) | 80 | 8 | **무엇** 개발자와 코딩 에이전트가 웹사이트의 SEO 및 GEO 준비 상태를 검사하고 크롤링할 수 있도록 돕는 Rust 기반 오픈소스 CLI이자 MCP 도구다.<br>**판단** README 본문에서 Jev의 Choice, Score, Noul 기본형으로 웹페이지를 평가하고 신뢰도를 제어한다고 언급하나 구체적인 질문 내용은 설명되어 있지 않다.<br>**포인트** 58가지 규칙 기반 감사, GEO 인용 점수 측정 등을 단일 바이너리로 제공하며, 15개 도구를 갖춘 MCP 서버 형태로 에이전트와 연동할 수 있다. | ✅ `choice` `noul` `score` | 2026-09-26 |
 | [1jehuang/jcode](https://github.com/1jehuang/jcode) | 20170 | 2341 | **무엇** 개발자가 터미널 환경에서 여러 코딩 에이전트 세션을 실행할 수 있도록 RAM 효율성과 성능을 극대화한 러스트 기반 코딩 에이전트 하네스 도구다.<br>**판단** README에 판단 지점 설명 없음<br>**포인트** 로컬 임베딩 비활성화 시 단일 세션 27.8MB 수준의 낮은 메모리 점유율을 제공하며, TUI 내 세션 유지 업데이트 등 다중 세션 확장성에 집중했다. |  | 2026-09-27 |
 | [Effect-TS/effect](https://github.com/Effect-TS/effect) | 16240 | 775 | **무엇** TypeScript 개발자가 타입 안전한 에러 처리, 의존성 주입, 구조적 동시성 등을 구현하는 데 사용하는 표준 라이브러리 모노레포다.<br>**판단** README에 판단 지점 설명 없음<br>**포인트** 코어 로직뿐만 아니라 런타임 플랫폼 추상화, 각종 SQL 클라이언트, AI 제공자 연동 모듈을 모노레포 패키지로 함께 제공한다. |  | 2026-09-27 |
-| [kunchenguid/no-mistakes](https://github.com/kunchenguid/no-mistakes) | 8657 | 925 | **무엇** 원격 리포지토리 푸시 전에 일회용 워크트리에서 AI 검증 파이프라인을 실행해 주는 로컬 Git 프록시 도구다.<br>**판단** README에 판단 지점 설명 없음<br>**포인트** 푸시 시점에 별도 워크트리에서 리뷰, 테스트, 린트를 수행하고 안전한 수정은 자동 적용하며 통과 시에만 PR을 연다. |  | 2026-09-27 |
+| [kunchenguid/no-mistakes](https://github.com/kunchenguid/no-mistakes) | 8657 | 925 | **무엇** 원격 리포지토리 푸시 전에 일회용 워크트리에서 AI 검증 파이프라인을 실행해 주는 로컬 Git 프록시 도구다.<br>**판단** README에 판단 지점 설명 없음<br>**포인트** 푸시 시점에 별도 워크트리에서 리뷰, 테스트, 린트를 수행하고 안전한 수정은 자동 적용하며 통과 시에만 PR을 연다. |  | 2026-09-28 |
 | [samchon/typia](https://github.com/samchon/typia) | 5922 | 227 | **무엇** TypeScript 타입을 컴파일 타임에 분석해 런타임 유효성 검증기, JSON 직렬화 코드, LLM 함수 호출 하네스를 생성하는 변환 라이브러리다.<br>**판단** README에 판단 지점 설명 없음<br>**포인트** 별도 스키마 정의나 런타임 리플렉션 없이 순수 TypeScript 타입을 빌드 단계(ttsc)에서 전용 검증 코드로 직접 컴파일한다. |  | 2026-09-27 |
 | [typesafe-ai/skills](https://github.com/typesafe-ai/skills) | 2287 | 132 | **무엇** TypeSafe API 연동 코드를 생성할 수 있도록 Claude Code 등의 AI 에이전트에 추가하는 개발용 스킬 모음이다.<br>**판단** README에 판단 지점 설명 없음<br>**포인트** Claude Code 플러그인과 skills.sh 배포 방식을 지원하여 에이전트가 TypeSafe 워크플로를 설계하고 문서를 참조할 수 있게 한다. |  | 2026-09-12 |
 | [SynaLinks/synalinks-skills](https://github.com/SynaLinks/synalinks-skills) | 907 | 84 | **무엇** 코딩 에이전트가 Keras 스타일의 Synalinks 프레임워크 코드를 올바르게 작성하도록 안내하는 Agent Skills 저장소다.<br>**판단** DecisionModel(TypeSafe jev)을 통해 필드 질의에 대한 판단을 내리고 신뢰도 임계값에 따른 기권 여부를 결정하도록 다룬다.<br>**포인트** Claude Code, Codex 등 다수의 코딩 에이전트가 공유하는 SKILL.md 표준 포맷을 따르며 실행 스크립트와 로그를 포함한다. |  | 2026-09-26 |
 | [vercel-labs/ai-cli](https://github.com/vercel-labs/ai-cli) | 817 | 65 | **무엇** 터미널에서 텍스트·미디어 생성과 정형 평가(evaluate)를 수행할 수 있게 하는 Vercel AI SDK 기반 CLI 도구다.<br>**판단** 티켓 등 입력 데이터에 대해 환불 요청 여부(boolean), 담당 팀 분류(choice), 문제 영향도나 어조(score) 등을 질문해 판단시킨다.<br>**포인트** stdin 파이프 입력을 지원하며 Jev 모델을 기본 평가 모델로 사용해 boolean, choice, score 플래그 및 JSON 스키마로 질문을 일괄 채점한다. |  | 2026-09-23 |
+| [dzhng/jevgrep](https://github.com/dzhng/jevgrep) | 778 | 48 | **무엇** 코딩 에이전트가 리포지토리 동작 관련 질문을 던져 필요한 파일과 소스 코드 맥락을 빠르게 찾도록 돕는 CLI 도구다.<br>**판단** 사용자의 동작 관련 질의에 대해 폴더, 파일, 선언부 단위의 코드 내용이 유의미하게 연관되어 있는지 여부를 판단시킨다.<br>**포인트** 저장소 계층을 탐색해 관련 파일과 소스 발췌문을 표준 출력으로 제공하며 코딩 에이전트의 탐색 비용을 약 30% 절감하도록 설계되었다. |  | 2026-09-28 |
+| [duanebester/gooey](https://github.com/duanebester/gooey) | 632 | 6 | **무엇** Zig 개발자가 macOS, Linux, 브라우저 환경에서 고성능 GPU 렌더링 애플리케이션을 구축할 때 사용하는 UI 프레임워크이다.<br>**판단** README에 판단 지점 설명 없음<br>**포인트** 외부 Zig 패키지 의존성이 전혀 없으며 Metal, Vulkan, WebGPU 백엔드를 직접 지원하고 생성형 UI를 위한 확장 모듈을 포함한다. |  | 2026-09-27 |
+| [BennyKok/omg.dev](https://github.com/BennyKok/omg.dev) | 541 | 41 | **무엇** 다양한 코딩 에이전트를 로컬이나 클라우드 환경에서 병렬 실행하고 통합 웹 및 모바일 UI로 원격 제어하는 오픈소스 하네스 도구다.<br>**판단** README에 판단 지점 설명 없음<br>**포인트** UI 연결이 끊겨도 백그라운드 세션이 유지되며, 로컬 서버에 자체 인증 기능이 없어 외부 접속 시 Tailscale 연동을 권장한다. |  | 2026-09-27 |
+| [delexw/claude-code-trace](https://github.com/delexw/claude-code-trace) | 373 | 23 | **무엇** Claude Code의 로컬 JSONL 세션 로그를 실시간으로 탐색하고 에이전트 효율성을 분석하는 크로스플랫폼 뷰어 도구다.<br>**판단** 에이전트 추적 로그를 바탕으로 작업 진행도, 도구 사용, 집중도, 탐색, 오류 복구, 토큰 효율성 등을 확률적으로 채점하도록 판단시킨다.<br>**포인트** Tauri 기반 데스크톱, 웹, TUI를 지원하며 외부 분석 전 개인정보 마스킹 페이로드를 직접 확인한 뒤 Jev에 전달하도록 구현했다. |  | 2026-09-26 |
 | [coldteadotai/abide](https://github.com/coldteadotai/abide) | 368 | 33 | **무엇** 코딩 에이전트(Claude Code, Codex 등)가 코드 수정 시 AGENTS.md 등의 프로젝트 규칙을 위반했는지 검사하고 수정을 유도하는 도구<br>**판단** 각 프로젝트 규칙과 코드 diff를 보고, 해당 수정 사항이 규칙을 위반했는지 여부를 규칙별 확률(noul)로 판별<br>**포인트** 대화 기록 없이 diff와 규칙만 Jev로 전송해 빠른 레이턴시(약 300ms)와 저렴한 비용으로 검사하며 린터가 잡지 못하는 규칙을 감지 |  | 2026-09-27 |
 | [sutro-sh/jev-align](https://github.com/sutro-sh/jev-align) | 297 | 23 | **무엇** Jev와 GEPA를 사용해 불확실한 데이터에 대한 인간 피드백을 수집하고 AI Functions를 최적화하는 CLI 도구<br>**판단** 이진 분류, 다중 클래스, 다중 라벨, 루브릭 기반 점수 평가 등 사용자가 정의한 질문을 데이터셋에 적용해 판단<br>**포인트** 불확실성 높은 데이터를 능동 학습으로 골라내 라벨링을 유도하고, GEPA를 통해 프롬프트 정의를 지속 개선하며 공개 레지스트리에 공유할 수 있음 |  | 2026-09-20 |
-| [lakeday-org/perch](https://github.com/lakeday-org/perch) | 294 | 18 | **무엇** 개발자가 자연어 규칙 기반으로 코드 결함과 스타일 위반을 검사하기 위해 사용하는 시맨틱 코드 린터 CLI 도구다.<br>**판단** 주어진 코드 단위가 YAML에 정의된 자연어 규칙(ensure)을 준수하는지, 또는 결함(defect)이 존재하는지 확률로 판단한다.<br>**포인트** 자연어로 린트 규칙을 작성할 수 있으며, Tree-sitter 기반 구조 탐색과 Jev의 확률적 판단을 결합해 이슈 심각도를 매긴다. |  | 2026-09-27 |
+| [lakeday-org/perch](https://github.com/lakeday-org/perch) | 295 | 18 | **무엇** 개발자가 자연어 규칙 기반으로 코드 결함과 스타일 위반을 검사하기 위해 사용하는 시맨틱 코드 린터 CLI 도구다.<br>**판단** 주어진 코드 단위가 YAML에 정의된 자연어 규칙(ensure)을 준수하는지, 또는 결함(defect)이 존재하는지 확률로 판단한다.<br>**포인트** 자연어로 린트 규칙을 작성할 수 있으며, Tree-sitter 기반 구조 탐색과 Jev의 확률적 판단을 결합해 이슈 심각도를 매긴다. |  | 2026-09-27 |
 | [FaqFirebase/pi-desktop](https://github.com/FaqFirebase/pi-desktop) | 250 | 32 | **무엇** Pi 및 oh-my-pi 코딩 에이전트를 위한 Electron 기반 오픈소스 데스크톱 GUI 환경이다.<br>**판단** README에 판단 지점 설명 없음<br>**포인트** TypeSafe API 키 설정 및 Jev 스킬 연동을 지원하며, Pi RPC 프로토콜을 직접 연동해 다중 워크스페이스와 독립 세션을 구동한다. |  | 2026-09-27 |
 | [NiazMorshed2007/jev-review](https://github.com/NiazMorshed2007/jev-review) | 230 | 20 | **무엇** AI 코딩 에이전트가 코드 품질을 지속적으로 점검하도록 지원하는 로컬 기반 MCP 서버 플러그인이다.<br>**판단** 코드 diff와 컨텍스트를 바탕으로 정확성·복잡도·변경용이성·모듈성·테스트·보안 등의 품질 지표를 Score·Choice·Noul로 평가한다.<br>**포인트** 긴 서술형 리뷰 텍스트 대신 정형화된 점수와 신뢰도 시그널을 반환하며, 원인 진단과 코드 수정은 메인 에이전트에게 맡긴다. |  | 2026-09-17 |
 | [supercorp-ai/supercov](https://github.com/supercorp-ai/supercov) | 132 | 5 | **무엇** 코딩 에이전트와 개발자가 코드 커버리지, 품질 점수, 보안 취약점을 측정하고 개선할 수 있게 돕는 CLI 도구다.<br>**판단** 각 소스 파일에 대해 복잡도 및 코드 냄새(long_method, deep_nesting 등)와 인젝션·시크릿 노출 등 12가지 보안 위험 여부를 예/아니오 형태로 판단시킨다.<br>**포인트** Jev 모델 질의 결과를 파일 내용 기반으로 캐싱하며, 커버리지 측정은 외부 계정이나 설정 없이 기존 테스트 러너 출력을 감싸 동작하도록 구현되었다. |  | 2026-09-27 |
@@ -143,6 +147,38 @@ This repository contains skills for coding agents that read the open Agent Skill
 <details><summary>README 발췌</summary>
 
 The Vercel AI SDK in your terminal. Generate text, images, video, and audio, and evaluate typed questions with composable commands, stdin support, and predictable outputs. Uses AI Gateway for unified access to hundreds of models.
+
+</details>
+
+### dzhng/jevgrep
+
+<details><summary>README 발췌</summary>
+
+Same intelligence. ~30% lower cost.
+
+</details>
+
+### duanebester/gooey
+
+<details><summary>README 발췌</summary>
+
+A GPU-accelerated UI framework for Zig, targeting macOS (Metal), Linux (Vulkan/Wayland), and Browser (WASM/WebGPU).
+
+</details>
+
+### BennyKok/omg.dev
+
+<details><summary>README 발췌</summary>
+
+Not 10 interfaces. One portal for all your agents.
+
+</details>
+
+### delexw/claude-code-trace
+
+<details><summary>README 발췌</summary>
+
+Claude Code Trace is a Claude Code session log viewer and Jev-powered AI agent efficiency analyzer for local JSONL files stored in ~/.claude/projects/. It combines real-time Claude Code trace observability with structured behavioural analysis from Jev, TypeSafe AI's System One Model.
 
 </details>
 
