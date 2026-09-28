@@ -179,9 +179,9 @@ export async function run({ root = ROOT, date, now, env = process.env, fetchImpl
   w('data/meta.json', JSON.stringify(out, null, 2) + '\n');
   w('data/history/stars.json', JSON.stringify(history) + '\n');
   w('data/extra/state.json', JSON.stringify(state, null, 2) + '\n');
-  w('README.md', renderReadme({ meta: out, items, docChanges: state.doc_changes, categories: cfg.categories, date }));
-  for (const c of cfg.categories) { const list = items.filter((i) => i.category.slug === c.slug); if (list.length) w(`categories/${c.slug}.md`, renderCategory(c, list, date, baseline)); }
-  w(`changes/${date}.md`, renderChanges({ date, added, vanished: day.vanished, rising: rising(items), docChanges: state.doc_changes.filter((c) => c.date === date), refilteredCount: refilter || day.refiltered.length ? day.refiltered.length : undefined, baseline }));
+  w('README.md', renderReadme({ meta: out, items, docChanges: state.doc_changes, categories: cfg.categories, date, checked: state.verify }));
+  for (const c of cfg.categories) { const list = items.filter((i) => i.category.slug === c.slug); if (list.length) w(`categories/${c.slug}.md`, renderCategory(c, list, date, baseline, state.verify)); }
+  w(`changes/${date}.md`, renderChanges({ date, added, vanished: day.vanished, rising: rising(items), docChanges: state.doc_changes.filter((c) => c.date === date), refilteredCount: refilter || day.refiltered.length ? day.refiltered.length : undefined, baseline, checked: state.verify }));
   return { meta: out, items, written, errors };
 }
 

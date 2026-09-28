@@ -294,7 +294,7 @@ test('I3: summary queue = new, then never-summarized by score, re-summaries last
   assert.deepEqual(prompts.map((p) => p.match(/리포: (\S+)/)[1]), ['hit/three', 'cat/two']);
   assert.ok(prompts.every((p) => p.includes('TAILMARK')), 'full README, not the 300-char excerpt');
   assert.equal(r.meta.queue.summaries_pending, 1);
-  assert.match(fs.readFileSync(path.join(dir, 'README.md'), 'utf8'), /요약 대기 1 · 코드 확인 대기 \d+/);
+  assert.match(fs.readFileSync(path.join(dir, 'README.md'), 'utf8'), /코드 확인: ✅ \d+ · ❌ \d+ · ⏳ \d+ · 한국어 요약을 기다리는 리포 1개/);
 });
 
 test('I5: baseline_date is carried over; items first seen on or before it are not new', async () => {
