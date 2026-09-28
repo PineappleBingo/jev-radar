@@ -1,4 +1,4 @@
-# 🎮 게임·인터랙티브 (60)
+# 🎮 게임·인터랙티브 (61)
 
 [← README](../README.md)
 
@@ -50,12 +50,10 @@
 | [rchovatiya88/cyber-breach-jev](https://github.com/rchovatiya88/cyber-breach-jev) | 1 | 0 | 요약 대기 · Cyber-Breach: The Jev Protocol - A tactical cyberpunk arena combat game powered by TypeSafe AI Jev System One decision model | 🆕 | 2026-09-18 |
 | [tubone24/jev-practice-speed](https://github.com/tubone24/jev-practice-speed) | 1 | 0 | 요약 대기 · A WebGL demo where you play the card game Speed against a CPU whose brain is TypeSafe AI's Jev. The whole point of the app is to measure and show Jev's decision speed and decision accuracy in real time. | 🆕 | 2026-09-21 |
 | [gkvoelkl/rust-bevy-jev-ants](https://github.com/gkvoelkl/rust-bevy-jev-ants) | 0 | 0 | **무엇** Rust Bevy 기반으로 제작되어 플레이어의 자연어 명령에 따라 각 개미가 개별 행동 의도를 결정하는 시뮬레이션 게임이다.<br>**판단** 여왕 개미(플레이어)의 텍스트 명령과 개미의 상황을 바탕으로 다음에 수행할 행동 의도(intent)를 선택지로 제시해 판단하도록 요청한다.<br>**포인트** 물리 및 페로몬 이동 시뮬레이션은 60Hz로 고전적으로 처리하고, Jev 모델 의사결정 계층은 비동기로 분리했으며 룰 기반 폴백 없이 동작한다. | 🆕 | 2026-09-26 |
-| [ashcastelinocs124/Emergent](https://github.com/ashcastelinocs124/Emergent) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-27 |
 | [bugkiwi/turing-jail](https://github.com/bugkiwi/turing-jail) | 0 | 0 | 요약 대기 · Turing Jail - Let's get out! | 🆕 | 2026-09-18 |
 | [codaaiteam/jev-wikiracer](https://github.com/codaaiteam/jev-wikiracer) | 0 | 0 | 요약 대기 · You vs Jev: race across Wikipedia by clicking links; Jev picks the closest of dozens each hop, one real typed decision, no hallucination. Single-file, no build. Play free: jevtypesafeai.com/games/jev-wikiracer | 🆕 | 2026-09-25 |
 | [Didixdan/jev-games-poc](https://github.com/Didixdan/jev-games-poc) | 0 | 0 | 요약 대기 · Many games resolved using Typesafe AI SystemOne model | 🆕 | 2026-09-25 |
 | [hectorlcastro09/jev-torneo-animales](https://github.com/hectorlcastro09/jev-torneo-animales) | 0 | 0 | 요약 대기 · Winner-stays-on animal tournament refereed by Jev (TypeSafe System One): a local game to feel how fast typed decisions are. UI in Spanish. | 🆕 | 2026-09-21 |
-| [MarcosSete/jev-doom](https://github.com/MarcosSete/jev-doom) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-26 |
 | [muratcanberber/JEV-TheFishGame](https://github.com/muratcanberber/JEV-TheFishGame) | 0 | 0 | 요약 대기 · 🐠 A multiplayer fish game where every AI decision is a TypeSafe Jev (System One) call — flee, hunt, roam, with live confidence bars. Node + WebSocket + Three.js. | 🆕 | 2026-09-22 |
 | [ozaki-taisuke/jev-kano](https://github.com/ozaki-taisuke/jev-kano) | 0 | 0 | 요약 대기 · #Jevカノ — 判断特化モデル Jev が本音を先に決め、LLM が言葉を書き、TTS が声を出すギャルゲー（β） | 🆕 | 2026-09-27 |
 | [pedroarruda07/jev-plays-tetris](https://github.com/pedroarruda07/jev-plays-tetris) | 0 | 0 | 요약 대기 · Automating Tetris with Jev (TypeSafe AI) | 🆕 | 2026-09-25 |
@@ -63,6 +61,9 @@
 | [Rohan0603/jev-tic-tac-toe](https://github.com/Rohan0603/jev-tic-tac-toe) | 0 | 0 | 요약 대기 · React Tic-Tac-Toe powered by TypeSafe Jev System One decisions. | 🆕 | 2026-09-25 |
 | [scd13150/jev-field-notes](https://github.com/scd13150/jev-field-notes) | 0 | 0 | 요약 대기 · Applications, measurements and boundary analysis built on TypeSafe Jev (System One): a Jev-driven fighting game, emotion-controlled TTS, and a capability-ceiling probe | 🆕 | 2026-09-22 |
 | [sergeville/HangmanGame](https://github.com/sergeville/HangmanGame) | 0 | 0 | 요약 대기 · Rust desktop Hangman with 200 words, progressive levels, an offline Odds solver, and optional JeV or local Kev duels. | 🆕 | 2026-09-26 |
+| [xreedev/hoichoi-hackathon](https://github.com/xreedev/hoichoi-hackathon) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-27 |
+| [chiubaca/lets-play-big-two](https://github.com/chiubaca/lets-play-big-two) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-27 |
+| [MarcosSete/jev-doom](https://github.com/MarcosSete/jev-doom) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-26 |
 | [scavin/Jev-2048](https://github.com/scavin/Jev-2048) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-27 |
 
 ### TianyuCodings/NanoJev
@@ -433,14 +434,6 @@ An ant colony where every ant asks TypeSafe Jev what to do next. You are the que
 
 </details>
 
-### ashcastelinocs124/Emergent
-
-<details><summary>README 발췌</summary>
-
-A first-person browser mystery set in an Earth-like city on an unknown planet. Your ship has crashed in New Eden's south district. Talk with four residents, compare what they tell you in a helmet journal, make your own assumptions, find a power cell, thermal shield, and navigation relay, then repair
-
-</details>
-
 ### bugkiwi/turing-jail
 
 <details><summary>README 발췌</summary>
@@ -470,14 +463,6 @@ A proof of concept using JEV (TypeSafe AI's System One model) as the decision en
 <details><summary>README 발췌</summary>
 
 A small local game built to feel how fast Jev — TypeSafe's System One model — makes typed decisions. Up to 2,569 animals (land, flying and marine) fight one on one; the winner stays on and faces the next challenger until one champion is left. Every fight is decided by Jev.
-
-</details>
-
-### MarcosSete/jev-doom
-
-<details><summary>README 발췌</summary>
-
-Confidence-aware NPC decision system built with ViZDoom and TypeSafe Jev.
 
 </details>
 
@@ -534,6 +519,30 @@ Applications, measurements and failure-mode analysis built on TypeSafe Jev — t
 <details><summary>README 발췌</summary>
 
 A Rust desktop Hangman game with 200 words arranged into ten approximate difficulty levels. Guess the hidden word before you run out of lives. For the probability model and decision-model boundaries, see Hangman: Probability, Information Gain, and JeV.
+
+</details>
+
+### xreedev/hoichoi-hackathon
+
+<details><summary>README 발췌</summary>
+
+BreakSense analyses a long-form OTT episode, finds every moment that is safe and natural for an ad break, and matches each break to the most relevant brand from a catalogue. It emits a VMAP 1.0.1 / VAST 4.2 manifest that a video player can consume directly, along with a full-featured browser UI.
+
+</details>
+
+### chiubaca/lets-play-big-two
+
+<details><summary>README 발췌</summary>
+
+A web-based Big Two card game.
+
+</details>
+
+### MarcosSete/jev-doom
+
+<details><summary>README 발췌</summary>
+
+Confidence-aware NPC decision system built with ViZDoom and TypeSafe Jev.
 
 </details>
 

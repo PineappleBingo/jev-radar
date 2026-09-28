@@ -1,4 +1,4 @@
-# 🗂️ 데이터 정제·라벨링 (37)
+# 🗂️ 데이터 정제·라벨링 (31)
 
 [← README](../README.md)
 
@@ -6,14 +6,12 @@
 |---|---:|---:|---|---|---|
 | [AkashPriyadarshii/jev-curate](https://github.com/AkashPriyadarshii/jev-curate) | 87 | 11 | **무엇** 합성 데이터 및 사전학습용 Parquet·JSONL 대규모 데이터셋을 TypeSafe Jev API로 고속 정제·필터링하는 Rust/Python 도구다.<br>**판단** 각 행 데이터에 대해 수학적 추론 결함, 코드 정확성, 아첨(sycophancy) 여부 등을 프리셋 루브릭 기반의 Choice, Score, Noul로 평가한다.<br>**포인트** Rust 스트리밍 코어로 단일 HTTP 요청 내 다중 질문을 병렬 처리하며, CLI 및 PyO3 기반 Python 바인딩을 함께 제공한다. | ✅ 🆕 | 2026-09-25 |
 | [amponce/archive-movie-browser](https://github.com/amponce/archive-movie-browser) | 144 | 32 | **무엇** Internet Archive에 등록된 퍼블릭 도메인 영화를 TMDB 메타데이터와 연동해 탐색하고 가상 채널로 시청하는 웹 플레이어다.<br>**판단** Archive.org의 특정 업로드 영상이 실제 TMDB의 어떤 영화에 해당하는지 여부를 식별한다.<br>**포인트** Jev로 오프라인 식별한 인덱스를 활용하며, 동기화된 가상 TV 채널, M3U 및 XMLTV 피드, MCP 서버 인터페이스를 지원한다. | 🆕 | 2026-09-27 |
-| [compozy/kb](https://github.com/compozy/kb) | 108 | 8 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-25 |
 | [nomanjack/smart-paste](https://github.com/nomanjack/smart-paste) | 41 | 6 | 요약 대기 · A little less copy-paste | 🆕 | 2026-09-19 |
 | [nexibeo/jev-cookbook](https://github.com/nexibeo/jev-cookbook) | 29 | 1 | 요약 대기 · Practical, tested recipes for TypeSafe's Jev decision model on OpenRouter: support triage, database indexing, file organizing, tagging, taxonomies, dedupe, PII detection, extraction, search re-ranking and a browser agent. | 🆕 | 2026-09-26 |
 | [chenmingtang830/jevgraph](https://github.com/chenmingtang830/jevgraph) | 27 | 5 | 요약 대기 · Evidence-backed knowledge graph construction with typed Jev relation decisions | 🆕 | 2026-09-20 |
 | [goodrahstar/jev-column-race](https://github.com/goodrahstar/jev-column-race) | 24 | 3 | 요약 대기 · Jev vs Gemini 3.8 Flash: labelling 1,000 app reviews, 4.1× faster and 7× cheaper | 🆕 | 2026-09-17 |
 | [1jehuang/jev-pr-labeler](https://github.com/1jehuang/jev-pr-labeler) | 4 | 2 | 요약 대기 · Semantic GitHub PR labels using Jev's typed decisions, with conceptual scope instead of line counts | 🆕 | 2026-09-19 |
 | [FogMoe/necro](https://github.com/FogMoe/necro) | 4 | 0 | 요약 대기 · Abandoned Qwen3.5-0.8B LoRA fine-tuning experiments for Jev-like typed judgments, with datasets, adapters, evaluations, and a full retrospective. | 🆕 | 2026-09-21 |
-| [jabr/classifier-benchmark](https://github.com/jabr/classifier-benchmark) | 3 | 1 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-26 |
 | [unownone/jevsume](https://github.com/unownone/jevsume) | 3 | 1 | 요약 대기 · ATS-friendly resume review powered by Jev (TypeSafe System One). The frontend extracts resume text the way a parser would, then a Cloudflare Worker runs typed JEV questions and composes a JevScore. | 🆕 | 2026-09-26 |
 | [arnodjiang/Vision-JEV](https://github.com/arnodjiang/Vision-JEV) | 2 | 0 | 요약 대기 · General Vision QA By JEV | 🆕 | 2026-09-26 |
 | [newuser7171/antivirus](https://github.com/newuser7171/antivirus) | 2 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-20 |
@@ -29,18 +27,14 @@
 | [sliday/jev-chess-algo](https://github.com/sliday/jev-chess-algo) | 1 | 0 | 요약 대기 · How jevchess.com asks JEV for a chess move: every legal move as the options of one typed Choice question, plus the hanging-piece check that describes them. | 🆕 | 2026-09-21 |
 | [WebGrga/jev-board-lab](https://github.com/WebGrga/jev-board-lab) | 1 | 0 | 요약 대기 · Interactive explorer and Jev question workspace for Jev Board datasets. | 🆕 | 2026-09-16 |
 | [cyber-security-dev-dep-mitake-com-tw/jef](https://github.com/cyber-security-dev-dep-mitake-com-tw/jef) | 0 | 0 | 요약 대기 · jev-alternatives | 🆕 | 2026-09-27 |
-| [dsanimm/ranker](https://github.com/dsanimm/ranker) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-26 |
-| [gpirge/CancerRegistry_Jev](https://github.com/gpirge/CancerRegistry_Jev) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-25 |
-| [JackyJoh/cc-legal-audit](https://github.com/JackyJoh/cc-legal-audit) | 0 | 0 | 요약 대기 · Empirical audit of how uniform MinHash deduplication thresholds affects semantic coverage (topic entropy) in the legal domain versus general web text, using Common Crawl data. | 🆕 | 2026-09-25 |
-| [jvsteiner/jev-mailspring](https://github.com/jvsteiner/jev-mailspring) | 0 | 0 | 요약 대기 · AI-assisted inbox sorting for Mailspring | 🆕 | 2026-09-27 |
-| [maeste/sibilla](https://github.com/maeste/sibilla) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-27 |
-| [Pukujan/jev-classifier](https://github.com/Pukujan/jev-classifier) | 0 | 0 | 요약 대기 · Mostly-deterministic JEV-based classifier for epistemic/bitemporal summarization of AI-research transcripts/papers into medium-quality research papers with provenance, lineage, and citations. | 🆕 | 2026-09-27 |
-| [Tarusharma1/happyidex-analysis-jev-model](https://github.com/Tarusharma1/happyidex-analysis-jev-model) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-27 |
+| [nandihno/gmail-chrome-plugin-scanner](https://github.com/nandihno/gmail-chrome-plugin-scanner) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-26 |
+| [Nik-1019/Jev-Creator-Decoder-NextWork](https://github.com/Nik-1019/Jev-Creator-Decoder-NextWork) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-26 |
+| [stas4000/decisionbench](https://github.com/stas4000/decisionbench) | 0 | 0 | 요약 대기 · One public test, any typed-decision model: accuracy, latency, cost, and accuracy when it is sure. Jev vs Claude Opus 5.5 on Banking77. | 🆕 | 2026-09-27 |
 | [vonhatcuong/vn-legal-ref-extractor](https://github.com/vonhatcuong/vn-legal-ref-extractor) | 0 | 0 | 요약 대기 · Trích xuất văn bản pháp luật Việt Nam được dẫn chiếu, dùng regex + TypeSafe Jev | 🆕 | 2026-09-25 |
 | [yamadashy/jev-labeler-action](https://github.com/yamadashy/jev-labeler-action) | 0 | 0 | 요약 대기 · Zero-config AI issue labeling with TypeSafe's Jev. No generated text. Unofficial. | 🆕 | 2026-09-23 |
-| [yusulike/wonyo-ai](https://github.com/yusulike/wonyo-ai) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-25 |
 | [AlexisLeite/MTGenAI](https://github.com/AlexisLeite/MTGenAI) | 0 | 0 | **무엇** Excel 파일에 정리된 논문 제목과 초록을 읽어 TypeSafe Jev API로 체계적 문헌 검토 포함 여부를 분류하는 TypeScript 스크립트다.<br>**판단** 논문의 제목과 초록을 기반으로 기준을 평가해 include, maybe, exclude 중 하나를 choice 질문으로 판단시킨다.<br>**포인트** 로컬 엑셀 시트 연동, 자동 백업, 지문 기반 캐싱을 갖추었으며 40개 캘리브레이션 데이터로 프롬프트를 조정한 뒤 Jev 결정을 직접 기록한다. | 🆕 | 2026-09-27 |
 | [OkThought/sem-top](https://github.com/OkThought/sem-top) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-26 |
+| [tushar-im/rx-jev](https://github.com/tushar-im/rx-jev) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-25 |
 
 ### AkashPriyadarshii/jev-curate
 
@@ -55,14 +49,6 @@ Title: jev-curate: High-Throughput Synthetic &amp; Pretraining Dataset Sifter Po
 <details><summary>README 발췌</summary>
 
 Forgotten films, found. A browser and player for the films on the Internet Archive that nobody claimed: public-domain features, orphan works, films whose rights lapsed or were never renewed. We work out which film each upload really is, arrange the good ones into a front page, lists and round-the-cl
-
-</details>
-
-### compozy/kb
-
-<details><summary>README 발췌</summary>
-
-Install &amp;#8226; See It Work &amp;#8226; Features &amp;#8226; Decision Model &amp;#8226; Commands &amp;#8226; Contributing
 
 </details>
 
@@ -111,14 +97,6 @@ Semantic GitHub pull request labeling with Jev, TypeSafe's typed decision model,
 <details><summary>README 발췌</summary>
 
 Necro uses Qwen3.5-0.8B to make choices, answer yes/no questions, and assign ordered scores locally. Give it context, a question, and candidate answers to get a structured result with probabilities. It scores answer labels directly, without generating an explanation or parsing generated JSON.
-
-</details>
-
-### jabr/classifier-benchmark
-
-<details><summary>README 발췌</summary>
-
-Head-to-head benchmark for "System One"-style classification models — lightweight decision models that answer structured questions (instructions + criteria) on a state:
 
 </details>
 
@@ -242,59 +220,27 @@ Badges come from the nightly run against third-party datasets, not from a number
 
 </details>
 
-### dsanimm/ranker
+### nandihno/gmail-chrome-plugin-scanner
 
 <details><summary>README 발췌</summary>
 
-A test prototype that combines a fashion-specific vision-language retriever with TypeSafe Jev through OpenRouter:
+Inbox Signal is a Chrome Manifest V3 extension that checks an open Gmail message or creates an on-demand overview of up to 20 Inbox messages without an Inbox Signal label. It uses the Gmail API for the batch flow and TypeSafe Jev, through a local Node.js relay, for message purpose, attention, and ph
 
 </details>
 
-### gpirge/CancerRegistry_Jev
+### Nik-1019/Jev-Creator-Decoder-NextWork
 
 <details><summary>README 발췌</summary>
 
-This project extracts cancer-registry entities from unstructured oncology notes with a hybrid workflow:
+Decode any YouTube creator's Shorts with Jev, TypeSafe AI's System One model. Type a handle and watch Jev label every video live, find the hooks that actually outperform, and score new hook ideas before you film.
 
 </details>
 
-### JackyJoh/cc-legal-audit
+### stas4000/decisionbench
 
 <details><summary>README 발췌</summary>
 
-Empirical audit of how uniform MinHash fuzzy deduplication thresholds affects semantic coverage (topic entropy) in the legal domain versus general web text, using Common Crawl data.
-
-</details>
-
-### jvsteiner/jev-mailspring
-
-<details><summary>README 발췌</summary>
-
-A Mailspring plugin that puts critical threads at the top of the currently loaded thread list. It is based on the Mailspring Plugin Starter and uses the same TypeSafe Jev classification questions as Jev Inbox for Gmail.
-
-</details>
-
-### maeste/sibilla
-
-<details><summary>README 발췌</summary>
-
-&gt; The oracle that reads the stream so you don't have to.
-
-</details>
-
-### Pukujan/jev-classifier
-
-<details><summary>README 발췌</summary>
-
-A researcher comparing AI-written accounts of a paper needs to know which source supports each claim and when that record changed. jev-classifier is a prototype for turning a supplied research fragment into a structured, reviewable claim record.
-
-</details>
-
-### Tarusharma1/happyidex-analysis-jev-model
-
-<details><summary>README 발췌</summary>
-
-A portfolio/demo application that analyzes a customer support conversation with TypeSafe Jev and turns typed decisions into a business-facing Customer Happy Index.
+One public labeled test, any typed-decision model, the same four numbers for all of them: accuracy, latency (p50/p95), cost per 1,000 decisions, and accuracy when the model says it is sure.
 
 </details>
 
@@ -314,14 +260,6 @@ Asks Jev one yes/no question per repository label, built from the description th
 
 </details>
 
-### yusulike/wonyo-ai
-
-<details><summary>README 발췌</summary>
-
-&gt; 비트코인 전설의 트레이더 '워뇨띠' 144만 건 실거래 전수 복기 &amp; 거래량 흡수(Volume Absorption) + 딥러닝(ONNX) + TypeSafe Jev AI 융합 실시간 직감 예측 터미널
-
-</details>
-
 ### AlexisLeite/MTGenAI
 
 <details><summary>README 발췌</summary>
@@ -335,5 +273,13 @@ Integración TypeScript con Jev mediante la API de TypeSafe. Requiere Node.js 20
 <details><summary>README 발췌</summary>
 
 A Next.js instrument for mapping a bounded Jev judgment across two ordered, human-written semantic axes. Opens immediately with a visibly labeled deterministic mock landscape.
+
+</details>
+
+### tushar-im/rx-jev
+
+<details><summary>README 발췌</summary>
+
+Type a drug name, pick a question like "pregnancy" or "diabetes", and see what the official label says about it, quoted word for word.
 
 </details>
