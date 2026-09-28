@@ -1,29 +1,28 @@
-# 💹 금융·트레이딩 (74)
+# 💹 금융·트레이딩 (78)
 
 [← README](../README.md)
 
 | 리포 | ⭐ | 🍴 | 한눈에 보기 | 태그 | 최근 푸시 |
 |---|---:|---:|---|---|---|
-| [TauricResearch/TradingAgents](https://github.com/TauricResearch/TradingAgents) | 108911 | 20892 | 요약 대기 · TradingAgents: Multi-Agents LLM Financial Trading Framework | 🆕 | 2026-09-25 |
+| [TauricResearch/TradingAgents](https://github.com/TauricResearch/TradingAgents) | 108914 | 20891 | 요약 대기 · TradingAgents: Multi-Agents LLM Financial Trading Framework | 🆕 | 2026-09-25 |
 | [virattt/ai-hedge-fund](https://github.com/virattt/ai-hedge-fund) | 63772 | 11188 | 요약 대기 · An AI Hedge Fund Team | 🆕 | 2026-09-26 |
 | [dubinc/dub](https://github.com/dubinc/dub) | 24835 | 3308 | 요약 대기 · The modern link attribution platform. Loved by world-class marketing teams like Framer, Perplexity, Superhuman, Twilio, Buffer and more. | 🆕 | 2026-09-27 |
-| [OpenByteInc/QuantDinger](https://github.com/OpenByteInc/QuantDinger) | 12236 | 2506 | **무엇** 트레이더와 개발자를 위해 암호화폐, 주식, 외환의 리서치부터 백테스트와 실거래를 지원하는 자체 호스팅 AI 트레이딩 OS다.<br>**판단** README에 판단 지점 설명 없음<br>**포인트** Python 전략 개발 및 백테스트뿐 아니라 에이전트 연동용 MCP, 자체 결제 및 정산 기능까지 결합한 올인원 스택을 제공한다. | 🆕 | 2026-09-26 |
-| [jarrodwatts/jev-trader](https://github.com/jarrodwatts/jev-trader) | 2599 | 491 | **무엇** Monad 블록체인 상의 Kuru MON-USDC 오더북을 감시하여 매 블록마다 Jev 모델의 예측에 맞춰 post-only 지정가 주문을 갱신하는 트레이딩 봇이다.<br>**판단** 지정된 블록 구간(기본 100블록, 약 30초) 동안의 가격 변동 방향에 대해 buy 또는 sell 중 하나를 선택하도록 판단시킨다.<br>**포인트** 약 300ms의 블록 주기에 맞추기 위해 RPC 호출을 2회로 최소화하고 기존 주문 취소와 신규 주문을 batchUpdate 단일 트랜잭션으로 처리한다. | 🆕 | 2026-09-17 |
+| [OpenByteInc/QuantDinger](https://github.com/OpenByteInc/QuantDinger) | 12237 | 2506 | **무엇** 트레이더와 개발자를 위해 암호화폐, 주식, 외환의 리서치부터 백테스트와 실거래를 지원하는 자체 호스팅 AI 트레이딩 OS다.<br>**판단** README에 판단 지점 설명 없음<br>**포인트** Python 전략 개발 및 백테스트뿐 아니라 에이전트 연동용 MCP, 자체 결제 및 정산 기능까지 결합한 올인원 스택을 제공한다. | 🆕 | 2026-09-26 |
+| [jarrodwatts/jev-trader](https://github.com/jarrodwatts/jev-trader) | 2601 | 491 | **무엇** Monad 블록체인 상의 Kuru MON-USDC 오더북을 감시하여 매 블록마다 Jev 모델의 예측에 맞춰 post-only 지정가 주문을 갱신하는 트레이딩 봇이다.<br>**판단** 지정된 블록 구간(기본 100블록, 약 30초) 동안의 가격 변동 방향에 대해 buy 또는 sell 중 하나를 선택하도록 판단시킨다.<br>**포인트** 약 300ms의 블록 주기에 맞추기 위해 RPC 호출을 2회로 최소화하고 기존 주문 취소와 신규 주문을 batchUpdate 단일 트랜잭션으로 처리한다. | 🆕 | 2026-09-17 |
 | [EthanAlgoX/AIStock](https://github.com/EthanAlgoX/AIStock) | 339 | 88 | 요약 대기 · One person can become their own super-analyst. Try it online: https://myaistock.top | 🆕 | 2026-09-27 |
 | [aowang-ai/jev-trade](https://github.com/aowang-ai/jev-trade) | 159 | 28 | **무엇** Hyperliquid 오더북 데이터를 바탕으로 TypeSafe Jev를 호출해 암호화폐 5종의 매매 주문을 자동 집행하는 트레이딩 봇 및 대시보드다.<br>**판단** 오더북 데이터를 기반으로 틱마다 포지션 방향(long 또는 short)과 실행 액션(open, close, hold)을 선택하도록 질의한다.<br>**포인트** 코인별 독립 지갑 구조를 적용하고, 진입 시 ALO 메이커 주문과 청산 시 IOC 테이커 주문을 분기하며 Bun과 Next 대시보드를 SSE로 연결했다. | 🆕 | 2026-09-21 |
 | [brainstormity/Jev-X-Sentiment-Analysis](https://github.com/brainstormity/Jev-X-Sentiment-Analysis) | 170 | 34 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-22 |
 | [arimanyus/warrenduffer](https://github.com/arimanyus/warrenduffer) | 93 | 27 | 요약 대기 · AI-driven intraday trading bot for Indian stocks. Jev ranks the Nifty 50 every 15s; code sizes each trade and places the stop; orders go live through Zerodha Kite or Kotak Neo. Day replay, kill switch, daily loss halt, terminal dashboard. | 🆕 | 2026-09-23 |
-| [irfndi/prism-liquidity-agent](https://github.com/irfndi/prism-liquidity-agent) | 114 | 19 | **무엇** Solana의 Meteora DLMM 유동성 풀 상태를 주기적으로 감시하고 포지션 리밸런싱과 진입·청산을 자동 수행하는 자율 LP 에이전트다.<br>**판단** README에 판단 지점 설명 없음<br>**포인트** sqlite-vec 기반 벡터 메모리로 과거 손익 이력을 축적해 자가 개선하며 0~1 거래량 진위 점수와 위험 게이트로 온체인 실행을 차단한다. | 🆕 | 2026-09-23 |
+| [irfndi/prism-liquidity-agent](https://github.com/irfndi/prism-liquidity-agent) | 115 | 19 | **무엇** Solana의 Meteora DLMM 유동성 풀 상태를 주기적으로 감시하고 포지션 리밸런싱과 진입·청산을 자동 수행하는 자율 LP 에이전트다.<br>**판단** README에 판단 지점 설명 없음<br>**포인트** sqlite-vec 기반 벡터 메모리로 과거 손익 이력을 축적해 자가 개선하며 0~1 거래량 진위 점수와 위험 게이트로 온체인 실행을 차단한다. | 🆕 | 2026-09-23 |
 | [myc0576/SmartMoney-Cub](https://github.com/myc0576/SmartMoney-Cub) | 27 | 0 | **무엇** 트레이더와 에이전트가 실행 권한 없이 매매 기록과 증거를 검토하고 재현 가능한 아티팩트로 보관하는 로컬 기반 저널링 하네스다.<br>**판단** 매매 복기, 기업 공시, 산업 뉴스, 거시 정책 텍스트를 바탕으로 사실 부합 여부와 영향도를 choice, score, noul 형식으로 판정한다.<br>**포인트** 주문 권한을 차단한 읽기 전용 구조이며, 산술 계산과 시점 경계 검증은 파이썬이 강제하고 Jev는 구조화된 판단 레이어로만 활용된다. | 🆕 | 2026-09-25 |
 | [frankda/jev-poly-crypto-demo](https://github.com/frankda/jev-poly-crypto-demo) | 39 | 14 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-23 |
 | [zadescoxp/Jev-Trades](https://github.com/zadescoxp/Jev-Trades) | 34 | 10 | 요약 대기 · Trading bot with the all new TypeSafe AI's first system one model named as Jev | 🆕 | 2026-09-25 |
 | [caiovicentino/eikos](https://github.com/caiovicentino/eikos) | 31 | 1 | 요약 대기 · Open, calibrated, single-pass typed-decision models (4B &amp; 27B) for finance and trading | 🆕 | 2026-09-26 |
-| [ruyianry/JevGym](https://github.com/ruyianry/JevGym) | 31 | 0 | 요약 대기 · JevGym is an open-source platform designed to benchmark and facilitate better probabilistic estimation in Jev-alike models | 🆕 | 2026-09-23 |
 | [unicodeveloper/jevocks](https://github.com/unicodeveloper/jevocks) | 20 | 5 | 요약 대기 · Everyday Stocks Status with Jev | 🆕 | 2026-09-18 |
 | [sosopop/jev_stock](https://github.com/sosopop/jev_stock) | 15 | 4 | 요약 대기 · An experimental JEV-powered framework for forecasting short-term stock price direction from structured market data. | 🆕 | 2026-09-17 |
 | [justinhe16/trade-jev](https://github.com/justinhe16/trade-jev) | 9 | 2 | 요약 대기 · Backtest Jev (TypeSafe) as a BUY/SELL/HOLD trader on NQ L10 order-book data | 🆕 | 2026-09-17 |
+| [bl888m/jev-bot](https://github.com/bl888m/jev-bot) | 6 | 5 | 요약 대기 · JEV-powered market decision bot for stocks, crypto and memes. State in, BUY/SELL/HOLD/AVOID out, paper by default | 🆕 | 2026-09-23 |
 | [rthomas24/jev-realtime-trading](https://github.com/rthomas24/jev-realtime-trading) | 6 | 4 | 요약 대기 · Desktop app for paper-trading stocks and crypto on live prices, with TypeSafe's Jev making the calls and your stops, targets and limits enforced in code. Windows and macOS; never touches real money. | 🆕 | 2026-09-27 |
-| [bl888m/jev-bot](https://github.com/bl888m/jev-bot) | 5 | 5 | 요약 대기 · JEV-powered market decision bot for stocks, crypto and memes. State in, BUY/SELL/HOLD/AVOID out, paper by default | 🆕 | 2026-09-23 |
 | [whitestar224/market-hot-dashboard](https://github.com/whitestar224/market-hot-dashboard) | 4 | 0 | 요약 대기 · 星云社 - Cross-market crypto and stock hot ranking dashboard with RSS, X KOL tracking, AI insights, Docker and Electron support. | 🆕 | 2026-09-25 |
 | [cejor6/kalshi-mcp-server](https://github.com/cejor6/kalshi-mcp-server) | 3 | 3 | 요약 대기 · Self-hosted MCP server for Kalshi prediction markets. Native RSA-PSS auth, token-bucket rate limiting, demo/prod safety controls. Designed to be forked and deployed. | 🆕 | 2026-09-27 |
 | [EthanAlgoX/jev-trading](https://github.com/EthanAlgoX/jev-trading) | 3 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-20 |
@@ -33,48 +32,53 @@
 | [blockbrain-ai/cygnet-recipe](https://github.com/blockbrain-ai/cygnet-recipe) | 2 | 3 | 요약 대기 · Typed decisions from frozen Gemma-4-12B-it: one-token option-letter readout over stock vLLM 0.30.0 (JevBench package) | 🆕 | 2026-09-25 |
 | [Dimesio/typesafe-chess](https://github.com/Dimesio/typesafe-chess) | 2 | 0 | 요약 대기 · FUn little experiment with Typesafe AI Jev Model playing chess against stockfish :) | 🆕 | 2026-09-20 |
 | [Eric-Zhou-0302/jev-A-share-trader](https://github.com/Eric-Zhou-0302/jev-A-share-trader) | 2 | 0 | 요약 대기 · A Jev-powered technical analysis workspace for China A-shares, supporting AKShare/Tushare, market scans, and Buy/Hold/Sell assessments with time horizons and traceable evidence. | 🆕 | 2026-09-21 |
-| [rikkooo/jev-trade](https://github.com/rikkooo/jev-trade) | 2 | 0 | 요약 대기 · A market-data trading simulator powered by auditable Jev judgments | 🆕 | 2026-09-26 |
+| [IHANsaja/freyav3](https://github.com/IHANsaja/freyav3) | 2 | 0 | 요약 대기 · Freya is a real-time voice-driven AI assistant built with Python, designed for natural, low-latency conversations using live microphone input, AI model processing, and speaker output. It streams audio continuously, enabling an interactive “talk like a human” experience powered by modern LLMs and speech systems. | 🆕 | 2026-09-27 |
+| [jevAgentDev/jev-polymarket-trading](https://github.com/jevAgentDev/jev-polymarket-trading) | 2 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-25 |
+| [Spykoninho/trading-bot-jev](https://github.com/Spykoninho/trading-bot-jev) | 2 | 0 | 요약 대기 · Crypto trading bot on Binance testnet using TypeSafe (Jev) to judge news | 🆕 | 2026-09-19 |
 | [xuboboo/ashare-trader](https://github.com/xuboboo/ashare-trader) | 2 | 0 | 요약 대기 · 基于 Jev 的 A 股 T+1 决策台：盘前预选 + 交易时段全程决策 + 本地概率模型 + 严格成本回测 + QMT 桥接（默认不下单）。1 万本金影子盘记录中；策略未证实正期望（README 有全部数据）。 | 🆕 | 2026-09-27 |
 | [zadescoxp/kadeconsole](https://github.com/zadescoxp/kadeconsole) | 2 | 0 | 요약 대기 · Kade console is a bloomberg terminal type of analytical tool.  | 🆕 | 2026-09-21 |
+| [01burark-oss/Systemcel](https://github.com/01burark-oss/Systemcel) | 1 | 0 | 요약 대기 · AI-assisted bookkeeping platform and Accountant marketplace | 🆕 | 2026-09-27 |
 | [0xZee/jev-stock-decision-maker](https://github.com/0xZee/jev-stock-decision-maker) | 1 | 0 | 요약 대기 · JEV Decision is a live demo that turns market data into structured decisions. It pulls real-time prices, valuation ratios and sector context, then runs a 20-question against TypeSafe Jev model to score buy/sell conviction, financial health and risk | 🆕 | 2026-09-21 |
 | [brycemurad0/JevTrader](https://github.com/brycemurad0/JevTrader) | 1 | 0 | 요약 대기 · using Jev to execute trading strategies | 🆕 | 2026-09-27 |
 | [cavack/nwfh](https://github.com/cavack/nwfh) | 1 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-25 |
-| [dnevado/jev-trader](https://github.com/dnevado/jev-trader) | 1 | 0 | 요약 대기 · Backtesting US stock strategies with pandas indicators, OpenAI fundamentals and Jev (TypeSafe) decisions | 🆕 | 2026-09-27 |
 | [Gaurav-Gosain/jev-alpha-bench](https://github.com/Gaurav-Gosain/jev-alpha-bench) | 1 | 0 | 요약 대기 · Does Jev predict stock returns from news? It reads the news well; there is no tradeable alpha. Three arms separate reading from recall. | 🆕 | 2026-09-16 |
 | [JordiParraCrespo/typesafe-ai-trading-showcase](https://github.com/JordiParraCrespo/typesafe-ai-trading-showcase) | 1 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-16 |
-| [Spykoninho/trading-bot-jev](https://github.com/Spykoninho/trading-bot-jev) | 1 | 0 | 요약 대기 · Crypto trading bot on Binance testnet using TypeSafe (Jev) to judge news | 🆕 | 2026-09-19 |
 | [Waxmell114514/jev-trade](https://github.com/Waxmell114514/jev-trade) | 1 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-22 |
 | [adarshvermaa/trading_bot](https://github.com/adarshvermaa/trading_bot) | 0 | 0 | **무엇** Delta Exchange India 기반 가상자산 및 선물 거래를 위해 스마트 머니 개념과 비동기 스캐너를 결합한 CLI 트레이딩 봇이다.<br>**판단** 진입 전 트랩 확률(trap probability &lt; 0.35 여부)과 셋업 등급(0.0~4.0)을 평가해 거래 승인 여부(PASS 또는 VETO)를 판단시킨다.<br>**포인트** L2 호가창과 11개 타임프레임 데이터를 병렬 분석한 뒤, Jev의 트랩 확률 필터와 등급 기준(2.5 이상)을 통과해야 25배 레버리지로 주문을 집행한다. | 🆕 | 2026-09-25 |
+| [j7708git/jev-tradingview-signal](https://github.com/j7708git/jev-tradingview-signal) | 0 | 0 | **무엇** TradingView 차트 데이터를 TypeSafe Jev 모델에 전달해 시장 방향 판단 결과를 사이드 패널에 띄워주는 Chrome MV3 확장 프로그램이다.<br>**판단** 300개 캔들스틱과 보조지표를 바탕으로 포지션 방향(매수/매도/관망), 향후 10개 봉의 상승 확률, 상승 및 하락 추세 강도를 판단한다.<br>**포인트** npm 의존성 없이 TradingView의 내부 웹소켓 통신을 읽기 전용으로 가로채 데이터를 수집하며, 비공개 프로토콜 변경 시 수집이 실패할 수 있다. | 🆕 | 2026-09-27 |
 | [Nachom3/jevTrader](https://github.com/Nachom3/jevTrader) | 2 | 0 | 요약 대기 · A High Frecuncy Trader made in Rust using Jev as a decision maker.  | 🆕 | 2026-09-23 |
+| [aabrole/claude-trading-desk](https://github.com/aabrole/claude-trading-desk) | 0 | 0 | 요약 대기 · Build, honestly backtest, paper trade and self-host algorithmic trading bots with Claude Code. Free stack end to end. | 🆕 | 2026-09-27 |
+| [arunmettle/prop-firm-helper](https://github.com/arunmettle/prop-firm-helper) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-26 |
 | [asmirrr/DriftLab](https://github.com/asmirrr/DriftLab) | 0 | 0 | 요약 대기 · Reproducible quantitative research CLI for testing momentum strategies and auditing research methodology with TypeSafe Jev. | 🆕 | 2026-09-26 |
 | [AtticusG3/okx-jev-desk](https://github.com/AtticusG3/okx-jev-desk) | 0 | 0 | 요약 대기 · Multi-bot crypto trading desk. Jev (TypeSafe System One) as the brain, TypeScript as the body, Next.js as the glass. OKX v5 venue. | 🆕 | 2026-09-27 |
 | [b1dane/kalshi-bot](https://github.com/b1dane/kalshi-bot) | 0 | 0 | 요약 대기 · Kalshi BTC 15-min paper trading bot with Jev AI decisions | 🆕 | 2026-09-25 |
 | [botta0oss/News_Aggregator](https://github.com/botta0oss/News_Aggregator) | 0 | 0 | 요약 대기 · From news to probabilities: a news aggregator that estimates the events listed on Polymarket, compares the estimate with the price and says what is worth doing. | 🆕 | 2026-09-26 |
-| [cristiancolon/jev-hft](https://github.com/cristiancolon/jev-hft) | 0 | 0 | 요약 대기 · Research pipeline testing whether TypeSafe's Jev (via Vercel AI Gateway) can judge news and market data fast enough to matter. Bitcoin and US stocks, paper trading only. | 🆕 | 2026-09-25 |
+| [CryptoCT01/jev-pulse](https://github.com/CryptoCT01/jev-pulse) | 0 | 0 | 요약 대기 · Jev Pulse paper desk. Gross run, then a 0.06% taker with a 50% rebate. | 🆕 | 2026-09-27 |
 | [dobsZY/crypto-trading-assistant](https://github.com/dobsZY/crypto-trading-assistant) | 0 | 0 | 요약 대기 · Kişisel kripto &amp; hisse yatırım araştırma asistanı: backtest, walk-forward, istatistiksel anlamlılık, paper trading, TypeSafe Jev entegrasyonu. Yatırım tavsiyesi değildir. | 🆕 | 2026-09-25 |
 | [echelong/evolve](https://github.com/echelong/evolve) | 0 | 0 | 요약 대기 · Autonomous evolutionary trading-agent research lab for Solana. Built by Cobalt. | 🆕 | 2026-09-27 |
-| [eriestra/jev-chess](https://github.com/eriestra/jev-chess) | 0 | 0 | 요약 대기 · Measures how well TypeSafe's Jev chooses chess moves from the full list of legal moves, graded by Stockfish 19 | 🆕 | 2026-09-27 |
+| [foundationfivepro-gif/jev-trading-agent](https://github.com/foundationfivepro-gif/jev-trading-agent) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-27 |
 | [gbesse/jev-crypto-lab](https://github.com/gbesse/jev-crypto-lab) | 0 | 0 | 요약 대기 · Read-only research prototypes for prediction-market contract logic, resolution scenarios and crypto exposure | 🆕 | 2026-09-27 |
+| [Hellotravisss/SteadyQuant](https://github.com/Hellotravisss/SteadyQuant) | 0 | 0 | 요약 대기 · 省心量化 — a beginner-friendly quantitative-investing tool with plain-language portfolio guidance. | 🆕 | 2026-09-26 |
 | [Idiroll/DAYTRADES](https://github.com/Idiroll/DAYTRADES) | 0 | 0 | 요약 대기 · Using Jev to automate day-trading for dirt cheap. Extremely Fast.  | 🆕 | 2026-09-27 |
 | [itsadrianxv/jev-quant](https://github.com/itsadrianxv/jev-quant) | 0 | 0 | 요약 대기 · C++ trading system leveraging TypeSafe Jev. | 🆕 | 2026-09-27 |
 | [javaninvegas/jev-desert-crew](https://github.com/javaninvegas/jev-desert-crew) | 0 | 0 | 요약 대기 · Four AI paper-trading bots racing on Jev (TypeSafe AI). Jev places the orders. Fork of imikerussell/beebots. | 🆕 | 2026-09-26 |
 | [jaysonsantos/sudoku-jev](https://github.com/jaysonsantos/sudoku-jev) | 0 | 0 | 요약 대기 · Sudoku game played by the TypeSafe Jev decision model through OpenRouter | 🆕 | 2026-09-21 |
+| [JienWeng/jev-trader](https://github.com/JienWeng/jev-trader) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-27 |
+| [khaldunshahran/institutional-quant-vault](https://github.com/khaldunshahran/institutional-quant-vault) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-27 |
 | [lizhuojunx86/llm-memory-audit](https://github.com/lizhuojunx86/llm-memory-audit) | 0 | 0 | 요약 대기 · Pre-registered tests of whether language models remember how market events turned out | 🆕 | 2026-09-27 |
+| [luongnv89/money-mind](https://github.com/luongnv89/money-mind) | 0 | 0 | 요약 대기 · The Free &amp; Private way to understand your money flow | 🆕 | 2026-09-27 |
+| [Mkultra00/levy](https://github.com/Mkultra00/levy) | 0 | 0 | 요약 대기 · LEVY — tariff intelligence agent desk (built with Lovable) | 🆕 | 2026-09-26 |
 | [PICDEV-collap/binance-jev-prediction-bot](https://github.com/PICDEV-collap/binance-jev-prediction-bot) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-27 |
-| [r4topunk/jev-trading-study](https://github.com/r4topunk/jev-trading-study) | 0 | 0 | 요약 대기 · Pre-registered test of the Jev AI decision model as a crypto trader on Base: 40,228 decisions, worse than a coin flip. Interactive write-up EN/PT. | 🆕 | 2026-09-23 |
 | [rbardyla-boop/touchgrass-hl](https://github.com/rbardyla-boop/touchgrass-hl) | 0 | 0 | 요약 대기 · Deterministic Hyperliquid research and paper-trading bot. Public market data only. Mainnet trading disabled. | 🆕 | 2026-09-26 |
 | [Solizardking/clawd-jev-trading-machine](https://github.com/Solizardking/clawd-jev-trading-machine) | 0 | 0 | 요약 대기 · clawd-JEV-trading machine: JEV-on-Solana paper trader. TypeSafe jev-latest brain, dynamic action space, CoinGecko regime + Supermemory memory, Jupiter/DFlow venues. Dry-run only. | 🆕 | 2026-09-25 |
 | [SuperInstance/quilt-cortex](https://github.com/SuperInstance/quilt-cortex) | 0 | 0 | 요약 대기 · Tri-nervous-system chord spine — cortex absorbed as a pure quilt sheet (z portfolio v4) | 🆕 | 2026-09-25 |
-| [valuecodes/jev-on-air](https://github.com/valuecodes/jev-on-air) | 0 | 0 | 요약 대기 · JevOnAir monitors livestreams in real time, transcribes speech, detects market-moving statements with Jev, and turns them into structured simulated trade signals. | 🆕 | 2026-09-27 |
 | [WangYu0611/jevymarket-direct](https://github.com/WangYu0611/jevymarket-direct) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-27 |
-| [zd87pl/jevtrader](https://github.com/zd87pl/jevtrader) | 0 | 0 | 요약 대기 · Auditable research lab testing whether changes in SEC 8-K disclosures predict benchmark-relative stock returns. LLM and lexical text features, point-in-time market data, ridge models with purged walk-forward evaluation, and an immutable SQLite ledger. Research software, not a trading bot. | 🆕 | 2026-09-27 |
-| [zytong523-bot/stock-lite](https://github.com/zytong523-bot/stock-lite) | 0 | 0 | 요약 대기 · 给纯新手看的极简 A 股看板：规则引擎 + Jev AI 双信号对照，能不能买一目了然 | 🆕 | 2026-09-24 |
+| [zd87pl/jevtrader](https://github.com/zd87pl/jevtrader) | 0 | 0 | 요약 대기 · Auditable research lab testing whether changes in SEC 8-K disclosures predict benchmark-relative stock returns. LLM and lexical text features, point-in-time market data, ridge models with purged walk-forward evaluation, and an immutable SQLite ledger. Research software, not a trading bot. | 🆕 | 2026-09-28 |
 | [thodoh1/FinancialPredictionJev](https://github.com/thodoh1/FinancialPredictionJev) | 1 | 0 | 요약 대기 · Using Jev to test how well it predicts financial markets(just like most llms as of september 2026, it doesnt do that good) | 🆕 | 2026-09-16 |
 | [PineappleBingo/tradingview-indicator-search-mcp-server](https://github.com/PineappleBingo/tradingview-indicator-search-mcp-server) | 0 | 0 | **무엇** TradingView의 공개 지표 및 전략 스크립트를 검색하고 Pine Script 소스 코드를 조회할 수 있도록 지원하는 MCP 서버<br>**판단** README에 판단 지점 설명 없음<br>**포인트** 별도 API 키나 계정 없이 공개 엔드포인트를 활용하며 Node.js 22.5 내장 sqlite를 통해 코퍼스를 로컬에 구축해 오프라인 검색을 지원함 | 🆕 | 2026-07-25 |
 | [actions-marketplace-validations/sumant1122_jevci](https://github.com/actions-marketplace-validations/sumant1122_jevci) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-27 |
 | [esuai02/shadow_wik](https://github.com/esuai02/shadow_wik) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-27 |
 | [jaceyang97/figgie-on-jev](https://github.com/jaceyang97/figgie-on-jev) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-27 |
-| [jdhornsby/typesafe-jev](https://github.com/jdhornsby/typesafe-jev) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-26 |
 | [proxy303-wq/Parallax](https://github.com/proxy303-wq/Parallax) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-27 |
 | [SMC17/jevy](https://github.com/SMC17/jevy) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-27 |
 | [u230709007/jevtrade](https://github.com/u230709007/jevtrade) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-26 |
@@ -191,14 +195,6 @@ Eikos (εἰκός, "the probable") is a family of open typed-decision models, r
 
 </details>
 
-### ruyianry/JevGym
-
-<details><summary>README 발췌</summary>
-
-A timestamped benchmark and trading arena for real-world probabilistic forecasting.
-
-</details>
-
 ### unicodeveloper/jevocks
 
 <details><summary>README 발췌</summary>
@@ -223,19 +219,19 @@ Tests Jev (TypeSafe) as a BUY / SELL / HOLD trader on NQ L10 order-book data fro
 
 </details>
 
-### rthomas24/jev-realtime-trading
-
-<details><summary>README 발췌</summary>
-
-Paper-trading agents that watch a live market and decide every second. Pick a stock or a coin, give it some paper money, and watch an AI model read the tape and call up, down or flat, while the app enforces your stops and targets and books every trade. The model is TypeSafe's Jev.
-
-</details>
-
 ### bl888m/jev-bot
 
 <details><summary>README 발췌</summary>
 
 JEV-powered market decision bot for stocks, crypto and memes
+
+</details>
+
+### rthomas24/jev-realtime-trading
+
+<details><summary>README 발췌</summary>
+
+Paper-trading agents that watch a live market and decide every second. Pick a stock or a coin, give it some paper money, and watch an AI model read the tape and call up, down or flat, while the app enforces your stops and targets and books every trade. The model is TypeSafe's Jev.
 
 </details>
 
@@ -311,11 +307,27 @@ jev-A-share-trader 使用 AKShare 或 Tushare 获取 A 股行情，计算技术�
 
 </details>
 
-### rikkooo/jev-trade
+### IHANsaja/freyav3
 
 <details><summary>README 발췌</summary>
 
-Jev Trade is a transparent market-judgment simulator. It freezes Jev's typed view of a stock before the outcome is known, applies deterministic risk and paper-trading rules, and scores the result against simple baselines.
+Trading Lab: open /trading for simulation-only BTC/ETH practice, replay, decision journaling and chart explanations. See setup, execution rules and tests.
+
+</details>
+
+### jevAgentDev/jev-polymarket-trading
+
+<details><summary>README 발췌</summary>
+
+A terminal agent for Polymarket’s BTC Up or Down 5-minute markets.
+
+</details>
+
+### Spykoninho/trading-bot-jev
+
+<details><summary>README 발췌</summary>
+
+Un bot de trading crypto construit pour répondre à une question : à quoi sert Jev, le modèle « System One » de TypeSafe, et apporte-t-il quelque chose par rapport à un algorithme seul ?
 
 </details>
 
@@ -332,6 +344,14 @@ Jev Trade is a transparent market-judgment simulator. It freezes Jev's typed vie
 <details><summary>README 발췌</summary>
 
 &gt; An equity research console (like a Bloomberg terminal) — free, open-source, and AI-powered.
+
+</details>
+
+### 01burark-oss/Systemcel
+
+<details><summary>README 발췌</summary>
+
+Systemcel is the web version of the pre-accounting product. The repository is private and still contains internal CashTracker. project and namespace names; the shipped product, deployment surface, domains, and documentation use Systemcel.
 
 </details>
 
@@ -359,14 +379,6 @@ Professional real-time crypto signal intelligence system with multi-source casca
 
 </details>
 
-### dnevado/jev-trader
-
-<details><summary>README 발췌</summary>
-
-Backtesting of US stock strategies: pandas technical indicators, OpenAI fundamentals summaries and Jev (TypeSafe AI) decisions. Design and decisions: CLAUDE.md. Verified FMP endpoints and free-plan limits: docs/fmpendpoints.md.
-
-</details>
-
 ### Gaurav-Gosain/jev-alpha-bench
 
 <details><summary>README 발췌</summary>
@@ -383,14 +395,6 @@ Live BTC, ETH, and XRP prices with a shared TypeSafe buy/wait demonstration. No 
 
 </details>
 
-### Spykoninho/trading-bot-jev
-
-<details><summary>README 발췌</summary>
-
-Un bot de trading crypto construit pour répondre à une question : à quoi sert Jev, le modèle « System One » de TypeSafe, et apporte-t-il quelque chose par rapport à un algorithme seul ?
-
-</details>
-
 ### Waxmell114514/jev-trade
 
 <details><summary>README 발췌</summary>
@@ -404,6 +408,30 @@ A simulated high-frequency crypto trading loop that makes its buy/sell calls wit
 <details><summary>README 발췌</summary>
 
 An institutional-grade, autonomous CLI cryptocurrency trading bot designed for Delta Exchange India (Crypto &amp; Gold Futures).
+
+</details>
+
+### j7708git/jev-tradingview-signal
+
+<details><summary>README 발췌</summary>
+
+在 TradingView 圖表上手動按一次，把自己正在看的圖表資料（300 根 K 棒 OHLCV ＋本地派生特徵 ＋圖表上使用中的指標數值）送給 TypeSafe 的官方 Jev 模型做判斷，結果顯示在 Chrome 側邊面板：方向（做多／做空／觀望）、未來 10 根上漲機率、多頭趨勢強度、空頭趨勢強度。
+
+</details>
+
+### aabrole/claude-trading-desk
+
+<details><summary>README 발췌</summary>
+
+A Claude Code plugin for building algorithmic trading bots, testing them honestly, paper trading them, and hosting them 24/7 for nothing.
+
+</details>
+
+### arunmettle/prop-firm-helper
+
+<details><summary>README 발췌</summary>
+
+A privacy-first web app for prop-firm traders. Log trades in seconds, run a pre-trade check against your own rules, see what you actually do after losses, and simulate your evaluation thousands of times to find the behaviour that decides the outcome.
 
 </details>
 
@@ -439,11 +467,11 @@ From news to probabilities: a news aggregator that estimates the events listed o
 
 </details>
 
-### cristiancolon/jev-hft
+### CryptoCT01/jev-pulse
 
 <details><summary>README 발췌</summary>
 
-A research project that tests whether Jev, a fast AI model from TypeSafe AI, can judge market data and news quickly and accurately enough to matter for trading. Jev is reached through Vercel AI Gateway.
+Bitget AI Base Camp Hackathon S2 · Agentic Trading · Open Theme (Custom)
 
 </details>
 
@@ -463,11 +491,11 @@ Autonomous Evolutionary Markets
 
 </details>
 
-### eriestra/jev-chess
+### foundationfivepro-gif/jev-trading-agent
 
 <details><summary>README 발췌</summary>
 
-Measures how well TypeSafe's Jev chooses chess moves when it sees only the position and the complete list of legal moves. Stockfish 19 grades every choice.
+A long-only crypto trend-following strategy on spot (no leverage), built from the parts of popular X trading posts that hold up, with a backtester, a paper-trading mode and a memecoin rug-risk screen.
 
 </details>
 
@@ -476,6 +504,14 @@ Measures how well TypeSafe's Jev chooses chess moves when it sees only the posit
 <details><summary>README 발췌</summary>
 
 Quatre prototypes de recherche en lecture seule, dans une application locale :
+
+</details>
+
+### Hellotravisss/SteadyQuant
+
+<details><summary>README 발췌</summary>
+
+&gt; 给普通人用的选股研究工具：真实行情 + 大白话判定 + 一套帮你守纪律的系统。 &gt; 仅供研究教育，非投资建议。
 
 </details>
 
@@ -511,6 +547,22 @@ A sudoku game (and Jev vs Stockfish chess at /chess) that an AI decision model p
 
 </details>
 
+### JienWeng/jev-trader
+
+<details><summary>README 발췌</summary>
+
+A paper-trading research system for mean-reversion and CEX–DEX statistical arbitrage, with Jev used as a typed strategy-policy decision layer.
+
+</details>
+
+### khaldunshahran/institutional-quant-vault
+
+<details><summary>README 발췌</summary>
+
+Institutional-grade quantitative futures trading system operating across Gold (XAU/PAXG), Bitcoin (BTC), and Binance Liquid Mega-Caps (ETH, SOL, AVAX, LINK, DOGE, XRP, LTC).
+
+</details>
+
 ### lizhuojunx86/llm-memory-audit
 
 <details><summary>README 발췌</summary>
@@ -519,19 +571,27 @@ If a language model remembers how a market event turned out, a backtest run thro
 
 </details>
 
+### luongnv89/money-mind
+
+<details><summary>README 발췌</summary>
+
+MoneyMind is a privacy-first, serverless financial analyzer built with React. It uses local AI (Ollama) or Cloud AI (Gemini/Groq) to categorize transactions, detect spending patterns, and provide "sassy" financial advice—all without storing your data on a backend server.
+
+</details>
+
+### Mkultra00/levy
+
+<details><summary>README 발췌</summary>
+
+Tariff wars move in hours. Analysts still work in spreadsheets. LEVY forecasts tariff escalations like a trading desk — with receipts.
+
+</details>
+
 ### PICDEV-collap/binance-jev-prediction-bot
 
 <details><summary>README 발췌</summary>
 
 ระบบเทรดเชิงปริมาณอัตโนมัติ (Quantitative Prediction Trading Bot) ความเร็วสูง ทำงานบนสถาปัตยกรรม Event-Driven Architecture ที่เชื่อมต่อข้อมูลตลาดแบบเรียลไทม์จาก Binance Prediction Markets WebSocket Stream วิเคราะห์สัญญาณความได้เปรียบทางสถิติด้วย Jev AI Decision Engine (Structured Output) ผ่านตัวกรอง
-
-</details>
-
-### r4topunk/jev-trading-study
-
-<details><summary>README 발췌</summary>
-
-Interactive write-up (EN/PT): https://r4topunk.github.io/jev-trading-study/ · Português: README.pt.md
 
 </details>
 
@@ -559,14 +619,6 @@ The tri-nervous system for quilt sheets. Three providers, one decision spine, ev
 
 </details>
 
-### valuecodes/jev-on-air
-
-<details><summary>README 발췌</summary>
-
-JevOnAir monitors livestreams in real time, transcribes speech, detects market-moving statements with Jev, and turns them into structured simulated trade signals.
-
-</details>
-
 ### WangYu0611/jevymarket-direct
 
 <details><summary>README 발췌</summary>
@@ -580,14 +632,6 @@ A Polymarket trading bot whose pricing oracle is Jev / TypeSafe System One. This
 <details><summary>README 발췌</summary>
 
 A small Python research lab for testing whether changes in corporate disclosures help predict subsequent stock returns. It combines JEV semantic features, a ridge regression model, deterministic filters, and an immutable SQLite ledger.
-
-</details>
-
-### zytong523-bot/stock-lite
-
-<details><summary>README 발췌</summary>
-
-一个给完全不懂股票的人看的极简 A 股看板。输入股票名字或 6 位代码， 它直接把结论摆在最上面：能不能买、多少钱买、跌到多少必须卖、涨到多少可以卖。 没有复杂图表，没有术语堆砌，每条理由都是大白话。
 
 </details>
 
@@ -620,14 +664,6 @@ Evidence-first market persona and regime-transition engine with optional TypeSaf
 <details><summary>README 발췌</summary>
 
 A Figgie market simulator for two questions:
-
-</details>
-
-### jdhornsby/typesafe-jev
-
-<details><summary>README 발췌</summary>
-
-Jev plays chess against stockfish.
 
 </details>
 

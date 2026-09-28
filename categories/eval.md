@@ -1,14 +1,13 @@
-# 📏 평가·채점 (266)
+# 📏 평가·채점 (262)
 
 [← README](../README.md)
 
 | 리포 | ⭐ | 🍴 | 한눈에 보기 | 태그 | 최근 푸시 |
 |---|---:|---:|---|---|---|
 | [comet-ml/opik](https://github.com/comet-ml/opik) | 22261 | 1829 | **무엇** LLM 앱 및 AI 에이전트의 실행 트레이싱, 성능 평가, 모니터링을 제공하는 오픈소스 옵저버빌리티 플랫폼이다.<br>**판단** LLM 생성 결과에 대해 환각 여부(noul), 유해성 분류(choice), RAG 응답 품질 점수(score) 등을 판별하도록 요청한다.<br>**포인트** LLM-as-a-judge 평가 메트릭, 트레이스 트리 추적, PyTest 기반 CI/CD 연동 및 자체 호스팅 환경을 지원한다. | 🆕 | 2026-09-27 |
-| [Kiln-AI/Kiln](https://github.com/Kiln-AI/Kiln) | 5114 | 379 | **무엇** 평가, 프롬프트 최적화, RAG, 에이전트 구축 및 파인튜닝을 지원하는 AI 개발 워크벤치 데스크톱 앱 겸 Python 라이브러리다.<br>**판단** 생성된 출력물이 선호 기준이나 평가 지표에 부합하는지 여부(noul)와 모델 응답 품질 등급(score)을 판정한다.<br>**포인트** 노코드 데스크톱 앱과 오픈소스 Python 라이브러리를 연계해 비개발자와 협업하고, Git 동기화 및 로컬 Ollama 실행을 지원한다. | 🆕 | 2026-09-27 |
-| [bespokelabsai/nimble](https://github.com/bespokelabsai/nimble) | 1866 | 147 | 요약 대기 · Local typed decisions, contrastive data curation, and model evaluation. | 🆕 | 2026-09-24 |
-| [TypeLLM/TypeLLM](https://github.com/TypeLLM/TypeLLM) | 804 | 53 | 요약 대기 · TypeLLM: LLMs with type-safe generation | 🆕 | 2026-09-27 |
-| [monteduro/killmyidea](https://github.com/monteduro/killmyidea) | 232 | 30 | **무엇** 스타트업 아이디어를 입력하면 질문 10개에 대한 평가 점수를 종합해 진행 여부(KILL, FIX, SHIP)를 판정해 주는 웹 서비스<br>**판단** 아이디어의 카테고리, 이해도(understandability), 그리고 문제 정의·수익성·도달력 등 8개 항목에 대한 0-4점 척도 평가<br>**포인트** 생성형 LLM 텍스트 생성 대신 10개 평가 질문을 병렬로 점수화하고 가중 평균 및 명확성 게이트를 거쳐 3단계 판정을 도출하는 구조 | 🆕 | 2026-09-24 |
+| [Kiln-AI/Kiln](https://github.com/Kiln-AI/Kiln) | 5115 | 379 | **무엇** 평가, 프롬프트 최적화, RAG, 에이전트 구축 및 파인튜닝을 지원하는 AI 개발 워크벤치 데스크톱 앱 겸 Python 라이브러리다.<br>**판단** 생성된 출력물이 선호 기준이나 평가 지표에 부합하는지 여부(noul)와 모델 응답 품질 등급(score)을 판정한다.<br>**포인트** 노코드 데스크톱 앱과 오픈소스 Python 라이브러리를 연계해 비개발자와 협업하고, Git 동기화 및 로컬 Ollama 실행을 지원한다. | 🆕 | 2026-09-27 |
+| [bespokelabsai/nimble](https://github.com/bespokelabsai/nimble) | 1867 | 147 | 요약 대기 · Local typed decisions, contrastive data curation, and model evaluation. | 🆕 | 2026-09-24 |
+| [monteduro/killmyidea](https://github.com/monteduro/killmyidea) | 233 | 30 | **무엇** 스타트업 아이디어를 입력하면 질문 10개에 대한 평가 점수를 종합해 진행 여부(KILL, FIX, SHIP)를 판정해 주는 웹 서비스<br>**판단** 아이디어의 카테고리, 이해도(understandability), 그리고 문제 정의·수익성·도달력 등 8개 항목에 대한 0-4점 척도 평가<br>**포인트** 생성형 LLM 텍스트 생성 대신 10개 평가 질문을 병렬로 점수화하고 가중 평균 및 명확성 게이트를 거쳐 3단계 판정을 도출하는 구조 | 🆕 | 2026-09-24 |
 | [SREGym/SREGym](https://github.com/SREGym/SREGym) | 305 | 115 | 요약 대기 · Can AI agents resolve production incidents? | 🆕 | 2026-09-26 |
 | [sileod/tasksource](https://github.com/sileod/tasksource) | 198 | 11 | 요약 대기 · Datasets collection and preprocessings framework for NLP extreme multitask learning | 🆕 | 2026-09-27 |
 | [vinilana/jev-eval-agent](https://github.com/vinilana/jev-eval-agent) | 106 | 11 | **무엇** 100개의 가상 도구를 갖춘 비서 에이전트 환경에서 도구 선택을 LLM이 직접 할 때와 Jev 분류기가 할 때의 작업 완료 단계 수를 비교·평가하는 벤치마크 리포지토리다.<br>**판단** 대화 상태를 바탕으로 다음 호출할 도구(100개 도구 및 사용자 응답 중 choice)와 요청된 모든 작업 완료 여부(noul)를 판단한다.<br>**포인트** Jev가 응답 완료를 골라도 done 확률이 임계값(0.5) 미만이면 응답을 차단하고 차선의 도구를 노출하는 신뢰도 기반 게이팅 방식을 적용했다. | 🆕 | 2026-09-17 |
@@ -16,20 +15,20 @@
 | [cookiespiggy/agentic-rl](https://github.com/cookiespiggy/agentic-rl) | 113 | 13 | 요약 대기 · Agentic RL 中文零基础教程（33 章）：从概念到 GRPO 实战，含 TRL 最小可跑示例；26–33 章附一套可运行的三方判别模型实证工程（encoder vs LLM-LoRA vs 规则基线）。第 25 章讲清 Jev / TypeSafe System One 与 RL 的能力边界 \| Chinese Agentic RL tutorial (33 chapters) + a reproducible discriminative-model benchmark | 🆕 | 2026-09-27 |
 | [openlayer-ai/jevals](https://github.com/openlayer-ai/jevals) | 97 | 8 | 요약 대기 · Agent evals and guardrails as Jev decisions: one request per trace, a fraction of a cent, fast enough for the agent loop. Runs locally with Kev or Laya. | 🆕 | 2026-09-24 |
 | [danielgshea/jev-as-a-judge](https://github.com/danielgshea/jev-as-a-judge) | 93 | 15 | 요약 대기 · Using Jev as an evaluator. | 🆕 | 2026-09-23 |
-| [aaddrick/building-with-typesafe-jev](https://github.com/aaddrick/building-with-typesafe-jev) | 85 | 5 | 요약 대기 · Unofficial skill that teaches coding agents to build with TypeSafe AI's Jev: typed decisions, calibrated confidence, and prior art from 150+ community projects. | 🆕 | 2026-09-27 |
 | [zwliJay/jev-forge](https://github.com/zwliJay/jev-forge) | 69 | 6 | 요약 대기 · An open training and inference stack for Jev-style decision models.  Train models to score dynamic candidate branches from a shared prefix, with support for high-cardinality choice, calibration, and fast batched inference. | 🆕 | 2026-09-23 |
 | [chigwell/typesafe.pro](https://github.com/chigwell/typesafe.pro) | 67 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-26 |
 | [iammrduncan/typesafe-ai-benchmark](https://github.com/iammrduncan/typesafe-ai-benchmark) | 40 | 5 | **무엇** 일반 LLM의 구조화된 출력 방식과 TypeSafe Jev 판단 API의 지연 시간, 비용, 품질을 비교하는 벤치마크 도구다.<br>**판단** 티켓 분류, 가드레일 감지, 승인 여부, 점수 산정 등 7개 합성 시나리오에 대해 Choice 및 Noul 형태의 질문을 판단한다.<br>**포인트** Cerebras 기반 Qwen, 로컬 Needle 3, Jev를 나란히 실행해 레이턴시 백분위수, API 비용, 계약 검증률을 실시간 UI로 대조한다. | 🆕 | 2026-09-19 |
 | [RenaGao/jev-dataops](https://github.com/RenaGao/jev-dataops) | 60 | 6 | 요약 대기 · An open-source JEV-powered workbench for streaming data selection, quality evaluation, automatic LoRA training and held-out model evaluation. | 🆕 | 2026-09-23 |
 | [YuanKJing/Jev-as-Policy](https://github.com/YuanKJing/Jev-as-Policy) | 44 | 2 | 요약 대기 · The highly anticipated open-source repository for JEV as Policy enables one-click setup of the simulation environment. Evaluations of Astra + JEV on benchmarks such as RoboTwin will also be released soon. | 🆕 | 2026-09-21 |
 | [JoshuaSP/open-jev](https://github.com/JoshuaSP/open-jev) | 41 | 2 | 요약 대기 · Typed JSON inference with DiffusionGemma, with Every and Jev benchmark results | 🆕 | 2026-09-16 |
-| [bodepudimuneendra-netizen/laya-jev-GraphRAG](https://github.com/bodepudimuneendra-netizen/laya-jev-GraphRAG) | 39 | 1 | 요약 대기 · A database-agnostic Agentic GraphRAG framework using swappable System One models (local Laya / cloud Jev). A plug-and-play intelligence layer featuring a complete 4-phase pipeline, continuous evaluation and custom A* traversal for any graph database. | 🆕 | 2026-09-25 |
+| [bodepudimuneendra-netizen/laya-jev-GraphRAG](https://github.com/bodepudimuneendra-netizen/laya-jev-GraphRAG) | 40 | 1 | 요약 대기 · A database-agnostic Agentic GraphRAG framework using swappable System One models (local Laya / cloud Jev). A plug-and-play intelligence layer featuring a complete 4-phase pipeline, continuous evaluation and custom A* traversal for any graph database. | 🆕 | 2026-09-25 |
 | [smkrv/jev-calibrate](https://github.com/smkrv/jev-calibrate) | 32 | 1 | 요약 대기 · Calibrate Jev questions against your own labels: tune criteria on labelled examples, confirm on a held-out set, get a verdict per question. Unofficial. | 🆕 | 2026-09-21 |
 | [PsiACE/dohnuts](https://github.com/PsiACE/dohnuts) | 29 | 3 | 요약 대기 · Dohnuts builds small multimodal models for direct decisions. -&gt; System One model | 🆕 | 2026-09-21 |
 | [Zaious/jev-capability-atlas](https://github.com/Zaious/jev-capability-atlas) | 27 | 6 | 요약 대기 · Independent, evidence-based map of when TypeSafe's Jev actually holds up vs. breaks down — real API-call receipts, not a leaderboard. 中文為主的雙語 repo。 | 🆕 | 2026-09-24 |
 | [TKY-27/JevSlop](https://github.com/TKY-27/JevSlop) | 4 | 0 | **무엇** 공개된 note.com 기사 URL을 입력받아 본문을 추출하고 AI 슬롭 여부와 글 품질을 분석해 점수로 보여주는 웹 도구다.<br>**판단** 기사 본문이 AI 슬롭인지 여부를 choice로 분류하고, 전체 점수 및 8가지 세부 품질 지표를 각각 score로 평가한다.<br>**포인트** 저작자 판별이 아닌 글 품질 판단 목적으로 쓰이며 본문 청킹 없이 전체 본문을 단일 systemOne 요청으로 전송해 검사한다. | ✅ 🆕 `choice` `score` | 2026-09-18 |
 | [rorshopping/jev-on-a-laptop](https://github.com/rorshopping/jev-on-a-laptop) | 25 | 1 | 요약 대기 · Unofficial study: Jev-style parallel typed decisions on stock 1.5B-8B models on an Apple Silicon laptop. Benchmarks, research notes, and a Hugging Face Space demo. | 🆕 | 2026-09-17 |
 | [stas4000/jev-linkmap](https://github.com/stas4000/jev-linkmap) | 22 | 0 | 요약 대기 · Rebuild a site's internal link map in seconds with Jev, race Claude Opus 5 on the same queue, and let a deep model rewrite the rubric from the disagreements. | 🆕 | 2026-09-19 |
+| [oso95/x-scanner](https://github.com/oso95/x-scanner) | 21 | 5 | 요약 대기 · Chrome extension that labels every post you scroll past on X with typed Jev judgments and a live cost counter | 🆕 | 2026-09-27 |
 | [AbdelStark/jev-benchmarks](https://github.com/AbdelStark/jev-benchmarks) | 20 | 3 | 요약 대기 · Probability-aware evaluation for typed decision models: calibration, selective risk, latency, and reproducible benchmarks. | 🆕 | 2026-09-17 |
 | [abhixhek/jevcal](https://github.com/abhixhek/jevcal) | 10 | 0 | **무엇** TypeSafe Jev 등 결정 모델의 신뢰도 임계값을 사용자 데이터 기반으로 보정·평가하고 LLM 폴백 캐스케이드를 구성하는 CLI 도구<br>**판단** 이메일 사기 여부(is_fraud, noul), 티켓 처리 부서 분류(queue, choice), 긴급성 및 감정 분석 판단<br>**포인트** 데이터 분할 검증으로 정확도 목표를 만족하는 임계값을 도출해 lock 파일로 잠그고, LLM 교사를 활용한 라벨링 및 질문 최적화를 지원함 | 🆕 | 2026-09-18 |
 | [alexgreensh/eval-genius](https://github.com/alexgreensh/eval-genius) | 15 | 3 | 요약 대기 · Teach your agent to work with evals: WHEN you actually need an eval or benchmark, HOW to build one that holds up, and how to read what it tells you. Deterministic-first, tool-agnostic. | 🆕 | 2026-09-21 |
@@ -55,8 +54,10 @@
 | [choxos/jevchess](https://github.com/choxos/jevchess) | 5 | 1 | 요약 대기 · Jev, TypeSafe's System One model, plays chess against any OpenRouter LLM, Stockfish and you. One-page web app with live moves, Jev's move probabilities, saved games and win rates. | 🆕 | 2026-09-20 |
 | [gemanor/jev-code-review-benchmark](https://github.com/gemanor/jev-code-review-benchmark) | 5 | 0 | 요약 대기 · Comparing Jev, Gemini Flash, and Claude Fable on Python code review rules: cost, speed, accuracy, and consistency. Includes results, charts, and reproducible experiments. | 🆕 | 2026-09-17 |
 | [hndrr/ComfyUI-Jev](https://github.com/hndrr/ComfyUI-Jev) | 5 | 0 | 요약 대기 · Jev text interpretation and judgments for ComfyUI. | 🆕 | 2026-09-20 |
+| [linny006/llm-eval-tracker](https://github.com/linny006/llm-eval-tracker) | 5 | 2 | 요약 대기 · Live index of LLM evaluation tools and benchmarks, refreshed every 15 minutes from GitHub | 🆕 | 2026-09-28 |
 | [MANISH007700/tab-bouncer](https://github.com/MANISH007700/tab-bouncer) | 5 | 0 | 요약 대기 · Chrome extension that closes the tabs you don't need, judged by TypeSafe's Jev in one call. Tell it what you're doing; it shows the rest the door. | 🆕 | 2026-09-19 |
 | [a-Fig/jev-score](https://github.com/a-Fig/jev-score) | 4 | 0 | 요약 대기 · Local-first document evaluation workspaces powered by Jev | 🆕 | 2026-09-24 |
+| [abektes/fdbx-designskills](https://github.com/abektes/fdbx-designskills) | 4 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-26 |
 | [chenmingtang830/jevarena](https://github.com/chenmingtang830/jevarena) | 4 | 0 | 요약 대기 · Open-source BYOK arena for Jev and other AI judges. Find failures, compare quality, cost, and latency. | 🆕 | 2026-09-20 |
 | [dtunai/cu-Jev](https://github.com/dtunai/cu-Jev) | 4 | 0 | 요약 대기 · cuda-Jev — a CUDA-native Jev System One decision inference engine. Jev compatible API, examples, and reproducible benchmarks. | 🆕 | 2026-09-23 |
 | [Gaurav-Gosain/jev-sec-bench](https://github.com/Gaurav-Gosain/jev-sec-bench) | 4 | 0 | 요약 대기 · Blind security benchmarks for Jev, TypeSafe's System One model: prompt injection and vulnerable code detection, built on jev-go | 🆕 | 2026-09-16 |
@@ -73,7 +74,6 @@
 | [ArmanJR/Jev-Persian-Benchmark](https://github.com/ArmanJR/Jev-Persian-Benchmark) | 3 | 0 | 요약 대기 · A Quick Typesafe's Jev Evaluation on Persian | 🆕 | 2026-09-26 |
 | [aryanchauhanoffical/no-hallucination](https://github.com/aryanchauhanoffical/no-hallucination) | 3 | 0 | 요약 대기 · Three measured experiments on RAG hallucination: quote-checking, TypeSafe's Jev, and IBM's STAIR. 850+ graded questions, raw responses included. | 🆕 | 2026-09-20 |
 | [azterizm/jev-vs-sovereign-benchmark](https://github.com/azterizm/jev-vs-sovereign-benchmark) | 3 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-23 |
-| [cooper667/jev-browse](https://github.com/cooper667/jev-browse) | 3 | 1 | 요약 대기 · Plain-English browser QA for Claude Code, judged by TypeSafe's Jev on Cloudflare Workers AI | 🆕 | 2026-09-25 |
 | [jgridifier/jev-research-eval](https://github.com/jgridifier/jev-research-eval) | 3 | 0 | 요약 대기 · Reproducible Jev Ultrafast research-browser eval harness + field note (QC’d cases, suite runner, report generator). Not investment advice. | 🆕 | 2026-09-17 |
 | [lianghsun/jev-tmmluplus-eval](https://github.com/lianghsun/jev-tmmluplus-eval) | 3 | 0 | 요약 대기 · Evaluate TypeSafe AI's Jev (System One Model) on TMMLU+ v1.1 — four-way choice via the API's own response schema, 100% parse rate by construction | 🆕 | 2026-09-23 |
 | [Libertai/deem](https://github.com/Libertai/deem) | 3 | 0 | 요약 대기 · Typed, calibrated decisions from open weights — Deem 9B &amp; 0.8B, Python + Rust serving | 🆕 | 2026-09-27 |
@@ -84,11 +84,9 @@
 | [TypeSafeAI/clarity-judge](https://github.com/TypeSafeAI/clarity-judge) | 3 | 1 | 요약 대기 · Multi-axis writing quality checker powered by TypeSafe AI's Jev model. Separate named checks, each with its own verdict and confidence. | 🆕 | 2026-09-26 |
 | [YidiDev/jev-benchmark](https://github.com/YidiDev/jev-benchmark) | 3 | 0 | 요약 대기 · Rubric-Based Zero-Shot Classification Benchmark: Jev vs Claude Haiku 4.5 vs Claude Sonnet 5 vs OpenJev on rubric-conditioned classification, chained decision execution, and exam grading -- with full price tracking. | 🆕 | 2026-09-24 |
 | [zamax14/System-One-Playground](https://github.com/zamax14/System-One-Playground) | 3 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-27 |
-| [abhishek085/JevControl](https://github.com/abhishek085/JevControl) | 1 | 0 | **무엇** AI 에이전트의 실행 트레이스를 분석해 일상적인 분기 결정을 소형 모델로 대체할 수 있는지 비교·검증하는 평가 도구다.<br>**판단** 트레이스 내 재검색 여부, 도구 선택, 추가 질문 필요 여부와 같은 닫힌 선택지 형태의 결정을 무엇으로 내릴지 묻는다.<br>**포인트** LangSmith·Langfuse·OTLP 트레이스에서 결정 단계를 자동 추출하고 모델 간 판단 일치도와 지연 시간, 토큰 비용 절감액을 비교한다. | 🆕 | 2026-09-27 |
 | [hegargarcia/jev-playground](https://github.com/hegargarcia/jev-playground) | 1 | 0 | **무엇** 틱택토와 커넥트포 게임에서 TypeSafe Jev와 여러 LLM의 의사결정 성능을 비교 평가하는 벤치마크 플레이그라운드 웹 앱이다.<br>**판단** 주어진 게임판 상태와 전술 지침을 바탕으로 가능한 합법적 수(Legal actions) 목록 중 다음에 둘 최적의 수를 choice로 선택하게 한다.<br>**포인트** Vercel AI Gateway를 통해 Jev 네이티브 모델과 타사 LLM에 동일한 상태와 선택지를 전달해 수 선택, 가중치, 신뢰도를 로그로 비교한다. | 🆕 | 2026-09-17 |
 | [adlternative/tally](https://github.com/adlternative/tally) | 2 | 0 | 요약 대기 · Turn a pile of comments into an auditable distribution: Jev judges each item, code counts the percentages. React workspace + Python engine with pluggable data sources. | 🆕 | 2026-09-22 |
 | [andrewsilber/JevsBistro](https://github.com/andrewsilber/JevsBistro) | 2 | 0 | 요약 대기 · 3D restaurant service simulator for benchmarking low-latency decision models | 🆕 | 2026-09-20 |
-| [bydeng01/scientific-decision-eval](https://github.com/bydeng01/scientific-decision-eval) | 2 | 0 | 요약 대기 · Code and data for evaluating Jev, a System One model, on scientific decisions and how its choices affect downstream results. | 🆕 | 2026-09-24 |
 | [dipseth/decision-pipeline](https://github.com/dipseth/decision-pipeline) | 2 | 0 | 요약 대기 · Let models estimate. Let code decide. Let people correct it later. A TypeScript core for traceable, tunable LLM features. | 🆕 | 2026-09-25 |
 | [g0runmezadam/jev-architecture-research](https://github.com/g0runmezadam/jev-architecture-research) | 2 | 0 | 요약 대기 · Black-box reverse engineering research archive for the Jev decision model | 🆕 | 2026-09-22 |
 | [HusDev/LinguaTrace](https://github.com/HusDev/LinguaTrace) | 2 | 1 | 요약 대기 · The lesson notebook that writes itself. A live tutoring lesson becomes structured notes and a personalised Lesson Pack: Jev judges every turn, Gemini Live transcribes each speaker, and the tutor stays a person. | 🆕 | 2026-09-20 |
@@ -115,7 +113,6 @@
 | [blas0/jev-shadcn-lint-eval](https://github.com/blas0/jev-shadcn-lint-eval) | 1 | 0 | 요약 대기 · A small second eval for shadcn-ui/lint that uses TypeSafe's Jev to judge the linter's own output. | 🆕 | 2026-09-17 |
 | [brandonbryant12/transcript-scorecard](https://github.com/brandonbryant12/transcript-scorecard) | 1 | 0 | 요약 대기 · ACME live support-call scoring demo with TypeSafe AI, Effect, SQLite, React, Vite, and Turborepo | 🆕 | 2026-09-24 |
 | [carlaiau/can-jev-play](https://github.com/carlaiau/can-jev-play) | 1 | 0 | 요약 대기 · Can Jev infer whether a bet is worthwhile from its payout table, and do recent wins or losses sway that choice | 🆕 | 2026-09-23 |
-| [ckorhonen/jev-lint](https://github.com/ckorhonen/jev-lint) | 1 | 0 | 요약 대기 · A fuzzy linter for coding agents. It checks the code your agent writes against your team's best practices while the agent is still working, not at code review. | 🆕 | 2026-09-27 |
 | [clduab11/jev-test](https://github.com/clduab11/jev-test) | 1 | 0 | 요약 대기 · Pre-registered benchmark: can a 2B local model (Gemma 4 E2B) answer web questions without making things up when a decision model (TypeSafe Jev) makes every call? SearXNG for search, MemPalace for verbatim memory, seven arms including open local judges. Spec and thresholds fixed before any run. | 🆕 | 2026-09-21 |
 | [codeitlikemiley/system-one-adapter-rust](https://github.com/codeitlikemiley/system-one-adapter-rust) | 1 | 0 | 요약 대기 · Rust port of TypeSafe system-one-adapter (LLM-backed system_one evaluations) | 🆕 | 2026-09-16 |
 | [dayhaysoos/jevals](https://github.com/dayhaysoos/jevals) | 1 | 0 | 요약 대기 · Local evaluation workbench for TypeSafe Jev | 🆕 | 2026-09-18 |
@@ -133,10 +130,10 @@
 | [Hanno-Labs/decision-bench](https://github.com/Hanno-Labs/decision-bench) | 1 | 1 | 요약 대기 · Open benchmark runtime for document-grounded decision models | 🆕 | 2026-09-27 |
 | [Hexdigest123/typesafe-comment](https://github.com/Hexdigest123/typesafe-comment) | 1 | 0 | 요약 대기 · Small Python package that uses typesafe.ai to evaluate code comments on certain heuristics | 🆕 | 2026-09-17 |
 | [hifizz/jev-finance-benchmark](https://github.com/hifizz/jev-finance-benchmark) | 1 | 0 | 요약 대기 · typesafe.ai model jev finance benchmark | 🆕 | 2026-09-17 |
-| [Jason-Doyle/jev-parallel-dispatch](https://github.com/Jason-Doyle/jev-parallel-dispatch) | 1 | 0 | 요약 대기 · Browser simulation for parallel Jev decisions with capacity-constrained assignment and retained evidence | 🆕 | 2026-09-27 |
 | [jjd-lab/jev-synthetic-survey](https://github.com/jjd-lab/jev-synthetic-survey) | 1 | 0 | 요약 대기 · Jev vs GPT-4.1 as synthetic survey respondents on Twin-2K-500. How you ask mattered more than which model you used. | 🆕 | 2026-09-23 |
 | [JYeswak/jev_playground](https://github.com/JYeswak/jev_playground) | 1 | 0 | 요약 대기 · Measure what Jev can actually do before you build on it. Graded findings, ruled-out candidates, and recipes with stop-conditions. 0 promotions — on purpose. | 🆕 | 2026-09-27 |
 | [Kaos599/jev-writer](https://github.com/Kaos599/jev-writer) | 1 | 0 | 요약 대기 · Find out which qualities of your writing actually predict engagement. Rates every post you have published against a pre-registered rubric using Jev's calibrated judgments, then tests those ratings against your real engagement numbers. Refuses to report findings your sample cannot support. | 🆕 | 2026-09-21 |
+| [kw2828/OpenJev](https://github.com/kw2828/OpenJev) | 1 | 0 | 요약 대기 · Browser decision playground and reproducible experiments on memory, uncertainty, and Doom control | 🆕 | 2026-09-25 |
 | [liu-x27/XavierJev](https://github.com/liu-x27/XavierJev) | 1 | 0 | 요약 대기 · A decision layer for agent control flow — yes/no, choice and rubric questions answered from one token's probabilities, measured against labelled sets — with a Claude Code permission hook and a trainable local judge | 🆕 | 2026-09-27 |
 | [llt22/jev-lab](https://github.com/llt22/jev-lab) | 1 | 0 | 요약 대기 · Hands-on research lab for TypeSafe's Jev (System One model): reproducible benchmarks of Noul/Choice/Score primitives, confidence gating, fan-out latency, agent control — plus a living audit of the Jev ecosystem. | 🆕 | 2026-09-21 |
 | [mameli/jev-vs-luna](https://github.com/mameli/jev-vs-luna) | 1 | 0 | 요약 대기 · Reproducible Jev vs Luna review-classification benchmark with measured accuracy, latency, and costs. | 🆕 | 2026-09-18 |
@@ -149,6 +146,7 @@
 | [shimo4228/jev-research-pipeline](https://github.com/shimo4228/jev-research-pipeline) | 1 | 0 | 요약 대기 · Daily research monitor for standing questions: deterministic Python owns the loop, TypeSafe Jev screens sources per question, Qwen writes the notes (pilot) | 🆕 | 2026-09-27 |
 | [shyamsridhar123/JudgeJev](https://github.com/shyamsridhar123/JudgeJev) | 1 | 0 | 요약 대기 · A hands-on educational lab for DeepEval + Jev: inspect real recorded judgments, explore release gates and drift playback, and run fresh evaluations on your own workloads. | 🆕 | 2026-09-26 |
 | [simonmesmith/jev-bbq-experiment](https://github.com/simonmesmith/jev-bbq-experiment) | 1 | 0 | 요약 대기 · Reproducible evaluation of TypeSafe Jev on all 58,492 BBQ questions: accuracy, stereotype bias, uncertainty, cost and latency. | 🆕 | 2026-09-19 |
+| [spencerjireh/arxivian](https://github.com/spencerjireh/arxivian) | 1 | 0 | 요약 대기 · Full-stack agentic RAG system for searching, ingesting, and analyzing arXiv papers | 🆕 | 2026-09-27 |
 | [STRML/omp-jevens-classifier](https://github.com/STRML/omp-jevens-classifier) | 1 | 0 | 요약 대기 · Jev-powered model-judged permission gate for OMP (TypeSafe System One) | 🆕 | 2026-09-17 |
 | [Tenkei/jev-decision-bench](https://github.com/Tenkei/jev-decision-bench) | 1 | 0 | 요약 대기 · A reproducible, self-hosted benchmark for comparing JEV and LLM decision-making on your own datasets, models, and evaluation policies. | 🆕 | 2026-09-27 |
 | [thejoeejoee/git-judge-commits](https://github.com/thejoeejoee/git-judge-commits) | 1 | 0 | 요약 대기 · ⚖️  Judge git commits with Jev: is it breaking, does it deserve attention, and does its message tell the truth? | 🆕 | 2026-09-20 |
@@ -165,29 +163,28 @@
 | [abe75ch/tiltmeter](https://github.com/abe75ch/tiltmeter) | 0 | 0 | **무엇** TypeSafe Jev가 반환하는 판단 확률 분포를 기록하여 모델 변경, 드리프트, 임계값 경계 편중, 추정 정확도 하락을 감지하고 알림을 보내는 모니터링 도구다.<br>**판단** README에 판단 지점 설명 없음<br>**포인트** Pydantic AI용 래퍼 또는 투명 프록시로 동작하며 원문 텍스트는 저장하지 않고 질문 지문과 확률만 로컬 SQLite에 보관해 레이블 없이 통계적 드리프트를 감지한다. | 🆕 | 2026-09-27 |
 | [adrianhaj/lotto-jev](https://github.com/adrianhaj/lotto-jev) | 0 | 0 | **무엇** 폴란드 Lotto 6/49 역대 당첨 번호 데이터에서 무작위 기준을 넘는 신호가 존재하는지 검증하고 번호를 생성하는 연구용 엔진이다.<br>**판단** README에 판단 지점 설명 없음<br>**포인트** 데이터 누수를 방지하는 워크포워드 백테스트와 정확한 초기하·이항 검정 z-score/p-value 통계 지표를 계산하여 초과 수익 여부를 검증한다. | 🆕 | 2026-09-27 |
 | [dfranco-projects/jev-guardbench](https://github.com/dfranco-projects/jev-guardbench) | 0 | 0 | **무엇** 에이전트 가드레일 콜백에서 LLM-as-judge 대신 System One 모델(Jev/Kev)을 적용할 수 있는지 성능과 지연시간을 비교 평가하는 벤치마크 도구다.<br>**판단** before_model 및 after_model 검사 시 가드레일 정책 위반 여부를 판단시킨다.<br>**포인트** Jev/Kev와 Claude, Gemini 등의 LLM 판사를 F1, FPR, AUROC, 지연시간 백분위수 지표로 비교 평가한다. | 🆕 | 2026-09-27 |
-| [gbesse/decision-workbench](https://github.com/gbesse/decision-workbench) | 0 | 0 | **무엇** 공공 데이터나 문서를 수집해 Jev로 의사결정을 평가하고 인간 검토를 거쳐 결과를 내보내는 로컬 워크벤치 도구다.<br>**판단** 의회 간행물 등이 특정 기업 활동과 관련 있는지 판단하거나, 사용자가 정의한 정책(DecisionPack) 규칙에 따라 문서를 평가한다.<br>**포인트** 모델 판단 원본과 인간 검토 내역을 분리 보존하며, 변경되지 않은 문서는 캐시된 판단을 재사용해 불필요한 API 호출을 방지한다. | 🆕 | 2026-09-25 |
+| [Holovkat/jev-mark](https://github.com/Holovkat/jev-mark) | 0 | 0 | **무엇** llama.cpp의 parallel-decision 브랜치와 로컬 Gemma 모델을 이용해 유한 결정 스키마 처리 및 로직 추론 성능을 평가하는 벤치마크 워크벤치다.<br>**판단** 100개 문항의 논리 퀴즈와 기준 질문에 대해 객관식 선택지 중 정답을 고르는 Choice 판단과 점수(Score) 및 참/거짓 확률(Noul)을 판단시킨다.<br>**포인트** 임의의 텍스트 생성 대신 하나의 컨텍스트에서 여러 필드를 병렬 채점하여 지연 시간을 줄이고 응답 신뢰도를 높인 구조를 테스트한다. | 🆕 | 2026-09-28 |
 | [laguagu/jev-rerank-bench](https://github.com/laguagu/jev-rerank-bench) | 0 | 0 | **무엇** 핀란드어 텍스트를 대상으로 검색 리랭킹, 코드 검색, 의도 분류, 인용 검증에서 TypeSafe Jev의 성능과 비용을 측정한 벤치마크 도구 모음이다.<br>**판단** 후보 문서의 질의 부합 여부(noul/score), 인용 구문의 주장 뒷받침 여부(noul), 텍스트의 분류 의도(choice) 등을 판단시킨다.<br>**포인트** 단일 호출 대신 10–15개 후보를 묶어 요청하는 배치 처리로 지연 시간과 비용을 줄이고, 반환된 확률값을 결과 신뢰도 게이트로 활용했다. | 🆕 | 2026-09-27 |
 | [nadeem4/jev-demo](https://github.com/nadeem4/jev-demo) | 0 | 0 | **무엇** Jev와 오픈소스 Laya 모델을 활용해 게임 플레이 비교 아레나와 Claude Code 도구 감시기를 시연하는 데모 프로젝트다.<br>**판단** 게임에서는 텍스트 상태 기반 행동 선택지(choice)를 묻고, 감시기에서는 도구 호출의 가역성·범위 이탈·인젝션·루프 여부를 판단시킨다.<br>**포인트** 원시 좌표나 픽셀 대신 텍스트로 추상화한 상태를 입력받아 선택지별 확률을 즉시 도출하는 의사결정 모델 구조를 구현했다. | 🆕 | 2026-09-25 |
-| [TheChyeahhh/tarnlight](https://github.com/TheChyeahhh/tarnlight) | 0 | 0 | **무엇** TypeSafe Jev를 호출하는 애플리케이션의 판단 결과와 신뢰도를 로컬에 기록하고 실시간 모니터링 및 수동 채점을 지원하는 윈도우용 데스크톱 앱이다.<br>**판단** 티켓 처리 팀 분류나 스팸 게시물 판별 등 외부 앱이 Jev에 요청한 질문과 이에 대해 Jev가 반환한 선택지 및 신뢰도 점수(0–100)를 대상으로 한다.<br>**포인트** 폴더 드롭박스나 프록시 방식을 통해 기존 앱 흐름을 방해하지 않고 결정을 수집하며, 키보드로 정답 여부를 채점하고 신뢰도 임계값 구간을 설정할 수 있다. | 🆕 | 2026-09-27 |
 | [shibadogcap/kyotsu-ai-bench](https://github.com/shibadogcap/kyotsu-ai-bench) | 2 | 0 | 요약 대기 · AI benchmark on Japan's 2026 Common Test: Jev vs luna-none vs luna-low (static dashboard) | 🆕 | 2026-09-17 |
 | [0xmdinc/jev-medical-bench](https://github.com/0xmdinc/jev-medical-bench) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-27 |
+| [3zcurdia/pumabench](https://github.com/3zcurdia/pumabench) | 0 | 0 | 요약 대기 · LLM benchmark against unam admision test | 🆕 | 2026-09-25 |
 | [4nt0ineB/typed-decision-bench](https://github.com/4nt0ineB/typed-decision-bench) | 0 | 0 | 요약 대기 · Bench of typed decision models: Jev vs OpenJev vs Laya, small local LLMs and cheap hosted LLMs on the same zero-shot classification tasks, in English and French. | 🆕 | 2026-09-27 |
+| [achildrenmile/jev-belege-demo](https://github.com/achildrenmile/jev-belege-demo) | 0 | 0 | 요약 대기 · Not every decision needs an LLM: receipt pipeline where Claude reads, Jev decides, Python computes the rules | 🆕 | 2026-09-26 |
 | [Adilmp/does-jev-confidence-mean-anything](https://github.com/Adilmp/does-jev-confidence-mean-anything) | 0 | 0 | 요약 대기 · A calibration audit of TypeSafe's Jev: does a decision model's stated confidence mean what it claims? 8,000 judgments against human annotations, $0.05. | 🆕 | 2026-09-19 |
 | [Adityakhalkar/JevEye](https://github.com/Adityakhalkar/JevEye) | 0 | 0 | 요약 대기 · Ask Jev about an image. A CNN reports what it sees with a calibrated confidence or an abstention; Jev judges what it means. | 🆕 | 2026-09-25 |
 | [agrogov/jev-system-one-study](https://github.com/agrogov/jev-system-one-study) | 0 | 0 | 요약 대기 · Jev System One Black-Box Study - Complete Reproducibility Bundle | 🆕 | 2026-09-21 |
 | [Alifdaal/classroom-pulse](https://github.com/Alifdaal/classroom-pulse) | 0 | 0 | 요약 대기 · Live misconception radar for classrooms: students answer on their phones, TypeSafe Jev flags what the room gets wrong. | 🆕 | 2026-09-26 |
-| [Alpha-Harper-Franklin/jev-multimodal](https://github.com/Alpha-Harper-Franklin/jev-multimodal) | 0 | 0 | 요약 대기 · Jev + Multimodal: shared visual decisions, evidence adapters, source audits and reproducible public-image benchmarks. | 🆕 | 2026-09-21 |
+| [amansahani/jev-laya-openai-comparison](https://github.com/amansahani/jev-laya-openai-comparison) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-25 |
 | [andreaserradev-gbj/jev-access-day](https://github.com/andreaserradev-gbj/jev-access-day) | 0 | 0 | 요약 대기 · A learning scaffold for TypeSafe AI's System One models: eval harness plus a measured, plain-language comparison of the Jev decision model vs an LLM stand-in on 24 real operational decisions. All numbers reproducible from committed run files. | 🆕 | 2026-09-19 |
-| [Ascurse/typed-judge-kit](https://github.com/Ascurse/typed-judge-kit) | 0 | 0 | 요약 대기 · Typed questions to a model, verdict in code, thresholds from your labels | 🆕 | 2026-09-22 |
 | [Ash20pk/beat-the-reviewer](https://github.com/Ash20pk/beat-the-reviewer) | 0 | 0 | 요약 대기 · Ten things you need approved, and a reviewer you have to convince. Every verdict is a typed judgement rule answered by jev, a pinned TypeSafe System One model — a probability, not a sentence. | 🆕 | 2026-09-20 |
 | [atmaneayoubdev/evalcascade](https://github.com/atmaneayoubdev/evalcascade) | 0 | 0 | 요약 대기 · Open-source adaptive evaluation for LLM, RAG and agentic systems. System One judges first, LLMs only when necessary. | 🆕 | 2026-09-27 |
 | [autotelic/joggle](https://github.com/autotelic/joggle) | 0 | 0 | 요약 대기 · Cross-file judgements for a TypeScript codebase, enforced like a linter. | 🆕 | 2026-09-27 |
 | [bebe0307mz/jevs-kitchen-chaos](https://github.com/bebe0307mz/jevs-kitchen-chaos) | 0 | 0 | 요약 대기 · 3D Overcooked-style AI benchmark: four chefs driven per-decision by the Jev decision model or frontier LLMs (BYOK). Live broadcast HUD, pure benchmark mode, downloadable decision logs. | 🆕 | 2026-09-19 |
-| [bhushankinge/jev-laya-classification-bench](https://github.com/bhushankinge/jev-laya-classification-bench) | 0 | 0 | 요약 대기 · Typed-decision models (Jev API, Laya 421M) vs Qwen3.5-35B on 12,000 real U.S. federal IT solicitations, graded against actual reseller quotes: accuracy, calibration, Wilson-bounded auto-accept cutoffs, cost. | 🆕 | 2026-09-24 |
 | [BingelsWorth/JudgeJev](https://github.com/BingelsWorth/JudgeJev) | 0 | 0 | 요약 대기 · DeepThink meets llm as judge. Use heavy prefill caching to run the same request in parallel and let Jev give you the best result.  | 🆕 | 2026-09-25 |
 | [BipinRajC/Jev-api-experiments](https://github.com/BipinRajC/Jev-api-experiments) | 0 | 0 | 요약 대기 · Empirical experiments and API research for TypeSafe's Jev System One model trained using RLCD | 🆕 | 2026-09-27 |
 | [blowxian/jev-fanout-bench](https://github.com/blowxian/jev-fanout-bench) | 0 | 1 | 요약 대기 · Measured: asking TypeSafe Jev N questions in one call bills the state once. 2,976 real requests, raw data, exact billing check. | 🆕 | 2026-09-26 |
-| [carlaiau/judge-jev](https://github.com/carlaiau/judge-jev) | 0 | 0 | 요약 대기 · Reproducible experiments evaluating Jev as an automated judge across benchmarks and tasks. | 🆕 | 2026-09-24 |
+| [brian-w-zhang/askjev](https://github.com/brian-w-zhang/askjev) | 0 | 0 | 요약 대기 · A tree housing every closed question humans or machines ask, answered by Jev (TypeSafe System One): capabilities, defaults, and jaggedness. Not a benchmark. | 🆕 | 2026-09-27 |
 | [chepyle/jev-test](https://github.com/chepyle/jev-test) | 0 | 0 | 요약 대기 · Reproducible zero-shot Jev benchmark on all seven LexGLUE tasks | 🆕 | 2026-09-27 |
 | [Clementtang/jev-eval](https://github.com/Clementtang/jev-eval) | 0 | 0 | 요약 대기 · Stance test of TypeSafe Jev vs Claude on Taiwan sovereignty questions, in Traditional Chinese, Simplified Chinese and English | 🆕 | 2026-09-27 |
 | [Codeenk/sev](https://github.com/Codeenk/sev) | 0 | 0 | 요약 대기 · Sev-X: Kev-descended decision models (DDP, eval context, SRA program) | 🆕 | 2026-09-26 |
@@ -197,53 +194,54 @@
 | [crzyc0d3r/jev-agent-judge](https://github.com/crzyc0d3r/jev-agent-judge) | 0 | 0 | 요약 대기 · Evaluate support-agent traces with typed Jev judgments (grounding, honesty, relevance, helpfulness) and log them as Opik experiments. | 🆕 | 2026-09-25 |
 | [cwjechw98-lang/jev-gates](https://github.com/cwjechw98-lang/jev-gates) | 0 | 0 | 요약 대기 · Three gates for any coding agent: a deterministic approval gate before irreversible actions, a completion gate that demands evidence instead of «done», and a rubric regression gate. Powered by TypeSafe Jev (System One). Works with Claude Code, Codex, DeepSeek Harness, Cursor, opencode, Hermes, plain shell and CI. | 🆕 | 2026-09-26 |
 | [cx295410-dot/jev-biomedical-evidence-screening](https://github.com/cx295410-dot/jev-biomedical-evidence-screening) | 0 | 0 | 요약 대기 · Frozen benchmark data, analysis code and reproducibility materials for Jev biomedical evidence screening across ten SYNERGY reviews. | 🆕 | 2026-09-22 |
+| [danielscoffee/nixos](https://github.com/danielscoffee/nixos) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-27 |
+| [dataelvisliang/jev-as-a-judge-scaffold](https://github.com/dataelvisliang/jev-as-a-judge-scaffold) | 0 | 0 | 요약 대기 · Scaffold of the frozen confidence cascade from "JEV-as-a-Judge: Accept When Confident, Escalate When Unsure" (CMU, arXiv:2609.26550) | 🆕 | 2026-09-27 |
 | [davidzna/better-cheaper-llm](https://github.com/davidzna/better-cheaper-llm) | 0 | 0 | 요약 대기 · Use Jev instead of an LLM for RAG decisions: relevance grading, query routing, hallucination checks and LLM-as-a-judge evals. Faster, cheaper, measured first. | 🆕 | 2026-09-26 |
 | [DeccansoftAITeam/jev-model](https://github.com/DeccansoftAITeam/jev-model) | 0 | 0 | 요약 대기 · Jev decision model: TypeScript examples, HR Suite web app and webinar lessons | 🆕 | 2026-09-26 |
-| [dgr8akki/intent-guard](https://github.com/dgr8akki/intent-guard) | 0 | 0 | 요약 대기 · Say what you're working on; get a gentle nudge when you drift to pages that aren't part of it. Chrome extension powered by Jev. | 🆕 | 2026-09-27 |
-| [dgr8akki/jev-voice](https://github.com/dgr8akki/jev-voice) | 0 | 0 | 요약 대기 · Control Chrome by voice: open sites, search, click links and fill in forms. Chrome extension powered by Jev. | 🆕 | 2026-09-27 |
-| [dgr8akki/recipe-mode](https://github.com/dgr8akki/recipe-mode) | 0 | 0 | 요약 대기 · Cook hands-free on any recipe page: say "next", "how much butter?" or "set a timer". Chrome extension powered by Jev. | 🆕 | 2026-09-27 |
 | [DowLucas/browser-jev](https://github.com/DowLucas/browser-jev) | 0 | 0 | 요약 대기 · Adversarial browser testing: personas explore your web app while Jev judges every page state | 🆕 | 2026-09-21 |
 | [dtduc-git/jevassert](https://github.com/dtduc-git/jevassert) | 0 | 0 | 요약 대기 · Record/replay regression tests for Jev (TypeSafe System One) question packs — accuracy, calibration and cost gates in CI | 🆕 | 2026-09-26 |
 | [DuvInc/jev-table-import-mapper](https://github.com/DuvInc/jev-table-import-mapper) | 0 | 0 | 요약 대기 · Map the columns of an uploaded CSV onto your own table: a strict deterministic pass first, then a matrix of typed yes/no decisions for everything that needs judgement. | 🆕 | 2026-09-21 |
-| [effective-shipping/slop-fold](https://github.com/effective-shipping/slop-fold) | 0 | 0 | 요약 대기 · Browser extension that folds AI-ish LinkedIn posts, judged by Jev from TypeSafe AI | 🆕 | 2026-09-24 |
 | [eggmasonvalue/jev-takes-mauboussin](https://github.com/eggmasonvalue/jev-takes-mauboussin) | 0 | 0 | 요약 대기 · Evaluating TypeSafe's Jev on Michael Mauboussin's 50-question decision calibration test | 🆕 | 2026-09-18 |
-| [equationalapplications/system-one-reviewer](https://github.com/equationalapplications/system-one-reviewer) | 0 | 0 | 요약 대기 · Local PR reviewer: deterministic code + TypeSafe Jev (System One) judgments, with a built-in precision/recall evaluation harness. Built in public. | 🆕 | 2026-09-27 |
 | [erendikmenn/jev-llm-router-benchmark](https://github.com/erendikmenn/jev-llm-router-benchmark) | 0 | 0 | 요약 대기 · Benchmark-driven Jev router and judge for cost-aware, reliable LLM coding workflows | 🆕 | 2026-09-22 |
 | [finnhll/jev-eval](https://github.com/finnhll/jev-eval) | 0 | 0 | 요약 대기 · Validation harness for Jev's Choice, Score and Noul primitives on OpenRouter's Decisions API — 282 recorded responses, reproducible offline | 🆕 | 2026-09-20 |
 | [fly2abhishek/jev-field-tests](https://github.com/fly2abhishek/jev-field-tests) | 0 | 0 | 요약 대기 · Twelve field tests for TypeSafe's Jev model: calibration, guardrails, résumé screening, interview rubrics and its failure modes. Bring your own API key. | 🆕 | 2026-09-20 |
 | [force416/veil](https://github.com/force416/veil) | 0 | 0 | 요약 대기 · Chrome extension that hides X / Twitter replies matching a natural-language condition, judged by TypeSafe Jev. | 🆕 | 2026-09-26 |
-| [frederico-kluser/jev-agent-skill](https://github.com/frederico-kluser/jev-agent-skill) | 0 | 0 | 요약 대기 · Decisões tipadas em milissegundos com o Jev (System One da TypeSafe) via OpenRouter — state + perguntas noul/choice/score entram, decisões calibradas saem. Validação pesada baseada nos conceitos do modelo, bandas auto/hitl/abstain, deteção de prompt injection e servidor MCP. Zero dependências (Node ≥20). | 🆕 | 2026-09-27 |
 | [gabazureus/jev-ragcheck](https://github.com/gabazureus/jev-ragcheck) | 0 | 0 | 요약 대기 · RAG evaluation with typed decisions: sentence-level hallucination verdicts with offsets and citations, passage and answer relevance, in one Jev call per answer. Benchmarked against Ragas, DeepEval, an LLM judge and HHEM. | 🆕 | 2026-09-25 |
 | [gabazureus/jevextract](https://github.com/gabazureus/jevextract) | 0 | 0 | 요약 대기 · Grounded information extraction that cannot hallucinate: code proposes spans, Jev decides. An open-source alternative to LangExtract, with a bilingual benchmark and paper. | 🆕 | 2026-09-25 |
 | [gdchaochao/lunar-terminal](https://github.com/gdchaochao/lunar-terminal) | 0 | 0 | 요약 대기 · Code and raw data behind Lunar Terminal: Robocode Tank Royale bots, GapFlap, a token-metering proxy, and the 327-decision randomised trial of TypeSafe Jev. | 🆕 | 2026-09-22 |
+| [goodboybeau/system-one-playground](https://github.com/goodboybeau/system-one-playground) | 0 | 0 | 요약 대기 · Run the new wave of decision models (Laya, Decider, Kev, Jev) side by side on your Mac. Structured input in, calibrated probabilities out, with honest accuracy, calibration, latency and memory numbers. | 🆕 | 2026-09-27 |
+| [goofansu/tech-demos](https://github.com/goofansu/tech-demos) | 0 | 0 | 요약 대기 · A collection of JavaScript demos | 🆕 | 2026-09-27 |
 | [gowthxm07/Smart-Home-Automation-Using-Jev](https://github.com/gowthxm07/Smart-Home-Automation-Using-Jev) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-27 |
+| [hachiko85/jev-ja-lab](https://github.com/hachiko85/jev-ja-lab) | 0 | 0 | 요약 대기 · JevおよびJevに関する様々なOSSの日本語能力を評価・学習するためのプロジェクト | 🆕 | 2026-09-27 |
 | [hanzhi227/local-jev](https://github.com/hanzhi227/local-jev) | 0 | 0 | 요약 대기 · A local decision server with runnable examples and benchmarks. A local jev. | 🆕 | 2026-09-26 |
-| [haxudev/jev-benchmark](https://github.com/haxudev/jev-benchmark) | 0 | 0 | 요약 대기 · 面向语义决策模型的中文言下之意评测集：100 道伴侣对话 Choice 题，支持本地 ONNX、Jev 官方 API 与内网模型对比 | 🆕 | 2026-09-24 |
 | [hebertdev/jev-playground](https://github.com/hebertdev/jev-playground) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-25 |
+| [hemanth090/hemanth090](https://github.com/hemanth090/hemanth090) | 0 | 0 | 요약 대기 · Config files for my GitHub profile. | 🆕 | 2026-09-27 |
 | [HeshamAbourokaia/quran-text-analytics](https://github.com/HeshamAbourokaia/quran-text-analytics) | 0 | 0 | 요약 대기 · Interactive NLP and visualization platform for the Quranic corpus (114 surahs, 6,236 verses), with an experimental LLM-vision-judged Plotly chart auto-tuning loop. Vue 3 + Plotly + Electron. | 🆕 | 2026-09-27 |
 | [hgavert/system-one-bench](https://github.com/hgavert/system-one-bench) | 0 | 0 | 요약 대기 · Hands-on experiments with open-source System One (Jev-style) decision models on an Apple M5: a zero-shot tweet-sentiment benchmark against local LLMs, and a study of how they play Snake. | 🆕 | 2026-09-27 |
-| [hugues-vnsgn/jev-ios-bridge](https://github.com/hugues-vnsgn/jev-ios-bridge) | 0 | 0 | 요약 대기 · Bridge that lets Claude Code verify an iOS app on a simulator, with TypeSafe's Jev choosing each step (planning stage) | 🆕 | 2026-09-26 |
-| [hypnguyen1209/jev-paseo](https://github.com/hypnguyen1209/jev-paseo) | 0 | 0 | 요약 대기 · model-agnostic typed-decision judge plugin for Paseo | 🆕 | 2026-09-25 |
 | [ianlintner/auth-audit-jev](https://github.com/ianlintner/auth-audit-jev) | 0 | 0 | 요약 대기 · Shadow-mode Jev authn/authz event auditing and alert telemetry for OAuth2 and IAM | 🆕 | 2026-09-26 |
 | [Inxo/duck-jev](https://github.com/Inxo/duck-jev) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-26 |
-| [izzuddin8803/jev-showdown](https://github.com/izzuddin8803/jev-showdown) | 0 | 0 | 요약 대기 · Jev plays Pokemon Showdown: 40 battles, 940 decisions, reproducible results, and an annotated replay. | 🆕 | 2026-09-21 |
 | [jaygajera17/JevPulse](https://github.com/jaygajera17/JevPulse) | 0 | 0 | 요약 대기 · Jev-powered consensus engine which Evaluates every YouTube comment individually to measure true audience agreement. | 🆕 | 2026-09-24 |
-| [JevResearch/Jev-Research](https://github.com/JevResearch/Jev-Research) | 0 | 0 | 요약 대기 · Performance and architectural analysis of the new "Jev" model by TypeSafe AI. | 🆕 | 2026-09-27 |
-| [jjlinucb/prompt-check](https://github.com/jjlinucb/prompt-check) | 0 | 0 | 요약 대기 · Live prompt grading and effort picks for the Claude app, powered by TypeSafe's Jev | 🆕 | 2026-09-25 |
 | [jlov7/jev-decision-lab](https://github.com/jlov7/jev-decision-lab) | 0 | 0 | 요약 대기 · A local lab for seeing what TypeSafe's Jev judgment model does on realistic business cases: typed answers, probabilities, policy in code, receipts. | 🆕 | 2026-09-21 |
-| [juanfabrega/jev-quiz-pilot](https://github.com/juanfabrega/jev-quiz-pilot) | 0 | 0 | 요약 대기 · Put Jev in the pilot's seat of a web quiz. A Python CLI that lets TypeSafe's Jev navigate quizzes in your Chrome and logs every pick, so you can measure how it does. | 🆕 | 2026-09-27 |
+| [just-be-dev/jev-sat](https://github.com/just-be-dev/jev-sat) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-26 |
 | [just-the-v/judge_rails](https://github.com/just-the-v/judge_rails) | 0 | 0 | 요약 대기 · Semantic judgments from TypeSafe Jev as self-maintaining ActiveRecord attributes: typed Noul, Choice and Score answers stored as indexable columns, with SQL scopes. | 🆕 | 2026-09-26 |
+| [kanishka-namdeo/jev-rag](https://github.com/kanishka-namdeo/jev-rag) | 0 | 0 | 요약 대기 · Local-first hybrid RAG: traditional vs Jev-style (System One) pipelines over your own documents — with a built-in benchmark lab (6 scenarios, 48 questions, independent LLM judge). Hybrid won +8.4pp correctness at identical cost. | 🆕 | 2026-09-27 |
 | [kobashi/jev-playground](https://github.com/kobashi/jev-playground) | 0 | 0 | 요약 대기 · Can a model that only returns typed judgments choose a melody? A call-and-response app, four evals, and the finding that writing a note as "7" or "C5" swings accuracy 34 points. | 🆕 | 2026-09-19 |
+| [koller-nexus/invoice-ocr-poc](https://github.com/koller-nexus/invoice-ocr-poc) | 0 | 0 | 요약 대기 · Invoice OCR POC  | 🆕 | 2026-09-26 |
+| [kp-algomaster/finetuning-laya-for-browser-agents](https://github.com/kp-algomaster/finetuning-laya-for-browser-agents) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-26 |
+| [leokessel-lgtm/jev-codex-partner](https://github.com/leokessel-lgtm/jev-codex-partner) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-26 |
 | [Mahad-007/jev-why](https://github.com/Mahad-007/jev-why) | 0 | 0 | 요약 대기 · Causal attribution and calibration for TypeSafe Jev decisions. Jev tells you what it decided; jev-why tells you why, and whether you should believe it. | 🆕 | 2026-09-24 |
 | [marcosmartinez/jev-acento](https://github.com/marcosmartinez/jev-acento) | 0 | 1 | 요약 대기 · ¿Jev entiende tu acento? Pre-registered audit of TypeSafe AI's Jev on Spanish — accuracy, calibration and token cost — plus a CLI to run the same comparison on your own labelled data. | 🆕 | 2026-09-21 |
+| [mithril-lang/loop-bench-index](https://github.com/mithril-lang/loop-bench-index) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-26 |
+| [MRKups/jev-usecase-1](https://github.com/MRKups/jev-usecase-1) | 0 | 0 | 요약 대기 · IT helpdesk ticket generator and triage benchmark | 🆕 | 2026-09-27 |
 | [ms-codehorizon/forkery-case-study](https://github.com/ms-codehorizon/forkery-case-study) | 0 | 0 | 요약 대기 · Product case study: Forkery turns hundreds of recipe comments into one score from people who cooked it. BRD, PRD, architecture, decisions, and how it uses TypeSafe's Jev decision model, with an honest evaluation. Code is private. | 🆕 | 2026-09-26 |
 | [nweii/tag-match](https://github.com/nweii/tag-match) | 0 | 0 | 요약 대기 · Match Obsidian notes to your tags with fast AI decisions shaped by your tagging system. | 🆕 | 2026-09-26 |
 | [PlutoniaX/jev-demo](https://github.com/PlutoniaX/jev-demo) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-25 |
 | [priorbench/jev](https://github.com/priorbench/jev) | 0 | 0 | 요약 대기 · Independent, pre-registered evaluation of TypeSafe AI's Jev. 5,721 calls, 21 experiments, 50 predictions registered before collection. Raw data included. | 🆕 | 2026-09-20 |
-| [rafaemush/resolve](https://github.com/rafaemush/resolve) | 0 | 0 | 요약 대기 · Automated resolution infrastructure API for long-tail prediction markets (Cloudflare Workers + Supabase + TypeSafe Jev) | 🆕 | 2026-09-27 |
+| [rafaemush/resolve](https://github.com/rafaemush/resolve) | 0 | 0 | 요약 대기 · Automated resolution infrastructure API for long-tail prediction markets (Cloudflare Workers + Supabase + TypeSafe Jev) | 🆕 | 2026-09-28 |
 | [romanenko/nutrition-label](https://github.com/romanenko/nutrition-label) | 0 | 0 | 요약 대기 · A nutrition-style label for how websites treat your attention. Chrome extension prototype. | 🆕 | 2026-09-25 |
 | [rssr25/sys1bench](https://github.com/rssr25/sys1bench) | 0 | 0 | 요약 대기 · Benchmark for typed System One decision models (Jev, Laya, and whatever comes next): calibration against a noise floor, framing sensitivity, selective prediction, ordinal fidelity, interference, robustness. pip install sys1bench. | 🆕 | 2026-09-23 |
 | [rubinagentagi-tech/jev-heart-risk-bench](https://github.com/rubinagentagi-tech/jev-heart-risk-bench) | 0 | 0 | 요약 대기 · Benchmarking Jev (TypeSafe System One) on 5,000 real CDC survey respondents, with an interactive demo where every profile has a real model answer | 🆕 | 2026-09-20 |
+| [Salv4d/jev-cli](https://github.com/Salv4d/jev-cli) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-27 |
 | [shing1Sks/rerank-bench](https://github.com/shing1Sks/rerank-bench) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-26 |
 | [Simon-zj1/jev-exam](https://github.com/Simon-zj1/jev-exam) | 0 | 0 | 요약 대기 · 用 Jev（TypeSafe System One 决策模型）把上传的学习材料变成可自动判分的自助考试：逐得分点判定、置信门控、错题本与薄弱点。支持 DeepSeek / 智谱 GLM / 通义千问 / Kimi / OpenAI / Claude 等自带 Key。Self-exam generator and point-level grader built on a decision model. | 🆕 | 2026-09-27 |
 | [simonmesmith/jev-arc-agi-v1-experiment](https://github.com/simonmesmith/jev-arc-agi-v1-experiment) | 0 | 0 | 요약 대기 · Direct Jev on 400 public ARC-AGI-1 tasks: frozen method, exact results, cost, latency, and reproducible evidence. | 🆕 | 2026-09-18 |
@@ -251,24 +249,22 @@
 | [souvikr/jev-test](https://github.com/souvikr/jev-test) | 0 | 0 | 요약 대기 · Test harness + benchmark for TypeSafe's Jev decision model (noul/choice/score) via OpenRouter's Decisions API | 🆕 | 2026-09-19 |
 | [STRML/omp-classifier](https://github.com/STRML/omp-classifier) | 0 | 1 | 요약 대기 · Model-judged permission gate for OMP: classifies bash commands and spawn-bearing eval payloads before they run, prompts on risk, fails closed | 🆕 | 2026-09-27 |
 | [SYED-M-HUSSAIN/jev-experimental](https://github.com/SYED-M-HUSSAIN/jev-experimental) | 0 | 0 | 요약 대기 ·  What TypeSafe's Jev model can and can't do, as a runnable pytest suite. Includes the test where the API rejects an extraction request. Runs offline with recorded responses, no API key needed. | 🆕 | 2026-09-20 |
+| [SzczepanGrela/tic-tac-toe-ai](https://github.com/SzczepanGrela/tic-tac-toe-ai) | 0 | 0 | 요약 대기 · Web-based Tic-Tac-Toe AI lab for playing, training, and benchmarking classic, reinforcement-learning, and ONNX agents. | 🆕 | 2026-09-27 |
 | [taifoon-io/jev](https://github.com/taifoon-io/jev) | 0 | 0 | 요약 대기 · Grade an AI agent's job with TypeSafe's Jev: did it do the work as the task laid it out? Facts first, Jev on your own key, a receipt, and optional on-chain records. | 🆕 | 2026-09-27 |
 | [takemo101/pi-jev-continue](https://github.com/takemo101/pi-jev-continue) | 0 | 0 | 요약 대기 · Goal-scoped continuous development for Pi, judged by Jev. | 🆕 | 2026-09-27 |
 | [TakumiNoguchi2004/jev-noul-vs-choice](https://github.com/TakumiNoguchi2004/jev-noul-vs-choice) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-21 |
-| [tatsuya-tech77/umigame-jev](https://github.com/tatsuya-tech77/umigame-jev) | 0 | 0 | 요약 대기 · Sea Turtle Soup (lateral-thinking yes/no riddles) where the game master is Jev, a decision-only AI that returns probabilities instead of text. Humans vs Claude &amp; GPT. | 🆕 | 2026-09-27 |
 | [theasylumagency/semantic-benchmark](https://github.com/theasylumagency/semantic-benchmark) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-27 |
 | [thijmenkam/jev-benchmarks](https://github.com/thijmenkam/jev-benchmarks) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-18 |
 | [ThomasRossi/fin-benchmark-jev](https://github.com/ThomasRossi/fin-benchmark-jev) | 0 | 0 | 요약 대기 · Benchmark TypeSafe Jev 1.13 vs Qwen 3.8 27B on constrained-output financial tasks | 🆕 | 2026-09-27 |
-| [TimurHaryo/jev-toolkit](https://github.com/TimurHaryo/jev-toolkit) | 0 | 0 | 요약 대기 · Jev (TypeSafe AI) decisions in Claude Code hooks plus a benchmark harness. Zero-dependency Node. | 🆕 | 2026-09-27 |
 | [TriusAI/Kapteeni](https://github.com/TriusAI/Kapteeni) | 0 | 0 | 요약 대기 · A Jev-compatible System One decision model | 🆕 | 2026-09-27 |
 | [TYC-000/flight-deals-dashboard](https://github.com/TYC-000/flight-deals-dashboard) | 0 | 0 | 요약 대기 · Asia outer-port flight deals dashboard for KUL/CGK/BKK → Spain | 🆕 | 2026-09-27 |
 | [UgurcanAkkok/yks-bench](https://github.com/UgurcanAkkok/yks-bench) | 0 | 0 | 요약 대기 · Benchmarking decision models (TypeSafe Jev, Convai Laya) on the 2026 Turkish university entrance exam — 593 questions, full controls, uncontaminated test set | 🆕 | 2026-09-22 |
 | [vamsi80/jev-vs-llm](https://github.com/vamsi80/jev-vs-llm) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-25 |
 | [vclic/smoking-extraction-benchmark](https://github.com/vclic/smoking-extraction-benchmark) | 0 | 0 | 요약 대기 · Synthetic smoking-history extraction benchmark comparing TypeSafe Jev and OpenAI structured outputs, with reproducible accuracy, cost, and latency results. | 🆕 | 2026-09-18 |
-| [YukunHe304/whatitdid](https://github.com/YukunHe304/whatitdid) | 0 | 0 | 요약 대기 · See what an AI agent actually did, not just its score. Labels every step of a CLI agent's run and compares two rounds against the noise a re-run produces anyway. | 🆕 | 2026-09-19 |
+| [Xin7937-lang/jev-life](https://github.com/Xin7937-lang/jev-life) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-25 |
 | [zeuzmakessoftware/jever](https://github.com/zeuzmakessoftware/jever) | 0 | 0 | 요약 대기 · A desktop home for TypeSafe Jev. | 🆕 | 2026-09-25 |
 | [softpudding/jev-frontier-100](https://github.com/softpudding/jev-frontier-100) | 1 | 0 | 요약 대기 · 100 original tasks comparing Jev with Qwen3.5 0.8B, 2B and 4B across three reasoning budgets; reproducible results and token logprobs. | 🆕 | 2026-09-19 |
 | [may3rr/jev-verifier-eval](https://github.com/may3rr/jev-verifier-eval) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-27 |
-| [NixDow/TSJEV_SBERT_eval](https://github.com/NixDow/TSJEV_SBERT_eval) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-25 |
 | [vianaR25/jev-vs-ml](https://github.com/vianaR25/jev-vs-ml) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-22 |
 
 ### comet-ml/opik
@@ -292,14 +288,6 @@ A free app and open-source library to build better AI products.
 <details><summary>README 발췌</summary>
 
 Data, Model, Recipe for an open Jev
-
-</details>
-
-### TypeLLM/TypeLLM
-
-<details><summary>README 발췌</summary>
-
-- [2026/09/24] Added image input for vision-language models, tested with Qwen3.8-27B. - [2026/09/23] Added JevBench results: TypeLLM scored 195/231 without thinking and 228/231 with thinking. - [2026/09/23] Added permutation averaging to improve the predictive distribution. See the blog post. - [202
 
 </details>
 
@@ -364,14 +352,6 @@ Evals and guardrails for agents, using Jev-style decision models instead of an L
 <details><summary>README 발췌</summary>
 
 Agent evaluators usually fall into two categories: deterministic code and LLM-as-a-judge. Code is fast and reliable but limited to behavior that can be expressed as explicit logic. LLM judges can evaluate open-ended agent behavior, but they add cost, latency, and variance.
-
-</details>
-
-### aaddrick/building-with-typesafe-jev
-
-<details><summary>README 발췌</summary>
-
-&gt; [!NOTE] &gt; This is an unofficial, community skill. It is not made, reviewed, or endorsed by TypeSafe AI. TypeSafe publishes its own skill at typesafe-ai/skills. See How this differs from the official skill.
 
 </details>
 
@@ -476,6 +456,14 @@ Unofficial research repo. Not affiliated with TypeSafe AI. This is a hands-on st
 <details><summary>README 발췌</summary>
 
 Rebuild a whole site's internal link map in seconds with Jev. Run Jev alone (System 1), or put Claude or Codex behind it as System 2 to train its rubric on your site. Includes a race against Claude Opus 5 on the same queue.
+
+</details>
+
+### oso95/x-scanner
+
+<details><summary>README 발췌</summary>
+
+Behavioral labels on every post you scroll past on X, judged by Jev, TypeSafe's System One model, with a counter in the corner showing exactly what it cost.
 
 </details>
 
@@ -679,6 +667,14 @@ Custom nodes for using Jev's text interpretation and judgments in ComfyUI. Use n
 
 </details>
 
+### linny006/llm-eval-tracker
+
+<details><summary>README 발췌</summary>
+
+SEO: llm eval tracker --&gt;
+
+</details>
+
 ### MANISH007700/tab-bouncer
 
 <details><summary>README 발췌</summary>
@@ -692,6 +688,14 @@ A Chrome extension that closes the tabs you don't need, based on what you say yo
 <details><summary>README 발췌</summary>
 
 TLDR: Jev-Score enables Claude to optimize writing in a loop against a deterministic evaluator (TypeSafe's Jev model) paired with natural language writing objectives.
+
+</details>
+
+### abektes/fdbx-designskills
+
+<details><summary>README 발췌</summary>
+
+Futures-thinking methods for designers. Every claim traces to a page you can open.
 
 </details>
 
@@ -823,14 +827,6 @@ Benchmark suite evaluating TypeSafe AI Jev System One (model typesafe/jev-1.13 v
 
 </details>
 
-### cooper667/jev-browse
-
-<details><summary>README 발췌</summary>
-
-A Claude Code and Codex plugin that runs a checklist written in plain English in a real browser. Each line is an action ("Select the Generate Link button", Type "Acme" into the Name field) or a check ("Confirm the report lists three risks"). Playwright drives the browser; TypeSafe's Jev model, serve
-
-</details>
-
 ### jgridifier/jev-research-eval
 
 <details><summary>README 발췌</summary>
@@ -911,14 +907,6 @@ Benchmark de modelos de toma de decisiones sobre texto, con cinco demos para ver
 
 </details>
 
-### abhishek085/JevControl
-
-<details><summary>README 발췌</summary>
-
-Find out whether a smaller model could handle some of your AI agent's routine choices.
-
-</details>
-
 ### hegargarcia/jev-playground
 
 <details><summary>README 발췌</summary>
@@ -940,14 +928,6 @@ Analyze social media comments with Jev. Percentages you can audit, in one reques
 <details><summary>README 발췌</summary>
 
 A tiny 3D restaurant where the servers are run by rules or by an AI, so we can see who serves guests better.
-
-</details>
-
-### bydeng01/scientific-decision-eval
-
-<details><summary>README 발췌</summary>
-
-Scientific judgment tasks for decision programs: models answer discrete Choice questions, and deterministic code computes the downstream counts, relations, and claim labels. The S2 collection contains 20 groups, 40 scientific Choices, and one engineering Choice. Evaluation reports semantic correctne
 
 </details>
 
@@ -1159,14 +1139,6 @@ Can Jev find an edge—or does it follow luck?
 
 </details>
 
-### ckorhonen/jev-lint
-
-<details><summary>README 발췌</summary>
-
-A fuzzy linter for coding agents. Your agent writes a file; 0.3 seconds later it hears which of your team's rules it just broke, and fixes them before anyone reviews the code.
-
-</details>
-
 ### clduab11/jev-test
 
 <details><summary>README 발췌</summary>
@@ -1295,14 +1267,6 @@ Lint code comments with TypeSafe AI's System One model. Comments are scored on f
 
 </details>
 
-### Jason-Doyle/jev-parallel-dispatch
-
-<details><summary>README 발췌</summary>
-
-Watch the 33-second demo recording.
-
-</details>
-
 ### jjd-lab/jev-synthetic-survey
 
 <details><summary>README 발췌</summary>
@@ -1324,6 +1288,14 @@ Jev is TypeSafe's System One model for typed judgments. Give it a JSON state and
 <details><summary>README 발췌</summary>
 
 Find out which qualities of your writing actually predict engagement.
+
+</details>
+
+### kw2828/OpenJev
+
+<details><summary>README 발췌</summary>
+
+Context → questions and candidate answers → probabilities → your application's next step.
 
 </details>
 
@@ -1420,6 +1392,14 @@ Try an evaluation, inspect the judge's raw response, and experiment with release
 <details><summary>README 발췌</summary>
 
 We evaluated Jev 1.13.0 on all 58,492 public BBQ questions. It answered 56,900 correctly (97.28%): 99.96% when the passage did not provide enough information, and 94.60% when it did. The complete main evaluation cost an estimated US$0.3429 and took 7.75 minutes.
+
+</details>
+
+### spencerjireh/arxivian
+
+<details><summary>README 발췌</summary>
+
+A weekly feed of arXiv papers you could actually implement.
 
 </details>
 
@@ -1551,11 +1531,11 @@ Can a System One model stand in for the LLM-as-judge in agent guardrail callback
 
 </details>
 
-### gbesse/decision-workbench
+### Holovkat/jev-mark
 
 <details><summary>README 발췌</summary>
 
-From a sourced document to a reviewed, exportable Jev decision.
+This workspace builds the thecodacus/llama.cpp parallel-decision branch and runs its decision endpoint against the locally installed Ollama gemma4:12b GGUF blobs.
 
 </details>
 
@@ -1575,14 +1555,6 @@ Demos built on Jev, TypeSafe AI's System One decision model, and Laya, an open-s
 
 </details>
 
-### TheChyeahhh/tarnlight
-
-<details><summary>README 발췌</summary>
-
-A flight recorder for Jev, an AI model sold by the company TypeSafe. Tarnlight records the answers your apps get from Jev, shows them live and lets you grade them, so you learn how far to trust Jev on your own questions.
-
-</details>
-
 ### 0xmdinc/jev-medical-bench
 
 <details><summary>README 발췌</summary>
@@ -1591,11 +1563,27 @@ A small benchmark comparing a decision model (Jev by TypeSafe AI, which returns 
 
 </details>
 
+### 3zcurdia/pumabench
+
+<details><summary>README 발췌</summary>
+
+What happens when an LLM takes the UNAM admission test?
+
+</details>
+
 ### 4nt0ineB/typed-decision-bench
 
 <details><summary>README 발췌</summary>
 
 A small benchmark on one question: does Jev, TypeSafe's zero-shot classification model, hold up in French? And how does it compare, in English and in French, to the alternatives you could use instead?
+
+</details>
+
+### achildrenmile/jev-belege-demo
+
+<details><summary>README 발췌</summary>
+
+Not every decision needs an LLM. An example pipeline for the monthly receipt processing of a one-person company: Claude reads the receipts, Jev (TypeSafe) makes the decisions, Python computes the rules, and only uncertain cases go to a larger model or to a human.
 
 </details>
 
@@ -1631,11 +1619,11 @@ A teacher asks one question. Students answer from their phones. Every answer is 
 
 </details>
 
-### Alpha-Harper-Franklin/jev-multimodal
+### amansahani/jev-laya-openai-comparison
 
 <details><summary>README 발췌</summary>
 
-Make typed decisions over images, documents and speech. Share visual computation across questions, then combine evidence in Jev.
+A reproducible benchmark suite and pure PyTorch / HuggingFace inference pipeline comparing Non-Autoregressive System 1 Decision Models (TypeSafe Jev and Laya) against Autoregressive Language Models (OpenAI gpt-5.6-luna / gpt-4o-mini).
 
 </details>
 
@@ -1644,14 +1632,6 @@ Make typed decisions over images, documents and speech. Share visual computation
 <details><summary>README 발췌</summary>
 
 &gt; Learning project, not a benchmark. This repo exists for learning and &gt; informative purposes only. Everything here was produced by one person on a &gt; hobby scaffold with small sample sizes (24 decisions, 12-case flows, N=5 &gt; probes) — treat every number as anecdote, not evidence. Nothing here is &gt; e
-
-</details>
-
-### Ascurse/typed-judge-kit
-
-<details><summary>README 발췌</summary>
-
-Typed questions to a model, one batched call, a verdict computed in your code, thresholds calibrated on your own labels.
 
 </details>
 
@@ -1687,14 +1667,6 @@ Live: https://jevs-kitchen-chaos.vercel.app
 
 </details>
 
-### bhushankinge/jev-laya-classification-bench
-
-<details><summary>README 발췌</summary>
-
-Typed-decision models versus a 35B LLM on a real classification job: 12,000 U.S. federal IT solicitations, graded against what a reseller actually quoted.
-
-</details>
-
 ### BingelsWorth/JudgeJev
 
 <details><summary>README 발췌</summary>
@@ -1719,11 +1691,11 @@ A reproducible measurement of one claim about Jev, TypeSafe AI's System One deci
 
 </details>
 
-### carlaiau/judge-jev
+### brian-w-zhang/askjev
 
 <details><summary>README 발췌</summary>
 
-Judge Jev is a TypeScript research project testing Jev's Choice, Score, and Noul primitives as relevance judges.
+A tree that has a place for every closed question a human or a program could ask (yes/no, pick one, rate on a scale), filled with real questions answered by Jev, TypeSafe AI's System One model. The goal is to understand Jev: its capabilities, its defaults, and where its judgments are jagged. It is n
 
 </details>
 
@@ -1799,6 +1771,22 @@ Public data and analysis for Evaluating Jev for biomedical evidence screening: d
 
 </details>
 
+### danielscoffee/nixos
+
+<details><summary>README 발췌</summary>
+
+Personal flake for the default/loqe workstations, a minimal server, a NixOS-WSL host, and the daniel standalone Home Manager profile.
+
+</details>
+
+### dataelvisliang/jev-as-a-judge-scaffold
+
+<details><summary>README 발췌</summary>
+
+A minimal, runnable scaffold of the cascade idea from "JEV-as-a-Judge: Accept When Confident, Escalate When Unsure" (Yubo Li, Yidi Miao, Ramayya Krishnan, Rema Padman, Carnegie Mellon University, arXiv:2609.26550, September 2026).
+
+</details>
+
 ### davidzna/better-cheaper-llm
 
 <details><summary>README 발췌</summary>
@@ -1812,30 +1800,6 @@ Make RAG pipelines and LLM apps faster and cheaper by moving the yes/no decision
 <details><summary>README 발췌</summary>
 
 Sample code and learning material for Jev, TypeSafe AI's System One decision model. Jev answers structured questions (yes/no, multiple choice, rubric scores) with calibrated probabilities instead of generated text.
-
-</details>
-
-### dgr8akki/intent-guard
-
-<details><summary>README 발췌</summary>
-
-Say what you're working on. Get a gentle nudge when you drift. Every page you open is judged against your task, not a blocklist, so the tutorial you need stays open and the rabbit hole gets a tap on the shoulder.
-
-</details>
-
-### dgr8akki/jev-voice
-
-<details><summary>README 발췌</summary>
-
-Control Chrome by voice. Open sites, search, click links and fill in forms by saying what you want.
-
-</details>
-
-### dgr8akki/recipe-mode
-
-<details><summary>README 발췌</summary>
-
-Cook hands-free on any recipe page. Say "next", "how much butter?" or "set a timer" while your hands are covered in flour.
 
 </details>
 
@@ -1863,27 +1827,11 @@ Your users upload a CSV. Its columns are never your columns. This maps them, and
 
 </details>
 
-### effective-shipping/slop-fold
-
-<details><summary>README 발췌</summary>
-
-A browser extension that folds LinkedIn posts that read like they were written by ChatGPT.
-
-</details>
-
 ### eggmasonvalue/jev-takes-mauboussin
 
 <details><summary>README 발췌</summary>
 
 Evaluating TypeSafe's System One model (Jev, trained via RLCD on 100% synthetic data) against Michael Mauboussin's 50-question confidence calibration test from The Success Equation (confidence.success-equation.com).
-
-</details>
-
-### equationalapplications/system-one-reviewer
-
-<details><summary>README 발췌</summary>
-
-A local pull-request reviewer built from two ingredients: deterministic code for all the plumbing, and Jev (TypeSafe's System One model) for every judgment. No agent loop, no prompt engineering, no cloud CI — one Python file, git, and an API key.
 
 </details>
 
@@ -1919,14 +1867,6 @@ A Chrome extension that uses Jev to hide replies under X / Twitter posts that ma
 
 </details>
 
-### frederico-kluser/jev-agent-skill
-
-<details><summary>README 발췌</summary>
-
-Agent Skill de decisão rápida com o modelo Jev (System One da TypeSafe) via OpenRouter. State + perguntas tipadas (noul/choice/score) entram; decisões com probabilidades calibradas e bandas de ação saem — em milissegundos, sem geração de texto.
-
-</details>
-
 ### gabazureus/jev-ragcheck
 
 <details><summary>README 발췌</summary>
@@ -1951,11 +1891,35 @@ Code and raw data behind Lunar Terminal — a channel that tests AI tools instea
 
 </details>
 
+### goodboybeau/system-one-playground
+
+<details><summary>README 발췌</summary>
+
+Run the new wave of decision models side by side on your Mac: Laya, Decider, Kev, and TypeSafe's Jev. Structured input goes in and calibrated probabilities come out. You get honest numbers for accuracy, calibration, latency, CPU and memory.
+
+</details>
+
+### goofansu/tech-demos
+
+<details><summary>README 발췌</summary>
+
+A collection of JavaScript demos.
+
+</details>
+
 ### gowthxm07/Smart-Home-Automation-Using-Jev
 
 <details><summary>README 발췌</summary>
 
 HomeMind is a final-year engineering student research and simulation project designed to study and evaluate how a decision-oriented AI system (such as Jev) compares with conventional Large Language Models (LLMs) in handling complex, multi-device smart home automation.
+
+</details>
+
+### hachiko85/jev-ja-lab
+
+<details><summary>README 발췌</summary>
+
+日本語データセットをJevの3 Primitiveへ変換し、ローカルまたはHugging Face Hub上の判断モデルを同一条件で比較する評価基盤です。
 
 </details>
 
@@ -1967,19 +1931,19 @@ JEV local runs a JEV-compatible decision server on your machine using SemIf and 
 
 </details>
 
-### haxudev/jev-benchmark
-
-<details><summary>README 발췌</summary>
-
-面向语义决策模型的中文评测集：100 道婚恋送命题多轮对话，检验模型能否结合上下文读出真实意图。
-
-</details>
-
 ### hebertdev/jev-playground
 
 <details><summary>README 발췌</summary>
 
 Playground interactivo para explorar JEV, el modelo de evaluación "System One" de TypeSafe AI. JEV evalúa preguntas tipadas (choice, score, noul) contra un estado y devuelve decisiones estructuradas con probabilidades calibradas — sin generación de texto, sin parseo.
+
+</details>
+
+### hemanth090/hemanth090
+
+<details><summary>README 발췌</summary>
+
+&gt; ai engineer · agent runtimes &amp; evals. &gt; building stateful multi-agent systems, running eval harnesses, and learning Go to build resilient runtimes.
 
 </details>
 
@@ -1999,22 +1963,6 @@ Decider 2B, an open 2B System One model, playing Snake zero-shot in the local de
 
 </details>
 
-### hugues-vnsgn/jev-ios-bridge
-
-<details><summary>README 발췌</summary>
-
-Check an iOS app the way a person reads its screen. You write a script: taps, typing, swipes, waits, and checkpoints with claims like "The order total reads $5". The bridge runs it on a simulator through MobileBuildMCP, TypeSafe's Jev model judges each claim against the screen's text, and you get on
-
-</details>
-
-### hypnguyen1209/jev-paseo
-
-<details><summary>README 발췌</summary>
-
-A Paseo plugin for making small, typed decisions inside a coding session. Which fix is safer? Is the diff risky enough to block? You queue the question, then pick the answer yourself or hand it to a model. The result shows up as a card in the session timeline: a probability with a confidence band.
-
-</details>
-
 ### ianlintner/auth-audit-jev
 
 <details><summary>README 발췌</summary>
@@ -2031,35 +1979,11 @@ This extension lets you ask typed questions to the TypeSafe AI Jev model (System
 
 </details>
 
-### izzuddin8803/jev-showdown
-
-<details><summary>README 발췌</summary>
-
-40 battles. 940 decisions. Fast answers, mixed strategy.
-
-</details>
-
 ### jaygajera17/JevPulse
 
 <details><summary>README 발췌</summary>
 
 &gt; High-throughput qualitative consensus engine for YouTube comments. Evaluates every comment individually with calibrated decision models.
-
-</details>
-
-### JevResearch/Jev-Research
-
-<details><summary>README 발췌</summary>
-
-An independent, hands-on evaluation of TypeSafe AI's jev-1.13.0 API: 16,379 live benchmark requests across three frozen suites, a 987-call architecture probe, a multi-protocol Talk-to-Jev program, and a token-counting study, and a matched cheap-model baseline sweep on OpenRouter (12 models over the 
-
-</details>
-
-### jjlinucb/prompt-check
-
-<details><summary>README 발췌</summary>
-
-Grades the prompt you are typing into the Claude app, live, and tells you which effort level to run it at. A small overlay sits just above Claude's message box and updates as you type or dictate:
 
 </details>
 
@@ -2071,11 +1995,11 @@ A model can judge. Your system must decide.
 
 </details>
 
-### juanfabrega/jev-quiz-pilot
+### just-be-dev/jev-sat
 
 <details><summary>README 발췌</summary>
 
-Let Jev 1.13, TypeSafe's decision model, navigate a web quiz in a browser, so you can measure how well it does. The tool reads each question and its options from the page, asks Jev to pick, clicks the answer, and moves to the next page. Jev does not see screenshots or write text.
+An Effect 4 application that replays TypeSafe Jev's progress through the multiple-choice questions in official SAT Practice Tests 4–11. Each exam has five prerecorded runs; the UI chooses one randomly, so visitors never trigger paid inference.
 
 </details>
 
@@ -2087,11 +2011,43 @@ Semantic judgments as ordinary ActiveRecord attributes.
 
 </details>
 
+### kanishka-namdeo/jev-rag
+
+<details><summary>README 발췌</summary>
+
+One app, two retrieval-augmented pipelines over your own documents — and a built-in benchmark lab that measures, with an independent LLM judge, exactly what the hybrid adds.
+
+</details>
+
 ### kobashi/jev-playground
 
 <details><summary>README 발췌</summary>
 
 A call-and-response music app built to find out whether Jev — TypeSafe AI's first System One model — can carry a musical judgment.
+
+</details>
+
+### koller-nexus/invoice-ocr-poc
+
+<details><summary>README 발췌</summary>
+
+Proof of concept HTTP API: upload a receipt image, enqueue processing, then poll results from SQLite (default) or PostgreSQL.
+
+</details>
+
+### kp-algomaster/finetuning-laya-for-browser-agents
+
+<details><summary>README 발췌</summary>
+
+This repository contains the complete codebase, evaluation harness, dataset curation scripts, and benchmark artifacts for fine-tuning Laya (a 421M-parameter ModernBERT-large encoder with multi-task decision heads) for high-frequency, structured browser automation.
+
+</details>
+
+### leokessel-lgtm/jev-codex-partner
+
+<details><summary>README 발췌</summary>
+
+Public, repo-local Codex marketplace for governed TypeSafe JEV evaluations. It adds one prompted MCP tool for bounded Boolean, Choice and Score judgements.
 
 </details>
 
@@ -2108,6 +2064,22 @@ Jev tells you what it decided. jev-why tells you why, and whether you should bel
 <details><summary>README 발췌</summary>
 
 Does Jev understand your accent?
+
+</details>
+
+### mithril-lang/loop-bench-index
+
+<details><summary>README 발췌</summary>
+
+Machine-readable index of paired agent-loop benchmark cohorts. Each record keeps the corpus digest, per-lane requested and resolved model identities, receipt coverage, exact-result parity, and resource indices. Failed and unmeasured runs stay visible and never contribute to a parity-qualified index.
+
+</details>
+
+### MRKups/jev-usecase-1
+
+<details><summary>README 발췌</summary>
+
+A small demonstrator project showing how TypeSafe Jev can be used to classify and triage IT helpdesk tickets, comparing its answers and latency side-by-side with general LLMs.
 
 </details>
 
@@ -2175,6 +2147,14 @@ Can a decision model read a plain-English health survey and judge a person's hea
 
 </details>
 
+### Salv4d/jev-cli
+
+<details><summary>README 발췌</summary>
+
+A command-line interface tool in Rust to query the TypeSafe Jev model locally or via OpenRouter.
+
+</details>
+
 ### shing1Sks/rerank-bench
 
 <details><summary>README 발췌</summary>
@@ -2231,6 +2211,14 @@ Jev, from TypeSafe AI, is described everywhere as a fast, cheap alternative to a
 
 </details>
 
+### SzczepanGrela/tic-tac-toe-ai
+
+<details><summary>README 발췌</summary>
+
+A web-based Tic-Tac-Toe laboratory for playing against and comparing classic search algorithms, tabular reinforcement learning, and neural policies.
+
+</details>
+
 ### taifoon-io/jev
 
 <details><summary>README 발췌</summary>
@@ -2255,14 +2243,6 @@ Inspired by KantaHayashiAI/jev-does-not-play-dice, which found that Jev — Type
 
 </details>
 
-### tatsuya-tech77/umigame-jev
-
-<details><summary>README 발췌</summary>
-
-A browser game of "Sea Turtle Soup" (a lateral-thinking yes/no riddle game, umigame no soup in Japan) where the game master is Jev, TypeSafe AI's decision-only model. Jev never writes a single word: it only returns probabilities for typed questions. Players ask yes/no questions, and try to solve eac
-
-</details>
-
 ### theasylumagency/semantic-benchmark
 
 <details><summary>README 발췌</summary>
@@ -2284,14 +2264,6 @@ A small, reproducible harness that compares Jev — TypeSafe's first System One 
 <details><summary>README 발췌</summary>
 
 Benchmarks Jev 1.13 (TypeSafe's decisions model, typesafe/jev-1.13 on OpenRouter's /api/alpha/decisions endpoint) against Qwen 3.8 27B on Cerebras on four financial tasks with constrained output: a label, a number, or a set of IDs.
-
-</details>
-
-### TimurHaryo/jev-toolkit
-
-<details><summary>README 발췌</summary>
-
-Puts Jev decisions (Choice / Score / Noul) into Claude Code hooks and a benchmark harness. Zero npm dependencies. Node 20+.
 
 </details>
 
@@ -2335,11 +2307,11 @@ A paired comparison of TypeSafe Jev and OpenAI structured outputs on 1,000 synth
 
 </details>
 
-### YukunHe304/whatitdid
+### Xin7937-lang/jev-life
 
 <details><summary>README 발췌</summary>
 
-Read any CLI agent's session file and report what the run actually did — step by step, with error bars.
+用 typesafe Jev 的 Choice + Noul + Score 三件套，为生活场景做概率化判断。不替你拍板——把每个选项的成功概率和质量档位一起摆出来，由你做最终决定。
 
 </details>
 
@@ -2364,14 +2336,6 @@ Jev scores 77.0%; Qwen3.5 2B with a 2,048-token thinking budget scores 82.0%; Qw
 <details><summary>README 발췌</summary>
 
 Evaluation harness for a controlled comparison of three verifier families on claim–evidence entailment, over five public fact-verification corpora (FEVER, SciFact, HoVer, VitaminC, Climate-FEVER):
-
-</details>
-
-### NixDow/TSJEV_SBERT_eval
-
-<details><summary>README 발췌</summary>
-
-A small reproducible benchmark comparing:
 
 </details>
 

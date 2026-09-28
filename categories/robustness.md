@@ -1,15 +1,15 @@
-# 🧪 견고성·감사 연구 (99)
+# 🧪 견고성·감사 연구 (98)
 
 [← README](../README.md)
 
 | 리포 | ⭐ | 🍴 | 한눈에 보기 | 태그 | 최근 푸시 |
 |---|---:|---:|---|---|---|
-| [nokia-applied-research/AnyJev](https://github.com/nokia-applied-research/AnyJev) | 826 | 110 | 요약 대기 · Turn any LLM into a Jev-style decision model: typed decisions, real probabilities, no training. (continue updating, welcome any issue and PR request) | 🆕 | 2026-09-26 |
-| [wfzyx/von](https://github.com/wfzyx/von) | 728 | 54 | 요약 대기 · The open-source System One decision model. Sub-15ms, non-autoregressive, local drop-in alternative to TypeSafe Jev. | 🆕 | 2026-09-26 |
-| [razorback16/openjev](https://github.com/razorback16/openjev) | 463 | 37 | 요약 대기 · Open, Jev-compatible System One decision server on DiffusionGemma | 🆕 | 2026-09-27 |
+| [nokia-applied-research/AnyJev](https://github.com/nokia-applied-research/AnyJev) | 830 | 110 | 요약 대기 · Turn any LLM into a Jev-style decision model: typed decisions, real probabilities, no training. (continue updating, welcome any issue and PR request) | 🆕 | 2026-09-26 |
+| [wfzyx/von](https://github.com/wfzyx/von) | 729 | 54 | 요약 대기 · The open-source System One decision model. Sub-15ms, non-autoregressive, local drop-in alternative to TypeSafe Jev. | 🆕 | 2026-09-26 |
+| [chainreactors/fingers](https://github.com/chainreactors/fingers) | 271 | 40 | **무엇** 보안 스캐너 등에서 대상 웹 기술 및 프레임워크를 식별하기 위해 여러 지문 라이브러리를 통합 분석하는 Go 엔진이다.<br>**판단** 규칙 엔진이 매칭한 제품명과 버전 결과가 실제 웹 응답 증거에 의해 성립하는지(holds, refuted, insufficient) 판단한다.<br>**포인트** Jev를 심사기(Judge)로 활용해 규칙 기반 결과의 오탐과 중복을 줄이고 버전을 보완하며, 실패 시 순수 규칙 결과로 폴백한다. | 🆕 | 2026-09-27 |
+| [razorback16/openjev](https://github.com/razorback16/openjev) | 463 | 38 | 요약 대기 · Open, Jev-compatible System One decision server on DiffusionGemma | 🆕 | 2026-09-27 |
 | [kshetrajna12/reflex](https://github.com/kshetrajna12/reflex) | 153 | 17 | 요약 대기 · A small open decision model: state + typed questions -&gt; calibrated probabilities. A Jev / System One re-creation on Qwen3.5. | 🆕 | 2026-09-27 |
 | [allebee/jevk5](https://github.com/allebee/jevk5) | 119 | 8 | 요약 대기 · JevK5: open-weight alternative to TypeSafe Jev. Typed decisions with probabilities in one forward pass; Apache-2.0 weights and code. | 🆕 | 2026-09-25 |
-| [Heman10x-NGU/Verdict-open-jev](https://github.com/Heman10x-NGU/Verdict-open-jev) | 107 | 13 | 요약 대기 · Non-autoregressive decision engine on ModernBERT (151M) with calibrated uncertainty (RLCD), TypeSafe AI Jev benchmark audit, and in-browser WebGPU playground | 🆕 | 2026-09-20 |
 | [iapp-technology/openthai-systemone](https://github.com/iapp-technology/openthai-systemone) | 63 | 22 | 요약 대기 · OpenThai-SystemOne: open Thai + English System One decision model (0.8B, 256-way slot head, Apache-2.0) | 🆕 | 2026-09-21 |
 | [mithalouni/system-one-open](https://github.com/mithalouni/system-one-open) | 37 | 5 | 요약 대기 · Open replica of TypeSafe's Jev: typed calibrated decisions in one forward pass, on Gemma 4 E2B / Gemma 3 270M (Modal) | 🆕 | 2026-09-17 |
 | [MoLeMo-Lab/mojev](https://github.com/MoLeMo-Lab/mojev) | 30 | 3 | 요약 대기 · MoJev: typed, calibrated decisions in one forward pass. | 🆕 | 2026-09-23 |
@@ -34,19 +34,20 @@
 | [codaaiteam/jev-ai](https://github.com/codaaiteam/jev-ai) | 4 | 0 | 요약 대기 · Jev AI quickstart &amp; FAQ — TypeSafe AI's System One model. Try it free: jevtypesafeai.com | 🆕 | 2026-09-19 |
 | [jev-ids/jev-ids](https://github.com/jev-ids/jev-ids) | 4 | 1 | 요약 대기 · Blazing-Fast Token-Efficient Intrusion Detection System (IDS) based on TypeSafe's Jev. | 🆕 | 2026-09-23 |
 | [sarathi-aiml/jevsql](https://github.com/sarathi-aiml/jevsql) | 4 | 0 | 요약 대기 · Text-to-SQL where the model never writes SQL — typed, calibrated decisions (TypeSafe Jev) + code-assembled queries | 🆕 | 2026-09-21 |
+| [AnthusAI/Jev-Calibration](https://github.com/AnthusAI/Jev-Calibration) | 3 | 2 | 요약 대기 · Does Jev's confidence mean what it says? Calibrating Jev (TypeSafe System One) with Platt scaling and isotonic regression. | 🆕 | 2026-09-19 |
 | [bokuweb/omg](https://github.com/bokuweb/omg) | 3 | 0 | 요약 대기 · A System One style decision model runtime in Rust.  | 🆕 | 2026-09-25 |
 | [crh225/plumb](https://github.com/crh225/plumb) | 3 | 2 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-25 |
 | [DhanushNehru/jev-sec-audit](https://github.com/DhanushNehru/jev-sec-audit) | 3 | 1 | 요약 대기 · Lightning-fast AI supply chain security auditor using Jev (System 1 models). Catch typosquatting and malicious scripts in milliseconds. | 🆕 | 2026-09-24 |
 | [e13ven-arch/tde](https://github.com/e13ven-arch/tde) | 3 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-25 |
-| [david-engelmann/peira](https://github.com/david-engelmann/peira) | 1 | 0 | **무엇** 프롬프트 인젝션 등 적대적 입력 상황에서 Jev 및 가드레일 모델의 판단 강건성을 측정하는 벤치마크 도구<br>**판단** 정상 입력과 공격 입력 쌍을 각각 제공하여 approve/deny(choice) 또는 점수(score) 등 모델의 판단이 공격으로 인해 뒤집히는지 평가<br>**포인트** 정상 대조군과 공격 케이스를 1:1로 묶어 측정하며, 판단 변경률(ASR)마다 95% Wilson 신뢰구간을 함께 산출하고 왜곡된 출력도 뒤집힘으로 집계함 | 🆕 | 2026-09-27 |
+| [david-engelmann/peira](https://github.com/david-engelmann/peira) | 1 | 0 | **무엇** 프롬프트 인젝션 등 적대적 입력 상황에서 Jev 및 가드레일 모델의 판단 강건성을 측정하는 벤치마크 도구<br>**판단** 정상 입력과 공격 입력 쌍을 각각 제공하여 approve/deny(choice) 또는 점수(score) 등 모델의 판단이 공격으로 인해 뒤집히는지 평가<br>**포인트** 정상 대조군과 공격 케이스를 1:1로 묶어 측정하며, 판단 변경률(ASR)마다 95% Wilson 신뢰구간을 함께 산출하고 왜곡된 출력도 뒤집힘으로 집계함 | 🆕 | 2026-09-28 |
 | [jujumilk3/jev-calibration-audit](https://github.com/jujumilk3/jev-calibration-audit) | 1 | 0 | **무엇** 공개 API 호출만을 사용해 TypeSafe AI의 Jev 모델 확률 캘리브레이션과 신뢰도 정확성을 독립적으로 검증·감사하는 벤치마크 도구다.<br>**판단** MMLU-ProX와 KoBBQ 문항을 Choice 다지선다와 Noul 예/아니오 질의 형태로 모델에 전달해 정답 여부와 예측 확률 분포를 판단시킨다.<br>**포인트** 기권 옵션 제거 시 오답률 및 편향 급증, Noul과 Choice 간 확률 불일치, 선택지 순서 편향 부재, 한국어 성능 변화 등 7개 실험 결과를 측정한다. | 🆕 | 2026-09-18 |
 | [willkelly/jev-evaluation](https://github.com/willkelly/jev-evaluation) | 1 | 1 | **무엇** TypeSafe의 jev 결정 모델을 대상으로 9개 실험과 사전 등록된 28개 가설을 검증한 적대적 평가 프레임워크다.<br>**판단** 지원 티켓 라우팅 대상 분류, 3-SAT 논리식 만족 여부 확률(noul), 프로그램 도달 가능성 판별 등을 묻는다.<br>**포인트** 사전 등록 계획에 따라 12만 회 이상 호출하며 프롬프트 인젝션 취약점, 다중 질문 배치 효율, 보정 오차 등을 실측했다. | 🆕 | 2026-09-22 |
-| [AnthusAI/Jev-Calibration](https://github.com/AnthusAI/Jev-Calibration) | 2 | 2 | 요약 대기 · Does Jev's confidence mean what it says? Calibrating Jev (TypeSafe System One) with Platt scaling and isotonic regression. | 🆕 | 2026-09-19 |
 | [divyanshudhruv/oev](https://github.com/divyanshudhruv/oev) | 2 | 0 | 요약 대기 · A 184M-parameter decision engine delivering calibrated distributions from one 22ms forward pass while matching models 2.3x its size. | 🆕 | 2026-09-26 |
 | [grishahq/decisionbridge](https://github.com/grishahq/decisionbridge) | 2 | 0 | 요약 대기 · A Jev-inspired decision interface for existing LLMs. Explicit choices, scores, calibration, and review thresholds. | 🆕 | 2026-09-17 |
 | [Justmalhar/awesome-jev-apps](https://github.com/Justmalhar/awesome-jev-apps) | 2 | 0 | 요약 대기 · Awesome Collection of apps built with Jev - a System One model | 🆕 | 2026-09-19 |
 | [org2AI/wald-4b](https://github.com/org2AI/wald-4b) | 2 | 0 | 요약 대기 · Jev alternative &lt;12B SOTA | 🆕 | 2026-09-27 |
 | [alperiox/audio-jevlike](https://github.com/alperiox/audio-jevlike) | 1 | 0 | 요약 대기 · Prosodia: an audio-native Jev-shaped decision model — typed calibrated decisions from speech, no ASR | 🆕 | 2026-09-23 |
+| [autonull/senars12](https://github.com/autonull/senars12) | 1 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-27 |
 | [Barneyjm/circuit](https://github.com/Barneyjm/circuit) | 1 | 1 | 요약 대기 · Open-weights System One models (text, images, audio) and the harness that trains and measures them: LoRA plus a pointer readout head, code-labeled data, calibration on the scoreboard. | 🆕 | 2026-09-25 |
 | [brianluby/momus-review](https://github.com/brianluby/momus-review) | 1 | 0 | 요약 대기 · Fast, calibrated, staged code &amp; security review (momus) | 🆕 | 2026-09-27 |
 | [chayan-bit/Jev-Frame](https://github.com/chayan-bit/Jev-Frame) | 1 | 0 | 요약 대기 · Typed, auditable Jev decisions for Python agents, with an optional shared runtime, offline previews, and calibration. | 🆕 | 2026-09-25 |
@@ -69,35 +70,33 @@
 | [xzx34/JevOut](https://github.com/xzx34/JevOut) | 1 | 0 | 요약 대기 · Code for JevOut: Natural Context Can Flip Decision Models | 🆕 | 2026-09-25 |
 | [Shoaib-Asghar/jev-probe](https://github.com/Shoaib-Asghar/jev-probe) | 0 | 0 | **무엇** 오타, 순서 변경 등 입력 섭동 환경에서 Jev 모델과 범용 LLM의 일관성 및 견고성을 비교 평가하는 테스트 하네스 도구다.<br>**판단** README에 판단 지점 설명 없음<br>**포인트** 입력에 제어된 노이즈를 적용하고 DuckDB에 API 응답을 기록하며, 웹 대시보드로 확률 변화와 지연 시간, 비용을 추적한다. | 🆕 | 2026-09-27 |
 | [zkousama/jagged](https://github.com/zkousama/jagged) | 0 | 0 | **무엇** TypeSafe Jev 모델 가이드가 모델의 판단과 보정 오차에 미치는 영향을 위키피디아 삭제 토론 데이터로 검증하는 사전 등록 연구 리포지토리다.<br>**판단** 위키피디아 삭제 토론 본문을 읽고 편집자의 투표 표시가 제거된 상태에서 해당 문서가 최종 삭제되었는지를 noul 확률로 판단시킨다.<br>**포인트** 사전 등록 절차에 따라 가이드 항목별 효과를 측정했으며 지시문보다 거짓 사실 삽입에 취약하고 질문 반전 시 점수 왜곡이 발생하는 현상을 규명했다. | 🆕 | 2026-09-22 |
+| [aboufama/Pokemon-Ultragreen-Emerald](https://github.com/aboufama/Pokemon-Ultragreen-Emerald) | 0 | 0 | 요약 대기 · Emerald Remake | 🆕 | 2026-09-27 |
 | [aishwary-dongre/jev-xray](https://github.com/aishwary-dongre/jev-xray) | 0 | 0 | 요약 대기 · Decision forensics for System One models. Jev returns a calibrated probability and cannot explain it — jev-xray measures which part of the input caused it, by ablation. | 🆕 | 2026-09-27 |
-| [AISidesKicks/yesmom-selectia-dev](https://github.com/AISidesKicks/yesmom-selectia-dev) | 0 | 0 | 요약 대기 · Web for Selectia - A family of System One-style models fine-tuned from LFM 2.5, designed for one-pass typed decisions with calibrated probabilities. | 🆕 | 2026-09-27 |
-| [codaaiteam/jev-companion-arena](https://github.com/codaaiteam/jev-companion-arena) | 0 | 0 | 요약 대기 · Fight beside a Jev-controlled AI teammate that decides its own move (attack/defend/follow/retreat) each round. Single-file, no build. Play free: jevtypesafeai.com/games/jev-companion-arena | 🆕 | 2026-09-24 |
-| [codaaiteam/jev-pacman](https://github.com/codaaiteam/jev-pacman) | 0 | 0 | 요약 대기 · You drive Pac-Man; Jev — TypeSafe AI's decision model — drives the ghosts hunting you, one real typed decision per turn. Single-file, no build. Play free: jevtypesafeai.com/games/jev-pacman | 🆕 | 2026-09-24 |
-| [codaaiteam/jev-semantic-racer](https://github.com/codaaiteam/jev-semantic-racer) | 0 | 0 | 요약 대기 · Type words that fit a clue; Jev scores each and your car races ahead. Single-file, no build. Play free: jevtypesafeai.com/games/jev-semantic-racer | 🆕 | 2026-09-24 |
+| [bro789/typed-decision-coherence](https://github.com/bro789/typed-decision-coherence) | 0 | 0 | 요약 대기 · Data and analysis code for 'Beyond Calibration: Do a Typed-Decision Model's Probabilities Obey the Probability Axioms?' | 🆕 | 2026-09-27 |
 | [colinmcnamara/jev-first-look](https://github.com/colinmcnamara/jev-first-look) | 0 | 0 | 요약 대기 · Scripts and raw results for a first hands-on look at Jev, TypeSafe AI's System One decision model: calibration, latency, edge cases, and a plain-LLM baseline. | 🆕 | 2026-09-21 |
 | [dopeCape/typesafe-ai-test](https://github.com/dopeCape/typesafe-ai-test) | 0 | 0 | 요약 대기 · Stress test of TypeSafe AI's jev-1.13 System One model: limits, vagueness, calibration, adversarial, new patterns, LLM bake-off | 🆕 | 2026-09-21 |
 | [einyx/kredo](https://github.com/einyx/kredo) | 0 | 0 | 요약 대기 · Run open decision models you can verify: pull, verify and serve calibrated decisions behind a TypeSafe-compatible API | 🆕 | 2026-09-27 |
+| [elyashium/atlas-replay-lab](https://github.com/elyashium/atlas-replay-lab) | 0 | 0 | 요약 대기 · capability-aware quality ladder, a privacy-safe trace recorder, deterministic replay, and with an all new Jev-powered decision layer | 🆕 | 2026-09-27 |
+| [fateminiamohammad/dragonfly](https://github.com/fateminiamohammad/dragonfly) | 0 | 0 | 요약 대기 · non-autoregressive AI Model | 🆕 | 2026-09-27 |
 | [felipepenhorate/klev](https://github.com/felipepenhorate/klev) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-27 |
 | [garygentry/jev-poc](https://github.com/garygentry/jev-poc) | 0 | 0 | 요약 대기 · A hands-on tour of Jev, TypeSafe's decisions model: twenty demos across seven shapes, with a cost-and-agreement assessment against a chat-model baseline | 🆕 | 2026-09-26 |
 | [grizzlypeaksoftware/kodiak-plays-zork](https://github.com/grizzlypeaksoftware/kodiak-plays-zork) | 0 | 0 | 요약 대기 · Kodiak, an open-weights decision model, plays text adventures by choosing among valid commands: a System 1 / System 2 cascade demo. | 🆕 | 2026-09-26 |
 | [IcarusAICo/janus](https://github.com/IcarusAICo/janus) | 0 | 0 | 요약 대기 · Janus: calibrated typed decisions (choice / score / yes-no) in one forward pass | 🆕 | 2026-09-25 |
-| [JGalego/J3v](https://github.com/JGalego/J3v) | 0 | 0 | 요약 대기 · J3v is to Jev as k3s is k8s | 🆕 | 2026-09-24 |
-| [Kandarp-Joshi-007/firstlight](https://github.com/Kandarp-Joshi-007/firstlight) | 0 | 0 | 요약 대기 · Early warning for Irish brand impersonation, read from public Certificate Transparency logs. Built on Jev (TypeSafe AI) - a decision-only model returning calibrated probabilities. | 🆕 | 2026-09-27 |
 | [kinfi4/jev-fast-jumping-slow](https://github.com/kinfi4/jev-fast-jumping-slow) | 0 | 0 | 요약 대기 · Add Jev platformer: System 1 model plays a pygame game | 🆕 | 2026-09-27 |
-| [LakoreAI/sev](https://github.com/LakoreAI/sev) | 0 | 0 | 요약 대기 · Reproduction and analysis of RLCD: Laya's RL term is a noise-smoothed cross-entropy gradient, CE-only matches it on every proper score, and the option-token budget is the only accuracy lever (Jev, Laya, typed decisions, calibration). | 🆕 | 2026-09-26 |
+| [kogai/petoi-the-dog-walk](https://github.com/kogai/petoi-the-dog-walk) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-25 |
 | [lookfwd/jev-fact-checker](https://github.com/lookfwd/jev-fact-checker) | 0 | 0 | 요약 대기 · Uses Typesafe AI Jev to Provide A Tweet Fact Checker | 🆕 | 2026-09-18 |
 | [ManankumarThakkar/jev-escalation-gate](https://github.com/ManankumarThakkar/jev-escalation-gate) | 0 | 0 | 요약 대기 · How much traffic can a small calibrated decision model own? 600 measured decisions with Jev on a RAG answerability gate, and why your test set's negatives decide the answer. | 🆕 | 2026-09-24 |
 | [marcmontecalvo/jevtests](https://github.com/marcmontecalvo/jevtests) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-27 |
 | [meetr1912/jev-arena](https://github.com/meetr1912/jev-arena) | 0 | 0 | 요약 대기 · A calibration arena for TypeSafe Jev: reliability, Brier/ECE, and confidence-gated risk-coverage on analytically-known random worlds. | 🆕 | 2026-09-19 |
 | [meetr1912/jev-vickrey](https://github.com/meetr1912/jev-vickrey) | 0 | 0 | 요약 대기 · TypeSafe Jev bids in sealed-bid auctions: threshold fan-out reconstructs a calibrated value CDF, scored by regret and truthfulness. | 🆕 | 2026-09-19 |
 | [mintannn/jev-asks-until-sure](https://github.com/mintannn/jev-asks-until-sure) | 0 | 0 | 요약 대기 · A twenty-questions guesser that keeps asking until Jev's calibrated confidence crosses a threshold — or gives up and says so | 🆕 | 2026-09-20 |
+| [munod/tachyone](https://github.com/munod/tachyone) | 0 | 0 | 요약 대기 · Local-first, multilingual System One decision engine — ultra-fast, non-autoregressive, calibrated. Speaks the Jev /v1/systemone protocol. | 🆕 | 2026-09-27 |
 | [Octalab-Inc/jqv](https://github.com/Octalab-Inc/jqv) | 0 | 0 | 요약 대기 · Decision API on stock Qwen3: shared-state prefill, isolated question branches, direct choice-token readout, temperature-calibrated probabilities (Jev-style), TypeSafe-compatible /v1/systemone | 🆕 | 2026-09-25 |
-| [oniblok/oniblock](https://github.com/oniblok/oniblock) | 0 | 1 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-27 |
-| [ozaki-taisuke/jev-kano](https://github.com/ozaki-taisuke/jev-kano) | 0 | 0 | 요약 대기 · #Jevカノ — 判断特化モデル Jev が本音を先に決め、LLM が言葉を書き、TTS が声を出すギャルゲー（β） | 🆕 | 2026-09-27 |
 | [patkusch/assay](https://github.com/patkusch/assay) | 0 | 0 | 요약 대기 · Fast, local, typed decisions with calibrated confidence. An open take on the System One / Jev idea. | 🆕 | 2026-09-27 |
 | [pawarbi/jev-bias-audit](https://github.com/pawarbi/jev-bias-audit) | 0 | 0 | 요약 대기 · Does Jev discriminate? A pre-registered counterfactual bias audit of the Jev decision model: code, test cells, every raw response, and an interactive report. | 🆕 | 2026-09-23 |
 | [PerryLink/llm-jev-laya-bench](https://github.com/PerryLink/llm-jev-laya-bench) | 0 | 0 | 요약 대기 · Measurement of three judgment layers on a common item set: cost, latency, failure boundaries, and an audit trail | 🆕 | 2026-09-25 |
 | [pozapas/jev-calibrated-narrative-coding](https://github.com/pozapas/jev-calibrated-narrative-coding) | 0 | 0 | 요약 대기 · Calibrated conversion of police crash narratives into probabilistic crash variables with a System One model. Pipeline, schema and aggregated results. | 🆕 | 2026-09-23 |
+| [realahsanshah/jev-action-firewall](https://github.com/realahsanshah/jev-action-firewall) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-27 |
 | [SDCalvo/gev](https://github.com/SDCalvo/gev) | 0 | 0 | 요약 대기 · Gev: a System One decision model on Gemma 4 E4B, trained on a Mac | 🆕 | 2026-09-27 |
 | [sureshmanem/jev_vs_llm_compare](https://github.com/sureshmanem/jev_vs_llm_compare) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-25 |
 | [syedsohailhussain1/gavel-decide-4b](https://github.com/syedsohailhussain1/gavel-decide-4b) | 0 | 0 | 요약 대기 · Gavel-Decide 4B: typed decision system for JevBench v1.4.2. Frozen Qwen3-4B trunk, 1.44M-param head trained on CPU, prefill-only inference with a shared-prefix KV cache. | 🆕 | 2026-09-27 |
@@ -117,6 +116,14 @@ English · 简体中文 · ⚡ Serve it · 📊 Results · 🧭 Roadmap · 📖 
 <details><summary>README 발췌</summary>
 
 An Open-Source, Non-Autoregressive System One Decision Model. Calibrated discrete, probabilistic, and ordinal inference in sub-25ms.
+
+</details>
+
+### chainreactors/fingers
+
+<details><summary>README 발췌</summary>
+
+多指纹库聚合识别引擎. 当前支持fingers(主指纹库) wappalyzer, fingerprinthub, ehole, goby 指纹
 
 </details>
 
@@ -141,14 +148,6 @@ A tiny "decision model" you can run on your own GPU.
 <details><summary>README 발췌</summary>
 
 JevK5 is an independent, Apache-2.0 open-source alternative to TypeSafe's Jev for typed decisions. Give it a state (a ticket, log, policy, or diff) and a yes/no, choice, or score question. It returns a probability for every option in one forward pass, with zero generated tokens. The weights run on y
-
-</details>
-
-### Heman10x-NGU/Verdict-open-jev
-
-<details><summary>README 발췌</summary>
-
-OpenJev (Verdict) is an open-source, post-trained foundational decision model designed for structured software workflows, inspired by TypeSafe AI\'s Jev and Reinforcement Learning for Calibrated Decisions (RLCD).
 
 </details>
 
@@ -344,6 +343,14 @@ A weekend experiment with Jev, TypeSafe AI's "System One" model that returns typ
 
 </details>
 
+### AnthusAI/Jev-Calibration
+
+<details><summary>README 발췌</summary>
+
+&gt; TL;DR: Jev returns a probability with every answer, and how strongly it favors an answer is its confidence. That confidence is only useful if it matches reality: when Jev is 90% sure, it should be right about 90% of the time. On 8,801 labeled sentiment examples, Jev's raw probabilities didn't do t
+
+</details>
+
 ### bokuweb/omg
 
 <details><summary>README 발췌</summary>
@@ -400,14 +407,6 @@ An adversarial evaluation of jev, the decision model sold by TypeSafe. It follow
 
 </details>
 
-### AnthusAI/Jev-Calibration
-
-<details><summary>README 발췌</summary>
-
-&gt; TL;DR: Jev returns a probability with every answer, and how strongly it favors an answer is its confidence. That confidence is only useful if it matches reality: when Jev is 90% sure, it should be right about 90% of the time. On 8,801 labeled sentiment examples, Jev's raw probabilities didn't do t
-
-</details>
-
 ### divyanshudhruv/oev
 
 <details><summary>README 발췌</summary>
@@ -445,6 +444,14 @@ license: apache-2.0 basemodel: Qwen/Qwen3.5-4B-Base basemodelrelation: finetune 
 <details><summary>README 발췌</summary>
 
 A System One-shaped decision model that takes speech as its state. Audio is encoded once; several typed questions branch over that single encoding and are answered in parallel as calibrated probability distributions. No transcript, no speech recognition, no generated text — the Whisper decoder never
+
+</details>
+
+### autonull/senars12
+
+<details><summary>README 발췌</summary>
+
+SeNARS is a bounded, event-sourced cognitive runtime designed for auditable, continuous operation. It provides a hardened execution kernel that synthesizes uncertain symbolic inference (Non-Axiomatic Logic), exact algebraic rewriting (MeTTa), and optional neural-assisted formalization into a unified
 
 </details>
 
@@ -624,6 +631,14 @@ TypeSafe publishes a jaggedness page for its Jev model: the ways jev-1.13 goes w
 
 </details>
 
+### aboufama/Pokemon-Ultragreen-Emerald
+
+<details><summary>README 발췌</summary>
+
+A remake of Pokémon Emerald's battles built from the pret/pokeemerald decompilation. Battlers are rigged 3D models with their own animation for every kind of attack. The GBA look comes from a pixelation pass over the 3D viewport, not from baked assets. The interface, text, timings and battle rules c
+
+</details>
+
 ### aishwary-dongre/jev-xray
 
 <details><summary>README 발췌</summary>
@@ -632,35 +647,11 @@ Decision forensics for System One models.
 
 </details>
 
-### AISidesKicks/yesmom-selectia-dev
+### bro789/typed-decision-coherence
 
 <details><summary>README 발췌</summary>
 
-Web for Selectia - A family of System One-style models fine-tuned from LFM 2.5, designed for one-pass typed decisions with calibrated probabilities. Decision API (Choice, Noul, Score) powered by open LLMs.
-
-</details>
-
-### codaaiteam/jev-companion-arena
-
-<details><summary>README 발췌</summary>
-
-You fight waves of enemies alongside a Jev-controlled AI teammate that picks its own move — attack / defend / follow / retreat — each round, with the confidence and reason behind it. Every decision is one real call to Jev, TypeSafe AI's System One model — a typed, calibrated decision (a choice, scor
-
-</details>
-
-### codaaiteam/jev-pacman
-
-<details><summary>README 발췌</summary>
-
-You drive Pac-Man with the keyboard; Jev drives the ghosts hunting you — one API call picks both directions each turn, with the confidence behind each. Eat every dot before they catch you. Every decision is one real call to Jev, TypeSafe AI's System One model — a typed, calibrated decision (a choice
-
-</details>
-
-### codaaiteam/jev-semantic-racer
-
-<details><summary>README 발췌</summary>
-
-Each round shows a semantic clue ("a word that means the OPPOSITE of hot"); you type a word, Jev scores how well it fits, and your car advances by the score. Reach the flag before you run out of gas. Every decision is one real call to Jev, TypeSafe AI's System One model — a typed, calibrated decisio
+Data and analysis code for the paper by Keyi Li, Yihao He, and Quanyi Li (Software College, Northeastern University, Shenyang, China).
 
 </details>
 
@@ -685,6 +676,22 @@ Six tracks of experiments against POST /v1/systemone on 21 Sep 2026, ~8,400 call
 <details><summary>README 발췌</summary>
 
 Run decision models you can verify.
+
+</details>
+
+### elyashium/atlas-replay-lab
+
+<details><summary>README 발췌</summary>
+
+A small WebAR-style experience that degrades on purpose, a six-profile adversarial device matrix that tries to break it, a privacy-safe flight recorder, deterministic replay, a release gate that can actually say hold — and a decision layer with two implementations behind one interface.
+
+</details>
+
+### fateminiamohammad/dragonfly
+
+<details><summary>README 발췌</summary>
+
+An open-source System One decision model. You send a document and typed questions; you get back calibrated probabilities for every possible answer, in one forward pass. Dragonfly never generates text, which is why it can answer in milliseconds where an LLM takes seconds.
 
 </details>
 
@@ -720,22 +727,6 @@ Kodiak is a 152M-parameter, encoder-only decision model. It never generates text
 
 </details>
 
-### JGalego/J3v
-
-<details><summary>README 발췌</summary>
-
-J3v is a compiler. You give it a schema of typed questions (choice, score, noul) and their allowed answers. It distills Laya into an artifact for one target, fits temperature scaling, and refuses to emit an artifact that misses its accuracy/ECE bounds or its flash/RAM budget. It returns calibrated p
-
-</details>
-
-### Kandarp-Joshi-007/firstlight
-
-<details><summary>README 발췌</summary>
-
-Early warning for Irish brand impersonation, from public certificate logs.
-
-</details>
-
 ### kinfi4/jev-fast-jumping-slow
 
 <details><summary>README 발췌</summary>
@@ -744,11 +735,11 @@ A tiny fun project: Jev - TypeSafe AI's "System One" model that answers with cal
 
 </details>
 
-### LakoreAI/sev
+### kogai/petoi-the-dog-walk
 
 <details><summary>README 발췌</summary>
 
-Sev is a reproduction and clean-room analysis of RLCD (Reinforcement Learning for Calibrated Decisions), the training method behind typed-decision models such as TypeSafe's Jev and its open reproduction, Laya.
+初代 Petoi Bittle（NyBoard）を、Mac から無線で動かす。
 
 </details>
 
@@ -800,27 +791,19 @@ A twenty-questions game where the model decides how many questions to ask.
 
 </details>
 
+### munod/tachyone
+
+<details><summary>README 발췌</summary>
+
+&gt; Local-first, multilingual System One decision engine that speaks the TypeSafe Jev /v1/systemone protocol. &gt; &gt; LLMs generate text. Tachyone produces calibrated decisions. Don't ask a model to decide — ask Tachyone.
+
+</details>
+
 ### Octalab-Inc/jqv
 
 <details><summary>README 발췌</summary>
 
 jqv reproduces, on a stock open LLM (Qwen3), the inference structure of TypeSafe's Jev as reconstructed by Hume: the state is prefilled once, every question runs as an isolated branch behind a block attention mask, and the answer is read directly from the option-letter logits in one forward pass, wi
-
-</details>
-
-### oniblok/oniblock
-
-<details><summary>README 발췌</summary>
-
-A Uniswap v4 hook that charges arbitrage flow a directional fee on the live gap between the pool price and the CEX mid. An attested model sets the fee's sensitivity k once per block. The model's public calibration record, written to ENSv2 by a role-scoped settler, decides how much power it gets.
-
-</details>
-
-### ozaki-taisuke/jev-kano
-
-<details><summary>README 발췌</summary>
-
-判断特化モデル Jev（TypeSafe AI）が「本音」を 0.2〜0.5 秒で決め、その本音で顔と一言が先に出る。 Claude はその本音を受け取って台詞を書き、Gemini 3.8 Flash TTS が本音の色で読む。 時間差はあっても、顔・一言・言葉・声は同じ本音でそろう。相手は、地味でおとなしい、箱入りの読書好き。仲良くなると振る舞いが変わる。
 
 </details>
 
@@ -853,6 +836,14 @@ Cost, latency and failure boundaries of three judgment layers on a common item s
 <details><summary>README 발췌</summary>
 
 Code, schema and aggregated results for Calibrated Decisions at Scale: Converting Police Crash Narratives into Probabilistic Crash Variables with a System One Model (Jev).
+
+</details>
+
+### realahsanshah/jev-action-firewall
+
+<details><summary>README 발췌</summary>
+
+A runtime action firewall for AI agents. Before an agent's tool call runs, jev-firewall asks Jev (TypeSafe's System One decision model) how dangerous it is, and returns one of three verdicts:
 
 </details>
 
