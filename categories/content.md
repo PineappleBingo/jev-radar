@@ -1,113 +1,139 @@
-# 📝 콘텐츠·글쓰기 (90)
+# 📝 콘텐츠·글쓰기 (100)
 
 [← README](../README.md)
 
 | 리포 | ⭐ | 🍴 | 한눈에 보기 | 태그 | 최근 푸시 |
 |---|---:|---:|---|---|---|
-| [HarleyCoops/Math-To-Manim](https://github.com/HarleyCoops/Math-To-Manim) | 2668 | 290 | **무엇** 텍스트와 이미지를 기반으로 Manim 수학 및 물리 애니메이션과 학습 노트를 제작하는 멀티에이전트 파이프라인 도구다.<br>**판단** 각 단계의 산출물(학습 요약, 수학 검증, 씬 구성 등)이 기준을 만족하는지 score로 평가하고 통과 여부를 판단한다.<br>**포인트** Jev 평가는 기본적으로 권고(advisory) 수준으로 점수만 기록되지만, gated 옵션으로 엄격한 품질 게이트로 전환할 수 있다. | 🆕 | 2026-09-25 |
-| [kitze/unclutter](https://github.com/kitze/unclutter) | 322 | 35 | **무엇** WXT 기반의 브라우저 확장 프로그램으로 웹페이지 내 불필요한 요소를 판별해 가려주는 도구다.<br>**판단** 웹페이지 내 요소들이 가려야 할 불필요한 요소(nonessential element)인지 여부를 분류하도록 요청한다.<br>**포인트** Vercel AI Gateway 또는 TypeSafe AI를 직접 활용하며, 템플릿별로 숨김 규칙을 로컬에 저장해 재적용한다. | ✅ 🆕 `choice` | 2026-09-18 |
-| [TypeLLM/TypeLLM](https://github.com/TypeLLM/TypeLLM) | 805 | 53 | 요약 대기 · TypeLLM: LLMs with type-safe generation | 🆕 | 2026-09-27 |
-| [githubnext/localjev](https://github.com/githubnext/localjev) | 788 | 52 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-18 |
-| [ttlequals0/MinusPod](https://github.com/ttlequals0/MinusPod) | 457 | 42 | **무엇** 팟캐스트를 Whisper로 전사하고 LLM으로 광고 구간을 탐지 및 잘라내어 무광고 RSS 피드로 서빙하는 셀프 호스팅 서버다.<br>**판단** README에 판단 지점 설명 없음<br>**포인트** Whisper 전사와 슬라이딩 윈도우 LLM 탐지 외에도 음향 분석 신호 및 사용자 수정 기반의 크로스 에피소드 패턴 학습을 지원한다. | 🆕 | 2026-09-28 |
-| [DanRWilloughby/snifftest](https://github.com/DanRWilloughby/snifftest) | 33 | 1 | **무엇** Markdown과 텍스트 문서를 검사해 AI 특유의 문체와 하우스 룰 위반을 잡아내는 산문 린터 도구다.<br>**판단** 단락을 단순 반복하는 결문, 과도한 유보 표현, 수사적 도입부 등 문맥 판단이 필요한 규칙의 해당 확률을 질문한다.<br>**포인트** 정규식 기반 로컬 규칙과 호스팅 판단 모델 규칙을 분리하며, 텍스트를 재작성하지 않고 문제 위치와 확률 플래그만 제공한다. | ✅ 🆕 `noul` | 2026-09-18 |
-| [shengjidaguai-china/goutoujunshi-jev-chat](https://github.com/shengjidaguai-china/goutoujunshi-jev-chat) | 104 | 8 | **무엇** 위챗 등 메신저 대화 화면을 인식해 상대의 의도를 분석하고 답장 초안과 후보 순위를 띄워주는 데스크톱·모바일 플로팅 윈도우 보조 도구다.<br>**판단** 답장 생성 모델을 호출하기 전 단계에서 대화 맥락에 따라 어떤 대응 전략을 취할지 선택하도록 판단시킨다.<br>**포인트** OCR 인식 후 사용자가 수동 확인하며, 후보별 근거와 대가 제시, 관계 추이를 보여주는 관계 K선 차트 등 통제권과 시각화에 중점을 두었다. | 🆕 | 2026-09-26 |
-| [ChetasLua/jevmeter](https://github.com/ChetasLua/jevmeter) | 100 | 12 | **무엇** 동영상 속 모든 문장을 음성 인식 후 분석하여 실시간 지표 오버레이가 들어간 16:9 편집본 영상을 생성하는 CLI 도구<br>**판단** 각 문장에 대해 회피 여부, 감정적 호소, 근거 없는 주장, 과장 등 프리셋별 5가지 예/아니오 항목의 확률(noul)을 판단<br>**포인트** Whisper 음성 인식 및 ffmpeg 렌더링을 Jev의 예/아니오 확률 추론과 결합해 영상 하이라이트와 스코어보드를 자동 생성함 | 🆕 | 2026-09-17 |
-| [artemnovitckii/creator-lab](https://github.com/artemnovitckii/creator-lab) | 82 | 22 | **무엇** 인스타그램 릴스 영상을 스크랩하고 전사한 뒤 스크립트 구조와 훅 패턴을 분석해 주는 로컬 웹 도구다.<br>**판단** 릴스 스크립트를 보고 주제, 오프닝 방식, 훅 메커니즘, 대본 구조, 근거, 감정적 소구, 조언 구체성, CTA 등 8가지 항목을 분류하도록 판단시킨다.<br>**포인트** npm 의존성이나 빌드 단계 없이 순수 Node.js로 동작하며, Apify 수집 및 음성 전사 후 성과 지표와 무관하게 순수 스크립트 텍스트만을 Jev에 전달해 캐싱·분류한다. | 🆕 | 2026-09-24 |
-| [usenotra/notra](https://github.com/usenotra/notra) | 223 | 49 | **무엇** 주요 AI 검색 엔진에서 브랜드 노출률과 인용 현황을 추적하고 부족한 노출 영역을 채울 콘텐츠 초안을 생성하는 생성형 엔진 최적화(GEO) 플랫폼이다.<br>**판단** README에 판단 지점 설명 없음<br>**포인트** 여러 AI 엔진에 대한 질문 스캔과 AI 유입 트래픽 분류 SDK(@usenotra/geo), 외부 협업 도구 연동 콘텐츠 자동화 기능을 모노레포로 제공한다. | 🆕 | 2026-09-27 |
-| [kevinbadi/hyperedit](https://github.com/kevinbadi/hyperedit) | 204 | 126 | **무엇** FFMPEG, Remotion, Obsidian 에이전트 및 Jev를 결합한 AI 기반 영상 편집기 애플리케이션이다.<br>**판단** README에 판단 지점 설명 없음<br>**포인트** getmocha.com으로 생성되었으며 FFMPEG과 Remotion 기반 영상 처리에 Obsidian 에이전트 통합을 표방한다. | 🆕 | 2026-09-21 |
-| [rokcso/bluenoise](https://github.com/rokcso/bluenoise) | 91 | 4 | 요약 대기 · Blur or hide noisy replies, posts &amp; ads on X (Twitter), and clean up its interface with local, reversible keyword/account rules — no X API, no data collection, no account changes. 用本地可逆的关键词/账号规则模糊或隐藏 X（推特）上的嘈杂回复、帖子和广告，并整理界面——不调用 X API、不收集数据、不修改账号。 | 🆕 | 2026-09-18 |
-| [phuryn/experiments](https://github.com/phuryn/experiments) | 57 | 6 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-19 |
-| [RafalWilinski/vibecheck](https://github.com/RafalWilinski/vibecheck) | 48 | 5 | 요약 대기 · Chrome extension: vibe-check your X posts with TypeSafe's Jev before you hit Post | 🆕 | 2026-09-20 |
-| [ehui1226/hookmeter-jev](https://github.com/ehui1226/hookmeter-jev) | 22 | 1 | 요약 대기 · ⚡ Millisecond-level Viral Hook Telemetry &amp; Co-pilot for Social Media (Chrome Extension + JEV System 1) | 🆕 | 2026-09-21 |
-| [charlesdove977/claude-x-jev](https://github.com/charlesdove977/claude-x-jev) | 19 | 2 | 요약 대기 · Fast, cheap, typed decisions for Claude Code. Jev (TypeSafe's decision model on OpenRouter) sorts, checks, scores, gates and verifies at 0.3s and a fraction of a cent per item. Claude keeps the reading, writing and judgment. | 🆕 | 2026-09-25 |
-| [stefw/lkclean](https://github.com/stefw/lkclean) | 16 | 1 | 요약 대기 · Chrome extension that cleans up your LinkedIn feed: hides engagement bait, self-promo and off-topic posts using Jev, TypeSafe AI's typed classification model — and explains every decision. | 🆕 | 2026-09-20 |
-| [yijunyu/jev-rs](https://github.com/yijunyu/jev-rs) | 14 | 2 | 요약 대기 · System One judgments (noul/choice/score) from any LLM in one prefill — a Rust, Jev-compatible /v1/systemone engine | 🆕 | 2026-09-28 |
-| [bohutang/sift](https://github.com/bohutang/sift) | 12 | 4 | 요약 대기 · Chrome extension that labels every post on X (Substance · Humor · Chit-chat · Promo · Junk · AI-written) with TypeSafe Jev, and hides the ones you don't want. | 🆕 | 2026-09-26 |
-| [backmeupplz/jev_antispam_bot](https://github.com/backmeupplz/jev_antispam_bot) | 11 | 2 | 요약 대기 · Minimal grammY Telegram anti-spam bot powered by TypeSafe Jev | 🆕 | 2026-09-28 |
-| [gaborishka/jevtown](https://github.com/gaborishka/jevtown) | 11 | 2 | 요약 대기 · Jevtown: a social network where people write and 10,000 AI personas react | 🆕 | 2026-09-22 |
-| [SixSentences/sixsentences](https://github.com/SixSentences/sixsentences) | 6 | 7 | **무엇** 연구자가 문헌 검토, 데이터 분석, 인터뷰 및 논문 작성을 출처 추적이 가능한 형태로 수행하는 오픈소스 자체 호스팅 워크스페이스다.<br>**판단** README에 판단 지점 설명 없음<br>**포인트** Next.js와 FastAPI 기반 전체 스택으로 구성되며 데이터 출처 보존, DuckDB 분석 연동 및 네이티브 macOS 앱 지원을 제공한다. | 🆕 | 2026-09-27 |
-| [valentynkit/jev-skip](https://github.com/valentynkit/jev-skip) | 5 | 0 | **무엇** 유튜브 영상의 자막을 실시간으로 분석해 스폰서 구간을 탐지하고 자동으로 건너뛰는 브라우저 확장 프로그램이다.<br>**판단** 자막을 분할한 각 세그먼트가 content, sponsor, intro, outro, self_promo, recap, other 중 어디에 해당하는지 choice 형태로 판단시킨다.<br>**포인트** 크라우드소싱 DB 없이 자막 텍스트와 확률값을 활용해 탐색 바에 히트맵을 칠하고 스킵을 제어하지만, 자막이 없으면 동작하지 않는다. | 🆕 | 2026-09-19 |
-| [scale-venture-partners/riff](https://github.com/scale-venture-partners/riff) | 7 | 1 | 요약 대기 · A small, fast prose linter: ruff-style rule codes for writing, backed by TypeSafe's Jev model | 🆕 | 2026-09-18 |
-| [dfinke/Jev](https://github.com/dfinke/Jev) | 6 | 2 | 요약 대기 · PowerShell decisions with TypeSafe AI's Jev model: https://typesafe.ai/blog/introducing-system-one-models-and-jev | 🆕 | 2026-09-27 |
-| [2456868764/jevguide](https://github.com/2456868764/jevguide) | 5 | 1 | 요약 대기 · Curated Jev showcases from X, organized by category with media previews and direct source links. | 🆕 | 2026-09-27 |
-| [nssmd/jev-bot](https://github.com/nssmd/jev-bot) | 5 | 0 | 요약 대기 · Self-hosted Jev decision workbench and Feishu bot: automatic choices, probabilities, and experimental word/character writing. | 🆕 | 2026-09-22 |
-| [vmendes90/jev-shield](https://github.com/vmendes90/jev-shield) | 5 | 0 | 요약 대기 · Privacy-first Chrome extension that semantically blocks native ads, sponsored feed cards, and video ads using TypeSafe Jev | 🆕 | 2026-09-18 |
-| [brieflyalongsidemore/kite](https://github.com/brieflyalongsidemore/kite) | 3 | 0 | 요약 대기 · A local copilot for growing on social media | 🆕 | 2026-09-25 |
-| [elpumberto/barrunto](https://github.com/elpumberto/barrunto) | 3 | 0 | 요약 대기 · A Chrome extension that brings TypeSafe's Jev to X.com to analyze posts as you browse | 🆕 | 2026-09-20 |
-| [fritzprix/systemone-lite](https://github.com/fritzprix/systemone-lite) | 3 | 0 | 요약 대기 · Toy local System One–style decision API (Jev-shaped). Not affiliated with TypeSafe. | 🆕 | 2026-09-26 |
-| [gaborishka/jev-wrapped](https://github.com/gaborishka/jev-wrapped) | 3 | 1 | 요약 대기 · Telegram channel X-ray: Jev judges a year of posts, you get a card. One Cloudflare Worker. | 🆕 | 2026-09-21 |
-| [sriganesh/jevibe-check](https://github.com/sriganesh/jevibe-check) | 3 | 0 | 요약 대기 · A live tone labeler for Bluesky posts and drafts, using TypeSafe's Jev API. | 🆕 | 2026-09-17 |
-| [stephenlb/truetype.ai-open](https://github.com/stephenlb/truetype.ai-open) | 3 | 0 | 요약 대기 · Open source replica of Truetype AI using open weight models | 🆕 | 2026-09-25 |
-| [teyhouse/jev-secret-detection](https://github.com/teyhouse/jev-secret-detection) | 3 | 0 | 요약 대기 · Measures how well TypeSafe's RLCD-Jev model spots real secret credentials in file snippets | 🆕 | 2026-09-18 |
-| [ThinkyMiner/Winnow](https://github.com/ThinkyMiner/Winnow) | 3 | 0 | 요약 대기 · Know before you click. A Chrome extension that reads articles and YouTube videos ahead of you and says read, skim, save, or skip — with a confidence, tuned to your goals. Open source, MV3, powered by Jev. | 🆕 | 2026-09-19 |
-| [asfarsadewa/human-compiler](https://github.com/asfarsadewa/human-compiler) | 2 | 0 | 요약 대기 · A compiler for human language. Paste text, get diagnostics. Measured by TypeSafe Jev. | 🆕 | 2026-09-17 |
-| [leey00nsu/leey00nsu-next-blog-v2](https://github.com/leey00nsu/leey00nsu-next-blog-v2) | 2 | 0 | 요약 대기 · Next.js-based personal blog with MDX multi-language support, in-browser Studio editor, and GitHub auto commit. | 🆕 | 2026-09-26 |
-| [MM-sheng/jevspeak](https://github.com/MM-sheng/jevspeak) | 2 | 1 | 요약 대기 · Jev can't generate text. So I made it talk anyway. A conversational interface built from probabilistic decisions and a deterministic language compiler — no generative LLM. | 🆕 | 2026-09-19 |
-| [pareshbhangale/JEV---Job-Hiring-Content-Detector](https://github.com/pareshbhangale/JEV---Job-Hiring-Content-Detector) | 2 | 0 | 요약 대기 · Supercharge your job hunt on social feeds. Instantly isolate, highlight, and filter hiring opportunities on LinkedIn, X.com (Twitter), and Reddit with ultra-fast local heuristics (&lt;0.003ms) and zero tracking using typesafe jev | 🆕 | 2026-09-24 |
-| [silky-x0/Postmark](https://github.com/silky-x0/Postmark) | 2 | 0 | 요약 대기 · A working Demo that acts as classifier to classify linkedin post which inside uses jev by Typesafe.ai | 🆕 | 2026-09-20 |
-| [stiermid/laya-serve](https://github.com/stiermid/laya-serve) | 2 | 0 | 요약 대기 · Jev-compatible HTTP server for Laya System One decision models | 🆕 | 2026-09-26 |
-| [DansiDanutz/fake-real-jev](https://github.com/DansiDanutz/fake-real-jev) | 1 | 0 | 요약 대기 · Built with Jev: how Fake / Real (fake-real.live) uses TypeSafe Jev to check claims against cited evidence. | 🆕 | 2026-09-26 |
-| [DDnim/jev-tweet-radar](https://github.com/DDnim/jev-tweet-radar) | 1 | 0 | 요약 대기 · Chrome extension: score every X post with one Jev (System One Model) call — worth engaging, buzz, misread, repost/bookmark-worthy, AI-ish | 🆕 | 2026-09-27 |
-| [grayrepo-byte/jev_filter_for_x](https://github.com/grayrepo-byte/jev_filter_for_x) | 1 | 0 | 요약 대기 · A browser extension that scores and filters X posts in real time with Jev, folding low-signal content while keeping it expandable. | 🆕 | 2026-09-20 |
-| [jxucoder/mimicry](https://github.com/jxucoder/mimicry) | 1 | 0 | 요약 대기 · Rewrite AI drafts in your own voice with a bounded TypeSafe feedback loop. | 🆕 | 2026-09-13 |
-| [KiidxAtlas/omp-laya](https://github.com/KiidxAtlas/omp-laya) | 1 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-26 |
-| [knowlet/jevlens](https://github.com/knowlet/jevlens) | 1 | 0 | 요약 대기 · Chrome extension for annotating articles, X/Twitter posts, and Threads posts. | 🆕 | 2026-09-18 |
-| [lalitsonawane/jev-snake](https://github.com/lalitsonawane/jev-snake) | 1 | 0 | 요약 대기 · Snake autoplay powered by TypeSafe Jev (System One) | 🆕 | 2026-09-27 |
-| [Lasimeri/Intel-Phi-Jev](https://github.com/Lasimeri/Intel-Phi-Jev) | 1 | 0 | 요약 대기 · XKEYSCORE for Jev: TypeSafe System One judgments (noul/choice/score) served locally, with the Xeon Phi cards doing the model's matrix work | 🆕 | 2026-09-26 |
-| [mintannn/THE-HUNDRED-EYES](https://github.com/mintannn/THE-HUNDRED-EYES) | 1 | 0 | 요약 대기 · 衆目 / THE HUNDRED EYES — Interactive media art with Jev Choice + Score: one post, 100 fictional perspectives, four amplified voices, then the whole audience. | 🆕 | 2026-09-23 |
-| [nibzard/jevditor](https://github.com/nibzard/jevditor) | 1 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-25 |
-| [tomfrazier/slopmop](https://github.com/tomfrazier/slopmop) | 1 | 1 | 요약 대기 · Mop the slop out of your LinkedIn feed. Not an AI detector: a bad-writing detector. Chrome extension + Vercel server, powered by Jev from Typesafe AI. MIT. | 🆕 | 2026-09-26 |
-| [zsoXi/FeedGate](https://github.com/zsoXi/FeedGate) | 1 | 0 | 요약 대기 · Safe-controls Chrome feed filter (v3.3.0) with TypeSafe Jev judgments, temporal topic mutes, repeat grouping, API usage panel with thrift mode, author pickers, transactional cosmetic picker with Undo, persist-first recovery, and six supported platforms including Wykop (beta). Zero runtime dependencies. | 🆕 | 2026-09-19 |
-| [fredrsat/stil-lint](https://github.com/fredrsat/stil-lint) | 0 | 0 | **무엇** 노르웨이어와 영어 텍스트의 품질과 문체를 검사해 에이전트가 사용자에게 메시지를 발송하기 전 수정하도록 돕는 스타일 린터 MCP 서버 및 CLI다.<br>**판단** 문장 내 챗봇 상투구 잔재나 부정 대조 구문 같은 문체 결함 여부 및 구체적 세부사항 포함 여부를 확률로 판단한다.<br>**포인트** AI 작성 여부를 단정하지 않고 구체적 문체 결함만 보고하며, 로컬 검사와 Jev 판단 계층을 분리하고 수정 상한을 두어 무한 루프를 방지한다. | 🆕 | 2026-09-27 |
-| [ncsound919/mike-write](https://github.com/ncsound919/mike-write) | 0 | 0 | **무엇** 전신마비 작가가 음성과 스위치 접근성 기능으로 자서전을 구술하고 책으로 엮을 수 있게 돕는 안드로이드 앱이다.<br>**판단** 재작성된 문장이 원본에 얼마나 충실한지 점수를 매기거나 확률을 계산해 적용 여부를 제안하도록 판단시킨다.<br>**포인트** Vercel AI Gateway와 로컬 Jev 서비스를 2계층 체인으로 구성하고 네트워크 미연결 시 로컬 결정론적 에이전트로 폴백한다. | 🆕 | 2026-09-27 |
-| [PineappleBingo/creator-lab-reels](https://github.com/PineappleBingo/creator-lab-reels) | 0 | 0 | **무엇** 인스타그램 릴스 영상을 스크랩하고 전사한 뒤 스크립트 구조와 훅 패턴을 분석해 검색 가능한 대시보드를 제공하는 로컬 분석 도구다.<br>**판단** 릴스 스크립트를 대상으로 주제, 도입부 전개, 훅 메커니즘, 구조, 근거, 감정적 호소, 조언의 구체성, 구두 CTA 등 8가지 분류와 문단별 라벨을 판단한다.<br>**포인트** npm 의존성 설치나 빌드 과정 없이 Node.js 표준 기능으로 로컬 서버를 구동하며, 성과 지표와 무관하게 텍스트만 Jev에 전달해 캐싱과 재분석을 지원한다. | 🆕 | 2026-09-23 |
-| [AhmedIkram05/AhmedIkram05](https://github.com/AhmedIkram05/AhmedIkram05) | 0 | 0 | 요약 대기 · GitHub profile description | 🆕 | 2026-09-27 |
-| [Autumnnus/autumnnus-portfolio](https://github.com/Autumnnus/autumnnus-portfolio) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-27 |
-| [bchhabra2490/jev-linkedin-filter-extension](https://github.com/bchhabra2490/jev-linkedin-filter-extension) | 0 | 0 | 요약 대기 · Chrome extension using Jev for Linkedin posts filters | 🆕 | 2026-09-25 |
-| [bobbywzl/unitos](https://github.com/bobbywzl/unitos) | 0 | 0 | 요약 대기 · Unified toolbox of everything needed to dissect and understand content | 🆕 | 2026-09-27 |
-| [cayman2142/social-credit](https://github.com/cayman2142/social-credit) | 0 | 0 | 요약 대기 · The Party watches you work. A joke productivity monitor and a real field test of Jev (TypeSafe System One). | 🆕 | 2026-09-25 |
-| [codemanojhv/prj-277-media-research](https://github.com/codemanojhv/prj-277-media-research) | 0 | 0 | 요약 대기 · PRJ_277 multilingual news coverage research system for Government of India initiatives | 🆕 | 2026-09-26 |
-| [criguex/laya-server](https://github.com/criguex/laya-server) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-27 |
-| [davidkrider/forus](https://github.com/davidkrider/forus) | 0 | 0 | 요약 대기 · A Chrome extension that hides noise on X | 🆕 | 2026-09-25 |
-| [dgr8akki/slop-radar](https://github.com/dgr8akki/slop-radar) | 0 | 0 | 요약 대기 · Labels LinkedIn posts as human, unclear or AI slop as you scroll, with the reasons on hover. Chrome extension powered by Jev. | 🆕 | 2026-09-27 |
-| [fahd12/jev-chrome-extension](https://github.com/fahd12/jev-chrome-extension) | 0 | 0 | 요약 대기 · Integrate JEV in chrome as extension and validate posts from X.com if written by AI or no. | 🆕 | 2026-09-27 |
-| [glennwiz/jev-discord-bot](https://github.com/glennwiz/jev-discord-bot) | 0 | 0 | 요약 대기 · Discord bot for TypeSafe's Jev (System One): /jev choice, score and noul | 🆕 | 2026-09-26 |
-| [igalbo/jev-signal](https://github.com/igalbo/jev-signal) | 0 | 0 | 요약 대기 · A Jev-powered reader tool for writing signals, not AI authorship detection. | 🆕 | 2026-09-27 |
-| [italoalmeida0/julia-system-one](https://github.com/italoalmeida0/julia-system-one) | 0 | 0 | 요약 대기 · Julia-1 decision engine for Node.js, Bun and the browser - self-contained, zero dependencies | 🆕 | 2026-09-27 |
-| [italoalmeida0/laya-system-one](https://github.com/italoalmeida0/laya-system-one) | 0 | 0 | 요약 대기 · Self-contained, ultra-fast System 1 decision engine with WebGPU/WASM acceleration, 100% wire-compatible with TypeSafe Jev (/v1/systemone). | 🆕 | 2026-09-27 |
-| [johanmatsgard/jev-svenska-triage](https://github.com/johanmatsgard/jev-svenska-triage) | 0 | 0 | 요약 대기 · Testing TypeSafe's Jev on 100 Swedish social media comments. | 🆕 | 2026-09-26 |
-| [kbhatnagar1506/facemash](https://github.com/kbhatnagar1506/facemash) | 0 | 0 | 요약 대기 · Giving people the power to build community and bring the world closer together! | 🆕 | 2026-09-27 |
-| [kishida/jev-bench](https://github.com/kishida/jev-bench) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-27 |
-| [kishida/jwenv](https://github.com/kishida/jwenv) | 0 | 0 | 요약 대기 · jev like JS implementation | 🆕 | 2026-09-27 |
-| [lets-data-science/feed-lens](https://github.com/lets-data-science/feed-lens) | 0 | 0 | 요약 대기 · Build a Jev-powered Chrome reading lens for LinkedIn. An LDS guided project with a local server, starter tasks, tests and an eight-step guide. | 🆕 | 2026-09-27 |
-| [MidnightLabDev/AI-Slop-Detector-for-LinkedIn](https://github.com/MidnightLabDev/AI-Slop-Detector-for-LinkedIn) | 0 | 0 | 요약 대기 · Chrome extension that detects low substance AI slop patterns in LinkedIn posts using the TypeSafe JEV API | 🆕 | 2026-09-26 |
-| [msharafh/jev-lab](https://github.com/msharafh/jev-lab) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-26 |
-| [msusffalich/nexo](https://github.com/msusffalich/nexo) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-25 |
-| [pedroarruda07/jev-twitter-filter](https://github.com/pedroarruda07/jev-twitter-filter) | 0 | 0 | 요약 대기 · Real-time twitter/X filter with Jev | 🆕 | 2026-09-27 |
-| [riacheruvu/Tweets_Sentiment_Analysis](https://github.com/riacheruvu/Tweets_Sentiment_Analysis) | 0 | 0 | 요약 대기 · In this project, I try to recognize individuals’ emotions/opinions on self-driving cars from tweets, a textual message users post on the social media website Twitter, using sentiment analysis using Word2Vec, GloVe, and a convolutional neural network (CNN) built using the Keras API.  | 🆕 | 2026-09-25 |
-| [SkywalkerDarren/feed-lens](https://github.com/SkywalkerDarren/feed-lens) | 0 | 0 | 요약 대기 · Customizable social feed labels for Weibo, Threads and X, powered by your TypeSafe account | 🆕 | 2026-09-22 |
-| [smakam/ai-blog-digest](https://github.com/smakam/ai-blog-digest) | 0 | 0 | 요약 대기 · Daily AI blog digest: Feedly OPML -&gt; Jev -&gt; LLM summaries -&gt; Telegram | 🆕 | 2026-09-27 |
-| [ZackLucas/Jev-studio](https://github.com/ZackLucas/Jev-studio) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-26 |
-| [sumitrevolt/leadgenrationaivoiceagent](https://github.com/sumitrevolt/leadgenrationaivoiceagent) | 1 | 0 | 요약 대기 · AI Voice Agent for B2B Lead Generation - Multi-tier automated platform with ML auto-learning, voice calling, and CRM integration | 🆕 | 2026-09-28 |
-| [DineshKuppan/jev-banking-routing-go](https://github.com/DineshKuppan/jev-banking-routing-go) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-25 |
-| [MounikaKV/hitthegym](https://github.com/MounikaKV/hitthegym) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-27 |
-| [openbear-it/layajev](https://github.com/openbear-it/layajev) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-26 |
-| [plusminushalf/rot-guard](https://github.com/plusminushalf/rot-guard) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-27 |
-| [SandeshKale/linkedin-post-generator](https://github.com/SandeshKale/linkedin-post-generator) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-26 |
-
-### HarleyCoops/Math-To-Manim
-
-<details><summary>README 발췌</summary>
-
-Six real renders from the Astra Morse film and the existing showcase. Explore the films →
-
-</details>
+| [kitze/unclutter](https://github.com/kitze/unclutter) | 322 | 35 | **무엇** WXT 기반의 브라우저 확장 프로그램으로 웹페이지 내 불필요한 요소를 판별해 가려주는 도구다.<br>**판단** 웹페이지 내 요소들이 가려야 할 불필요한 요소(nonessential element)인지 여부를 분류하도록 요청한다.<br>**포인트** Vercel AI Gateway 또는 TypeSafe AI를 직접 활용하며, 템플릿별로 숨김 규칙을 로컬에 저장해 재적용한다. | ✅ `choice` | 2026-09-18 |
+| [DanRWilloughby/snifftest](https://github.com/DanRWilloughby/snifftest) | 33 | 1 | **무엇** Markdown과 텍스트 문서를 검사해 AI 특유의 문체와 하우스 룰 위반을 잡아내는 산문 린터 도구다.<br>**판단** 단락을 단순 반복하는 결문, 과도한 유보 표현, 수사적 도입부 등 문맥 판단이 필요한 규칙의 해당 확률을 질문한다.<br>**포인트** 정규식 기반 로컬 규칙과 호스팅 판단 모델 규칙을 분리하며, 텍스트를 재작성하지 않고 문제 위치와 확률 플래그만 제공한다. | ✅ `noul` | 2026-09-18 |
+| [siyuan-note/siyuan](https://github.com/siyuan-note/siyuan) | 46534 | 3029 | 요약 대기 · An open-source, privacy-first, self-hosted knowledge workspace where humans and AI agents work together 开源、隐私优先、自托管的知识工作空间，让人与智能体在此协作 |  | 2026-09-28 |
+| [HarleyCoops/Math-To-Manim](https://github.com/HarleyCoops/Math-To-Manim) | 2669 | 290 | **무엇** 텍스트와 이미지를 기반으로 Manim 수학 및 물리 애니메이션과 학습 노트를 제작하는 멀티에이전트 파이프라인 도구다.<br>**판단** 각 단계의 산출물(학습 요약, 수학 검증, 씬 구성 등)이 기준을 만족하는지 score로 평가하고 통과 여부를 판단한다.<br>**포인트** Jev 평가는 기본적으로 권고(advisory) 수준으로 점수만 기록되지만, gated 옵션으로 엄격한 품질 게이트로 전환할 수 있다. |  | 2026-09-25 |
+| [TypeLLM/TypeLLM](https://github.com/TypeLLM/TypeLLM) | 806 | 53 | 요약 대기 · TypeLLM: LLMs with type-safe generation |  | 2026-09-27 |
+| [githubnext/localjev](https://github.com/githubnext/localjev) | 788 | 52 | 요약 대기 · 설명 없음 |  | 2026-09-18 |
+| [ttlequals0/MinusPod](https://github.com/ttlequals0/MinusPod) | 457 | 43 | **무엇** 팟캐스트를 Whisper로 전사하고 LLM으로 광고 구간을 탐지 및 잘라내어 무광고 RSS 피드로 서빙하는 셀프 호스팅 서버다.<br>**판단** README에 판단 지점 설명 없음<br>**포인트** Whisper 전사와 슬라이딩 윈도우 LLM 탐지 외에도 음향 분석 신호 및 사용자 수정 기반의 크로스 에피소드 패턴 학습을 지원한다. |  | 2026-09-28 |
+| [socai-io/socai](https://github.com/socai-io/socai) | 221 | 25 | 요약 대기 · A Browser Use Agent that actually reads social media. Fast. Precise. Deep. |  | 2026-09-27 |
+| [shengjidaguai-china/goutoujunshi-jev-chat](https://github.com/shengjidaguai-china/goutoujunshi-jev-chat) | 106 | 8 | **무엇** 위챗 등 메신저 대화 화면을 인식해 상대의 의도를 분석하고 답장 초안과 후보 순위를 띄워주는 데스크톱·모바일 플로팅 윈도우 보조 도구다.<br>**판단** 답장 생성 모델을 호출하기 전 단계에서 대화 맥락에 따라 어떤 대응 전략을 취할지 선택하도록 판단시킨다.<br>**포인트** OCR 인식 후 사용자가 수동 확인하며, 후보별 근거와 대가 제시, 관계 추이를 보여주는 관계 K선 차트 등 통제권과 시각화에 중점을 두었다. |  | 2026-09-26 |
+| [ChetasLua/jevmeter](https://github.com/ChetasLua/jevmeter) | 100 | 12 | **무엇** 동영상 속 모든 문장을 음성 인식 후 분석하여 실시간 지표 오버레이가 들어간 16:9 편집본 영상을 생성하는 CLI 도구<br>**판단** 각 문장에 대해 회피 여부, 감정적 호소, 근거 없는 주장, 과장 등 프리셋별 5가지 예/아니오 항목의 확률(noul)을 판단<br>**포인트** Whisper 음성 인식 및 ffmpeg 렌더링을 Jev의 예/아니오 확률 추론과 결합해 영상 하이라이트와 스코어보드를 자동 생성함 |  | 2026-09-17 |
+| [artemnovitckii/creator-lab](https://github.com/artemnovitckii/creator-lab) | 82 | 22 | **무엇** 인스타그램 릴스 영상을 스크랩하고 전사한 뒤 스크립트 구조와 훅 패턴을 분석해 주는 로컬 웹 도구다.<br>**판단** 릴스 스크립트를 보고 주제, 오프닝 방식, 훅 메커니즘, 대본 구조, 근거, 감정적 소구, 조언 구체성, CTA 등 8가지 항목을 분류하도록 판단시킨다.<br>**포인트** npm 의존성이나 빌드 단계 없이 순수 Node.js로 동작하며, Apify 수집 및 음성 전사 후 성과 지표와 무관하게 순수 스크립트 텍스트만을 Jev에 전달해 캐싱·분류한다. |  | 2026-09-24 |
+| [usenotra/notra](https://github.com/usenotra/notra) | 223 | 49 | **무엇** 주요 AI 검색 엔진에서 브랜드 노출률과 인용 현황을 추적하고 부족한 노출 영역을 채울 콘텐츠 초안을 생성하는 생성형 엔진 최적화(GEO) 플랫폼이다.<br>**판단** README에 판단 지점 설명 없음<br>**포인트** 여러 AI 엔진에 대한 질문 스캔과 AI 유입 트래픽 분류 SDK(@usenotra/geo), 외부 협업 도구 연동 콘텐츠 자동화 기능을 모노레포로 제공한다. |  | 2026-09-27 |
+| [kevinbadi/hyperedit](https://github.com/kevinbadi/hyperedit) | 204 | 126 | **무엇** FFMPEG, Remotion, Obsidian 에이전트 및 Jev를 결합한 AI 기반 영상 편집기 애플리케이션이다.<br>**판단** README에 판단 지점 설명 없음<br>**포인트** getmocha.com으로 생성되었으며 FFMPEG과 Remotion 기반 영상 처리에 Obsidian 에이전트 통합을 표방한다. |  | 2026-09-21 |
+| [rokcso/bluenoise](https://github.com/rokcso/bluenoise) | 91 | 4 | 요약 대기 · Blur or hide noisy replies, posts &amp; ads on X (Twitter), and clean up its interface with local, reversible keyword/account rules — no X API, no data collection, no account changes. 用本地可逆的关键词/账号规则模糊或隐藏 X（推特）上的嘈杂回复、帖子和广告，并整理界面——不调用 X API、不收集数据、不修改账号。 |  | 2026-09-18 |
+| [phuryn/experiments](https://github.com/phuryn/experiments) | 57 | 6 | 요약 대기 · 설명 없음 |  | 2026-09-19 |
+| [RafalWilinski/vibecheck](https://github.com/RafalWilinski/vibecheck) | 48 | 5 | 요약 대기 · Chrome extension: vibe-check your X posts with TypeSafe's Jev before you hit Post |  | 2026-09-20 |
+| [ehui1226/hookmeter-jev](https://github.com/ehui1226/hookmeter-jev) | 22 | 1 | 요약 대기 · ⚡ Millisecond-level Viral Hook Telemetry &amp; Co-pilot for Social Media (Chrome Extension + JEV System 1) |  | 2026-09-21 |
+| [charlesdove977/claude-x-jev](https://github.com/charlesdove977/claude-x-jev) | 19 | 2 | 요약 대기 · Fast, cheap, typed decisions for Claude Code. Jev (TypeSafe's decision model on OpenRouter) sorts, checks, scores, gates and verifies at 0.3s and a fraction of a cent per item. Claude keeps the reading, writing and judgment. |  | 2026-09-25 |
+| [stefw/lkclean](https://github.com/stefw/lkclean) | 16 | 1 | 요약 대기 · Chrome extension that cleans up your LinkedIn feed: hides engagement bait, self-promo and off-topic posts using Jev, TypeSafe AI's typed classification model — and explains every decision. |  | 2026-09-20 |
+| [yijunyu/jev-rs](https://github.com/yijunyu/jev-rs) | 14 | 2 | 요약 대기 · System One judgments (noul/choice/score) from any LLM in one prefill — a Rust, Jev-compatible /v1/systemone engine |  | 2026-09-28 |
+| [bohutang/sift](https://github.com/bohutang/sift) | 12 | 4 | 요약 대기 · Chrome extension that labels every post on X (Substance · Humor · Chit-chat · Promo · Junk · AI-written) with TypeSafe Jev, and hides the ones you don't want. |  | 2026-09-26 |
+| [backmeupplz/jev_antispam_bot](https://github.com/backmeupplz/jev_antispam_bot) | 11 | 2 | 요약 대기 · Minimal grammY Telegram anti-spam bot powered by TypeSafe Jev |  | 2026-09-28 |
+| [gaborishka/jevtown](https://github.com/gaborishka/jevtown) | 11 | 2 | 요약 대기 · Jevtown: a social network where people write and 10,000 AI personas react |  | 2026-09-22 |
+| [SixSentences/sixsentences](https://github.com/SixSentences/sixsentences) | 6 | 7 | **무엇** 연구자가 문헌 검토, 데이터 분석, 인터뷰 및 논문 작성을 출처 추적이 가능한 형태로 수행하는 오픈소스 자체 호스팅 워크스페이스다.<br>**판단** README에 판단 지점 설명 없음<br>**포인트** Next.js와 FastAPI 기반 전체 스택으로 구성되며 데이터 출처 보존, DuckDB 분석 연동 및 네이티브 macOS 앱 지원을 제공한다. |  | 2026-09-27 |
+| [valentynkit/jev-skip](https://github.com/valentynkit/jev-skip) | 5 | 0 | **무엇** 유튜브 영상의 자막을 실시간으로 분석해 스폰서 구간을 탐지하고 자동으로 건너뛰는 브라우저 확장 프로그램이다.<br>**판단** 자막을 분할한 각 세그먼트가 content, sponsor, intro, outro, self_promo, recap, other 중 어디에 해당하는지 choice 형태로 판단시킨다.<br>**포인트** 크라우드소싱 DB 없이 자막 텍스트와 확률값을 활용해 탐색 바에 히트맵을 칠하고 스킵을 제어하지만, 자막이 없으면 동작하지 않는다. |  | 2026-09-19 |
+| [scale-venture-partners/riff](https://github.com/scale-venture-partners/riff) | 7 | 1 | 요약 대기 · A small, fast prose linter: ruff-style rule codes for writing, backed by TypeSafe's Jev model |  | 2026-09-18 |
+| [dfinke/Jev](https://github.com/dfinke/Jev) | 6 | 2 | 요약 대기 · PowerShell decisions with TypeSafe AI's Jev model: https://typesafe.ai/blog/introducing-system-one-models-and-jev |  | 2026-09-27 |
+| [2456868764/jevguide](https://github.com/2456868764/jevguide) | 5 | 1 | 요약 대기 · Curated Jev showcases from X, organized by category with media previews and direct source links. |  | 2026-09-27 |
+| [nssmd/jev-bot](https://github.com/nssmd/jev-bot) | 5 | 0 | 요약 대기 · Self-hosted Jev decision workbench and Feishu bot: automatic choices, probabilities, and experimental word/character writing. |  | 2026-09-22 |
+| [vmendes90/jev-shield](https://github.com/vmendes90/jev-shield) | 5 | 0 | 요약 대기 · Privacy-first Chrome extension that semantically blocks native ads, sponsored feed cards, and video ads using TypeSafe Jev |  | 2026-09-18 |
+| [brieflyalongsidemore/kite](https://github.com/brieflyalongsidemore/kite) | 3 | 0 | 요약 대기 · A local copilot for growing on social media |  | 2026-09-25 |
+| [elpumberto/barrunto](https://github.com/elpumberto/barrunto) | 3 | 0 | 요약 대기 · A Chrome extension that brings TypeSafe's Jev to X.com to analyze posts as you browse |  | 2026-09-20 |
+| [fritzprix/systemone-lite](https://github.com/fritzprix/systemone-lite) | 3 | 0 | 요약 대기 · Toy local System One–style decision API (Jev-shaped). Not affiliated with TypeSafe. |  | 2026-09-26 |
+| [gaborishka/jev-wrapped](https://github.com/gaborishka/jev-wrapped) | 3 | 1 | 요약 대기 · Telegram channel X-ray: Jev judges a year of posts, you get a card. One Cloudflare Worker. |  | 2026-09-21 |
+| [sriganesh/jevibe-check](https://github.com/sriganesh/jevibe-check) | 3 | 0 | 요약 대기 · A live tone labeler for Bluesky posts and drafts, using TypeSafe's Jev API. |  | 2026-09-17 |
+| [stephenlb/truetype.ai-open](https://github.com/stephenlb/truetype.ai-open) | 3 | 0 | 요약 대기 · Open source replica of Truetype AI using open weight models |  | 2026-09-25 |
+| [teyhouse/jev-secret-detection](https://github.com/teyhouse/jev-secret-detection) | 3 | 0 | 요약 대기 · Measures how well TypeSafe's RLCD-Jev model spots real secret credentials in file snippets |  | 2026-09-18 |
+| [ThinkyMiner/Winnow](https://github.com/ThinkyMiner/Winnow) | 3 | 0 | 요약 대기 · Know before you click. A Chrome extension that reads articles and YouTube videos ahead of you and says read, skim, save, or skip — with a confidence, tuned to your goals. Open source, MV3, powered by Jev. |  | 2026-09-19 |
+| [asfarsadewa/human-compiler](https://github.com/asfarsadewa/human-compiler) | 2 | 0 | 요약 대기 · A compiler for human language. Paste text, get diagnostics. Measured by TypeSafe Jev. |  | 2026-09-17 |
+| [leey00nsu/leey00nsu-next-blog-v2](https://github.com/leey00nsu/leey00nsu-next-blog-v2) | 2 | 0 | 요약 대기 · Next.js-based personal blog with MDX multi-language support, in-browser Studio editor, and GitHub auto commit. |  | 2026-09-26 |
+| [MM-sheng/jevspeak](https://github.com/MM-sheng/jevspeak) | 2 | 1 | 요약 대기 · Jev can't generate text. So I made it talk anyway. A conversational interface built from probabilistic decisions and a deterministic language compiler — no generative LLM. |  | 2026-09-19 |
+| [pareshbhangale/JEV---Job-Hiring-Content-Detector](https://github.com/pareshbhangale/JEV---Job-Hiring-Content-Detector) | 2 | 0 | 요약 대기 · Supercharge your job hunt on social feeds. Instantly isolate, highlight, and filter hiring opportunities on LinkedIn, X.com (Twitter), and Reddit with ultra-fast local heuristics (&lt;0.003ms) and zero tracking using typesafe jev |  | 2026-09-24 |
+| [silky-x0/Postmark](https://github.com/silky-x0/Postmark) | 2 | 0 | 요약 대기 · A working Demo that acts as classifier to classify linkedin post which inside uses jev by Typesafe.ai |  | 2026-09-20 |
+| [stiermid/laya-serve](https://github.com/stiermid/laya-serve) | 2 | 0 | 요약 대기 · Jev-compatible HTTP server for Laya System One decision models |  | 2026-09-26 |
+| [Aagamsheth0601/instagram-safe-feed](https://github.com/Aagamsheth0601/instagram-safe-feed) | 1 | 0 | 요약 대기 · Explainable Instagram feed and Reels classification using TypeSafe AI Jev and Gemini vision |  | 2026-09-25 |
+| [DansiDanutz/fake-real-jev](https://github.com/DansiDanutz/fake-real-jev) | 1 | 0 | 요약 대기 · Built with Jev: how Fake / Real (fake-real.live) uses TypeSafe Jev to check claims against cited evidence. |  | 2026-09-26 |
+| [DDnim/jev-tweet-radar](https://github.com/DDnim/jev-tweet-radar) | 1 | 0 | 요약 대기 · Chrome extension: score every X post with one Jev (System One Model) call — worth engaging, buzz, misread, repost/bookmark-worthy, AI-ish |  | 2026-09-27 |
+| [grayrepo-byte/jev_filter_for_x](https://github.com/grayrepo-byte/jev_filter_for_x) | 1 | 0 | 요약 대기 · A browser extension that scores and filters X posts in real time with Jev, folding low-signal content while keeping it expandable. |  | 2026-09-20 |
+| [jxucoder/mimicry](https://github.com/jxucoder/mimicry) | 1 | 0 | 요약 대기 · Rewrite AI drafts in your own voice with a bounded TypeSafe feedback loop. |  | 2026-09-13 |
+| [KiidxAtlas/omp-laya](https://github.com/KiidxAtlas/omp-laya) | 1 | 0 | 요약 대기 · 설명 없음 |  | 2026-09-26 |
+| [knowlet/jevlens](https://github.com/knowlet/jevlens) | 1 | 0 | 요약 대기 · Chrome extension for annotating articles, X/Twitter posts, and Threads posts. |  | 2026-09-18 |
+| [lalitsonawane/jev-snake](https://github.com/lalitsonawane/jev-snake) | 1 | 0 | 요약 대기 · Snake autoplay powered by TypeSafe Jev (System One) |  | 2026-09-27 |
+| [Lasimeri/Intel-Phi-Jev](https://github.com/Lasimeri/Intel-Phi-Jev) | 1 | 0 | 요약 대기 · XKEYSCORE for Jev: TypeSafe System One judgments (noul/choice/score) served locally, with the Xeon Phi cards doing the model's matrix work |  | 2026-09-26 |
+| [mintannn/THE-HUNDRED-EYES](https://github.com/mintannn/THE-HUNDRED-EYES) | 1 | 0 | 요약 대기 · 衆目 / THE HUNDRED EYES — Interactive media art with Jev Choice + Score: one post, 100 fictional perspectives, four amplified voices, then the whole audience. |  | 2026-09-23 |
+| [nibzard/jevditor](https://github.com/nibzard/jevditor) | 1 | 0 | 요약 대기 · 설명 없음 |  | 2026-09-25 |
+| [tomfrazier/slopmop](https://github.com/tomfrazier/slopmop) | 1 | 1 | 요약 대기 · Mop the slop out of your LinkedIn feed. Not an AI detector: a bad-writing detector. Chrome extension + Vercel server, powered by Jev from Typesafe AI. MIT. |  | 2026-09-26 |
+| [zsoXi/FeedGate](https://github.com/zsoXi/FeedGate) | 1 | 0 | 요약 대기 · Safe-controls Chrome feed filter (v3.3.0) with TypeSafe Jev judgments, temporal topic mutes, repeat grouping, API usage panel with thrift mode, author pickers, transactional cosmetic picker with Undo, persist-first recovery, and six supported platforms including Wykop (beta). Zero runtime dependencies. |  | 2026-09-19 |
+| [fredrsat/stil-lint](https://github.com/fredrsat/stil-lint) | 0 | 0 | **무엇** 노르웨이어와 영어 텍스트의 품질과 문체를 검사해 에이전트가 사용자에게 메시지를 발송하기 전 수정하도록 돕는 스타일 린터 MCP 서버 및 CLI다.<br>**판단** 문장 내 챗봇 상투구 잔재나 부정 대조 구문 같은 문체 결함 여부 및 구체적 세부사항 포함 여부를 확률로 판단한다.<br>**포인트** AI 작성 여부를 단정하지 않고 구체적 문체 결함만 보고하며, 로컬 검사와 Jev 판단 계층을 분리하고 수정 상한을 두어 무한 루프를 방지한다. |  | 2026-09-27 |
+| [ncsound919/mike-write](https://github.com/ncsound919/mike-write) | 0 | 0 | **무엇** 전신마비 작가가 음성과 스위치 접근성 기능으로 자서전을 구술하고 책으로 엮을 수 있게 돕는 안드로이드 앱이다.<br>**판단** 재작성된 문장이 원본에 얼마나 충실한지 점수를 매기거나 확률을 계산해 적용 여부를 제안하도록 판단시킨다.<br>**포인트** Vercel AI Gateway와 로컬 Jev 서비스를 2계층 체인으로 구성하고 네트워크 미연결 시 로컬 결정론적 에이전트로 폴백한다. |  | 2026-09-27 |
+| [PineappleBingo/creator-lab-reels](https://github.com/PineappleBingo/creator-lab-reels) | 0 | 0 | **무엇** 인스타그램 릴스 영상을 스크랩하고 전사한 뒤 스크립트 구조와 훅 패턴을 분석해 검색 가능한 대시보드를 제공하는 로컬 분석 도구다.<br>**판단** 릴스 스크립트를 대상으로 주제, 도입부 전개, 훅 메커니즘, 구조, 근거, 감정적 호소, 조언의 구체성, 구두 CTA 등 8가지 분류와 문단별 라벨을 판단한다.<br>**포인트** npm 의존성 설치나 빌드 과정 없이 Node.js 표준 기능으로 로컬 서버를 구동하며, 성과 지표와 무관하게 텍스트만 Jev에 전달해 캐싱과 재분석을 지원한다. |  | 2026-09-23 |
+| [rohit-burman/linkedin-slop](https://github.com/rohit-burman/linkedin-slop) | 0 | 0 | **무엇** System 1(Jev) 모델 기반으로 링크드인 게시물을 다루는 프로젝트입니다.<br>**판단** README에 판단 지점 설명 없음<br>**포인트** 저장소 설명 외에 README 등 세부 문서가 제공되지 않아 구체적인 구현 방식과 용도를 파악하기 어렵습니다. |  | 2026-09-25 |
+| [AhmedIkram05/AhmedIkram05](https://github.com/AhmedIkram05/AhmedIkram05) | 0 | 0 | 요약 대기 · GitHub profile description |  | 2026-09-27 |
+| [Autumnnus/autumnnus-portfolio](https://github.com/Autumnnus/autumnnus-portfolio) | 0 | 0 | 요약 대기 · 설명 없음 |  | 2026-09-27 |
+| [bchhabra2490/jev-linkedin-filter-extension](https://github.com/bchhabra2490/jev-linkedin-filter-extension) | 0 | 0 | 요약 대기 · Chrome extension using Jev for Linkedin posts filters |  | 2026-09-25 |
+| [bobbywzl/unitos](https://github.com/bobbywzl/unitos) | 0 | 0 | 요약 대기 · Unified toolbox of everything needed to dissect and understand content |  | 2026-09-27 |
+| [cayman2142/social-credit](https://github.com/cayman2142/social-credit) | 0 | 0 | 요약 대기 · The Party watches you work. A joke productivity monitor and a real field test of Jev (TypeSafe System One). |  | 2026-09-25 |
+| [codemanojhv/prj-277-media-research](https://github.com/codemanojhv/prj-277-media-research) | 0 | 0 | 요약 대기 · PRJ_277 multilingual news coverage research system for Government of India initiatives |  | 2026-09-26 |
+| [criguex/laya-server](https://github.com/criguex/laya-server) | 0 | 0 | 요약 대기 · 설명 없음 |  | 2026-09-27 |
+| [davidkrider/forus](https://github.com/davidkrider/forus) | 0 | 0 | 요약 대기 · A Chrome extension that hides noise on X |  | 2026-09-25 |
+| [df-yamashitamasashi/jev_blog](https://github.com/df-yamashitamasashi/jev_blog) | 0 | 0 | 요약 대기 · TypeSafe AI Jev 実践ユースケース・サンプルコード集 |  | 2026-09-27 |
+| [dgr8akki/slop-radar](https://github.com/dgr8akki/slop-radar) | 0 | 0 | 요약 대기 · Labels LinkedIn posts as human, unclear or AI slop as you scroll, with the reasons on hover. Chrome extension powered by Jev. |  | 2026-09-27 |
+| [fahd12/jev-chrome-extension](https://github.com/fahd12/jev-chrome-extension) | 0 | 0 | 요약 대기 · Integrate JEV in chrome as extension and validate posts from X.com if written by AI or no. |  | 2026-09-27 |
+| [getclients4u-lab/jevline](https://github.com/getclients4u-lab/jevline) | 0 | 0 | 요약 대기 · Jevline - The Typed Decision Playbook |  | 2026-09-25 |
+| [glennwiz/jev-discord-bot](https://github.com/glennwiz/jev-discord-bot) | 0 | 0 | 요약 대기 · Discord bot for TypeSafe's Jev (System One): /jev choice, score and noul |  | 2026-09-26 |
+| [gomasy/mastodon-spam-checker](https://github.com/gomasy/mastodon-spam-checker) | 0 | 0 | 요약 대기 · LLM-powered Mastodon spam detector with Redis cursor tracking and interactive Slack moderation |  | 2026-09-28 |
+| [igalbo/jev-signal](https://github.com/igalbo/jev-signal) | 0 | 0 | 요약 대기 · A Jev-powered reader tool for writing signals, not AI authorship detection. |  | 2026-09-27 |
+| [italoalmeida0/julia-system-one](https://github.com/italoalmeida0/julia-system-one) | 0 | 0 | 요약 대기 · Julia-1 decision engine for Node.js, Bun and the browser - self-contained, zero dependencies |  | 2026-09-27 |
+| [italoalmeida0/laya-system-one](https://github.com/italoalmeida0/laya-system-one) | 0 | 0 | 요약 대기 · Self-contained, ultra-fast System 1 decision engine with WebGPU/WASM acceleration, 100% wire-compatible with TypeSafe Jev (/v1/systemone). |  | 2026-09-27 |
+| [johanmatsgard/jev-svenska-triage](https://github.com/johanmatsgard/jev-svenska-triage) | 0 | 0 | 요약 대기 · Testing TypeSafe's Jev on 100 Swedish social media comments. |  | 2026-09-26 |
+| [kbhatnagar1506/facemash](https://github.com/kbhatnagar1506/facemash) | 0 | 0 | 요약 대기 · Giving people the power to build community and bring the world closer together\! |  | 2026-09-27 |
+| [kishida/jev-bench](https://github.com/kishida/jev-bench) | 0 | 0 | 요약 대기 · 설명 없음 |  | 2026-09-27 |
+| [kishida/jwenv](https://github.com/kishida/jwenv) | 0 | 0 | 요약 대기 · jev like JS implementation |  | 2026-09-27 |
+| [lets-data-science/feed-lens](https://github.com/lets-data-science/feed-lens) | 0 | 0 | 요약 대기 · Build a Jev-powered Chrome reading lens for LinkedIn. An LDS guided project with a local server, starter tasks, tests and an eight-step guide. |  | 2026-09-27 |
+| [MidnightLabDev/AI-Slop-Detector-for-LinkedIn](https://github.com/MidnightLabDev/AI-Slop-Detector-for-LinkedIn) | 0 | 0 | 요약 대기 · Chrome extension that detects low substance AI slop patterns in LinkedIn posts using the TypeSafe JEV API |  | 2026-09-26 |
+| [msharafh/jev-lab](https://github.com/msharafh/jev-lab) | 0 | 0 | 요약 대기 · 설명 없음 |  | 2026-09-26 |
+| [msusffalich/nexo](https://github.com/msusffalich/nexo) | 0 | 0 | 요약 대기 · 설명 없음 |  | 2026-09-25 |
+| [pedroarruda07/jev-twitter-filter](https://github.com/pedroarruda07/jev-twitter-filter) | 0 | 0 | 요약 대기 · Real-time twitter/X filter with Jev |  | 2026-09-27 |
+| [riacheruvu/Tweets_Sentiment_Analysis](https://github.com/riacheruvu/Tweets_Sentiment_Analysis) | 0 | 0 | 요약 대기 · In this project, I try to recognize individuals’ emotions/opinions on self-driving cars from tweets, a textual message users post on the social media website Twitter, using sentiment analysis using Word2Vec, GloVe, and a convolutional neural network (CNN) built using the Keras API.  |  | 2026-09-25 |
+| [RZ3M/deslop](https://github.com/RZ3M/deslop) | 0 | 0 | 요약 대기 · Chrome extension that hides engagement bait, AI slop, recycled news and posts from countries you pick on X and LinkedIn. Powered by Jev via OpenRouter. |  | 2026-09-22 |
+| [SkywalkerDarren/feed-lens](https://github.com/SkywalkerDarren/feed-lens) | 0 | 0 | 요약 대기 · Customizable social feed labels for Weibo, Threads and X, powered by your TypeSafe account |  | 2026-09-22 |
+| [smakam/ai-blog-digest](https://github.com/smakam/ai-blog-digest) | 0 | 0 | 요약 대기 · Daily AI blog digest: Feedly OPML -&gt; Jev -&gt; LLM summaries -&gt; Telegram |  | 2026-09-27 |
+| [Spirounkempt95/snifftest](https://github.com/Spirounkempt95/snifftest) | 0 | 0 | 요약 대기 · Sniff your Markdown drafts against house rules with local regex checks and optional AI judgment calls. |  | 2026-09-28 |
+| [theanandprasad/slop-detector](https://github.com/theanandprasad/slop-detector) | 0 | 0 | 요약 대기 · Chrome extension that labels templated, engagement-farming posts on LinkedIn and X using TypeSafe's Jev decision model via OpenRouter |  | 2026-09-27 |
+| [ZackLucas/Jev-studio](https://github.com/ZackLucas/Jev-studio) | 0 | 0 | 요약 대기 · 설명 없음 |  | 2026-09-26 |
+| [sumitrevolt/leadgenrationaivoiceagent](https://github.com/sumitrevolt/leadgenrationaivoiceagent) | 1 | 0 | 요약 대기 · AI Voice Agent for B2B Lead Generation - Multi-tier automated platform with ML auto-learning, voice calling, and CRM integration |  | 2026-09-28 |
+| [DineshKuppan/jev-banking-routing-go](https://github.com/DineshKuppan/jev-banking-routing-go) | 0 | 0 | 요약 대기 · 설명 없음 |  | 2026-09-25 |
+| [MounikaKV/hitthegym](https://github.com/MounikaKV/hitthegym) | 0 | 0 | 요약 대기 · 설명 없음 |  | 2026-09-27 |
+| [openbear-it/layajev](https://github.com/openbear-it/layajev) | 0 | 0 | 요약 대기 · 설명 없음 |  | 2026-09-26 |
+| [plusminushalf/rot-guard](https://github.com/plusminushalf/rot-guard) | 0 | 0 | 요약 대기 · 설명 없음 |  | 2026-09-27 |
+| [SandeshKale/linkedin-post-generator](https://github.com/SandeshKale/linkedin-post-generator) | 0 | 0 | 요약 대기 · 설명 없음 |  | 2026-09-26 |
 
 ### kitze/unclutter
 
 <details><summary>README 발췌</summary>
 
 WXT browser extension: Jev\-powered page clutter removal with reusable template rules\.
+
+</details>
+
+### DanRWilloughby/snifftest
+
+<details><summary>README 발췌</summary>
+
+Does the draft pass the sniff test?
+
+</details>
+
+### siyuan-note/siyuan
+
+<details><summary>README 발췌</summary>
+
+- 💡 Introduction - 🔮 Features - 🏗️ Architecture and Ecosystem - 🗺️ Roadmap - 🚀 Download Setup - App Market - Installation Package - Package Manager - Docker Hosting - Kubernetes Hosting - Unraid Hosting - TrueNAS Hosting - Test Channels - ⌨️ Command-line Interface - 🏘️ Community - 🛠️ Developm
+
+</details>
+
+### HarleyCoops/Math-To-Manim
+
+<details><summary>README 발췌</summary>
+
+Six real renders from the Astra Morse film and the existing showcase. Explore the films →
 
 </details>
 
@@ -135,11 +161,11 @@ MinusPod is a self-hosted server that removes ads from podcasts before you ever 
 
 </details>
 
-### DanRWilloughby/snifftest
+### socai-io/socai
 
 <details><summary>README 발췌</summary>
 
-Does the draft pass the sniff test?
+English · 简体中文 · 日本語 · 한국어
 
 </details>
 
@@ -431,6 +457,14 @@ Postmark is a tiny web app that reads your draft social post before you publish 
 
 </details>
 
+### Aagamsheth0601/instagram-safe-feed
+
+<details><summary>README 발췌</summary>
+
+This personal proof of concept initially covers Instagram feed posts and standalone Reels, sends visible text and metadata to TypeSafe's Jev model, and sends a downscaled post image or up to three sampled Reel frames to Gemini visual analysis.
+
+</details>
+
 ### DansiDanutz/fake-real-jev
 
 <details><summary>README 발췌</summary>
@@ -615,6 +649,14 @@ A Chrome extension that hides noise on X (Twitter) — engineered packaging and 
 
 </details>
 
+### df-yamashitamasashi/jev_blog
+
+<details><summary>README 발췌</summary>
+
+TypeSafe AI の意思決定モデル 「Jev」（System One） に関する技術記事シリーズと、そのサンプルコードのリポジトリです。
+
+</details>
+
 ### dgr8akki/slop-radar
 
 <details><summary>README 발췌</summary>
@@ -631,11 +673,27 @@ Chrome Manifest V3 extension for X (x.com). Each post that scrolls into view is 
 
 </details>
 
+### getclients4u-lab/jevline
+
+<details><summary>README 발췌</summary>
+
+Give your software a typed judgment it can be trusted with.
+
+</details>
+
 ### glennwiz/jev-discord-bot
 
 <details><summary>README 발췌</summary>
 
 A small Rust Discord bot that hands off a decision to Jev, TypeSafe's System One decision model, and posts the answer back to the channel. It needs a Discord bot token and a TypeSafe API key (see Setup); nothing else to run it.
+
+</details>
+
+### gomasy/mastodon-spam-checker
+
+<details><summary>README 발췌</summary>
+
+An LLM-powered spam detector for Mastodon instances. It fetches newly federated remote accounts through the Mastodon Admin API, asks an OpenAI-compatible LLM whether each account looks like spam, and reports detections to Slack. Each notification carries a Suspend button so a moderator can act strai
 
 </details>
 
@@ -743,6 +801,14 @@ In 2019, one of my first deep learning courses had me asking whether I could rec
 
 </details>
 
+### RZ3M/deslop
+
+<details><summary>README 발췌</summary>
+
+Engagement bait, AI-written filler, recycled news, clickbait hooks, broetry and, if you want, posts from countries you choose, quietly disappear from your feed. Every post is judged by Jev , TypeSafe's decision model, through OpenRouter.
+
+</details>
+
 ### SkywalkerDarren/feed-lens
 
 <details><summary>README 발췌</summary>
@@ -756,6 +822,22 @@ Feed Lens is an open-source Chrome extension that adds customizable text labels 
 <details><summary>README 발췌</summary>
 
 A daily job that reads your blog subscriptions (a Feedly OPML export), uses Jev (TypeSafe's decision model) to keep only worthwhile AI posts, has an LLM summarize the best ones, and sends one digest to Telegram. Jev and the summarizer are both reached through OpenRouter.
+
+</details>
+
+### Spirounkempt95/snifftest
+
+<details><summary>README 발췌</summary>
+
+snifftest is a friendly little tool that checks your writing for signs that it might have been created by artificial intelligence. Think of it as a writing detective. It reads through your text and points out phrases, patterns, and styles that commonly appear when AI generates content.
+
+</details>
+
+### theanandprasad/slop-detector
+
+<details><summary>README 발췌</summary>
+
+A Chrome extension that labels templated, engagement-farming posts ("slop") in your LinkedIn and X feeds. Each post gets a small badge; click it to see why.
 
 </details>
 

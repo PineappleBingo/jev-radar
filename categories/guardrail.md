@@ -1,192 +1,207 @@
-# 🛡️ 가드레일·모더레이션 (183)
+# 🛡️ 가드레일·모더레이션 (198)
 
 [← README](../README.md)
 
 | 리포 | ⭐ | 🍴 | 한눈에 보기 | 태그 | 최근 푸시 |
 |---|---:|---:|---|---|---|
-| [y0usaf/pi-jev](https://github.com/y0usaf/pi-jev) | 149 | 11 | **무엇** Pi 코딩 에이전트의 도구 호출과 출력 결과를 TypeSafe Jev API로 검사하고 제어하는 확장 도구다.<br>**판단** 명령의 파괴성·데이터 유출·범위 초과·피해 수준과 출력의 비밀정보 누출·실패 유형을 noul, score, choice로 판단한다.<br>**포인트** 도구 실행 전 게이트 판단을 한 번의 요청(약 300ms)으로 처리하며, 오류 발생 시 실행을 차단하지 않는 fail-open 방식으로 동작한다. | ✅ 🆕 `choice` `noul` `score` | 2026-09-25 |
-| [realZachi/typesafe-adblock](https://github.com/realZachi/typesafe-adblock) | 85 | 7 | **무엇** 웹페이지 내 DOM 요소를 탐색해 TypeSafe Jev 모델의 판단에 따라 광고 요소를 실시간으로 제거하는 크롬 확장 프로그램이다.<br>**판단** 추출된 각 DOM 후보 요소의 태그, 클래스, 텍스트 요약 등을 바탕으로 유료 광고(paid advertisement)인지 여부를 noul 확률 질문으로 판단시킨다.<br>**포인트** 광고 후보 선별과 배치는 순수 코드로 처리하고 시맨틱 판별만 Jev에 일괄 요청하며, 설정된 임계 확률을 넘기면 애니메이션과 함께 요소를 제거한다. | ✅ 🆕 `noul` | 2026-09-17 |
-| [MillionSend/millionsend](https://github.com/MillionSend/millionsend) | 170 | 12 | **무엇** AWS SES를 기반으로 자체 호스팅하거나 클라우드로 사용할 수 있는 Resend 호환 오픈소스 이메일 발송 플랫폼이다.<br>**판단** 발송된 이메일 샘플에 대해 유해 콘텐츠 및 어뷰징 여부를 판단하도록 백그라운드에서 점수 채점(score)을 요청한다.<br>**포인트** 발송 지연을 막기 위해 SES 수락 후 백그라운드에서 비동기로 샘플을 채점하며, 셀프 호스트 환경에서는 기본 비활성화되어 있다. | 🆕 | 2026-09-26 |
-| [leepokai/jev-guard](https://github.com/leepokai/jev-guard) | 43 | 5 | **무엇** 다양한 코딩 에이전트의 도구 호출과 결과를 검사해 위험한 명령과 프롬프트 인젝션을 차단하는 보안 훅 라이브러리다.<br>**판단** 도구 호출의 위험도(risk), 사용자 요청 부합 여부(user_requested), 신뢰할 수 없는 출처 기반 여부(from_untrusted)를 질의해 판단한다.<br>**포인트** 외부 의존성 없이 Claude Code, Cursor 등 여러 에이전트에 thin 어댑터로 연결되며 도구 실행 전후 및 인스트럭션 파일을 검사한다. | ✅ 🆕 | 2026-09-24 |
-| [qkal/Canny](https://github.com/qkal/Canny) | 99 | 11 | **무엇** Claude Code와 Codex CLI에서 코딩 에이전트가 검증 절차 없이 작업을 마쳤다고 주장하지 못하게 감시하는 훅 도구이다.<br>**판단** 에이전트 메시지가 작업 완료를 주장하는지, 변경된 diff가 특정 규칙을 위반했는지 여부를 예/아니오 확률로 판단시킨다.<br>**포인트** 런타임 의존성이 없고, 원장의 사실 기록만 작업을 차단할 수 있으며 Jev의 판단 결과는 차단 없이 에이전트의 컨텍스트 조언으로만 사용된다. | 🆕 | 2026-09-22 |
-| [keltokhy/jgrep](https://github.com/keltokhy/jgrep) | 127 | 3 | 요약 대기 · grep, but the pattern is a description. Filters lines by meaning with TypeSafe's Jev decision model: ~200 ms and a thousandth of a cent per line. | 🆕 | 2026-09-25 |
-| [brainstormity/Jev-Moderation-Bot](https://github.com/brainstormity/Jev-Moderation-Bot) | 48 | 6 | **무엇** Discord 서버 관리자가 스팸·피싱 링크를 차단하고 멤버 성향을 분석하기 위해 사용하는 Python 기반 모더레이션 봇이다.<br>**판단** 실시간 메시지의 스팸 및 피싱 링크 여부와 유저 최근 메시지의 사기 위험·스팸·초보성·유해성·도움 수준 점수를 판별한다.<br>**포인트** 오탐된 메시지를 사면하면 안전 선례로 저장해 추후 검사에 반영하는 동적 학습 및 SQLite 기반 캐싱을 지원한다. | 🆕 | 2026-09-22 |
-| [Nyarlathoteppppp/pi-heed](https://github.com/Nyarlathoteppppp/pi-heed) | 9 | 1 | **무엇** pi 코딩 에이전트의 부작용 도구 호출이 사용자의 자연어 제약 조건에 어긋나는지 실행 전 점검·차단하는 런타임 제약 가드레일이다.<br>**판단** 사용자 발화마다 기존 정책의 변경 상태(KEEP, LIFT, NARROW 등)와 작업 허가 신호 여부를 Jev에 분류시킨다.<br>**포인트** Jev는 좁은 범위의 유한 선택지 분류만 수행하며, 규칙 상태를 세션 단위 구조적 op로 영속화해 컴팩션 후 재질의 없이 복원한다. | ✅ 🆕 `choice` `noul` | 2026-09-19 |
-| [aurorainfra/grev](https://github.com/aurorainfra/grev) | 39 | 1 | 요약 대기 · Thinking coreutils | 🆕 | 2026-09-24 |
-| [kiwi0719/jev-edge](https://github.com/kiwi0719/jev-edge) | 37 | 1 | 요약 대기 · Typed-judgment admission control at the traffic edge: three-layer prompt-injection and abuse filter for nginx/OpenResty, powered by TypeSafe Jev. Fail-open, cached, hot-reloadable. | 🆕 | 2026-09-27 |
-| [zhangcy122/OpenJev](https://github.com/zhangcy122/OpenJev) | 33 | 4 | 요약 대기 · Self-evolving cognitive decision engine &amp; TypeSafe Jev alternative. Deliberative decision flywheel ('explore first, crystallize later' System 2→1) with 100% option-order invariance. Typed probabilistic API (Choice, Noul, Score) for Open LLMs, Laya (ModernBERT), &amp; commercial Jev with calibrated logprobs and adaptive safety guards. | 🆕 | 2026-09-26 |
-| [mizchi/jev-test-filter](https://github.com/mizchi/jev-test-filter) | 29 | 1 | 요약 대기 · Score every test against a git diff with Jev, and emit the filter arguments vitest, node:test, Playwright, cargo test and go test already understand | 🆕 | 2026-09-24 |
-| [shiftynick/jev-axi](https://github.com/shiftynick/jev-axi) | 24 | 4 | 요약 대기 · Agent-ergonomic CLI for TypeSafe's Jev: fast calibrated judgments (pick, rate, check, rank, triage, guard) from the shell | 🆕 | 2026-09-24 |
-| [adamnroman/slop-filter](https://github.com/adamnroman/slop-filter) | 21 | 1 | 요약 대기 · Chrome extension that hides AI-generated posts and comments on X, LinkedIn, and Reddit. Scored by TypeSafe Jev. | 🆕 | 2026-09-27 |
-| [AskTheWay/dsh-jev-interceptor](https://github.com/AskTheWay/dsh-jev-interceptor) | 21 | 1 | 요약 대기 · ⚡ Millisecond System-1 judgement for every tool call in DeepSeek Harness — Jev-powered risk classification &amp; evidence-gated auto-approval. Fail-closed by construction. dsh 生态第一个 System-1 决策插件 | 🆕 | 2026-09-25 |
-| [ilyamk/jev-gmail-ai-spam-filter-and-labeling](https://github.com/ilyamk/jev-gmail-ai-spam-filter-and-labeling) | 21 | 4 | 요약 대기 · Self-hosted AI email classifier for Gmail powered by Jev. Create custom labels, organize your inbox, and filter spam with confidence and cost controls. | 🆕 | 2026-09-19 |
-| [TypeSafeAI/jev-harness](https://github.com/TypeSafeAI/jev-harness) | 21 | 5 | 요약 대기 · A custom coding harness for TypeSafe AI's Jev: an LLM proposes, Jev answers narrow questions, code decides, every step leaves a receipt. | 🆕 | 2026-09-26 |
-| [pengchujin/ad-radar](https://github.com/pengchujin/ad-radar) | 20 | 4 | 요약 대기 · 开源浏览器插件：在小红书、微博、X、知乎上按关键词和博主折叠内容；用你自己的 Jev API key 识别广告、AI、军事、政治等话题。 | 🆕 | 2026-09-22 |
-| [0sparsh2/GAX](https://github.com/0sparsh2/GAX) | 8 | 0 | **무엇** AI 에이전트의 셸 명령과 MCP 호출을 사전에 등록된 레지스트리와 권한 토큰 기반으로 제어·감사하는 거버넌스 실행 레이어다.<br>**판단** README에 판단 지점 설명 없음<br>**포인트** 임의 셸 실행을 차단하고 사전 등록된 명령만 허용하며 실행 전 capability 검증과 위험 수준 상한(danger ceiling)을 강제한다. | 🆕 | 2026-09-28 |
-| [ethanplusai/jev-chat-for-twitch](https://github.com/ethanplusai/jev-chat-for-twitch) | 13 | 0 | 요약 대기 · Filter any live Twitch chat with Jev: a bring-your-own-key Chrome extension | 🆕 | 2026-09-19 |
-| [behavioral-sh/behavioral](https://github.com/behavioral-sh/behavioral) | 11 | 1 | 요약 대기 · Behavioral agent harness — a neuro-symbolic, self-improving agent built on the behavioral-programming runtime. | 🆕 | 2026-09-26 |
-| [harshithsunku/learn-jev-end-to-end](https://github.com/harshithsunku/learn-jev-end-to-end) | 11 | 3 | 요약 대기 · Learn Jev end to end: a free hands-on course. Build 13 AI agent use cases with a fast brain (Jev) and a slow brain (LLM). One OpenRouter key. | 🆕 | 2026-09-23 |
-| [andrelandgraf/safer-with-jev](https://github.com/andrelandgraf/safer-with-jev) | 6 | 0 | **무엇** 요청 본문을 검사하여 프롬프트 인젝션이나 안전하지 않은 응답을 차단하고 통과 시 업스트림으로 전달하는 Neon Function 기반 프록시다.<br>**판단** 요청 본문이 프롬프트 인젝션인지, 응답 텍스트가 안전하지 않은지, 또는 전달받은 텍스트가 양호한지 등을 판단한다.<br>**포인트** 판단 결과에 따라 review 또는 block 시 차단(403)하고 pass 시 지정한 target URL로 요청 바이트를 그대로 포워딩한다. | 🆕 | 2026-09-18 |
-| [amithgc/local-jev](https://github.com/amithgc/local-jev) | 10 | 1 | 요약 대기 ·  A local, offline System One server compatible with TypeSafe's Jev API. It answers typed yes/no, category and score questions with small open models. | 🆕 | 2026-09-21 |
-| [dark-hxx/jev-safety-gateway](https://github.com/dark-hxx/jev-safety-gateway) | 10 | 1 | 요약 대기 · 位于 nginx 与大模型后端之间的前置过滤反向代理：逐请求提取用户输入交给 JEV 判定，有害拦截、正常透明放行 | 🆕 | 2026-09-24 |
-| [jesset/pi-verdict](https://github.com/jesset/pi-verdict) | 10 | 4 | 요약 대기 · A minimal  permission gate for Pi in the style of Claude Code's auto mode | 🆕 | 2026-09-27 |
-| [AkashPriyadarshii/jev-git](https://github.com/AkashPriyadarshii/jev-git) | 5 | 0 | **무엇** 개발자가 커밋 및 푸시 시점에 스테이징된 git diff의 보안 문제를 빠르게 검사할 수 있도록 돕는 Rust 기반 Git 확장 도구다.<br>**판단** Jev의 noul 결정을 활용해 스테이징된 diff에 노출된 시크릿, 프롬프트 주입 공격, 파괴적 명령어가 포함되어 있는지 여부를 판단한다.<br>**포인트** 정규식 검사의 한계와 LLM의 지연 시간 문제를 피하기 위해 단일 Rust 바이너리와 Jev API를 통해 100ms 미만 지연 시간을 목표로 구현했다. | 🆕 | 2026-09-25 |
-| [CodeAlive-AI/mastra-jev-moderation](https://github.com/CodeAlive-AI/mastra-jev-moderation) | 5 | 2 | **무엇** Mastra 에이전트의 사용자 입력을 TypeSafe Jev API로 검사해 유해 메시지를 차단하는 단일 파일 기반 프로세서다.<br>**판단** 마지막 입력 메시지가 정책상 차단 대상인지 여부(noul 확률)와 위반 카테고리(choice)를 한 번의 요청으로 판단시킨다.<br>**포인트** 텍스트 파싱 없이 확률값으로 직접 차단 여부를 결정하며, 타임아웃 및 오류 시 페일오픈과 60초 서킷 브레이커를 지원한다. | 🆕 | 2026-09-18 |
-| [qs-lll/twitter-jev-guard](https://github.com/qs-lll/twitter-jev-guard) | 9 | 2 | 요약 대기 · 使用 TypeSafe Jev 在 X/Twitter 时间线上识别低质量、垃圾和广告帖子，并在文字区域显示醒目的半透明水印。 | 🆕 | 2026-09-21 |
-| [ranjan2829/AskJev](https://github.com/ranjan2829/AskJev) | 9 | 3 | 요약 대기 · AskJev — Jev autopilot for any website + guard on irreversible clicks (TypeSafe System One, not Claude) | 🆕 | 2026-09-18 |
-| [AbdelStark/heist-one](https://github.com/AbdelStark/heist-one) | 8 | 1 | 요약 대기 · Observable browser stealth game: Jev makes typed guard judgments while deterministic code owns the world. | 🆕 | 2026-09-17 |
-| [jackie-cqz/dsh-jev-plugin](https://github.com/jackie-cqz/dsh-jev-plugin) | 8 | 1 | 요약 대기 · DeepSeek Harness plugin for TypeSafe Jev: typed decisions, configurable guardrails, and Web UI result cards. | 🆕 | 2026-09-26 |
-| [Nyarlathoteppppp/pi-jev-context](https://github.com/Nyarlathoteppppp/pi-jev-context) | 8 | 0 | 요약 대기 · Model performance first. Token savings second. A Pi extension with freshness-aware read dedupe, Jev log filtering, and searchable verbatim recall. Keeps existing message history intact. | 🆕 | 2026-09-22 |
-| [ItisShikhar/gg-friggin-ez](https://github.com/ItisShikhar/gg-friggin-ez) | 7 | 0 | 요약 대기 · Fast, drop-in multilingual profanity and toxicity screener for Node.js, powered by System 1 models like TypeSafe AI Jev and Laya. Catches leetspeak, character spacing, and romanized profanity across languages including Kannada, Telugu, Tamil, Hindi, and Bengali. ~50-500ms latency. | 🆕 | 2026-09-22 |
-| [ufec/jev-block-android-ad](https://github.com/ufec/jev-block-android-ad) | 7 | 0 | 요약 대기 · JevNoiseGate filters unwanted notifications and SMS on Android. Rather than   matching keywords, an LLM decides what's noise — and only what it explicitly   flags is blocked. Verification codes are matched on-device and never uploaded;   anything uncertain passes through. | 🆕 | 2026-09-19 |
-| [EugeneBoondock/jevsql](https://github.com/EugeneBoondock/jevsql) | 6 | 1 | 요약 대기 · SQL with natural-language predicates, powered by TypeSafe's Jev. Filter, rank, classify and score rows by meaning — batched, cached and cost-guarded. | 🆕 | 2026-09-19 |
-| [bitnovus/jev-spam-eval](https://github.com/bitnovus/jev-spam-eval) | 3 | 0 | **무엇** TypeSafe Jev의 noul 질문을 활용해 이메일 스팸 및 피싱 여부를 제로샷으로 탐지하고 TF-IDF 베이스라인과 비교 평가하는 프로젝트다.<br>**판단** 작성된 카테고리 정의와 이메일 맥락을 기반으로 해당 메일이 스팸이나 피싱인지 여부를 noul(예/아니오 확률)로 묻는다.<br>**포인트** 사전 파인튜닝이나 라벨 예시 없이 카테고리 정의만 사용해 5,733건의 테스트셋에서 98.64% 정확도를 기록하며 TF-IDF와 비교 검증했다. | 🆕 | 2026-09-18 |
-| [Arpit-Khandelwal/jev-linkedin-slop-filter](https://github.com/Arpit-Khandelwal/jev-linkedin-slop-filter) | 5 | 1 | 요약 대기 · Slams a BAIT, CORP or BRAG stamp onto LinkedIn engagement-bait, judged live by Jev (TypeSafe System One). | 🆕 | 2026-09-22 |
-| [h0j5bz0adh0-stack/jev-pilot](https://github.com/h0j5bz0adh0-stack/jev-pilot) | 5 | 0 | 요약 대기 · Fast System-1 Decision, Arbitration &amp; Safety Engine for Autonomous AI Agents (Powered by TypeSafe Jev) | 🆕 | 2026-09-23 |
-| [maayanlevy/mysql-ailike](https://github.com/maayanlevy/mysql-ailike) | 5 | 0 | 요약 대기 · Natural-language row filtering for MySQL, powered by TypeSafe Jev. | 🆕 | 2026-09-20 |
-| [Reindeer-AI/pi-jev-guard](https://github.com/Reindeer-AI/pi-jev-guard) | 5 | 0 | 요약 대기 · Check Pi code edits against repository Markdown rules with TypeSafe Jev | 🆕 | 2026-09-24 |
-| [smthdagg/XShield](https://github.com/smthdagg/XShield) | 5 | 0 | 요약 대기 · XShield — Fight Spam, Scams, Bots, and Adult-Content Accounts on X.  Automatically detect, collect, review, and safely block malicious accounts with a powerful rule engine and human-like execution strategy. | 🆕 | 2026-09-25 |
-| [transitive-bullshit/doom-or-bloom](https://github.com/transitive-bullshit/doom-or-bloom) | 5 | 0 | 요약 대기 · Doom or Bloom: map your AI worldview and compare it to others. | 🆕 | 2026-09-27 |
-| [VeridicalTech/Edward](https://github.com/VeridicalTech/Edward) | 5 | 2 | 요약 대기 · The supervisor for coding agents that run when nobody's watching — deterministic guardrails + local semantic scorer + resumable interventions, every decision signed. | 🆕 | 2026-09-27 |
-| [TannerMidd/SpecPi](https://github.com/TannerMidd/SpecPi) | 9 | 0 | **무엇** Pi 코딩 에이전트의 작업 범위와 도구 권한, 명령 실행을 안전하게 제어하는 하네스 설정이다.<br>**판단** 에이전트가 실행하려는 셸 명령어가 시스템에 위험한지 또는 안전한지를 판단시킨다.<br>**포인트** 명령 실행 전 로컬 분류기나 이전 호스팅 모델(Jev)로 셸 위험도를 채점해 위험 명령을 차단하거나 확인을 거친다. | 🆕 | 2026-09-28 |
-| [chengyongru/notiq](https://github.com/chengyongru/notiq) | 4 | 0 | 요약 대기 · Native Android notification filtering with natural-language rules, powered by Jev or self-hosted FastJev. | 🆕 | 2026-09-23 |
-| [fazlerocks/jev-adblock](https://github.com/fazlerocks/jev-adblock) | 4 | 0 | 요약 대기 · Open-source AI ad blocker for Chrome. No filter lists: TypeSafe AI's Jev model decides what is an ad. Bring your own key. | 🆕 | 2026-09-22 |
-| [godspede/construct-auto-classifier](https://github.com/godspede/construct-auto-classifier) | 4 | 0 | 요약 대기 · Effect-based safety gate for AI coding agents' shell commands (OpenCode, Antigravity): fast structural rules, then TypeSafe's Jev or a chat model judges what a command does. Certified with Jev at zero dangerous commands allowed. | 🆕 | 2026-09-25 |
-| [jiangkoumo/ego-decision-layer](https://github.com/jiangkoumo/ego-decision-layer) | 4 | 0 | 요약 대기 · Pluggable decision layer for the ego lite browser: one System One (Jev) call per step replaces the per-step LLM turn, and the backend can be swapped for a local OpenAI-compatible model. Fail-closed execution guards. The measured one — raw bench data, 16 suites, changelog with corrections. | 🆕 | 2026-09-27 |
-| [jkrup/jeveryword](https://github.com/jkrup/jeveryword) | 4 | 0 | 요약 대기 · Text extraction with Jev: field extraction, PII detection and exact quotes, built on TypeSafe's Jev. | 🆕 | 2026-09-20 |
-| [MithrilMan/your-signal](https://github.com/MithrilMan/your-signal) | 4 | 1 | 요약 대기 · Open-source BYOK Chrome extension for personal, reversible X timeline filters. | 🆕 | 2026-09-18 |
-| [noelzappy/tripwire](https://github.com/noelzappy/tripwire) | 4 | 0 | 요약 대기 · Judge every LLM response before the user sees it. AI SDK middleware and OpenAI-compatible proxy. | 🆕 | 2026-09-18 |
-| [ziyacivan/jev-mail-filter](https://github.com/ziyacivan/jev-mail-filter) | 4 | 0 | 요약 대기 · Gmail filters written in plain English, judged by Jev (TypeSafe) | 🆕 | 2026-09-27 |
-| [0xArx/jevegis](https://github.com/0xArx/jevegis) | 3 | 0 | 요약 대기 · Guardrails for LLM apps in one API call. Prompt injection, jailbreaks, leaks, unsafe content. Built on TypeSafe Jev. MIT. | 🆕 | 2026-09-18 |
-| [24601/rh-guard](https://github.com/24601/rh-guard) | 3 | 0 | 요약 대기 · Reward-hack radar for coding agents: structural denies + TypeSafe Jev System One sidecar for Claude Code &amp; Cursor hooks | 🆕 | 2026-09-25 |
-| [ClemensSchartmueller/jev-guard](https://github.com/ClemensSchartmueller/jev-guard) | 3 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-27 |
-| [davertor/jev-slop-guard](https://github.com/davertor/jev-slop-guard) | 3 | 0 | 요약 대기 · Jev Slop Guard — a Chrome extension that scores and stamps AI slop on your X and LinkedIn feeds as you scroll | 🆕 | 2026-09-22 |
-| [lgy1027/jevshield](https://github.com/lgy1027/jevshield) | 3 | 0 | 요약 대기 · Sub-100ms security gate for AI agent tool calls, powered by TypeSafe's Jev (System-1) decision model. Single-request Choice/Noul/Score evaluation, dual-factor blocking matrix, calibrated-confidence routing, fail-closed parsing, zero-config local fallback. LangChain-ready. | 🆕 | 2026-09-24 |
-| [littlewindy123/jev-bili-filter](https://github.com/littlewindy123/jev-bili-filter) | 3 | 0 | 요약 대기 · 弹幕照开，噪音别来。用 JEV 为 B 站评论和弹幕降噪：剧透、反串黑、广告、基本盘一键过滤，想屏蔽什么，再写一句话。Chrome 插件，原页生效，MIT 开源。 | 🆕 | 2026-09-21 |
-| [opaielsheikh/typesafe-migration-guard](https://github.com/opaielsheikh/typesafe-migration-guard) | 3 | 0 | 요약 대기 · Automated database migration safety reviewer powered by TypeSafe AI (Jev System One model) | 🆕 | 2026-09-17 |
-| [rorshopping/jev-browser-local](https://github.com/rorshopping/jev-browser-local) | 3 | 1 | 요약 대기 · Run jev-browser on a fully local JEV-style decision engine (no cloud API). Warm-browser fork, VRAM guard, measured benchmarks, run traces. | 🆕 | 2026-09-19 |
-| [SamanPandey-in/jevrail](https://github.com/SamanPandey-in/jevrail) | 3 | 0 | 요약 대기 · Jev powered pre-execution guard for terminal coding agents | 🆕 | 2026-09-25 |
-| [shikaizhong-design/ego-jev-ultrafast](https://github.com/shikaizhong-design/ego-jev-ultrafast) | 3 | 0 | 요약 대기 · Jev drives your Ego Lite browser: one typed-choice request per step. Single-file, zero-dependency port of browser-use/jev-ultrafast with multi-model benchmarks and extra guardrails. Unofficial. | 🆕 | 2026-09-22 |
-| [0xwhrari/grok-jev-guard](https://github.com/0xwhrari/grok-jev-guard) | 2 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-23 |
-| [abhixhek/feedwall](https://github.com/abhixhek/feedwall) | 2 | 0 | 요약 대기 · Your feed, your rules, in plain English. A browser extension that filters X, YouTube, Reddit, LinkedIn and Hacker News with topics you write yourself. Bring your own Jev key. | 🆕 | 2026-09-19 |
-| [CarlosCaoLopez/HACKSPAIN-2026](https://github.com/CarlosCaoLopez/HACKSPAIN-2026) | 2 | 1 | 요약 대기 · Taiafox filters a hundred incoming messages down to the three that matter, coordinates responders by voice, and re-plans in under a second when the fire turns. | 🆕 | 2026-09-22 |
-| [CogFlux/opencode-jev-guard](https://github.com/CogFlux/opencode-jev-guard) | 2 | 0 | 요약 대기 · OpenCode 2 plugin that sends every shell command (local or via FarHand) to TypeSafe's Jev and asks you first when it leaves files outside the project, installs software globally, changes global settings, is harmful or exposes private data | 🆕 | 2026-09-25 |
-| [coo-quack/jev-pii-checker](https://github.com/coo-quack/jev-pii-checker) | 2 | 1 | 요약 대기 · CLI that finds PII in text with TypeSafe Jev: presence, sensitivity, and located spans | 🆕 | 2026-09-26 |
-| [dr-dimitru/claude-jev-plugin](https://github.com/dr-dimitru/claude-jev-plugin) | 2 | 0 | 요약 대기 · TypeSafe Jev semantic guardrails for Claude Code | 🆕 | 2026-09-22 |
-| [ibrahemid/jevprune](https://github.com/ibrahemid/jevprune) | 2 | 0 | 요약 대기 · Filter command output for coding agents using a task description. | 🆕 | 2026-09-20 |
-| [Karthick-Ramachandran/jevfilter](https://github.com/Karthick-Ramachandran/jevfilter) | 2 | 0 | 요약 대기 · Turn a user's search sentence into filters your API already accepts, powered by Jev | 🆕 | 2026-09-24 |
-| [kongyo2/similarity-ts-jev](https://github.com/kongyo2/similarity-ts-jev) | 2 | 1 | 요약 대기 · similarity-ts and fallow duplicate detection for TypeScript, filtered by TypeSafe's Jev down to the pairs worth refactoring | 🆕 | 2026-09-23 |
-| [NorbertBodziony/guard-jev](https://github.com/NorbertBodziony/guard-jev) | 2 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-17 |
-| [satyawikananda/gits](https://github.com/satyawikananda/gits) | 2 | 1 | 요약 대기 · Gits is a browser extension powered by Jev to search the leads data on the Google Maps | 🆕 | 2026-09-21 |
-| [tinystruct/tinystruct-typesafe-sdk](https://github.com/tinystruct/tinystruct-typesafe-sdk) | 2 | 0 | 요약 대기 · A tinystruct-based TypeSafe SDK with JEV model. | 🆕 | 2026-09-24 |
-| [Tom-R-Main/Footwork](https://github.com/Tom-R-Main/Footwork) | 2 | 1 | 요약 대기 · A verified browser agent: a cheap Jev guard (evidence-checked completions, a destructive gate) in front of any LLM browser driver, with Jev taking the mechanical steps in dual mode. Built on browser-use; every number pre-registered and measured. | 🆕 | 2026-09-26 |
-| [0x963D/last-exit](https://github.com/0x963D/last-exit) | 1 | 0 | 요약 대기 · A cyberpunk border encounter powered by TypeSafe Jev. Bluff the guard. Inspect the receipts. | 🆕 | 2026-09-17 |
-| [48Nauts-Operator/skill-dash](https://github.com/48Nauts-Operator/skill-dash) | 1 | 0 | 요약 대기 · Skill Dash uses Jev to judge Claude Code and Codex skills and plugins: usefulness, redundancy, clarity, duplicates, safety. Local dashboard plus the corpus pipeline behind whichskills.dev. MIT. | 🆕 | 2026-09-20 |
-| [4rays/profanity-checker](https://github.com/4rays/profanity-checker) | 1 | 0 | 요약 대기 · Cloudflare Worker to check for profanity using TypeSafe Jev | 🆕 | 2026-09-20 |
-| [abhaybhargav/juardrails](https://github.com/abhaybhargav/juardrails) | 1 | 0 | 요약 대기 · Go guardrail management for Jev with YAML policies, namespaces, access control, audit logging, and a REST API | 🆕 | 2026-09-27 |
-| [allebee/jevgrep](https://github.com/allebee/jevgrep) | 1 | 0 | 요약 대기 · CLI that filters logs and text by meaning using plain-English yes/no questions and Jev probabilities. | 🆕 | 2026-09-21 |
-| [bojansandhaus/jev-home-assistant-sentinel](https://github.com/bojansandhaus/jev-home-assistant-sentinel) | 1 | 0 | 요약 대기 · A safety boundary for AI-assisted Home Assistant decisions, with explicit policy checks and deterministic state verification. | 🆕 | 2026-09-26 |
-| [CeamKrier/semantic-firewall](https://github.com/CeamKrier/semantic-firewall) | 1 | 0 | 요약 대기 · Semantic firewall for LLM agents: tool calls gated by TypeSafe Jev (System One decision model via OpenRouter) + deterministic policy. PoC with corpus, stability eval, baseline, results. | 🆕 | 2026-09-18 |
-| [copyleftdev/jev-labs](https://github.com/copyleftdev/jev-labs) | 1 | 0 | 요약 대기 · Never confidently wrong: a TLA+-verified consensus kernel around TypeSafe's Jev, run through 1,680 chaos-tested pharmacy decisions with zero wrong verdicts. Film, code, and every captured call. | 🆕 | 2026-09-19 |
-| [DolphinMiner/jev-rss](https://github.com/DolphinMiner/jev-rss) | 1 | 0 | 요약 대기 · A local-first RSS reader with Jev-powered semantic screening. Follow what matters, inspect every judgment, and keep control of your reading. English / 简体中文. | 🆕 | 2026-09-21 |
-| [edwardyen724-g/jev-compactor](https://github.com/edwardyen724-g/jev-compactor) | 1 | 0 | 요약 대기 · Context compaction and safety gating for AI agents via TypeSafe Jev: keeps messages verbatim, no summarization. OpenAI, Anthropic, LangChain, CLI, MCP. | 🆕 | 2026-09-19 |
-| [FrancyJGLisboa/decision-system-forge](https://github.com/FrancyJGLisboa/decision-system-forge) | 1 | 1 | 요약 대기 · Compile documents, code, SOPs, and resolved cases into evidence-backed JEV judgments, legal actions, guarded adapters, and measured decision systems. | 🆕 | 2026-09-25 |
-| [h1code2/jev-x-blocker](https://github.com/h1code2/jev-x-blocker) | 1 | 1 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-20 |
-| [JGalego/Jevs-Garage](https://github.com/JGalego/Jevs-Garage) | 1 | 1 | 요약 대기 · A garage full of tiny experiments for building critical systems with System One &amp; Jev 🔧🧠⚡ | 🆕 | 2026-09-19 |
-| [JH3lou/GridCue](https://github.com/JH3lou/GridCue) | 1 | 0 | 요약 대기 · Ask a dense data grid in plain language; get a previewed, undoable view change. Headless TypeScript, React, TanStack Table, shadcn. MIT. | 🆕 | 2026-09-25 |
-| [jiawei686/jev-screen-mcp](https://github.com/jiawei686/jev-screen-mcp) | 1 | 0 | 요약 대기 · Single-purpose MCP server (one tool, one job): a content-moderation gate powered by TypeSafe Jev (System One decision model). | 🆕 | 2026-09-21 |
-| [kiarina/labs](https://github.com/kiarina/labs) | 1 | 0 | 요약 대기 · Small, independent projects for experiments, research, and investigations. | 🆕 | 2026-09-28 |
-| [kurihada/pi-jev-permit](https://github.com/kurihada/pi-jev-permit) | 1 | 0 | 요약 대기 · A Jev (TypeSafe System One) permission gate for the Pi coding agent: judges every bash / write / edit call before it runs | 🆕 | 2026-09-22 |
-| [lambertsj/beatjev](https://github.com/lambertsj/beatjev) | 1 | 0 | 요약 대기 · try to beat jev | 🆕 | 2026-09-17 |
-| [makefinks/jev-feed-filter](https://github.com/makefinks/jev-feed-filter) | 1 | 0 | 요약 대기 · Smart, dynamic AI filtering for X and YouTube feeds using Jev | 🆕 | 2026-09-19 |
-| [naturalmoods/epeszuro](https://github.com/naturalmoods/epeszuro) | 1 | 0 | 요약 대기 · Chrome-bővítmény: elrejti a gyűlölködő YouTube-hozzászólásokat és élőchat-üzeneteket a TypeSafe Jev modelljével. MIT. | 🆕 | 2026-09-26 |
-| [neddes/sloppy-jevs-extension](https://github.com/neddes/sloppy-jevs-extension) | 1 | 0 | 요약 대기 · Open-source Chrome extension that filters AI-generated prose and ads with Jev | 🆕 | 2026-09-17 |
-| [ohernandezdev/jevmod](https://github.com/ohernandezdev/jevmod) | 1 | 1 | 요약 대기 · Moderation for communities and apps, powered by Jev (TypeSafe): probabilities per category, thresholds you own. Discord/Telegram/Reddit bots, CLI, Python, npm, HTTP API, MCP. | 🆕 | 2026-09-27 |
-| [pjrpjr/qingliu](https://github.com/pjrpjr/qingliu) | 1 | 1 | 요약 대기 · X 时间线清洁工 · FeedSieve(MIT) 衍生 · 带实测标定的 AI 判定层：误杀 0.7%，还能抓词库认不出的 47% | 🆕 | 2026-09-19 |
-| [rudra72r/jev-guard](https://github.com/rudra72r/jev-guard) | 1 | 0 | 요약 대기 · Fast, cheap guardrails for LLM apps, powered by TypeSafe's Jev model | 🆕 | 2026-09-26 |
-| [serejkaaa512/jev-content-guard-ext](https://github.com/serejkaaa512/jev-content-guard-ext) | 1 | 0 | 요약 대기 · Jev AI content guard Chrome extension | 🆕 | 2026-09-25 |
-| [ShupingR/scam-shield](https://github.com/ShupingR/scam-shield) | 1 | 0 | 요약 대기 · Scam text message filter powered by TypeSafe's Jev model | 🆕 | 2026-09-13 |
-| [sperictao/dsh-auto-review-jev](https://github.com/sperictao/dsh-auto-review-jev) | 1 | 0 | 요약 대기 · DeepSeek Harness plugin: per-tool-call Auto-permission review powered by TypeSafe Jev, with account usage and API-key management inline on its settings page | 🆕 | 2026-09-23 |
-| [taman-spirit/guardrail-chatbot-jev](https://github.com/taman-spirit/guardrail-chatbot-jev) | 1 | 0 | 요약 대기 · Vietnam - Content safety guardrails for AI chatbots: input, output and conversation checks over one policy file with Jev  | 🆕 | 2026-09-26 |
-| [tpaulshippy/shady-town](https://github.com/tpaulshippy/shady-town) | 1 | 0 | 요약 대기 · Shady Town: social-deduction party game for the living room TV, moderated by TypeSafe Jev | 🆕 | 2026-09-17 |
-| [vkpdeveloper/mrsecret](https://github.com/vkpdeveloper/mrsecret) | 1 | 0 | 요약 대기 · Mr. Secret — blurs secrets &amp; PII on any page using TypeSafe AI Jev | 🆕 | 2026-09-17 |
-| [who/jevq](https://github.com/who/jevq) | 1 | 0 | 요약 대기 · A Jev-based filter sidecar for jq | 🆕 | 2026-09-26 |
-| [yelkhanyergali-sys/jev-guard](https://github.com/yelkhanyergali-sys/jev-guard) | 1 | 0 | 요약 대기 · PI Mono extension for Jev (TypeSafe AI): in-flight terminal pruning (prompt-cache safe) and surgical diff guard | 🆕 | 2026-09-27 |
-| [yldst-dev/fuckyou-spam-rs](https://github.com/yldst-dev/fuckyou-spam-rs) | 1 | 0 | 요약 대기 · 짜증나는 스팸성 메시지를 LLM을 활용해 삭제하는 텔레그램 봇 코드의 rust 재작성판. | 🆕 | 2026-09-25 |
-| [BasmaAbouzied0/jev-secret-guard](https://github.com/BasmaAbouzied0/jev-secret-guard) | 0 | 0 | **무엇** Claude Code 환경에서 AI 에이전트가 코드나 명령어로 시크릿을 작성하거나 유출하지 않도록 차단하는 PreToolUse 훅이다.<br>**판단** 마스킹된 알 수 없는 고엔트로피 문자열과 주변 문맥을 보고 해당 값이 시크릿인지 여부를 확률 점수로 판단하도록 한다.<br>**포인트** 알려진 키는 로컬에서 차단하고 알 수 없는 값은 마스킹해 메타데이터만 Jev로 전송하며, 불확실하거나 장애 발생 시 사용자에게 확인을 요청한다. | 🆕 | 2026-09-27 |
-| [caiovicentino/jev-risk-check-provider](https://github.com/caiovicentino/jev-risk-check-provider) | 0 | 0 | **무엇** x402 결제 프로토콜에서 에이전트 결제 주체의 위협과 사기 위험도를 Jev로 채점하고 ES256 서명 증명을 발급하는 서비스다.<br>**판단** 위협 프로필·제재 대상·자금세탁 패턴·피싱 도메인 여부를 noul로, 위험 유형을 choice로, 신뢰도를 0~4 rubric score로 질의한다.<br>**포인트** 결제 상태에 대해 원자적 Jev 질문들을 병렬 평가한 후 확정적 코드로 합성 점수를 산출하며, ES256 JWS 증명으로 검증 신뢰를 보장한다. | 🆕 | 2026-09-27 |
-| [const-ahmed/unschema](https://github.com/const-ahmed/unschema) | 0 | 0 | **무엇** Zod 같은 스키마 라이브러리 대신 자연어 규칙과 Jev 모델을 사용해 입력값을 검증하는 프로필 폼 웹 애플리케이션이다.<br>**판단** 이메일 형식 유효성, 연령 범위(18~120세), 사람 이름 여부, 필드 간 일치 여부, 자기소개 글의 5단계 등급 평가를 판단시킨다.<br>**포인트** 입력 중 디바운스 검증과 제출 시 전체 필드 재검증을 수행하며, 사용자 입력을 지시어가 아닌 데이터로만 처리하도록 설계했다. | 🆕 | 2026-09-28 |
-| [cyu60/floodgate](https://github.com/cyu60/floodgate) | 0 | 0 | **무엇** 사용자가 설정한 현재 작업에 방해되는 웹페이지를 브라우저 탐색 시 차단하는 오픈 판별 모델 및 크롬 확장 프로그램<br>**판단** 접속하려는 웹페이지가 사용자가 지정한 작업에 방해되는지 여부를 noul(예/아니오 확률)로 판별<br>**포인트** River API로 오픈 모델을 학습시켜 Jev 호환 API를 구현하고, 사용자 브라우징 기록으로 개인화 모델을 미세조정함 | 🆕 | 2026-09-28 |
-| [prestonkakukdev/Jev-Defense](https://github.com/prestonkakukdev/Jev-Defense) | 0 | 0 | **무엇** AI 에이전트의 위험한 도구 호출 차단, 프롬프트 주입 감지 및 스킬 검사를 수행하는 TypeSafe Jev 기반 보안 가드레일 도구다.<br>**판단** 명령어가 데이터를 삭제하거나 덮어쓰는지, 외부로 데이터를 전송하는지, 사용자가 이를 명시적으로 요청했는지 등의 예/아니오 확률을 noul로 묻는다.<br>**포인트** Jev가 최종 결정을 내리지 않고 좁은 예/아니오 확률만 계산하며, 코드 하드룰과 rulebook.py의 명시적 조건문으로 allow·ask·block을 결정한다. | 🆕 | 2026-09-26 |
-| [SoniaMehta14/paved-gate](https://github.com/SoniaMehta14/paved-gate) | 0 | 0 | **무엇** 프론티어 LLM 호출 전에 인바운드 요청의 안전성, 라우팅, 필요성을 빠르게 검사하고 차단 또는 처리하는 수집 게이트웨어 오픈소스 라이브러리다.<br>**판단** Jev 모델을 통해 intent(choice, 3개 라우트), risk(score, 1-5점 루브릭), sensitive(noul, PII/PHI 여부) 세 가지를 판단시킨다.<br>**포인트** 1회 호출로 3가지 타입 질의를 약 100ms 내에 병렬 처리하며, 결정마다 정책 해시와 원시 점수를 포함한 구조화된 감사 로그(JSONL)를 남긴다. | 🆕 | 2026-09-27 |
-| [7starsseeker/dsh-jev-guard](https://github.com/7starsseeker/dsh-jev-guard) | 0 | 0 | 요약 대기 · DeepSeek Harness (DSH) 执行前安全阀门:bash/pwsh 真正执行前先经静态规则 + TypeSafe Jev 语义判定,破坏性操作按 允许/修正/拦截/上报人工 四态处置,含额度降级与审计日志。 | 🆕 | 2026-09-24 |
-| [Abhieu/excelpilot](https://github.com/Abhieu/excelpilot) | 0 | 0 | 요약 대기 · AI-assisted Excel operations engine: structured planning, JEV decision support, deterministic policy and execution, verification, and an audit trail. | 🆕 | 2026-09-26 |
-| [Abhishekvrshny/jevexec](https://github.com/Abhishekvrshny/jevexec) | 0 | 0 | 요약 대기 · Judicious Execution Verifier &amp; EXECutor for coding agents | 🆕 | 2026-09-27 |
-| [acarbone/PII-Detector](https://github.com/acarbone/PII-Detector) | 0 | 0 | 요약 대기 · PII Detector PoC using TypeSafe AI model Jev | 🆕 | 2026-09-26 |
-| [adrocic/Jad-Block](https://github.com/adrocic/Jad-Block) | 0 | 0 | 요약 대기 · Blocks the ads filter lists can't see. | 🆕 | 2026-09-26 |
-| [affirmitv/bitrate-advisor](https://github.com/affirmitv/bitrate-advisor) | 0 | 0 | 요약 대기 · Live-stream encoder settings from telemetry and history: TypeSafe's Jev decision model inside a deterministic safety envelope. Deno, Node, edge runtimes. | 🆕 | 2026-09-18 |
-| [atomicpages/sensored](https://github.com/atomicpages/sensored) | 0 | 0 | 요약 대기 · A free streaming-first open-source redaction toolit | 🆕 | 2026-09-27 |
-| [benikigai/JEVgotiator](https://github.com/benikigai/JEVgotiator) | 0 | 0 | 요약 대기 · AI Collective JEVathon Hackathon project | 🆕 | 2026-09-26 |
-| [codaaiteam/jev-computer-use](https://github.com/codaaiteam/jev-computer-use) | 0 | 0 | 요약 대기 · Gate any agent's actions (Claude Code / Codex / opencode / computer-use) with a typed, calibrated Jev safety decision. | 🆕 | 2026-09-26 |
-| [CodeWithEugene/WarriorHacks-2.0](https://github.com/CodeWithEugene/WarriorHacks-2.0) | 0 | 0 | 요약 대기 · Open to all skill levels! Build an app, website, game, or pitch an idea that fits the theme revealed two weeks before. We already have around $23K in sponsor prizes! | 🆕 | 2026-09-25 |
-| [conan-8/crazyAgent](https://github.com/conan-8/crazyAgent) | 0 | 1 | 요약 대기 · AI browser agent in a Chromium sidebar — full-CDP browser control, chat UI with markdown, safety gates, streaming agent loop | 🆕 | 2026-09-26 |
-| [Dalaoyuan2020/android-notification-filter-demo](https://github.com/Dalaoyuan2020/android-notification-filter-demo) | 0 | 0 | 요약 대기 · Android notification filtering demo: local keyword rules, notification listener, and real-device test APKs. | 🆕 | 2026-09-27 |
-| [deepansh-saxena/jev-voice-guardrail](https://github.com/deepansh-saxena/jev-voice-guardrail) | 0 | 0 | 요약 대기 · Relay Guardrail Lab: a local Azure Realtime voice guardrail prototype comparing TypeSafe Jev and structured-output LLM judges. | 🆕 | 2026-09-25 |
-| [eddiedunn/jev-feed-filter](https://github.com/eddiedunn/jev-feed-filter) | 0 | 0 | 요약 대기 · Filter news and YouTube feeds: drop paywalls, strong slant, Shorts and livestreams, using the Jev model | 🆕 | 2026-09-27 |
-| [Enhso/iw](https://github.com/Enhso/iw) | 0 | 0 | 요약 대기 · Intelligence Workbench: as-of evidence corpus and analytical briefings | 🆕 | 2026-09-25 |
-| [finrod21/jev-transaction-guard](https://github.com/finrod21/jev-transaction-guard) | 0 | 0 | 요약 대기 · Autonomous settlement circuit breaker protecting ledgers against CVE/RCE balance bypasses, nocturnal draining, and prompt injection attacks using TypeSafe Jev. | 🆕 | 2026-09-20 |
-| [fr3akX/systemone-mail-filter](https://github.com/fr3akX/systemone-mail-filter) | 0 | 0 | 요약 대기 · After-queue Postfix spam classification with TypeSafe Jev, subject tagging, and recipient-scoped filtering. | 🆕 | 2026-09-26 |
-| [gbesse/jev-bocc-impact](https://github.com/gbesse/jev-bocc-impact) | 0 | 0 | 요약 대기 · Map French collective-agreement changes to reviewable payroll and HR impacts, filtered by exact IDCC. | 🆕 | 2026-09-27 |
-| [gbesse/jev-rappel-pro](https://github.com/gbesse/jev-rappel-pro) | 0 | 0 | 요약 대기 · Screen product catalogs against French RappelConso recalls with exact GTIN matching and reviewable semantic fallbacks. | 🆕 | 2026-09-27 |
-| [gbesse/jev-workflow](https://github.com/gbesse/jev-workflow) | 0 | 0 | 요약 대기 · Decision contracts, adversarial testing, tracing, stability, and privacy controls for TypeSafe Jev | 🆕 | 2026-09-25 |
-| [gbesse/mariadb-jev](https://github.com/gbesse/mariadb-jev) | 0 | 0 | 요약 대기 · Semantic SQL predicates for MariaDB powered by TypeSafe Jev | 🆕 | 2026-09-26 |
-| [gbesse/pinot-jev](https://github.com/gbesse/pinot-jev) | 0 | 0 | 요약 대기 · Semantic SQL predicates for Apache Pinot powered by TypeSafe Jev | 🆕 | 2026-09-26 |
-| [gbesse/strapi-plugin-jev-review](https://github.com/gbesse/strapi-plugin-jev-review) | 0 | 0 | 요약 대기 · Strapi 5 editorial review and publish guard powered by TypeSafe Jev | 🆕 | 2026-09-26 |
-| [ghubnab99/jev-enterprise-decision-fabric](https://github.com/ghubnab99/jev-enterprise-decision-fabric) | 0 | 0 | 요약 대기 · Architecture for running many semantic decisions through one validated path, with a labelled 111-case benchmark comparing TypeSafe Jev against a Claude baseline, and a dashboard for inspecting any single decision. Experimental, not production. | 🆕 | 2026-09-20 |
-| [gomasy/mastodon-spam-checker](https://github.com/gomasy/mastodon-spam-checker) | 0 | 0 | 요약 대기 · LLM-powered Mastodon spam detector with Redis cursor tracking and interactive Slack moderation | 🆕 | 2026-09-27 |
-| [Goooooooooody/pith](https://github.com/Goooooooooody/pith) | 0 | 0 | 요약 대기 · Get to the pith of a failing CI run before it floods Claude's context. Claude Code plugin + zero-dependency CLI: CI-link summaries, ! pith for pastes, paste guard. | 🆕 | 2026-09-27 |
-| [hamzaahmadaslam/fedi-report-triage](https://github.com/hamzaahmadaslam/fedi-report-triage) | 0 | 0 | 요약 대기 · Reads the open reports on a Mastodon server with a moderator's own read-only token and prints them as a queue sorted by severity, using TypeSafe's Jev model. It never takes a moderation action. | 🆕 | 2026-09-26 |
-| [Helicon1968/tb-spam-guard](https://github.com/Helicon1968/tb-spam-guard) | 0 | 0 | 요약 대기 · Thunderbird add-on that flags phishing mail impersonating Japanese organizations. Optional TypeSafe Jev support. | 🆕 | 2026-09-26 |
-| [HiveScaleSystems/jev-guard](https://github.com/HiveScaleSystems/jev-guard) | 0 | 0 | 요약 대기 · AI chat moderation for Minecraft (Paper/Folia) and Hytale servers, powered by TypeSafe's Jev model. Works with the TypeSafe API or Cloudflare AI Gateway. | 🆕 | 2026-09-26 |
-| [JakeTheRabbit/HA-Crop-Steering-Jev](https://github.com/JakeTheRabbit/HA-Crop-Steering-Jev) | 0 | 0 | 요약 대기 · Crop Steering, Jev edition: the HA crop-steering engine with TypeSafe Jev judging every decision across P0-P3, probes, shots, salt and alerts, inside a deterministic safety envelope. | 🆕 | 2026-09-27 |
-| [javimp2003/laya-guardrails](https://github.com/javimp2003/laya-guardrails) | 0 | 0 | 요약 대기 · Guardrails de input, tool call y output para agentes de IA con un modelo System One tipo Jev (laya-pt-es-typed) autoalojado en una NVIDIA L4: 5 ms por check frente a 140 ms de un LLM-as-a-judge. | 🆕 | 2026-09-26 |
-| [jourdanlabs/assay-001](https://github.com/jourdanlabs/assay-001) | 0 | 0 | 요약 대기 · ASSAY-001: independent, pre-registered verification of TypeSafe Jev's calibration and type-safety claims. Split verdict, published in full. | 🆕 | 2026-09-21 |
-| [Luminousyyh/laya-decide](https://github.com/Luminousyyh/laya-decide) | 0 | 0 | 요약 대기 · A DeepSeek Harness skill that gates file and command actions on a local LAYA System-1 decision model. | 🆕 | 2026-09-25 |
-| [manhua-man/jev-pilot-reflex](https://github.com/manhua-man/jev-pilot-reflex) | 0 | 0 | 요약 대기 · Three.js Autonomous Driving Reflex &amp; AI Safety Brake Simulator powered by TypeSafe Jev System 1/2 Dual-Brain Architecture | 🆕 | 2026-09-24 |
-| [manish-9245/Wayfinder](https://github.com/manish-9245/Wayfinder) | 0 | 0 | 요약 대기 · Doubt, as a service: one HTTP call turns any text in 100+ languages into a calibrated act/review/escalate/block verdict. Stateless gateway over laya. | 🆕 | 2026-09-27 |
-| [mjyoke1111/jev-lab](https://github.com/mjyoke1111/jev-lab) | 0 | 0 | 요약 대기 · Real browser-agent safety evaluation: Jev versus a baseline on benign and injected tasks | 🆕 | 2026-09-26 |
-| [MorganOnCode/jev-gram](https://github.com/MorganOnCode/jev-gram) | 0 | 0 | 요약 대기 · N-gram NSFW detection + AI-prose heatmaps judged by TypeSafe Jev (JEVATHON 2026) | 🆕 | 2026-09-26 |
-| [mpeddicord/jev-tab-filter](https://github.com/mpeddicord/jev-tab-filter) | 0 | 0 | 요약 대기 · Chrome extension: group, hide, or close tabs by theme, scored by TypeSafe's Jev model | 🆕 | 2026-09-26 |
-| [MSR2012/ems](https://github.com/MSR2012/ems) | 0 | 0 | 요약 대기 · Email management system | 🆕 | 2026-09-27 |
-| [Muriel-Gasparini/ban4life](https://github.com/Muriel-Gasparini/ban4life) | 0 | 0 | 요약 대기 · Autonomous anti-spam and moderation engine for WhatsApp groups powered by TypeSafe Jev System-1 judgment primitives and zero-latency two-tier defense. | 🆕 | 2026-09-25 |
-| [naufalhilmiaji/sooth](https://github.com/naufalhilmiaji/sooth) | 0 | 0 | 요약 대기 · Claim-by-claim fact-checking for AI output, designed for CI. PASS/FAIL/REVIEW with calibrated probabilities and source evidence. | 🆕 | 2026-09-26 |
-| [neostryder/mercury](https://github.com/neostryder/mercury) | 0 | 0 | 요약 대기 · Semantic email filtering for rpgm.tools - Loremaster-reviewed spam/phishing triage via ForwardEmail webhooks | 🆕 | 2026-09-27 |
-| [neozhu/jev-audit](https://github.com/neozhu/jev-audit) | 0 | 0 | 요약 대기 · AI-powered contract comparison with Jev atomic evaluations—spot substantive changes, filter OCR noise, and generate reviewable audit reports. | 🆕 | 2026-09-25 |
-| [NISH1001/reflex-guard](https://github.com/NISH1001/reflex-guard) | 0 | 0 | 요약 대기 · Guardrails built with jev-like models (jev, laya, etc.) | 🆕 | 2026-09-26 |
-| [oppih/approval-judge-bridge](https://github.com/oppih/approval-judge-bridge) | 0 | 0 | 요약 대기 · OpenAI-compatible judge endpoint for agent approval gates: typed judgements (Jev), any OpenAI-compatible model, or a rule file — fail-closed, calibrated, with a replay battery | 🆕 | 2026-09-21 |
-| [P4A-Policies-for-Agents/LLM-Response-Leakage-Guard](https://github.com/P4A-Policies-for-Agents/LLM-Response-Leakage-Guard) | 0 | 0 | 요약 대기 · Outbound MuleSoft Omni/Flex Gateway policy: screens the upstream LLM response for leaked system prompts, secrets, canaries, internal hosts (deterministic) and semantic/paraphrased leaks (typed Jev judge); replaces a leaking reply with a safe refusal, benign replies pass byte-identical. No model in the data path. | 🆕 | 2026-09-25 |
-| [pratikpakhale/jevx](https://github.com/pratikpakhale/jevx) | 0 | 0 | 요약 대기 · Bring-your-own-key Chrome extension that filters your X timeline with TypeSafe Jev | 🆕 | 2026-09-25 |
-| [Ray0907/pi-loop](https://github.com/Ray0907/pi-loop) | 0 | 0 | 요약 대기 · Opus plans, pi implements in herdr panes, Jev-gated review loop with a tool-call safety layer | 🆕 | 2026-09-27 |
-| [ReneGucci94/jev-scout-filter](https://github.com/ReneGucci94/jev-scout-filter) | 0 | 0 | 요약 대기 · Filtro previo de candidatos de minidrama. Jev decide antes del scrape. | 🆕 | 2026-09-26 |
-| [rhithesh/youtube-focus](https://github.com/rhithesh/youtube-focus) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-27 |
-| [rohitdevade/topiclens-for-youtube](https://github.com/rohitdevade/topiclens-for-youtube) | 0 | 0 | 요약 대기 · A smart, continuous topic filter for YouTube powered by Jev. | 🆕 | 2026-09-27 |
-| [romannekrasovaillm/qwen-code-jev-gate](https://github.com/romannekrasovaillm/qwen-code-jev-gate) | 0 | 0 | 요약 대기 · Jev-class decision model as stage-0 gate in the Qwen Code permission flow: ADRs, architecture spine, delta spec, pilot results | 🆕 | 2026-09-27 |
-| [semanticpolicy/semantic-policy](https://github.com/semanticpolicy/semantic-policy) | 0 | 0 | 요약 대기 · SemanticPolicy adds testable semantic decisions to .NET applications: rules a decision model answers, measured on labelled examples, for business logic and AI agents, with no lock-in to one provider. | 🆕 | 2026-09-27 |
-| [shibammitra24/jev-guard](https://github.com/shibammitra24/jev-guard) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-26 |
-| [Swanand58/session-guard](https://github.com/Swanand58/session-guard) | 0 | 0 | 요약 대기 · Warn before Claude Code sessions get expensive; hand over to a fresh session | 🆕 | 2026-09-27 |
-| [thesyedyahya/llev](https://github.com/thesyedyahya/llev) | 0 | 0 | 요약 대기 · Open-source Jev alternative: self-hosted System One decision engine. Typed answers (choice / score / yes-no / multi) with calibrated confidence from a small local LLM via llama.cpp. | 🆕 | 2026-09-26 |
-| [thy10086/ros2-resilience-guardian](https://github.com/thy10086/ros2-resilience-guardian) | 0 | 0 | 요약 대기 · Mission-aware zero-trust ROS 2 resilience guardian with a local security dashboard | 🆕 | 2026-09-27 |
-| [tx-smitht/jev-focus-guard](https://github.com/tx-smitht/jev-focus-guard) | 0 | 0 | 요약 대기 · Jev Focus Guard: a local Chrome extension that asks Jev (System One) whether page elements are ads or distractions, then hides them. | 🆕 | 2026-09-26 |
-| [uditakankananonononono/meemee](https://github.com/uditakankananonononono/meemee) | 0 | 0 | 요약 대기 · Meemee: Udita's own autonomous agent platform | 🆕 | 2026-09-27 |
-| [uditakankananonononono/sugarcode-ai](https://github.com/uditakankananonononono/sugarcode-ai) | 0 | 0 | 요약 대기 · Sugarcode AI | 🆕 | 2026-09-27 |
-| [vistaaiprod/vistagw](https://github.com/vistaaiprod/vistagw) | 0 | 0 | 요약 대기 · Glasswing Testflight Hackathon | 🆕 | 2026-09-28 |
-| [vstrofago/vigia](https://github.com/vstrofago/vigia) | 0 | 0 | 요약 대기 · Moderating live-stream chat in real time (ES/EN) | 🆕 | 2026-09-26 |
-| [yodablocks/duckdb-jev](https://github.com/yodablocks/duckdb-jev) | 0 | 0 | 요약 대기 · Semantic ORDER BY for DuckDB, backed by TypeSafe AI's Jev model. Ships with independent calibration numbers. | 🆕 | 2026-09-22 |
-| [Abhishekfm/JevCheck](https://github.com/Abhishekfm/JevCheck) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-26 |
-| [aigauravsingh-star/jevrails](https://github.com/aigauravsingh-star/jevrails) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-27 |
-| [Kushagr142/jev-filter](https://github.com/Kushagr142/jev-filter) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-26 |
-| [omataak/jev-guardrail-demo](https://github.com/omataak/jev-guardrail-demo) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-25 |
-| [thechristobal/llm-roundtable](https://github.com/thechristobal/llm-roundtable) | 0 | 0 | 요약 대기 · 설명 없음 | 🆕 | 2026-09-27 |
+| [y0usaf/pi-jev](https://github.com/y0usaf/pi-jev) | 149 | 11 | **무엇** Pi 코딩 에이전트의 도구 호출과 출력 결과를 TypeSafe Jev API로 검사하고 제어하는 확장 도구다.<br>**판단** 명령의 파괴성·데이터 유출·범위 초과·피해 수준과 출력의 비밀정보 누출·실패 유형을 noul, score, choice로 판단한다.<br>**포인트** 도구 실행 전 게이트 판단을 한 번의 요청(약 300ms)으로 처리하며, 오류 발생 시 실행을 차단하지 않는 fail-open 방식으로 동작한다. | ✅ `choice` `noul` `score` | 2026-09-25 |
+| [realZachi/typesafe-adblock](https://github.com/realZachi/typesafe-adblock) | 85 | 7 | **무엇** 웹페이지 내 DOM 요소를 탐색해 TypeSafe Jev 모델의 판단에 따라 광고 요소를 실시간으로 제거하는 크롬 확장 프로그램이다.<br>**판단** 추출된 각 DOM 후보 요소의 태그, 클래스, 텍스트 요약 등을 바탕으로 유료 광고(paid advertisement)인지 여부를 noul 확률 질문으로 판단시킨다.<br>**포인트** 광고 후보 선별과 배치는 순수 코드로 처리하고 시맨틱 판별만 Jev에 일괄 요청하며, 설정된 임계 확률을 넘기면 애니메이션과 함께 요소를 제거한다. | ✅ `noul` | 2026-09-17 |
+| [leepokai/jev-guard](https://github.com/leepokai/jev-guard) | 43 | 5 | **무엇** 다양한 코딩 에이전트의 도구 호출과 결과를 검사해 위험한 명령과 프롬프트 인젝션을 차단하는 보안 훅 라이브러리다.<br>**판단** 도구 호출의 위험도(risk), 사용자 요청 부합 여부(user_requested), 신뢰할 수 없는 출처 기반 여부(from_untrusted)를 질의해 판단한다.<br>**포인트** 외부 의존성 없이 Claude Code, Cursor 등 여러 에이전트에 thin 어댑터로 연결되며 도구 실행 전후 및 인스트럭션 파일을 검사한다. | ✅ | 2026-09-24 |
+| [MillionSend/millionsend](https://github.com/MillionSend/millionsend) | 170 | 12 | **무엇** AWS SES를 기반으로 자체 호스팅하거나 클라우드로 사용할 수 있는 Resend 호환 오픈소스 이메일 발송 플랫폼이다.<br>**판단** 발송된 이메일 샘플에 대해 유해 콘텐츠 및 어뷰징 여부를 판단하도록 백그라운드에서 점수 채점(score)을 요청한다.<br>**포인트** 발송 지연을 막기 위해 SES 수락 후 백그라운드에서 비동기로 샘플을 채점하며, 셀프 호스트 환경에서는 기본 비활성화되어 있다. |  | 2026-09-26 |
+| [qkal/Canny](https://github.com/qkal/Canny) | 99 | 11 | **무엇** Claude Code와 Codex CLI에서 코딩 에이전트가 검증 절차 없이 작업을 마쳤다고 주장하지 못하게 감시하는 훅 도구이다.<br>**판단** 에이전트 메시지가 작업 완료를 주장하는지, 변경된 diff가 특정 규칙을 위반했는지 여부를 예/아니오 확률로 판단시킨다.<br>**포인트** 런타임 의존성이 없고, 원장의 사실 기록만 작업을 차단할 수 있으며 Jev의 판단 결과는 차단 없이 에이전트의 컨텍스트 조언으로만 사용된다. |  | 2026-09-22 |
+| [keltokhy/jgrep](https://github.com/keltokhy/jgrep) | 127 | 3 | 요약 대기 · grep, but the pattern is a description. Filters lines by meaning with TypeSafe's Jev decision model: ~200 ms and a thousandth of a cent per line. |  | 2026-09-25 |
+| [TiraelSedai/ClubDoorman](https://github.com/TiraelSedai/ClubDoorman) | 69 | 11 | **무엇** 텔레그램 대형 채팅방에서 캡차, 텍스트 필터, LLM을 결합해 스팸을 감지하고 차단하는 텔레그램 안티스팸 봇이다.<br>**판단** 기존 ML 점수가 모호한 구간(-0.5~0.5)의 메시지가 스팸(spam)인지 정상(ham)인지와 해당 분류의 확신도를 판단시킨다.<br>**포인트** Jev와 Luna 두 모델의 라벨 일치와 80% 이상 확신도를 모두 요구해 자동 데이터셋 추가 및 재학습 파이프라인의 오탐을 방지한다. |  | 2026-09-27 |
+| [brainstormity/Jev-Moderation-Bot](https://github.com/brainstormity/Jev-Moderation-Bot) | 48 | 6 | **무엇** Discord 서버 관리자가 스팸·피싱 링크를 차단하고 멤버 성향을 분석하기 위해 사용하는 Python 기반 모더레이션 봇이다.<br>**판단** 실시간 메시지의 스팸 및 피싱 링크 여부와 유저 최근 메시지의 사기 위험·스팸·초보성·유해성·도움 수준 점수를 판별한다.<br>**포인트** 오탐된 메시지를 사면하면 안전 선례로 저장해 추후 검사에 반영하는 동적 학습 및 SQLite 기반 캐싱을 지원한다. |  | 2026-09-22 |
+| [Nyarlathoteppppp/pi-heed](https://github.com/Nyarlathoteppppp/pi-heed) | 9 | 1 | **무엇** pi 코딩 에이전트의 부작용 도구 호출이 사용자의 자연어 제약 조건에 어긋나는지 실행 전 점검·차단하는 런타임 제약 가드레일이다.<br>**판단** 사용자 발화마다 기존 정책의 변경 상태(KEEP, LIFT, NARROW 등)와 작업 허가 신호 여부를 Jev에 분류시킨다.<br>**포인트** Jev는 좁은 범위의 유한 선택지 분류만 수행하며, 규칙 상태를 세션 단위 구조적 op로 영속화해 컴팩션 후 재질의 없이 복원한다. | ✅ `choice` `noul` | 2026-09-19 |
+| [aurorainfra/grev](https://github.com/aurorainfra/grev) | 39 | 1 | 요약 대기 · Thinking coreutils |  | 2026-09-24 |
+| [kiwi0719/jev-edge](https://github.com/kiwi0719/jev-edge) | 37 | 1 | 요약 대기 · Typed-judgment admission control at the traffic edge: three-layer prompt-injection and abuse filter for nginx/OpenResty, powered by TypeSafe Jev. Fail-open, cached, hot-reloadable. |  | 2026-09-27 |
+| [zhangcy122/OpenJev](https://github.com/zhangcy122/OpenJev) | 33 | 4 | 요약 대기 · Self-evolving cognitive decision engine &amp; TypeSafe Jev alternative. Deliberative decision flywheel ('explore first, crystallize later' System 2→1) with 100% option-order invariance. Typed probabilistic API (Choice, Noul, Score) for Open LLMs, Laya (ModernBERT), &amp; commercial Jev with calibrated logprobs and adaptive safety guards. |  | 2026-09-26 |
+| [mizchi/jev-test-filter](https://github.com/mizchi/jev-test-filter) | 29 | 1 | 요약 대기 · Score every test against a git diff with Jev, and emit the filter arguments vitest, node:test, Playwright, cargo test and go test already understand |  | 2026-09-24 |
+| [shiftynick/jev-axi](https://github.com/shiftynick/jev-axi) | 24 | 4 | 요약 대기 · Agent-ergonomic CLI for TypeSafe's Jev: fast calibrated judgments (pick, rate, check, rank, triage, guard) from the shell |  | 2026-09-24 |
+| [adamnroman/slop-filter](https://github.com/adamnroman/slop-filter) | 21 | 1 | 요약 대기 · Chrome extension that hides AI-generated posts and comments on X, LinkedIn, and Reddit. Scored by TypeSafe Jev. |  | 2026-09-27 |
+| [AskTheWay/dsh-jev-interceptor](https://github.com/AskTheWay/dsh-jev-interceptor) | 21 | 1 | 요약 대기 · ⚡ Millisecond System-1 judgement for every tool call in DeepSeek Harness — Jev-powered risk classification &amp; evidence-gated auto-approval. Fail-closed by construction. dsh 生态第一个 System-1 决策插件 |  | 2026-09-25 |
+| [ilyamk/jev-gmail-ai-spam-filter-and-labeling](https://github.com/ilyamk/jev-gmail-ai-spam-filter-and-labeling) | 21 | 4 | 요약 대기 · Self-hosted AI email classifier for Gmail powered by Jev. Create custom labels, organize your inbox, and filter spam with confidence and cost controls. |  | 2026-09-19 |
+| [TypeSafeAI/jev-harness](https://github.com/TypeSafeAI/jev-harness) | 21 | 5 | 요약 대기 · A custom coding harness for TypeSafe AI's Jev: an LLM proposes, Jev answers narrow questions, code decides, every step leaves a receipt. |  | 2026-09-26 |
+| [pengchujin/ad-radar](https://github.com/pengchujin/ad-radar) | 20 | 4 | 요약 대기 · 开源浏览器插件：在小红书、微博、X、知乎上按关键词和博主折叠内容；用你自己的 Jev API key 识别广告、AI、军事、政治等话题。 |  | 2026-09-22 |
+| [0sparsh2/GAX](https://github.com/0sparsh2/GAX) | 8 | 0 | **무엇** AI 에이전트의 셸 명령과 MCP 호출을 사전에 등록된 레지스트리와 권한 토큰 기반으로 제어·감사하는 거버넌스 실행 레이어다.<br>**판단** README에 판단 지점 설명 없음<br>**포인트** 임의 셸 실행을 차단하고 사전 등록된 명령만 허용하며 실행 전 capability 검증과 위험 수준 상한(danger ceiling)을 강제한다. |  | 2026-09-28 |
+| [ethanplusai/jev-chat-for-twitch](https://github.com/ethanplusai/jev-chat-for-twitch) | 13 | 0 | 요약 대기 · Filter any live Twitch chat with Jev: a bring-your-own-key Chrome extension |  | 2026-09-19 |
+| [behavioral-sh/behavioral](https://github.com/behavioral-sh/behavioral) | 11 | 1 | 요약 대기 · Behavioral agent harness — a neuro-symbolic, self-improving agent built on the behavioral-programming runtime. |  | 2026-09-26 |
+| [harshithsunku/learn-jev-end-to-end](https://github.com/harshithsunku/learn-jev-end-to-end) | 11 | 3 | 요약 대기 · Learn Jev end to end: a free hands-on course. Build 13 AI agent use cases with a fast brain (Jev) and a slow brain (LLM). One OpenRouter key. |  | 2026-09-23 |
+| [andrelandgraf/safer-with-jev](https://github.com/andrelandgraf/safer-with-jev) | 6 | 0 | **무엇** 요청 본문을 검사하여 프롬프트 인젝션이나 안전하지 않은 응답을 차단하고 통과 시 업스트림으로 전달하는 Neon Function 기반 프록시다.<br>**판단** 요청 본문이 프롬프트 인젝션인지, 응답 텍스트가 안전하지 않은지, 또는 전달받은 텍스트가 양호한지 등을 판단한다.<br>**포인트** 판단 결과에 따라 review 또는 block 시 차단(403)하고 pass 시 지정한 target URL로 요청 바이트를 그대로 포워딩한다. |  | 2026-09-18 |
+| [amithgc/local-jev](https://github.com/amithgc/local-jev) | 10 | 1 | 요약 대기 ·  A local, offline System One server compatible with TypeSafe's Jev API. It answers typed yes/no, category and score questions with small open models. |  | 2026-09-21 |
+| [dark-hxx/jev-safety-gateway](https://github.com/dark-hxx/jev-safety-gateway) | 10 | 1 | 요약 대기 · 位于 nginx 与大模型后端之间的前置过滤反向代理：逐请求提取用户输入交给 JEV 判定，有害拦截、正常透明放行 |  | 2026-09-24 |
+| [jesset/pi-verdict](https://github.com/jesset/pi-verdict) | 10 | 4 | 요약 대기 · A minimal  permission gate for Pi in the style of Claude Code's auto mode |  | 2026-09-27 |
+| [AkashPriyadarshii/jev-git](https://github.com/AkashPriyadarshii/jev-git) | 5 | 0 | **무엇** 개발자가 커밋 및 푸시 시점에 스테이징된 git diff의 보안 문제를 빠르게 검사할 수 있도록 돕는 Rust 기반 Git 확장 도구다.<br>**판단** Jev의 noul 결정을 활용해 스테이징된 diff에 노출된 시크릿, 프롬프트 주입 공격, 파괴적 명령어가 포함되어 있는지 여부를 판단한다.<br>**포인트** 정규식 검사의 한계와 LLM의 지연 시간 문제를 피하기 위해 단일 Rust 바이너리와 Jev API를 통해 100ms 미만 지연 시간을 목표로 구현했다. |  | 2026-09-25 |
+| [CodeAlive-AI/mastra-jev-moderation](https://github.com/CodeAlive-AI/mastra-jev-moderation) | 5 | 2 | **무엇** Mastra 에이전트의 사용자 입력을 TypeSafe Jev API로 검사해 유해 메시지를 차단하는 단일 파일 기반 프로세서다.<br>**판단** 마지막 입력 메시지가 정책상 차단 대상인지 여부(noul 확률)와 위반 카테고리(choice)를 한 번의 요청으로 판단시킨다.<br>**포인트** 텍스트 파싱 없이 확률값으로 직접 차단 여부를 결정하며, 타임아웃 및 오류 시 페일오픈과 60초 서킷 브레이커를 지원한다. |  | 2026-09-18 |
+| [qs-lll/twitter-jev-guard](https://github.com/qs-lll/twitter-jev-guard) | 9 | 2 | 요약 대기 · 使用 TypeSafe Jev 在 X/Twitter 时间线上识别低质量、垃圾和广告帖子，并在文字区域显示醒目的半透明水印。 |  | 2026-09-21 |
+| [ranjan2829/AskJev](https://github.com/ranjan2829/AskJev) | 9 | 3 | 요약 대기 · AskJev — Jev autopilot for any website + guard on irreversible clicks (TypeSafe System One, not Claude) |  | 2026-09-18 |
+| [AbdelStark/heist-one](https://github.com/AbdelStark/heist-one) | 8 | 1 | 요약 대기 · Observable browser stealth game: Jev makes typed guard judgments while deterministic code owns the world. |  | 2026-09-17 |
+| [jackie-cqz/dsh-jev-plugin](https://github.com/jackie-cqz/dsh-jev-plugin) | 8 | 1 | 요약 대기 · DeepSeek Harness plugin for TypeSafe Jev: typed decisions, configurable guardrails, and Web UI result cards. |  | 2026-09-26 |
+| [Nyarlathoteppppp/pi-jev-context](https://github.com/Nyarlathoteppppp/pi-jev-context) | 8 | 0 | 요약 대기 · Model performance first. Token savings second. A Pi extension with freshness-aware read dedupe, Jev log filtering, and searchable verbatim recall. Keeps existing message history intact. |  | 2026-09-22 |
+| [ItisShikhar/gg-friggin-ez](https://github.com/ItisShikhar/gg-friggin-ez) | 7 | 0 | 요약 대기 · Fast, drop-in multilingual profanity and toxicity screener for Node.js, powered by System 1 models like TypeSafe AI Jev and Laya. Catches leetspeak, character spacing, and romanized profanity across languages including Kannada, Telugu, Tamil, Hindi, and Bengali. ~50-500ms latency. |  | 2026-09-22 |
+| [ufec/jev-block-android-ad](https://github.com/ufec/jev-block-android-ad) | 7 | 0 | 요약 대기 · JevNoiseGate filters unwanted notifications and SMS on Android. Rather than   matching keywords, an LLM decides what's noise — and only what it explicitly   flags is blocked. Verification codes are matched on-device and never uploaded;   anything uncertain passes through. |  | 2026-09-19 |
+| [EugeneBoondock/jevsql](https://github.com/EugeneBoondock/jevsql) | 6 | 1 | 요약 대기 · SQL with natural-language predicates, powered by TypeSafe's Jev. Filter, rank, classify and score rows by meaning — batched, cached and cost-guarded. |  | 2026-09-19 |
+| [bitnovus/jev-spam-eval](https://github.com/bitnovus/jev-spam-eval) | 3 | 0 | **무엇** TypeSafe Jev의 noul 질문을 활용해 이메일 스팸 및 피싱 여부를 제로샷으로 탐지하고 TF-IDF 베이스라인과 비교 평가하는 프로젝트다.<br>**판단** 작성된 카테고리 정의와 이메일 맥락을 기반으로 해당 메일이 스팸이나 피싱인지 여부를 noul(예/아니오 확률)로 묻는다.<br>**포인트** 사전 파인튜닝이나 라벨 예시 없이 카테고리 정의만 사용해 5,733건의 테스트셋에서 98.64% 정확도를 기록하며 TF-IDF와 비교 검증했다. |  | 2026-09-18 |
+| [Arpit-Khandelwal/jev-linkedin-slop-filter](https://github.com/Arpit-Khandelwal/jev-linkedin-slop-filter) | 5 | 1 | 요약 대기 · Slams a BAIT, CORP or BRAG stamp onto LinkedIn engagement-bait, judged live by Jev (TypeSafe System One). |  | 2026-09-22 |
+| [h0j5bz0adh0-stack/jev-pilot](https://github.com/h0j5bz0adh0-stack/jev-pilot) | 5 | 0 | 요약 대기 · Fast System-1 Decision, Arbitration &amp; Safety Engine for Autonomous AI Agents (Powered by TypeSafe Jev) |  | 2026-09-23 |
+| [maayanlevy/mysql-ailike](https://github.com/maayanlevy/mysql-ailike) | 5 | 0 | 요약 대기 · Natural-language row filtering for MySQL, powered by TypeSafe Jev. |  | 2026-09-20 |
+| [Reindeer-AI/pi-jev-guard](https://github.com/Reindeer-AI/pi-jev-guard) | 5 | 0 | 요약 대기 · Check Pi code edits against repository Markdown rules with TypeSafe Jev |  | 2026-09-24 |
+| [smthdagg/XShield](https://github.com/smthdagg/XShield) | 5 | 0 | 요약 대기 · XShield — Fight Spam, Scams, Bots, and Adult-Content Accounts on X.  Automatically detect, collect, review, and safely block malicious accounts with a powerful rule engine and human-like execution strategy. |  | 2026-09-25 |
+| [transitive-bullshit/doom-or-bloom](https://github.com/transitive-bullshit/doom-or-bloom) | 5 | 0 | 요약 대기 · Doom or Bloom: map your AI worldview and compare it to others. |  | 2026-09-27 |
+| [VeridicalTech/Edward](https://github.com/VeridicalTech/Edward) | 5 | 2 | 요약 대기 · The supervisor for coding agents that run when nobody's watching — deterministic guardrails + local semantic scorer + resumable interventions, every decision signed. |  | 2026-09-27 |
+| [TannerMidd/SpecPi](https://github.com/TannerMidd/SpecPi) | 9 | 0 | **무엇** Pi 코딩 에이전트의 작업 범위와 도구 권한, 명령 실행을 안전하게 제어하는 하네스 설정이다.<br>**판단** 에이전트가 실행하려는 셸 명령어가 시스템에 위험한지 또는 안전한지를 판단시킨다.<br>**포인트** 명령 실행 전 로컬 분류기나 이전 호스팅 모델(Jev)로 셸 위험도를 채점해 위험 명령을 차단하거나 확인을 거친다. |  | 2026-09-28 |
+| [chengyongru/notiq](https://github.com/chengyongru/notiq) | 4 | 0 | 요약 대기 · Native Android notification filtering with natural-language rules, powered by Jev or self-hosted FastJev. |  | 2026-09-23 |
+| [fazlerocks/jev-adblock](https://github.com/fazlerocks/jev-adblock) | 4 | 0 | 요약 대기 · Open-source AI ad blocker for Chrome. No filter lists: TypeSafe AI's Jev model decides what is an ad. Bring your own key. |  | 2026-09-22 |
+| [godspede/construct-auto-classifier](https://github.com/godspede/construct-auto-classifier) | 4 | 0 | 요약 대기 · Effect-based safety gate for AI coding agents' shell commands (OpenCode, Antigravity): fast structural rules, then TypeSafe's Jev or a chat model judges what a command does. Certified with Jev at zero dangerous commands allowed. |  | 2026-09-25 |
+| [jiangkoumo/ego-decision-layer](https://github.com/jiangkoumo/ego-decision-layer) | 4 | 0 | 요약 대기 · Pluggable decision layer for the ego lite browser: one System One (Jev) call per step replaces the per-step LLM turn, and the backend can be swapped for a local OpenAI-compatible model. Fail-closed execution guards. The measured one — raw bench data, 16 suites, changelog with corrections. |  | 2026-09-27 |
+| [jkrup/jeveryword](https://github.com/jkrup/jeveryword) | 4 | 0 | 요약 대기 · Text extraction with Jev: field extraction, PII detection and exact quotes, built on TypeSafe's Jev. |  | 2026-09-20 |
+| [MithrilMan/your-signal](https://github.com/MithrilMan/your-signal) | 4 | 1 | 요약 대기 · Open-source BYOK Chrome extension for personal, reversible X timeline filters. |  | 2026-09-18 |
+| [noelzappy/tripwire](https://github.com/noelzappy/tripwire) | 4 | 0 | 요약 대기 · Judge every LLM response before the user sees it. AI SDK middleware and OpenAI-compatible proxy. |  | 2026-09-18 |
+| [ziyacivan/jev-mail-filter](https://github.com/ziyacivan/jev-mail-filter) | 4 | 0 | 요약 대기 · Gmail filters written in plain English, judged by Jev (TypeSafe) |  | 2026-09-27 |
+| [0xArx/jevegis](https://github.com/0xArx/jevegis) | 3 | 0 | 요약 대기 · Guardrails for LLM apps in one API call. Prompt injection, jailbreaks, leaks, unsafe content. Built on TypeSafe Jev. MIT. |  | 2026-09-18 |
+| [24601/rh-guard](https://github.com/24601/rh-guard) | 3 | 0 | 요약 대기 · Reward-hack radar for coding agents: structural denies + TypeSafe Jev System One sidecar for Claude Code &amp; Cursor hooks |  | 2026-09-25 |
+| [ClemensSchartmueller/jev-guard](https://github.com/ClemensSchartmueller/jev-guard) | 3 | 0 | 요약 대기 · 설명 없음 |  | 2026-09-27 |
+| [davertor/jev-slop-guard](https://github.com/davertor/jev-slop-guard) | 3 | 0 | 요약 대기 · Jev Slop Guard — a Chrome extension that scores and stamps AI slop on your X and LinkedIn feeds as you scroll |  | 2026-09-22 |
+| [devjothish/laya-forge](https://github.com/devjothish/laya-forge) | 3 | 0 | 요약 대기 · Fine-tune, calibrate and gate Laya (open-weights System One decision model) on your own decisions, then guard production agents with it |  | 2026-09-23 |
+| [lgy1027/jevshield](https://github.com/lgy1027/jevshield) | 3 | 0 | 요약 대기 · Sub-100ms security gate for AI agent tool calls, powered by TypeSafe's Jev (System-1) decision model. Single-request Choice/Noul/Score evaluation, dual-factor blocking matrix, calibrated-confidence routing, fail-closed parsing, zero-config local fallback. LangChain-ready. |  | 2026-09-24 |
+| [littlewindy123/jev-bili-filter](https://github.com/littlewindy123/jev-bili-filter) | 3 | 0 | 요약 대기 · 弹幕照开，噪音别来。用 JEV 为 B 站评论和弹幕降噪：剧透、反串黑、广告、基本盘一键过滤，想屏蔽什么，再写一句话。Chrome 插件，原页生效，MIT 开源。 |  | 2026-09-21 |
+| [opaielsheikh/typesafe-migration-guard](https://github.com/opaielsheikh/typesafe-migration-guard) | 3 | 0 | 요약 대기 · Automated database migration safety reviewer powered by TypeSafe AI (Jev System One model) |  | 2026-09-17 |
+| [rorshopping/jev-browser-local](https://github.com/rorshopping/jev-browser-local) | 3 | 1 | 요약 대기 · Run jev-browser on a fully local JEV-style decision engine (no cloud API). Warm-browser fork, VRAM guard, measured benchmarks, run traces. |  | 2026-09-19 |
+| [SamanPandey-in/jevrail](https://github.com/SamanPandey-in/jevrail) | 3 | 0 | 요약 대기 · Jev powered pre-execution guard for terminal coding agents |  | 2026-09-25 |
+| [shikaizhong-design/ego-jev-ultrafast](https://github.com/shikaizhong-design/ego-jev-ultrafast) | 3 | 0 | 요약 대기 · Jev drives your Ego Lite browser: one typed-choice request per step. Single-file, zero-dependency port of browser-use/jev-ultrafast with multi-model benchmarks and extra guardrails. Unofficial. |  | 2026-09-22 |
+| [0xwhrari/grok-jev-guard](https://github.com/0xwhrari/grok-jev-guard) | 2 | 0 | 요약 대기 · 설명 없음 |  | 2026-09-23 |
+| [abhixhek/feedwall](https://github.com/abhixhek/feedwall) | 2 | 0 | 요약 대기 · Your feed, your rules, in plain English. A browser extension that filters X, YouTube, Reddit, LinkedIn and Hacker News with topics you write yourself. Bring your own Jev key. |  | 2026-09-19 |
+| [CarlosCaoLopez/HACKSPAIN-2026](https://github.com/CarlosCaoLopez/HACKSPAIN-2026) | 2 | 1 | 요약 대기 · Taiafox filters a hundred incoming messages down to the three that matter, coordinates responders by voice, and re-plans in under a second when the fire turns. |  | 2026-09-22 |
+| [CogFlux/opencode-jev-guard](https://github.com/CogFlux/opencode-jev-guard) | 2 | 0 | 요약 대기 · OpenCode 2 plugin that sends every shell command (local or via FarHand) to TypeSafe's Jev and asks you first when it leaves files outside the project, installs software globally, changes global settings, is harmful or exposes private data |  | 2026-09-25 |
+| [coo-quack/jev-pii-checker](https://github.com/coo-quack/jev-pii-checker) | 2 | 1 | 요약 대기 · CLI that finds PII in text with TypeSafe Jev: presence, sensitivity, and located spans |  | 2026-09-26 |
+| [dr-dimitru/claude-jev-plugin](https://github.com/dr-dimitru/claude-jev-plugin) | 2 | 0 | 요약 대기 · TypeSafe Jev semantic guardrails for Claude Code |  | 2026-09-22 |
+| [ibrahemid/jevprune](https://github.com/ibrahemid/jevprune) | 2 | 0 | 요약 대기 · Filter command output for coding agents using a task description. |  | 2026-09-20 |
+| [Karthick-Ramachandran/jevfilter](https://github.com/Karthick-Ramachandran/jevfilter) | 2 | 0 | 요약 대기 · Turn a user's search sentence into filters your API already accepts, powered by Jev |  | 2026-09-24 |
+| [kongyo2/similarity-ts-jev](https://github.com/kongyo2/similarity-ts-jev) | 2 | 1 | 요약 대기 · similarity-ts and fallow duplicate detection for TypeScript, filtered by TypeSafe's Jev down to the pairs worth refactoring |  | 2026-09-23 |
+| [NorbertBodziony/guard-jev](https://github.com/NorbertBodziony/guard-jev) | 2 | 0 | 요약 대기 · 설명 없음 |  | 2026-09-17 |
+| [satyawikananda/gits](https://github.com/satyawikananda/gits) | 2 | 1 | 요약 대기 · Gits is a browser extension powered by Jev to search the leads data on the Google Maps |  | 2026-09-21 |
+| [tinystruct/tinystruct-typesafe-sdk](https://github.com/tinystruct/tinystruct-typesafe-sdk) | 2 | 0 | 요약 대기 · A tinystruct-based TypeSafe SDK with JEV model. |  | 2026-09-24 |
+| [Tom-R-Main/Footwork](https://github.com/Tom-R-Main/Footwork) | 2 | 1 | 요약 대기 · A verified browser agent: a cheap Jev guard (evidence-checked completions, a destructive gate) in front of any LLM browser driver, with Jev taking the mechanical steps in dual mode. Built on browser-use; every number pre-registered and measured. |  | 2026-09-26 |
+| [0x963D/last-exit](https://github.com/0x963D/last-exit) | 1 | 0 | 요약 대기 · A cyberpunk border encounter powered by TypeSafe Jev. Bluff the guard. Inspect the receipts. |  | 2026-09-17 |
+| [48Nauts-Operator/skill-dash](https://github.com/48Nauts-Operator/skill-dash) | 1 | 0 | 요약 대기 · Skill Dash uses Jev to judge Claude Code and Codex skills and plugins: usefulness, redundancy, clarity, duplicates, safety. Local dashboard plus the corpus pipeline behind whichskills.dev. MIT. |  | 2026-09-20 |
+| [4rays/profanity-checker](https://github.com/4rays/profanity-checker) | 1 | 0 | 요약 대기 · Cloudflare Worker to check for profanity using TypeSafe Jev |  | 2026-09-20 |
+| [abhaybhargav/juardrails](https://github.com/abhaybhargav/juardrails) | 1 | 0 | 요약 대기 · Go guardrail management for Jev with YAML policies, namespaces, access control, audit logging, and a REST API |  | 2026-09-27 |
+| [allebee/jevgrep](https://github.com/allebee/jevgrep) | 1 | 0 | 요약 대기 · CLI that filters logs and text by meaning using plain-English yes/no questions and Jev probabilities. |  | 2026-09-21 |
+| [bojansandhaus/jev-home-assistant-sentinel](https://github.com/bojansandhaus/jev-home-assistant-sentinel) | 1 | 0 | 요약 대기 · A safety boundary for AI-assisted Home Assistant decisions, with explicit policy checks and deterministic state verification. |  | 2026-09-26 |
+| [CeamKrier/semantic-firewall](https://github.com/CeamKrier/semantic-firewall) | 1 | 0 | 요약 대기 · Semantic firewall for LLM agents: tool calls gated by TypeSafe Jev (System One decision model via OpenRouter) + deterministic policy. PoC with corpus, stability eval, baseline, results. |  | 2026-09-18 |
+| [copyleftdev/jev-labs](https://github.com/copyleftdev/jev-labs) | 1 | 0 | 요약 대기 · Never confidently wrong: a TLA+-verified consensus kernel around TypeSafe's Jev, run through 1,680 chaos-tested pharmacy decisions with zero wrong verdicts. Film, code, and every captured call. |  | 2026-09-19 |
+| [DolphinMiner/jev-rss](https://github.com/DolphinMiner/jev-rss) | 1 | 0 | 요약 대기 · A local-first RSS reader with Jev-powered semantic screening. Follow what matters, inspect every judgment, and keep control of your reading. English / 简体中文. |  | 2026-09-21 |
+| [edwardyen724-g/jev-compactor](https://github.com/edwardyen724-g/jev-compactor) | 1 | 0 | 요약 대기 · Context compaction and safety gating for AI agents via TypeSafe Jev: keeps messages verbatim, no summarization. OpenAI, Anthropic, LangChain, CLI, MCP. |  | 2026-09-19 |
+| [FrancyJGLisboa/decision-system-forge](https://github.com/FrancyJGLisboa/decision-system-forge) | 1 | 1 | 요약 대기 · Compile documents, code, SOPs, and resolved cases into evidence-backed JEV judgments, legal actions, guarded adapters, and measured decision systems. |  | 2026-09-25 |
+| [h1code2/jev-x-blocker](https://github.com/h1code2/jev-x-blocker) | 1 | 1 | 요약 대기 · 설명 없음 |  | 2026-09-20 |
+| [JGalego/Jevs-Garage](https://github.com/JGalego/Jevs-Garage) | 1 | 1 | 요약 대기 · A garage full of tiny experiments for building critical systems with System One &amp; Jev 🔧🧠⚡ |  | 2026-09-19 |
+| [JH3lou/GridCue](https://github.com/JH3lou/GridCue) | 1 | 0 | 요약 대기 · Ask a dense data grid in plain language; get a previewed, undoable view change. Headless TypeScript, React, TanStack Table, shadcn. MIT. |  | 2026-09-25 |
+| [jiawei686/jev-screen-mcp](https://github.com/jiawei686/jev-screen-mcp) | 1 | 0 | 요약 대기 · Single-purpose MCP server (one tool, one job): a content-moderation gate powered by TypeSafe Jev (System One decision model). |  | 2026-09-21 |
+| [kiarina/labs](https://github.com/kiarina/labs) | 1 | 0 | 요약 대기 · Small, independent projects for experiments, research, and investigations. |  | 2026-09-28 |
+| [kurihada/pi-jev-permit](https://github.com/kurihada/pi-jev-permit) | 1 | 0 | 요약 대기 · A Jev (TypeSafe System One) permission gate for the Pi coding agent: judges every bash / write / edit call before it runs |  | 2026-09-22 |
+| [lambertsj/beatjev](https://github.com/lambertsj/beatjev) | 1 | 0 | 요약 대기 · try to beat jev |  | 2026-09-17 |
+| [makefinks/jev-feed-filter](https://github.com/makefinks/jev-feed-filter) | 1 | 0 | 요약 대기 · Smart, dynamic AI filtering for X and YouTube feeds using Jev |  | 2026-09-19 |
+| [naturalmoods/epeszuro](https://github.com/naturalmoods/epeszuro) | 1 | 0 | 요약 대기 · Chrome-bővítmény: elrejti a gyűlölködő YouTube-hozzászólásokat és élőchat-üzeneteket a TypeSafe Jev modelljével. MIT. |  | 2026-09-26 |
+| [neddes/sloppy-jevs-extension](https://github.com/neddes/sloppy-jevs-extension) | 1 | 0 | 요약 대기 · Open-source Chrome extension that filters AI-generated prose and ads with Jev |  | 2026-09-17 |
+| [ohernandezdev/jevmod](https://github.com/ohernandezdev/jevmod) | 1 | 1 | 요약 대기 · Moderation for communities and apps, powered by Jev (TypeSafe): probabilities per category, thresholds you own. Discord/Telegram/Reddit bots, CLI, Python, npm, HTTP API, MCP. |  | 2026-09-27 |
+| [pjrpjr/qingliu](https://github.com/pjrpjr/qingliu) | 1 | 1 | 요약 대기 · X 时间线清洁工 · FeedSieve(MIT) 衍生 · 带实测标定的 AI 判定层：误杀 0.7%，还能抓词库认不出的 47% |  | 2026-09-19 |
+| [rudra72r/jev-guard](https://github.com/rudra72r/jev-guard) | 1 | 0 | 요약 대기 · Fast, cheap guardrails for LLM apps, powered by TypeSafe's Jev model |  | 2026-09-26 |
+| [serejkaaa512/jev-content-guard-ext](https://github.com/serejkaaa512/jev-content-guard-ext) | 1 | 0 | 요약 대기 · Jev AI content guard Chrome extension |  | 2026-09-25 |
+| [ShupingR/scam-shield](https://github.com/ShupingR/scam-shield) | 1 | 0 | 요약 대기 · Scam text message filter powered by TypeSafe's Jev model |  | 2026-09-13 |
+| [sperictao/dsh-auto-review-jev](https://github.com/sperictao/dsh-auto-review-jev) | 1 | 0 | 요약 대기 · DeepSeek Harness plugin: per-tool-call Auto-permission review powered by TypeSafe Jev, with account usage and API-key management inline on its settings page |  | 2026-09-23 |
+| [taman-spirit/guardrail-chatbot-jev](https://github.com/taman-spirit/guardrail-chatbot-jev) | 1 | 0 | 요약 대기 · Vietnam - Content safety guardrails for AI chatbots: input, output and conversation checks over one policy file with Jev  |  | 2026-09-26 |
+| [tpaulshippy/shady-town](https://github.com/tpaulshippy/shady-town) | 1 | 0 | 요약 대기 · Shady Town: social-deduction party game for the living room TV, moderated by TypeSafe Jev |  | 2026-09-17 |
+| [vkpdeveloper/mrsecret](https://github.com/vkpdeveloper/mrsecret) | 1 | 0 | 요약 대기 · Mr. Secret — blurs secrets &amp; PII on any page using TypeSafe AI Jev |  | 2026-09-17 |
+| [who/jevq](https://github.com/who/jevq) | 1 | 0 | 요약 대기 · A Jev-based filter sidecar for jq |  | 2026-09-26 |
+| [yelkhanyergali-sys/jev-guard](https://github.com/yelkhanyergali-sys/jev-guard) | 1 | 0 | 요약 대기 · PI Mono extension for Jev (TypeSafe AI): in-flight terminal pruning (prompt-cache safe) and surgical diff guard |  | 2026-09-27 |
+| [yldst-dev/fuckyou-spam-rs](https://github.com/yldst-dev/fuckyou-spam-rs) | 1 | 0 | 요약 대기 · 짜증나는 스팸성 메시지를 LLM을 활용해 삭제하는 텔레그램 봇 코드의 rust 재작성판. |  | 2026-09-25 |
+| [arcveildev/arcveil](https://github.com/arcveildev/arcveil) | 0 | 0 | **무엇** Arc 네트워크에서 에이전트가 위임 한도를 노출하지 않고도 규정 내에서 지출했음을 영수증으로 증명하고 검증하는 프레임워크다.<br>**판단** 정량적 임계치로 정의하기 어려운 의미론적 조항에 에이전트의 행위가 부합하는지 여부를 판단시킨다.<br>**포인트** 브라우저에서 직접 영수증을 검증하며 packages/gate 워커를 통해 의미론적 정책 평가와 온체인 증명을 결합했다. |  | 2026-09-27 |
+| [BasmaAbouzied0/jev-secret-guard](https://github.com/BasmaAbouzied0/jev-secret-guard) | 0 | 0 | **무엇** Claude Code 환경에서 AI 에이전트가 코드나 명령어로 시크릿을 작성하거나 유출하지 않도록 차단하는 PreToolUse 훅이다.<br>**판단** 마스킹된 알 수 없는 고엔트로피 문자열과 주변 문맥을 보고 해당 값이 시크릿인지 여부를 확률 점수로 판단하도록 한다.<br>**포인트** 알려진 키는 로컬에서 차단하고 알 수 없는 값은 마스킹해 메타데이터만 Jev로 전송하며, 불확실하거나 장애 발생 시 사용자에게 확인을 요청한다. |  | 2026-09-27 |
+| [caiovicentino/jev-risk-check-provider](https://github.com/caiovicentino/jev-risk-check-provider) | 0 | 0 | **무엇** x402 결제 프로토콜에서 에이전트 결제 주체의 위협과 사기 위험도를 Jev로 채점하고 ES256 서명 증명을 발급하는 서비스다.<br>**판단** 위협 프로필·제재 대상·자금세탁 패턴·피싱 도메인 여부를 noul로, 위험 유형을 choice로, 신뢰도를 0~4 rubric score로 질의한다.<br>**포인트** 결제 상태에 대해 원자적 Jev 질문들을 병렬 평가한 후 확정적 코드로 합성 점수를 산출하며, ES256 JWS 증명으로 검증 신뢰를 보장한다. |  | 2026-09-27 |
+| [const-ahmed/unschema](https://github.com/const-ahmed/unschema) | 0 | 0 | **무엇** Zod 같은 스키마 라이브러리 대신 자연어 규칙과 Jev 모델을 사용해 입력값을 검증하는 프로필 폼 웹 애플리케이션이다.<br>**판단** 이메일 형식 유효성, 연령 범위(18~120세), 사람 이름 여부, 필드 간 일치 여부, 자기소개 글의 5단계 등급 평가를 판단시킨다.<br>**포인트** 입력 중 디바운스 검증과 제출 시 전체 필드 재검증을 수행하며, 사용자 입력을 지시어가 아닌 데이터로만 처리하도록 설계했다. |  | 2026-09-28 |
+| [cyu60/floodgate](https://github.com/cyu60/floodgate) | 0 | 0 | **무엇** 사용자가 설정한 현재 작업에 방해되는 웹페이지를 브라우저 탐색 시 차단하는 오픈 판별 모델 및 크롬 확장 프로그램<br>**판단** 접속하려는 웹페이지가 사용자가 지정한 작업에 방해되는지 여부를 noul(예/아니오 확률)로 판별<br>**포인트** River API로 오픈 모델을 학습시켜 Jev 호환 API를 구현하고, 사용자 브라우징 기록으로 개인화 모델을 미세조정함 |  | 2026-09-28 |
+| [paulhugel/haio-gats](https://github.com/paulhugel/haio-gats) | 0 | 0 | **무엇** 인간 감독 하의 AI 에이전트 운영 거버넌스와 감사 추적 요건을 정의하는 공개 표준 사양 및 스키마 저장소다.<br>**판단** README에 판단 지점 설명 없음<br>**포인트** TypeSafe Jev 등 모델 출력을 권한 부여 근거가 아닌 단순 자문 증거로 취급하며, 인간 승인과 독립적 감사 추적 분리를 규정한다. |  | 2026-09-27 |
+| [prestonkakukdev/Jev-Defense](https://github.com/prestonkakukdev/Jev-Defense) | 0 | 0 | **무엇** AI 에이전트의 위험한 도구 호출 차단, 프롬프트 주입 감지 및 스킬 검사를 수행하는 TypeSafe Jev 기반 보안 가드레일 도구다.<br>**판단** 명령어가 데이터를 삭제하거나 덮어쓰는지, 외부로 데이터를 전송하는지, 사용자가 이를 명시적으로 요청했는지 등의 예/아니오 확률을 noul로 묻는다.<br>**포인트** Jev가 최종 결정을 내리지 않고 좁은 예/아니오 확률만 계산하며, 코드 하드룰과 rulebook.py의 명시적 조건문으로 allow·ask·block을 결정한다. |  | 2026-09-26 |
+| [SoniaMehta14/paved-gate](https://github.com/SoniaMehta14/paved-gate) | 0 | 0 | **무엇** 프론티어 LLM 호출 전에 인바운드 요청의 안전성, 라우팅, 필요성을 빠르게 검사하고 차단 또는 처리하는 수집 게이트웨어 오픈소스 라이브러리다.<br>**판단** Jev 모델을 통해 intent(choice, 3개 라우트), risk(score, 1-5점 루브릭), sensitive(noul, PII/PHI 여부) 세 가지를 판단시킨다.<br>**포인트** 1회 호출로 3가지 타입 질의를 약 100ms 내에 병렬 처리하며, 결정마다 정책 해시와 원시 점수를 포함한 구조화된 감사 로그(JSONL)를 남긴다. |  | 2026-09-27 |
+| [tecanmol/JevGaurd](https://github.com/tecanmol/JevGaurd) | 0 | 0 | **무엇** 웹페이지 내 광고성 요소를 찾아 Jev 분류 결과에 따라 제거하거나 강조 표시해 주는 크로미엄 기반 브라우저 확장 프로그램이다.<br>**판단** 웹페이지에서 추출한 후보 요소 설명이 광고에 해당하는지 여부 및 해당 확률(probability)을 판별하도록 질의한다.<br>**포인트** 전체 페이지 대신 후보 요소 요약 설명만 최대 30개씩 배치로 묶어 Jev에 전송하며, 스크롤 등 동적 로딩 요소를 지속적으로 탐지한다. |  | 2026-09-25 |
+| [7starsseeker/dsh-jev-guard](https://github.com/7starsseeker/dsh-jev-guard) | 0 | 0 | 요약 대기 · DeepSeek Harness (DSH) 执行前安全阀门:bash/pwsh 真正执行前先经静态规则 + TypeSafe Jev 语义判定,破坏性操作按 允许/修正/拦截/上报人工 四态处置,含额度降级与审计日志。 |  | 2026-09-24 |
+| [Abhieu/excelpilot](https://github.com/Abhieu/excelpilot) | 0 | 0 | 요약 대기 · AI-assisted Excel operations engine: structured planning, JEV decision support, deterministic policy and execution, verification, and an audit trail. |  | 2026-09-26 |
+| [Abhishekvrshny/jevexec](https://github.com/Abhishekvrshny/jevexec) | 0 | 0 | 요약 대기 · Judicious Execution Verifier &amp; EXECutor for coding agents |  | 2026-09-27 |
+| [acarbone/PII-Detector](https://github.com/acarbone/PII-Detector) | 0 | 0 | 요약 대기 · PII Detector PoC using TypeSafe AI model Jev |  | 2026-09-26 |
+| [adrocic/Jad-Block](https://github.com/adrocic/Jad-Block) | 0 | 0 | 요약 대기 · Blocks the ads filter lists can't see. |  | 2026-09-26 |
+| [affirmitv/bitrate-advisor](https://github.com/affirmitv/bitrate-advisor) | 0 | 0 | 요약 대기 · Live-stream encoder settings from telemetry and history: TypeSafe's Jev decision model inside a deterministic safety envelope. Deno, Node, edge runtimes. |  | 2026-09-18 |
+| [amazingjoe/pi-saver](https://github.com/amazingjoe/pi-saver) | 0 | 0 | 요약 대기 · Dynamic context filter for Pi Coder using Jev by TypeSafe to save up to 75%+ on context tokens. |  | 2026-09-20 |
+| [atomicpages/sensored](https://github.com/atomicpages/sensored) | 0 | 0 | 요약 대기 · A free streaming-first open-source redaction toolit |  | 2026-09-27 |
+| [benikigai/JEVgotiator](https://github.com/benikigai/JEVgotiator) | 0 | 0 | 요약 대기 · AI Collective JEVathon Hackathon project |  | 2026-09-26 |
+| [BrunoMS0/Blind-Spot](https://github.com/BrunoMS0/Blind-Spot) | 0 | 0 | 요약 대기 · Turn-based tactical pixel art game: a nighttime museum heist where Jev (TypeSafe AI) controls the guards. The code calculates vision and paths; Jev decides what each guard does. |  | 2026-09-25 |
+| [celolopes/jev-dev-harness](https://github.com/celolopes/jev-dev-harness) | 0 | 0 | 요약 대기 · Open-source developer harness and runtime safety toolkit for AI coding agents powered by TypeSafe AI / Jev |  | 2026-09-25 |
+| [codaaiteam/jev-computer-use](https://github.com/codaaiteam/jev-computer-use) | 0 | 0 | 요약 대기 · Gate any agent's actions (Claude Code / Codex / opencode / computer-use) with a typed, calibrated Jev safety decision. |  | 2026-09-26 |
+| [CodeWithEugene/WarriorHacks-2.0](https://github.com/CodeWithEugene/WarriorHacks-2.0) | 0 | 0 | 요약 대기 · Open to all skill levels\! Build an app, website, game, or pitch an idea that fits the theme revealed two weeks before. We already have around $23K in sponsor prizes\! |  | 2026-09-25 |
+| [conan-8/crazyAgent](https://github.com/conan-8/crazyAgent) | 0 | 1 | 요약 대기 · AI browser agent in a Chromium sidebar — full-CDP browser control, chat UI with markdown, safety gates, streaming agent loop |  | 2026-09-26 |
+| [Dalaoyuan2020/android-notification-filter-demo](https://github.com/Dalaoyuan2020/android-notification-filter-demo) | 0 | 0 | 요약 대기 · Android notification filtering demo: local keyword rules, notification listener, and real-device test APKs. |  | 2026-09-27 |
+| [damiensmith1/jev-gmail-filter](https://github.com/damiensmith1/jev-gmail-filter) | 0 | 0 | 요약 대기 · Filter Gmail with plain-English topics, powered by jevfilter and TypeSafe's Jev. |  | 2026-09-27 |
+| [damiensmith1/jevfilter](https://github.com/damiensmith1/jevfilter) | 0 | 0 | 요약 대기 · Filter anything with plain-English rules, powered by TypeSafe's Jev. |  | 2026-09-26 |
+| [deepansh-saxena/jev-voice-guardrail](https://github.com/deepansh-saxena/jev-voice-guardrail) | 0 | 0 | 요약 대기 · Relay Guardrail Lab: a local Azure Realtime voice guardrail prototype comparing TypeSafe Jev and structured-output LLM judges. |  | 2026-09-25 |
+| [eddiedunn/jev-feed-filter](https://github.com/eddiedunn/jev-feed-filter) | 0 | 0 | 요약 대기 · Filter news and YouTube feeds: drop paywalls, strong slant, Shorts and livestreams, using the Jev model |  | 2026-09-27 |
+| [Enhso/iw](https://github.com/Enhso/iw) | 0 | 0 | 요약 대기 · Intelligence Workbench: as-of evidence corpus and analytical briefings |  | 2026-09-25 |
+| [finrod21/jev-transaction-guard](https://github.com/finrod21/jev-transaction-guard) | 0 | 0 | 요약 대기 · Autonomous settlement circuit breaker protecting ledgers against CVE/RCE balance bypasses, nocturnal draining, and prompt injection attacks using TypeSafe Jev. |  | 2026-09-20 |
+| [fr3akX/systemone-mail-filter](https://github.com/fr3akX/systemone-mail-filter) | 0 | 0 | 요약 대기 · After-queue Postfix spam classification with TypeSafe Jev, subject tagging, and recipient-scoped filtering. |  | 2026-09-26 |
+| [gbesse/jev-bocc-impact](https://github.com/gbesse/jev-bocc-impact) | 0 | 0 | 요약 대기 · Map French collective-agreement changes to reviewable payroll and HR impacts, filtered by exact IDCC. |  | 2026-09-27 |
+| [gbesse/jev-rappel-pro](https://github.com/gbesse/jev-rappel-pro) | 0 | 0 | 요약 대기 · Screen product catalogs against French RappelConso recalls with exact GTIN matching and reviewable semantic fallbacks. |  | 2026-09-27 |
+| [gbesse/jev-workflow](https://github.com/gbesse/jev-workflow) | 0 | 0 | 요약 대기 · Decision contracts, adversarial testing, tracing, stability, and privacy controls for TypeSafe Jev |  | 2026-09-25 |
+| [gbesse/mariadb-jev](https://github.com/gbesse/mariadb-jev) | 0 | 0 | 요약 대기 · Semantic SQL predicates for MariaDB powered by TypeSafe Jev |  | 2026-09-26 |
+| [gbesse/pinot-jev](https://github.com/gbesse/pinot-jev) | 0 | 0 | 요약 대기 · Semantic SQL predicates for Apache Pinot powered by TypeSafe Jev |  | 2026-09-26 |
+| [gbesse/saleor-jev-catalog-review](https://github.com/gbesse/saleor-jev-catalog-review) | 0 | 0 | 요약 대기 · Jev decision review for Saleor product webhooks |  | 2026-09-27 |
+| [gbesse/strapi-plugin-jev-review](https://github.com/gbesse/strapi-plugin-jev-review) | 0 | 0 | 요약 대기 · Strapi 5 editorial review and publish guard powered by TypeSafe Jev |  | 2026-09-26 |
+| [ghubnab99/jev-enterprise-decision-fabric](https://github.com/ghubnab99/jev-enterprise-decision-fabric) | 0 | 0 | 요약 대기 · Architecture for running many semantic decisions through one validated path, with a labelled 111-case benchmark comparing TypeSafe Jev against a Claude baseline, and a dashboard for inspecting any single decision. Experimental, not production. |  | 2026-09-20 |
+| [Goooooooooody/pith](https://github.com/Goooooooooody/pith) | 0 | 0 | 요약 대기 · Get to the pith of a failing CI run before it floods Claude's context. Claude Code plugin + zero-dependency CLI: CI-link summaries, \! pith for pastes, paste guard. |  | 2026-09-27 |
+| [hamzaahmadaslam/fedi-report-triage](https://github.com/hamzaahmadaslam/fedi-report-triage) | 0 | 0 | 요약 대기 · Reads the open reports on a Mastodon server with a moderator's own read-only token and prints them as a queue sorted by severity, using TypeSafe's Jev model. It never takes a moderation action. |  | 2026-09-26 |
+| [Helicon1968/tb-spam-guard](https://github.com/Helicon1968/tb-spam-guard) | 0 | 0 | 요약 대기 · Thunderbird add-on that flags phishing mail impersonating Japanese organizations. Optional TypeSafe Jev support. |  | 2026-09-26 |
+| [HiveScaleSystems/jev-guard](https://github.com/HiveScaleSystems/jev-guard) | 0 | 0 | 요약 대기 · AI chat moderation for Minecraft (Paper/Folia) and Hytale servers, powered by TypeSafe's Jev model. Works with the TypeSafe API or Cloudflare AI Gateway. |  | 2026-09-26 |
+| [JakeTheRabbit/HA-Crop-Steering-Jev](https://github.com/JakeTheRabbit/HA-Crop-Steering-Jev) | 0 | 0 | 요약 대기 · Crop Steering, Jev edition: the HA crop-steering engine with TypeSafe Jev judging every decision across P0-P3, probes, shots, salt and alerts, inside a deterministic safety envelope. |  | 2026-09-27 |
+| [javimp2003/laya-guardrails](https://github.com/javimp2003/laya-guardrails) | 0 | 0 | 요약 대기 · Guardrails de input, tool call y output para agentes de IA con un modelo System One tipo Jev (laya-pt-es-typed) autoalojado en una NVIDIA L4: 5 ms por check frente a 140 ms de un LLM-as-a-judge. |  | 2026-09-26 |
+| [JevForge/jev-cloud-cost-guardian](https://github.com/JevForge/jev-cloud-cost-guardian) | 0 | 0 | 요약 대기 · Evaluate cloud spend against a budget and gate CI with Jev (approve, warn, block, or review). |  | 2026-09-24 |
+| [jourdanlabs/assay-001](https://github.com/jourdanlabs/assay-001) | 0 | 0 | 요약 대기 · ASSAY-001: independent, pre-registered verification of TypeSafe Jev's calibration and type-safety claims. Split verdict, published in full. |  | 2026-09-21 |
+| [Luminousyyh/laya-decide](https://github.com/Luminousyyh/laya-decide) | 0 | 0 | 요약 대기 · A DeepSeek Harness skill that gates file and command actions on a local LAYA System-1 decision model. |  | 2026-09-25 |
+| [manhua-man/jev-pilot-reflex](https://github.com/manhua-man/jev-pilot-reflex) | 0 | 0 | 요약 대기 · Three.js Autonomous Driving Reflex &amp; AI Safety Brake Simulator powered by TypeSafe Jev System 1/2 Dual-Brain Architecture |  | 2026-09-24 |
+| [manish-9245/Wayfinder](https://github.com/manish-9245/Wayfinder) | 0 | 0 | 요약 대기 · Doubt, as a service: one HTTP call turns any text in 100+ languages into a calibrated act/review/escalate/block verdict. Stateless gateway over laya. |  | 2026-09-27 |
+| [mjyoke1111/jev-lab](https://github.com/mjyoke1111/jev-lab) | 0 | 0 | 요약 대기 · Real browser-agent safety evaluation: Jev versus a baseline on benign and injected tasks |  | 2026-09-26 |
+| [MorganOnCode/jev-gram](https://github.com/MorganOnCode/jev-gram) | 0 | 0 | 요약 대기 · N-gram NSFW detection + AI-prose heatmaps judged by TypeSafe Jev (JEVATHON 2026) |  | 2026-09-26 |
+| [mpeddicord/jev-tab-filter](https://github.com/mpeddicord/jev-tab-filter) | 0 | 0 | 요약 대기 · Chrome extension: group, hide, or close tabs by theme, scored by TypeSafe's Jev model |  | 2026-09-26 |
+| [MSR2012/ems](https://github.com/MSR2012/ems) | 0 | 0 | 요약 대기 · Email management system |  | 2026-09-27 |
+| [Muriel-Gasparini/ban4life](https://github.com/Muriel-Gasparini/ban4life) | 0 | 0 | 요약 대기 · Autonomous anti-spam and moderation engine for WhatsApp groups powered by TypeSafe Jev System-1 judgment primitives and zero-latency two-tier defense. |  | 2026-09-25 |
+| [naufalhilmiaji/sooth](https://github.com/naufalhilmiaji/sooth) | 0 | 0 | 요약 대기 · Claim-by-claim fact-checking for AI output, designed for CI. PASS/FAIL/REVIEW with calibrated probabilities and source evidence. |  | 2026-09-26 |
+| [neostryder/mercury](https://github.com/neostryder/mercury) | 0 | 0 | 요약 대기 · Semantic email filtering for rpgm.tools - Loremaster-reviewed spam/phishing triage via ForwardEmail webhooks |  | 2026-09-27 |
+| [neozhu/jev-audit](https://github.com/neozhu/jev-audit) | 0 | 0 | 요약 대기 · AI-powered contract comparison with Jev atomic evaluations—spot substantive changes, filter OCR noise, and generate reviewable audit reports. |  | 2026-09-25 |
+| [NISH1001/reflex-guard](https://github.com/NISH1001/reflex-guard) | 0 | 0 | 요약 대기 · Guardrails built with jev-like models (jev, laya, etc.) |  | 2026-09-26 |
+| [OmarAlaaeldein/jev-verifier-skill](https://github.com/OmarAlaaeldein/jev-verifier-skill) | 0 | 0 | 요약 대기 · Fast 'System One' reflex for reasoning LLMs: typed probabilistic second opinions from Jev via OpenCode Zen, with PII-minimizing state redaction. |  | 2026-09-21 |
+| [oppih/approval-judge-bridge](https://github.com/oppih/approval-judge-bridge) | 0 | 0 | 요약 대기 · OpenAI-compatible judge endpoint for agent approval gates: typed judgements (Jev), any OpenAI-compatible model, or a rule file — fail-closed, calibrated, with a replay battery |  | 2026-09-21 |
+| [P4A-Policies-for-Agents/LLM-Response-Leakage-Guard](https://github.com/P4A-Policies-for-Agents/LLM-Response-Leakage-Guard) | 0 | 0 | 요약 대기 · Outbound MuleSoft Omni/Flex Gateway policy: screens the upstream LLM response for leaked system prompts, secrets, canaries, internal hosts (deterministic) and semantic/paraphrased leaks (typed Jev judge); replaces a leaking reply with a safe refusal, benign replies pass byte-identical. No model in the data path. |  | 2026-09-25 |
+| [pratikpakhale/jevx](https://github.com/pratikpakhale/jevx) | 0 | 0 | 요약 대기 · Bring-your-own-key Chrome extension that filters your X timeline with TypeSafe Jev |  | 2026-09-25 |
+| [Ray0907/pi-loop](https://github.com/Ray0907/pi-loop) | 0 | 0 | 요약 대기 · Opus plans, pi implements in herdr panes, Jev-gated review loop with a tool-call safety layer |  | 2026-09-27 |
+| [ReneGucci94/jev-scout-filter](https://github.com/ReneGucci94/jev-scout-filter) | 0 | 0 | 요약 대기 · Filtro previo de candidatos de minidrama. Jev decide antes del scrape. |  | 2026-09-26 |
+| [rhithesh/youtube-focus](https://github.com/rhithesh/youtube-focus) | 0 | 0 | 요약 대기 · 설명 없음 |  | 2026-09-27 |
+| [rohitdevade/topiclens-for-youtube](https://github.com/rohitdevade/topiclens-for-youtube) | 0 | 0 | 요약 대기 · A smart, continuous topic filter for YouTube powered by Jev. |  | 2026-09-27 |
+| [romannekrasovaillm/qwen-code-jev-gate](https://github.com/romannekrasovaillm/qwen-code-jev-gate) | 0 | 0 | 요약 대기 · Jev-class decision model as stage-0 gate in the Qwen Code permission flow: ADRs, architecture spine, delta spec, pilot results |  | 2026-09-27 |
+| [s-0-a-r/typesafe-eval](https://github.com/s-0-a-r/typesafe-eval) | 0 | 0 | 요약 대기 · Fast, typed multi-dimensional document evaluation CLI powered by TypeSafe System One (Jev). |  | 2026-09-28 |
+| [semanticpolicy/semantic-policy](https://github.com/semanticpolicy/semantic-policy) | 0 | 0 | 요약 대기 · SemanticPolicy adds testable semantic decisions to .NET applications: rules a decision model answers, measured on labelled examples, for business logic and AI agents, with no lock-in to one provider. |  | 2026-09-27 |
+| [shibammitra24/jev-guard](https://github.com/shibammitra24/jev-guard) | 0 | 0 | 요약 대기 · 설명 없음 |  | 2026-09-26 |
+| [Srinivasa314/hn-comment-filter](https://github.com/Srinivasa314/hn-comment-filter) | 0 | 0 | 요약 대기 · Chrome extension that shows the Hacker News comments worth reading, scored by TypeSafe's Jev model |  | 2026-09-26 |
+| [Swanand58/session-guard](https://github.com/Swanand58/session-guard) | 0 | 0 | 요약 대기 · Warn before Claude Code sessions get expensive; hand over to a fresh session |  | 2026-09-27 |
+| [thesyedyahya/llev](https://github.com/thesyedyahya/llev) | 0 | 0 | 요약 대기 · Open-source Jev alternative: self-hosted System One decision engine. Typed answers (choice / score / yes-no / multi) with calibrated confidence from a small local LLM via llama.cpp. |  | 2026-09-26 |
+| [thy10086/ros2-resilience-guardian](https://github.com/thy10086/ros2-resilience-guardian) | 0 | 0 | 요약 대기 · Mission-aware zero-trust ROS 2 resilience guardian with a local security dashboard |  | 2026-09-27 |
+| [tx-smitht/jev-focus-guard](https://github.com/tx-smitht/jev-focus-guard) | 0 | 0 | 요약 대기 · Jev Focus Guard: a local Chrome extension that asks Jev (System One) whether page elements are ads or distractions, then hides them. |  | 2026-09-26 |
+| [uditakankananonononono/meemee](https://github.com/uditakankananonononono/meemee) | 0 | 0 | 요약 대기 · Meemee: Udita's own autonomous agent platform |  | 2026-09-27 |
+| [uditakankananonononono/sugarcode-ai](https://github.com/uditakankananonononono/sugarcode-ai) | 0 | 0 | 요약 대기 · Sugarcode AI |  | 2026-09-27 |
+| [vistaaiprod/vistagw](https://github.com/vistaaiprod/vistagw) | 0 | 0 | 요약 대기 · Glasswing Testflight Hackathon |  | 2026-09-28 |
+| [vstrofago/vigia](https://github.com/vstrofago/vigia) | 0 | 0 | 요약 대기 · Moderating live-stream chat in real time (ES/EN) |  | 2026-09-26 |
+| [yodablocks/duckdb-jev](https://github.com/yodablocks/duckdb-jev) | 0 | 0 | 요약 대기 · Semantic ORDER BY for DuckDB, backed by TypeSafe AI's Jev model. Ships with independent calibration numbers. |  | 2026-09-22 |
+| [zachlandes/jev-dialect-bias](https://github.com/zachlandes/jev-dialect-bias) | 0 | 0 | 요약 대기 · Reproducing Hofmann et al. (Nature 2024) dialect-prejudice probes on TypeSafe's Jev, including a content-moderation variant |  | 2026-09-25 |
+| [Abhishekfm/JevCheck](https://github.com/Abhishekfm/JevCheck) | 0 | 0 | 요약 대기 · 설명 없음 |  | 2026-09-26 |
+| [aigauravsingh-star/jevrails](https://github.com/aigauravsingh-star/jevrails) | 0 | 0 | 요약 대기 · 설명 없음 |  | 2026-09-27 |
+| [Kushagr142/jev-filter](https://github.com/Kushagr142/jev-filter) | 0 | 0 | 요약 대기 · 설명 없음 |  | 2026-09-26 |
+| [omataak/jev-guardrail-demo](https://github.com/omataak/jev-guardrail-demo) | 0 | 0 | 요약 대기 · 설명 없음 |  | 2026-09-25 |
+| [thechristobal/llm-roundtable](https://github.com/thechristobal/llm-roundtable) | 0 | 0 | 요약 대기 · 설명 없음 |  | 2026-09-27 |
 
 ### y0usaf/pi-jev
 
@@ -204,19 +219,19 @@ A Chrome extension (Manifest V3) that spots ads on any website in real time and 
 
 </details>
 
-### MillionSend/millionsend
-
-<details><summary>README 발췌</summary>
-
-Self-host on your own AWS SES, or use the hosted cloud. Resend-compatible API — migrating means changing two environment variables, not rewriting your integration.
-
-</details>
-
 ### leepokai/jev-guard
 
 <details><summary>README 발췌</summary>
 
 Claude Code's auto mode is described as: "A separate classifier model reviews actions before they run, blocking anything that escalates beyond your request, targets unrecognized infrastructure, or appears driven by hostile content Claude read." That is exactly the job jev-guard does — as three typed
+
+</details>
+
+### MillionSend/millionsend
+
+<details><summary>README 발췌</summary>
+
+Self-host on your own AWS SES, or use the hosted cloud. Resend-compatible API — migrating means changing two environment variables, not rewriting your integration.
 
 </details>
 
@@ -233,6 +248,14 @@ A supervision layer for AI coding agents. It hooks into Claude Code and Codex CL
 <details><summary>README 발췌</summary>
 
 grep, but the pattern is a description.
+
+</details>
+
+### TiraelSedai/ClubDoorman
+
+<details><summary>README 발췌</summary>
+
+Изначально разрабатывался чтобы решить проблему со спамерами в чатах Вастрик.Клуба, но может использоваться и в чатах других форков, да и просто в любых больших чатах.
 
 </details>
 
@@ -641,6 +664,14 @@ High-speed, cross-agent safety gate plugin for Claude Code, Codex CLI, and Antig
 <details><summary>README 발췌</summary>
 
 A Chrome extension that stands between you and the slop on X and LinkedIn.
+
+</details>
+
+### devjothish/laya-forge
+
+<details><summary>README 발췌</summary>
+
+Fine-tune, calibrate and gate Laya on your own decisions, then guard your agents with it.
 
 </details>
 
@@ -1060,6 +1091,14 @@ Telegram 그룹의 메시지를 SQLite 스팸 캐시와 TypeSafe AI의 Jev 모�
 
 </details>
 
+### arcveildev/arcveil
+
+<details><summary>README 발췌</summary>
+
+Agents that can spend, and never see. → live at arcveil.dev
+
+</details>
+
 ### BasmaAbouzied0/jev-secret-guard
 
 <details><summary>README 발췌</summary>
@@ -1092,6 +1131,14 @@ You decide what flows in. An open Jev, trained on River AI, that stands between 
 
 </details>
 
+### paulhugel/haio-gats
+
+<details><summary>README 발췌</summary>
+
+Human-Supervised AI Operations Governance and Audit Trail Specification (HAIO-GATS) — public preview. This repository is a standards-aligned profile for accountable agentic workflows. It defines testable requirements for effective human supervision, bounded authority, lifecycle approval gates, event
+
+</details>
+
 ### prestonkakukdev/Jev-Defense
 
 <details><summary>README 발췌</summary>
@@ -1105,6 +1152,14 @@ A security guard for AI agents, powered by Jev. It stops dangerous tool calls be
 <details><summary>README 발췌</summary>
 
 A fast "System 1" ingestion gate for AI agent architectures.
+
+</details>
+
+### tecanmol/JevGaurd
+
+<details><summary>README 발췌</summary>
+
+JevGuard is a browser extension that detects and removes ads from webpages using Jev semantic classification.
 
 </details>
 
@@ -1156,6 +1211,14 @@ Encoder settings for a live stream, decided from telemetry and history, in 300 m
 
 </details>
 
+### amazingjoe/pi-saver
+
+<details><summary>README 발췌</summary>
+
+Give the next model call the context it needs. Keep the history for later.
+
+</details>
+
 ### atomicpages/sensored
 
 <details><summary>README 발췌</summary>
@@ -1169,6 +1232,22 @@ A streaming-first PII redaction library for TypeScript. Detects and redacts sens
 <details><summary>README 발췌</summary>
 
 Buyers text Eve about a Tesla in San Francisco. Eve clarifies the request, our API applies hard filters, TypeSafe Jev scores the evidence for up to 30 candidates, and the buyer gets five options. After the buyer picks one to three, Dara's weighted rules prepare a nonbinding deal plan. The web dashbo
+
+</details>
+
+### BrunoMS0/Blind-Spot
+
+<details><summary>README 발췌</summary>
+
+Juego táctico por turnos en pixel art: tu equipo entra de noche a un museo para robar el diamante. Los guardias los controla Jev (TypeSafe AI): al final de cada turno tuyo, una sola llamada decide qué hace cada guardia. El código calcula visión, caminos y distancias; Jev solo elige.
+
+</details>
+
+### celolopes/jev-dev-harness
+
+<details><summary>README 발췌</summary>
+
+&gt; An open-source developer harness and runtime safety toolkit for AI coding agents (Antigravity, Codex, Claude Code, Cursor, VSCode, Aider) powered by TypeSafe AI / Jev.
 
 </details>
 
@@ -1201,6 +1280,22 @@ A Chromium (Manifest V3) extension whose side panel hosts an AI agent that opera
 <details><summary>README 발췌</summary>
 
 后端 Jev 管长期判断，手机本地管短时注意力。 当前主程序 v0.4.0 提供首页、消息、智能判断、我的四页纸面界面，以及四幕首次使用教程；沿用 v0.3.0 的 SystemOne 概率判断、本地衰减记忆和最多三路对照：先获得模型保留概率 pjev，再用近期真实行为计算 pfinal。
+
+</details>
+
+### damiensmith1/jev-gmail-filter
+
+<details><summary>README 발췌</summary>
+
+Filter Gmail with plain-English topics. Describe what you care about ("receipts for things I bought", "recruiters contacting me about a role") and the app labels matching emails, groups them into tracked items (a job application, an order) with a status, and flags anything that has gone quiet. Judgi
+
+</details>
+
+### damiensmith1/jevfilter
+
+<details><summary>README 발췌</summary>
+
+Judge content against plain-English definitions with TypeSafe's Jev. Describe what you care about in a few words; get back typed answers with calibrated probabilities: which topics match, which category, which company, how urgent.
 
 </details>
 
@@ -1284,6 +1379,14 @@ An Apache Pinot scalar-function extension for semantic predicates backed by Type
 
 </details>
 
+### gbesse/saleor-jev-catalog-review
+
+<details><summary>README 발췌</summary>
+
+Experimental community alpha v0.1.0 · MIT.
+
+</details>
+
 ### gbesse/strapi-plugin-jev-review
 
 <details><summary>README 발췌</summary>
@@ -1297,14 +1400,6 @@ Plugin serveur de revue éditoriale avec les décisions typées de TypeSafe Jev.
 <details><summary>README 발췌</summary>
 
 An experimental architecture for using TypeSafe Jev at many semantic decision points in one application, without scattering model calls, question text, thresholds and side effects through the codebase.
-
-</details>
-
-### gomasy/mastodon-spam-checker
-
-<details><summary>README 발췌</summary>
-
-An LLM-powered spam detector for Mastodon instances. It fetches newly federated remote accounts through the Mastodon Admin API, asks an OpenAI-compatible LLM whether each account looks like spam, and reports detections to Slack. Each notification carries a Suspend button so a moderator can act strai
 
 </details>
 
@@ -1353,6 +1448,14 @@ Automatic watering for a grow room, run by Home Assistant, with an AI second opi
 <details><summary>README 발췌</summary>
 
 Un check de seguridad en 5 ms en vez de 140 ms. Guardrails de input, tool call y output para agentes de IA con laya-pt-es-typed, un modelo System One tipo Jev que devuelve probabilidades tipadas, no texto.
+
+</details>
+
+### JevForge/jev-cloud-cost-guardian
+
+<details><summary>README 발췌</summary>
+
+Evaluate proposed cloud spend against a budget and expose a typed CI gate (approve, warn, block, or manual-review) using TypeSafe Jev.
 
 </details>
 
@@ -1460,6 +1563,14 @@ Multi-label guardrails on "System One" decision models (Laya and GLiNER2.5-Decid
 
 </details>
 
+### OmarAlaaeldein/jev-verifier-skill
+
+<details><summary>README 발췌</summary>
+
+A reasoning-loop skill that gives LLM agents a fast "System One" reflex: cheap, typed, probabilistic second opinions from TypeSafe AI's Jev, served through OpenCode Zen.
+
+</details>
+
 ### oppih/approval-judge-bridge
 
 <details><summary>README 발췌</summary>
@@ -1524,6 +1635,14 @@ TopicLens is a Chrome Manifest V3 extension that filters YouTube continuously in
 
 </details>
 
+### s-0-a-r/typesafe-eval
+
+<details><summary>README 발췌</summary>
+
+Fast, typed, multi-dimensional document evaluation CLI powered by the TypeSafe System One API (model: jev-1.13.0).
+
+</details>
+
 ### semanticpolicy/semantic-policy
 
 <details><summary>README 발췌</summary>
@@ -1537,6 +1656,14 @@ SemanticPolicy adds testable semantic decisions to .NET applications.
 <details><summary>README 발췌</summary>
 
 Coding agents like the Antigravity agent don't just suggest code anymore — they run shell commands, edit and delete files, fetch URLs, and drive a real browser, autonomously and by default. That's what makes them useful, and it's also what makes one bad plan (or one prompt injection hidden in a READ
+
+</details>
+
+### Srinivasa314/hn-comment-filter
+
+<details><summary>README 발췌</summary>
+
+A Chrome extension that shows you the Hacker News comments worth reading.
 
 </details>
 
@@ -1609,6 +1736,14 @@ Español · Website · Docs · Playground
 <details><summary>README 발췌</summary>
 
 DuckDB scalar functions over TypeSafe AI's Jev model, so unstructured text columns can be filtered and sorted like numeric ones.
+
+</details>
+
+### zachlandes/jev-dialect-bias
+
+<details><summary>README 발췌</summary>
+
+This repository reruns a well-known AI bias experiment on TypeSafe's Jev model (version jev-1.13.0), so anyone can check our numbers or run it again.
 
 </details>
 
