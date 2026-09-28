@@ -32,11 +32,12 @@ function table({ stars = 10, gone = [] } = {}) {
       for (const [, alias, owner, name] of q.matchAll(/(r\d+): repository\(owner: "([^"]+)", name: "([^"]+)"\)/g)) {
         const fn = `${owner}/${name}`;
         if (gone.includes(fn)) { data[alias] = null; errors.push({ type: 'NOT_FOUND', path: [alias] }); continue; }
-        data[alias] = node(fn, stars, fn === 'homonym/jev' ? { description: 'Jev the cat' } : {});
+        data[alias] = node(fn, stars, fn === 'homonym/jev' ? { description: 'Jev the cat' } : fn === 'homonym/lib' ? { description: 'A homonym library, unrelated' } : fn === 'hit/three' ? { description: 'A tool for handling things' } : {});
       }
       return { data, errors };
     },
     'https://api.github.com/repos/homonym/jev/readme': 'A cat named Jev.',
+    'https://api.github.com/repos/homonym/lib/readme': 'Just a coincidentally named library, nothing about the model.',
     'https://api.github.com/repos/': 'This project calls api.typesafe.ai to route prompts with choice questions.',
     'https://api.github.com/search/code': { items: [] },
     'https://generativelanguage.googleapis.com/': { candidates: [{ content: { parts: [{ text: JSON.stringify({ what: '프롬프트를 의도별로 보내는 라우터', decision: '요청 의도를 choice로 고른다', point: '해당 없음 선택지를 둬 억지 분류를 막는다', category: 'routing', confidence: 0.8 }) }] } }] },
@@ -168,4 +169,59 @@ test('a non-NOT_FOUND GraphQL error leaves a previously indexed repo unchanged, 
   assert.ok(!changes.includes('hit/three'), 'not reported as vanished (or anywhere else)');
   const hist = JSON.parse(fs.readFileSync(path.join(dir, 'data/history/stars.json'), 'utf8'));
   assert.deepEqual(hist['hit/three'], [['2026-09-27', 10]], 'stars not re-recorded today');
+});
+
+function seedHomonymLib(dir) {
+  const idxPath = path.join(dir, 'data/index.json');
+  const index = JSON.parse(fs.readFileSync(idxPath, 'utf8'));
+  index.push({
+    full_name: 'homonym/lib', url: 'https://github.com/homonym/lib', description: 'A homonym library, unrelated',
+    readme_excerpt: null, summary_ko: null, category: { slug: 'other', label: '기타', emoji: '🧩', confidence: null },
+    keywords: [], topics: [], language: null, license: null, stars: 5, forks: 0, stars_7d_delta: null,
+    pushed_at: '2026-09-25T00:00:00Z', created_at: '2026-09-01T00:00:00Z', first_seen: '2026-09-20',
+    sources: ['github-search'], verified: 'pending', decision_types: [], flags: [], score: 0,
+  });
+  fs.writeFileSync(idxPath, JSON.stringify(index, null, 2));
+  const histPath = path.join(dir, 'data/history/stars.json');
+  const hist = JSON.parse(fs.readFileSync(histPath, 'utf8'));
+  hist['homonym/lib'] = [['2026-09-27', 5]];
+  fs.writeFileSync(histPath, JSON.stringify(hist));
+}
+
+test('--refilter drops a previously-kept search-only homonym without evidence, keeps evidenced and catalog items', async () => {
+  const dir = tmpRoot();
+  await run(opts(dir, '2026-09-27', table({ stars: 10 })));
+  // 이전 실행의 data/index.json에 근거 없는 동음이의(출처가 오직 github-search)를 직접 심는다 —
+  // 새 정규식으로는 이번 실행에서 새로 들어올 수 없는 항목이라, 재선별 대상을 만들려면 직접 넣어야 한다.
+  seedHomonymLib(dir);
+
+  const r = await run({ ...opts(dir, '2026-09-28', table({ stars: 12 })), refilter: true });
+  assert.deepEqual(r.errors, []);
+  assert.ok(!r.items.some((i) => i.full_name === 'homonym/lib'), 'dropped from the run result');
+  assert.equal(r.meta.counts.refiltered, 1);
+
+  const idxPath = path.join(dir, 'data/index.json');
+  const index2 = JSON.parse(fs.readFileSync(idxPath, 'utf8'));
+  assert.ok(!index2.some((i) => i.full_name === 'homonym/lib'), 'dropped from data/index.json');
+  assert.ok(index2.some((i) => i.full_name === 'hit/three'), 'search-only item whose README has evidence is kept');
+  assert.ok(index2.some((i) => i.full_name === 'cat/two'), 'catalog-sourced item is kept without a refilter check');
+
+  const hist2 = JSON.parse(fs.readFileSync(path.join(dir, 'data/history/stars.json'), 'utf8'));
+  assert.equal(hist2['homonym/lib'], undefined, 'star history dropped too');
+
+  const changes = fs.readFileSync(path.join(dir, 'changes/2026-09-28.md'), 'utf8');
+  assert.ok(!changes.includes('homonym/lib'), 'not listed under 사라짐 or anywhere else');
+  assert.match(changes, /근거 부족으로 제외: 1개/);
+});
+
+test('without --refilter a previously-kept homonym is left untouched', async () => {
+  const dir = tmpRoot();
+  await run(opts(dir, '2026-09-27', table({ stars: 10 })));
+  seedHomonymLib(dir);
+
+  const r = await run(opts(dir, '2026-09-28', table({ stars: 12 })));
+  assert.equal(r.meta.counts.refiltered, 0);
+  assert.ok(r.items.some((i) => i.full_name === 'homonym/lib'), 'kept — previously-kept items are never re-filtered by design');
+  const changes = fs.readFileSync(path.join(dir, 'changes/2026-09-28.md'), 'utf8');
+  assert.ok(!changes.includes('근거 부족으로 제외'), 'no refilter line without the flag');
 });

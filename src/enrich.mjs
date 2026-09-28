@@ -1,5 +1,5 @@
 // enrich — GitHub 메타를 레이더 항목으로. 근거 없는 동음이의 리포를 거르고, 규칙으로 분야를 정한다(모델 분류는 summarize).
-export const EVIDENCE = /typesafe|systemone|system one|api\.typesafe\.ai|@typesafe-ai|\bjev-\d+\.\d+/i;
+export const EVIDENCE = /typesafe\.ai|@typesafe-ai|typesafe[-_ ]?(?:jev|sdk|system ?one)|systemone|\bjev-\d+\.\d+/i;
 
 export function readmeExcerpt(md) {
   if (!md) return null;

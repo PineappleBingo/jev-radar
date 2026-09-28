@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // run — 수집 → 보강 → 요약 → 확인 → 순위 → 문서 감시 → 스키마 검사 → 쓰기. 스키마를 통과 못 하면 아무것도 쓰지 않는다.
-//   node src/run.mjs [--date YYYY-MM-DD] [--backfill FROM[:TO]] [--no-summarize] [--budget-summaries N] [--budget-verify N] [--dry-run]
+//   node src/run.mjs [--date YYYY-MM-DD] [--backfill FROM[:TO]] [--no-summarize] [--budget-summaries N] [--budget-verify N] [--dry-run] [--refilter]
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -19,7 +19,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const readJson = (root, p, fallback) => { try { return JSON.parse(fs.readFileSync(path.join(root, p), 'utf8')); } catch { return fallback; } };
 const addDays = (date, n) => new Date(Date.parse(`${date}T00:00:00Z`) + n * 864e5).toISOString().slice(0, 10);
 
-export async function run({ root = ROOT, date, now, env = process.env, fetchImpl = globalThis.fetch, sleep, backfill = null, budgets = {}, summarize = true, dryRun = false }) {
+export async function run({ root = ROOT, date, now, env = process.env, fetchImpl = globalThis.fetch, sleep, backfill = null, budgets = {}, summarize = true, dryRun = false, refilter = false }) {
   const errors = [];
   const cfg = { sources: readJson(root, 'config/sources.json'), categories: readJson(root, 'config/categories.json'), queries: readJson(root, 'config/queries.json') };
   const schema = readJson(root, 'schema/radar-index.schema.json');
@@ -88,6 +88,23 @@ export async function run({ root = ROOT, date, now, env = process.env, fetchImpl
     items.push(item);
   }
 
+  // 2.5) 재선별(--refilter, 일회성): 이전 항목 중 출처가 전부 github-search인 것만 README를 다시 받아 근거를 확인한다.
+  //   사라짐(vanished)과는 다르다 — 리포는 살아 있고, 다만 동음이의로 판단해 뺀다.
+  let refilteredCount = 0;
+  const refilteredNames = [];
+  if (refilter) {
+    for (const it of [...items]) {
+      const prev = prevItems.get(it.full_name.toLowerCase());
+      if (!prev || !prev.sources.every((s) => s === 'github-search')) continue;
+      const readme = await gh.readme(it.full_name).catch(() => null);
+      if (!hasEvidence({ description: it.description, topics: it.topics, readme })) {
+        items.splice(items.indexOf(it), 1);
+        refilteredNames.push(it.full_name);
+        refilteredCount++;
+      }
+    }
+  }
+
   // 메타를 못 받은(undefined) 이전 항목은 그대로 유지 — 사라짐도 아니고 오늘 별을 다시 기록하지도 않는다.
   const carriedOver = [...prevItems.keys()].filter((k) => meta.get(k) === undefined).map((k) => prevItems.get(k));
 
@@ -108,7 +125,7 @@ export async function run({ root = ROOT, date, now, env = process.env, fetchImpl
   for (const it of items) { const u = ver.updates.get(it.full_name); if (u) Object.assign(it, u); }
 
   // 5) 순위 — carriedOver는 오늘 별을 기록하지 않고 이전 값 그대로 합친다.
-  history = recordStars(Object.fromEntries(Object.entries(history).filter(([k]) => !vanished.includes(k))), items, date);
+  history = recordStars(Object.fromEntries(Object.entries(history).filter(([k]) => !vanished.includes(k) && !refilteredNames.includes(k))), items, date);
   for (const it of items) { it.stars_7d_delta = delta7(history[it.full_name], date); it.score = score(it, date); }
   items.push(...carriedOver);
   items.sort((a, b) => b.score - a.score || a.full_name.localeCompare(b.full_name));
@@ -121,7 +138,7 @@ export async function run({ root = ROOT, date, now, env = process.env, fetchImpl
   // 7) meta · 검사
   const out = {
     schema: 'radar-index/1', topic: 'jev', generated_at: now,
-    counts: { total: items.length, new_24h: items.filter((i) => isNew(i, date, 1)).length, new_7d: items.filter((i) => isNew(i, date)).length, verified: items.filter((i) => i.verified === 'code').length },
+    counts: { total: items.length, new_24h: items.filter((i) => isNew(i, date, 1)).length, new_7d: items.filter((i) => isNew(i, date)).length, verified: items.filter((i) => i.verified === 'code').length, refiltered: refilteredCount },
     sources: [...cat.status, ...search.status, ...docs.status, { id: 'code-search', url: 'https://api.github.com/search/code', status: ver.error ? (/한도|429|rate/i.test(ver.error) ? 'rate-limited' : 'unavailable') : 'ok', count: ver.checked.length, checked_at: now }],
     queue: { summaries_pending: sum.pending.length, verification_pending: ver.pending.length },
   };
@@ -144,21 +161,22 @@ export async function run({ root = ROOT, date, now, env = process.env, fetchImpl
   w('data/extra/state.json', JSON.stringify(state, null, 2) + '\n');
   w('README.md', renderReadme({ meta: out, items, docChanges: state.doc_changes, categories: cfg.categories, date }));
   for (const c of cfg.categories) { const list = items.filter((i) => i.category.slug === c.slug); if (list.length) w(`categories/${c.slug}.md`, renderCategory(c, list, date)); }
-  w(`changes/${date}.md`, renderChanges({ date, added, vanished, rising: rising(items), docChanges: docs.changes }));
+  w(`changes/${date}.md`, renderChanges({ date, added, vanished, rising: rising(items), docChanges: docs.changes, refilteredCount: refilter ? refilteredCount : undefined }));
   return { meta: out, items, written, errors };
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   const args = process.argv.slice(2);
   const val = (k) => { const i = args.indexOf(k); return i >= 0 ? args[i + 1] : undefined; };
-  if (args.includes('--help')) { console.log('run.mjs [--date YYYY-MM-DD] [--backfill FROM[:TO]] [--no-summarize] [--budget-summaries N] [--budget-verify N] [--dry-run]'); process.exit(0); }
+  if (args.includes('--help')) { console.log('run.mjs [--date YYYY-MM-DD] [--backfill FROM[:TO]] [--no-summarize] [--budget-summaries N] [--budget-verify N] [--dry-run] [--refilter]'); process.exit(0); }
   const kstDate = (iso) => new Date(Date.parse(iso) + 9 * 36e5).toISOString().slice(0, 10);
   const nowIso = val('--date') ? new Date(`${val('--date')}T06:00:00+09:00`).toISOString() : new Date().toISOString();
   const date = val('--date') || kstDate(nowIso);
   const bf = val('--backfill');
   const backfill = bf ? { from: bf.split(':')[0], to: bf.split(':')[1] || date, days: 30 } : null;
   const dryRun = args.includes('--dry-run');
-  const r = await run({ date, now: nowIso, backfill, summarize: !args.includes('--no-summarize'), dryRun, budgets: { summaries: val('--budget-summaries') ? Number(val('--budget-summaries')) : undefined, verify: val('--budget-verify') ? Number(val('--budget-verify')) : undefined } });
+  const refilter = args.includes('--refilter');
+  const r = await run({ date, now: nowIso, backfill, summarize: !args.includes('--no-summarize'), dryRun, refilter, budgets: { summaries: val('--budget-summaries') ? Number(val('--budget-summaries')) : undefined, verify: val('--budget-verify') ? Number(val('--budget-verify')) : undefined } });
   console.log(JSON.stringify({ counts: r.meta?.counts, queue: r.meta?.queue, written: r.written.length, errors: r.errors }, null, 2));
   // dry-run은 파일을 쓰지 않는 게 정상이라 written으로 성공을 가릴 수 없다 — 스키마 검사 실패만 실패로 본다.
   const failed = dryRun ? r.errors.some((e) => /스키마/.test(e)) : r.written.length === 0;

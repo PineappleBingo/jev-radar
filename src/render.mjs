@@ -59,12 +59,13 @@ export function renderCategory(c, items, date) {
   ].join('\n');
 }
 
-export function renderChanges({ date, added, vanished, rising, docChanges }) {
+export function renderChanges({ date, added, vanished, rising, docChanges, refilteredCount }) {
   return [
     `# ${date} 변경`, '',
     `## 새로 발견 (${added.length})`, '', table(added, date), '',
     `## 급상승 (${rising.length})`, '', table(rising, date), '',
     '## 사라짐', '', vanished.length ? vanished.map((v) => `- ${v}`).join('\n') : '없음', '',
     '## 문서·모델 변경', '', docChanges.length ? docChanges.map(docLine).join('\n') : '없음', '',
+    ...(refilteredCount != null ? [`근거 부족으로 제외: ${refilteredCount}개`, ''] : []),
   ].join('\n');
 }

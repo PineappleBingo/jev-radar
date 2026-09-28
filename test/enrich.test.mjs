@@ -5,7 +5,7 @@ import { ROOT } from './_offline.mjs';
 import { readmeExcerpt, hasEvidence, classifyRules, spamFlags, keep, toItem } from '../src/enrich.mjs';
 
 const cats = JSON.parse(fs.readFileSync(`${ROOT}/config/categories.json`, 'utf8'));
-const meta = { full_name: 'o/r', url: 'https://github.com/o/r', description: 'Intent router on TypeSafe', stars: 12, forks: 2, pushed_at: '2026-09-25T00:00:00Z', created_at: '2026-09-01T00:00:00Z', archived: false, fork: false, language: 'Go', license: 'MIT', topics: ['jev'] };
+const meta = { full_name: 'o/r', url: 'https://github.com/o/r', description: 'Intent router on TypeSafe Jev', stars: 12, forks: 2, pushed_at: '2026-09-25T00:00:00Z', created_at: '2026-09-01T00:00:00Z', archived: false, fork: false, language: 'Go', license: 'MIT', topics: ['jev'] };
 
 test('readme excerpt skips badges, headings, html and code; caps at 300', () => {
   const md = '# Title\n\n[![ci](https://x/b.svg)](https://x)\n<p align="center"><img src="a.png"></p>\n\n```js\ncode\n```\n\nThis tool **routes** prompts with [Jev](https://docs.typesafe.ai).\nSecond line.\n\nMore.';
@@ -21,6 +21,15 @@ test('homonym filter: search-only hits need Jev evidence, catalog hits are kept'
   assert.equal(keep(new Set(['github-search']), false), false);
   assert.equal(keep(new Set(['github-search', 'awesome:md']), false), true);
   assert.equal(keep(new Set(['github-search']), true), true);
+});
+
+test('homonym filter: bare "typesafe" (type-safe libraries) is not evidence, only Jev-specific mentions are', () => {
+  for (const description of ['Typesafe APIs Made Simple', 'A fully type-safe router', 'typesafe config for Scala']) {
+    assert.equal(hasEvidence({ description, topics: [], readme: '' }), false, description);
+  }
+  for (const description of ['calls api.typesafe.ai', '@typesafe-ai/sdk', 'TypeSafe Jev router', 'typesafe_sdk', 'uses jev-1.13.0', 'SystemOne judge']) {
+    assert.equal(hasEvidence({ description, topics: [], readme: '' }), true, description);
+  }
 });
 
 test('rules classification: registry category wins, else keyword count, else other', () => {
