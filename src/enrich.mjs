@@ -1,5 +1,7 @@
 // enrich — GitHub 메타를 레이더 항목으로. 근거 없는 동음이의 리포를 거르고, 규칙으로 분야를 정한다(모델 분류는 summarize).
-export const EVIDENCE = /typesafe\.ai|@typesafe-ai|typesafe[-_ ]?(?:jev|sdk|system ?one)|systemone|\bjev-\d+\.\d+/i;
+// 근거 = 강한 토큰 하나, 또는 낱말 "jev"가 typesafe · system one과 같은 글에 함께 나올 때. 맨 "typesafe"(타입 안전 라이브러리)나 "typesafe SDK"(띄어쓰기)는 근거가 아니다.
+export const EVIDENCE = /typesafe[\s.-]ai\b|typesafe(?:['’]?s)?[-_ ]?jev|systemone|\bjev-\d+\.\d+|typesafe[_-]sdk|typesafe_api_key/i;
+const PAIR = /typesafe|system[\s_-]?one/i;
 
 export function readmeExcerpt(md) {
   if (!md) return null;
@@ -16,7 +18,10 @@ export function readmeExcerpt(md) {
   return null;
 }
 
-export const hasEvidence = ({ description, topics = [], readme }) => EVIDENCE.test([description || '', topics.join(' '), readme || ''].join('\n'));
+export function hasEvidence({ description, topics = [], readme }) {
+  const t = [description || '', topics.join(' '), readme || ''].join('\n');
+  return EVIDENCE.test(t) || (/\bjev\b/i.test(t) && PAIR.test(t));
+}
 export const keep = (sources, evidence) => evidence || [...sources].some((s) => s !== 'github-search');
 
 export function classifyRules(text, categories, registryCat = null) {

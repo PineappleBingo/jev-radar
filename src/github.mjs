@@ -21,6 +21,7 @@ const toMeta = (n) => ({ full_name: n.nameWithOwner, url: n.url, description: n.
 
 export function makeGithub({ token = process.env.GITHUB_TOKEN, fetchImpl = globalThis.fetch, sleep = (ms) => new Promise((r) => setTimeout(r, ms)), now = () => Date.now() } = {}) {
   async function req(url, { accept = 'application/vnd.github+json', body } = {}) {
+    let retried5xx = false;
     for (let attempt = 0; attempt < 3; attempt++) {
       const headers = { Accept: accept, 'User-Agent': 'jev-radar', 'X-GitHub-Api-Version': '2022-11-28', ...(token ? { Authorization: `Bearer ${token}` } : {}), ...(body ? { 'Content-Type': 'application/json' } : {}) };
       const res = await fetchImpl(url, { method: body ? 'POST' : 'GET', headers, body: body ? JSON.stringify(body) : undefined });
@@ -38,6 +39,11 @@ export function makeGithub({ token = process.env.GITHUB_TOKEN, fetchImpl = globa
       }
       if (res.status === 429) {
         await sleep(1000);
+        continue;
+      }
+      if (res.status >= 500 && !retried5xx) {
+        retried5xx = true;
+        await sleep(2000);
         continue;
       }
       if (res.status === 404) return null;

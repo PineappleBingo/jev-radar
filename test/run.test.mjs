@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import { ROOT, fakeFetch } from './_offline.mjs';
-import { run } from '../src/run.mjs';
+import { run, exitCode } from '../src/run.mjs';
 import { validate } from '../src/lib/schema.mjs';
 
 function tmpRoot() {
@@ -20,11 +20,11 @@ function tmpRoot() {
   fs.writeFileSync(path.join(dir, 'config/queries.json'), JSON.stringify(['topic:jev']));
   return dir;
 }
-const node = (fn, stars, extra = {}) => ({ nameWithOwner: fn, url: `https://github.com/${fn}`, description: extra.description ?? 'Uses TypeSafe Jev', stargazerCount: stars, forkCount: 1, pushedAt: '2026-09-25T00:00:00Z', createdAt: '2026-09-01T00:00:00Z', isArchived: false, isFork: false, primaryLanguage: null, licenseInfo: null, repositoryTopics: { nodes: [] } });
-function table({ stars = 10, gone = [] } = {}) {
+const node = (fn, stars, extra = {}) => ({ nameWithOwner: fn, url: `https://github.com/${fn}`, description: extra.description ?? 'Uses TypeSafe Jev', stargazerCount: stars, forkCount: 1, pushedAt: extra.pushedAt ?? '2026-09-25T00:00:00Z', createdAt: '2026-09-01T00:00:00Z', isArchived: false, isFork: false, primaryLanguage: null, licenseInfo: null, repositoryTopics: { nodes: [] } });
+function table({ stars = 10, gone = [], pushed = {}, desc = {}, extraHits = [] } = {}) {
   return {
     'https://cat/list.md': '- [x](https://github.com/cat/two)\n- [bad](https://github.com/bad/actor)',
-    'https://api.github.com/search/repositories': { total_count: 2, items: [{ full_name: 'hit/three' }, { full_name: 'homonym/jev' }] },
+    'https://api.github.com/search/repositories': { total_count: 2 + extraHits.length, items: [{ full_name: 'hit/three' }, { full_name: 'homonym/jev' }, ...extraHits.map((full_name) => ({ full_name }))] },
     'https://api.github.com/graphql': (u, init) => {
       const q = JSON.parse(init.body).query;
       const data = {};
@@ -32,7 +32,7 @@ function table({ stars = 10, gone = [] } = {}) {
       for (const [, alias, owner, name] of q.matchAll(/(r\d+): repository\(owner: "([^"]+)", name: "([^"]+)"\)/g)) {
         const fn = `${owner}/${name}`;
         if (gone.includes(fn)) { data[alias] = null; errors.push({ type: 'NOT_FOUND', path: [alias] }); continue; }
-        data[alias] = node(fn, stars, fn === 'homonym/jev' ? { description: 'Jev the cat' } : fn === 'homonym/lib' ? { description: 'A homonym library, unrelated' } : fn === 'hit/three' ? { description: 'A tool for handling things' } : {});
+        data[alias] = node(fn, stars, { pushedAt: pushed[fn], description: desc[fn] ?? (fn === 'homonym/jev' ? 'Jev the cat' : fn === 'homonym/lib' ? 'A homonym library, unrelated' : fn === 'hit/three' ? 'A tool for handling things' : undefined) });
       }
       return { data, errors };
     },
@@ -220,8 +220,108 @@ test('without --refilter a previously-kept homonym is left untouched', async () 
   seedHomonymLib(dir);
 
   const r = await run(opts(dir, '2026-09-28', table({ stars: 12 })));
-  assert.equal(r.meta.counts.refiltered, 0);
+  assert.equal('refiltered' in r.meta.counts, false, 'refiltered is only written when --refilter ran');
   assert.ok(r.items.some((i) => i.full_name === 'homonym/lib'), 'kept — previously-kept items are never re-filtered by design');
   const changes = fs.readFileSync(path.join(dir, 'changes/2026-09-28.md'), 'utf8');
   assert.ok(!changes.includes('근거 부족으로 제외'), 'no refilter line without the flag');
+});
+
+const readJ = (dir, p) => JSON.parse(fs.readFileSync(path.join(dir, p), 'utf8'));
+const writeJ = (dir, p, v) => fs.writeFileSync(path.join(dir, p), JSON.stringify(v, null, 2));
+
+test('I4: a failed README fetch leaves an indexed repo exactly as it was, even under --refilter', async () => {
+  const dir = tmpRoot();
+  const r1 = await run(opts(dir, '2026-09-27', table()));
+  const before = r1.items.find((i) => i.full_name === 'hit/three');
+  const hashBefore = readJ(dir, 'data/extra/state.json').readme['hit/three'];
+  const t = table({ stars: 12, pushed: { 'hit/three': '2026-09-28T00:00:00Z' } });
+  t['https://api.github.com/repos/hit/three/readme'] = { status: 500, body: '' };
+  const r2 = await run({ ...opts(dir, '2026-09-28', t), refilter: true });
+  assert.deepEqual(r2.items.find((i) => i.full_name === 'hit/three'), before, 'kept unchanged, not refiltered');
+  assert.equal(readJ(dir, 'data/extra/state.json').readme['hit/three'], hashBefore, 'README hash untouched');
+  assert.equal(r2.meta.counts.refiltered, 0);
+  // 옛 pushed_at이 남아 있으니 다음 실행이 README를 다시 받는다.
+  const calls = [];
+  const t3 = table({ stars: 12, pushed: { 'hit/three': '2026-09-28T00:00:00Z' } });
+  await run({ ...opts(dir, '2026-09-29', t3), fetchImpl: fakeFetch(t3, calls) });
+  assert.ok(calls.some((c) => c.url.endsWith('/repos/hit/three/readme')), 'README retried next run');
+});
+
+test('I4: a new search-only candidate whose README fetch failed is skipped today, not rejected', async () => {
+  const dir = tmpRoot();
+  const cfg = { extraHits: ['new/cand'], desc: { 'new/cand': 'A tool' } };
+  const t = table(cfg);
+  t['https://api.github.com/repos/new/cand/readme'] = { status: 503, body: '' };
+  const r1 = await run(opts(dir, '2026-09-27', t));
+  assert.ok(!r1.items.some((i) => i.full_name === 'new/cand'));
+  assert.equal(readJ(dir, 'data/extra/state.json').readme['new/cand'], undefined, 'no hash recorded for a failed fetch');
+  const r2 = await run(opts(dir, '2026-09-28', table(cfg)));
+  assert.ok(r2.items.some((i) => i.full_name === 'new/cand'), 'README with evidence arrives next run → kept');
+});
+
+test('I1: category and flags are kept when the README was not re-fetched', async () => {
+  const dir = tmpRoot();
+  await run(opts(dir, '2026-09-27', table()));
+  const index = readJ(dir, 'data/index.json');
+  const hit = index.find((i) => i.full_name === 'hit/three');
+  hit.category = { slug: 'eval', label: '평가', emoji: '🧪', confidence: null };
+  hit.flags = ['empty'];
+  writeJ(dir, 'data/index.json', index);
+  const r = await run(opts(dir, '2026-09-28', table()));
+  const after = r.items.find((i) => i.full_name === 'hit/three');
+  assert.equal(after.category.slug, 'eval');
+  assert.deepEqual(after.flags, ['empty']);
+});
+
+test('I3: summary queue = new, then never-summarized by score, re-summaries last; picked items get their full README', async () => {
+  const dir = tmpRoot();
+  const long = 'This project calls api.typesafe.ai to route prompts with choice questions.' + ' filler'.repeat(80) + ' TAILMARK';
+  const t1 = table();
+  t1['https://api.github.com/repos/'] = long;
+  await run({ ...opts(dir, '2026-09-27', t1), summarize: false });
+  const index = readJ(dir, 'data/index.json');
+  const set = (n, o) => Object.assign(index.find((i) => i.full_name === n), o);
+  set('seed/one', { score: 9, summary_ko: { what: '이미 요약된 리포입니다 정말로', decision: '의도를 choice로 고른다 정말로', point: '해당 없음 선택지가 있다 정말' } });
+  set('hit/three', { score: 5 });
+  set('cat/two', { score: 3 });
+  writeJ(dir, 'data/index.json', index);
+  const calls = [];
+  const t2 = table({ pushed: { 'seed/one': '2026-09-28T00:00:00Z' } });
+  t2['https://api.github.com/repos/'] = long;
+  t2['https://api.github.com/repos/seed/one/readme'] = 'Changed README that calls api.typesafe.ai for routing.';
+  const r = await run({ ...opts(dir, '2026-09-28', t2), fetchImpl: fakeFetch(t2, calls), budgets: { summaries: 2 } });
+  const prompts = calls.filter((c) => c.url.startsWith('https://generativelanguage')).map((c) => JSON.parse(c.init.body).contents[0].parts[0].text);
+  assert.deepEqual(prompts.map((p) => p.match(/리포: (\S+)/)[1]), ['hit/three', 'cat/two']);
+  assert.ok(prompts.every((p) => p.includes('TAILMARK')), 'full README, not the 300-char excerpt');
+  assert.equal(r.meta.queue.summaries_pending, 1);
+  assert.match(fs.readFileSync(path.join(dir, 'README.md'), 'utf8'), /요약 대기 1 · 코드 확인 대기 \d+/);
+});
+
+test('I5: baseline_date is carried over; items first seen on or before it are not new', async () => {
+  const dir = tmpRoot();
+  const r1 = await run({ ...opts(dir, '2026-09-27', table()), backfill: { from: '2026-09-01', to: '2026-09-27', days: 30 } });
+  assert.equal(r1.meta.baseline_date, '2026-09-27');
+  assert.equal(r1.meta.counts.new_7d, 0);
+  const r2 = await run(opts(dir, '2026-09-28', table({ extraHits: ['new/four'] })));
+  assert.equal(readJ(dir, 'data/meta.json').baseline_date, '2026-09-27');
+  assert.deepEqual([r2.meta.counts.new_24h, r2.meta.counts.new_7d], [1, 1]);
+  assert.match(fs.readFileSync(path.join(dir, 'README.md'), 'utf8'), /🆕 24시간 1 · 7일 1/);
+});
+
+test('M7: a second run on the same day keeps the day\'s added and vanished lists', async () => {
+  const dir = tmpRoot();
+  await run(opts(dir, '2026-09-27', table()));
+  await run(opts(dir, '2026-09-28', table({ gone: ['cat/two'], extraHits: ['new/four'] })));
+  await run(opts(dir, '2026-09-28', table({ gone: ['cat/two'], extraHits: ['new/four'] })));
+  const changes = fs.readFileSync(path.join(dir, 'changes/2026-09-28.md'), 'utf8');
+  assert.match(changes, /## 새로 발견 \(1\)[\s\S]*new\/four/);
+  assert.match(changes, /## 사라짐\n\n- cat\/two/);
+});
+
+test('M4: dry-run fails when the meta fetch failed (meta: null) or the schema failed', () => {
+  assert.equal(exitCode({ meta: null, written: [], errors: ['GitHub 메타 조회 실패: x'] }, true), 1);
+  assert.equal(exitCode({ meta: {}, written: [], errors: ['스키마 검사 실패 1건'] }, true), 1);
+  assert.equal(exitCode({ meta: {}, written: [], errors: ['요약 a/b: Gemini 500'] }, true), 0);
+  assert.equal(exitCode({ meta: {}, written: [], errors: [] }, false), 1);
+  assert.equal(exitCode({ meta: {}, written: ['x'], errors: [] }, false), 0);
 });

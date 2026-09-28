@@ -19,7 +19,8 @@ export function delta7(series = [], date) {
   return today && old ? today[1] - old[1] : null;
 }
 
-export const isNew = (item, date, n = 7) => days(item.first_seen, date) < n;
+// baseline(백필한 날) 이전 · 당일에 처음 본 항목은 새것이 아니다.
+export const isNew = (item, date, n = 7, baseline = null) => (!baseline || item.first_seen > baseline) && days(item.first_seen, date) < n;
 
 export const rising = (items, n = 10) => items.filter((i) => (i.stars_7d_delta ?? 0) >= 5).sort((a, b) => b.stars_7d_delta - a.stars_7d_delta || a.full_name.localeCompare(b.full_name)).slice(0, n);
 
@@ -30,6 +31,7 @@ export function score(item, date) {
     + (item.summary_ko ? 0.5 : 0)
     + (age <= 30 ? 1.5 : age <= 90 ? 0.75 : 0)
     + Math.min(2, Math.max(0, item.stars_7d_delta || 0) / 10);
-  const capped = (item.flags || []).includes('spam-suspect') ? Math.min(s, 0.5) : Math.min(s, 10);
+  // 코드로 확인된 구현이 별만 많은 미확인 리포보다 위에 오도록 미확인은 7에서 자른다.
+  const capped = (item.flags || []).includes('spam-suspect') ? Math.min(s, 0.5) : Math.min(s, item.verified === 'code' ? 10 : 7);
   return Math.round(capped * 10) / 10;
 }

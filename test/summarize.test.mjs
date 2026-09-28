@@ -45,6 +45,17 @@ test('summarizeAll honours the budget and order, queues the rest, keeps going on
   assert.match(calls[0].url, /models\/m:generateContent$/);
 });
 
+test('summarizeAll stops on the first 429; the rest stay pending and the error is the status only', async () => {
+  const calls = [];
+  const fetchImpl = fakeFetch({ 'https://generativelanguage.googleapis.com/': (u, init) => (JSON.parse(init.body).contents[0].parts[0].text.includes('리포: b/') ? { status: 429, body: { error: { status: 'RESOURCE_EXHAUSTED', message: 'quota secret detail' } } } : reply(GOOD)) }, calls);
+  const items = ['a/one', 'b/two', 'c/three'].map((full_name) => ({ ...item, full_name }));
+  const r = await summarizeAll(items, { apiKey: 'k', model: 'm', fetchImpl, budget: 40, readmes: new Map(), categories: cats, order: ['a/one', 'b/two', 'c/three'] });
+  assert.equal(calls.length, 2);
+  assert.deepEqual([...r.results.keys()], ['a/one']);
+  assert.deepEqual(r.pending, ['b/two', 'c/three']);
+  assert.deepEqual(r.errors, [{ full_name: 'b/two', message: 'Gemini 429' }]);
+});
+
 test('no api key → nothing called, everything pending', async () => {
   const r = await summarizeAll([{ ...item }], { apiKey: '', model: 'm', fetchImpl: async () => { throw new Error('called'); }, budget: 5, readmes: new Map(), categories: cats, order: ['o/r'] });
   assert.deepEqual(r.pending, ['o/r']);

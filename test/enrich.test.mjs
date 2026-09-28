@@ -27,9 +27,26 @@ test('homonym filter: bare "typesafe" (type-safe libraries) is not evidence, onl
   for (const description of ['Typesafe APIs Made Simple', 'A fully type-safe router', 'typesafe config for Scala']) {
     assert.equal(hasEvidence({ description, topics: [], readme: '' }), false, description);
   }
-  for (const description of ['calls api.typesafe.ai', '@typesafe-ai/sdk', 'TypeSafe Jev router', 'typesafe_sdk', 'uses jev-1.13.0', 'SystemOne judge']) {
+  for (const description of ['calls api.typesafe.ai', '@typesafe-ai/sdk', 'TypeSafe Jev router', 'typesafe_sdk', 'typesafe-sdk', 'reads TYPESAFE_API_KEY', 'uses jev-1.13.0', 'SystemOne judge', 'built on TypeSafe AI']) {
     assert.equal(hasEvidence({ description, topics: [], readme: '' }), true, description);
   }
+  assert.equal(hasEvidence({ description: 'a typesafe SDK for TypeScript', topics: [], readme: '' }), false, 'typesafe SDK (space) is a TS phrase');
+  assert.equal(hasEvidence({ description: 'System One thinking', topics: [], readme: '' }), false, 'System One alone is not enough');
+});
+
+test('homonym filter: real Jev repos the strict rule dropped (review C1) are kept', () => {
+  const real = {
+    'gauravkhuraana/jev-qa-demos': { description: 'Jev (TypeSafe AI) demos for QA / SDET engineers via Vercel AI Gateway - simple, commented TypeScript for a video walkthrough', topics: [] },
+    'cooper667/jev-browse': { description: 'Plain-English browser QA for Claude Code, judged by TypeSafe\'s Jev on Cloudflare Workers AI', topics: [] },
+    'pinecone-io/using-typesafe-and-pinecone': { description: 'Worked out examples of applying TypeSafe AI Decision (Jev) models with Pinecone.', topics: ['hybrid-search', 'jev', 'jev-ai', 'pinecone'] },
+    'bydeng01/scientific-decision-eval': { description: 'Code and data for evaluating Jev, a System One model, on scientific decisions and how its choices affect downstream results.', topics: [] },
+    'imMamdouhaboammar/get-fable': { description: 'Make the model you already use work more like a frontier model with better planning, persistent context, skills, hooks, failure handling, and verification.. Orchestrated Multi-Specialist Agentic Lifecycle Harness', topics: ['context-engineering', 'loop-engineering', 'typesafe-ai', 'agent-harness'] },
+    'LXBWOW/dsh-completion-supervisor': { description: 'Checks whether a coding agent completion claim is actually true: deterministic evidence gathered in code, one batched Jev assessment, and a pure policy. DSH plugin.', topics: ['agent', 'deepseek-harness', 'dsh', 'jev', 'typesafe'] },
+    'abhishek085/JevControl': { description: 'Find out whether a smaller model could handle some of your AI agent’s routine choices.', topics: ['jev', 'jev-api', 'jevbench'], readme: 'Jev and System One are TypeSafe AI\'s names; open-spark-Jev is an independent implementation inspired by them.' },
+    'dzhng/jevgrep': { description: 'Find code by asking what it does. A CLI for coding agents that uses Jev to discover relevant files and source context.', topics: ['jev', 'semantic-search'], readme: 'Requires **Node.js 22+**, **macOS or Linux**, and a key for **Vercel AI Gateway, TypeSafe, OpenRouter, or OpenCode Zen**.' },
+    'benjamincanac/tia': { description: 'Triage Issue Agent for GitHub, built with Eve and Jev.', topics: ['eve', 'agents', 'ai', 'jev'], readme: 'Every decision is taken by Jev (`typesafe-ai/jev`) inside a tool and compared with the repository\'s thresholds.' },
+  };
+  for (const [name, r] of Object.entries(real)) assert.equal(hasEvidence({ readme: '', ...r }), true, name);
 });
 
 test('rules classification: registry category wins, else keyword count, else other', () => {

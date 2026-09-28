@@ -25,6 +25,8 @@ export async function run({ root = ROOT, date, now, env = process.env, fetchImpl
   const schema = readJson(root, 'schema/radar-index.schema.json');
   const prevItems = new Map(readJson(root, 'data/index.json', []).map((i) => [i.full_name.toLowerCase(), i]));
   const state = readJson(root, 'data/extra/state.json', { docs: {}, readme: {}, verify: {} });
+  // 백필한 날 — 그날까지 처음 본 항목은 새것(🆕)으로 치지 않는다.
+  const baseline = readJson(root, 'data/meta.json', {}).baseline_date ?? (backfill ? date : null);
   let history = readJson(root, 'data/history/stars.json', {});
   const gh = makeGithub({ token: env.GITHUB_TOKEN, fetchImpl, ...(sleep ? { sleep } : {}) });
   const fetchText = async (url) => { const res = await fetchImpl(url, { headers: { 'User-Agent': 'jev-radar' } }); return res.ok ? res.text() : null; };
@@ -69,22 +71,29 @@ export async function run({ root = ROOT, date, now, env = process.env, fetchImpl
 
   const items = [];
   const readmes = new Map();
+  const fetched = new Map(); // 오늘 받은 README — 문자열, 또는 404면 null
   const changedReadme = new Set();
+  const unfetched = []; // README를 받다 실패한(한도 · 5xx) 이전 항목 — 오늘은 이전 그대로 둔다
   for (const [canonical, sources] of canonicalSources) {
     const m = canonicalMeta.get(canonical);
     const prev = prevItems.get(canonical) || null;
+    const refetch = !prev || prev.pushed_at !== m.pushed_at;
     let readme = null;
-    if (!prev || prev.pushed_at !== m.pushed_at) {
-      readme = await gh.readme(m.full_name).catch(() => null);
+    if (refetch) {
+      // 실패는 undefined — 404(README 없음, null)와 다르다. 못 받은 날은 판단하지 않고 다음 실행에 다시 받는다.
+      readme = await gh.readme(m.full_name).catch(() => undefined);
+      if (readme === undefined) { if (prev) unfetched.push(prev); continue; }
+      fetched.set(m.full_name, readme);
       const h = readme ? sha256(readme).slice(0, 16) : null;
       if (prev && h !== state.readme[m.full_name]) changedReadme.add(m.full_name);
       state.readme[m.full_name] = h;
     }
     // 한 번 들어온 항목은 거르지 않는다(README를 다시 받지 않은 날 근거가 발췌 밖에 있어 빠지는 일을 막는다).
     if (!prev && !keep(sources, hasEvidence({ description: m.description, topics: m.topics, readme }))) continue;
-    const item = toItem(m, { sources, readme: readme ?? prev?.readme_excerpt ?? null, firstSeen: date, categories: cfg.categories, registryCat: regCat.get(canonical) || null, prev });
-    if (readme === null && prev) { item.readme_excerpt = prev.readme_excerpt ?? null; item.verified = prev.verified; }
-    readmes.set(item.full_name, readme ?? prev?.readme_excerpt ?? '');
+    const item = toItem(m, { sources, readme: refetch ? readme : prev.readme_excerpt ?? null, firstSeen: date, categories: cfg.categories, registryCat: regCat.get(canonical) || null, prev });
+    // README를 다시 받지 않았으면 300자 발췌로 다시 분류하지 않는다 — 분야 · 표시 · 확인은 이전 그대로.
+    if (!refetch) Object.assign(item, { readme_excerpt: prev.readme_excerpt ?? null, verified: prev.verified, category: prev.category, flags: prev.flags });
+    readmes.set(item.full_name, (refetch ? readme : prev.readme_excerpt) ?? '');
     items.push(item);
   }
 
@@ -96,7 +105,8 @@ export async function run({ root = ROOT, date, now, env = process.env, fetchImpl
     for (const it of [...items]) {
       const prev = prevItems.get(it.full_name.toLowerCase());
       if (!prev || !prev.sources.every((s) => s === 'github-search')) continue;
-      const readme = await gh.readme(it.full_name).catch(() => null);
+      const readme = fetched.has(it.full_name) ? fetched.get(it.full_name) : await gh.readme(it.full_name).catch(() => undefined);
+      if (readme === undefined) continue; // 못 받았으면 지우지 않는다
       if (!hasEvidence({ description: it.description, topics: it.topics, readme })) {
         items.splice(items.indexOf(it), 1);
         refilteredNames.push(it.full_name);
@@ -106,15 +116,20 @@ export async function run({ root = ROOT, date, now, env = process.env, fetchImpl
   }
 
   // 메타를 못 받은(undefined) 이전 항목은 그대로 유지 — 사라짐도 아니고 오늘 별을 다시 기록하지도 않는다.
-  const carriedOver = [...prevItems.keys()].filter((k) => meta.get(k) === undefined).map((k) => prevItems.get(k));
+  const carriedOver = [...[...prevItems.keys()].filter((k) => meta.get(k) === undefined).map((k) => prevItems.get(k)), ...unfetched];
 
-  // 3) 요약
+  // 3) 요약 — 새 항목 → 한 번도 요약 안 된 것(점수 순) → README가 바뀐 재요약은 마지막.
   const order = [
     ...items.filter((i) => !prevItems.has(i.full_name.toLowerCase())),
-    ...items.filter((i) => changedReadme.has(i.full_name)),
-    ...items.filter((i) => !i.summary_ko).sort((a, b) => a.first_seen.localeCompare(b.first_seen)),
+    ...items.filter((i) => !i.summary_ko).sort((a, b) => b.score - a.score || a.full_name.localeCompare(b.full_name)),
+    ...items.filter((i) => i.summary_ko && changedReadme.has(i.full_name)),
   ].map((i) => i.full_name).filter((n, i, a) => a.indexOf(n) === i);
-  const sum = summarize ? await summarizeAll(items, { apiKey: env.GEMINI_API_KEY, model: env.GEMINI_MODEL || undefined, fetchImpl, budget: budgets.summaries ?? 40, readmes, categories: cfg.categories, order }) : { results: new Map(), pending: order, errors: [] };
+  const budgetSummaries = budgets.summaries ?? 40;
+  if (summarize && env.GEMINI_API_KEY) {
+    // 이번에 요약할 항목은 발췌(300자)가 아니라 README 전체로 — 오늘 받지 않았으면 받는다(실패하면 발췌 그대로).
+    for (const n of order.slice(0, budgetSummaries)) if (!fetched.has(n)) { const r = await gh.readme(n).catch(() => undefined); if (r) readmes.set(n, r); }
+  }
+  const sum = summarize ? await summarizeAll(items, { apiKey: env.GEMINI_API_KEY, model: env.GEMINI_MODEL || undefined, fetchImpl, budget: budgetSummaries, readmes, categories: cfg.categories, order }) : { results: new Map(), pending: order, errors: [] };
   for (const it of items) {
     const s = sum.results.get(it.full_name);
     if (s) { it.summary_ko = s.summary_ko; it.category = s.category; }
@@ -137,8 +152,8 @@ export async function run({ root = ROOT, date, now, env = process.env, fetchImpl
 
   // 7) meta · 검사
   const out = {
-    schema: 'radar-index/1', topic: 'jev', generated_at: now,
-    counts: { total: items.length, new_24h: items.filter((i) => isNew(i, date, 1)).length, new_7d: items.filter((i) => isNew(i, date)).length, verified: items.filter((i) => i.verified === 'code').length, refiltered: refilteredCount },
+    schema: 'radar-index/1', topic: 'jev', generated_at: now, ...(baseline ? { baseline_date: baseline } : {}),
+    counts: { total: items.length, new_24h: items.filter((i) => isNew(i, date, 1, baseline)).length, new_7d: items.filter((i) => isNew(i, date, 7, baseline)).length, verified: items.filter((i) => i.verified === 'code').length, ...(refilter ? { refiltered: refilteredCount } : {}) },
     sources: [...cat.status, ...search.status, ...docs.status, { id: 'code-search', url: 'https://api.github.com/search/code', status: ver.error ? (/한도|429|rate/i.test(ver.error) ? 'rate-limited' : 'unavailable') : 'ok', count: ver.checked.length, checked_at: now }],
     queue: { summaries_pending: sum.pending.length, verification_pending: ver.pending.length },
   };
@@ -154,16 +169,24 @@ export async function run({ root = ROOT, date, now, env = process.env, fetchImpl
   if (dryRun) return { meta: out, items, written: [], errors };
   const written = [];
   const w = (rel, text) => { fs.mkdirSync(path.dirname(path.join(root, rel)), { recursive: true }); fs.writeFileSync(path.join(root, rel), text); written.push(rel); };
-  const added = items.filter((i) => !prevItems.has(i.full_name.toLowerCase()));
+  // 같은 날 다시 돌려도 그날 기록을 지우지 않는다: 새로 발견 = 오늘 처음 본 항목, 사라짐 · 재선별은 state.day에 합친다.
+  const added = items.filter((i) => isNew(i, date, 1, baseline));
+  const day = state.day?.date === date ? state.day : { date, vanished: [], refiltered: [] };
+  day.vanished = [...new Set([...day.vanished, ...vanished])];
+  day.refiltered = [...new Set([...day.refiltered, ...refilteredNames])];
+  state.day = day;
   w('data/index.json', JSON.stringify(items, null, 2) + '\n');
   w('data/meta.json', JSON.stringify(out, null, 2) + '\n');
   w('data/history/stars.json', JSON.stringify(history) + '\n');
   w('data/extra/state.json', JSON.stringify(state, null, 2) + '\n');
   w('README.md', renderReadme({ meta: out, items, docChanges: state.doc_changes, categories: cfg.categories, date }));
-  for (const c of cfg.categories) { const list = items.filter((i) => i.category.slug === c.slug); if (list.length) w(`categories/${c.slug}.md`, renderCategory(c, list, date)); }
-  w(`changes/${date}.md`, renderChanges({ date, added, vanished, rising: rising(items), docChanges: docs.changes, refilteredCount: refilter ? refilteredCount : undefined }));
+  for (const c of cfg.categories) { const list = items.filter((i) => i.category.slug === c.slug); if (list.length) w(`categories/${c.slug}.md`, renderCategory(c, list, date, baseline)); }
+  w(`changes/${date}.md`, renderChanges({ date, added, vanished: day.vanished, rising: rising(items), docChanges: state.doc_changes.filter((c) => c.date === date), refilteredCount: refilter || day.refiltered.length ? day.refiltered.length : undefined, baseline }));
   return { meta: out, items, written, errors };
 }
+
+// dry-run은 파일을 쓰지 않는 게 정상이라 written으로 성공을 가릴 수 없다 — 메타 조회 실패(meta: null)와 스키마 검사 실패를 실패로 본다.
+export const exitCode = (r, dryRun) => ((dryRun ? !r.meta || r.errors.some((e) => /스키마/.test(e)) : r.written.length === 0) ? 1 : 0);
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   const args = process.argv.slice(2);
@@ -178,7 +201,5 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
   const refilter = args.includes('--refilter');
   const r = await run({ date, now: nowIso, backfill, summarize: !args.includes('--no-summarize'), dryRun, refilter, budgets: { summaries: val('--budget-summaries') ? Number(val('--budget-summaries')) : undefined, verify: val('--budget-verify') ? Number(val('--budget-verify')) : undefined } });
   console.log(JSON.stringify({ counts: r.meta?.counts, queue: r.meta?.queue, written: r.written.length, errors: r.errors }, null, 2));
-  // dry-run은 파일을 쓰지 않는 게 정상이라 written으로 성공을 가릴 수 없다 — 스키마 검사 실패만 실패로 본다.
-  const failed = dryRun ? r.errors.some((e) => /스키마/.test(e)) : r.written.length === 0;
-  process.exit(failed ? 1 : 0);
+  process.exit(exitCode(r, dryRun));
 }

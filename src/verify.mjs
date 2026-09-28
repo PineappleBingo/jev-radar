@@ -25,11 +25,16 @@ export async function verifyRepo(gh, fullName, { sleep, spacingMs = 6500 }) {
   return { verified: null, decision_types: [], queries };
 }
 
-const daysBetween = (a, b) => Math.round((Date.parse(b) - Date.parse(a)) / 864e5);
-
 export async function verifyAll(items, gh, { budget = 15, maxQueries = 45, sleep, state, today }) {
   state.verify ||= {};
-  const due = items.filter((i) => i.verified !== 'code' && (!state.verify[i.full_name] || daysBetween(state.verify[i.full_name], today) >= 14)).map((i) => i.full_name);
+  // 한 번도 안 본 리포(점수 순)가 먼저, 다시 보기는 마지막 확인 뒤 푸시된 리포만.
+  //   state.verify는 날짜(YYYY-MM-DD)라 확인한 날 푸시도 다음 날 한 번 더 본다(놓치지 않는 쪽).
+  const byScore = (a, b) => (b.score ?? 0) - (a.score ?? 0);
+  const open = items.filter((i) => i.verified !== 'code');
+  const due = [
+    ...open.filter((i) => !state.verify[i.full_name]).sort(byScore),
+    ...open.filter((i) => state.verify[i.full_name] && String(i.pushed_at) > state.verify[i.full_name]).sort(byScore),
+  ].map((i) => i.full_name);
   const updates = new Map();
   const checked = [];
   let error = null;

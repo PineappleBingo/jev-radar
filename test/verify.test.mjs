@@ -20,21 +20,21 @@ test('verifyRepo: code hit outside docs → code + decision types; docs-only hit
   assert.ok(slept.every((ms) => ms === 6500));
 });
 
-test('verifyAll: budget, 14-day recheck, state stamps', async () => {
+test('verifyAll: never-checked first by score, re-check only when pushed since the last check, state stamps', async () => {
   const gh = { codeSearch: async () => [], fileText: async () => '' };
-  const state = { verify: { 'o/recent': '2026-09-20', 'o/old': '2026-09-01' } };
+  const state = { verify: { 'o/quiet': '2026-09-01', 'o/pushed': '2026-09-01' } };
   const items = [
-    { full_name: 'o/code', verified: 'code' },
-    { full_name: 'o/recent', verified: 'docs' },
-    { full_name: 'o/old', verified: 'docs' },
-    { full_name: 'o/new1', verified: 'pending' },
-    { full_name: 'o/new2', verified: 'pending' },
+    { full_name: 'o/code', verified: 'code', score: 9, pushed_at: '2026-09-25T00:00:00Z' },
+    { full_name: 'o/quiet', verified: 'docs', score: 8, pushed_at: '2026-08-20T00:00:00Z' },
+    { full_name: 'o/pushed', verified: 'docs', score: 8, pushed_at: '2026-09-10T00:00:00Z' },
+    { full_name: 'o/new-low', verified: 'pending', score: 1, pushed_at: '2026-09-25T00:00:00Z' },
+    { full_name: 'o/new-high', verified: 'pending', score: 5, pushed_at: '2026-09-25T00:00:00Z' },
   ];
   const r = await verifyAll(items, gh, { budget: 2, sleep: async () => {}, state, today: '2026-09-26' });
-  assert.deepEqual(r.checked, ['o/old', 'o/new1']);
-  assert.deepEqual(r.pending, ['o/new2']);
-  assert.equal(state.verify['o/old'], '2026-09-26');
-  assert.equal(state.verify['o/recent'], '2026-09-20');
+  assert.deepEqual(r.checked, ['o/new-high', 'o/new-low']);
+  assert.deepEqual(r.pending, ['o/pushed'], 'quiet repo is not due; pushed one waits behind never-checked ones');
+  assert.equal(state.verify['o/new-high'], '2026-09-26');
+  assert.equal(state.verify['o/quiet'], '2026-09-01');
   assert.equal(r.error, null);
 });
 

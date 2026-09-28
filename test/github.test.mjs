@@ -63,8 +63,16 @@ test('rate limit: short reset waits and retries, long reset throws RateLimited',
   await assert.rejects(() => gh2.readme('o/r'), RateLimited);
 });
 
+test('a 5xx is retried once after 2 s', async () => {
+  let n = 0;
+  const slept = [];
+  const gh = makeGithub({ sleep: async (ms) => { slept.push(ms); }, fetchImpl: fakeFetch({ 'https://api.github.com/repos/o/r/readme': () => (n++ === 0 ? { status: 502, body: '' } : '# hi') }) });
+  assert.equal(await gh.readme('o/r'), '# hi');
+  assert.deepEqual(slept, [2000]);
+});
+
 test('404 is null, other errors throw', async () => {
-  const gh = makeGithub({ fetchImpl: fakeFetch({ 'https://api.github.com/repos/o/gone/readme': { status: 404, body: '' }, 'https://api.github.com/repos/o/boom/readme': { status: 500, body: '' } }) });
+  const gh = makeGithub({ sleep: async () => {}, fetchImpl: fakeFetch({ 'https://api.github.com/repos/o/gone/readme': { status: 404, body: '' }, 'https://api.github.com/repos/o/boom/readme': { status: 500, body: '' } }) });
   assert.equal(await gh.readme('o/gone'), null);
   await assert.rejects(() => gh.readme('o/boom'), /GitHub 500/);
 });

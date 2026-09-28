@@ -19,10 +19,14 @@ test('delta7 uses the nearest record at least 7 days old', () => {
 test('new, rising, score', () => {
   assert.equal(isNew({ first_seen: '2026-09-20' }, '2026-09-26'), true);
   assert.equal(isNew({ first_seen: '2026-09-18' }, '2026-09-26'), false);
+  assert.equal(isNew({ first_seen: '2026-09-20' }, '2026-09-26', 7, '2026-09-20'), false, 'backfill baseline day is not new');
+  assert.equal(isNew({ first_seen: '2026-09-21' }, '2026-09-26', 7, '2026-09-20'), true);
   const items = [{ full_name: 'a', stars_7d_delta: 3 }, { full_name: 'b', stars_7d_delta: 30 }, { full_name: 'c', stars_7d_delta: null }, { full_name: 'd', stars_7d_delta: 8 }];
   assert.deepEqual(rising(items).map((i) => i.full_name), ['b', 'd']);
   const base = { stars: 99, verified: 'code', summary_ko: { what: 'x' }, pushed_at: '2026-09-20T00:00:00Z', stars_7d_delta: 10, flags: [] };
   assert.equal(score(base, '2026-09-26'), 9, '4 + 2 + 0.5 + 1.5 + 1');
+  assert.equal(score({ ...base, verified: 'docs' }, '2026-09-26'), 7, 'unconfirmed repos are capped at 7 (8 → 7)');
+  assert.equal(score({ ...base, stars: 99999, verified: 'pending' }, '2026-09-26'), 7);
   assert.equal(score({ ...base, flags: ['spam-suspect'] }, '2026-09-26'), 0.5);
   assert.equal(score({ stars: 0, verified: 'pending', summary_ko: null, pushed_at: '2025-01-01T00:00:00Z', stars_7d_delta: null, flags: [] }, '2026-09-26'), 0);
 });

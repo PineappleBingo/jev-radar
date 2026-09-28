@@ -52,8 +52,9 @@ export async function summarizeAll(items, { apiKey, model = DEFAULT_MODEL, fetch
   const slugs = categories.map((c) => c.slug);
   const pending = [];
   let used = 0;
+  let quota = false; // 첫 429에서 멈춘다 — 남은 호출도 같은 한도에 걸린다.
   for (const name of queue) {
-    if (used >= budget) { pending.push(name); continue; }
+    if (used >= budget || quota) { pending.push(name); continue; }
     used++;
     try {
       const res = await fetchImpl(`${API}/${model}:generateContent`, {
@@ -68,6 +69,7 @@ export async function summarizeAll(items, { apiKey, model = DEFAULT_MODEL, fetch
           },
         }),
       });
+      if (res.status === 429) quota = true;
       if (!res.ok) throw new Error(`Gemini ${res.status}`);
       const body = await res.json();
       results.set(name, parseSummary(body.candidates?.[0]?.content?.parts?.[0]?.text ?? '', categories));
