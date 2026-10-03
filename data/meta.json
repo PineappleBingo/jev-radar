@@ -1,12 +1,12 @@
 {
   "schema": "radar-index/1",
   "topic": "jev",
-  "generated_at": "2026-10-02T00:30:48.814Z",
+  "generated_at": "2026-10-03T00:09:22.462Z",
   "baseline_date": "2026-09-28",
   "counts": {
-    "total": 6049,
-    "new_24h": 398,
-    "new_7d": 1683,
+    "total": 6443,
+    "new_24h": 414,
+    "new_7d": 2086,
     "verified": 91
   },
   "sources": [
@@ -15,207 +15,207 @@
       "url": "https://raw.githubusercontent.com/kydlikebtc/awesome-jev/main/catalog.json",
       "status": "ok",
       "count": 1138,
-      "checked_at": "2026-10-02T00:30:48.814Z"
+      "checked_at": "2026-10-03T00:09:22.462Z"
     },
     {
       "id": "yibie-readme",
       "url": "https://raw.githubusercontent.com/yibie/awesome-jev/main/README.md",
       "status": "ok",
       "count": 431,
-      "checked_at": "2026-10-02T00:30:48.814Z"
+      "checked_at": "2026-10-03T00:09:22.462Z"
     },
     {
       "id": "yibie-finance",
       "url": "https://raw.githubusercontent.com/yibie/awesome-jev/main/categories/finance-trading.md",
       "status": "ok",
       "count": 8,
-      "checked_at": "2026-10-02T00:30:48.814Z"
+      "checked_at": "2026-10-03T00:09:22.462Z"
     },
     {
       "id": "logicrw-readme",
       "url": "https://raw.githubusercontent.com/logicrw/awesome-jev-projects/main/README.md",
       "status": "ok",
-      "count": 804,
-      "checked_at": "2026-10-02T00:30:48.814Z"
+      "count": 805,
+      "checked_at": "2026-10-03T00:09:22.462Z"
     },
     {
       "id": "omnijev-readme",
       "url": "https://raw.githubusercontent.com/OmniJev/awesome-jev-gallery/main/README.md",
       "status": "ok",
       "count": 103,
-      "checked_at": "2026-10-02T00:30:48.814Z"
+      "checked_at": "2026-10-03T00:09:22.462Z"
     },
     {
       "id": "heyjunpenn-readme",
       "url": "https://raw.githubusercontent.com/heyjunpenn/awesome-jev/main/README.md",
       "status": "ok",
       "count": 966,
-      "checked_at": "2026-10-02T00:30:48.814Z"
+      "checked_at": "2026-10-03T00:09:22.462Z"
     },
     {
       "id": "hackernoon-101",
       "url": "https://hackernoon.com/101-real-world-examples-of-how-to-use-jev",
       "status": "ok",
       "count": 92,
-      "checked_at": "2026-10-02T00:30:48.814Z"
+      "checked_at": "2026-10-03T00:09:22.462Z"
     },
     {
       "id": "robustness-yifan",
       "url": "https://raw.githubusercontent.com/Yifan-Lan/awesome-jev-robustness/main/data/entries.tsv",
       "status": "ok",
       "count": 111,
-      "checked_at": "2026-10-02T00:30:48.814Z"
+      "checked_at": "2026-10-03T00:09:22.462Z"
     },
     {
       "id": "abdelstark-resources",
       "url": "https://raw.githubusercontent.com/AbdelStark/awesome-typesafe-jev/main/resources.json",
       "status": "ok",
-      "count": 224,
-      "checked_at": "2026-10-02T00:30:48.814Z"
+      "count": 228,
+      "checked_at": "2026-10-03T00:09:22.462Z"
     },
     {
       "id": "anilmatcha-readme",
       "url": "https://raw.githubusercontent.com/Anil-matcha/awesome-jev-by-typesafe/main/README.md",
       "status": "ok",
       "count": 100,
-      "checked_at": "2026-10-02T00:30:48.814Z"
+      "checked_at": "2026-10-03T00:09:22.462Z"
     },
     {
       "id": "use-cases-walid",
       "url": "https://raw.githubusercontent.com/walidboulanouar/awesome-jev-use-cases/main/data/repos.csv",
       "status": "ok",
       "count": 38,
-      "checked_at": "2026-10-02T00:30:48.814Z"
+      "checked_at": "2026-10-03T00:09:22.462Z"
     },
     {
       "id": "use-cases-walid-more",
       "url": "https://raw.githubusercontent.com/walidboulanouar/awesome-jev-use-cases/main/data/more-repos.csv",
       "status": "ok",
       "count": 113,
-      "checked_at": "2026-10-02T00:30:48.814Z"
+      "checked_at": "2026-10-03T00:09:22.462Z"
     },
     {
       "id": "use-cases-walid-demos",
       "url": "https://raw.githubusercontent.com/walidboulanouar/awesome-jev-use-cases/main/data/demos.csv",
       "status": "parse-suspect",
       "count": 0,
-      "checked_at": "2026-10-02T00:30:48.814Z"
+      "checked_at": "2026-10-03T00:09:22.462Z"
     },
     {
       "id": "github-search",
-      "url": "topic:jev pushed:>=2026-09-29",
+      "url": "topic:jev pushed:>=2026-09-30",
       "status": "ok",
-      "count": 623,
-      "checked_at": "2026-10-02T00:30:48.814Z"
+      "count": 667,
+      "checked_at": "2026-10-03T00:09:22.462Z"
     },
     {
       "id": "github-search",
-      "url": "systemone typesafe in:readme,description pushed:>=2026-09-29",
-      "status": "ok",
-      "count": 989,
-      "checked_at": "2026-10-02T00:30:48.814Z"
-    },
-    {
-      "id": "github-search",
-      "url": "\"api.typesafe.ai\" in:readme pushed:>=2026-09-29",
-      "status": "ok",
-      "count": 631,
-      "checked_at": "2026-10-02T00:30:48.814Z"
-    },
-    {
-      "id": "github-search",
-      "url": "\"@typesafe-ai/sdk\" in:readme pushed:>=2026-09-29",
-      "status": "ok",
-      "count": 117,
-      "checked_at": "2026-10-02T00:30:48.814Z"
-    },
-    {
-      "id": "github-search",
-      "url": "\"typesafe jev\" in:name,description,readme pushed:>=2026-09-29",
+      "url": "systemone typesafe in:readme,description pushed:>=2026-09-30",
       "status": "ok",
       "count": 1000,
-      "checked_at": "2026-10-02T00:30:48.814Z"
+      "checked_at": "2026-10-03T00:09:22.462Z"
+    },
+    {
+      "id": "github-search",
+      "url": "\"api.typesafe.ai\" in:readme pushed:>=2026-09-30",
+      "status": "ok",
+      "count": 653,
+      "checked_at": "2026-10-03T00:09:22.462Z"
+    },
+    {
+      "id": "github-search",
+      "url": "\"@typesafe-ai/sdk\" in:readme pushed:>=2026-09-30",
+      "status": "ok",
+      "count": 109,
+      "checked_at": "2026-10-03T00:09:22.462Z"
+    },
+    {
+      "id": "github-search",
+      "url": "\"typesafe jev\" in:name,description,readme pushed:>=2026-09-30",
+      "status": "ok",
+      "count": 1000,
+      "checked_at": "2026-10-03T00:09:22.462Z"
     },
     {
       "id": "docs-sitemap",
       "url": "https://docs.typesafe.ai/sitemap.xml",
       "status": "ok",
       "count": 1,
-      "checked_at": "2026-10-02T00:30:48.814Z"
+      "checked_at": "2026-10-03T00:09:22.462Z"
     },
     {
       "id": "docs-llms",
       "url": "https://docs.typesafe.ai/llms.txt",
       "status": "ok",
       "count": 1,
-      "checked_at": "2026-10-02T00:30:48.814Z"
+      "checked_at": "2026-10-03T00:09:22.462Z"
     },
     {
       "id": "docs-models",
       "url": "https://docs.typesafe.ai/models.md",
       "status": "ok",
       "count": 1,
-      "checked_at": "2026-10-02T00:30:48.814Z"
+      "checked_at": "2026-10-03T00:09:22.462Z"
     },
     {
       "id": "docs-jaggedness",
       "url": "https://docs.typesafe.ai/model-jaggedness/jev-1.13.md",
       "status": "ok",
       "count": 1,
-      "checked_at": "2026-10-02T00:30:48.814Z"
+      "checked_at": "2026-10-03T00:09:22.462Z"
     },
     {
       "id": "docs-api",
       "url": "https://docs.typesafe.ai/api.md",
       "status": "ok",
       "count": 1,
-      "checked_at": "2026-10-02T00:30:48.814Z"
+      "checked_at": "2026-10-03T00:09:22.462Z"
     },
     {
       "id": "docs-agent-skill",
       "url": "https://docs.typesafe.ai/agent-skill.md",
       "status": "ok",
       "count": 1,
-      "checked_at": "2026-10-02T00:30:48.814Z"
+      "checked_at": "2026-10-03T00:09:22.462Z"
     },
     {
       "id": "npm-sdk-js",
       "url": "https://registry.npmjs.org/@typesafe-ai/sdk",
       "status": "ok",
       "count": 1,
-      "checked_at": "2026-10-02T00:30:48.814Z"
+      "checked_at": "2026-10-03T00:09:22.462Z"
     },
     {
       "id": "pypi-sdk-py",
       "url": "https://pypi.org/pypi/typesafe-sdk/json",
       "status": "ok",
       "count": 1,
-      "checked_at": "2026-10-02T00:30:48.814Z"
+      "checked_at": "2026-10-03T00:09:22.462Z"
     },
     {
       "id": "git-typesafe-skills",
       "url": "https://github.com/typesafe-ai/skills",
       "status": "ok",
       "count": 1,
-      "checked_at": "2026-10-02T00:30:48.814Z"
+      "checked_at": "2026-10-03T00:09:22.462Z"
     },
     {
       "id": "git-typesafe-sdk-js",
       "url": "https://github.com/typesafe-ai/typesafe-sdk-js",
       "status": "ok",
       "count": 1,
-      "checked_at": "2026-10-02T00:30:48.814Z"
+      "checked_at": "2026-10-03T00:09:22.462Z"
     },
     {
       "id": "code-search",
       "url": "https://api.github.com/search/code",
       "status": "rate-limited",
-      "count": 7,
-      "checked_at": "2026-10-02T00:30:48.814Z"
+      "count": 0,
+      "checked_at": "2026-10-03T00:09:22.462Z"
     }
   ],
   "queue": {
-    "summaries_pending": 5514,
-    "verification_pending": 5949
+    "summaries_pending": 5887,
+    "verification_pending": 6344
   }
 }
