@@ -4,35 +4,36 @@
 
 | 리포 | ⭐ | 🍴 | 요약 | 태그 | 최근 푸시 |
 |---|---:|---:|---|---|---|
-| [OmniJev/OneJev](https://github.com/OmniJev/OneJev) | 255 | 27 | 🚀🚀 A multimodal System One decision model that gives calibrated answers to typed questions about screens, photos, video and text in one forward pass. | [✅](../README.md#legend "코드 확인: 코드에서 Jev API 호출을 찾았습니다") [🔥 +35](../README.md#legend "최근 7일 동안 별이 35개 늘었습니다") | 2026-11-09 |
+| [OmniJev/OneJev](https://github.com/OmniJev/OneJev) | 259 | 27 | 🚀🚀 A multimodal System One decision model that gives calibrated answers to typed questions about screens, photos, video and text in one forward pass. | [✅](../README.md#legend "코드 확인: 코드에서 Jev API 호출을 찾았습니다") [🔥 +35](../README.md#legend "최근 7일 동안 별이 35개 늘었습니다") | 2026-11-10 |
 | [keltokhy/jgrep](https://github.com/keltokhy/jgrep) | 141 | 5 | grep, but the pattern is a description. Filters lines by meaning with TypeSafe's Jev decision model: ~200 ms and a thousandth of a cent per line. | [✅](../README.md#legend "코드 확인: 코드에서 Jev API 호출을 찾았습니다") [`noul`](../README.md#legend "예/아니오 확률을 묻습니다") | 2026-10-17 |
 | [sileod/tasksource](https://github.com/sileod/tasksource) | 230 | 13 | Datasets collection and preprocessings framework for NLP extreme multitask learning | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-26 |
 | [amponce/archive-movie-browser](https://github.com/amponce/archive-movie-browser) | 156 | 40 | Internet Archive에 등록된 퍼블릭 도메인 영화를 TMDB 메타데이터와 연동해 탐색하고 가상 채널로 시청하는 웹 플레이어다.<br>Archive.org의 특정 업로드 영상이 실제 TMDB의 어떤 영화에 해당하는지 여부를 식별한다.<br>Jev로 오프라인 식별한 인덱스를 활용하며, 동기화된 가상 TV 채널, M3U 및 XMLTV 피드, MCP 서버 인터페이스를 지원한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-09 |
-| [Jigsaw-Code/sensemaking-tools](https://github.com/Jigsaw-Code/sensemaking-tools) | 117 | 40 | 구글 Jigsaw가 대규모 설문 응답과 온라인 대화 데이터를 분석해 주제 분류와 요약 통찰을 도출하도록 돕는 오픈소스 도구 모음이다.<br>수집한 자유 서술형 응답이 유효한지 모더레이션 여부를 가리고, 인용구가 논리성이나 호기심 측면에서 고품질인지 점수로 매긴다.<br>Gemini API를 이용해 주제 발견, 인용구 추출, 모의 배심원 기법 기반의 합의점 도출 및 대시보드 시각화까지 이어지는 전 과정을 파이프라인으로 구성했다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-09 |
+| [Jigsaw-Code/sensemaking-tools](https://github.com/Jigsaw-Code/sensemaking-tools) | 117 | 40 | 구글 Jigsaw가 대규모 설문 응답과 온라인 대화 데이터를 분석해 주제 분류와 요약 통찰을 도출하도록 돕는 오픈소스 도구 모음이다.<br>수집한 자유 서술형 응답이 유효한지 모더레이션 여부를 가리고, 인용구가 논리성이나 호기심 측면에서 고품질인지 점수로 매긴다.<br>Gemini API를 이용해 주제 발견, 인용구 추출, 모의 배심원 기법 기반의 합의점 도출 및 대시보드 시각화까지 이어지는 전 과정을 파이프라인으로 구성했다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-10 |
 | [AkashPriyadarshii/jev-curate](https://github.com/AkashPriyadarshii/jev-curate) | 110 | 14 | 대규모 합성 데이터와 사전 학습용 Parquet·JSONL 데이터를 Jev 모델로 빠르게 정제하는 파이프라인 도구다.<br>각 데이터 행이 루브릭에 부합하는지 여부나 추론 오류 유무를 범주 선택과 서열 점수 및 확률로 판별한다.<br>Rust 스트리밍 코어로 개발했으며 한 번의 HTTP 요청 안에서 여러 루브릭 질문을 동시에 처리해 처리 속도를 높인다. | [❌](../README.md#legend "코드에서 못 찾음: 코드 검색으로는 Jev 호출이 보이지 않습니다. 문서에서만 언급했을 수 있습니다") [🆕](../README.md#legend "최근 7일 안에 처음 발견했습니다") | 2026-11-09 |
 | [compozy/kb](https://github.com/compozy/kb) | 115 | 13 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-17 |
 | [GoBeromsu/obsidian-metadata-auto-classifier](https://github.com/GoBeromsu/obsidian-metadata-auto-classifier) | 59 | 4 | 옵시디언 노트 본문을 분석해 기존 태그와 프론트매터 속성을 자동으로 분류하고 채워주는 플러그인이다.<br>각 후보 메타데이터 값이 현재 노트 내용과 부합하는지 예/아니오 확률로 판단하게 한다.<br>일반 생성형 챗 모델 대신 결정 전용 모델 API를 써서 확신도가 높은 기존 값만 선택하도록 설계했다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") [🆕](../README.md#legend "최근 7일 안에 처음 발견했습니다") | 2026-11-04 |
-| [equationalapplications/curated-thoughts](https://github.com/equationalapplications/curated-thoughts) | 24 | 5 | 로컬 문서를 감시·색인해 위키 형태의 지식 베이스를 구축하는 Tauri 기반 로컬 우선 데스크톱 세컨드 브레인 앱<br>축적된 비정형 팩트 데이터를 더 빠르고 저렴하게 분류하기 위해 사실 유형(fact-typing)을 판별하도록 요청함<br>작업·에피소드·의미 기억의 3단계 구조와 사람 검토 큐를 결합했으며, Jev 엔드포인트를 전용 팩트 분류기로 옵션 지원함 | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-09 |
+| [equationalapplications/curated-thoughts](https://github.com/equationalapplications/curated-thoughts) | 24 | 5 | 로컬 문서를 감시·색인해 위키 형태의 지식 베이스를 구축하는 Tauri 기반 로컬 우선 데스크톱 세컨드 브레인 앱<br>축적된 비정형 팩트 데이터를 더 빠르고 저렴하게 분류하기 위해 사실 유형(fact-typing)을 판별하도록 요청함<br>작업·에피소드·의미 기억의 3단계 구조와 사람 검토 큐를 결합했으며, Jev 엔드포인트를 전용 팩트 분류기로 옵션 지원함 | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-10 |
 | [caiweihan/jev-account-filter](https://github.com/caiweihan/jev-account-filter) | 43 | 0 | 동영상 플랫폼 기반 데이터셋 구축 과정에서 제목과 썸네일 정보만 활용해 특정 도메인 계정을 선별하는 도구다.<br>계정 메타데이터와 영상 썸네일을 바탕으로 해당 계정의 카테고리 분류와 도메인 관련성 확률을 판단하게 한다.<br>영상을 내려받거나 시청하지 않고도 계정을 분류하며, 수집 데이터와 선별 규칙을 분리해 기준을 바꿔가며 재검증할 수 있다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-19 |
-| [ai4curation/jevotron](https://github.com/ai4curation/jevotron) | 13 | 2 | 구조화된 파일이나 데이터베이스 필드에 들어 있는 이상치를 감지해 검토 대상을 추려 주는 CLI 도구다.<br>각 필드 값이 안내 지침과 예시에 부합하는 정상 데이터인지 아니면 이상치인지 판별하게 한다.<br>DuckDB를 사용해 로컬에서 SQL로 결과를 필터링하며 SQLite 캐시로 이전 판단 결과를 재사용한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") [🆕](../README.md#legend "최근 7일 안에 처음 발견했습니다") | 2026-10-11 |
 | [nomanjack/smart-paste](https://github.com/nomanjack/smart-paste) | 46 | 6 | A little less copy-paste | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-09-19 |
 | [nexibeo/jev-cookbook](https://github.com/nexibeo/jev-cookbook) | 40 | 3 | Practical, tested recipes for TypeSafe's Jev decision model on OpenRouter: support triage, database indexing, file organizing, tagging, taxonomies, dedupe, PII detection, extraction, search re-ranking and a browser agent. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-09-26 |
 | [bskkimm/DriveSceneMiner](https://github.com/bskkimm/DriveSceneMiner) | 10 | 0 | 자율주행 연구자가 차량 주행 로그를 분석해 순간별 주행 조작을 분류하고 장면 단위로 라벨링하는 도구다.<br>차량 관측 기록을 바탕으로 각 순간의 횡방향 및 종방향 주행 조작 결정을 선택지 중에서 분류하도록 요청한다.<br>nuPlan과 Autoware 데이터를 공통 스키마로 변환해 Jev로 빠르게 일괄 분류하고 웹 뷰어로 동기화해 검토한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-03 |
+| [dark-hxx/jev-safety-gateway](https://github.com/dark-hxx/jev-safety-gateway) | 29 | 2 | 位于 nginx 与大模型后端之间的前置过滤反向代理：逐请求提取用户输入交给 JEV 判定，有害拦截、正常透明放行 | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-08 |
 | [DreamLab-AI/ontomark-obsidian](https://github.com/DreamLab-AI/ontomark-obsidian) | 8 | 1 | 옵시디언 마크다운 노트의 프론트매터를 분석해 로컬 온톨로지 추론과 SPARQL 질의를 제공하는 플러그인이다.<br>README에 판단 지점 설명이 없다.<br>노트 변경 시 로컬 OWL 2 EL 추론 엔진이 실시간으로 계층을 파악하며 외부 모델을 연결해 본문 인용 기반의 사실 추출도 지원한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-05 |
-| [dark-hxx/jev-safety-gateway](https://github.com/dark-hxx/jev-safety-gateway) | 28 | 2 | 位于 nginx 与大模型后端之间的前置过滤反向代理：逐请求提取用户输入交给 JEV 判定，有害拦截、正常透明放行 | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-08 |
 | [inboxpraveen/Cleanframe](https://github.com/inboxpraveen/Cleanframe) | 5 | 0 | Cleanframe은 어질러진 표 형식 데이터를 분석해 정제 레시피를 생성하고 이를 결정론적인 판다스 코드로 재실행하는 파이썬 라이브러리다.<br>정제 레시피를 생성할 때 복잡하거나 애매한 정제 방식 선택과 스키마 처리 방향을 Jev에게 판단하게 한다.<br>인공지능 모델은 데이터 정제 규칙을 작성할 때만 한 번 개입하고, 실제 데이터 변환과 재실행은 LLM 호출 없이 판다스로만 처리한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-26 |
 | [goodrahstar/jev-column-race](https://github.com/goodrahstar/jev-column-race) | 23 | 3 | Jev vs Gemini 3.8 Flash: labelling 1,000 app reviews, 4.1× faster and 7× cheaper | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-09-17 |
+| [ai4curation/jevotron](https://github.com/ai4curation/jevotron) | 13 | 2 | 구조화된 파일이나 데이터베이스 필드에 들어 있는 이상치를 감지해 검토 대상을 추려 주는 CLI 도구다.<br>각 필드 값이 안내 지침과 예시에 부합하는 정상 데이터인지 아니면 이상치인지 판별하게 한다.<br>DuckDB를 사용해 로컬에서 SQL로 결과를 필터링하며 SQLite 캐시로 이전 판단 결과를 재사용한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-11 |
 | [lzq-0529/jev-span](https://github.com/lzq-0529/jev-span) | 12 | 2 | 텍스트를 구두점으로 분할해 후보 구간을 만들고 Jev API에 객관식 질문을 던져 개체명 경계와 유형을 판별하는 제로샷 개체명 인식 도구다.<br>텍스트의 각 후보 구간이 지정된 개체 유형에 해당하는지 여부와 정확한 경계 및 유형을 다지선다 choice와 확률로 판단하게 한다.<br>추가 학습이나 GPU 없이 텍스트 분할과 다지선다 질문 조합만으로 개체 구간을 추출하며 결정 과정을 트리 형태로 추적할 수 있다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-09-28 |
-| [GoCarbonTracker/go-carbon-tracker](https://github.com/GoCarbonTracker/go-carbon-tracker) | 9 | 0 | Documentation and demos for a climate-disclosure research prototype that traces report claims to source evidence before regulatory or audit review. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-03 |
+| [GoCarbonTracker/go-carbon-tracker](https://github.com/GoCarbonTracker/go-carbon-tracker) | 8 | 0 | Documentation and demos for a climate-disclosure research prototype that traces report claims to source evidence before regulatory or audit review. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-03 |
 | [anatems1/TopicJev](https://github.com/anatems1/TopicJev) | 9 | 0 | 기존 토픽 모델이 군집화한 문서가 해당 주제 설명에 실제로 부합하는지 검증하고 이상치를 걸러내는 라이브러리다.<br>문서가 특정 토픽 키워드나 설명 문장을 지지하는지 판별해 해당 주제로 확정할지 기타 항목으로 제외할지 결정한다.<br>제로샷 함의 모델과 토큰 압축 모듈을 결합해 대형 언어 모델 호출 비용 없이 로컬 환경에서도 가볍게 작동한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-06 |
 | [kraayenjon/jev-linkedin-saved-classifier](https://github.com/kraayenjon/jev-linkedin-saved-classifier) | 9 | 0 | 로그인된 크롬에서 링크드인 저장 글을 긁어와 지정한 범주로 분류하고 검색 가능한 대시보드로 만들어 주는 도구다.<br>수집한 링크드인 저장 게시물이 사용자가 정의한 카테고리 목록 중 어디에 속하는지 단일 선택으로 분류하게 한다.<br>별도 헤드리스 브라우저 대신 실행 중인 크롬 세션에 직접 연결하고 불규칙한 스크롤과 대기 시간을 넣어 계정 제재 위험을 낮췄다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-09-30 |
 | [ysl-bots/Contest](https://github.com/ysl-bots/Contest) | 4 | 1 | 공모전 수집·요약 봇 | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-09 |
+| [GXG-CS/BLADE](https://github.com/GXG-CS/BLADE) | 4 | 0 | BLADE: Blame Localization via Audited Dependency Evidence | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-13 |
 | [Cogniform/AI-decision-maker](https://github.com/Cogniform/AI-decision-maker) | 2 | 0 | CSV 파일의 각 열 정보를 분석해 필드 유형과 데이터 시나리오를 판별하고 정제 작업을 수행하는 데이터 파이프라인 프레임워크다.<br>데이터 구조를 바탕으로 속한 시나리오가 무엇인지와 각 열이 어떤 유형의 필드인지 판단하게 한다.<br>원시 데이터를 모두 보내지 않고 요약 메타데이터만 전달해 판단한 뒤 그 결과를 로컬 스크립트 실행으로 잇는다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-26 |
+| [joswha/voiceour](https://github.com/joswha/voiceour) | 2 | 1 | macOS 사용자가 Fn 키를 눌러 커서가 있는 위치에 음성을 곧바로 받아 적을 수 있게 돕는 로컬 기반 받아쓰기 앱이다.<br>사용자가 저장한 메모 항목의 텍스트가 미리 설정된 주제 목록 중 어느 토픽 레이블에 해당하는지 판단하게 한다.<br>음성 인식과 텍스트 정제는 기기 안에서 로컬로 처리되며 옵션을 켰을 때만 Jev로 텍스트 생성 없이 레이블 분류만 요청한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") [🆕](../README.md#legend "최근 7일 안에 처음 발견했습니다") | 2026-11-10 |
 | [mpointer/civic-data-adapters](https://github.com/mpointer/civic-data-adapters) | 2 | 0 | 지자체 공공데이터와 회의록을 정규화된 레코드로 수집하는 타입스크립트 어댑터 라이브러리다.<br>발굴된 데이터 소스가 실제 개별 경찰 사건 목록을 담고 있는지 예/아니오 확률로 판단한다.<br>발굴 단계에서 LLM 후보군을 실제 어댑터 파서로 검증하고 verify 훅으로 내용 적합성을 이중 확인한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-29 |
 | [vortezwohl/JevNER](https://github.com/vortezwohl/JevNER) | 2 | 0 | TypeSafe System One 판단 모델을 사용해 24개 언어의 텍스트에서 계층형 개체명을 인식하는 파이썬 SDK다.<br>텍스트 안의 특정 구간이 지정한 개체명 분류에 해당하는지 예/아니오 확률과 선택지 분포로 판단하도록 묻는다.<br>로컬 가중치 다운로드 없이 토크나이저만 내장해 API를 호출하며, 추출 결과를 중첩 트리 구조로 바로 돌려준다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") [🆕](../README.md#legend "최근 7일 안에 처음 발견했습니다") | 2026-11-05 |
 | [DidierRLopes/elo-jev-4-investment-ideas](https://github.com/DidierRLopes/elo-jev-4-investment-ideas) | 4 | 0 | Elo leaderboard for investment ideas | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-12 |
 | [RichmondAlake/llmcamp_ai_hub](https://github.com/RichmondAlake/llmcamp_ai_hub) | 4 | 2 | Hands-on agent memory notebooks and an interactive appbook for context engineering. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-06 |
-| [GXG-CS/BLADE](https://github.com/GXG-CS/BLADE) | 3 | 0 | BLADE: Blame Localization via Audited Dependency Evidence | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-13 |
 | [ZhangYiqun018/jev-dimabsa](https://github.com/ZhangYiqun018/jev-dimabsa) | 8 | 0 | TypeSafe Jev (System One) on DimABSA, SemEval-2026 Task 3 Track A, all three subtasks: V/A regression (lowest 10-corpus micro RMSE among full-coverage teams), triplet extraction, quadruplet extraction. Pure-Jev inference with BM25 examples and train-fitted calibration. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-09-28 |
 | [CompleteTech-LLC-AI-Research/jev-311-heatmap](https://github.com/CompleteTech-LLC-AI-Research/jev-311-heatmap) | 3 | 1 | NYC 311 complaint heatmaps built with Jev: reproducible pipeline and interactive geographic visualizations | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-24 |
 | [musubipapi/waldo-bench](https://github.com/musubipapi/waldo-bench) | 2 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-19 |
@@ -48,7 +49,7 @@
 | [halfspin-qc/jev-reviews](https://github.com/halfspin-qc/jev-reviews) | 2 | 0 | 구글 지도 식당 리뷰를 수집해 감성과 항목별 점수를 분석하고 보여주는 웹 애플리케이션이다.<br>리뷰 감성을 choice로 분류하고 음식·서비스 등 5개 항목을 score로 매기며 추천이나 불만 여부를 noul 확률로 판별한다.<br>일반 생성형 언어모델 대신 TypeSafe Jev API를 써서 토큰 비용과 추론 지연 시간을 줄이도록 설계했다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-09-22 |
 | [FogMoe/necro](https://github.com/FogMoe/necro) | 4 | 0 | Abandoned Qwen3.5-0.8B LoRA fine-tuning experiments for Jev-like typed judgments, with datasets, adapters, evaluations, and a full retrospective. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-09-21 |
 | [ericmaster/blinka-ap-agent](https://github.com/ericmaster/blinka-ap-agent) | 1 | 0 | Blinka AP agent (30X Hackathon): extract invoices, decide pay/hold/escalate under rules, explainable log, pain.001 output | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-18 |
-| [gitmoot/workspace-janitor](https://github.com/gitmoot/workspace-janitor) | 1 | 1 | Safe, Jev-assisted workspace hygiene for developer and AI-agent machines | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-10 |
+| [gitmoot/workspace-janitor](https://github.com/gitmoot/workspace-janitor) | 1 | 1 | Safe, Jev-assisted workspace hygiene for developer and AI-agent machines | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-11 |
 | [Hajime-Y/nanojev-grpo](https://github.com/Hajime-Y/nanojev-grpo) | 1 | 0 | GRPO (RL) post-training for NanoJev decision models: learning from episode outcomes on ViZDoom. Unofficial extension of TianyuCodings/NanoJev. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-12 |
 | [hsmahon/eval-decision-models-captcha](https://github.com/hsmahon/eval-decision-models-captcha) | 1 | 0 | Evaluating decision models on visual complexity, using mock CAPTCHAs. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-18 |
 | [LandoCole/document-classifier](https://github.com/LandoCole/document-classifier) | 1 | 0 | Document-type classification with Jev, a decision model: 100% on 43 financial documents at 136 ms and $0.14 per 1,000, benchmarked against LLMs, a bi-encoder and keyword rules. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-20 |
@@ -57,7 +58,7 @@
 | [yubow47-bot/case-citation-pipeline](https://github.com/yubow47-bot/case-citation-pipeline) | 1 | 0 | Pipeline that extracts and counts case citations from court judgments and builds an auditable citation network.  | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-23 |
 | [deeplearningguy/doubtbench](https://github.com/deeplearningguy/doubtbench) | 3 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-04 |
 | [sliday/jev-chess-algo](https://github.com/sliday/jev-chess-algo) | 3 | 1 | How jevchess.com asks JEV for a chess move: every legal move as the options of one typed Choice question, plus the hanging-piece check that describes them. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-09-21 |
-| [AliAbdallah454/job-applier](https://github.com/AliAbdallah454/job-applier) | 0 | 0 | 구직자가 여러 채용 공고를 수집하고 분류하기 위해 쓰는 백엔드 도구다.<br>수집된 채용 공고의 연차 수준과 계약 형태, 기술 적합도와 주요 직무 구분을 판단한다.<br>Greenhouse나 Workday 등 8개 채용 플랫폼의 공고를 긁어와 DynamoDB에 적재하고 CDK 기반 ECS 파이프라인으로 처리한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-07 |
+| [AliAbdallah454/job-applier](https://github.com/AliAbdallah454/job-applier) | 0 | 0 | 구직자가 여러 채용 공고를 수집하고 분류하기 위해 쓰는 백엔드 도구다.<br>수집된 채용 공고의 연차 수준과 계약 형태, 기술 적합도와 주요 직무 구분을 판단한다.<br>Greenhouse나 Workday 등 8개 채용 플랫폼의 공고를 긁어와 DynamoDB에 적재하고 CDK 기반 ECS 파이프라인으로 처리한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-10 |
 | [ArmyUser/audience-reaction](https://github.com/ArmyUser/audience-reaction) | 0 | 0 | 유튜브 영상 댓글을 분석해 감정, 반응 유형, 주제별 의견을 구조화된 보고서로 정리하는 연구용 프로토타입이다.<br>개별 댓글의 감정(positive, neutral, negative), 댓글 유형, 질문·요청 여부, 대상별 감정 및 주제 분류를 묻는다.<br>단일 프롬프트 대신 분류·주제 발견·정리·할당 단계로 파이프라인을 나누고 규칙 기반 코드로 최종 수치를 집계한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-12 |
 | [dmlab-work/module-catalog-enrich](https://github.com/dmlab-work/module-catalog-enrich) | 0 | 0 | 상품 설명 텍스트를 읽고 비어 있는 쇼핑몰 필터 속성값을 기존 옵션 목록에서 자동으로 채워주는 Magento 2 확장 모듈이다.<br>상품명과 상세 설명을 바탕으로 지정한 속성 옵션 중 어떤 값이 맞는지 choice 선택이나 Yes/No 확률로 묻는다.<br>옵션 순서를 바꾼 두 번의 질의가 임계값 이상으로 일치할 때만 값을 채택하고 사람이 거부한 값은 건드리지 않는다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-03 |
 | [EziosWJ/systemone-opinion-intelligence](https://github.com/EziosWJ/systemone-opinion-intelligence) | 0 | 0 | 웨이보 댓글 데이터를 수집해 AI 분석과 인간 검토를 거쳐 보고서를 뽑는 여론 판단 데모 웹 플랫폼이다.<br>댓글의 주제 관련성, 반어법 가능성, 복핵 우선순위 같은 텍스트 특성을 noul 형태 등으로 묻도록 설계했다.<br>실제 LLM 호출 대신 MSW 메모리 모의 데이터와 TypeSafe Jev용 Noul Provider 인터페이스만 먼저 구현했다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") [🆕](../README.md#legend "최근 7일 안에 처음 발견했습니다") | 2026-11-05 |
@@ -72,6 +73,7 @@
 | [PG-Darksan/blue](https://github.com/PG-Darksan/blue) | 0 | 0 | Bluesky 사용자의 맞팔로우 여부를 확인하고 계정을 일괄 관리하는 안드로이드 및 윈도우용 앱이다.<br>프로필 이미지와 계정 소개글을 바탕으로 해당 계정이 여성 개인의 계정인지 여부를 판단하게 한다.<br>API 호출 비용을 아끼기 위해 판별 결과를 단말기 내에 90일 동안 캐싱하고 임계값을 사용자가 직접 조절하도록 설계했다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") [🆕](../README.md#legend "최근 7일 안에 처음 발견했습니다") | 2026-11-04 |
 | [ranpin/jevCabin](https://github.com/ranpin/jevCabin) | 0 | 1 | 차량 탑승자의 발화에서 탑승 인물의 이름, 신분, 좌석 위치 정보를 정형 데이터로 추출하는 차량용 어시스턴트 프로젝트다.<br>발화 속 후보 단어가 실제 탑승자 이름인지, 특정 신분이나 좌석 위치에 해당하는지를 확률과 선택지로 묻는다.<br>대형 프롬프트와 LLM 파싱 대신 경량 모델 Laya를 사용해 구조화 오류를 없애고 지연 시간을 44ms 수준으로 줄였다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-02 |
 | [RKasai127/jevrake](https://github.com/RKasai127/jevrake) | 0 | 0 | 웹페이지에서 CSS 선택자 없이 필드 설명과 타입에 맞춰 데이터를 추출하는 스크래핑 도구다.<br>페이지에서 추출한 여러 후보 값 가운데 사용자가 지정한 필드 설명에 가장 잘 부합하는 값을 고르도록 요청한다.<br>타입에 맞는 후보 값을 먼저 수집한 뒤 Jev로 최적 값을 선택하며 신뢰도가 0.9 미만이면 null을 반환한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-12 |
+| [saiganesh-m/catalog_ingestion_poc](https://github.com/saiganesh-m/catalog_ingestion_poc) | 0 | 0 | 공급업체마다 헤더와 형식이 다른 엑셀 상품 목록을 단일 스키마로 매핑하고 유효성을 검사해 적재하는 파이프라인 개념 검증 프로젝트다.<br>엑셀 열이 sku나 unit_price 같은 목표 필드 중 무엇인지 choice로 고르고, 신뢰도가 낮거나 충돌하는 열의 적합 여부를 noul로 판단한다.<br>열 매핑 의미 판단은 Jev 모델에 맡기고 실제 값 검증과 확정 권한은 파이썬 코드가 엄격히 분리해 맡는다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") [🆕](../README.md#legend "최근 7일 안에 처음 발견했습니다") | 2026-11-10 |
 | [taliesinb/papyrus](https://github.com/taliesinb/papyrus) | 0 | 0 | 로컬 환경에서 논문과 책 같은 문서를 정리하고 전문 검색과 MCP 서버를 제공하는 개인 서재 도구다.<br>스캔한 문서가 서재에 보관할 가치가 있는 자료인지와 문서의 종류가 무엇인지 확률로 판별한다.<br>추출 모델과 결정 모델을 분리해 로컬 LM Studio나 애플 기반 모델로 동작하도록 설계했다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-02 |
 | [tedngai/entity-graph](https://github.com/tedngai/entity-graph) | 0 | 0 | 비정형 문서에서 개체와 관계를 추출해 검증하고 지식 그래프로 구축·시각화하는 도구다.<br>추출한 관계 제안이 실제 사실인지와 유사한 개체 쌍을 병합할지 분리할지 판정한다.<br>API 키가 없으면 로컬 GLiNER 모델을 쓰고 키가 있으면 Jev로 사실 판정과 개체 정렬을 처리한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-08 |
 | [TheAngryPit/mailcrawl](https://github.com/TheAngryPit/mailcrawl) | 0 | 0 | 내보낸 지메일 데이터를 외부 네트워크 연결 없이 검색 가능한 로컬 SQLite 색인으로 아카이빙하는 도구다.<br>README에 판단 지점 설명이 없다.<br>수집 경로에서 언어 모델과 네트워크 호출을 배제하고 엄격한 로컬 파일 권한과 읽기 전용 원칙을 적용한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-01 |
@@ -99,23 +101,22 @@
 | [Caph-dev/coffee-cart-demo](https://github.com/Caph-dev/coffee-cart-demo) | 0 | 0 | Company coffee order demo using TypeSafe/Jev shopping-cart pattern | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") [🆕](../README.md#legend "최근 7일 안에 처음 발견했습니다") | 2026-11-08 |
 | [Challenge-Consulting-Firm/clock-in-out](https://github.com/Challenge-Consulting-Firm/clock-in-out) | 0 | 0 | Teams勤怠打刻システム: Microsoft Graphでチャネル読取→Bedrock Claude(jp.国内完結)で構造化→S3蓄積→週次サマリをTeams投稿。Lambda/EventBridge/Terraform。 | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-13 |
 | [chenyuwang166-oss/metask-jev-rain-31B-trained](https://github.com/chenyuwang166-oss/metask-jev-rain-31B-trained) | 0 | 0 | MeTask 31B structured decision service with weights for private deployment. Organizer-measured JevBench Capability Score 79.6, qualifying capability rank #3 (service v3, 2026-10-17). Model card, leaderboard and service-version relationship in README. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-17 |
-| [chez-shanpu/tastecheck](https://github.com/chez-shanpu/tastecheck) | 0 | 0 | LLM-scored quality gate for Go functions — checks code against "tastes" derived from established Go style guides. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-09 |
 | [dacso-ai/protocollo](https://github.com/dacso-ai/protocollo) | 0 | 0 | Modello AI aperto che protocolla la posta di un'azienda italiana (PEC, FatturaPA, avvisi del Fisco) in locale. Generatore di documenti con etichette esatte e prova zero. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-22 |
 | [detinger/dmn-jev](https://github.com/detinger/dmn-jev) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-14 |
 | [dimash-bot/decision-models-real-data](https://github.com/dimash-bot/decision-models-real-data) | 0 | 0 | Pre-registered comparison of 7 OpenRouter decision models (Jev, Liquid d1, Perplexity Decider, GPT-6 Luna, Drex Max) on 2,826 real GitHub, Firefox and CVE decisions. Author works at Nace.AI. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") [🆕](../README.md#legend "최근 7일 안에 처음 발견했습니다") | 2026-11-06 |
 | [DNAlec/koishi-plugin-group-audit](https://github.com/DNAlec/koishi-plugin-group-audit) | 0 | 0 | Koishi QQ 群聊审核插件：形式过滤、OCR 与在线文档提取、三渠道内容审核及递增禁言 | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-25 |
 | [DrejcPesjak/the_jevinator](https://github.com/DrejcPesjak/the_jevinator) | 0 | 0 | Jev for LLM behavioral monitoring | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-12 |
-| [DrNOFX97/SentryLens](https://github.com/DrNOFX97/SentryLens) | 0 | 0 | Dashboard de Cibersegurança ligado ao Wazuh — projeto CET | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-09 |
+| [DrNOFX97/SentryLens](https://github.com/DrNOFX97/SentryLens) | 0 | 0 | Dashboard de Cibersegurança ligado ao Wazuh — projeto CET | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-10 |
 | [exploit123321/cutline](https://github.com/exploit123321/cutline) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-28 |
 | [gbesse/jev-guardrails-fr-arena](https://github.com/gbesse/jev-guardrails-fr-arena) | 0 | 0 | Compare règles, Jev et un serveur Shieldstral sur les mêmes cas français. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-05 |
 | [gbesse/jev-naf25-review](https://github.com/gbesse/jev-naf25-review) | 0 | 0 | Vérifie le futur code NAF 2025 d’une entreprise à partir de preuves d’activité et des notes officielles. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-15 |
 | [gbesse/jev-qualiscope-action](https://github.com/gbesse/jev-qualiscope-action) | 0 | 0 | Transforme un signal Qualiscope en niveau d’action explicite soumis à revue humaine. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-05 |
 | [Harthor/clonemap](https://github.com/Harthor/clonemap) | 0 | 0 | Which functions do many independent Django and LLM apps keep rewriting by hand? A probe over 3,075 GitHub repos. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-23 |
 | [hidefujimori/hf-second-opinion-triage](https://github.com/hidefujimori/hf-second-opinion-triage) | 0 | 0 | ES finding triage suggestion used by Jev  | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-04 |
-| [hylixinsights/VirtualTissue-Xenium](https://github.com/hylixinsights/VirtualTissue-Xenium) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-06 |
+| [hylixinsights/VirtualTissue-Xenium](https://github.com/hylixinsights/VirtualTissue-Xenium) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-10 |
+| [HyperGAN/evidence-dial](https://github.com/HyperGAN/evidence-dial) | 0 | 0 | Evidence Dial: Tiny Aya grounding controls with CuratorKIT, Particle Sliders, AlignTune and AuditKIT | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") [🆕](../README.md#legend "최근 7일 안에 처음 발견했습니다") | 2026-11-10 |
 | [iAmAdheil/slicj-seven-sins-revisited](https://github.com/iAmAdheil/slicj-seven-sins-revisited) | 0 | 0 | Seven Sins Revisited: reproducing SLIC, porting it to Ansible and Chef, and triaging its false positives with context-aware decision models | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-27 |
-| [ilkaydemiralay/turkish-legal-claim-bench](https://github.com/ilkaydemiralay/turkish-legal-claim-bench) | 0 | 0 | Does a Turkish legislation passage support, contradict, or stay silent on a claim? 50 claims, 7 models. Pilot. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-11 |
-| [JadFelemban4/GRAD-project](https://github.com/JadFelemban4/GRAD-project) | 0 | 0 | H/tau preview-value criterion, BSc graduation project, King Abdulaziz University. Validated B58 engine simulator, read-only OBD-II logging. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-09 |
+| [JadFelemban4/GRAD-project](https://github.com/JadFelemban4/GRAD-project) | 0 | 0 | H/tau preview-value criterion, BSc graduation project, King Abdulaziz University. Validated B58 engine simulator, read-only OBD-II logging. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-10 |
 | [jaltez/drosophila](https://github.com/jaltez/drosophila) | 0 | 0 | Deterministic whole-brain simulation of adult Drosophila from real connectomes (MaleCNS v1.0, FlyWire v783). Archived research snapshot — read-only, no maintenance. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-24 |
 | [jamiesanson/norn](https://github.com/jamiesanson/norn) | 0 | 0 | Automatically apply commit message conventions | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-08 |
 | [JosephCai-Meridian/Jev_pipeline](https://github.com/JosephCai-Meridian/Jev_pipeline) | 0 | 0 | The pipeline from data preprocessing to Jev evaluation. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-29 |
@@ -126,28 +127,24 @@
 | [kobago/decision-llm-comparison](https://github.com/kobago/decision-llm-comparison) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-01 |
 | [ksinistr/goextractlint](https://github.com/ksinistr/goextractlint) | 0 | 0 | A small Go CLI that uses TypeSafe Jev to highlight functions worth reviewing for Extract Function, following Martin Fowler's principle. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-20 |
 | [MahmudOmar11/decision-only-medical-ai](https://github.com/MahmudOmar11/decision-only-medical-ai) | 0 | 0 | Code and data for "Decision-only medical AI: early evidence and pairing with language models" | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-21 |
-| [mcxraider/modernbert-tetris](https://github.com/mcxraider/modernbert-tetris) | 0 | 0 | fine tuned modernbert to play tetris | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-11 |
-| [minn-jun/Org-AI-Agent](https://github.com/minn-jun/Org-AI-Agent) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-09 |
-| [mokagtc/go-carbon-tracker](https://github.com/mokagtc/go-carbon-tracker) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") [🆕](../README.md#legend "최근 7일 안에 처음 발견했습니다") | 2026-11-09 |
+| [mokagtc/go-carbon-tracker](https://github.com/mokagtc/go-carbon-tracker) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") [🆕](../README.md#legend "최근 7일 안에 처음 발견했습니다") | 2026-11-10 |
 | [okohlbacher/prose-auto](https://github.com/okohlbacher/prose-auto) | 0 | 0 | Propose ProSE search settings from a mass spectrometry run and its study metadata | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") [🆕](../README.md#legend "최근 7일 안에 처음 발견했습니다") | 2026-11-05 |
 | [oxai/annocaselaw](https://github.com/oxai/annocaselaw) | 0 | 0 | Run and score models on AnnoCaseLaw, a benchmark of expert-annotated U.S. negligence opinions | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-20 |
 | [phaneendrareddy345/jev-as-firewall](https://github.com/phaneendrareddy345/jev-as-firewall) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-26 |
 | [professionaltarun2004/Jev-Control-Plane](https://github.com/professionaltarun2004/Jev-Control-Plane) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-04 |
 | [Retr0-rgb-lab/Microsoft_Hackthon](https://github.com/Retr0-rgb-lab/Microsoft_Hackthon) | 0 | 1 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-26 |
 | [rickyren/aie-shanghai-2026](https://github.com/rickyren/aie-shanghai-2026) | 0 | 0 | AIE Shanghai 2026：从 53 场分享看 AI 行业 — 报告、逐场分析与转写 | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") [🆕](../README.md#legend "최근 7일 안에 처음 발견했습니다") | 2026-11-09 |
-| [salvatore-bufi/jev_factcheck](https://github.com/salvatore-bufi/jev_factcheck) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-09 |
-| [saresend/vega1](https://github.com/saresend/vega1) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-11 |
 | [shamit-arch/practical-submiter](https://github.com/shamit-arch/practical-submiter) | 0 | 0 | Practical formatter | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-15 |
 | [shiomi-toru/jev-dojo](https://github.com/shiomi-toru/jev-dojo) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-09 |
 | [Shreetej/jev-open-bench](https://github.com/Shreetej/jev-open-bench) | 0 | 0 | Open decision models vs TypeSafe Jev: paired 4,000-item benchmark, per-item results and LoRA training data | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-12 |
 | [sidpandey3006/post-call-analytics](https://github.com/sidpandey3006/post-call-analytics) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-20 |
 | [Telosnex/monet_gdt](https://github.com/Telosnex/monet_gdt) | 0 | 0 | On-device wallpaper model (mood, colors, shapes) for libmonet apps | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-31 |
 | [thieung/jev-thuc-chien](https://github.com/thieung/jev-thuc-chien) | 0 | 0 | Demo tự chạy lại cho series Jev thực chiến (TypeSafe Jev) | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-18 |
-| [tohachan/ontologizer](https://github.com/tohachan/ontologizer) | 0 | 0 | A kit for building ontologies of software projects on Open Ontologies | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") [🆕](../README.md#legend "최근 7일 안에 처음 발견했습니다") | 2026-11-09 |
 | [tsetse012/jev-judge-rank](https://github.com/tsetse012/jev-judge-rank) | 0 | 0 | Rank a list on several criteria, merge near-duplicates, and recall relevant entries with Jev (TypeSafe System One). Python, stdlib only. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-22 |
 | [vaikumar/jevai-predictiveai-comparision](https://github.com/vaikumar/jevai-predictiveai-comparision) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-20 |
 | [Vasiniks/instinct](https://github.com/Vasiniks/instinct) | 0 | 0 | A Balatro-playing agent: simulated decision tree, TypeSafe Jev judgments, live dashboard | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-26 |
 | [wafaa-alhayek/masroufi](https://github.com/wafaa-alhayek/masroufi) | 0 | 0 | Expense tracking for Gaza households, built around bank statement exports and their note field. Uses Jev (TypeSafe System One) for typed, confidence-aware transaction categorisation. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-26 |
+| [william-wei-zhu/web-app-building-standard](https://github.com/william-wei-zhu/web-app-building-standard) | 0 | 0 | William's Web App Building Standard: a reusable, opinionated standard for building small, polished public web apps (simplicity-first, large high-contrast type, logo + tagline branding, fixed stack). | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") [🆕](../README.md#legend "최근 7일 안에 처음 발견했습니다") | 2026-11-10 |
 | [wpereira22/workbench](https://github.com/wpereira22/workbench) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-17 |
 | [xiguazhiPrince/chat-to-canvas-v2](https://github.com/xiguazhiPrince/chat-to-canvas-v2) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-18 |
 | [ykisana/genPageTest](https://github.com/ykisana/genPageTest) | 0 | 0 | Small reproduction of Netflix GenPage on MovieLens-1M: decoding-latency and decision-model experiments | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-12 |
@@ -211,6 +208,7 @@
 | [gbesse/jev-rncp-claim-proof](https://github.com/gbesse/jev-rncp-claim-proof) | 0 | 0 | Rapproche publicité, fiche, habilitation et compétences à la date choisie. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-04 |
 | [gpirge/CancerRegistry_Jev](https://github.com/gpirge/CancerRegistry_Jev) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-09-28 |
 | [haochengw372-hash/commcode](https://github.com/haochengw372-hash/commcode) | 0 | 0 | Original-codebook annotation with typed AI judgments and auditable research runs | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-06 |
+| [ilkaydemiralay/turkish-legal-claim-bench](https://github.com/ilkaydemiralay/turkish-legal-claim-bench) | 0 | 0 | Does a Turkish legislation passage support, contradict, or stay silent on a claim? 50 claims, 7 models. Pilot. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-11 |
 | [imranrkhan13/jevscope](https://github.com/imranrkhan13/jevscope) | 0 | 0 | JevScope pairs RepoScope, which parses a GitHub repository into a real dependency graph and decides which files deserve expensive analysis, with Calibration Lab: a selective-prediction harness that measures whether a model's confidence score means what it says. The hosted lab runs the same study in the browser on 181 hand-labelled Python files from | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-04 |
 | [imranrkhan13/tomorrow-family](https://github.com/imranrkhan13/tomorrow-family) | 0 | 0 | Fictional prescription-reading demo: source-linked readings with separate Jev and Lev text checks. Human review required; not medical advice. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-04 |
 | [Jameshskelton/Jev_analyses](https://github.com/Jameshskelton/Jev_analyses) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-05 |
@@ -221,10 +219,12 @@
 | [lucarizzo03/raised](https://github.com/lucarizzo03/raised) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-08 |
 | [luoshuai990529/jev-laya-lab](https://github.com/luoshuai990529/jev-laya-lab) | 0 | 0 | Jev 和 Laya 决策模型对比实验 | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-03 |
 | [maeste/sibilla](https://github.com/maeste/sibilla) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-01 |
+| [mcxraider/modernbert-tetris](https://github.com/mcxraider/modernbert-tetris) | 0 | 0 | fine tuned modernbert to play tetris | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-11 |
 | [memorysaver/jev-atari-lab](https://github.com/memorysaver/jev-atari-lab) | 0 | 0 | Challenge Atari with Jev: structured decisions, value questions, and replayable experiments | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-09-29 |
 | [not-stbenjam/historical-heatmap](https://github.com/not-stbenjam/historical-heatmap) | 0 | 0 | How Jev sees history: independent significance probabilities for every date since 1492 | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-02 |
 | [Ray0907/case-review](https://github.com/Ray0907/case-review) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-08 |
 | [sammyl720/cooked](https://github.com/sammyl720/cooked) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-09-30 |
+| [saresend/vega1](https://github.com/saresend/vega1) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-11 |
 | [senna-lang/bonsai-4b-system-one](https://github.com/senna-lang/bonsai-4b-system-one) | 0 | 0 | Lightweight System One model for edge devices: tree-masked multi-question inference on frozen Ternary-Bonsai-4B (MLX/PyTorch) | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-06 |
 | [sjarmak/nls-finetune-scix](https://github.com/sjarmak/nls-finetune-scix) | 0 | 3 | Fine-tuning infrastructure for converting natural-language questions into ADS/SciX literature search queries, targeting a complementary search feature for SciXplorer.org. Includes query validation and evaluation against the ADS API. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-09 |
 | [stevejbickley/from-answers-to-distributions](https://github.com/stevejbickley/from-answers-to-distributions) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-01 |
@@ -322,14 +322,6 @@ Collecting datasets from user-generated content communities is becoming an incre
 
 </details>
 
-### ai4curation/jevotron
-
-<details><summary>README 발췌</summary>
-
-Find the fields worth a second look. A CLI for field-level anomaly detection in tabular, structured, and text files, SQLite, and DuckDB, powered by Jev.
-
-</details>
-
 ### nomanjack/smart-paste
 
 <details><summary>README 발췌</summary>
@@ -354,19 +346,19 @@ From driving logs to reviewable scenes.
 
 </details>
 
-### DreamLab-AI/ontomark-obsidian
-
-<details><summary>README 발췌</summary>
-
-Install · Try three notes · Features · Status · Engine
-
-</details>
-
 ### dark-hxx/jev-safety-gateway
 
 <details><summary>README 발췌</summary>
 
 &gt; 语言 / Language：简体中文 ｜ English
+
+</details>
+
+### DreamLab-AI/ontomark-obsidian
+
+<details><summary>README 발췌</summary>
+
+Install · Try three notes · Features · Status · Engine
 
 </details>
 
@@ -383,6 +375,14 @@ AI decides once. The recipe runs forever — deterministic, diffable, reviewable
 <details><summary>README 발췌</summary>
 
 Four AI columns over 1,000 real app reviews, raced live: TypeSafe's Jev against Gemini 3.8 Flash.
+
+</details>
+
+### ai4curation/jevotron
+
+<details><summary>README 발췌</summary>
+
+Find the fields worth a second look. A CLI for field-level anomaly detection in tabular, structured, and text files, SQLite, and DuckDB, powered by Jev.
 
 </details>
 
@@ -426,11 +426,27 @@ An Efficient Low-Resource Bootstrap for Topic Model Refinement in Zero-Shot Sett
 
 </details>
 
+### GXG-CS/BLADE
+
+<details><summary>README 발췌</summary>
+
+Code for the paper BLADE: Auditing Information Use for Failure Attribution in LLM Multi-Agent Systems.
+
+</details>
+
 ### Cogniform/AI-decision-maker
 
 <details><summary>README 발췌</summary>
 
 AI 驱动的数据分析框架，包含两条链路：数据清洗（认字段）和分类变量分析（认分类变量）。
+
+</details>
+
+### joswha/voiceour
+
+<details><summary>README 발췌</summary>
+
+Tap Fn once and speak. Tap again and the text lands in the app you were already using — recorded, recognized, and cleaned up entirely on your Mac. Ordinary text fields get the paste; a terminal, a code editor, a password field, or a target Voiceour could not read gets the transcript on the clipboard
 
 </details>
 
@@ -463,14 +479,6 @@ A local tournament for deciding which investment ideas deserve further research.
 <details><summary>README 발췌</summary>
 
 Hands-on lessons and applications from LLMCamp for agent memory, context engineering, and System One decision models. Learn from short, inspectable notebook cells, then explore the same experiments in local appbooks.
-
-</details>
-
-### GXG-CS/BLADE
-
-<details><summary>README 발췌</summary>
-
-Code for the paper BLADE: Auditing Information Use for Failure Attribution in LLM Multi-Agent Systems.
 
 </details>
 
@@ -786,6 +794,14 @@ Example on books.toscrape.com, a site made for scraping practice:
 
 </details>
 
+### saiganesh-m/catalog_ingestion_poc
+
+<details><summary>README 발췌</summary>
+
+Reads supplier Excel catalogs with inconsistent headers, formats and units, maps them to one product schema, validates every row, stages it as ready / needsreview / rejected with a reason, and idempotently approves ready rows into a products table.
+
+</details>
+
 ### taliesinb/papyrus
 
 <details><summary>README 발췌</summary>
@@ -1002,14 +1018,6 @@ MeTask's 31B model makes structured decisions: given a state and a question, thi
 
 </details>
 
-### chez-shanpu/tastecheck
-
-<details><summary>README 발췌</summary>
-
-tastecheck scores Go functions against tastes, which are code-quality properties such as "errors are wrapped with context" or "goroutines have a controlled lifetime", using an LLM evaluator.
-
-</details>
-
 ### dacso-ai/protocollo
 
 <details><summary>README 발췌</summary>
@@ -1110,7 +1118,15 @@ A second opinion for findings in Splunk® Enterprise Security, for use alongside
 
 <details><summary>README 발췌</summary>
 
-A research simulator using supplied expression, existing cell labels and segmentation polygons. 4.0.0 is the current primary software release. It restores the original cell rendering and dark replay interface while preserving the v3 simulation mechanisms. See the v4 release notes.
+A research simulator using supplied expression, existing cell labels and segmentation polygons. 5.0.0 is the current primary software release. The simulation mechanisms, kinetic assumptions, cell rendering and dark replay are those of v4, unchanged. V5 improves which measured evidence reaches the pe
+
+</details>
+
+### HyperGAN/evidence-dial
+
+<details><summary>README 발췌</summary>
+
+Problem statement — Lexsi Track 1, problem 3: answer from an organization's supplied documents, return UNKNOWN when the answer is absent, and CONFLICT when equally authoritative records disagree. Evidence Dial tests whether a continuous Particle Sliders adapter can improve those finished answers on 
 
 </details>
 
@@ -1119,14 +1135,6 @@ A research simulator using supplied expression, existing cell labels and segment
 <details><summary>README 발췌</summary>
 
 Course project, Cloud SRE and Security — Adheil Gupta (23BDS002), Om Pandey (23BDS040).
-
-</details>
-
-### ilkaydemiralay/turkish-legal-claim-bench
-
-<details><summary>README 발췌</summary>
-
-Does an official Turkish legislation passage support, contradict, or stay silent on a claim? 50 claims, 9 official passages, 7 models. A small pilot, not a leaderboard.
 
 </details>
 
@@ -1218,22 +1226,6 @@ Code and data for "Decision-only medical AI: early evidence and pairing with lan
 
 </details>
 
-### mcxraider/modernbert-tetris
-
-<details><summary>README 발췌</summary>
-
-A small encoder (answerdotai/ModernBERT-base, 150M params) fine-tuned to pick Tetris placements. Code enumerates every legal placement and describes each outcome in words; the model reads the board plus one candidate and emits a single score. A softmax over a state's candidates turns those scores in
-
-</details>
-
-### minn-jun/Org-AI-Agent
-
-<details><summary>README 발췌</summary>
-
-조직의 대화(STM), 진행 문서(MTM), 장기 보관 문서(LTM)에서 근거를 찾아 출처와 함께 답하는 세션형 에이전트 프로토타입이다. 연구용 구현으로, 실제 조직 지식을 자동으로 승인하거나 STM/MTM을 운영 데이터에서 적재하는 기능은 아직 없다.
-
-</details>
-
 ### mokagtc/go-carbon-tracker
 
 <details><summary>README 발췌</summary>
@@ -1290,22 +1282,6 @@ AI Engineer Shanghai 2026（2026 年 11 月 5–6 日，上海）的现场同传
 
 </details>
 
-### salvatore-bufi/jev_factcheck
-
-<details><summary>README 발췌</summary>
-
-An experiment that evaluates jev-1.13.0 (the System One API) on the lytang/LLM-AggreFact benchmark. The task is document-grounded support: given a document and a claim, does the document support the whole claim? It does not check truth against the open web.
-
-</details>
-
-### saresend/vega1
-
-<details><summary>README 발췌</summary>
-
-A general System One model for video that runs entirely in the browser.
-
-</details>
-
 ### shamit-arch/practical-submiter
 
 <details><summary>README 발췌</summary>
@@ -1354,14 +1330,6 @@ Script để tự chạy lại các thí nghiệm trong series "Jev thực chi�
 
 </details>
 
-### tohachan/ontologizer
-
-<details><summary>README 발췌</summary>
-
-A toolkit for building ontologies of software projects and using them well. Agents analyse source code and documentation; the kit turns their findings into a standard RDF/OWL ontology. Every concept sits on a level, and every claim carries evidence from the source. The ontology lives in a shared Ope
-
-</details>
-
 ### tsetse012/jev-judge-rank
 
 <details><summary>README 발췌</summary>
@@ -1391,6 +1359,14 @@ A TypeScript agent that plays Balatro: code works out the odds, a small decision
 <details><summary>README 발췌</summary>
 
 Expense tracking for Gaza households, built around the one piece of data that is actually available: a bank statement export and its note field.
+
+</details>
+
+### william-wei-zhu/web-app-building-standard
+
+<details><summary>README 발췌</summary>
+
+A reusable standard for building small, polished public web apps, so the same design and build decisions don't have to be re-made (or re-requested) on every new project.
 
 </details>
 
@@ -1890,6 +1866,14 @@ This project extracts cancer-registry entities from unstructured oncology notes 
 
 </details>
 
+### ilkaydemiralay/turkish-legal-claim-bench
+
+<details><summary>README 발췌</summary>
+
+Does an official Turkish legislation passage support, contradict, or stay silent on a claim? 50 claims, 9 official passages, 7 models. A small pilot, not a leaderboard.
+
+</details>
+
 ### imranrkhan13/jevscope
 
 <details><summary>README 발췌</summary>
@@ -1970,6 +1954,14 @@ Jev、Laya 和 StartLux 决策模型对比实验。 导入自己的选择问题�
 
 </details>
 
+### mcxraider/modernbert-tetris
+
+<details><summary>README 발췌</summary>
+
+A small encoder (answerdotai/ModernBERT-base, 150M params) fine-tuned to pick Tetris placements. Code enumerates every legal placement and describes each outcome in words; the model reads the board plus one candidate and emits a single score. A softmax over a state's candidates turns those scores in
+
+</details>
+
 ### memorysaver/jev-atari-lab
 
 <details><summary>README 발췌</summary>
@@ -1999,6 +1991,14 @@ AI-assisted mortgage document review. Uploads are parsed (LlamaParse), classifie
 <details><summary>README 발췌</summary>
 
 The Chat Receipt is a mobile-first dating-chat game: paste a two-person conversation or upload a screenshot, verify every message and speaker, then get a bounded read of the visible signals. It never treats the score as odds of attraction and never puts chat content in a share card or challenge reco
+
+</details>
+
+### saresend/vega1
+
+<details><summary>README 발췌</summary>
+
+A general System One model for video that runs entirely in the browser.
 
 </details>
 

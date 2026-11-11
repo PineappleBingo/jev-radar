@@ -1,24 +1,24 @@
-# 🎮 게임·인터랙티브 (218)
+# 🎮 게임·인터랙티브 (223)
 
 [← README](../README.md)
 
 | 리포 | ⭐ | 🍴 | 요약 | 태그 | 최근 푸시 |
 |---|---:|---:|---|---|---|
-| [fhshaik/typesafe-mario](https://github.com/fhshaik/typesafe-mario) | 462 | 64 | 구조화된 에뮬레이터 RAM 상태 데이터를 바탕으로 Super Mario Bros. 게임 컨트롤러 입력을 직접 결정하는 Jev 기반 에이전트 실험 프로젝트다.<br>게임 상태 JSON을 입력받아 컨트롤러 매크로 선택(Choice), 현재 전방 점프의 유용성 여부(Noul), 즉각적인 위험도 등급(Score)을 판단한다.<br>스크린샷 대신 에뮬레이터 RAM과 텔레메트리를 구조화된 JSON으로 파싱해 전달하며, 타이밍 계산은 코드가 수행하고 Jev가 직접 입력을 결정한다. | [✅](../README.md#legend "코드 확인: 코드에서 Jev API 호출을 찾았습니다") | 2026-09-16 |
+| [fhshaik/typesafe-mario](https://github.com/fhshaik/typesafe-mario) | 462 | 65 | 구조화된 에뮬레이터 RAM 상태 데이터를 바탕으로 Super Mario Bros. 게임 컨트롤러 입력을 직접 결정하는 Jev 기반 에이전트 실험 프로젝트다.<br>게임 상태 JSON을 입력받아 컨트롤러 매크로 선택(Choice), 현재 전방 점프의 유용성 여부(Noul), 즉각적인 위험도 등급(Score)을 판단한다.<br>스크린샷 대신 에뮬레이터 RAM과 텔레메트리를 구조화된 JSON으로 파싱해 전달하며, 타이밍 계산은 코드가 수행하고 Jev가 직접 입력을 결정한다. | [✅](../README.md#legend "코드 확인: 코드에서 Jev API 호출을 찾았습니다") [🔥 +5](../README.md#legend "최근 7일 동안 별이 5개 늘었습니다") | 2026-09-16 |
 | [standardagents/jevpilot](https://github.com/standardagents/jevpilot) | 237 | 46 | TypeSafe Jev 모델을 사용해 자율주행(오토파일럿) 행동을 시뮬레이션하는 Three.js 기반의 드라이빙 시뮬레이터 데모다.<br>주변 교통, 도로 경계, 신호, 정지선 및 목표 경로 정보를 바탕으로 샘플링된 주행 경로 후보(조향 및 속도 조합)와 정지 여부 중 최적의 행동을 선택하도록 묻는다.<br>후보 경로 생성과 기하학적 제어 연산은 로컬 웹 워커에서 처리하고, 컴팩트한 상태 테이블만 서버를 통해 Jev API로 전달해 초당 1.5~4회 주행 경로를 선택한다. | [✅](../README.md#legend "코드 확인: 코드에서 Jev API 호출을 찾았습니다") [🔥 +5](../README.md#legend "최근 7일 동안 별이 5개 늘었습니다") | 2026-09-17 |
-| [TianyuCodings/NanoJev](https://github.com/TianyuCodings/NanoJev) | 2587 | 265 | Qwen3-0.6B 백본 기반으로 토큰 디코딩 없이 병렬 판단 확률 분포를 출력하도록 구현된 오픈소스 Jev 복제 모델 및 훈련 파이프라인이다.<br>게임 상태와 질문이 주어졌을 때 동적 선택지 중 최적 행동 확률(Choice), 명제 참/거짓 확률(Boolean), 정렬 등급 점수(Score)를 판단시킨다.<br>텍스트 토큰 생성 대신 상태·질문·후보군을 한 번의 포워드로 인코딩하고 전용 헤드로 확률 분포를 직접 출력해 4개 게임 제어에 적용했다. | [❌](../README.md#legend "코드에서 못 찾음: 코드 검색으로는 Jev 호출이 보이지 않습니다. 문서에서만 언급했을 수 있습니다") [🔥 +10](../README.md#legend "최근 7일 동안 별이 10개 늘었습니다") | 2026-10-16 |
-| [wingedsheep/argentum-engine](https://github.com/wingedsheep/argentum-engine) | 85 | 46 | Kotlin 기반으로 MTG(Magic: The Gathering) 규칙을 구현한 게임 엔진이자 온라인 멀티플레이 플랫폼이다.<br>게임 내 AI 상대 모드(GAME_AI_MODE=jev)에서 게임 액션 및 플레이 선택지를 판단한다.<br>결정론적 룰 엔진, RL/MCTS 학습용 Gym 환경, 오라클 텍스트 파서 Assay와 함께 트리 탐색·LLM·Jev AI 컨트롤러를 제공한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-10 |
-| [christianmat/jev-pokemon](https://github.com/christianmat/jev-pokemon) | 133 | 10 | 인공지능 모델 Jev가 포켓몬스터 레드를 직접 플레이하도록 에뮬레이터와 연동해 의사결정을 수행하는 프로젝트다.<br>이동 목적지, 대화 상대, 전투 기술, 포켓몬 교체, 메뉴 선택 등 게임 내 가능한 행동 목록 중에서 하나를 고른다.<br>하네스가 메모리를 읽어 규칙상 가능한 선택지와 정보를 구성하고, 길 찾기 같은 단순 조작만 처리하며 진행을 전적으로 모델 판단에 맡긴다. | [❌](../README.md#legend "코드에서 못 찾음: 코드 검색으로는 Jev 호출이 보이지 않습니다. 문서에서만 언급했을 수 있습니다") | 2026-09-28 |
-| [virajbhartiya/laya-vs-jev](https://github.com/virajbhartiya/laya-vs-jev) | 117 | 12 | Laya vs Jev: local MLX and hosted AI decisions playing T-Rex side by side, with live metrics and replay recording | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-09-21 |
-| [emrickgarrett/OneVOneJev](https://github.com/emrickgarrett/OneVOneJev) | 44 | 9 | Three.js와 Node.js 기반 브라우저 1v1 FPS 환경에서 TypeSafe System One 기반 AI 봇과 스나이퍼 대결을 펼치는 게임이다.<br>서버가 약 9Hz 주기로 구조화된 게임 상태를 바탕으로 이동, 조준각(yaw, pitch), ADS, 발사, 점프 여부를 Choice와 Noul로 질의한다.<br>API 장애 시 매치가 멈추지 않도록 동일한 액션 인터페이스를 공유하는 휴리스틱 로직을 폴백으로 구현했다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-09-18 |
+| [TianyuCodings/NanoJev](https://github.com/TianyuCodings/NanoJev) | 2588 | 265 | Qwen3-0.6B 백본 기반으로 토큰 디코딩 없이 병렬 판단 확률 분포를 출력하도록 구현된 오픈소스 Jev 복제 모델 및 훈련 파이프라인이다.<br>게임 상태와 질문이 주어졌을 때 동적 선택지 중 최적 행동 확률(Choice), 명제 참/거짓 확률(Boolean), 정렬 등급 점수(Score)를 판단시킨다.<br>텍스트 토큰 생성 대신 상태·질문·후보군을 한 번의 포워드로 인코딩하고 전용 헤드로 확률 분포를 직접 출력해 4개 게임 제어에 적용했다. | [❌](../README.md#legend "코드에서 못 찾음: 코드 검색으로는 Jev 호출이 보이지 않습니다. 문서에서만 언급했을 수 있습니다") [🔥 +10](../README.md#legend "최근 7일 동안 별이 10개 늘었습니다") | 2026-10-16 |
+| [wingedsheep/argentum-engine](https://github.com/wingedsheep/argentum-engine) | 85 | 46 | Kotlin 기반으로 MTG(Magic: The Gathering) 규칙을 구현한 게임 엔진이자 온라인 멀티플레이 플랫폼이다.<br>게임 내 AI 상대 모드(GAME_AI_MODE=jev)에서 게임 액션 및 플레이 선택지를 판단한다.<br>결정론적 룰 엔진, RL/MCTS 학습용 Gym 환경, 오라클 텍스트 파서 Assay와 함께 트리 탐색·LLM·Jev AI 컨트롤러를 제공한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-11 |
+| [christianmat/jev-pokemon](https://github.com/christianmat/jev-pokemon) | 134 | 10 | 인공지능 모델 Jev가 포켓몬스터 레드를 직접 플레이하도록 에뮬레이터와 연동해 의사결정을 수행하는 프로젝트다.<br>이동 목적지, 대화 상대, 전투 기술, 포켓몬 교체, 메뉴 선택 등 게임 내 가능한 행동 목록 중에서 하나를 고른다.<br>하네스가 메모리를 읽어 규칙상 가능한 선택지와 정보를 구성하고, 길 찾기 같은 단순 조작만 처리하며 진행을 전적으로 모델 판단에 맡긴다. | [❌](../README.md#legend "코드에서 못 찾음: 코드 검색으로는 Jev 호출이 보이지 않습니다. 문서에서만 언급했을 수 있습니다") | 2026-09-28 |
+| [virajbhartiya/laya-vs-jev](https://github.com/virajbhartiya/laya-vs-jev) | 119 | 12 | Laya vs Jev: local MLX and hosted AI decisions playing T-Rex side by side, with live metrics and replay recording | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-09-21 |
 | [Prophetlab/JevPokerBench](https://github.com/Prophetlab/JevPokerBench) | 44 | 7 | 텍사스 홀덤 환경에서 의사결정 모델의 실력을 순위표로 평가하고 직접 대전이나 수 분석을 진행하는 벤치마크 플랫폼이다.<br>주어진 포커 핸드와 베팅 이력 상황에서 폴드, 체크, 콜, 레이즈 중 어떤 행동을 선택해야 하는지 묻는다.<br>외부 API 키 연동과 서버 측 128건 동시성 제어 풀을 갖추고 있으며, 리플레이와 실시간 어드바이저 기능을 웹 화면으로 제공한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-09-22 |
+| [emrickgarrett/OneVOneJev](https://github.com/emrickgarrett/OneVOneJev) | 44 | 9 | Three.js와 Node.js 기반 브라우저 1v1 FPS 환경에서 TypeSafe System One 기반 AI 봇과 스나이퍼 대결을 펼치는 게임이다.<br>서버가 약 9Hz 주기로 구조화된 게임 상태를 바탕으로 이동, 조준각(yaw, pitch), ADS, 발사, 점프 여부를 Choice와 Noul로 질의한다.<br>API 장애 시 매치가 멈추지 않도록 동일한 액션 인터페이스를 공유하는 휴리스틱 로직을 폴백으로 구현했다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-09-18 |
 | [NevaMind-AI/JevTown](https://github.com/NevaMind-AI/JevTown) | 54 | 6 | jev based AI town simulation | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-09 |
 | [Somnius/shadowrealms-ai](https://github.com/Somnius/shadowrealms-ai) | 23 | 2 | Self-hosted AI Storyteller for World of Darkness: Classic (oWoD Revised) and V5 rules, dice pools from your character sheet, Discord-style chat with voice (listen and speak, local TTS and Whisper), local LLMs (LM Studio / Ollama) with RAG memory, English and Greek. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-01 |
 | [wonseokjung/connect-tycoon](https://github.com/wonseokjung/connect-tycoon) | 12 | 20 | 기업 운영 시뮬레이터 환경에서 강화학습과 사람의 피드백으로 의사결정 모델을 학습시키는 오픈소스 도구다.<br>주문·환불·사기 거래 등 주어진 회사 상황(state)에서 어떤 조치를 취할지 보기(criteria) 중 하나를 고르는 choice 판단을 요구한다.<br>시뮬레이터에서 PPO로 학습한 뒤 확신도가 낮을 때만 사람에게 묻는 방식을 쓰고 소형 언어 모델 증류까지 지원한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-29 |
 | [phyous/tsai-sc](https://github.com/phyous/tsai-sc) | 28 | 4 | 구조화된 스타크래프트 셰어웨어 게임 상태를 관찰하고 TypeSafe Jev 모델의 판단으로 키보드와 마우스 입력을 제어하는 하네스 리포지토리다.<br>정리된 아군 및 시야 상태를 바탕으로 유닛 생산, 자원 채취, 탐색, 업그레이드, 전투 등 어떤 명령을 실행할지 choice 형태로 선택하게 한다.<br>화면 캡처가 아닌 구조화된 게임 데이터를 사용하며, 상태 읽기와 추론 중 게임을 일시정지하고 경제와 군사 결정을 분리해 원본 미션 승리를 달성했다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-09-16 |
 | [joch/jevman](https://github.com/joch/jevman) | 8 | 15 | TypeSafe jev 의사결정 모델을 이용해 팩맨이나 유령의 이동 방향을 실시간으로 조작하는 웹 기반 팩맨 게임이다.<br>갈림길마다 계산된 거리와 유령 상태 정보를 바탕으로 캐릭터가 다음에 이동할 적절한 방향을 choice로 선택하게 한다.<br>사이드 패널에서 모델의 결정 확률과 지연 시간 및 누적 비용을 보여주며, 응답 실패 시 탐욕 알고리즘으로 대체한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-06 |
-| [BunsDev/river-oaks](https://github.com/BunsDev/river-oaks) | 7 | 2 | 휴스턴 리버오크스 지구를 배경으로 주민 NPC의 행동과 상호작용을 구현한 3D 시뮬레이션 프로젝트다.<br>자동 방문 모드에서 캐릭터가 이동할 장소와 만날 대상, 도움 방식을 선택하거나 주민의 즉각적인 반응을 판단한다.<br>지도 기반 건물 내부와 거리를 렌더링하고 백엔드 브리지를 붙여 주민 반응과 경제 시나리오를 처리하도록 설계했다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-10 |
-| [ZeroTang05/Situation-Puzzle](https://github.com/ZeroTang05/Situation-Puzzle) | 22 | 2 | AI 모델 Jev가 사회자를 맡아 플레이어 질문에 답하며 정답을 추리하도록 돕는 오픈소스 바다거북스프 추리 게임 웹 서비스다.<br>플레이어 질문에 대해 '예/아니오/무관/판단불가' 중 하나를 선택하고, 전체 추리 답변이 진상에 부합하는지 성공 여부를 판단한다.<br>판단 확신도가 낮을 때 스스로 인정하며, 판정 의문 시 거대 언어 모델로 교차 검증하거나 방 내 사람이 직접 사회 권한을 넘겨받을 수 있다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-09 |
+| [BunsDev/river-oaks](https://github.com/BunsDev/river-oaks) | 7 | 1 | 휴스턴 리버오크스 지구를 배경으로 주민 NPC의 행동과 상호작용을 구현한 3D 시뮬레이션 프로젝트다.<br>자동 방문 모드에서 캐릭터가 이동할 장소와 만날 대상, 도움 방식을 선택하거나 주민의 즉각적인 반응을 판단한다.<br>지도 기반 건물 내부와 거리를 렌더링하고 백엔드 브리지를 붙여 주민 반응과 경제 시나리오를 처리하도록 설계했다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-10 |
+| [ZeroTang05/Situation-Puzzle](https://github.com/ZeroTang05/Situation-Puzzle) | 22 | 2 | AI 모델 Jev가 사회자를 맡아 플레이어 질문에 답하며 정답을 추리하도록 돕는 오픈소스 바다거북스프 추리 게임 웹 서비스다.<br>플레이어 질문에 대해 '예/아니오/무관/판단불가' 중 하나를 선택하고, 전체 추리 답변이 진상에 부합하는지 성공 여부를 판단한다.<br>판단 확신도가 낮을 때 스스로 인정하며, 판정 의문 시 거대 언어 모델로 교차 검증하거나 방 내 사람이 직접 사회 권한을 넘겨받을 수 있다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-10 |
 | [jammaru/jev-lab](https://github.com/jammaru/jev-lab) | 8 | 1 | 100 AI NPCs live in a tiny town. Jev chooses the next action; the world writes the story. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-15 |
 | [AI-Ascension/jev-factorio-agent](https://github.com/AI-Ascension/jev-factorio-agent) | 4 | 0 | 게임 팩토리오에서 Jev를 사용해 목표와 다음 행동을 결정하는 에이전트 프로젝트다.<br>게임 상태 스냅샷을 바탕으로 목표 설정, 다음 후보 행동 선택, 멈춤 감지 여부를 질문한다.<br>규칙 검증과 실행은 결정론적 코드가 맡고 빠른 거시적 판단만 Jev 모델에 질의하도록 역할을 분리했다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-26 |
 | [faelion/BehaviorLLM](https://github.com/faelion/BehaviorLLM) | 5 | 0 | Open-source Unity package for local LLM-driven NPC and game-system decisions, with configurable actions and playable samples. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-20 |
@@ -35,7 +35,7 @@
 | [dperezcabrera/ai-chess-lab](https://github.com/dperezcabrera/ai-chess-lab) | 4 | 1 | 브라우저에서 사용자와 LLM 및 Jev 모델이 체스 대국과 토너먼트를 진행하고 Stockfish로 기보를 분석하는 웹 애플리케이션이다.<br>체스 보드의 현재 상태에서 둘 수 있는 규칙상 유효한 수 목록을 선택지로 넘겨 다음에 둘 최선의 한 수를 고르게 한다.<br>선택지 제한 255개 안에 체스의 최대 합법 수 218개가 완전히 들어가므로 규칙 위반 없이 단일 API 호출로 다음 수를 결정한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-02 |
 | [0x440-1me/laya-unity](https://github.com/0x440-1me/laya-unity) | 1 | 0 | 유니티 환경에서 로컬 서버나 TypeSafe 엔드포인트와 통신해 게임 AI의 정형화된 판단을 받아오는 클라이언트 SDK다.<br>체력과 거리 등 게임 상태를 전달하고 NPC의 행동 선택지, 상황 위험도 등급, 도주 여부를 choice, score, noul로 묻는다.<br>가중치나 ONNX 런타임을 내장하지 않고 통신 계층에 집중한 형태이며 임의의 텍스트 대신 미리 정의된 선택지만 반환받도록 설계했다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-12 |
 | [ably-labs/jev-pong](https://github.com/ably-labs/jev-pong) | 1 | 3 | 모델의 판단 속도에 맞춰 공이 한 칸씩 움직이는 Pong 게임으로, Jev와 기존 LLM의 의사결정 지연 시간을 비교하는 데모다.<br>실시간 게임 상태를 입력받아 패들을 움직이기 위한 행동 선택지를 typed choice로 판단시킨다.<br>언어 생성 없이 typed choice만 반환하는 Jev의 빠른 응답 속도(약 220ms)를 시각화했으며, Ably 채널로 에이전트와 플레이어를 직접 연결했다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-01 |
-| [FueRobertHer/cast-guidance](https://github.com/FueRobertHer/cast-guidance) | 1 | 0 | 모바일 환경을 중심으로 동작하며 캐릭터 시트와 세션 진행을 지원하는 오프라인 우선 D&amp;D 5e 웹 앱이다.<br>특성 본문이 추가 행동이나 회복 같은 특정 메커니즘을 뜻하는지, 2014년과 2024년 규칙 문구가 같은지 등을 예/아니오로 묻는다.<br>정규식 기반 텍스트 파서 결과를 Jev 응답과 대조해 오프라인 감사 예산으로 관리하고 본문 해시로 결과를 캐싱한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") [🆕](../README.md#legend "최근 7일 안에 처음 발견했습니다") | 2026-11-10 |
+| [FueRobertHer/cast-guidance](https://github.com/FueRobertHer/cast-guidance) | 1 | 0 | 모바일 환경을 중심으로 동작하며 캐릭터 시트와 세션 진행을 지원하는 오프라인 우선 D&amp;D 5e 웹 앱이다.<br>특성 본문이 추가 행동이나 회복 같은 특정 메커니즘을 뜻하는지, 2014년과 2024년 규칙 문구가 같은지 등을 예/아니오로 묻는다.<br>정규식 기반 텍스트 파서 결과를 Jev 응답과 대조해 오프라인 감사 예산으로 관리하고 본문 해시로 결과를 캐싱한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") [🆕](../README.md#legend "최근 7일 안에 처음 발견했습니다") | 2026-11-11 |
 | [mostafa1344/laya-vs-jev](https://github.com/mostafa1344/laya-vs-jev) | 1 | 0 | 크롬 공룡 달리기 게임에서 로컬 AI 모델 Laya와 클라우드 호스팅 AI 모델 Jev의 플레이를 실시간으로 비교하는 벤치마크 프로그램이다.<br>README에 구체적인 판단 지점 설명은 없으나 장애물을 피하기 위해 언제 점프할지 결정하는 데 쓰인다.<br>MLX 기반 로컬 실행 모델과 원격 호스팅 API 모델 간의 반응 속도와 점프 정확도를 한 화면에서 대조하며 관찰할 수 있다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-14 |
 | [neovibrant/BOOLS](https://github.com/neovibrant/BOOLS) | 1 | 0 | 선택형 판단 모델의 빠른 응답 속도를 활용해 실시간으로 패들을 움직이고 배경음악을 작곡하는 벽돌 깨기 게임이다.<br>공이 패들 라인과 맞닿을 구역을 8개 선택지 중에서 고르게 하고, 실시간 음악 작곡에 쓸 각 음표를 판단하게 묻는다.<br>빌드 과정이나 백엔드 서버 없이 단일 HTML 파일로 동작하며, 공의 움직임 예측을 게임 로직이 아닌 모델 판단에 전적으로 맡긴다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-28 |
 | [Pablositoo/dernier-abri](https://github.com/Pablositoo/dernier-abri) | 1 | 0 | 어두운 밤에 나타난 실루엣의 행동 묘사를 바탕으로 좀비인지 생존자인지 판별해 사격 여부를 결정하는 3D 방어 브라우저 게임이다.<br>실루엣의 외형과 경고에 반응한 행동 설명을 입력받아 대상이 좀비인지 또는 생존자인지 여부를 확률로 묻는다.<br>모델이 직접 사격을 결정하지 않고 베이지안 융합과 순차 검정을 거쳐 결정론적 규칙으로 발사 여부를 통제한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-16 |
@@ -59,11 +59,12 @@
 | [gbesse/jev-rankroom](https://github.com/gbesse/jev-rankroom) | 1 | 0 | 디스코드 액티비티 환경에서 플레이어들이 선택지의 순위를 예측하고 점수를 겨루는 소셜 판정 게임이다.<br>방에서 제공한 2~8개의 유한한 선택지 중에서 제시된 기준에 부합하는 결과를 판정하게 한다.<br>새로운 선택지 생성을 막고 정해진 후보 안에서만 모델이 평가하며 점수 계산과 동점 처리는 코드가 결정론적으로 처리한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-07 |
 | [AdityaVardhanY12/supreme-succotash](https://github.com/AdityaVardhanY12/supreme-succotash) | 0 | 0 | 외부 라이브러리 없이 순수 자바스크립트와 Node.js로 만든 턴제 브라우저 던전 탈출 게임이다.<br>이동 가능한 각 방향마다 플레이어를 잡기 위한 최선의 수인지 묻고 noul 확률을 받아 가장 높은 방향을 고른다.<br>외부 의존성이나 빌드 과정 없이 구현했고 사용자가 직접 입력한 API 키를 로컬 프록시 메모리에서만 안전하게 다룬다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") [🆕](../README.md#legend "최근 7일 안에 처음 발견했습니다") | 2026-11-09 |
 | [Agaka/coach-lol](https://github.com/Agaka/coach-lol) | 0 | 0 | 리그 오브 레전드 공식 로컬 클라이언트 API 데이터를 실시간으로 읽어 플레이어에게 음성으로 전략 조언을 제공하는 코칭 도구다.<br>실시간 게임 수치 데이터를 바탕으로 압박, 안전 플레이, 파밍, 귀환, 오브젝트 합류, 아군 지원 중 무엇을 할지 choice로 판단한다.<br>Riot 로컬 API만 읽어 음성 합성을 수행하며, Jev 판단의 신뢰도가 0.70 이상이고 최근 규칙과 중복되지 않을 때만 음성으로 안내한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") [🆕](../README.md#legend "최근 7일 안에 처음 발견했습니다") | 2026-11-09 |
-| [agk4444/sports-odds](https://github.com/agk4444/sports-odds) | 0 | 0 | ESPN 등에서 가져온 스포츠 경기 일정에 TypeSafe Jev의 승부 예측을 붙여 정적 웹사이트용 데이터를 매일 생성하는 자동화 도구다.<br>축구의 승·무·패나 일반 스포츠 경기의 승리 팀 선택지를 고르고 그에 따른 확률과 확신도를 판단하게 한다.<br>API 조회 실패나 모델 호출 실패 시 가짜 예측을 지어내지 않고 해당 경기를 건너뛰거나 기존 데이터를 유지하도록 설계했다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-09 |
+| [agk4444/sports-odds](https://github.com/agk4444/sports-odds) | 0 | 0 | ESPN 등에서 가져온 스포츠 경기 일정에 TypeSafe Jev의 승부 예측을 붙여 정적 웹사이트용 데이터를 매일 생성하는 자동화 도구다.<br>축구의 승·무·패나 일반 스포츠 경기의 승리 팀 선택지를 고르고 그에 따른 확률과 확신도를 판단하게 한다.<br>API 조회 실패나 모델 호출 실패 시 가짜 예측을 지어내지 않고 해당 경기를 건너뛰거나 기존 데이터를 유지하도록 설계했다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-10 |
 | [alexandreroman/jong](https://github.com/alexandreroman/jong) | 0 | 0 | 브라우저에서 TypeSafe AI의 Jev 모델을 상대로 즐길 수 있는 퐁(Pong) 게임이다.<br>공이 도달할 10개 세로 구역 중 하나(target)와 공을 되받아칠 방향(aim)을 choice로 묻는다.<br>빌드 도구나 외부 프레임워크 없이 순수 캔버스로 구동하며 CORS 제약을 풀기 위한 작은 로컬 프록시만 둔다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-22 |
 | [Anxiety471/Adaptive-Hostiles](https://github.com/Anxiety471/Adaptive-Hostiles) | 0 | 0 | 림월드에서 적대적 습격대 구성과 엘리트 폰의 전술적 이동 결정을 Jev로 제어하려는 모드 프로젝트다.<br>정착지 상태에 맞는 습격 규모와 방식, 그리고 엘리트 폰이 이동할 유효 좌표와 공격 대상 및 전술 자세를 고른다.<br>게임 엔진이 계산한 이동 가능 셀 후보군 중에서만 좌표를 선택하며 네트워크 실패 시 기본 로직으로 대체한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-28 |
 | [arndth/tetrisarena](https://github.com/arndth/tetrisarena) | 0 | 0 | 테트리스에서 Jev, LLM, 테이블 모델, 휴리스틱 알고리즘의 플레이 성능과 비용을 같은 블록 조건으로 실시간 비교하는 벤치마크 도구다.<br>보드 상태와 합법적인 착수 후보 목록을 바탕으로 이번 블록을 어디에 내려놓을지 가장 좋은 위치 하나를 선택하도록 묻는다.<br>모든 모델에 동일한 후보군을 제공하고 호출 오류 시 휴리스틱 수로 대체해 게임이 멈추지 않게 설계했다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-26 |
-| [DansiDanutz/PreFlop](https://github.com/DansiDanutz/PreFlop) | 0 | 0 | 포커 클럽에서 실시간으로 나오는 세 장의 플롭 카드 결과에 베팅할 수 있게 지원하는 베팅 플랫폼 스택이다.<br>README에 판단 지점 설명이 없다.<br>22,100개 플롭 조합의 배당 계산 엔진과 Ed25519 서명 기반 딜러 태블릿 앱을 포함해 전체 시스템을 갖추고 있다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") [🆕](../README.md#legend "최근 7일 안에 처음 발견했습니다") | 2026-11-10 |
+| [coredweller/MonsterJevActionalizer](https://github.com/coredweller/MonsterJevActionalizer) | 0 | 0 | D&amp;D 전투에서 몬스터 능력치와 조우 상황을 바탕으로 몬스터가 실행할 다음 턴 행동을 추천하는 도구다.<br>앱이 구성한 유효 행동 선택지 목록 가운데 이번 턴에 몬스터가 취할 최적의 행동 하나를 고르게 한다.<br>규칙에 맞는 후보 행동만 앱이 추려 Jev에 넘기며, 추천된 결과를 사용자가 직접 수정하거나 그대로 반영할 수 있다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") [🆕](../README.md#legend "최근 7일 안에 처음 발견했습니다") | 2026-11-10 |
+| [DansiDanutz/PreFlop](https://github.com/DansiDanutz/PreFlop) | 0 | 0 | 포커 클럽에서 실시간으로 나오는 세 장의 플롭 카드 결과에 베팅할 수 있게 지원하는 베팅 플랫폼 스택이다.<br>README에 판단 지점 설명이 없다.<br>22,100개 플롭 조합의 배당 계산 엔진과 Ed25519 서명 기반 딜러 태블릿 앱을 포함해 전체 시스템을 갖추고 있다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") [🆕](../README.md#legend "최근 7일 안에 처음 발견했습니다") | 2026-11-11 |
 | [darieldatoon/langchain-chess](https://github.com/darieldatoon/langchain-chess) | 0 | 0 | LangChain 에이전트와 빠른 판단 모델을 결합해 웹이나 터미널에서 함께 체스를 둘 수 있도록 만든 체스 플레이어다.<br>현재 체스 국면에서 둘 수 있는 합법적인 수들의 점수를 매겨 즉시 착수할 만한 수인지 판단한다.<br>빠른 판단 모델의 점수가 충분히 높으면 대형 언어 모델 호출을 건너뛰고 즉시 착수해 지연과 비용을 줄인다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-07 |
 | [Dasge97/the-village](https://github.com/Dasge97/the-village) | 0 | 0 | 픽셀 아트 마을 주민들의 일상 행동과 의사 결정을 모델로 시뮬레이션해 브라우저로 지켜보는 웹 게임이다.<br>성인 주민이 다음 2시간 동안 수행할 행동 목록과 마을 의회의 정책 선택지 중 가장 적절한 안을 고르게 한다.<br>긴급한 생존 욕구는 규칙으로 처리하고 일일 예산 소진 시 규칙 기반으로 전환해 API 비용을 통제한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-27 |
 | [davidpobi/JevTown](https://github.com/davidpobi/JevTown) | 0 | 0 | JevTown은 타입세이프 Jev 모델이 게임 속 합법적인 전략 계획을 선택하고 타입스크립트 엔진이 규칙과 결과를 처리하도록 만든 인터랙티브 게임 모음이다.<br>게임 엔진이 현재 상태에 맞춰 생성한 유효한 이동 및 행동 계획 목록 중 어떤 전략을 취할지 선택하도록 묻는다.<br>모델이 직접 좌표나 승패를 조작하지 못하도록 유효한 선택지 집합 안에서만 고르게 제한하고 이동과 충돌 처리는 결정론적 엔진에 맡겼다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-02 |
@@ -72,13 +73,13 @@
 | [ericosg/doj](https://github.com/ericosg/doj) | 0 | 0 | Jev 모델을 적 인공지능으로 삼아 승률 높은 행동을 선택하도록 구현한 턴제 던전 크롤러 웹 게임이다.<br>적 캐릭터가 어떤 직업을 보낼지, 보스가 어떤 변신 형태로 시작할지, 턴마다 어떤 스킬이나 변신을 쓸지 choice 질문으로 묻는다.<br>수치 계산은 서버 코드가 미리 처리해 결과만 넘겨주고, 선택지 순서 편향을 막기 위해 무작위로 섞는 방식으로 구현했다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-15 |
 | [Fantasality/MAGI-EVA](https://github.com/Fantasality/MAGI-EVA) | 0 | 0 | 사용자가 제시한 명제를 에반게리온 속 마기 시스템처럼 세 가지 인격으로 심의해 결과를 도출하는 안드로이드 앱이다.<br>입력된 명제가 예/아니오 판정 대상인지 noul로 거르고 세 인격 프롬프트로 choice 재결과 score 확신도를 판정한다.<br>Gradle 없이 안드로이드 SDK 도구만으로 직접 빌드하며 캔버스 기반 전용 UI로 세 인격의 투표와 확률을 병렬 처리해 시각화한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-12 |
 | [felix0123456/jev-game-agent](https://github.com/felix0123456/jev-game-agent) | 0 | 0 | 안드로이드 화면을 캡처해 TypeSafe Jev의 시각 판단을 바탕으로 터치와 스와이프 동작을 대신 수행하는 게임 자동 플레이 에이전트다.<br>현재 게임 상태와 취할 행동 및 스와이프 방향을 choice로 선택하고 목표 달성 여부를 noul 확률로 판단하게 한다.<br>루트 권한 없이 안드로이드 접근성 서비스로 터치를 주입하며, 단계별 목표 프리셋을 등록해 연속 작업을 자동 제어한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-24 |
+| [FlippRipp/WorldboxAI](https://github.com/FlippRipp/WorldboxAI) | 0 | 0 | Python 모듈로 게임 규칙을 강제하고 검증하며 서사를 진행하는 모듈형 텍스트 롤플레잉 게임 엔진이다.<br>플레이어 행동 판정, 수련 스킬 선택, 기본 경험치 지급, NPC 등장 및 이동 동기 판단을 맡긴다.<br>판단이 불확실하면 기존 LLM으로 넘어가며 불필요한 스킬 추출이나 NPC 생성 작업을 건너뛰도록 분기한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") [🆕](../README.md#legend "최근 7일 안에 처음 발견했습니다") | 2026-11-10 |
 | [florent-brosse/openjev-snake](https://github.com/florent-brosse/openjev-snake) | 0 | 0 | Databricks Apps 환경에서 사용자가 TypeSafe Jev 기반 AI 뱀들과 실시간으로 대전하는 스네이크 게임 데모다.<br>뱀의 주변 상황에 맞춰 후보 행동 중 하나를 고르고(choice), 승패 전망(score)과 사망 위험 확률(noul)을 함께 판단하게 한다.<br>거리 계산과 BFS 이동은 코드가 처리하고, 모델이 매긴 위험도가 0.6을 넘으면 강제로 안전 모드로 전환하도록 결합했다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") [🆕](../README.md#legend "최근 7일 안에 처음 발견했습니다") | 2026-11-04 |
 | [freeCodeCampLondon/jev-tic-tac-toe](https://github.com/freeCodeCampLondon/jev-tic-tac-toe) | 0 | 0 | 학생들이 틱택토 게임을 플레이하며 Jev 의사결정 모델의 작동 방식을 배우는 웹 애플리케이션이다.<br>현재 틱택토 보드 상태를 바탕으로 다음 수를 둘 각 칸에 대한 선택 확률과 전체 신뢰도를 묻는다.<br>게임 서버는 방 상태 검증만 맡고 모델 호출은 브라우저에서 직접 로컬 엔드포인트나 프록시로 전달한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-27 |
 | [gbesse/foundry-jev-encounter-director](https://github.com/gbesse/foundry-jev-encounter-director) | 0 | 0 | Foundry VTT 환경에서 장면에 배치된 토큰 후보 중 다음 인카운터 비트를 골라주는 모듈이다.<br>선택한 여러 Actor와 Token UUID 목록 가운데 어떤 대상을 다음 인카운터 비트로 삼을지 choice로 판단한다.<br>새 문서를 생성하거나 주사위를 굴리지 않고 미리보기 우선 방식으로 동작하며, 키 없이 시험 가능한 오프라인 픽스처를 포함한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-05 |
 | [gbesse/unity-jev-behavior](https://github.com/gbesse/unity-jev-behavior) | 0 | 0 | Unity Behavior 그래프에서 게이트웨이를 거쳐 Jev의 판단을 비동기로 받아 처리할 수 있게 해 주는 액션 노드 확장 패키지다.<br>예시 구현인 서포트 팩 기준으로 지원 티켓 데이터를 입력받아 사전에 정의된 유한한 선택지 가운데 어떤 결과에 해당하는지 판단하게 한다.<br>API 키를 Node.js 게이트웨이에 숨기고, 평가 도중 게임 상태가 바뀌면 Revision을 올려 뒤늦게 도착한 응답을 기각할 수 있다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-05 |
 | [ghosthat-studio/keeping-an-npc-on-quest](https://github.com/ghosthat-studio/keeping-an-npc-on-quest) | 0 | 0 | 텍스트 게임 개발자가 LLM 기반 NPC의 스포일러 누설과 탈선을 방지하기 위해 사용하는 교육용 보조 코드다.<br>플레이어 입력의 의도 분류와 NPC 대사의 잠긴 정보 누설 여부, 허위 사실 생성 여부, 캐릭터 이탈 여부, 퀘스트 유도 여부를 판별한다.<br>플레이어 발언 의도를 분류한 뒤 생성된 대사를 네 가지 검사 기준으로 판별해 실패 시 재작성하거나 사전에 준비된 기본 대사로 대체한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-12 |
 | [gkvoelkl/python-streamlit-jev-ant](https://github.com/gkvoelkl/python-streamlit-jev-ant) | 0 | 0 | 개미 여왕의 명령과 주변 상황에 따라 일개미들이 의사결정 모델로 다음 행동을 정하는 과정을 보여주는 Streamlit 기반 시뮬레이션 게임이다.<br>각 개미가 여왕의 명령과 현재 보드 상황 속에서 가능한 행동 목록 중 다음에 수행할 최선의 행동 하나를 선택한다.<br>긴 글을 생성하지 않고 행동 선택지와 확신도만 반환하는 의사결정 모델의 동작을 Streamlit 게임과 8단계 튜토리얼로 시각화했다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-01 |
-| [Imjungjuna/jev-face](https://github.com/Imjungjuna/jev-face) | 0 | 0 | 사용자가 키보드로 문장을 입력할 때 상대방이 느낄 감정과 강도를 판별해 3D 얼굴 표정을 실시간으로 움직이는 인터랙티브 웹 앱이다.<br>입력 문장이 주는 감정을 8가지 선택지 중 choice로 고르고, 감정의 강도를 0부터 4까지의 rubric score로 판별한다.<br>단일 감정만 쓰지 않고 8개 감정의 확률 분포 전체를 가중치로 삼아 프레임마다 표정을 부드럽게 보간한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-11 |
 | [jevplay-games/jev-2048-arcade](https://github.com/jevplay-games/jev-2048-arcade) | 0 | 0 | 사용자가 브라우저에서 인공지능 Jev와 동일한 조건으로 대결할 수 있도록 만든 2048 듀얼 게임이다.<br>가능한 이동 방향별 판 상태를 두고 병합 구조와 빈 공간 확보, 안정성을 Score 형식으로 평가하게 묻는다.<br>모든 조작과 판단 기록을 시드 및 해시 체인으로 저장해 경기 결과를 오프라인에서 검증하고 재현할 수 있다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-18 |
 | [jevplay-games/jev-arcade-hub](https://github.com/jevplay-games/jev-arcade-hub) | 0 | 0 | 아홉 가지 JEV 아케이드 게임을 각 서브도메인으로 연결해 주는 런처 웹 서버다.<br>README에 판단 지점 설명이 없다.<br>외부 런타임 의존성 없이 Node.js 내장 http 모듈만으로 정적 파일 서빙과 게임 서버 상태 조회를 처리한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-19 |
 | [jevplay-games/jev-checkers-analytics](https://github.com/jevplay-games/jev-checkers-analytics) | 0 | 0 | 사용자가 모델과 대국하며 결정 과정을 검증하고 분석할 수 있는 아메리칸 체커 웹 게임이다.<br>체커 대국 중 둘 수 있는 합법적인 수 후보들의 유불리를 구조화된 형세 질문으로 평가하게 한다.<br>서버가 게임 상태와 모델 판단을 해시로 묶어 기록하며 한 수 단위로 대국을 검증하고 분석할 수 있다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-18 |
@@ -92,6 +93,7 @@
 | [Kepard/42hackathon](https://github.com/Kepard/42hackathon) | 0 | 1 | Holo4의 계획 수립과 Jev의 상태 검증을 결합해 마인크래프트에서 지옥문 진입까지 자율 스피드런을 수행하는 에이전트 시스템이다.<br>새로 갱신된 게임 상태와 후보 스킬들을 바탕으로 Holo4가 제안한 행동을 그대로 승인할지 아니면 재계획(__replan__)을 요청할지 choice로 선택한다.<br>시각적 추론 모델이 낸 전략을 Jev가 실시간 게임 상태로 재검증하고 Fabric 모드와 Baritone 라이브러리로 조작을 실행한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") [🆕](../README.md#legend "최근 7일 안에 처음 발견했습니다") | 2026-11-09 |
 | [ktchung/jev-backroom-generator](https://github.com/ktchung/jev-backroom-generator) | 0 | 0 | 플레이어가 이동할 때마다 인접한 방을 실시간으로 절차적 생성하는 백룸 워킹 시뮬레이터 게임이다.<br>새로 이어질 방의 구조, 벽지와 바닥재, 조명, 기괴함 수치, 배치할 소품과 이전 방에서 바꿀 요소를 판단한다.<br>코드 레벨의 긴장감 곡선으로 분위기 변화 폭을 안정시키고 API 호출 실패 시 무작위 생성으로 대체하도록 만들었다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-22 |
 | [kualta/ball](https://github.com/kualta/ball) | 0 | 0 | Three.js 기반의 3D 매직 8볼 인터페이스에서 사용자의 질문에 답을 보여주는 인터랙티브 웹 앱이다.<br>사용자가 입력한 질문에 맞춰 20가지 매직 8볼 답변 중 어떤 것을 보여줄지 확률 분포를 바탕으로 고르게 한다.<br>Jev가 생성한 답변 확률 분포를 서버에서 샘플링하며 Three.js로 감쇠 애니메이션과 광학 액체 효과를 표현한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-25 |
+| [legomaster188/aiciv](https://github.com/legomaster188/aiciv) | 0 | 0 | 마인크래프트 26.3 서버에서 다양한 인공지능 모델을 연동해 스스로 채광과 생존을 수행하는 가상 플레이어를 추가하는 패브릭 모드다.<br>채광, 아이템 제작, 식사, 몹 공격, 이동 등 봇의 현재 상황에 맞춰 생성된 행동 메뉴 선택지 중 하나를 고르게 한다.<br>클라이언트 모드 설치 없이 서버 단에서 구동되며 채광 시간과 도구 사용, 공격 대기 시간 등 인간 플레이어의 규칙을 동일하게 준수한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") [🆕](../README.md#legend "최근 7일 안에 처음 발견했습니다") | 2026-11-10 |
 | [lmgame-org/Gaming-JevSwarm](https://github.com/lmgame-org/Gaming-JevSwarm) | 0 | 0 | 군집 지능 환경에서 여러 에이전트의 개별 행동 결정을 비교하고 시뮬레이션하는 게임 프레임워크다.<br>각 에이전트가 국소 정보를 바탕으로 다음에 취할 최적의 행동 선택지를 choice로 판단하게 한다.<br>외부 의존성을 최소화하고 웹 뷰어에서 실시간으로 개별 에이전트의 관측값과 행동 확률을 직접 검사할 수 있다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-16 |
 | [lucaAnza/Quiz_solver_jev_ai](https://github.com/lucaAnza/Quiz_solver_jev_ai) | 0 | 0 | 화면에서 지정한 영역을 캡처해 4지선다 퀴즈의 정답을 찾아주는 Tkinter 기반 파이썬 데스크톱 앱이다.<br>캡처한 퀴즈 이미지의 질문과 4개 보기를 바탕으로 위에서부터 몇 번째 선택지가 정답인지 choice 형태로 묻는다.<br>요청 직전마다 body.json 설정을 새로 읽어 앱을 다시 켜지 않고도 지시문이나 보기를 바꿀 수 있다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") [🆕](../README.md#legend "최근 7일 안에 처음 발견했습니다") | 2026-11-08 |
 | [ludvious/ludica-jev](https://github.com/ludvious/ludica-jev) | 0 | 0 | ludica-jev는 2048 게임에서 Jev 호환 텍스트 의사결정 모델과 탐색 알고리즘의 플레이 성능을 비교 분석하는 C++ 프로젝트다.<br>2048 게임의 현재 판 상태와 이동 결과 정보를 바탕으로 다음에 둘 유효한 이동 방향 중 하나를 고르도록 요청한다.<br>jevos 의사결정 모델 점수는 약 950점으로 무작위 수준에 머물러 수치 계획 게임에서는 탐색 알고리즘인 expectimax보다 크게 뒤처진다는 한계를 보여준다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-19 |
@@ -128,14 +130,13 @@
 | [phyous/tsai-civ2](https://github.com/phyous/tsai-civ2) | 2 | 2 | TypeSafe Jev plays original Civilization II in a browser, with live action probabilities. Experimental full-game harness. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-09-18 |
 | [shantanugoel/jev-games](https://github.com/shantanugoel/jev-games) | 2 | 0 | Visual Jev lab for multiple games and emulator platforms | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-09-17 |
 | [siroccomask/snake-jev](https://github.com/siroccomask/snake-jev) | 2 | 1 | Snake controlled by parallel Jev assessments, with one API call per game tick. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-09-19 |
-| [thanhauco/jev-3d-game-engine](https://github.com/thanhauco/jev-3d-game-engine) | 1 | 1 | Three.js 3D game engine where NPCs make decisions with Jev (TypeSafe AI's System One model) | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-01 |
 | [192tt/Lalaland](https://github.com/192tt/Lalaland) | 0 | 0 | Lalaland player-ready releases for Windows and macOS with configurable model API. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-16 |
 | [afieldi/minecraft-bot](https://github.com/afieldi/minecraft-bot) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-23 |
+| [arnabdeypolimi/jev_hack](https://github.com/arnabdeypolimi/jev_hack) | 0 | 0 | Push·Cube: race TypeSafe's Jev decision model to push a spinning block onto a goal in the fewest pushes. Watch it decide (System 1) and simulate futures when unsure (System 2). pymunk physics, Three.js, FastAPI. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") [🆕](../README.md#legend "최근 7일 안에 처음 발견했습니다") | 2026-11-10 |
 | [check5004/decision-ai-explorer](https://github.com/check5004/decision-ai-explorer) | 0 | 0 | Japanese one-page Microsoft Decision-1 feature gallery. Static BYOK OpenRouter demo with Docker and GitHub Pages. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-16 |
 | [clement10601/ZeWorld](https://github.com/clement10601/ZeWorld) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-31 |
 | [collt8080/word-game](https://github.com/collt8080/word-game) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-14 |
 | [dante01yoon/decision-model-arena](https://github.com/dante01yoon/decision-model-arena) | 0 | 0 | OpenAI Decisions API vs Microsoft Decision-1 vs Jev vs Laya — versus Tetris, 4-player bomb battle, image decisions, with all measurements | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-12 |
-| [Dimda/language-wall](https://github.com/Dimda/language-wall) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-11 |
 | [FLX-20/crossy-road-jev](https://github.com/FLX-20/crossy-road-jev) | 0 | 0 | A Crossy Road clone in the browser: play it yourself or watch Jev (TypeSafe) play it in real time. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-12 |
 | [frederico-kluser/ai-fantasy](https://github.com/frederico-kluser/ai-fantasy) | 0 | 0 | Offline-first procedural RPG simulation (Hermeneutic Core): deterministic engine, local ~2B models (d1-2B / LFM3), TDD-first. Foundation phase. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") [🆕](../README.md#legend "최근 7일 안에 처음 발견했습니다") | 2026-11-09 |
 | [hugobsan/rpg](https://github.com/hugobsan/rpg) | 0 | 0 | Solo tabletop RPG run by AI agents, with long-term memory in pgvector so long campaigns stop forgetting. Next.js, OpenRouter. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-08 |
@@ -146,15 +147,16 @@
 | [manicman1999/matchue-2048](https://github.com/manicman1999/matchue-2048) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-15 |
 | [mhmdrizki803-boop/calibration-cup](https://github.com/mhmdrizki803-boop/calibration-cup) | 0 | 0 | Decision models bet on a scenario with probabilities, you referee, Brier score keeps score | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") [🆕](../README.md#legend "최근 7일 안에 처음 발견했습니다") | 2026-11-05 |
 | [misty-step/double-take](https://github.com/misty-step/double-take) | 0 | 0 | One sentence, two readings. A double-meaning party game where the weaker reading wins. Built on Parlor. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-03 |
-| [mprpic/letsplay2048](https://github.com/mprpic/letsplay2048) | 0 | 0 | Every game played on letsplay2048.lol | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-09 |
+| [mprpic/letsplay2048](https://github.com/mprpic/letsplay2048) | 0 | 0 | Every game played on letsplay2048.lol | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-10 |
 | [myakinkii/claywork](https://github.com/myakinkii/claywork) | 0 | 0 | Because clay is mud | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-03 |
 | [Pawnnwap/jev](https://github.com/Pawnnwap/jev) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-09 |
 | [pmatos/victorious](https://github.com/pmatos/victorious) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-05 |
-| [ryohryp/crownless](https://github.com/ryohryp/crownless) | 0 | 0 | Location-based medieval fantasy action hack-and-slash RPG | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-10 |
+| [ryohryp/crownless](https://github.com/ryohryp/crownless) | 0 | 0 | Location-based medieval fantasy action hack-and-slash RPG | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-11 |
 | [samchan/couchside](https://github.com/samchan/couchside) | 0 | 0 | A phone + TV party game for homes and small groups: guess the host, funny rounds, live voting on the TV.  | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-19 |
 | [Samuts-Nazar/harness](https://github.com/Samuts-Nazar/harness) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-28 |
+| [san-npm/copper-acorn](https://github.com/san-npm/copper-acorn) | 0 | 0 | Pixel-art alchemy shop prototype on NEAR testnet: gather, craft and trade with NPC merchants. Games With Real Economies track. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") [🆕](../README.md#legend "최근 7일 안에 처음 발견했습니다") | 2026-11-10 |
 | [saranatour1/agent-arena](https://github.com/saranatour1/agent-arena) | 0 | 0 | agents fighting | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-09 |
-| [starbudweiser/sKYCRASH](https://github.com/starbudweiser/sKYCRASH) | 0 | 0 | Crash log analyzer for Skyrim Special Edition on Mac (CrossOver / Whisky). | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-07 |
+| [starbudweiser/sKYCRASH](https://github.com/starbudweiser/sKYCRASH) | 0 | 0 | Crash log analyzer for Skyrim Special Edition on Mac (CrossOver / Whisky). | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-10 |
 | [tomdacatto/pollinations-dilemma-arena](https://github.com/tomdacatto/pollinations-dilemma-arena) | 0 | 0 | Decision models and text models play the iterated prisoner's dilemma against each other. Paid with your own Pollen. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") [🆕](../README.md#legend "최근 7일 안에 처음 발견했습니다") | 2026-11-06 |
 | [wesley1681/dungeon-llm](https://github.com/wesley1681/dungeon-llm) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-15 |
 | [darthblanc/tictacjev](https://github.com/darthblanc/tictacjev) | 1 | 0 | A tic-tac-toe app where one player is Jev, TypeSafe AI's System One Model with live confidence scores and probabilities. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-09-23 |
@@ -167,6 +169,7 @@
 | [KyleKreuter/jev2048](https://github.com/KyleKreuter/jev2048) | 1 | 0 | Let Jev (TypeSafeAI) solve 2048 | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-09-17 |
 | [MachineLearning-Nerd/jev-tetris](https://github.com/MachineLearning-Nerd/jev-tetris) | 1 | 0 | A visual TypeSafe demo where Jev chooses verified Tetris placements. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-09-17 |
 | [silicon-sbt/pkmn-brain](https://github.com/silicon-sbt/pkmn-brain) | 1 | 0 | 宝可梦外置大脑：Showdown 实时决策面板（代码算事实、小模型做判断）+ 决策日志与自检 | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-03 |
+| [thanhauco/jev-3d-game-engine](https://github.com/thanhauco/jev-3d-game-engine) | 1 | 1 | Three.js 3D game engine where NPCs make decisions with Jev (TypeSafe AI's System One model) | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-01 |
 | [0rgan1co/arena-buscaminas](https://github.com/0rgan1co/arena-buscaminas) | 0 | 0 | 지뢰찾기 게임에서 TypeSafe Jev와 OpenRouter의 여러 LLM이 펼치는 플레이 성능과 비용을 비교하는 브라우저 기반 벤치마크 도구다.<br>논리적 확정 타일이 없어 위험을 감수해야 할 때 후보 칸 중 가장 안전한 위치를 choice로 고르게 한다.<br>확정 규칙은 일반 코드가 연산하고 위험 찍기 상황에서만 Jev를 호출하며, 별도 빌드 없이 index.html 한 장으로 구동된다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-02 |
 | [blakeandrewwood/jev-goal-reflex](https://github.com/blakeandrewwood/jev-goal-reflex) | 0 | 0 | 자연어 명령으로 3D 공간의 박스를 제어할 때 LLM의 단계별 계획에 따라 Jev가 실시간 이동·회전·점프 동작을 결정하는 시스템입니다.<br>각 동작 단계에서 실제로 이동, 회전, 점프를 수행할지 여부와 이동 방향을 실시간으로 판단시킵니다.<br>느린 LLM 계획(System 2)과 빠른 Jev 반사 제어(System 1)를 분리하고, 속도 제한과 물리 계산은 TypeScript 코드로 통제합니다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-09-28 |
 | [DimisCodes/tavli](https://github.com/DimisCodes/tavli) | 0 | 0 | TypeSafe Jev를 대국 상대로 삼아 백개먼 규칙으로 승부하는 웹 게임이다.<br>현재 국면 분석, 착수할 수 있는 수 중 최적의 수(choice), 더블링 큐브 사용 여부(noul)를 판단하게 한다.<br>결정론적 계산은 코드가 맡고 판단만 모델에 넘기며, 모델의 확신도가 0.5 미만이면 코드가 대신 결정하도록 구현했다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-03 |
@@ -175,6 +178,7 @@
 | [gbesse/reflex-godot](https://github.com/gbesse/reflex-godot) | 0 | 0 | Godot 4.7 환경에서 NPC가 유효한 행동만 선택하고 상태를 안전하게 갱신하도록 돕는 에디터 애드온이자 시뮬레이션 환경이다.<br>현재 월드 상태와 2개에서 32개 사이의 유효 행동 목록을 바탕으로 NPC가 다음에 수행할 최적의 행동 하나를 선택하도록 요청한다.<br>선택된 행동을 적용하기 전에 리비전과 유효성을 다시 검증하고 저널에 기록하여 상태 변조나 오류를 재생 검사로 감지한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-10 |
 | [gkvoelkl/rust-bevy-jev-ants](https://github.com/gkvoelkl/rust-bevy-jev-ants) | 0 | 0 | Rust Bevy 기반으로 제작되어 플레이어의 자연어 명령에 따라 각 개미가 개별 행동 의도를 결정하는 시뮬레이션 게임이다.<br>여왕 개미(플레이어)의 텍스트 명령과 개미의 상황을 바탕으로 다음에 수행할 행동 의도(intent)를 선택지로 제시해 판단하도록 요청한다.<br>물리 및 페로몬 이동 시뮬레이션은 60Hz로 고전적으로 처리하고, Jev 모델 의사결정 계층은 비동기로 분리했으며 룰 기반 폴백 없이 동작한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-05 |
 | [iamhuangyinan-sys/AISoupGameWeb](https://github.com/iamhuangyinan-sys/AISoupGameWeb) | 0 | 0 | 사용자가 질문하면 AI가 답을 판정해 바다거북 수프(상황 추리)를 진행할 수 있게 돕는 웹 게임이다.<br>플레이어 질문이 진실에 부합하는지 여부와 객관식 후보 중 가장 유력한 답변의 확률 분포를 판정한다.<br>Jev 확률 모델로 예·아니오·무관 삼태 답변을 만들고 애매할 땐 DeepSeek으로 교차 검증하며 서버에 API 키를 저장하지 않는다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-04 |
+| [Imjungjuna/jev-face](https://github.com/Imjungjuna/jev-face) | 0 | 0 | 사용자가 키보드로 문장을 입력할 때 상대방이 느낄 감정과 강도를 판별해 3D 얼굴 표정을 실시간으로 움직이는 인터랙티브 웹 앱이다.<br>입력 문장이 주는 감정을 8가지 선택지 중 choice로 고르고, 감정의 강도를 0부터 4까지의 rubric score로 판별한다.<br>단일 감정만 쓰지 않고 8개 감정의 확률 분포 전체를 가중치로 삼아 프레임마다 표정을 부드럽게 보간한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-11 |
 | [joaoh82/coffee-under-fire](https://github.com/joaoh82/coffee-under-fire) | 0 | 0 | React와 Three.js를 사용해 브라우저에서 실행되는 아레나 슈팅 게임을 구현한 프로젝트다.<br>README에 판단 지점 설명이 없다.<br>초기에는 Jev 모델로 적 NPC의 전술을 결정했으나 현재는 로컬 유틸리티 점수 계산 방식으로 교체되었다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-04 |
 | [klappy/ma8ic8all-jev](https://github.com/klappy/ma8ic8all-jev) | 0 | 0 | Jev 모델과 Cloudflare Workers AI를 기반으로 질문에 확률적 답변을 반환하는 매직 8볼 콘셉트의 MCP 서비스다.<br>shake 도구로 예·흐림·아니오를 판정하거나 ask 도구를 통해 지정된 계약 규격에 맞춰 질문에 대한 확률적 판단을 묻는다.<br>Cloudflare Access JWT를 Worker에서 직접 검증해 접근을 제어하며, MCP JSON-RPC와 REST 형태의 JSON API 엔드포인트를 함께 제공한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-09-27 |
 | [komzweb/jev-vs-decisions-rpg](https://github.com/komzweb/jev-vs-decisions-rpg) | 0 | 0 | 턴제 RPG 전투에서 TypeSafe Jev와 OpenAI Decisions API의 행동 선택 성능과 비용을 비교하는 벤치마크 실험 프로젝트다.<br>텍스트로 기술된 현재 게임 상태를 바탕으로 공격, 방어, 모으기 공격, 물약 사용, 도망 중 이번 턴에 취할 행동을 choice로 묻는다.<br>몬테카를로 롤아웃으로 기준 정답을 생성해 정확도와 신뢰도 보정 오차(ECE)를 평가하고 리플레이 뷰어로 내면 확률을 시각화한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-09 |
@@ -191,6 +195,7 @@
 | [bugkiwi/turing-jail](https://github.com/bugkiwi/turing-jail) | 0 | 0 | Turing Jail - Let's get out\! | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-09-18 |
 | [codaaiteam/jev-wikiracer](https://github.com/codaaiteam/jev-wikiracer) | 0 | 0 | You vs Jev: race across Wikipedia by clicking links; Jev picks the closest of dozens each hop, one real typed decision, no hallucination. Single-file, no build. Play free: jevtypesafeai.com/games/jev-wikiracer | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-09-25 |
 | [Didixdan/jev-games-poc](https://github.com/Didixdan/jev-games-poc) | 0 | 0 | Many games resolved using Typesafe AI SystemOne model | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-09-25 |
+| [Dimda/language-wall](https://github.com/Dimda/language-wall) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-11 |
 | [drilonademaj-ci/jev-snake](https://github.com/drilonademaj-ci/jev-snake) | 0 | 0 | A Snake game that TypeSafe's Jev model plays, with live latency and cost on screen. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-09-25 |
 | [Ewen2015/i-shoot-rock](https://github.com/Ewen2015/i-shoot-rock) | 0 | 0 | jev-based rock paper scissors, to test jev pre-trained model. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-09-28 |
 | [gbesse/jev-bluffcall](https://github.com/gbesse/jev-bluffcall) | 0 | 0 | Host a local two-truths-and-a-lie party game where Jev is a finite-choice guest. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-02 |
@@ -271,19 +276,19 @@ Two AI decision models play Chrome's T-Rex game side by side: Laya runs locally 
 
 </details>
 
-### emrickgarrett/OneVOneJev
-
-<details><summary>README 발췌</summary>
-
-Server-authoritative browser FPS: queue up, fight Jev (TypeSafe System One) in a Rust-like industrial yard, first to 5 kills. Spectators watch and chat from the sidelines. Final kill gets a killcam before the next challenger.
-
-</details>
-
 ### Prophetlab/JevPokerBench
 
 <details><summary>README 발췌</summary>
 
 ProphetLab's Texas Hold'em benchmark and playground for decision models. Watch separate cash-game and sit-and-go (SNG) leaderboards, replay hands, ask for advice, or play against models. Chips are virtual.
+
+</details>
+
+### emrickgarrett/OneVOneJev
+
+<details><summary>README 발췌</summary>
+
+Server-authoritative browser FPS: queue up, fight Jev (TypeSafe System One) in a Rust-like industrial yard, first to 5 kills. Spectators watch and chat from the sidelines. Final kill gets a killcam before the next challenger.
 
 </details>
 
@@ -695,6 +700,14 @@ SAP-RPT-1 vs. Jev vs. any LLM vs. a 15-line heuristic: same pieces, same candida
 
 </details>
 
+### coredweller/MonsterJevActionalizer
+
+<details><summary>README 발췌</summary>
+
+Dungeons and Dragons (D&amp;amp;D) Monster decision maker given certain parameters and fed to Jev.
+
+</details>
+
 ### DansiDanutz/PreFlop
 
 <details><summary>README 발췌</summary>
@@ -767,6 +780,14 @@ An autonomous, vision-based Android game autopilot powered by OpenJEV / TypeSafe
 
 </details>
 
+### FlippRipp/WorldboxAI
+
+<details><summary>README 발췌</summary>
+
+A modular, AI-driven text roleplaying engine — a multi-agent storyteller with real game mechanics, enforced by pluggable Python modules.
+
+</details>
+
 ### florent-brosse/openjev-snake
 
 <details><summary>README 발췌</summary>
@@ -812,14 +833,6 @@ Companion code for Old Nain, episode 002: Granny stops her game's NPC from spoil
 <details><summary>README 발췌</summary>
 
 You are the queen of an ant colony, and your only way to intervene is to type an order.
-
-</details>
-
-### Imjungjuna/jev-face
-
-<details><summary>README 발췌</summary>
-
-A 3D face that reacts in real time to what you type. While you type, TypeSafe AI's Jev judges which emotion the recipient would feel and how strongly, and the answer drives 52 ARKit blendshapes on a face mesh.
 
 </details>
 
@@ -924,6 +937,14 @@ A backrooms walking simulator where rooms are generated as you approach them. Th
 <details><summary>README 발췌</summary>
 
 A minimal, tactile 3D magic 8 ball. Twenty classic answers, a Blender-built shell, a floating icosahedral die, and blue optical fluid animated in Three.js. Jev supplies a probability distribution over the answers; the server samples that distribution.
+
+</details>
+
+### legomaster188/aiciv
+
+<details><summary>README 발췌</summary>
+
+AiCiv is a server-side Fabric mod that adds AI players to Minecraft 26.3. Each one is driven by a language model (Gemini, Groq, OpenRouter, GitHub Models, Mistral, Cerebras, OpenCode Zen or a local Ollama model), a decision model such as TypeSafe AI's Jev, or a built-in planner that needs no model a
 
 </details>
 
@@ -1215,14 +1236,6 @@ A desktop Snake experiment powered by Jev / System One. Jev assesses the board; 
 
 </details>
 
-### thanhauco/jev-3d-game-engine
-
-<details><summary>README 발췌</summary>
-
-A small 3D game engine (Three.js) whose NPCs think with Jev, the "System One" decision model TypeSafe AI released in September 2026. Jev takes a state and a set of typed questions and returns typed answers with calibrated probabilities:
-
-</details>
-
 ### 192tt/Lalaland
 
 <details><summary>README 발췌</summary>
@@ -1236,6 +1249,14 @@ A small 3D game engine (Three.js) whose NPCs think with Jev, the "System One" de
 <details><summary>README 발췌</summary>
 
 A Mineflayer bot for multiplayer survival servers that learns how to survive instead of following hand-written rules. Survival strategy lives in data the bot writes and scores itself: reflex rules, lessons and skills.
+
+</details>
+
+### arnabdeypolimi/jev_hack
+
+<details><summary>README 발췌</summary>
+
+Can you out-push a decision model? You and TypeSafe's decision model Jev race to push a block onto a green outline, matching its position and angle. Whoever needs the fewest pushes wins, and the panel on the right shows what Jev is thinking while it plays.
 
 </details>
 
@@ -1268,14 +1289,6 @@ Turso DB 및 국립국어원 표준국어대사전 Open API, TypeSafe Jev AI를 
 <details><summary>README 발췌</summary>
 
 ▶️ Full video: https://youtu.be/gJgY5NvBcBk · Short: https://youtube.com/shorts/taS6Smj8YxA
-
-</details>
-
-### Dimda/language-wall
-
-<details><summary>README 발췌</summary>
-
-Made by @p-kyrylo and @dimda, pair vibe coded with Claude Code at one keyboard. Every commit was a joint effort, even though git only shows one author. @p-kyrylo と @dimda の2人で制作。 1台のキーボードで Claude Code とペアでバイブコーディングしました。git のコミット作者は1人ですが、 すべて2人の共同作業です。
 
 </details>
 
@@ -1415,6 +1428,14 @@ World-agnostic engine for single-player AI role-playing games. See docs/decision
 
 </details>
 
+### san-npm/copper-acorn
+
+<details><summary>README 발췌</summary>
+
+A pixel-art alchemy shop prototype for NEAR Hackathon — Games With Real Economies. Gather ingredients, brew potions and sell them from your shop or trade with NPC merchants. Each merchant has its own wallet and inventory; stock and consumption affect prices.
+
+</details>
+
 ### saranatour1/agent-arena
 
 <details><summary>README 발췌</summary>
@@ -1427,7 +1448,7 @@ A real-time, retro arcade fighting game where you take on AI agents — Haiku, S
 
 <details><summary>README 발췌</summary>
 
-Crash log analyzer for Skyrim Special Edition on Mac (CrossOver). Analyseur de crash logs pour Skyrim Special Edition sur Mac (CrossOver).
+Crash log analyzer for Skyrim Special Edition on Mac (CrossOver).
 
 </details>
 
@@ -1527,6 +1548,14 @@ TypeSafe's Jev plays 2048 — many games in parallel, live in your browser.
 
 </details>
 
+### thanhauco/jev-3d-game-engine
+
+<details><summary>README 발췌</summary>
+
+A small 3D game engine (Three.js) whose NPCs think with Jev, the "System One" decision model TypeSafe AI released in September 2026. Jev takes a state and a set of typed questions and returns typed answers with calibrated probabilities:
+
+</details>
+
 ### 0rgan1co/arena-buscaminas
 
 <details><summary>README 발췌</summary>
@@ -1588,6 +1617,14 @@ An ant colony where every ant asks TypeSafe Jev what to do next. You are the que
 <details><summary>README 발췌</summary>
 
 一个能陪你玩「海龟汤」（情境推理）的网页：你随便问只能用「是 / 不是 / 不重要」回答的问题，AI 主持人回答；你觉得猜到了，就自己把真相讲一遍，AI 判你过没过。
+
+</details>
+
+### Imjungjuna/jev-face
+
+<details><summary>README 발췌</summary>
+
+A 3D face that reacts in real time to what you type. While you type, TypeSafe AI's Jev judges which emotion the recipient would feel and how strongly, and the answer drives 52 ARKit blendshapes on a face mesh.
 
 </details>
 
@@ -1716,6 +1753,14 @@ You vs Jev — race across Wikipedia. From the same start article, you and Jev b
 <details><summary>README 발췌</summary>
 
 A proof of concept using JEV (TypeSafe AI's System One model) as the decision engine for classic games. The AI doesn't generate text — it returns typed, probability-weighted choices that the game loop consumes directly.
+
+</details>
+
+### Dimda/language-wall
+
+<details><summary>README 발췌</summary>
+
+Made by @p-kyrylo and @dimda, pair vibe coded with Claude Code at one keyboard. Every commit was a joint effort, even though git only shows one author. @p-kyrylo と @dimda の2人で制作。 1台のキーボードで Claude Code とペアでバイブコーディングしました。git のコミット作者は1人ですが、 すべて2人の共同作業です。
 
 </details>
 
