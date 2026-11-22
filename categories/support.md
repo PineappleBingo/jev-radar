@@ -1,10 +1,10 @@
-# 🎧 고객지원·CRM (120)
+# 🎧 고객지원·CRM (122)
 
 [← README](../README.md)
 
 | 리포 | ⭐ | 🍴 | 요약 | 태그 | 최근 푸시 |
 |---|---:|---:|---|---|---|
-| [receptron/laya](https://github.com/receptron/laya) | 1091 | 90 | Run Laya, the open-source Jev-compatible System-1 decision model, from Node.js / TypeScript via ONNX Runtime | [✅](../README.md#legend "코드 확인: 코드에서 Jev API 호출을 찾았습니다") [🔥 +21](../README.md#legend "최근 7일 동안 별이 21개 늘었습니다") [`choice`](../README.md#legend "선택지 중 하나를 고르게 합니다") [`noul`](../README.md#legend "예/아니오 확률을 묻습니다") [`score`](../README.md#legend "등급을 매기게 합니다") | 2026-10-17 |
+| [receptron/laya](https://github.com/receptron/laya) | 1092 | 90 | Run Laya, the open-source Jev-compatible System-1 decision model, from Node.js / TypeScript via ONNX Runtime | [✅](../README.md#legend "코드 확인: 코드에서 Jev API 호출을 찾았습니다") [🔥 +18](../README.md#legend "최근 7일 동안 별이 18개 늘었습니다") [`choice`](../README.md#legend "선택지 중 하나를 고르게 합니다") [`noul`](../README.md#legend "예/아니오 확률을 묻습니다") [`score`](../README.md#legend "등급을 매기게 합니다") | 2026-10-17 |
 | [mohit67890/imajev](https://github.com/mohit67890/imajev) | 436 | 52 | Open Jev-style typed-decision model that also takes images: photo + app state + typed questions in, calibrated probabilities out, locally. | [✅](../README.md#legend "코드 확인: 코드에서 Jev API 호출을 찾았습니다") [`noul`](../README.md#legend "예/아니오 확률을 묻습니다") | 2026-10-10 |
 | [taeold/djev-run](https://github.com/taeold/djev-run) | 588 | 39 | Serve the experimental DiffusionGemma-Jev diffusion model on Cloud Run GPUs (vLLM, RTX PRO 6000), with demo apps and published benchmarks. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-14 |
 | [typesafeainate/dspy-typesafeify](https://github.com/typesafeainate/dspy-typesafeify) | 67 | 3 | Add a decorator for dspy Signatures that automatically uses TypeSafe where relevant | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-27 |
@@ -14,11 +14,11 @@
 | [ParsithTeam/DeskRadar](https://github.com/ParsithTeam/DeskRadar) | 4 | 0 | 영어와 페르시아어를 지원하며 로컬 환경에 독립적으로 설치해 운영하는 오픈소스 서비스 데스크 플랫폼이다.<br>README에 판단 지점 설명이 없다.<br>자유 텍스트를 생성하지 않는 Jev의 정형 판단 결과에 맞춰 추출식 요약과 보수적인 응답 템플릿을 조합해 티켓을 처리한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-02 |
 | [vinibrsl/gut](https://github.com/vinibrsl/gut) | 18 | 1 | Use LLM judgment in regular Elixir control flow. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-09 |
 | [lesnolie/magpie-free-gateways](https://github.com/lesnolie/magpie-free-gateways) | 16 | 1 | Magpie plugin with live free-model catalogs for OpenCode Zen and Kilo Gateway, including native Jev System One support. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-19 |
-| [jeffonelson/jev-bigquery-cloudrun](https://github.com/jeffonelson/jev-bigquery-cloudrun) | 10 | 1 | Classify support tickets in BigQuery with Jev and Cloud Run | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-09-21 |
+| [jeffonelson/jev-bigquery-cloudrun](https://github.com/jeffonelson/jev-bigquery-cloudrun) | 11 | 1 | Classify support tickets in BigQuery with Jev and Cloud Run | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-09-21 |
 | [phyro/deem](https://github.com/phyro/deem) | 3 | 0 | Judge logs, tickets and screenshots by what they mean, from the shell. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-06 |
 | [DiscoveryH2/zhixian-wechat](https://github.com/DiscoveryH2/zhixian-wechat) | 3 | 0 | 知弦，基于jev开发微信助手，支持pc端 | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-25 |
 | [danvega/jev-feedback-triage](https://github.com/danvega/jev-feedback-triage) | 1 | 0 | Spring AI 2.1의 Decision API와 TypeSafe Jev로 고객 메시지의 긴급도와 담당 팀을 분류하는 스프링 부트 예제 프로젝트다.<br>오늘 당장 답변해야 하는지 여부와 담당 팀(Billing·Technical·Sales), 고객의 감정 상태(Unhappy·Neutral·Happy)를 한 번에 질문한다.<br>일반 챗 모델의 텍스트를 파싱하는 대신 Decision API를 쓰며, 긴급 여부는 모델의 확신도가 80% 이상일 때만 참으로 처리한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-13 |
-| [Dominion-Academy/System-One-Models](https://github.com/Dominion-Academy/System-One-Models) | 1 | 1 | 선택지와 확률을 반환하는 시스템 원 모델을 활용해 고객 지원 티켓 분류 시스템을 구축하고 운영하는 강의 실습 코드다.<br>고객 지원 티켓의 처리 경로를 고르거나 중요도를 평가하고 특정 조건의 해당 여부를 예/아니오 확률로 판단한다.<br>모델 예측 확률의 신뢰도를 보정하고 임계값을 정하며 라우팅, 가드레일, 캐스케이드 같은 운영 패턴을 단계별로 다룬다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-10 |
+| [Dominion-Academy/System-One-Models](https://github.com/Dominion-Academy/System-One-Models) | 1 | 1 | 선택지와 확률을 반환하는 시스템 원 모델을 활용해 고객 지원 티켓 분류 시스템을 구축하고 운영하는 강의 실습 코드다.<br>고객 지원 티켓의 처리 경로를 고르거나 중요도를 평가하고 특정 조건의 해당 여부를 예/아니오 확률로 판단한다.<br>모델 예측 확률의 신뢰도를 보정하고 임계값을 정하며 라우팅, 가드레일, 캐스케이드 같은 운영 패턴을 단계별로 다룬다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-21 |
 | [AI-Yatra/s1ced-playground](https://github.com/AI-Yatra/s1ced-playground) | 7 | 4 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-16 |
 | [pentasir/jev-inbox-triage](https://github.com/pentasir/jev-inbox-triage) | 1 | 1 | 온라인 쇼핑몰 운영자가 고객 이메일을 사람 검토용과 자동 응답용으로 나누는 분류 도구다.<br>이메일 주제, 긴급도, 감정 점수와 함께 안전 위협이나 환불 요구 등 위험 신호 여부를 판단한다.<br>오판 비용에 맞춘 임계값 규칙을 두고 모델이 확신하지 못하면 사람에게 넘기도록 구현했다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-23 |
 | [EmiRoberti77/jev-py-integration](https://github.com/EmiRoberti77/jev-py-integration) | 2 | 0 | 고객지원 티켓을 Jev로 먼저 분류하고 필요한 경우에만 LLM 답장을 생성하도록 연동한 파이썬 파이프라인 예제다.<br>티켓의 긴급 여부(is_urgent), 분노 여부(is_angry), 상담원 필요성(needs_a_human) 확률과 문의 의도(intent) 선택지를 판단하게 한다.<br>Jev 호출 한 번으로 복수 판단을 얻어 파이썬 조건문으로 스팸 제거와 LLM 에스컬레이션을 제어한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-09-28 |
@@ -33,15 +33,16 @@
 | [DavidRinSE/decision-models-prez](https://github.com/DavidRinSE/decision-models-prez) | 0 | 0 | 고객지원 티켓의 에스컬레이션 여부와 우선순위 결정을 두고 OpenAI 생성 모델과 TypeSafe Jev 의사결정 모델의 동작을 비교하는 CLI 데모 도구다.<br>티켓 내용에 따라 즉시 사람의 개입이 필요한지 여부와 우선순위를 low, medium, high 중 어느 단계로 지정할지 묻는다.<br>동일한 티켓과 정책 문서를 공유하면서 일반적인 토큰 생성 방식과 전용 의사결정 모델의 지연 시간 및 판단 방식을 나란히 대조해 보여 준다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-07 |
 | [davidtoby/jev-itops-learning-lab](https://github.com/davidtoby/jev-itops-learning-lab) | 0 | 0 | IT 운영 및 서비스 데스크 담당자가 12가지 가상 장애 시나리오로 구조화된 의사결정을 실습하는 다국어 웹 도구다.<br>장애 담당 팀(choice), 영향도 등급(score), 실제 장애 발생 여부(noul) 및 증거 충분성(noul), 런북 유형(choice)을 판단하게 한다.<br>외부 의존성 없는 로컬 규칙 시뮬레이션을 기본 지원하며, 실제 API 연동 시에도 임의 상태 전송을 막는 코드 가드레일을 둔다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") [🆕](../README.md#legend "최근 7일 안에 처음 발견했습니다") | 2026-11-16 |
 | [dhayarajas/JevPoC](https://github.com/dhayarajas/JevPoC) | 0 | 0 | 통신사 고객 지원 업무의 의도 분류와 위험 차단 의사결정에 TypeSafe Jev를 적용한 개념 증명 프레임워크다.<br>고객 의도 선택지 분류, 불만 점수 측정, 이탈 위험이나 기기 변경 위험 여부 판정을 Jev에 질의한다.<br>개인정보 마스킹과 서킷 브레이커를 갖춘 게이트웨이를 두고 기존 업무 규칙과 결합해 평가하도록 설계했다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-31 |
-| [Eclipse-Intelligence/orbit](https://github.com/Eclipse-Intelligence/orbit) | 0 | 0 | 기업과 연락처, 거래 기회, 대화 기록을 통합 관리하는 워크스페이스 기반 오픈소스 CRM 솔루션이다.<br>README에 판단 지점 설명이 없다.<br>PostgreSQL 기반 도메인 서비스를 웹 인터페이스뿐 아니라 MCP 서버와 버전별 API가 공유하도록 설계했다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-20 |
+| [Eclipse-Intelligence/orbit](https://github.com/Eclipse-Intelligence/orbit) | 0 | 0 | 기업과 연락처, 거래 기회, 대화 기록을 통합 관리하는 워크스페이스 기반 오픈소스 CRM 솔루션이다.<br>README에 판단 지점 설명이 없다.<br>PostgreSQL 기반 도메인 서비스를 웹 인터페이스뿐 아니라 MCP 서버와 버전별 API가 공유하도록 설계했다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-21 |
 | [jfmdev/chatbot-jev-gemini](https://github.com/jfmdev/chatbot-jev-gemini) | 0 | 0 | Jev와 Gemini API를 함께 써서 상담사 연결 대기 시간 동안 사용자의 문의를 자동으로 처리하는 CLI 고객지원 챗봇이다.<br>README에 판단 지점 설명이 없다.<br>상담사 대기열 진입을 막지 않고 대기 시간과 병렬로 지식 베이스 기반 자동 답변을 시도한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") [🆕](../README.md#legend "최근 7일 안에 처음 발견했습니다") | 2026-11-16 |
 | [KoushikBose/Jev_Support_Triage](https://github.com/KoushikBose/Jev_Support_Triage) | 0 | 0 | 고객지원 문의 티켓을 분석해 담당 부서 분류와 처리 경로를 정하고 초안 답변을 만드는 FastAPI 기반 데모 앱이다.<br>티켓의 담당 부서 선택과 긴급도 점수, 환불 관련 여부 및 사람 검토 필요 확률을 한 번에 판단하도록 요청한다.<br>판단은 Jev가 내리고 라우팅 규칙은 파이썬 코드가 제어하며 LLM은 답변 작성만 전담하도록 역할을 분리했다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") [🆕](../README.md#legend "최근 7일 안에 처음 발견했습니다") | 2026-11-20 |
+| [lmoroney/Decision-Models-Code](https://github.com/lmoroney/Decision-Models-Code) | 0 | 0 | 판단 모델 강의 교재의 실습 코드로, 고객 지원 메시지 분류와 같은 의사결정 파이프라인을 직접 실행해 보는 예제 모음이다.<br>고객 지원 메시지가 어느 부서로 가야 하는지, 긴급한 사안인지, 고객 불만 수준이 몇 단계인지 묻는다.<br>상용 Jev 대신 오픈소스 서버 Jeff와 경량 GLiFormer 모델을 띄워 로컬 환경에서 동일한 API 규격으로 검증한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") [🆕](../README.md#legend "최근 7일 안에 처음 발견했습니다") | 2026-11-21 |
 | [LuisFX/jev-lead-qualifier](https://github.com/LuisFX/jev-lead-qualifier) | 0 | 0 | 인바운드 리드의 정보를 바탕으로 고객 프로필 적합도와 구매 의도를 자동 판별해 영업 등급을 분류하는 시스템이다.<br>리드의 메시지와 프로필을 바탕으로 ICP 적합 여부, 주요 페인포인트, 구매 의향 유무, 기존 CRM 고객과의 중복 여부를 묻는다.<br>리드당 한 번의 API 호출로 32개 세부 질문을 평가하며 응답을 캐시해 ICP 설정 변경 시 추가 호출 없이 즉시 재분류한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") [🆕](../README.md#legend "최근 7일 안에 처음 발견했습니다") | 2026-11-18 |
 | [mr-kittureddy/AI_Ticket_Routing_JEV](https://github.com/mr-kittureddy/AI_Ticket_Routing_JEV) | 0 | 0 | IT 지원 티켓을 분석해 담당 팀에 배정하고 사람 개입 여부에 따라 해결책을 자동 생성하는 프로토타입이다.<br>티켓을 처리할 담당 팀을 choice로 고르고, 구매나 설치 같은 사람의 직접 조치가 필요한지 noul로 판단한다.<br>사람 개입이 필요한 티켓은 Gemini 호출을 건너뛰고 바로 인간 대기열로 넘겨 비용과 지연을 줄인다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") [🆕](../README.md#legend "최근 7일 안에 처음 발견했습니다") | 2026-11-18 |
 | [nacknime-official/ticket-triage](https://github.com/nacknime-official/ticket-triage) | 0 | 0 | 고객 지원 문의를 HTTP로 접수해 비동기로 분류하고 담당 팀 배정 결과를 실시간으로 알려주는 Go 기반 티켓 분류 서비스다.<br>접수된 티켓 본문을 바탕으로 불만 제기 여부, 처리 담당 카테고리, 긴급도 수준을 판단하게 한다.<br>트랜잭셔널 아웃박스와 카프카를 써서 모델 장애가 나거나 확신도가 낮아도 티켓 유실 없이 사람 검토 단계로 넘기도록 설계했다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-30 |
 | [Nomarcus/FoodSim](https://github.com/Nomarcus/FoodSim) | 0 | 0 | 자연어 지원 티켓을 ITIL 범주로 분류해 에이전트 무리의 분류 시뮬레이션 환경에 제공하는 브라우저 기반 프로젝트다.<br>지원 요청 티켓 본문을 읽고 장애(incident), 일상 요청(request), 근본 문제(problem) 중 어느 범주에 해당하는지 choice로 분류하게 한다.<br>요청당 8개 티켓을 묶어 병렬 처리하며, 에이전트 신경망에 단순 범주 대신 확률 분포를 직접 전달해 불확실성을 반영한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-08 |
 | [nsh1999/AgentSmith](https://github.com/nsh1999/AgentSmith) | 0 | 0 | 지원 티켓을 바탕으로 여러 로컬 LLM에 구조화된 질문을 보내고 결과를 취합해 비교할 수 있는 Gradio 기반 실험 도구다.<br>지원 티켓을 처리할 담당 팀(choice), 고객의 명시적 환불 요청 여부(noul), 티켓의 처리 긴급도(score)를 묻고 판단하게 한다.<br>여러 로컬 모델의 답변을 실시간으로 스트리밍하며 삼분의 이 이상 합의된 라벨이나 평균 확률을 계산해 단일 결정을 도출한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-30 |
-| [pravinkumar172929/ai-knowledge-decision-assistant](https://github.com/pravinkumar172929/ai-knowledge-decision-assistant) | 0 | 0 | 조직이 내부 문서를 올려 방문자 질문에 출처 기반 답변과 정책 판정을 제공하는 멀티테넌트 도우미 서비스다.<br>질문에 답변할 수 있는지와 참조할 문서 종류 및 세부 규정 조건을 충족하는지 판단한다.<br>답변 문장 작성은 거대언어모델에 맡기고 정책 판정이나 문서 분류는 경량 의사결정 모델로 분리해 처리한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") [🆕](../README.md#legend "최근 7일 안에 처음 발견했습니다") | 2026-11-14 |
+| [pravinkumar172929/ai-knowledge-decision-assistant](https://github.com/pravinkumar172929/ai-knowledge-decision-assistant) | 0 | 0 | 조직이 내부 문서를 올려 방문자 질문에 출처 기반 답변과 정책 판정을 제공하는 멀티테넌트 도우미 서비스다.<br>질문에 답변할 수 있는지와 참조할 문서 종류 및 세부 규정 조건을 충족하는지 판단한다.<br>답변 문장 작성은 거대언어모델에 맡기고 정책 판정이나 문서 분류는 경량 의사결정 모델로 분리해 처리한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-14 |
 | [samitkumarpatel/spring-ai-knowledgebase](https://github.com/samitkumarpatel/spring-ai-knowledgebase) | 0 | 0 | Spring AI 2.x 환경에서 매장 지원 챗봇 구축 과정을 단계별로 설명하는 튜토리얼 예제 저장소다.<br>사용자 요청을 분류하거나 생성된 답변 품질을 채점하고 판정하도록 Jev에 질문한다.<br>RAG, MCP 연동뿐만 아니라 Jev 커뮤니티 스타터를 이용한 판단 및 조언자 기능까지 단계별 가이드로 다룬다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-29 |
 | [Shivamyadav1312/customer-support-with-jev](https://github.com/Shivamyadav1312/customer-support-with-jev) | 0 | 0 | 고객지원 티켓을 분석해 부서 배분과 긴급도를 분류하고 답변 초안 생성을 돕는 시스템이다.<br>티켓의 담당 부서, 0~3점 긴급도 점수, 환불 연관 확률, 사람 검토 필요 여부를 Jev로 판단한다.<br>Jev의 판단 결과에 코드 기반 규칙 가드레일을 적용해 자동 응답 처리와 사람 이관 여부를 확정한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-24 |
 | [TheKaushprasad/review-signal](https://github.com/TheKaushprasad/review-signal) | 0 | 0 | 구글 스프레드시트나 CSV로 사용자 리뷰를 불러와 분류하고 수정 결과를 원본 시트에 다시 동기화하는 대시보드 웹 앱이다.<br>리뷰 텍스트를 바탕으로 감정(choice), 카테고리(choice), 순추천지수(NPS) 악영향도(score)를 매기도록 요청한다.<br>대시보드에서 분류 결과를 직접 수정하면 연동된 구글 스프레드시트의 특정 행 셀에 곧바로 반영된다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-03 |
@@ -53,6 +54,7 @@
 | [farrellm/Decider.jl](https://github.com/farrellm/Decider.jl) | 1 | 0 | Julia front end for decision models: ask typed questions, get probabilities or decisions | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-15 |
 | [abm-dungtq/abm-crm-v1](https://github.com/abm-dungtq/abm-crm-v1) | 0 | 0 | ABM CRM MVP1 — Cloudflare Workers + D1, React, GoClaw/Lark | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-14 |
 | [adrian-deleon-sonarsource/utilization-assessment](https://github.com/adrian-deleon-sonarsource/utilization-assessment) | 0 | 0 | Utilization Assessment using Jev | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-27 |
+| [Anand-puthiyapurayil/duck-creek-assessment](https://github.com/Anand-puthiyapurayil/duck-creek-assessment) | 0 | 0 | Customer support tickets: data cleaning, LLM summary evaluation, Neo4j knowledge graph | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") [🆕](../README.md#legend "최근 7일 안에 처음 발견했습니다") | 2026-11-21 |
 | [beamseree/hana](https://github.com/beamseree/hana) | 0 | 0 | Personal native macOS transforming search bar, notes, and tasks. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-26 |
 | [hobleyd/nightmail](https://github.com/hobleyd/nightmail) | 0 | 2 | An email client for Office 365, Google Workspaces, IMAP | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-20 |
 | [jamesju1987/wenyuan](https://github.com/jamesju1987/wenyuan) | 0 | 0 | 文件自动化重命名并归档 | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-02 |
@@ -64,7 +66,7 @@
 | [princecjqlara/projectmori](https://github.com/princecjqlara/projectmori) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") [🆕](../README.md#legend "최근 7일 안에 처음 발견했습니다") | 2026-11-20 |
 | [rmarable/email-classify-filter](https://github.com/rmarable/email-classify-filter) | 0 | 0 | Control mailboxes with AI. Keep your Gmail Inbox from looking like Fred Sanford's backyard. Auto-route emails to team mailboxes so the right person gets the escalation. Watch everything with Slack. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-16 |
 | [SaiMounicaGudimella/jev-vs-haiku-evaluation](https://github.com/SaiMounicaGudimella/jev-vs-haiku-evaluation) | 0 | 0 | Comparing specialized decision models and general-purpose LLMs on classification accuracy, latency, and reliability | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") [🆕](../README.md#legend "최근 7일 안에 처음 발견했습니다") | 2026-11-18 |
-| [sangmin-matthew-lee/sopo-agnet-claude](https://github.com/sangmin-matthew-lee/sopo-agnet-claude) | 0 | 0 | Agent for Sales Operation(SOP) Dept. Built using Claude Code | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-16 |
+| [sangmin-matthew-lee/sopo-agnet-claude](https://github.com/sangmin-matthew-lee/sopo-agnet-claude) | 0 | 0 | Agent for Sales Operation(SOP) Dept. Built using Claude Code | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-21 |
 | [slatinwine/jevy](https://github.com/slatinwine/jevy) | 0 | 0 | Jev-style typed-decision model distilled from official Jev. 118M, EN+CN, trains on a 4GB GPU in 10 minutes. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-26 |
 | [AStox/paseo-chat-links](https://github.com/AStox/paseo-chat-links) | 1 | 0 | Paseo plugin that shows Linear tickets and GitHub PRs mentioned in a chat | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-16 |
 | [JeonKH81/jev-for-gmail](https://github.com/JeonKH81/jev-for-gmail) | 1 | 0 | Chrome extension: priority score badges for Gmail Primary inbox using TypeSafe Jev (patient-related mail excluded) | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-09-26 |
@@ -381,6 +383,14 @@ A small FastAPI demo that triages customer support tickets.
 
 </details>
 
+### lmoroney/Decision-Models-Code
+
+<details><summary>README 발췌</summary>
+
+Runnable examples for every chapter of Decision Models for Agentic AI, using Jeff, a free, open source, self-hosted server that speaks the same API as TypeSafe's Jev. No account or bill.
+
+</details>
+
 ### LuisFX/jev-lead-qualifier
 
 <details><summary>README 발췌</summary>
@@ -514,6 +524,14 @@ ABM CRM quản lý bán hàng B2B, vận hành học viên và công việc nộ
 <details><summary>README 발췌</summary>
 
 Turns a customer's assessment evidence (your notes, the meeting transcript, telemetry CSVs and the SonarQube system info export) into the Word maturity assessment report. Jev (TypeSafe System One) judges which levels, findings and recommendations the evidence supports; the code writes the report fro
+
+</details>
+
+### Anand-puthiyapurayil/duck-creek-assessment
+
+<details><summary>README 발췌</summary>
+
+Set 1: Customer Support Tickets.
 
 </details>
 
