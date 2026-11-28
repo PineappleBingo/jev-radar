@@ -1,31 +1,31 @@
-# 💹 금융·트레이딩 (253)
+# 💹 금융·트레이딩 (257)
 
 [← README](../README.md)
 
 | 리포 | ⭐ | 🍴 | 요약 | 태그 | 최근 푸시 |
 |---|---:|---:|---|---|---|
-| [virattt/ai-hedge-fund](https://github.com/virattt/ai-hedge-fund) | 64868 | 11396 | An AI Hedge Fund Team | [✅](../README.md#legend "코드 확인: 코드에서 Jev API 호출을 찾았습니다") [🔥 +105](../README.md#legend "최근 7일 동안 별이 105개 늘었습니다") | 2026-11-09 |
-| [OpenByteInc/QuantDinger](https://github.com/OpenByteInc/QuantDinger) | 14012 | 2843 | 트레이더와 개발자를 위해 암호화폐, 주식, 외환의 리서치부터 백테스트와 실거래를 지원하는 자체 호스팅 AI 트레이딩 OS다.<br>README에 판단 지점 설명 없음<br>Python 전략 개발 및 백테스트뿐 아니라 에이전트 연동용 MCP, 자체 결제 및 정산 기능까지 결합한 올인원 스택을 제공한다. | [✅](../README.md#legend "코드 확인: 코드에서 Jev API 호출을 찾았습니다") [🔥 +137](../README.md#legend "최근 7일 동안 별이 137개 늘었습니다") | 2026-11-26 |
+| [virattt/ai-hedge-fund](https://github.com/virattt/ai-hedge-fund) | 64875 | 11397 | An AI Hedge Fund Team | [✅](../README.md#legend "코드 확인: 코드에서 Jev API 호출을 찾았습니다") [🔥 +96](../README.md#legend "최근 7일 동안 별이 96개 늘었습니다") | 2026-11-09 |
+| [OpenByteInc/QuantDinger](https://github.com/OpenByteInc/QuantDinger) | 14034 | 2854 | 트레이더와 개발자를 위해 암호화폐, 주식, 외환의 리서치부터 백테스트와 실거래를 지원하는 자체 호스팅 AI 트레이딩 OS다.<br>README에 판단 지점 설명 없음<br>Python 전략 개발 및 백테스트뿐 아니라 에이전트 연동용 MCP, 자체 결제 및 정산 기능까지 결합한 올인원 스택을 제공한다. | [✅](../README.md#legend "코드 확인: 코드에서 Jev API 호출을 찾았습니다") [🔥 +145](../README.md#legend "최근 7일 동안 별이 145개 늘었습니다") | 2026-11-27 |
 | [imikerussell/beebots](https://github.com/imikerussell/beebots) | 341 | 149 | OKX 무기한 선물 시장에서 세 마리의 AI 봇이 모의 거래 경쟁을 벌이도록 설계한 시스템이다.<br>각 거래 봇의 매매와 관련된 판단을 내린다.<br>기본적으로 모의 거래로 작동하며 모든 주문이 코드로 작성된 위험 관리 계층을 거치도록 설계했다. | [✅](../README.md#legend "코드 확인: 코드에서 Jev API 호출을 찾았습니다") [`choice`](../README.md#legend "선택지 중 하나를 고르게 합니다") [`score`](../README.md#legend "등급을 매기게 합니다") | 2026-11-05 |
+| [aowang-ai/jev-trade](https://github.com/aowang-ai/jev-trade) | 229 | 42 | Hyperliquid 오더북 데이터를 바탕으로 TypeSafe Jev를 호출해 암호화폐 5종의 매매 주문을 자동 집행하는 트레이딩 봇 및 대시보드다.<br>오더북 데이터를 기반으로 틱마다 포지션 방향(long 또는 short)과 실행 액션(open, close, hold)을 선택하도록 질의한다.<br>코인별 독립 지갑 구조를 적용하고, 진입 시 ALO 메이커 주문과 청산 시 IOC 테이커 주문을 분기하며 Bun과 Next 대시보드를 SSE로 연결했다. | [✅](../README.md#legend "코드 확인: 코드에서 Jev API 호출을 찾았습니다") [`choice`](../README.md#legend "선택지 중 하나를 고르게 합니다") | 2026-11-12 |
 | [kyotofin/tax-doc-classifier](https://github.com/kyotofin/tax-doc-classifier) | 521 | 68 | Jev API를 활용하여 261종의 IRS 세무 서식 페이지를 식별하고 분류하는 문서 분류 도구다.<br>입력된 세무 문서 페이지가 261종의 IRS 서식 중 어떤 양식에 해당하는지 선택하도록 묻는다.<br>261개 서식에 걸쳐 100% 엄격한 정확도를 보이며 페이지당 약 0.001달러의 처리 비용을 제시한다. | [✅](../README.md#legend "코드 확인: 코드에서 Jev API 호출을 찾았습니다") [`choice`](../README.md#legend "선택지 중 하나를 고르게 합니다") | 2026-09-29 |
-| [aowang-ai/jev-trade](https://github.com/aowang-ai/jev-trade) | 228 | 42 | Hyperliquid 오더북 데이터를 바탕으로 TypeSafe Jev를 호출해 암호화폐 5종의 매매 주문을 자동 집행하는 트레이딩 봇 및 대시보드다.<br>오더북 데이터를 기반으로 틱마다 포지션 방향(long 또는 short)과 실행 액션(open, close, hold)을 선택하도록 질의한다.<br>코인별 독립 지갑 구조를 적용하고, 진입 시 ALO 메이커 주문과 청산 시 IOC 테이커 주문을 분기하며 Bun과 Next 대시보드를 SSE로 연결했다. | [✅](../README.md#legend "코드 확인: 코드에서 Jev API 호출을 찾았습니다") [`choice`](../README.md#legend "선택지 중 하나를 고르게 합니다") | 2026-11-12 |
-| [brainstormity/Jev-X-Sentiment-Analysis](https://github.com/brainstormity/Jev-X-Sentiment-Analysis) | 236 | 47 | 실시간 암호화폐 시장 지표와 트위터 여론을 수집·통계 분석하여 매매 의사결정 카드를 생성해 주는 터미널 애플리케이션이다.<br>실시간 시장 지표와 트윗 요약 데이터를 바탕으로 매매 액션(Choice), 감성 스펙트럼(Score), 숏 스퀴즈 위험 확률(Noul), 촉매 중요도(Score)를 판단시킨다.<br>트위터 API 비용을 줄이기 위해 SQLite 기반 조기 종료 중복 제거 파이프라인을 거친 후 정제된 대표 트윗과 통계치만 Jev에게 전달해 추론 비용과 지연 시간을 낮췄다. | [✅](../README.md#legend "코드 확인: 코드에서 Jev API 호출을 찾았습니다") | 2026-10-21 |
-| [TauricResearch/TradingAgents](https://github.com/TauricResearch/TradingAgents) | 123858 | 23720 | TradingAgents: Towards Agentic Finance Research | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") [🔥 +675](../README.md#legend "최근 7일 동안 별이 675개 늘었습니다") | 2026-11-25 |
-| [jarrodwatts/jev-trader](https://github.com/jarrodwatts/jev-trader) | 3158 | 600 | Monad 블록체인 상의 Kuru MON-USDC 오더북을 감시하여 매 블록마다 Jev 모델의 예측에 맞춰 post-only 지정가 주문을 갱신하는 트레이딩 봇이다.<br>지정된 블록 구간(기본 100블록, 약 30초) 동안의 가격 변동 방향에 대해 buy 또는 sell 중 하나를 선택하도록 판단시킨다.<br>약 300ms의 블록 주기에 맞추기 위해 RPC 호출을 2회로 최소화하고 기존 주문 취소와 신규 주문을 batchUpdate 단일 트랜잭션으로 처리한다. | [❌](../README.md#legend "코드에서 못 찾음: 코드 검색으로는 Jev 호출이 보이지 않습니다. 문서에서만 언급했을 수 있습니다") [🔥 +13](../README.md#legend "최근 7일 동안 별이 13개 늘었습니다") | 2026-10-13 |
-| [zadescoxp/calibrain-harness](https://github.com/zadescoxp/calibrain-harness) | 581 | 114 | 가상자산 무기한 선물 시장에서 빠른 분류 모델의 예측 성능을 포워드 테스팅하고 모의 거래하는 도구다.<br>봉 마감마다 향후 특정 시간 안에 상하방 목표 수익률 중 어디에 먼저 도달할지 확률을 묻는다.<br>실제 시장 발생 빈도와 모델 예측 확률을 혼합 보정하며 모델별 예측 결과와 거래 손익을 분리해 검증한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") [🔥 +209](../README.md#legend "최근 7일 동안 별이 209개 늘었습니다") | 2026-11-23 |
-| [initial-d/ml-quant-trading](https://github.com/initial-d/ml-quant-trading) | 114 | 41 | PyTorch를 기반으로 213개 팩터 계산부터 포트폴리오 최적화와 백테스트까지 한 번에 수행하는 퀀트 연구용 파이프라인이다.<br>파이프라인 상태를 바탕으로 정형화된 포트폴리오 의도나 투자 결정을 내리도록 묻는다.<br>상하한가처럼 거래가 불가능한 시점의 데이터를 롤링 윈도 계산 전에 미리 마스킹하여 신호 왜곡을 방지한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-26 |
-| [BijectiveLabs/bitra](https://github.com/BijectiveLabs/bitra) | 51 | 13 | 퀀트 투자자가 자동 매매 환경에서 언어 모델의 제안을 검증하고 주문을 집행할 때 쓰는 트레이딩 프레임워크다.<br>README에 판단 지점 설명이 없다.<br>모델은 시장 의견 제안만 맡고 수치 계산이나 비용 산정, 포지션 크기 결정은 고정된 규칙 체계가 직접 처리한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-18 |
+| [brainstormity/Jev-X-Sentiment-Analysis](https://github.com/brainstormity/Jev-X-Sentiment-Analysis) | 237 | 47 | 실시간 암호화폐 시장 지표와 트위터 여론을 수집·통계 분석하여 매매 의사결정 카드를 생성해 주는 터미널 애플리케이션이다.<br>실시간 시장 지표와 트윗 요약 데이터를 바탕으로 매매 액션(Choice), 감성 스펙트럼(Score), 숏 스퀴즈 위험 확률(Noul), 촉매 중요도(Score)를 판단시킨다.<br>트위터 API 비용을 줄이기 위해 SQLite 기반 조기 종료 중복 제거 파이프라인을 거친 후 정제된 대표 트윗과 통계치만 Jev에게 전달해 추론 비용과 지연 시간을 낮췄다. | [✅](../README.md#legend "코드 확인: 코드에서 Jev API 호출을 찾았습니다") | 2026-10-21 |
+| [TauricResearch/TradingAgents](https://github.com/TauricResearch/TradingAgents) | 123944 | 23723 | TradingAgents: Towards Agentic Finance Research | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") [🔥 +645](../README.md#legend "최근 7일 동안 별이 645개 늘었습니다") | 2026-11-25 |
+| [jarrodwatts/jev-trader](https://github.com/jarrodwatts/jev-trader) | 3159 | 599 | Monad 블록체인 상의 Kuru MON-USDC 오더북을 감시하여 매 블록마다 Jev 모델의 예측에 맞춰 post-only 지정가 주문을 갱신하는 트레이딩 봇이다.<br>지정된 블록 구간(기본 100블록, 약 30초) 동안의 가격 변동 방향에 대해 buy 또는 sell 중 하나를 선택하도록 판단시킨다.<br>약 300ms의 블록 주기에 맞추기 위해 RPC 호출을 2회로 최소화하고 기존 주문 취소와 신규 주문을 batchUpdate 단일 트랜잭션으로 처리한다. | [❌](../README.md#legend "코드에서 못 찾음: 코드 검색으로는 Jev 호출이 보이지 않습니다. 문서에서만 언급했을 수 있습니다") [🔥 +14](../README.md#legend "최근 7일 동안 별이 14개 늘었습니다") | 2026-10-13 |
+| [zadescoxp/calibrain-harness](https://github.com/zadescoxp/calibrain-harness) | 584 | 114 | 가상자산 무기한 선물 시장에서 빠른 분류 모델의 예측 성능을 포워드 테스팅하고 모의 거래하는 도구다.<br>봉 마감마다 향후 특정 시간 안에 상하방 목표 수익률 중 어디에 먼저 도달할지 확률을 묻는다.<br>실제 시장 발생 빈도와 모델 예측 확률을 혼합 보정하며 모델별 예측 결과와 거래 손익을 분리해 검증한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") [🔥 +127](../README.md#legend "최근 7일 동안 별이 127개 늘었습니다") | 2026-11-23 |
+| [FelixZhang028/Prismind](https://github.com/FelixZhang028/Prismind) | 146 | 0 | 镜思 Prismind：A 股数据研究工作台（数据、回测、因子研究、事件研究与 AI 辅助解读，只描述数据，不构成投资建议） | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") [🔥 +46](../README.md#legend "최근 7일 동안 별이 46개 늘었습니다") | 2026-11-26 |
+| [initial-d/ml-quant-trading](https://github.com/initial-d/ml-quant-trading) | 114 | 41 | PyTorch를 기반으로 213개 팩터 계산부터 포트폴리오 최적화와 백테스트까지 한 번에 수행하는 퀀트 연구용 파이프라인이다.<br>파이프라인 상태를 바탕으로 정형화된 포트폴리오 의도나 투자 결정을 내리도록 묻는다.<br>상하한가처럼 거래가 불가능한 시점의 데이터를 롤링 윈도 계산 전에 미리 마스킹하여 신호 왜곡을 방지한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-27 |
+| [BijectiveLabs/bitra](https://github.com/BijectiveLabs/bitra) | 51 | 13 | 퀀트 투자자가 자동 매매 환경에서 언어 모델의 제안을 검증하고 주문을 집행할 때 쓰는 트레이딩 프레임워크다.<br>README에 판단 지점 설명이 없다.<br>모델은 시장 의견 제안만 맡고 수치 계산이나 비용 산정, 포지션 크기 결정은 고정된 규칙 체계가 직접 처리한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-28 |
 | [irfndi/prism-liquidity-agent](https://github.com/irfndi/prism-liquidity-agent) | 136 | 21 | Solana의 Meteora DLMM 유동성 풀 상태를 주기적으로 감시하고 포지션 리밸런싱과 진입·청산을 자동 수행하는 자율 LP 에이전트다.<br>README에 판단 지점 설명 없음<br>sqlite-vec 기반 벡터 메모리로 과거 손익 이력을 축적해 자가 개선하며 0~1 거래량 진위 점수와 위험 게이트로 온체인 실행을 차단한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-27 |
-| [zadescoxp/Jev-Trades](https://github.com/zadescoxp/Jev-Trades) | 81 | 27 | Trading bot with the all new TypeSafe AI's first system one model named as Jev | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") [🔥 +7](../README.md#legend "최근 7일 동안 별이 7개 늘었습니다") | 2026-09-25 |
-| [davidalmeida90/glassbench](https://github.com/davidalmeida90/glassbench) | 48 | 15 | Connect and benchmark finance agent systems in one open-source platform, then trade on them. TradingAgents and AI Hedge Fund today, your own system through one adapter: a live front end for every agent, a database of every run, LLM and framework benchmarks, backtests, Interactive Brokers paper trading. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-28 |
+| [zadescoxp/Jev-Trades](https://github.com/zadescoxp/Jev-Trades) | 81 | 27 | Trading bot with the all new TypeSafe AI's first system one model named as Jev | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") [🔥 +5](../README.md#legend "최근 7일 동안 별이 5개 늘었습니다") | 2026-09-25 |
 | [arimanyus/warrenduffer](https://github.com/arimanyus/warrenduffer) | 104 | 29 | AI-driven intraday trading bot for Indian stocks. Jev ranks the Nifty 50 every 15s; code sizes each trade and places the stop; orders go live through Zerodha Kite or Kotak Neo. Day replay, kill switch, daily loss halt, terminal dashboard. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-09-23 |
 | [myc0576/SmartMoney-Cub](https://github.com/myc0576/SmartMoney-Cub) | 26 | 1 | 트레이더와 에이전트가 실행 권한 없이 매매 기록과 증거를 검토하고 재현 가능한 아티팩트로 보관하는 로컬 기반 저널링 하네스다.<br>매매 복기, 기업 공시, 산업 뉴스, 거시 정책 텍스트를 바탕으로 사실 부합 여부와 영향도를 choice, score, noul 형식으로 판정한다.<br>주문 권한을 차단한 읽기 전용 구조이며, 산술 계산과 시점 경계 검증은 파이썬이 강제하고 Jev는 구조화된 판단 레이어로만 활용된다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-24 |
 | [finanze/finanze](https://github.com/finanze/finanze) | 86 | 16 | Self-hosted personal finance, net worth and expense tracker. Aggregate banks, investments, crypto &amp; real estate. Privacy-first. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-22 |
 | [buberlo/jev-trader](https://github.com/buberlo/jev-trader) | 51 | 10 | TypeSafe Jev 모델의 실시간 시장 판단과 코드 기반 리스크 규칙을 결합한 24시간 마켓 메이킹 트레이딩 시스템이다.<br>시장 상태 스냅샷을 바탕으로 시장 국면, 가격 방향, 독성 흐름 여부, 유동성 스트레스, 호가 환경, 재고 압박의 6가지 항목을 판단하게 한다.<br>계산과 엄격한 리스크 거부권은 코드로 처리하고, 모델 지연이나 장애 발생 시 주문을 줄이거나 멈추는 단계적 폴백 사다리를 갖췄다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-09-19 |
 | [ruyianry/JevGym](https://github.com/ruyianry/JevGym) | 97 | 1 | JevGym is an open-source platform designed to benchmark and facilitate better probabilistic estimation in Jev-alike models | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-09-23 |
-| [FelixZhang028/Prismind](https://github.com/FelixZhang028/Prismind) | 113 | 0 | 镜思 Prismind：A 股数据研究工作台（数据、回测、因子研究、事件研究与 AI 辅助解读，只描述数据，不构成投资建议） | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-26 |
 | [VGabriel45/polymarket-btc5m-jev-trading](https://github.com/VGabriel45/polymarket-btc5m-jev-trading) | 47 | 19 | Polymarket의 5분 단위 비트코인 등락 예측 시장에서 실시간 데이터를 감시하고 거래 결정을 내리는 터미널 기반 자동매매 봇이다.<br>5분 동안 비트코인 가격이 시작가 대비 상승할지 하락할지와 이에 대한 확신도 및 확률을 판단하게 한다.<br>시뮬레이션 모드 외에 폴리곤 지갑을 연동한 실제 주문을 지원하며 Ink 기반 터미널 UI로 거래 상태를 보여준다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-09-21 |
 | [unicodeveloper/jevocks](https://github.com/unicodeveloper/jevocks) | 52 | 14 | Everyday Stocks Status with Jev | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-09-18 |
+| [davidalmeida90/glassbench](https://github.com/davidalmeida90/glassbench) | 48 | 15 | Connect and benchmark finance agent systems in one open-source platform, then trade on them. TradingAgents and AI Hedge Fund today, your own system through one adapter: a live front end for every agent, a database of every run, LLM and framework benchmarks, backtests, Interactive Brokers paper trading. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-28 |
 | [daviddme/tradingview-indicator-search-mcp-server](https://github.com/daviddme/tradingview-indicator-search-mcp-server) | 143 | 50 | 트레이딩뷰의 공개 지표 및 전략 라이브러리를 검색하고 Pine Script 소스 코드를 조회할 수 있도록 지원하는 AI 에이전트용 MCP 서버다.<br>README에 판단 지점 설명 없음<br>Node.js 22.5의 내장 node:sqlite를 사용해 로컬 코퍼스를 구축하여 Pine 코드 내부 검색을 지원하며 별도 계정이나 API 키가 필요 없다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-07-25 |
 | [frankda/jev-poly-crypto-demo](https://github.com/frankda/jev-poly-crypto-demo) | 42 | 13 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-09-23 |
 | [aabrole/claude-trading-desk](https://github.com/aabrole/claude-trading-desk) | 40 | 26 | Build, honestly backtest, paper trade and self-host algorithmic trading bots with Claude Code. Free stack end to end. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-09-27 |
@@ -37,7 +37,7 @@
 | [ninthmonee/thesisflow](https://github.com/ninthmonee/thesisflow) | 8 | 0 | 研衡 · ThesisFlow：基于 TradingAgents 扩展的个人智能投研与决策工作台，融合行情观察、证据研究、投资纪律与跟踪复盘。 | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-01 |
 | [glamboyosa/docket](https://github.com/glamboyosa/docket) | 7 | 0 | A Go TUI that uses Jev to classify documents, assess sensitivity and urgency, and determine whether action is required. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-29 |
 | [Yakou207/Vibe-Trading](https://github.com/Yakou207/Vibe-Trading) | 5 | 0 | Audit-first, point-in-time A-share (CSI 300) quant research desk — leak-proof backtesting, hash-chained paper evidence, pixel-office dashboard &amp; LLM decision judge. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-24 |
-| [MojoAI-King/jev-paper-trader](https://github.com/MojoAI-King/jev-paper-trader) | 3 | 1 | Polymarket과 Kalshi의 공개 시장 데이터를 활용해 10만 달러의 가상 자금으로 모의 베팅을 진행하는 실험 프로젝트다.<br>시장 해결 규칙의 명확성, 판단 정보의 충분성, 결과의 기결정 여부와 함께 YES 및 NO 결과 확률을 질문한다.<br>Claude가 조사한 사실 데이터에서 가격 관련 정보를 제거한 뒤 Jev에게 전달해 시장 가격보다 우수한 예측 확률을 내는지 실험한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-27 |
+| [MojoAI-King/jev-paper-trader](https://github.com/MojoAI-King/jev-paper-trader) | 3 | 1 | Polymarket과 Kalshi의 공개 시장 데이터를 활용해 10만 달러의 가상 자금으로 모의 베팅을 진행하는 실험 프로젝트다.<br>시장 해결 규칙의 명확성, 판단 정보의 충분성, 결과의 기결정 여부와 함께 YES 및 NO 결과 확률을 질문한다.<br>Claude가 조사한 사실 데이터에서 가격 관련 정보를 제거한 뒤 Jev에게 전달해 시장 가격보다 우수한 예측 확률을 내는지 실험한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-28 |
 | [a3165458/ai-trading](https://github.com/a3165458/ai-trading) | 14 | 4 | JEV/this-that decision loop for Lighter.xyz BTC and ETH perps with a BUY/SELL web blotter | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-02 |
 | [0xtrou/yggdrasight](https://github.com/0xtrou/yggdrasight) | 2 | 0 | 암호화폐 자산의 시장 데이터와 프로젝트 정보를 다각도로 분석해 심층적인 투자 인사이트를 제공하는 리서치 트레이딩 터미널이다.<br>프로젝트 특성과 내러티브를 Noul과 Score로 평가하고, 분석가별 매수·매도·중립 포지션 및 최종 카테고리를 Choice로 판단한다.<br>여러 Docker 에이전트 대신 TypeSafe 요청을 배치로 묶어 수십 개의 정형화된 확률 판단을 빠르게 처리하도록 설계했다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") [🆕](../README.md#legend "최근 7일 안에 처음 발견했습니다") | 2026-11-25 |
 | [pumpdude/predict-kairos-extension](https://github.com/pumpdude/predict-kairos-extension) | 2 | 0 | predict.fun 예측 시장 페이지에 플로팅 위젯을 띄워 사건 확률 분포와 가격 괴리를 보여주는 크롬 확장 프로그램이다.<br>다자택일 시장은 choice 모드로, 독립형 하위 시장은 noul 모드로 사건 발생 확률을 판단하게 한다.<br>Kairos와 typesafe/jev-1.14 모델의 결과를 나란히 비교할 수 있고 정산 규칙과 최신 뉴스를 반영해 확률을 다시 계산한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-19 |
@@ -45,10 +45,10 @@
 | [web3w/jev-trader](https://github.com/web3w/jev-trader) | 10 | 2 | Multilingual Jev trading dashboard with real-time Kuru and Hyperliquid market data, simulated trading, and model decision guides. Live website: https://jev-trader.com | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-04 |
 | [zadescoxp/Bob-Trades](https://github.com/zadescoxp/Bob-Trades) | 8 | 4 | Bob Trades is an AI automated trading system, that let's you trade on crypto currencies with AI agents | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-01 |
 | [IslamBaraka90/jev-typesafe-real-financial-use-cases](https://github.com/IslamBaraka90/jev-typesafe-real-financial-use-cases) | 5 | 1 | 금융 원장, 사기 탐지, 포트폴리오 관리 등 실제 금융 업무에 쓰이는 의사결정 모델의 판단 결과를 비교하고 벤치마크하는 도구다.<br>원장 거래, 주문 내역, 사기 여부, 포트폴리오 상태에 대해 선택지 고르기, 루브릭 점수 매기기, 예/아니오 판별을 묻는다.<br>사전 기록된 응답 파일로 오프라인에서 재현할 수 있고, 일봉 캔들 데이터 기반 트레이딩 백테스트와 정답 레이블 대조 평가를 함께 지원한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-13 |
-| [aabrur/trading-agent-mpu-gandring](https://github.com/aabrur/trading-agent-mpu-gandring) | 9 | 3 | Seven AI trading agents with their own model keys argue, fight, and vote OPEN LONG / SHORT / CLOSE / HOLD in a live virtual office. Paper trading only. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-25 |
 | [abozaralizadeh/trAIde](https://github.com/abozaralizadeh/trAIde) | 3 | 0 | GenAI Trader: an autonomous multi-agent AI crypto trader on Azure OpenAI and KuCoin, with risk management, backtesting and a Telegram supervisor agent.GenAI Trader | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-16 |
-| [whitestar224/market-hot-dashboard](https://github.com/whitestar224/market-hot-dashboard) | 3 | 0 | 星云社 - Cross-market crypto and stock hot ranking dashboard with RSS, X KOL tracking, AI insights, Docker and Electron support. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-26 |
+| [whitestar224/market-hot-dashboard](https://github.com/whitestar224/market-hot-dashboard) | 3 | 0 | 星云社 - Cross-market crypto and stock hot ranking dashboard with RSS, X KOL tracking, AI insights, Docker and Electron support. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-27 |
 | [zhugeliang7512-eng/factorlab](https://github.com/zhugeliang7512-eng/factorlab) | 3 | 1 | FactorLab · 高端制造与尖端科技行业配置研究工作台｜完整源码、交互 demo 与问题反馈 | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-25 |
+| [aabrur/trading-agent-mpu-gandring](https://github.com/aabrur/trading-agent-mpu-gandring) | 9 | 3 | Seven AI trading agents with their own model keys argue, fight, and vote OPEN LONG / SHORT / CLOSE / HOLD in a live virtual office. Paper trading only. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-27 |
 | [BenCully/parlay-slate](https://github.com/BenCully/parlay-slate) | 1 | 0 | 여러 스포츠 리그의 배당률과 부상 보고서를 바탕으로 유력한 팔레이 베팅 조합을 터미널에서 찾아 주는 도구다.<br>어느 팀이 승리할 가능성이 매우 높은지 재순위화하고, 부상 보고서 브리프가 해당 팀의 승리를 충분한 확신도로 뒷받침하는지 판단한다.<br>The Odds API 배당률과 ESPN 공개 부상 정보를 취합해 승률 60% 이상인 경기만 추린 뒤 로컬에 슬레이트를 저장해 재조회한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-23 |
 | [brunohart/agent-commerce](https://github.com/brunohart/agent-commerce) | 1 | 0 | 인간을 대신해 결제하는 에이전트의 구매 행위가 원래 의도와 위임 권한에 부합하는지 실시간 결제 경로에서 판별하는 게이트웨이 파이프라인 실험 프로젝트다.<br>구매 요청이 카드 소유자의 승인 없이 이뤄졌는지, 구매 품목이 위임 목적을 벗어났는지를 각각 noul 확률 질문으로 Jev에게 묻는다.<br>결제 한도나 서명 같은 규칙 검사는 코드로 먼저 처리하고 의도 판단만 Jev의 확률 값으로 넘겨 기댓값 기반으로 승인 여부를 계산한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-25 |
 | [thechristoalex/contextcon](https://github.com/thechristoalex/contextcon) | 1 | 0 | 인도 물류 기업을 위해 공급업체 검증과 송장 중복 지불 방지 및 사기 탐지를 자동화하는 지급 계정 관리 시스템이다.<br>이메일이나 문서에서 계좌 변경 요구나 압박, 기밀 유지 요구, 자동 검토기 우회 시도 같은 사회공학적 사기 정황이 있는지 판단한다.<br>외부 라이브러리 없이 파이썬 표준 라이브러리만으로 119개 오프라인 테스트와 멱등성 보장 결제 파이프라인을 구현했다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") [🆕](../README.md#legend "최근 7일 안에 처음 발견했습니다") | 2026-11-22 |
@@ -59,7 +59,6 @@
 | [zzsong1023/jev-market-reflex](https://github.com/zzsong1023/jev-market-reflex) | 6 | 1 | Fast typed AI decisions on live crypto markets using TypeSafe AI Jev. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-09-19 |
 | [xuboboo/ashare-trader](https://github.com/xuboboo/ashare-trader) | 5 | 1 | 基于 Jev 的 A 股 T+1 决策台：盘前预选 + 交易时段全程决策 + 本地概率模型 + 严格成本回测 + QMT 桥接（默认不下单）。1 万本金影子盘记录中；策略未证实正期望（README 有全部数据）。 | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-09-28 |
 | [zadescoxp/kadeconsole](https://github.com/zadescoxp/kadeconsole) | 5 | 1 | Kade console is a bloomberg terminal type of analytical tool.  | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-09-21 |
-| [foundationfivepro-gif/jev-trading-agent](https://github.com/foundationfivepro-gif/jev-trading-agent) | 1 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-28 |
 | [EthanAlgoX/jev-trading](https://github.com/EthanAlgoX/jev-trading) | 4 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-09-20 |
 | [aliuppal/trading-bot](https://github.com/aliuppal/trading-bot) | 1 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-13 |
 | [daniel3606/Orbit_MHacks26](https://github.com/daniel3606/Orbit_MHacks26) | 1 | 0 | Mhacks - Fintech track | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-18 |
@@ -69,6 +68,7 @@
 | [leo-bone/vigil](https://github.com/leo-bone/vigil) | 1 | 0 | AI 决策账本与熔断内核：让每一个 agent 的决定都可拦截、可追溯、可校准 | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-07 |
 | [Mikodesteam/outrider](https://github.com/Mikodesteam/outrider) | 1 | 0 | Memecoin research desk source code (Node.js): token scoring, paper/alert/live modes, drawdown protections, journal and AI market briefings for Solana pump.fun, with optional Hyperliquid perps. Showcase repo; full source code at store.mikodes.com | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") [🆕](../README.md#legend "최근 7일 안에 처음 발견했습니다") | 2026-11-25 |
 | [modelflare-ai/ai-hedge-fund](https://github.com/modelflare-ai/ai-hedge-fund) | 1 | 0 | An AI Hedge Fund Team · Modelflare Edition: one API key for GPT, Claude, Gemini &amp; Grok | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-02 |
+| [oblomovunleashed/Cockpit-G2](https://github.com/oblomovunleashed/Cockpit-G2) | 1 | 0 | The Control Centre for your second Brain | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") [🆕](../README.md#legend "최근 7일 안에 처음 발견했습니다") | 2026-11-27 |
 | [ofrades/bursa](https://github.com/ofrades/bursa) | 1 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-16 |
 | [tbdavid2019/stock-underdog-ml](https://github.com/tbdavid2019/stock-underdog-ml) | 1 | 1 | 股市潛力股計算機器學習 https://stockdata.david888.com | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-24 |
 | [vicfei/awesome-ai-quant](https://github.com/vicfei/awesome-ai-quant) | 1 | 2 | The bridge from AI engineering to quantitative finance: trading agents, factor mining with LLMs, decision models in markets, tabular FMs for finance — with the AI-native perspective. 量化金融 × AI Agent. EN/中文. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-24 |
@@ -88,10 +88,10 @@
 | [kyaulabs/kairos](https://github.com/kyaulabs/kairos) | 0 | 0 | Kraken과 Alpaca 모의 투자를 지원하며 Jev 기반 전략과 대시보드를 제공하는 파이썬 트레이딩 봇이다.<br>README에 판단 지점 설명이 없다.<br>Jev는 매매 전략 판단에만 쓰이고 포지션 크기 제한이나 리스크 관리 같은 안전장치는 결정론적 코드로 강제한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-09 |
 | [larsmartens/signal-decision-lab](https://github.com/larsmartens/signal-decision-lab) | 0 | 0 | 유튜브 자막에서 가상자산 트레이딩 주장을 추출해 근거를 검토하고 모의 거래로 성과를 검증하는 실험 도구다.<br>사전 검토를 통과한 매매 셋업에 대해 매수, 매도, 관망 중 어느 선택지가 적절한지 묻는다.<br>규칙 엔진이 위험 한도를 먼저 제어하고 모델은 진입 거부권만 갖도록 설계했으며 연구의 손실 결과도 가감 없이 공개한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-14 |
 | [LaxRaj/venture-fix](https://github.com/LaxRaj/venture-fix) | 0 | 0 | 매출 발생 전 초기 벤처가 요구하는 기본 조건을 계산해 물리적 한계치와 비교하는 스크리닝 도구다.<br>벤처의 구매자·고통·공급·워크플로·접근성 5개 영역에 관한 15가지 질문을 choice 형식으로 판단하게 한다.<br>모델 판단은 산술 입력 변수 범위만 조정할 수 있고 최종 판정을 직접 결정하거나 뒤집지 못하도록 안전 규칙을 강제했다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-10 |
-| [MaahinVPanchal/darkhorse-trading](https://github.com/MaahinVPanchal/darkhorse-trading) | 0 | 0 | Darkhorse Trading은 10달러 소액으로 시작해 최대 손실 한도를 지키며 가상자산 모의 및 실전 거래를 수행하는 자동 트레이딩 데스크다.<br>정량 전략이 생성한 매수 신호를 실행하지 않고 건너뛸지(veto/skip) 여부를 AI 심판 레이어에 묻는다.<br>AI가 주문을 직접 집행하지 않고 거부권만 행사하며, 자산이 5달러에 도달하면 모든 포지션을 강제 청산하도록 설계되었다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-11 |
+| [MaahinVPanchal/darkhorse-trading](https://github.com/MaahinVPanchal/darkhorse-trading) | 0 | 0 | Darkhorse Trading은 10달러 소액으로 시작해 최대 손실 한도를 지키며 가상자산 모의 및 실전 거래를 수행하는 자동 트레이딩 데스크다.<br>정량 전략이 생성한 매수 신호를 실행하지 않고 건너뛸지(veto/skip) 여부를 AI 심판 레이어에 묻는다.<br>AI가 주문을 직접 집행하지 않고 거부권만 행사하며, 자산이 5달러에 도달하면 모든 포지션을 강제 청산하도록 설계되었다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-27 |
 | [mitran27/clean-ledger](https://github.com/mitran27/clean-ledger) | 0 | 1 | TEE 환경에서 거래 내역을 추적하고 의심 거래 보고서를 작성하며 조사 과정을 증명하는 자금 세탁 방지 에이전트 시스템이다.<br>거래 메모나 도구 실행 결과에 에이전트를 탈취하려는 프롬프트 주입 시도가 포함되어 있는지 판단한다.<br>모델 응답 서명 검증과 TEE 원격 증명, 두 모델의 합의 규칙을 결합해 다단계 에이전트 실행의 무결성을 보장한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-11 |
 | [nergisRahimzade/Vouch](https://github.com/nergisRahimzade/Vouch) | 0 | 0 | 독일의 행사 세무 처리를 자동화하여 공제 여부, 부가세, 임직원 과세 혜택을 판단하는 재무팀용 단일 에이전트 시스템이다.<br>README에 판단 지점 설명이 없다.<br>에이전트는 사실 수집과 작업 선택만 맡고 실제 세무 계산과 제어 검증은 결정론적인 코드로 분리해 처리한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-29 |
-| [openpumptrade/labrat](https://github.com/openpumptrade/labrat) | 0 | 0 | 3분마다 pump.fun 밈코인의 수수료 금고를 burn, bless, stash 중 어디에 쓸지 결정하는 3D 실험쥐 테마의 온체인 트레이딩 봇이다.<br>시장 지표를 바탕으로 금고 집행 방식을 burn, bless, stash 레버 중 어느 쪽 확률로 배분할지 선택하게 한다.<br>Jev 모델이 확률을 정하면 Solana의 최신 블록해시를 시드로 삼아 온체인에서 무작위로 레버를 당기도록 설계했다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-28 |
+| [Ololadestephen/caveat](https://github.com/Ololadestephen/caveat) | 0 | 0 | 계약서 문서 속 지급 조건을 분석하고 현금 흐름 모델로 재정 건전성을 시험해 수정 제안서를 작성하는 도구다.<br>추출한 지급 조건이 원문과 맞는지 교차 검증하고 계약 기간 조항을 선택하거나 회신에 포함된 조건 변경이 단일한지 판단한다.<br>Box 파일 버전 변경 시 승인을 무효화하고 두 갈래 해석을 시뮬레이션해 최적의 역제안 조건을 병렬 탐색한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") [🆕](../README.md#legend "최근 7일 안에 처음 발견했습니다") | 2026-11-27 |
 | [ordepas/system1-fraud-interceptor-demo](https://github.com/ordepas/system1-fraud-interceptor-demo) | 0 | 0 | 가상 결제 트랜잭션을 대상으로 Jev와 Gemini를 병렬 실행해 사기 탐지 속도와 비용, 판단 결과를 비교하는 데모 애플리케이션이다.<br>트랜잭션에 대해 승인, 2차 인증 요청, 차단 중 하나의 조치와 사기 여부 확률을 판단하게 한다.<br>텍스트를 생성하지 않는 빠른 판단 모델과 상세 보고서를 작성하는 LLM을 병렬로 비교하도록 설계했다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-03 |
 | [ParhamNajarzadeh/wallex-agentic-trader](https://github.com/ParhamNajarzadeh/wallex-agentic-trader) | 0 | 0 | Wallex 거래소에서 현물 투자를 자동 수행하도록 만든 멀티에이전트 트레이딩 엔진이다.<br>시장 상황에 맞는 체제 분류와 다음 분석 단계 진행 여부 및 실행할 스킬 유형을 판단한다.<br>초고속 판단 엔진과 심층 분석용 언어모델을 분리해 불필요한 토큰 낭비와 응답 지연을 줄였다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-08 |
 | [rprabhune/quantdinger-nse](https://github.com/rprabhune/quantdinger-nse) | 0 | 0 | 투자자가 전략 개발부터 백테스트, 모의 거래, 실거래 실행과 모니터링까지 처리하는 오픈소스 AI 퀀트 연구 플랫폼이다.<br>README에 판단 지점 설명이 없다.<br>자체 호스팅 환경에서 전략 연구부터 실거래까지 전 과정을 포괄하며 AI 에이전트와 MCP 인터페이스를 지원한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-25 |
@@ -99,6 +99,7 @@
 | [vale-dinap/signalbench](https://github.com/vale-dinap/signalbench) | 0 | 0 | 금융 자산의 가격 예측에서 LLM 기반 판단 모델과 시계열 파운데이션 모델의 매매 신호 성능을 비교하는 벤치마크 도구다.<br>특정 시점에 자산 가격이 사전에 설정한 각 기준치보다 높을 확률을 noul 형식의 예/아니오 질문으로 판단하게 한다.<br>서로 다른 구조의 모델 출력을 특정 가격 기준선 초과 확률로 변환해 동일 선상에서 보정 확률 점수로 비교한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-02 |
 | [Vaskoor/nepali-sentiment-nepse](https://github.com/Vaskoor/nepali-sentiment-nepse) | 0 | 0 | 네팔 금융 뉴스의 감성을 분석해 네팔 증권거래소 주가 지수 움직임을 예측하는 연구용 파이프라인이다.<br>네팔어 금융 뉴스 기사의 감성을 분류하고 해당 예측의 신뢰도를 판정한다.<br>가벼운 Jev 판정의 신뢰도가 낮을 때만 무거운 다국어 언어 모델로 넘기는 신뢰도 기반 하이브리드 구조를 쓴다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-09 |
 | [viva-lee/nyotti-xray](https://github.com/viva-lee/nyotti-xray) | 0 | 0 | 비트멕스 트레이더 워뇨띠의 4개년 체결 기록 140만 건을 거래소 틱 데이터와 대조 검증하고 시각화하는 도구다.<br>각 매매 시점의 시장 국면, 패닉 매도 여부, 직전 손실 발생 여부, 포지션의 과감한 정도 같은 여덟 가지 질문을 묻는다.<br>공개 테이프와 필드 단위로 거래를 전수 검증하고, 1만여 건의 매매 결정을 Jev로 질의해 감정적 매매 여부를 통계로 짚어냈다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-01 |
+| [zenitsu0509/GraphSAGE](https://github.com/zenitsu0509/GraphSAGE) | 0 | 0 | Elliptic 비트코인 데이터셋에서 불법 거래를 탐지하고 설명하기 위해 GraphSAGE 모델과 Jev 트리아지를 결합한 프로젝트다.<br>비트코인 거래가 불법인지 여부를 noul 형태의 이진 확률로 질의해 최종 분류를 판단하게 한다.<br>API 키가 없을 때는 보정된 GraphSAGE 모델로 대체 작동하며 디스크 캐싱으로 중복 호출을 줄인다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") [🆕](../README.md#legend "최근 7일 안에 처음 발견했습니다") | 2026-11-27 |
 | [ElliotOne/nl-jev-decision-gates-expense-policy](https://github.com/ElliotOne/nl-jev-decision-gates-expense-policy) | 1 | 0 | 경비 지출 정산 워크플로에서 지출 내역의 규칙 적합성과 증빙 유효성을 검증하는 파이썬 의사결정 파이프라인 예제다.<br>영수증의 지출 범주와 비즈니스 목적의 구체성, 금지 품목 여부, 증빙 부합성, 환급 적합 여부를 choice, score, noul로 묻는다.<br>중복 영수증이나 한도 같은 규칙은 코드로 먼저 거르고 모호한 판단만 Jev 모델에 넘겨 신뢰도에 따라 자동 승인과 검토를 분기한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-03 |
 | [Dimesio/typesafe-chess](https://github.com/Dimesio/typesafe-chess) | 2 | 0 | FUn little experiment with Typesafe AI Jev Model playing chess against stockfish :) | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-09-20 |
 | [itsadrianxv/jev-quant](https://github.com/itsadrianxv/jev-quant) | 2 | 0 | C++20 High Frequency Trading System using TypeSafe Jev to make decisions. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-15 |
@@ -108,12 +109,12 @@
 | [aikeluargalee-tech/jev-v8](https://github.com/aikeluargalee-tech/jev-v8) | 0 | 0 | Jev v8 Pure Decision-Support Terminal | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-26 |
 | [alexandrecbb/previsor-finjev](https://github.com/alexandrecbb/previsor-finjev) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-29 |
 | [AnnKovalchuk/ai-agents](https://github.com/AnnKovalchuk/ai-agents) | 0 | 0 | Code for article "Closed to Evidence, Open to Commands: Language Models Stop Weighing Advice but Still Follow It" | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-16 |
-| [araSalieri/stock-market-mcp](https://github.com/araSalieri/stock-market-mcp) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-26 |
+| [araSalieri/stock-market-mcp](https://github.com/araSalieri/stock-market-mcp) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-28 |
 | [cavack/NewW-terfallH](https://github.com/cavack/NewW-terfallH) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-17 |
 | [cavack/WaterfallHunter](https://github.com/cavack/WaterfallHunter) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-17 |
 | [CodeinScrubs/bourceir](https://github.com/CodeinScrubs/bourceir) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-14 |
 | [cotnetavkhelidzed-code/jev_trade](https://github.com/cotnetavkhelidzed-code/jev_trade) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-30 |
-| [cynthia-git11/clawq-diary](https://github.com/cynthia-git11/clawq-diary) | 0 | 0 | 倩小虾日记 · FutureX Capital 张倩的 AI 投资判断日记（每篇带可证伪条件与对账）· ClawQ Chronicles — falsifiable AI investment calls, tracked in public | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-26 |
+| [cynthia-git11/clawq-diary](https://github.com/cynthia-git11/clawq-diary) | 0 | 0 | 倩小虾日记 · FutureX Capital 张倩的 AI 投资判断日记（每篇带可证伪条件与对账）· ClawQ Chronicles — falsifiable AI investment calls, tracked in public | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-27 |
 | [devsoniclk/jev-binance-futures](https://github.com/devsoniclk/jev-binance-futures) | 0 | 0 | Binance Futures automated trading engine — multi-timeframe VWAP strategies, dynamic stop-loss &amp; risk-adjusted position sizing | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-14 |
 | [devsoniclk/jev-trade-gate](https://github.com/devsoniclk/jev-trade-gate) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-14 |
 | [Errr0rr404/jev-trader](https://github.com/Errr0rr404/jev-trader) | 0 | 0 | Local CLI and web desk. Robinhood Agentic MCP is the tape. TypeSafe Jev votes. Simulate by default. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-01 |
@@ -121,39 +122,38 @@
 | [gmogford/hiveglobal](https://github.com/gmogford/hiveglobal) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-03 |
 | [iamvazghen/Ruben](https://github.com/iamvazghen/Ruben) | 0 | 0 | Self-hosted financial research agent: deterministic 0-100 investment grades on two horizons (1-3y and 20y+), 84 tools across ~66 exchanges, Telegram + terminal. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-07 |
 | [ilGentEAcutoO/flagkan](https://github.com/ilGentEAcutoO/flagkan) | 0 | 1 | FlagKan - new-coin risk radar for Solana: red/yellow/green risk light from a LightGBM model on live Solami on-chain data, Jev AI scoring, every call graded in public | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-03 |
-| [intikhab49/intikhab49](https://github.com/intikhab49/intikhab49) | 0 | 0 | Intikhab Azam: AI/ML engineer and systems architect. Voice AI agents, RAG and LLM evals, multi-tenant SaaS, and open-source developer tools for gov cloud, Make.com and Postgres. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-26 |
-| [j-poc/sentiment-desk](https://github.com/j-poc/sentiment-desk) | 0 | 0 | Single-user sentiment research desk with a live-data-first local rebuild | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-28 |
+| [intikhab49/intikhab49](https://github.com/intikhab49/intikhab49) | 0 | 0 | Intikhab Azam: AI/ML engineer and systems architect. Voice AI agents, RAG and LLM evals, multi-tenant SaaS, and open-source developer tools for gov cloud, Make.com and Postgres. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-27 |
 | [jaelee0409/easygongsi-architecture](https://github.com/jaelee0409/easygongsi-architecture) | 0 | 0 | Architecture write-up for EasyGongsi (쉬운공시): DART filing ingestion, alerts, billing, AI cost control, and known limitations. App code is private. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-29 |
-| [jazzpujols34/podsight](https://github.com/jazzpujols34/podsight) | 0 | 0 | PodSight 聲見 — podcast AI transcription + summarization pipeline (Python). Turns episodes into searchable transcripts and structured summaries. Powers podsight.tw. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-26 |
+| [jazzpujols34/podsight](https://github.com/jazzpujols34/podsight) | 0 | 0 | PodSight 聲見 — podcast AI transcription + summarization pipeline (Python). Turns episodes into searchable transcripts and structured summaries. Powers podsight.tw. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-27 |
 | [jvwalker-yahoo-com/grokbot](https://github.com/jvwalker-yahoo-com/grokbot) | 0 | 0 | 24/7 AI crypto trading desk (BTCUSDT &amp; ETHUSDT with ETH/BTC regime filter, deterministic risk gates, FastAPI + WebSocket terminal) | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") [🆕](../README.md#legend "최근 7일 안에 처음 발견했습니다") | 2026-11-26 |
-| [k-macao/001](https://github.com/k-macao/001) | 0 | 0 | AH  上水日报，分析、生成、新鲜度检验与微信推送的一体化 | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-26 |
-| [kaduitape/TraderTop](https://github.com/kaduitape/TraderTop) | 0 | 0 | sistema trader | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-22 |
-| [kendallcoding202/btc-perp-desk](https://github.com/kendallcoding202/btc-perp-desk) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-27 |
-| [kodie4004-coder/grok-desk-paper](https://github.com/kodie4004-coder/grok-desk-paper) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") [🆕](../README.md#legend "최근 7일 안에 처음 발견했습니다") | 2026-11-27 |
+| [k-macao/001](https://github.com/k-macao/001) | 0 | 0 | AH  上水日报，分析、生成、新鲜度检验与微信推送的一体化 | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-27 |
+| [kaduitape/TraderTop](https://github.com/kaduitape/TraderTop) | 0 | 0 | sistema trader | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-27 |
+| [kendallcoding202/btc-perp-desk](https://github.com/kendallcoding202/btc-perp-desk) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-28 |
+| [kodie4004-coder/grok-desk-paper](https://github.com/kodie4004-coder/grok-desk-paper) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-28 |
 | [lioncitydevops/jev-momentum-radar](https://github.com/lioncitydevops/jev-momentum-radar) | 0 | 0 | Jev Short-Term Momentum Radar &amp; Brent Crude Futures Curve Forecasting | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-13 |
 | [lizhuojunx86/llm-memory-audit](https://github.com/lizhuojunx86/llm-memory-audit) | 0 | 1 | Pre-registered tests of whether language models remember how market events turned out | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-18 |
 | [lizzystannah/jev](https://github.com/lizzystannah/jev) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-17 |
 | [MablishAdo/assetbook](https://github.com/MablishAdo/assetbook) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-02 |
-| [manangoesagain/news-pipeline](https://github.com/manangoesagain/news-pipeline) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-26 |
+| [manangoesagain/news-pipeline](https://github.com/manangoesagain/news-pipeline) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-27 |
 | [Marko-AI-Dev/surety](https://github.com/Marko-AI-Dev/surety) | 0 | 0 | AI agents that can buy for your business and cannot steal from it. Escrow on the XRP Ledger. W3NODE 2026, testnet only. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-14 |
 | [McKrispy/Hybrid-cascade-system](https://github.com/McKrispy/Hybrid-cascade-system) | 0 | 0 | Reproducible scripts and audited datasets for "Prior-Assisted Handoff, Cognitive Anchoring, and Dynamic Governance in Hybrid Probabilistic-Generative Cascades". | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") [🆕](../README.md#legend "최근 7일 안에 처음 발견했습니다") | 2026-11-23 |
-| [ncc1701c-ben/ai_HF2_2026](https://github.com/ncc1701c-ben/ai_HF2_2026) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-28 |
 | [NormanSisk/analyst-consortium](https://github.com/NormanSisk/analyst-consortium) | 0 | 0 | A team of AI analysts that reads public data on a stock, debates both sides and writes a rating with its reasons. Includes a local web page and a free stock picker. Built on TradingAgents by Tauric Research. A research tool, not financial advice. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-15 |
-| [obekt/obekt-terminal](https://github.com/obekt/obekt-terminal) | 0 | 0 | ▚ Obekt Autonomous Trading Platform — a real AI agent trading live crypto capital, unattended: typed LLM decisions (Jev System-One), news/sentiment/macro context, code-enforced risk — plus a Bloomberg-style read-only terminal to watch every decision it makes. NOT financial advice — a pure experiment. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-27 |
-| [OrenRachamim/AlgoVision](https://github.com/OrenRachamim/AlgoVision) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-26 |
+| [obekt/obekt-terminal](https://github.com/obekt/obekt-terminal) | 0 | 0 | ▚ Obekt Autonomous Trading Platform — a real AI agent trading live crypto capital, unattended: typed LLM decisions (Jev System-One), news/sentiment/macro context, code-enforced risk — plus a Bloomberg-style read-only terminal to watch every decision it makes. NOT financial advice — a pure experiment. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-28 |
+| [OrenRachamim/AlgoVision](https://github.com/OrenRachamim/AlgoVision) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-27 |
 | [PATELMIHIR2715/sm](https://github.com/PATELMIHIR2715/sm) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-04 |
 | [penipeni-ark/daily_stock_analysis](https://github.com/penipeni-ark/daily_stock_analysis) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-15 |
 | [petchtany/smart-dca-ai-hedge-fund](https://github.com/petchtany/smart-dca-ai-hedge-fund) | 0 | 0 | Smart DCA &amp; Buy-the-Dip AI Chief Investment Officer Dashboard | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-25 |
 | [PhiBao/slipnope](https://github.com/PhiBao/slipnope) | 0 | 0 | Overpay? Nope. A Uniswap v4 fair-price guard hook for tokenized stocks on Base (Base Stocks Maxxing — Programmable Stock Markets) | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-19 |
 | [PhiBao/weekend-copilot](https://github.com/PhiBao/weekend-copilot) | 0 | 0 | Portfolio-aware AI trading desk for Bitget rTokens — grades a trade against your book, measures 24/7 weekend drift, files hash-chained receipts (Bitget AI Base Camp S2) | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-23 |
-| [Primtis/ai-hedge-fund-paper](https://github.com/Primtis/ai-hedge-fund-paper) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-26 |
+| [Primtis/ai-hedge-fund-paper](https://github.com/Primtis/ai-hedge-fund-paper) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-27 |
 | [Richard-X46/data-workbench](https://github.com/Richard-X46/data-workbench) | 0 | 0 | Static reports built with Quarto | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-10 |
 | [RichieLoco/RichieLoco](https://github.com/RichieLoco/RichieLoco) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-08 |
-| [SamDhingra/FX-agents](https://github.com/SamDhingra/FX-agents) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-22 |
+| [SamDhingra/FX-agents](https://github.com/SamDhingra/FX-agents) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-28 |
 | [san-npm/copper-acorn](https://github.com/san-npm/copper-acorn) | 0 | 1 | Pixel-art alchemy shop prototype with crafting, NPC trading, quests and turn-based player duels. Built on NEAR testnet for Games With Real Economies. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-12 |
 | [Sehyeogkim/LOTTEE_AX_Challenge](https://github.com/Sehyeogkim/LOTTEE_AX_Challenge) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-04 |
 | [sleepyMS/MS-Mind](https://github.com/sleepyMS/MS-Mind) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-19 |
-| [titchanonkm-alt/btc-bot-lab](https://github.com/titchanonkm-alt/btc-bot-lab) | 0 | 0 | Paper-trading lab: Jev AI vs simple rules on BTC, gold, USD/THB | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-27 |
+| [titchanonkm-alt/btc-bot-lab](https://github.com/titchanonkm-alt/btc-bot-lab) | 0 | 0 | Paper-trading lab: Jev AI vs simple rules on BTC, gold, USD/THB | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-28 |
+| [twahidin/scalper101](https://github.com/twahidin/scalper101) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") [🆕](../README.md#legend "최근 7일 안에 처음 발견했습니다") | 2026-11-28 |
 | [uddhavpandi/nexua-ai](https://github.com/uddhavpandi/nexua-ai) | 0 | 0 | end to end bussiness solutions and data analysis  | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-31 |
 | [Vickydha/ARISE](https://github.com/Vickydha/ARISE) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-10 |
 | [Whoisasimm/QUANTARA-AI](https://github.com/Whoisasimm/QUANTARA-AI) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-12 |
@@ -164,6 +164,7 @@
 | [anondevv69/jev-signal-trading](https://github.com/anondevv69/jev-signal-trading) | 1 | 0 | Autonomous crypto signal-trading engine for AI agents: chat intel -&gt; Jev judgment -&gt; Bankr execution -&gt; public alpha broadcast. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-03 |
 | [didwns7347/MoneyPrinterJS](https://github.com/didwns7347/MoneyPrinterJS) | 1 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-20 |
 | [dnevado/jev-trader](https://github.com/dnevado/jev-trader) | 1 | 1 | Backtesting US stock strategies with pandas indicators, OpenAI fundamentals and Jev (TypeSafe) decisions | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-07 |
+| [foundationfivepro-gif/jev-trading-agent](https://github.com/foundationfivepro-gif/jev-trading-agent) | 1 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-28 |
 | [gorefilip20/Forex-and-memecoin-trading-](https://github.com/gorefilip20/Forex-and-memecoin-trading-) | 1 | 0 | Distribution and helping trades excellently  | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-15 |
 | [javaninvegas/jev-desert-crew](https://github.com/javaninvegas/jev-desert-crew) | 1 | 0 | Four AI paper-trading bots racing on Jev (TypeSafe AI). Jev places the orders. Fork of imikerussell/beebots. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-09-26 |
 | [kingabzpro/StocksSignal](https://github.com/kingabzpro/StocksSignal) | 1 | 0 | AI-powered stock signals with Buy, Hold, Sell probabilities and severity scores using Olostep and TypeSafe Jev. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-13 |
@@ -185,6 +186,7 @@
 | [gbesse/jev-minimis-watch](https://github.com/gbesse/jev-minimis-watch) | 0 | 0 | 공공 보조금 검토자가 프랑스 소액 보조금의 누적 내역을 점검하고 검토 우선순위를 분류할 때 쓰는 도구다.<br>보조금 신고 내역을 바탕으로 한도 초과 위험 범주를 네 가지 선택지 중 하나로 판별하게 한다.<br>명확한 수치나 예외 규칙은 결정론적 코드로 먼저 처리해 모델 호출 없이 결과를 반환하도록 분리했다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-02 |
 | [j7708git/jev-tradingview-signal](https://github.com/j7708git/jev-tradingview-signal) | 0 | 0 | TradingView 차트 데이터를 TypeSafe Jev 모델에 전달해 시장 방향 판단 결과를 사이드 패널에 띄워주는 Chrome MV3 확장 프로그램이다.<br>300개 캔들스틱과 보조지표를 바탕으로 포지션 방향(매수/매도/관망), 향후 10개 봉의 상승 확률, 상승 및 하락 추세 강도를 판단한다.<br>npm 의존성 없이 TradingView의 내부 웹소켓 통신을 읽기 전용으로 가로채 데이터를 수집하며, 비공개 프로토콜 변경 시 수집이 실패할 수 있다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-09-27 |
 | [kgouthamk/JEV-Prototype](https://github.com/kgouthamk/JEV-Prototype) | 0 | 0 | 손해보험(P&amp;C) 업무 시나리오에서 TypeSafe JEV의 세 가지 판단 원형을 실험해보는 Streamlit 프로토타입이다.<br>손해보험 시나리오에 대해 긴급성 여부나 처리 방식 같은 판단을 Noul, Choice, Score 형태로 질의한다.<br>신뢰도가 기준치 미만이거나 API 오류가 나면 수동 검토로 넘기는 안전장치 규칙과 키워드 기반 목 모드를 갖췄다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-09-28 |
+| [openpumptrade/labrat](https://github.com/openpumptrade/labrat) | 0 | 0 | 3분마다 pump.fun 밈코인의 수수료 금고를 burn, bless, stash 중 어디에 쓸지 결정하는 3D 실험쥐 테마의 온체인 트레이딩 봇이다.<br>시장 지표를 바탕으로 금고 집행 방식을 burn, bless, stash 레버 중 어느 쪽 확률로 배분할지 선택하게 한다.<br>Jev 모델이 확률을 정하면 Solana의 최신 블록해시를 시드로 삼아 온체인에서 무작위로 레버를 당기도록 설계했다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-28 |
 | [xin10ylop/polynew](https://github.com/xin10ylop/polynew) | 0 | 0 | Polymarket의 비트코인 5분 및 15분 Up/Down 예측 시장을 분석하고 백테스트하는 리서치 툴킷이다.<br>README에 판단 지점 설명 없음<br>Chainlink 60초 TWAP 정산 및 실시간 오더북 복원, 대기열을 고려한 메이커 체결 시뮬레이션 환경을 구축했다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-09-28 |
 | [Nachom3/jevTrader](https://github.com/Nachom3/jevTrader) | 3 | 0 | A High Frecuncy Trader made in Rust using Jev as a decision maker.  | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-09-23 |
 | [emajjsky/stock-analysis](https://github.com/emajjsky/stock-analysis) | 0 | 0 | 중국 A주 시장 시세 조회와 알고리즘 종목 발굴, 에이전트 재검토와 모의 투자를 지원하는 로컬 주식 분석 데스크톱 앱이다.<br>Jev의 noul 프로토콜을 사용해 알고리즘 분석 결과에 대한 해석 지지와 방향 충돌 여부를 예/아니오 확률로 판단하게 한다.<br>Jev 판단 결과를 바탕으로 에이전트 호출 여부를 분기하며, 실거래 발주 기능 없이 로컬 캐시와 모의 거래 환경만 제공한다. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-11-16 |
@@ -212,6 +214,7 @@
 | [henrysammarfo/bell](https://github.com/henrysammarfo/bell) | 0 | 0 | BELL — session-honest tokenized stock gift boxes on BSC (bStocks first). BNB Hack Tokenized Stocks. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-12 |
 | [Idiroll/DAYTRADES](https://github.com/Idiroll/DAYTRADES) | 0 | 0 | Using Jev to automate day-trading for dirt cheap. Extremely Fast.  | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-09-27 |
 | [Ikarus0013/rh-meme-lab](https://github.com/Ikarus0013/rh-meme-lab) | 0 | 0 | Research toolkit for meme coins on Robinhood Chain: exit-first screener, forward-collecting echo study with a control cohort, local dashboard and exit planner. Python stdlib only. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-05 |
+| [j-poc/sentiment-desk](https://github.com/j-poc/sentiment-desk) | 0 | 0 | Single-user sentiment research desk with a live-data-first local rebuild | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-28 |
 | [jky5m8k5g7-ctrl/Trading-hub](https://github.com/jky5m8k5g7-ctrl/Trading-hub) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-09-28 |
 | [JordiParraCrespo/typesafe-ai-trading-showcase](https://github.com/JordiParraCrespo/typesafe-ai-trading-showcase) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-09-16 |
 | [js7993378-ops/megabrain-local-desk](https://github.com/js7993378-ops/megabrain-local-desk) | 0 | 0 | Local trading desk with Jev alternative - free APIs, no billing required | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-23 |
@@ -224,6 +227,7 @@
 | [mashmalol/jev-traderbot](https://github.com/mashmalol/jev-traderbot) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-14 |
 | [motiooon/AITradingBot](https://github.com/motiooon/AITradingBot) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-09-30 |
 | [MrKoriy/kalshi](https://github.com/MrKoriy/kalshi) | 0 | 0 | Autonomous quantitative trading agent for Kalshi 15-minute prediction markets with Bayesian volatility modeling &amp; order-book execution | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-10 |
+| [ncc1701c-ben/ai_HF2_2026](https://github.com/ncc1701c-ben/ai_HF2_2026) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-28 |
 | [ntsd/zero-market-radar](https://github.com/ntsd/zero-market-radar) | 0 | 0 | Real-time stock news sentiment and alerter powered by a System One decision model (Jev) for ultra-fast. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-04 |
 | [Omideafuri/TradersDream](https://github.com/Omideafuri/TradersDream) | 0 | 0 | — | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-01 |
 | [peacehritik/synthoperator-domainradar](https://github.com/peacehritik/synthoperator-domainradar) | 0 | 0 | Autonomous deterministic decision-intelligence engine for domain acquisitions, portfolio retention economics, and startup brand selection. Built by SynthOperator. | [⏳](../README.md#legend "확인 대기: 아직 코드를 확인하지 않았습니다") | 2026-10-04 |
@@ -282,19 +286,19 @@ This is a proof of concept for an AI-powered hedge fund. The goal of this projec
 
 </details>
 
-### kyotofin/tax-doc-classifier
-
-<details><summary>README 발췌</summary>
-
-A tax document classifier built with Jev.
-
-</details>
-
 ### aowang-ai/jev-trade
 
 <details><summary>README 발췌</summary>
 
 I built a trading bot with Jev. Jev reads the Hyperliquid book every tick and answers buy, sell, or hold. The bot sends the order. Five coins, five wallets, real fills.
+
+</details>
+
+### kyotofin/tax-doc-classifier
+
+<details><summary>README 발췌</summary>
+
+A tax document classifier built with Jev.
 
 </details>
 
@@ -330,6 +334,14 @@ One decision every Monad block. A TypeSafe Jev model watches the Kuru MON-USDC o
 
 </details>
 
+### FelixZhang028/Prismind
+
+<details><summary>README 발췌</summary>
+
+以下截图来自本项目运行页面（2026-10-26，演示账户），个股以平安银行（000001）为例。
+
+</details>
+
 ### initial-d/ml-quant-trading
 
 <details><summary>README 발췌</summary>
@@ -359,14 +371,6 @@ An autonomous liquidity agent that watches liquidity pools on Solana (currently 
 <details><summary>README 발췌</summary>
 
 A Next.js dashboard for live crypto market data and TypeSafe-powered trading.
-
-</details>
-
-### davidalmeida90/glassbench
-
-<details><summary>README 발췌</summary>
-
-Glassbench connects finance agent systems to one platform, runs them on the same stock and date, and records what their agents read, argued and decided, so you can compare them and judge the method yourself instead of trusting a rating. It runs the official TradingAgents (v0.6.0), AI Hedge Fund (v2.
 
 </details>
 
@@ -410,14 +414,6 @@ A timestamped benchmark and trading arena for real-world probabilistic forecasti
 
 </details>
 
-### FelixZhang028/Prismind
-
-<details><summary>README 발췌</summary>
-
-以下截图来自本项目运行页面（2026-10-26，演示账户），个股以平安银行（000001）为例。
-
-</details>
-
 ### VGabriel45/polymarket-btc5m-jev-trading
 
 <details><summary>README 발췌</summary>
@@ -431,6 +427,14 @@ A terminal agent for Polymarket’s BTC Up or Down 5-minute markets.
 <details><summary>README 발췌</summary>
 
 Jevinik is a stock decision terminal that retrieves live market evidence with Valyu and estimates whether a stock will trade higher in 30 days.
+
+</details>
+
+### davidalmeida90/glassbench
+
+<details><summary>README 발췌</summary>
+
+Glassbench connects finance agent systems to one platform, runs them on the same stock and date, and records what their agents read, argued and decided, so you can compare them and judge the method yourself instead of trusting a rating. It runs the official TradingAgents (v0.6.0), AI Hedge Fund (v2.
 
 </details>
 
@@ -586,14 +590,6 @@ Typed decisions from two decision models on real financial work: TypeSafe's Jev,
 
 </details>
 
-### aabrur/trading-agent-mpu-gandring
-
-<details><summary>README 발췌</summary>
-
-v0.0.0.4.33 · Six agent roles · PAPER / TESTNET / LIVE · MIT
-
-</details>
-
 ### abozaralizadeh/trAIde
 
 <details><summary>README 발췌</summary>
@@ -615,6 +611,14 @@ Autonomous multi-agent AI crypto trader powered by Azure OpenAI and KuCoin APIs.
 <details><summary>README 발췌</summary>
 
 面向高端制造与尖端科技的交互式研究项目，探索长期定位与短期战术配置。通过证据阅读、多因子分析、回测、配置练习与复盘，把研究判断变成可以检查的过程。
+
+</details>
+
+### aabrur/trading-agent-mpu-gandring
+
+<details><summary>README 발췌</summary>
+
+v0.0.0.4.33 · Six agent roles · PAPER / TESTNET / LIVE · MIT
 
 </details>
 
@@ -698,14 +702,6 @@ Jev Market Reflex connects live BTC/USD, ETH/USD, and SOL/USD market data to Jev
 
 </details>
 
-### foundationfivepro-gif/jev-trading-agent
-
-<details><summary>README 발췌</summary>
-
-A long-only crypto trend-following strategy on spot (no leverage), built from the parts of popular X trading posts that hold up, with a backtester, a paper-trading mode and a memecoin rug-risk screen.
-
-</details>
-
 ### EthanAlgoX/jev-trading
 
 <details><summary>README 발췌</summary>
@@ -775,6 +771,14 @@ We tried for seven weeks, with real money and a strict research process. It did 
 <details><summary>README 발췌</summary>
 
 &gt; This is the Modelflare Edition of ai-hedge-fund: models are pre-configured, just add one Modelflare API key. Get your key
+
+</details>
+
+### oblomovunleashed/Cockpit-G2
+
+<details><summary>README 발췌</summary>
+
+One calm hold-to-speak gesture across Work, Personal, and Interests on Even Realities G2 (576 × 288 monochrome green). OpenRouter Jev (System 1, ~200–460 ms) routes quick thoughts straight to Notion without stalling on an LLM, and wakes DeepSeek (System 2) only when you need sourced research or back
 
 </details>
 
@@ -954,11 +958,11 @@ Vouch is the event tax accountant on Nordlicht's finance team: it decides the Ge
 
 </details>
 
-### openpumptrade/labrat
+### Ololadestephen/caveat
 
 <details><summary>README 발췌</summary>
 
-&gt; Live: https://labrat-two.vercel.app · CA $LABRAT: 6gUbPAgMx2gTMCVH9wCEWUpKztmabuHosW8gvtXBpump · Solscan · DexScreener
+Caveat reads a consultant's contract documents from Box, has TypeSafe's Jev make typed decisions about the payment terms, and stress-tests the answers against a deterministic cash-flow model before anyone signs. Every run ends in a receipt that a human must approve; the export is a draft counteroffe
 
 </details>
 
@@ -1015,6 +1019,14 @@ Benchmarking AI models as trading-signal sources: decision models, time-series f
 <details><summary>README 발췌</summary>
 
 Verified, not imitated · no signals · no bot · 한국어
+
+</details>
+
+### zenitsu0509/GraphSAGE
+
+<details><summary>README 발췌</summary>
+
+A compact, reproducible demo combining a 2-layer GraphSAGE detector, GNNExplainer attributions, post-hoc temperature scaling, and a swappable TypeSafe Jev triage backend (POST /v1/systemone) with an offline Streamlit dashboard.
 
 </details>
 
@@ -1194,14 +1206,6 @@ I build AI systems that have to work in production: voice agents that answer rea
 
 </details>
 
-### j-poc/sentiment-desk
-
-<details><summary>README 발췌</summary>
-
-Sentiment Desk is a private, single-user research product that can collect from explicitly enabled public-source adapters. It starts in saved-data-only mode; live requests require per-source configuration. The repository is visible for inspection and is not a hosted multi-user data service.
-
-</details>
-
 ### jaelee0409/easygongsi-architecture
 
 <details><summary>README 발췌</summary>
@@ -1311,14 +1315,6 @@ AI agents that can buy for your business and cannot steal from it.
 <details><summary>README 발췌</summary>
 
 Official implementation, streaming sandbox, and full API replay archives for: Prior-Assisted Handoff, Cognitive Anchoring, and Dynamic Governance in Hybrid Probabilistic--Generative Cascades — Jieren Guan
-
-</details>
-
-### ncc1701c-ben/ai_HF2_2026
-
-<details><summary>README 발췌</summary>
-
-This is a proof of concept for an AI-powered hedge fund. The goal of this project is to explore the use of AI to make trading decisions. This project is for educational purposes only and is not intended for real trading or investment.
 
 </details>
 
@@ -1450,6 +1446,14 @@ A paper-trading experiment: does an AI model (Google Gemini Flash-Lite, free tie
 
 </details>
 
+### twahidin/scalper101
+
+<details><summary>README 발췌</summary>
+
+Tests one idea with paper money: Chinese financial and crypto news reaches some feeds before the wider market reacts. Can an LLM read it fast enough to trade the move on Binance after fees?
+
+</details>
+
 ### uddhavpandi/nexua-ai
 
 <details><summary>README 발췌</summary>
@@ -1527,6 +1531,14 @@ KODEX 미국S&amp;P500(H) 를 오늘 얼마나 들고 있을지, TypeSafe의 판
 <details><summary>README 발췌</summary>
 
 An end-to-end quantitative research platform for US equities — from hypothesis to backtest to live paper trading in the cloud. Technical indicators in pandas, LLM-assisted fundamental analysis, typed AI decisions, a custom backtest engine with walk-forward validation, and a scheduled AWS deployment 
+
+</details>
+
+### foundationfivepro-gif/jev-trading-agent
+
+<details><summary>README 발췌</summary>
+
+A long-only crypto trend-following strategy on spot (no leverage), built from the parts of popular X trading posts that hold up, with a backtester, a paper-trading mode and a memecoin rug-risk screen.
 
 </details>
 
@@ -1695,6 +1707,14 @@ Prépare la revue des cumuls d’aides de minimis à partir d’éléments sourc
 <details><summary>README 발췌</summary>
 
 Streamlit prototype for testing JEV's three primitives (Noul, Choice, Score) on P&amp;C workflows. It shows confidence, latency, and a Safe Fallback rule side by side.
+
+</details>
+
+### openpumptrade/labrat
+
+<details><summary>README 발췌</summary>
+
+&gt; Live: https://labrat-two.vercel.app · CA $LABRAT: 6gUbPAgMx2gTMCVH9wCEWUpKztmabuHosW8gvtXBpump · Solscan · DexScreener
 
 </details>
 
@@ -1906,6 +1926,14 @@ A research toolkit for meme coins on Robinhood Chain (chain ID 4663).
 
 </details>
 
+### j-poc/sentiment-desk
+
+<details><summary>README 발췌</summary>
+
+Sentiment Desk is a private, single-user research product that can collect from explicitly enabled public-source adapters. It starts in saved-data-only mode; live requests require per-source configuration. The repository is visible for inspection and is not a hosted multi-user data service.
+
+</details>
+
 ### jky5m8k5g7-ctrl/Trading-hub
 
 <details><summary>README 발췌</summary>
@@ -1999,6 +2027,14 @@ Next.js + React + TypeScript dashboard and a separate Node.js/TypeScript paper e
 <details><summary>README 발췌</summary>
 
 Python 3.11+ paper-trading bot for Kalshi 15-minute crypto up/down markets.
+
+</details>
+
+### ncc1701c-ben/ai_HF2_2026
+
+<details><summary>README 발췌</summary>
+
+This is a proof of concept for an AI-powered hedge fund. The goal of this project is to explore the use of AI to make trading decisions. This project is for educational purposes only and is not intended for real trading or investment.
 
 </details>
 
